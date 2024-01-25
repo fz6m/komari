@@ -1,0 +1,12697 @@
+# komari
+
+收集世界上所有我知道的前端库。
+
+## Nodejs
+- 插件集
+  - formdata/file请求解析系列
+    - busboy(解析请求file)
+      - <a href="https://github.com/mscdex/busboy" target="_blank noopener noreferrer">mscdex/busboy</a>
+    - form-data(FormData polyfill)
+      - <a href="https://github.com/form-data/form-data" target="_blank noopener noreferrer">form-data/form-data</a>
+    - multipart(解析FormData数据)
+      - <a href="https://github.com/pillarjs/multiparty" target="_blank noopener noreferrer">pillarjs/multiparty</a>
+    - multer(处理form-data的中间件/解析文件)
+      - <a href="https://github.com/expressjs/multer" target="_blank noopener noreferrer">expressjs/multer</a>
+    - formdata-node(新formdata实现)
+      - <a href="https://github.com/octet-stream/form-data" target="_blank noopener noreferrer">octet-stream/form-data</a>
+  - database
+    - orm系列
+      - typeorm
+        - <a href="https://github.com/typeorm/typeorm" target="_blank noopener noreferrer">typeorm/typeorm</a>
+        - <a href="https://typeorm.biunav.com/zh/#%E5%AE%89%E8%A3%85" target="_blank noopener noreferrer">typeorm.biunav.com</a>
+      - sequelize(可连mysql)
+        - <a href="https://github.com/sequelize/sequelize" target="_blank noopener noreferrer">sequelize/sequelize</a>
+      - sequelize-typescript(sequelize的装饰器集)
+        - <a href="https://github.com/RobinBuschmann/sequelize-typescript" target="_blank noopener noreferrer">RobinBuschmann/sequelize-typescript</a>
+      - objection.js(sql友好的ORM)
+        - <a href="https://github.com/Vincit/objection.js" target="_blank noopener noreferrer">Vincit/objection.js</a>
+      - mikro-orm
+        - <a href="https://github.com/mikro-orm/mikro-orm" target="_blank noopener noreferrer">mikro-orm/mikro-orm</a>
+      - leoric(ruby on rails的active record思想的orm/冷门)
+        - <a href="https://github.com/cyjake/leoric" target="_blank noopener noreferrer">cyjake/leoric</a>
+      - drizzle-orm(冷)
+        - <a href="https://github.com/drizzle-team/drizzle-orm" target="_blank noopener noreferrer">drizzle-team/drizzle-orm</a>
+      - prisma系列
+        - prisma(下一代orm)
+          - <a href="https://github.com/prisma/prisma" target="_blank noopener noreferrer">prisma/prisma</a>
+        - prisma-fabbrica(用于测试mock数据)
+          - <a href="https://github.com/Quramy/prisma-fabbrica" target="_blank noopener noreferrer">Quramy/prisma-fabbrica</a>
+      - rdb(冷)
+        - <a href="https://github.com/alfateam/rdb" target="_blank noopener noreferrer">alfateam/rdb</a>
+    - MongoDB
+      - mongoose(schema建模)
+        - <a href="https://github.com/Automattic/mongoose" target="_blank noopener noreferrer">Automattic/mongoose</a>
+      - typegoose(给mongoose加type)
+        - <a href="https://github.com/typegoose/typegoose" target="_blank noopener noreferrer">typegoose/typegoose</a>
+      - dynamoose(aws DynamoDB建模工具)
+        - <a href="https://github.com/dynamoose/dynamoose" target="_blank noopener noreferrer">dynamoose/dynamoose</a>
+      - mongoosastic(自动索引mongoose到es中)
+        - <a href="https://github.com/mongoosastic/mongoosastic" target="_blank noopener noreferrer">mongoosastic/mongoosastic</a>
+      - node-mongodb-native(官方连接库)
+        - <a href="https://github.com/mongodb/node-mongodb-native" target="_blank noopener noreferrer">mongodb/node-mongodb-native</a>
+      - papr(ts aware schema)
+        - <a href="https://github.com/plexinc/papr" target="_blank noopener noreferrer">plexinc/papr</a>
+      - mongodb-client-encryption(客户端加密器)
+        - <a href="https://www.npmjs.com/package/mongodb-client-encryption" target="_blank noopener noreferrer">www.npmjs.com</a>
+      - nodejs-mongodb-legacy(传统接口sdk)
+        - <a href="https://github.com/mongodb-js/nodejs-mongodb-legacy" target="_blank noopener noreferrer">mongodb-js/nodejs-mongodb-legacy</a>
+      - mongodb-memory-server(内存板/用于测试)
+        - <a href="https://github.com/nodkz/mongodb-memory-server" target="_blank noopener noreferrer">nodkz/mongodb-memory-server</a>
+      - mongo-seeding(mongo数据导入工具/冷门)
+        - <a href="https://github.com/pkosiec/mongo-seeding" target="_blank noopener noreferrer">pkosiec/mongo-seeding</a>
+    - absurd-sql(sql.js后端版)
+      - <a href="https://github.com/jlongster/absurd-sql" target="_blank noopener noreferrer">jlongster/absurd-sql</a>
+    - levelgraph(图数据库)
+      - <a href="https://github.com/levelgraph/levelgraph" target="_blank noopener noreferrer">levelgraph/levelgraph</a>
+    - leveldown(levelDB的nodejs工具)
+      - <a href="https://github.com/Level/leveldown" target="_blank noopener noreferrer">Level/leveldown</a>
+    - node-json-db(json基础的小db)
+      - <a href="https://github.com/Belphemur/node-json-db" target="_blank noopener noreferrer">Belphemur/node-json-db</a>
+    - Postgres系列
+      - slonik(postgreSQL连接库)
+        - <a href="https://github.com/gajus/slonik" target="_blank noopener noreferrer">gajus/slonik</a>
+      - node-pg-migrate(辅助postgre数据库迁移工具)
+        - <a href="https://github.com/salsita/node-pg-migrate" target="_blank noopener noreferrer">salsita/node-pg-migrate</a>
+      - postgres(pg的连接客户端)
+        - <a href="https://github.com/porsager/postgres" target="_blank noopener noreferrer">porsager/postgres</a>
+      - quickgres(原生wire协议连接pg)
+        - <a href="https://github.com/kig/quickgres" target="_blank noopener noreferrer">kig/quickgres</a>
+      - postgres-pool(pg连接池实现/冷门)
+        - <a href="https://github.com/postgres-pool/postgres-pool" target="_blank noopener noreferrer">postgres-pool/postgres-pool</a>
+      - pg-mem(用于测试pg的内存版db)
+        - <a href="https://github.com/oguimbal/pg-mem" target="_blank noopener noreferrer">oguimbal/pg-mem</a>
+      - kanel(从pg数据库生成ts类型/无需orm/冷门)
+        - <a href="https://github.com/kristiandupont/kanel" target="_blank noopener noreferrer">kristiandupont/kanel</a>
+      - node-postgres(sdk)
+        - <a href="https://github.com/brianc/node-postgres" target="_blank noopener noreferrer">brianc/node-postgres</a>
+      - serverless-pg(node-postgres封装/faas)
+        - <a href="https://github.com/MatteoGioioso/serverless-pg" target="_blank noopener noreferrer">MatteoGioioso/serverless-pg</a>
+      - pg-promise(sdk)
+        - <a href="https://github.com/vitaly-t/pg-promise" target="_blank noopener noreferrer">vitaly-t/pg-promise</a>
+      - zapatos(pg查询生成器/冷门)
+        - <a href="https://github.com/jawj/zapatos" target="_blank noopener noreferrer">jawj/zapatos</a>
+      - pg-anonymizer(导出数据/匿名化敏感部分)
+        - <a href="https://github.com/rap2hpoutre/pg-anonymizer" target="_blank noopener noreferrer">rap2hpoutre/pg-anonymizer</a>
+    - redis系列
+      - nohm(redis orm建模)
+        - <a href="https://github.com/maritz/nohm" target="_blank noopener noreferrer">maritz/nohm</a>
+      - redis框架
+        - node-redis
+          - <a href="https://github.com/redis/node-redis" target="_blank noopener noreferrer">redis/node-redis</a>
+        - ioredis
+          - <a href="https://github.com/luin/ioredis" target="_blank noopener noreferrer">luin/ioredis</a>
+        - connect-redis
+          - <a href="https://github.com/tj/connect-redis" target="_blank noopener noreferrer">tj/connect-redis</a>
+      - redis-om-node(redis存对象的临时方案/冷门)
+        - <a href="https://github.com/redis/redis-om-node" target="_blank noopener noreferrer">redis/redis-om-node</a>
+      - node-resque(redis驱动的后台作业系统)
+        - <a href="https://github.com/actionhero/node-resque" target="_blank noopener noreferrer">actionhero/node-resque</a>
+    - kafka系列
+      - kafkajs(client sdk)
+        - <a href="https://github.com/tulios/kafkajs" target="_blank noopener noreferrer">tulios/kafkajs</a>
+    - MSSQL系列
+      - tedious(与SQL server交互)
+        - <a href="https://github.com/tediousjs/tedious" target="_blank noopener noreferrer">tediousjs/tedious</a>
+      - node-mssql
+        - <a href="https://github.com/tediousjs/node-mssql" target="_blank noopener noreferrer">tediousjs/node-mssql</a>
+    - sqlite系列
+      - better-sqlite3(sqlite3支持)
+        - <a href="https://github.com/WiseLibs/better-sqlite3" target="_blank noopener noreferrer">WiseLibs/better-sqlite3</a>
+      - node-sqlite3
+        - <a href="https://github.com/TryGhost/node-sqlite3" target="_blank noopener noreferrer">TryGhost/node-sqlite3</a>
+      - node-sqlite
+        - <a href="https://github.com/kriasoft/node-sqlite" target="_blank noopener noreferrer">kriasoft/node-sqlite</a>
+      - node-cache-manager-sqlite(缓存)
+        - <a href="https://github.com/maxpert/node-cache-manager-sqlite" target="_blank noopener noreferrer">maxpert/node-cache-manager-sqlite</a>
+      - flyweight(orm/冷门)
+        - <a href="https://github.com/thebinarysearchtree/flyweight" target="_blank noopener noreferrer">thebinarysearchtree/flyweight</a>
+      - soul(启动sqlite rest服务器工具/冷门)
+        - <a href="https://github.com/thevahidal/soul" target="_blank noopener noreferrer">thevahidal/soul</a>
+      - sql.js-httpvfs(在浏览器使用sqlite/冷门)
+        - <a href="https://github.com/phiresky/sql.js-httpvfs" target="_blank noopener noreferrer">phiresky/sql.js-httpvfs</a>
+      - sqlean(sqlite函数工具扩展)
+        - <a href="https://github.com/nalgeon/sqlean" target="_blank noopener noreferrer">nalgeon/sqlean</a>
+    - mq队列系列
+      - redis-smq(redis消息队列)
+        - <a href="https://github.com/weyoss/redis-smq" target="_blank noopener noreferrer">weyoss/redis-smq</a>
+      - pg-boss(利用postgres特性的队列)
+        - <a href="https://github.com/timgit/pg-boss" target="_blank noopener noreferrer">timgit/pg-boss</a>
+      - bullmq(基于redis的mq)
+        - <a href="https://github.com/taskforcesh/bullmq" target="_blank noopener noreferrer">taskforcesh/bullmq</a>
+      - rabbitMQ系列
+        - amqplib(client sdk)
+          - <a href="https://github.com/amqp-node/amqplib" target="_blank noopener noreferrer">amqp-node/amqplib</a>
+        - amqp-client.js
+          - <a href="https://github.com/cloudamqp/amqp-client.js" target="_blank noopener noreferrer">cloudamqp/amqp-client.js</a>
+      - MQTT.js
+        - <a href="https://github.com/mqttjs/MQTT.js" target="_blank noopener noreferrer">mqttjs/MQTT.js</a>
+      - mqemitter
+        - <a href="https://github.com/mcollina/mqemitter" target="_blank noopener noreferrer">mcollina/mqemitter</a>
+    - sql查询构建器系列
+      - Kysely(类型安全的sql查询生成器)
+        - <a href="https://github.com/kysely-org/kysely" target="_blank noopener noreferrer">kysely-org/kysely</a>
+      - pure-orm(生成纯sql语句的查询库)
+        - <a href="https://github.com/craigmichaelmartin/pure-orm" target="_blank noopener noreferrer">craigmichaelmartin/pure-orm</a>
+      - knex(各种数据库的查询构建器)
+        - <a href="https://github.com/knex/knex" target="_blank noopener noreferrer">knex/knex</a>
+      - prql(生成sql的方言)
+        - <a href="https://github.com/PRQL/prql" target="_blank noopener noreferrer">PRQL/prql</a>
+      - ts-sql-query(冷)
+        - <a href="https://github.com/juanluispaz/ts-sql-query" target="_blank noopener noreferrer">juanluispaz/ts-sql-query</a>
+      - sql-template-tag(sql模板字符串构建/冷门)
+        - <a href="https://github.com/blakeembrey/sql-template-tag" target="_blank noopener noreferrer">blakeembrey/sql-template-tag</a>
+    - mysql系列
+      - mysql2
+        - <a href="https://github.com/sidorares/node-mysql2" target="_blank noopener noreferrer">sidorares/node-mysql2</a>
+      - mysql
+        - <a href="https://github.com/mysqljs/mysql" target="_blank noopener noreferrer">mysqljs/mysql</a>
+    - Oracle系列
+      - node-oracledb
+        - <a href="https://github.com/oracle/node-oracledb" target="_blank noopener noreferrer">oracle/node-oracledb</a>
+    - kv系列
+      - keyvhq(简单的kv存储/多数据库兼容)
+        - <a href="https://github.com/microlinkhq/keyvhq" target="_blank noopener noreferrer">microlinkhq/keyvhq</a>
+      - kv.js(类似redis的kv工具)
+        - <a href="https://github.com/HeyPuter/kv.js" target="_blank noopener noreferrer">HeyPuter/kv.js</a>
+      - keyv
+        - <a href="https://github.com/jaredwray/keyv" target="_blank noopener noreferrer">jaredwray/keyv</a>
+    - ast系列
+      - node-sql-parser(sql ast解析器)
+        - <a href="https://github.com/taozhi8833998/node-sql-parser" target="_blank noopener noreferrer">taozhi8833998/node-sql-parser</a>
+      - pgsql-ast-parser(pgsql解析)
+        - <a href="https://github.com/oguimbal/pgsql-ast-parser" target="_blank noopener noreferrer">oguimbal/pgsql-ast-parser</a>
+    - mariadb系列
+      - mariadb-connector-nodejs
+        - <a href="https://github.com/mariadb-corporation/mariadb-connector-nodejs" target="_blank noopener noreferrer">mariadb-corporation/mariadb-connector-nodejs</a>
+    - sql-formatter(sql格式化)
+      - <a href="https://github.com/sql-formatter-org/sql-formatter" target="_blank noopener noreferrer">sql-formatter-org/sql-formatter</a>
+    - migration迁移系列
+      - node-migrate(抽象迁移工具)
+        - <a href="https://github.com/tj/node-migrate" target="_blank noopener noreferrer">tj/node-migrate</a>
+      - umzug(sequelize迁移工具)
+        - <a href="https://github.com/sequelize/umzug" target="_blank noopener noreferrer">sequelize/umzug</a>
+  - worker/线程池
+    - node-worker-threads-pool(简单的thread池)
+      - <a href="https://github.com/SUCHMOKUO/node-worker-threads-pool" target="_blank noopener noreferrer">SUCHMOKUO/node-worker-threads-pool</a>
+    - piscina(简单线程池)
+      - <a href="https://github.com/piscinajs/piscina" target="_blank noopener noreferrer">piscinajs/piscina</a>
+    - tinypool(简版piscina/worker线程池)
+      - <a href="https://github.com/tinylibs/tinypool" target="_blank noopener noreferrer">tinylibs/tinypool</a>
+    - node-pool(资源池工具)
+      - <a href="https://github.com/coopernurse/node-pool" target="_blank noopener noreferrer">coopernurse/node-pool</a>
+    - poolifier
+      - <a href="https://github.com/poolifier/poolifier" target="_blank noopener noreferrer">poolifier/poolifier</a>
+  - fs系列
+    - memfs(内存fs/memory-fs代替)
+      - <a href="https://github.com/streamich/memfs" target="_blank noopener noreferrer">streamich/memfs</a>
+    - node-fs-extra
+      - <a href="https://github.com/jprichardson/node-fs-extra" target="_blank noopener noreferrer">jprichardson/node-fs-extra</a>
+    - node-mkdirp
+      - <a href="https://github.com/substack/node-mkdirp" target="_blank noopener noreferrer">substack/node-mkdirp</a>
+    - node-graceful-fs
+      - <a href="https://github.com/isaacs/node-graceful-fs" target="_blank noopener noreferrer">isaacs/node-graceful-fs</a>
+    - memory-fs(已被废弃)
+      - <a href="https://github.com/webpack/memory-fs" target="_blank noopener noreferrer">webpack/memory-fs</a>
+    - fs-jetpack(冷)
+      - <a href="https://github.com/szwacz/fs-jetpack" target="_blank noopener noreferrer">szwacz/fs-jetpack</a>
+    - trash(将文件移动到垃圾桶)
+      - <a href="https://github.com/sindresorhus/trash" target="_blank noopener noreferrer">sindresorhus/trash</a>
+    - rimraf(rm -rf 工具)
+      - <a href="https://github.com/isaacs/rimraf" target="_blank noopener noreferrer">isaacs/rimraf</a>
+    - trash-cli(命令行trash)
+      - <a href="https://github.com/sindresorhus/trash-cli" target="_blank noopener noreferrer">sindresorhus/trash-cli</a>
+    - fsx(冷)
+      - <a href="https://github.com/humanwhocodes/fsx" target="_blank noopener noreferrer">humanwhocodes/fsx</a>
+  - resolve系列
+    - enhanced-resolve(异步 resolve)
+      - <a href="https://github.com/webpack/enhanced-resolve" target="_blank noopener noreferrer">webpack/enhanced-resolve</a>
+    - resolve-from(像require.resolve一样解析模块/但从给定文件开始)
+      - <a href="https://github.com/sindresorhus/resolve-from" target="_blank noopener noreferrer">sindresorhus/resolve-from</a>
+    - resolve
+      - <a href="https://github.com/browserify/resolve" target="_blank noopener noreferrer">browserify/resolve</a>
+    - resolve-cwd(从cwd开始require.resolve)
+      - <a href="https://github.com/sindresorhus/resolve-cwd" target="_blank noopener noreferrer">sindresorhus/resolve-cwd</a>
+    - import-local(从本地cwd开始导入/而不是全局)
+      - <a href="https://github.com/sindresorhus/import-local" target="_blank noopener noreferrer">sindresorhus/import-local</a>
+    - pkg-dir(找到某个包的根目录)
+      - <a href="https://github.com/sindresorhus/pkg-dir" target="_blank noopener noreferrer">sindresorhus/pkg-dir</a>
+    - resolve.exports(解析imports/exports别名)
+      - <a href="https://github.com/lukeed/resolve.exports" target="_blank noopener noreferrer">lukeed/resolve.exports</a>
+  - Ioc
+    - DI(依赖注入)
+      - typedi
+        - <a href="https://github.com/typestack/typedi" target="_blank noopener noreferrer">typestack/typedi</a>
+      - inversify
+        - <a href="https://github.com/inversify/InversifyJS" target="_blank noopener noreferrer">inversify/InversifyJS</a>
+        - inversify-inject-decorators(lazy注入方式/无需修改构造函数)
+          - <a href="https://github.com/inversify/inversify-inject-decorators" target="_blank noopener noreferrer">inversify/inversify-inject-decorators</a>
+      - tsyringe(微软依赖注入库)
+        - <a href="https://github.com/microsoft/tsyringe" target="_blank noopener noreferrer">microsoft/tsyringe</a>
+      - injection(midway依赖注入库)
+        - <a href="https://github.com/midwayjs/injection" target="_blank noopener noreferrer">midwayjs/injection</a>
+      - di(冷)
+        - <a href="https://github.com/opensumi/di" target="_blank noopener noreferrer">opensumi/di</a>
+    - awillx(ioc库)
+      - <a href="https://github.com/jeffijoe/awilix" target="_blank noopener noreferrer">jeffijoe/awilix</a>
+    - artusjs/core(ioc/冷门/egg-core的基础)
+      - <a href="https://github.com/artusjs/core" target="_blank noopener noreferrer">artusjs/core</a>
+  - Route
+    - routing-controllers
+      - <a href="https://github.com/typestack/routing-controllers" target="_blank noopener noreferrer">typestack/routing-controllers</a>
+  - walk(遍历)
+    - klaw-sync
+      - <a href="https://github.com/manidlou/node-klaw-sync" target="_blank noopener noreferrer">manidlou/node-klaw-sync</a>
+  - lifecycle(声明周期)
+    - death
+      - <a href="https://github.com/jprichardson/node-death" target="_blank noopener noreferrer">jprichardson/node-death</a>
+  - GraphQl
+    - apollo-client
+      - <a href="https://github.com/apollographql/apollo-client" target="_blank noopener noreferrer">apollographql/apollo-client</a>
+    - relay
+      - <a href="https://github.com/facebook/relay" target="_blank noopener noreferrer">facebook/relay</a>
+    - graphqurl
+      - <a href="https://github.com/hasura/graphqurl" target="_blank noopener noreferrer">hasura/graphqurl</a>
+    - graphql-zeus
+      - <a href="https://github.com/graphql-editor/graphql-zeus" target="_blank noopener noreferrer">graphql-editor/graphql-zeus</a>
+    - apollo-server
+      - <a href="https://github.com/apollographql/apollo-server" target="_blank noopener noreferrer">apollographql/apollo-server</a>
+    - graphql-yoga(server)
+      - <a href="https://github.com/prisma-labs/graphql-yoga" target="_blank noopener noreferrer">prisma-labs/graphql-yoga</a>
+    - postgraphile(postgresql自动增加GraphQl)
+      - <a href="https://github.com/graphile/postgraphile" target="_blank noopener noreferrer">graphile/postgraphile</a>
+    - graphql-js(本体)
+      - <a href="https://github.com/graphql/graphql-js" target="_blank noopener noreferrer">graphql/graphql-js</a>
+    - express-graphql
+      - <a href="https://github.com/graphql/express-graphql" target="_blank noopener noreferrer">graphql/express-graphql</a>
+    - dataLoader系列(graphQl批处理)
+      - nestjs-dataloader
+        - <a href="https://github.com/krislefeber/nestjs-dataloader" target="_blank noopener noreferrer">krislefeber/nestjs-dataloader</a>
+      - type-graphql-dataloader(TypeGraphORM)
+        - <a href="https://github.com/slaypni/type-graphql-dataloader" target="_blank noopener noreferrer">slaypni/type-graphql-dataloader</a>
+    - graphql-request(node/browser的最小客户端)
+      - <a href="https://github.com/prisma-labs/graphql-request" target="_blank noopener noreferrer">prisma-labs/graphql-request</a>
+    - graphql-tag(标签函数支持)
+      - <a href="https://github.com/apollographql/graphql-tag" target="_blank noopener noreferrer">apollographql/graphql-tag</a>
+    - graphql-yoga(功能齐全的graphql服务器)
+      - <a href="https://github.com/dotansimha/graphql-yoga" target="_blank noopener noreferrer">dotansimha/graphql-yoga</a>
+    - urql(gql客户端)
+      - <a href="https://github.com/urql-graphql/urql" target="_blank noopener noreferrer">urql-graphql/urql</a>
+    - graphql-schema-linter(验证graphql模式定义)
+      - <a href="https://github.com/cjoudrey/graphql-schema-linter" target="_blank noopener noreferrer">cjoudrey/graphql-schema-linter</a>
+    - mercurius(fastify框架的graphQL适配器)
+      - <a href="https://github.com/mercurius-js/mercurius" target="_blank noopener noreferrer">mercurius-js/mercurius</a>
+    - graphql-scalars(提供scalar类型)
+      - <a href="https://github.com/Urigo/graphql-scalars" target="_blank noopener noreferrer">Urigo/graphql-scalars</a>
+    - graphql-code-generator(基于graphql schema生成ts文件)
+      - <a href="https://github.com/dotansimha/graphql-code-generator" target="_blank noopener noreferrer">dotansimha/graphql-code-generator</a>
+    - graphql-depth-limit(限制graphql query查询深度)
+      - <a href="https://www.npmjs.com/package/graphql-depth-limit" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - 测试工具系列
+      - gest
+        - <a href="https://github.com/mfix22/gest" target="_blank noopener noreferrer">mfix22/gest</a>
+    - graphql文档生成系列
+      - dociql
+        - <a href="https://github.com/wayfair/dociql" target="_blank noopener noreferrer">wayfair/dociql</a>
+      - spectaql
+        - <a href="https://github.com/anvilco/spectaql" target="_blank noopener noreferrer">anvilco/spectaql</a>
+      - magidoc
+        - <a href="https://github.com/magidoc-org/magidoc" target="_blank noopener noreferrer">magidoc-org/magidoc</a>
+    - client客户端IDE系列
+      - altair
+        - <a href="https://github.com/altair-graphql/altair" target="_blank noopener noreferrer">altair-graphql/altair</a>
+    - editor编辑器系列
+      - graphql-editor(收费)
+        - <a href="https://github.com/graphql-editor/graphql-editor" target="_blank noopener noreferrer">graphql-editor/graphql-editor</a>
+      - insomnia
+        - <a href="https://github.com/Kong/insomnia" target="_blank noopener noreferrer">Kong/insomnia</a>
+      - graphql-playground
+        - <a href="https://github.com/graphql/graphql-playground" target="_blank noopener noreferrer">graphql/graphql-playground</a>
+      - apollo-studio-community
+        - <a href="https://github.com/apollographql/apollo-studio-community" target="_blank noopener noreferrer">apollographql/apollo-studio-community</a>
+      - graphiql
+        - <a href="https://github.com/graphql/graphiql" target="_blank noopener noreferrer">graphql/graphiql</a>
+    - gql-query-builder(granphql查询生成器)
+      - <a href="https://github.com/atulmy/gql-query-builder" target="_blank noopener noreferrer">atulmy/gql-query-builder</a>
+    - graphql-voyager(将graphql api用连线图展示)
+      - <a href="https://github.com/IvanGoncharov/graphql-voyager" target="_blank noopener noreferrer">IvanGoncharov/graphql-voyager</a>
+    - graphql-sse(基于sse的graphql服务端/冷门)
+      - <a href="https://github.com/enisdenjo/graphql-sse" target="_blank noopener noreferrer">enisdenjo/graphql-sse</a>
+    - graphql-constraint-directive(约束字段生成/rfc)
+      - <a href="https://github.com/confuser/graphql-constraint-directive" target="_blank noopener noreferrer">confuser/graphql-constraint-directive</a>
+    - graphql-request(客户端请求工具)
+      - <a href="https://github.com/jasonkuhrt/graphql-request" target="_blank noopener noreferrer">jasonkuhrt/graphql-request</a>
+    - garph(全栈graphQL框架/冷门)
+      - <a href="https://github.com/stepci/garph" target="_blank noopener noreferrer">stepci/garph</a>
+    - graphql-http(graphql服务)
+      - <a href="https://github.com/graphql/graphql-http" target="_blank noopener noreferrer">graphql/graphql-http</a>
+  - cache缓存系列
+    - node-LRU
+      - <a href="https://github.com/isaacs/node-lru-cache" target="_blank noopener noreferrer">isaacs/node-lru-cache</a>
+    - node-cache
+      - <a href="https://github.com/node-cache/node-cache" target="_blank noopener noreferrer">node-cache/node-cache</a>
+    - memory-cache(老)
+      - <a href="https://github.com/ptarjan/node-cache" target="_blank noopener noreferrer">ptarjan/node-cache</a>
+    - node-cache-manager
+      - <a href="https://github.com/BryanDonovan/node-cache-manager" target="_blank noopener noreferrer">BryanDonovan/node-cache-manager</a>
+    - cachified(cache包装器/用于kv对象存储/冷门)
+      - <a href="https://github.com/Xiphe/cachified" target="_blank noopener noreferrer">Xiphe/cachified</a>
+    - metro-cache
+      - <a href="https://github.com/facebook/metro/tree/main/packages/metro-cache" target="_blank noopener noreferrer">facebook/metro/tree/main/packages/metro-cache</a>
+    - clear cache主动清理缓存系列
+      - decache
+        - <a href="https://github.com/dwyl/decache" target="_blank noopener noreferrer">dwyl/decache</a>
+      - clear-module(较好)
+        - <a href="https://github.com/sindresorhus/clear-module" target="_blank noopener noreferrer">sindresorhus/clear-module</a>
+    - node-cache-manager(内存缓存器)
+      - <a href="https://github.com/node-cache-manager/node-cache-manager" target="_blank noopener noreferrer">node-cache-manager/node-cache-manager</a>
+    - ultrafetch(fetch加缓存工具)
+      - <a href="https://github.com/natemoo-re/ultrafetch" target="_blank noopener noreferrer">natemoo-re/ultrafetch</a>
+    - quick-lru
+      - <a href="https://github.com/sindresorhus/quick-lru" target="_blank noopener noreferrer">sindresorhus/quick-lru</a>
+    - bentocache(支持redis/内存等缓存存储)
+      - <a href="https://github.com/Julien-R44/bentocache" target="_blank noopener noreferrer">Julien-R44/bentocache</a>
+  - cheerio(服务端jquery实现)
+    - <a href="https://github.com/cheeriojs/cheerio" target="_blank noopener noreferrer">cheeriojs/cheerio</a>
+  - sleepp(等待)
+    - <a href="https://github.com/erikdubbelboer/node-sleep" target="_blank noopener noreferrer">erikdubbelboer/node-sleep</a>
+  - delay(推迟)
+    - <a href="https://github.com/sindresorhus/delay" target="_blank noopener noreferrer">sindresorhus/delay</a>
+  - glob文件遍历器
+    - glob
+      - <a href="https://github.com/isaacs/node-glob" target="_blank noopener noreferrer">isaacs/node-glob</a>
+    - node-glob
+      - <a href="https://github.com/isaacs/node-glob" target="_blank noopener noreferrer">isaacs/node-glob</a>
+    - fast-glob
+      - <a href="https://github.com/mrmlnc/fast-glob" target="_blank noopener noreferrer">mrmlnc/fast-glob</a>
+    - globby
+      - <a href="https://github.com/sindresorhus/globby" target="_blank noopener noreferrer">sindresorhus/globby</a>
+    - fdir(最快的目录爬虫)
+      - <a href="https://github.com/thecodrr/fdir" target="_blank noopener noreferrer">thecodrr/fdir</a>
+  - csv系列
+    - csv-parser
+      - <a href="https://github.com/mafintosh/csv-parser" target="_blank noopener noreferrer">mafintosh/csv-parser</a>
+    - node-csv
+      - <a href="https://github.com/adaltas/node-csv" target="_blank noopener noreferrer">adaltas/node-csv</a>
+    - PapaParse(解析csv)
+      - <a href="https://github.com/mholt/PapaParse" target="_blank noopener noreferrer">mholt/PapaParse</a>
+    - fast-csv
+      - <a href="https://github.com/C2FO/fast-csv" target="_blank noopener noreferrer">C2FO/fast-csv</a>
+    - CsvToMarkdownTable(csv转md table格式)
+      - <a href="https://github.com/donatj/CsvToMarkdownTable" target="_blank noopener noreferrer">donatj/CsvToMarkdownTable</a>
+    - csvToJson(csv转json)
+      - <a href="https://github.com/iuccio/csvToJson" target="_blank noopener noreferrer">iuccio/csvToJson</a>
+    - uDSV(最快的csv解析器/冷门)
+      - <a href="https://github.com/leeoniya/uDSV" target="_blank noopener noreferrer">leeoniya/uDSV</a>
+    - export-to-csv(js对象转csv/支持browser)
+      - <a href="https://github.com/alexcaza/export-to-csv" target="_blank noopener noreferrer">alexcaza/export-to-csv</a>
+    - csv42(json和csv互转)
+      - <a href="https://github.com/josdejong/csv42" target="_blank noopener noreferrer">josdejong/csv42</a>
+  - schema校验系列
+    - MVC-class-Validate(数据校验)
+      - class-validator
+        - <a href="https://github.com/typestack/class-validator" target="_blank noopener noreferrer">typestack/class-validator</a>
+      - class-transformer(序列化挑剔装饰器)
+        - <a href="https://github.com/typestack/class-transformer" target="_blank noopener noreferrer">typestack/class-transformer</a>
+    - joi(数据验证库)
+      - <a href="https://github.com/sideway/joi" target="_blank noopener noreferrer">sideway/joi</a>
+      - joi-tester(在线检验工具)
+        - <a href="https://framp.me/joi-tester/" target="_blank noopener noreferrer">framp.me</a>
+    - ajv(json scheme校验)
+      - <a href="https://github.com/ajv-validator/ajv" target="_blank noopener noreferrer">ajv-validator/ajv</a>
+    - superstruct(json schema校验)
+      - <a href="https://github.com/ianstormtaylor/superstruct" target="_blank noopener noreferrer">ianstormtaylor/superstruct</a>
+    - validator.js(字符串校验库)
+      - <a href="https://github.com/validatorjs/validator.js" target="_blank noopener noreferrer">validatorjs/validator.js</a>
+    - async-validator(异步schema校验库)
+      - <a href="https://github.com/yiminghe/async-validator" target="_blank noopener noreferrer">yiminghe/async-validator</a>
+    - yup(简单的object schema校验)
+      - <a href="https://github.com/jquense/yup" target="_blank noopener noreferrer">jquense/yup</a>
+    - json-rules-engine(json规则引擎)
+      - <a href="https://github.com/CacheControl/json-rules-engine" target="_blank noopener noreferrer">CacheControl/json-rules-engine</a>
+    - tiny-schema-validator
+      - <a href="https://github.com/5alidz/tiny-schema-validator" target="_blank noopener noreferrer">5alidz/tiny-schema-validator</a>
+    - ow(函数入参校验)
+      - <a href="https://github.com/sindresorhus/ow" target="_blank noopener noreferrer">sindresorhus/ow</a>
+    - v8n(链式调用的校验工具)
+      - <a href="https://github.com/imbrn/v8n" target="_blank noopener noreferrer">imbrn/v8n</a>
+    - fastest-validator(数据结构校验/快)
+      - <a href="https://github.com/icebob/fastest-validator" target="_blank noopener noreferrer">icebob/fastest-validator</a>
+    - env环境变量schema校验系列
+      - envsafe(保证env一定存在)
+        - <a href="https://github.com/KATT/envsafe" target="_blank noopener noreferrer">KATT/envsafe</a>
+      - env-schema(环境变量schema校验)
+        - <a href="https://github.com/fastify/env-schema" target="_blank noopener noreferrer">fastify/env-schema</a>
+      - env-var(冷)
+        - <a href="https://github.com/evanshortiss/env-var" target="_blank noopener noreferrer">evanshortiss/env-var</a>
+      - envalid
+        - <a href="https://github.com/af/envalid" target="_blank noopener noreferrer">af/envalid</a>
+    - tv4(老)
+      - <a href="https://github.com/geraintluff/tv4" target="_blank noopener noreferrer">geraintluff/tv4</a>
+    - suretype(结构校验库/冷门)
+      - <a href="https://github.com/grantila/suretype" target="_blank noopener noreferrer">grantila/suretype</a>
+    - zod系列
+      - zod(ts的schema静态校验库)
+        - <a href="https://github.com/colinhacks/zod" target="_blank noopener noreferrer">colinhacks/zod</a>
+      - zod-to-ts(schema转ts类型声明实现)
+        - <a href="https://github.com/sachinraja/zod-to-ts" target="_blank noopener noreferrer">sachinraja/zod-to-ts</a>
+      - zodios(zod api构造工具库)
+        - <a href="https://github.com/ecyrbe/zodios" target="_blank noopener noreferrer">ecyrbe/zodios</a>
+      - json-schema-to-zod
+        - <a href="https://github.com/StefanTerdell/json-schema-to-zod" target="_blank noopener noreferrer">StefanTerdell/json-schema-to-zod</a>
+      - zod-to-json-schema
+        - <a href="https://github.com/StefanTerdell/zod-to-json-schema" target="_blank noopener noreferrer">StefanTerdell/zod-to-json-schema</a>
+      - zod-i18n(国际化报错文本)
+        - <a href="https://github.com/aiji42/zod-i18n" target="_blank noopener noreferrer">aiji42/zod-i18n</a>
+    - typebox(zod竞品)
+      - <a href="https://github.com/sinclairzx81/typebox" target="_blank noopener noreferrer">sinclairzx81/typebox</a>
+    - vine(比zod快)
+      - <a href="https://github.com/vinejs/vine" target="_blank noopener noreferrer">vinejs/vine</a>
+    - valibot(zod竞品/体积小/冷门)
+      - <a href="https://github.com/fabian-hiller/valibot" target="_blank noopener noreferrer">fabian-hiller/valibot</a>
+    - arktype(zod竞品)
+      - <a href="https://github.com/arktypeio/arktype" target="_blank noopener noreferrer">arktypeio/arktype</a>
+  - nodejieba(结巴分词)
+    - <a href="https://github.com/yanyiwu/nodejieba" target="_blank noopener noreferrer">yanyiwu/nodejieba</a>
+  - robotjs(实现桌面自动化/操作鼠标键盘)
+    - <a href="https://github.com/octalmage/robotjs" target="_blank noopener noreferrer">octalmage/robotjs</a>
+  - osx-mouse(mac跟踪鼠标行为)
+    - <a href="https://github.com/kapetan/osx-mouse" target="_blank noopener noreferrer">kapetan/osx-mouse</a>
+  - dns系列
+    - cacheable-lookup
+      - <a href="https://github.com/szmarczak/cacheable-lookup" target="_blank noopener noreferrer">szmarczak/cacheable-lookup</a>
+    - dns-lookup-cache
+      - <a href="https://github.com/LCMApps/dns-lookup-cache" target="_blank noopener noreferrer">LCMApps/dns-lookup-cache</a>
+    - nodejs-dns-over-https-tangerine(支持DoH)
+      - <a href="https://github.com/forwardemail/nodejs-dns-over-https-tangerine" target="_blank noopener noreferrer">forwardemail/nodejs-dns-over-https-tangerine</a>
+  - mime(获取type)
+    - <a href="https://github.com/broofa/mime" target="_blank noopener noreferrer">broofa/mime</a>
+  - 压缩/解压缩系列
+    - node-stream-zip(解压zip)
+      - <a href="https://github.com/antelle/node-stream-zip" target="_blank noopener noreferrer">antelle/node-stream-zip</a>
+    - yauzl(zip解压/unzip)
+      - <a href="https://www.npmjs.com/package/yauzl" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - extract-zip
+      - <a href="https://github.com/maxogden/extract-zip" target="_blank noopener noreferrer">maxogden/extract-zip</a>
+    - jszip
+      - <a href="https://github.com/Stuk/jszip" target="_blank noopener noreferrer">Stuk/jszip</a>
+    - ws压缩系列
+      - pako(zlib压缩)
+        - <a href="https://github.com/nodeca/pako" target="_blank noopener noreferrer">nodeca/pako</a>
+      - snappy
+        - <a href="https://github.com/Brooooooklyn/snappy" target="_blank noopener noreferrer">Brooooooklyn/snappy</a>
+    - fflate(更全的支持)
+      - <a href="https://github.com/101arrowz/fflate" target="_blank noopener noreferrer">101arrowz/fflate</a>
+    - node-unzipper(解压zip)
+      - <a href="https://github.com/ZJONSSON/node-unzipper" target="_blank noopener noreferrer">ZJONSSON/node-unzipper</a>
+    - node-archiver(zip压缩器)
+      - <a href="https://github.com/archiverjs/node-archiver" target="_blank noopener noreferrer">archiverjs/node-archiver</a>
+    - zip.js(浏览器压缩)
+      - <a href="https://github.com/gildas-lormeau/zip.js" target="_blank noopener noreferrer">gildas-lormeau/zip.js</a>
+    - lz-string(类似pako压缩)
+      - <a href="https://github.com/pieroxy/lz-string" target="_blank noopener noreferrer">pieroxy/lz-string</a>
+    - nanotar(tar压缩工具/冷门)
+      - <a href="https://github.com/unjs/nanotar" target="_blank noopener noreferrer">unjs/nanotar</a>
+    - decompress(解压zip)
+      - <a href="https://github.com/kevva/decompress" target="_blank noopener noreferrer">kevva/decompress</a>
+  - jwt/token/oauth2系列
+    - node-jsonwebtoken(jwt鉴权)
+      - <a href="https://github.com/auth0/node-jsonwebtoken" target="_blank noopener noreferrer">auth0/node-jsonwebtoken</a>
+    - node-argon2(密码hash算法)
+      - <a href="https://github.com/ranisalt/node-argon2" target="_blank noopener noreferrer">ranisalt/node-argon2</a>
+    - json-web-token(冷)
+      - <a href="https://github.com/joaquimserafim/json-web-token" target="_blank noopener noreferrer">joaquimserafim/json-web-token</a>
+    - passport系列
+      - passport(支持多平台oauth)
+        - <a href="https://github.com/jaredhanson/passport" target="_blank noopener noreferrer">jaredhanson/passport</a>
+      - passport-local(本地策略)
+        - <a href="https://github.com/jaredhanson/passport-local" target="_blank noopener noreferrer">jaredhanson/passport-local</a>
+      - passport-jwt
+        - <a href="https://github.com/mikenicholson/passport-jwt" target="_blank noopener noreferrer">mikenicholson/passport-jwt</a>
+    - node-oauth
+      - <a href="https://github.com/ciaranj/node-oauth" target="_blank noopener noreferrer">ciaranj/node-oauth</a>
+    - lucia(权限库)
+      - <a href="https://github.com/pilcrowOnPaper/lucia" target="_blank noopener noreferrer">pilcrowOnPaper/lucia</a>
+    - oauth2-mock-server(oauth模拟服务)
+      - <a href="https://github.com/axa-group/oauth2-mock-server" target="_blank noopener noreferrer">axa-group/oauth2-mock-server</a>
+  - module-alias(导入别名)
+    - <a href="https://github.com/ilearnio/module-alias" target="_blank noopener noreferrer">ilearnio/module-alias</a>
+  - logger日志库
+    - debug
+      - <a href="https://github.com/debug-js/debug" target="_blank noopener noreferrer">debug-js/debug</a>
+    - winston(打印日志/古老)
+      - <a href="https://github.com/winstonjs/winston" target="_blank noopener noreferrer">winstonjs/winston</a>
+    - consola(更好的日志)
+      - <a href="https://github.com/unjs/consola" target="_blank noopener noreferrer">unjs/consola</a>
+    - pino(json logger)
+      - <a href="https://github.com/pinojs/pino" target="_blank noopener noreferrer">pinojs/pino</a>
+    - log4js-node(日志打印)
+      - <a href="https://github.com/log4js-node/log4js-node" target="_blank noopener noreferrer">log4js-node/log4js-node</a>
+    - caterpillar
+      - <a href="https://github.com/bevry/caterpillar" target="_blank noopener noreferrer">bevry/caterpillar</a>
+    - pino-http(快速的http请求记录器/req/res)
+      - <a href="https://github.com/pinojs/pino-http" target="_blank noopener noreferrer">pinojs/pino-http</a>
+    - better-logging(console颜色优化/冷门)
+      - <a href="https://github.com/Olian04/better-logging" target="_blank noopener noreferrer">Olian04/better-logging</a>
+    - tslog(兼容browser)
+      - <a href="https://github.com/fullstack-build/tslog" target="_blank noopener noreferrer">fullstack-build/tslog</a>
+    - node-bunyan(json记录/陈旧)
+      - <a href="https://github.com/trentm/node-bunyan" target="_blank noopener noreferrer">trentm/node-bunyan</a>
+    - roarr(兼容browser/冷门)
+      - <a href="https://github.com/gajus/roarr" target="_blank noopener noreferrer">gajus/roarr</a>
+  - formidable(流处理器)
+    - <a href="https://github.com/node-formidable/formidable" target="_blank noopener noreferrer">node-formidable/formidable</a>
+  - renamer(替换路径文件名工具)
+    - <a href="https://github.com/75lb/renamer" target="_blank noopener noreferrer">75lb/renamer</a>
+  - is-reachable(检测服务器是否可达)
+    - <a href="https://github.com/sindresorhus/is-reachable" target="_blank noopener noreferrer">sindresorhus/is-reachable</a>
+  - cron/调度任务系列
+    - node-cron
+      - <a href="https://github.com/node-cron/node-cron" target="_blank noopener noreferrer">node-cron/node-cron</a>
+    - cron-parser(cron解析)
+      - <a href="https://github.com/harrisiirak/cron-parser" target="_blank noopener noreferrer">harrisiirak/cron-parser</a>
+    - cron-validate(cron校验器)
+      - <a href="https://github.com/Airfooox/cron-validate" target="_blank noopener noreferrer">Airfooox/cron-validate</a>
+    - bree(cron/date等时间调度器封装)
+      - <a href="https://github.com/breejs/bree" target="_blank noopener noreferrer">breejs/bree</a>
+    - bull(基于reids的队列/调度器)
+      - <a href="https://github.com/OptimalBits/bull" target="_blank noopener noreferrer">OptimalBits/bull</a>
+    - node-schedule
+      - <a href="https://github.com/node-schedule/node-schedule" target="_blank noopener noreferrer">node-schedule/node-schedule</a>
+    - cronstrue(将cron表达式转为语义化表达文字)
+      - <a href="https://github.com/bradymholt/cRonstrue" target="_blank noopener noreferrer">bradymholt/cRonstrue</a>
+    - bee-queue(基于redis的队列)
+      - <a href="https://github.com/bee-queue/bee-queue" target="_blank noopener noreferrer">bee-queue/bee-queue</a>
+    - agenda系列
+      - agenda(基于mongodb的调度器)
+        - <a href="https://github.com/agenda/agenda" target="_blank noopener noreferrer">agenda/agenda</a>
+      - hokify/agenda(一个TS重写版本/冷门)
+        - <a href="https://github.com/hokify/agenda" target="_blank noopener noreferrer">hokify/agenda</a>
+    - cron-schedule(cron表达式解析器/支持browser)
+      - <a href="https://github.com/P4sca1/cron-schedule" target="_blank noopener noreferrer">P4sca1/cron-schedule</a>
+    - croner(获取cron下个时间工具/支持browser)
+      - <a href="https://github.com/Hexagon/croner" target="_blank noopener noreferrer">Hexagon/croner</a>
+    - later(语义化cron生成器/支持browser)
+      - <a href="https://github.com/breejs/later" target="_blank noopener noreferrer">breejs/later</a>
+    - croner(支持browser)
+      - <a href="https://github.com/hexagon/croner" target="_blank noopener noreferrer">hexagon/croner</a>
+    - toad-scheduler(定时任务调度管理/冷门)
+      - <a href="https://github.com/kibertoad/toad-scheduler" target="_blank noopener noreferrer">kibertoad/toad-scheduler</a>
+    - rrule(获取所有发生的时间列表)
+      - <a href="https://github.com/jakubroztocil/rrule" target="_blank noopener noreferrer">jakubroztocil/rrule</a>
+  - image图片处理系列
+    - jimp(图片处理库)
+      - <a href="https://github.com/jimp-dev/jimp" target="_blank noopener noreferrer">jimp-dev/jimp</a>
+    - sharp(高性能图片处理)
+      - <a href="https://github.com/lovell/sharp" target="_blank noopener noreferrer">lovell/sharp</a>
+    - node-images(旧)
+      - <a href="https://github.com/zhangyuanwei/node-images" target="_blank noopener noreferrer">zhangyuanwei/node-images</a>
+    - gm(旧)
+      - <a href="https://github.com/aheckmann/gm" target="_blank noopener noreferrer">aheckmann/gm</a>
+    - webp-converter(转webp)
+      - <a href="https://github.com/scionoftech/webp-converter" target="_blank noopener noreferrer">scionoftech/webp-converter</a>
+    - is-png(判断png)
+      - <a href="https://github.com/sindresorhus/is-png" target="_blank noopener noreferrer">sindresorhus/is-png</a>
+    - Image(rust编写/冷门)
+      - <a href="https://github.com/Brooooooklyn/Image" target="_blank noopener noreferrer">Brooooooklyn/Image</a>
+    - svgo(node/svg压缩)
+      - <a href="https://github.com/svg/svgo" target="_blank noopener noreferrer">svg/svgo</a>
+    - tinify(tiny-png nodejs sdk/需要申请key)
+      - <a href="https://github.com/tinify/tinify-nodejs" target="_blank noopener noreferrer">tinify/tinify-nodejs</a>
+    - node-potrace(给图片生成svg描边图/冷门)
+      - <a href="https://github.com/iwsfg/node-potrace" target="_blank noopener noreferrer">iwsfg/node-potrace</a>
+    - canny-edge-detection(图片轮廓提取/冷门老)
+      - <a href="https://github.com/cmisenas/canny-edge-detection" target="_blank noopener noreferrer">cmisenas/canny-edge-detection</a>
+    - diff图片差异对比系列
+      - looks-same(比较图片差异/比较粗)
+        - <a href="https://github.com/gemini-testing/looks-same" target="_blank noopener noreferrer">gemini-testing/looks-same</a>
+      - Resemble.js(图像分析和比较库)
+        - <a href="https://github.com/rsmbl/Resemble.js" target="_blank noopener noreferrer">rsmbl/Resemble.js</a>
+      - pixelmatch(图片像素级对比)
+        - <a href="https://github.com/mapbox/pixelmatch" target="_blank noopener noreferrer">mapbox/pixelmatch</a>
+      - odiff(对比图片差异)
+        - <a href="https://github.com/dmtrKovalenko/odiff" target="_blank noopener noreferrer">dmtrKovalenko/odiff</a>
+      - ssim(获取图片相似度)
+        - <a href="https://github.com/obartra/ssim" target="_blank noopener noreferrer">obartra/ssim</a>
+    - decode解码系列
+      - UPNG.js(png/apng编码/解码器)
+        - <a href="https://github.com/photopea/UPNG.js" target="_blank noopener noreferrer">photopea/UPNG.js</a>
+      - jxl.js(jpeg xl解码器)
+        - <a href="https://github.com/niutech/jxl.js" target="_blank noopener noreferrer">niutech/jxl.js</a>
+      - jpeg-js(jpg编码/解码)
+        - <a href="https://github.com/jpeg-js/jpeg-js" target="_blank noopener noreferrer">jpeg-js/jpeg-js</a>
+    - node-html-to-image(html生成图片)
+      - <a href="https://github.com/frinyvonnick/node-html-to-image" target="_blank noopener noreferrer">frinyvonnick/node-html-to-image</a>
+    - resvg-js(svg渲染器/svg转png)
+      - <a href="https://github.com/yisibl/resvg-js" target="_blank noopener noreferrer">yisibl/resvg-js</a>
+    - to-ico(转ico格式工具)
+      - <a href="https://github.com/kevva/to-ico" target="_blank noopener noreferrer">kevva/to-ico</a>
+    - jpeg-autorotate(jpg图片压缩器)
+      - <a href="https://github.com/johansatge/jpeg-autorotate" target="_blank noopener noreferrer">johansatge/jpeg-autorotate</a>
+    - blur/placeholder图片模糊占位系列
+      - qip系列(文件模糊缩略图)
+        - lqip
+          - <a href="https://github.com/zouhir/lqip" target="_blank noopener noreferrer">zouhir/lqip</a>
+        - sqip
+          - <a href="https://github.com/axe312ger/sqip" target="_blank noopener noreferrer">axe312ger/sqip</a>
+      - blurhash(模糊hash方案实现)
+        - <a href="https://github.com/woltapp/blurhash/tree/master/TypeScript" target="_blank noopener noreferrer">woltapp/blurhash/tree/master/TypeScript</a>
+      - unpic-placeholder(将blurhash纯css化)
+        - <a href="https://github.com/ascorbic/unpic-placeholder" target="_blank noopener noreferrer">ascorbic/unpic-placeholder</a>
+      - thumbhash(esbuild作者/图片模糊hash实现)
+        - <a href="https://github.com/evanw/thumbhash" target="_blank noopener noreferrer">evanw/thumbhash</a>
+    - 11ty/eleventy-img(图片多格式/多大小生成器)
+      - <a href="https://github.com/11ty/eleventy-img" target="_blank noopener noreferrer">11ty/eleventy-img</a>
+    - compress图片压缩系列
+      - imgaemin系列
+        - optimizt(压缩图片的cli)
+          - <a href="https://github.com/funbox/optimizt" target="_blank noopener noreferrer">funbox/optimizt</a>
+        - imagemin(unmaintained)
+          - <a href="https://github.com/imagemin/imagemin" target="_blank noopener noreferrer">imagemin/imagemin</a>
+        - node-pngquant-native(冷)
+          - <a href="https://github.com/xiangshouding/node-pngquant-native" target="_blank noopener noreferrer">xiangshouding/node-pngquant-native</a>
+        - jpegtran-bin
+          - <a href="https://github.com/imagemin/jpegtran-bin" target="_blank noopener noreferrer">imagemin/jpegtran-bin</a>
+        - gifsicle-bin
+          - <a href="https://github.com/imagemin/gifsicle-bin" target="_blank noopener noreferrer">imagemin/gifsicle-bin</a>
+      - png压缩系列
+        - pngquant
+          - <a href="https://github.com/kornelski/pngquant" target="_blank noopener noreferrer">kornelski/pngquant</a>
+        - oxipng
+          - <a href="https://github.com/shssoichiro/oxipng" target="_blank noopener noreferrer">shssoichiro/oxipng</a>
+        - advancemame
+          - <a href="https://github.com/amadvance/advancemame" target="_blank noopener noreferrer">amadvance/advancemame</a>
+    - fast-png(纯js实现的png解析库)
+      - <a href="https://github.com/image-js/fast-png" target="_blank noopener noreferrer">image-js/fast-png</a>
+    - size获取系列
+      - image-size
+        - <a href="https://github.com/image-size/image-size" target="_blank noopener noreferrer">image-size/image-size</a>
+      - image-dimensions
+        - <a href="https://github.com/sindresorhus/image-dimensions" target="_blank noopener noreferrer">sindresorhus/image-dimensions</a>
+    - wasm-image-optimization(wasm压缩图片/支持CF worker)
+      - <a href="https://github.com/node-libraries/wasm-image-optimization" target="_blank noopener noreferrer">node-libraries/wasm-image-optimization</a>
+  - node-rate-limiter-flexible(限制请求数工具)
+    - <a href="https://github.com/animir/node-rate-limiter-flexible" target="_blank noopener noreferrer">animir/node-rate-limiter-flexible</a>
+  - oso(一个鉴权方案api)
+    - <a href="https://github.com/osohq/oso" target="_blank noopener noreferrer">osohq/oso</a>
+  - kill-port(干掉运行在指定端口的进程)
+    - <a href="https://github.com/tiaanduplessis/kill-port" target="_blank noopener noreferrer">tiaanduplessis/kill-port</a>
+  - regex匹配系列
+    - ansi-regex(匹配ansi颜色转义符)
+      - <a href="https://github.com/chalk/ansi-regex" target="_blank noopener noreferrer">chalk/ansi-regex</a>
+    - node-re2(re2的node实现)
+      - <a href="https://github.com/uhop/node-re2" target="_blank noopener noreferrer">uhop/node-re2</a>
+    - re2js(re2实现/支持browser)
+      - <a href="https://github.com/le0pard/re2js" target="_blank noopener noreferrer">le0pard/re2js</a>
+  - dockerode(docker api)
+    - <a href="https://github.com/apocas/dockerode" target="_blank noopener noreferrer">apocas/dockerode</a>
+  - node-dark-mode(控制mac dark模式切换)
+    - <a href="https://github.com/sindresorhus/node-dark-mode" target="_blank noopener noreferrer">sindresorhus/node-dark-mode</a>
+  - is-valid-path(校验path是否合法)
+    - <a href="https://github.com/jonschlinkert/is-valid-path" target="_blank noopener noreferrer">jonschlinkert/is-valid-path</a>
+  - port系列
+    - portfinder(查看port情况)
+      - <a href="https://github.com/http-party/node-portfinder" target="_blank noopener noreferrer">http-party/node-portfinder</a>
+    - get-port(获取可用port)
+      - <a href="https://github.com/sindresorhus/get-port" target="_blank noopener noreferrer">sindresorhus/get-port</a>
+    - get-ports(一次获取多个port)
+      - <a href="https://github.com/Jam3/get-ports" target="_blank noopener noreferrer">Jam3/get-ports</a>
+    - port-authority(更精准的寻找port)
+      - <a href="https://github.com/Rich-Harris/port-authority" target="_blank noopener noreferrer">Rich-Harris/port-authority</a>
+    - detect-port(淘系自研的)
+      - <a href="https://github.com/node-modules/detect-port" target="_blank noopener noreferrer">node-modules/detect-port</a>
+  - file-type(buffer/typedarray判断)
+    - <a href="https://github.com/sindresorhus/file-type" target="_blank noopener noreferrer">sindresorhus/file-type</a>
+  - wallpaper(获取/设定当前桌面屏幕)
+    - <a href="https://github.com/sindresorhus/wallpaper" target="_blank noopener noreferrer">sindresorhus/wallpaper</a>
+  - parse-json(解析json/附带更多提示)
+    - <a href="https://github.com/sindresorhus/parse-json" target="_blank noopener noreferrer">sindresorhus/parse-json</a>
+  - 虚拟dom系列(nodejs)
+    - jsdom(nodejs虚拟dom)
+      - <a href="https://github.com/jsdom/jsdom" target="_blank noopener noreferrer">jsdom/jsdom</a>
+    - happy-dom(jsdom的替代品)
+      - <a href="https://github.com/capricorn86/happy-dom" target="_blank noopener noreferrer">capricorn86/happy-dom</a>
+  - reflect-metadata
+    - <a href="https://github.com/rbuckton/reflect-metadata" target="_blank noopener noreferrer">rbuckton/reflect-metadata</a>
+  - juice(外链style转内联css)
+    - <a href="https://github.com/Automattic/juice" target="_blank noopener noreferrer">Automattic/juice</a>
+  - is-core-module(判断是否是nodejs核心模块)
+    - <a href="https://github.com/inspect-js/is-core-module" target="_blank noopener noreferrer">inspect-js/is-core-module</a>
+  - node-config(读配置文件的方案)
+    - <a href="https://github.com/lorenwest/node-config" target="_blank noopener noreferrer">lorenwest/node-config</a>
+  - active-win(获取活动窗口的元数据)
+    - <a href="https://github.com/sindresorhus/active-win" target="_blank noopener noreferrer">sindresorhus/active-win</a>
+  - requireindex(将同层文件导出打包在一起)
+    - <a href="https://github.com/stephenhandley/requireindex" target="_blank noopener noreferrer">stephenhandley/requireindex</a>
+  - read-chunk(按块读取文件)
+    - <a href="https://github.com/sindresorhus/read-chunk" target="_blank noopener noreferrer">sindresorhus/read-chunk</a>
+  - request/nodejs请求系列
+    - urllib(ali底层http模块)
+      - <a href="https://github.com/node-modules/urllib" target="_blank noopener noreferrer">node-modules/urllib</a>
+    - undici(nodejs底层http模块/更快)
+      - undici
+        - <a href="https://github.com/nodejs/undici" target="_blank noopener noreferrer">nodejs/undici</a>
+      - undici-fetch
+        - <a href="https://github.com/Ethan-Arrowood/undici-fetch" target="_blank noopener noreferrer">Ethan-Arrowood/undici-fetch</a>
+    - node-fetch
+      - <a href="https://github.com/node-fetch/node-fetch" target="_blank noopener noreferrer">node-fetch/node-fetch</a>
+    - needle
+      - <a href="https://github.com/tomas/needle" target="_blank noopener noreferrer">tomas/needle</a>
+    - gaxios(基于node-fetch封装成axios接口)
+      - <a href="https://github.com/googleapis/gaxios" target="_blank noopener noreferrer">googleapis/gaxios</a>
+    - @remix-run/web-fetch(更基于标准的fetch实现)
+      - <a href="https://www.npmjs.com/package/@remix-run/web-fetch" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - cacheable-request(http request缓存器)
+      - <a href="https://github.com/jaredwray/cacheable-request" target="_blank noopener noreferrer">jaredwray/cacheable-request</a>
+    - make-fetch-happen(npm做的fetch包装)
+      - <a href="https://github.com/npm/make-fetch-happen" target="_blank noopener noreferrer">npm/make-fetch-happen</a>
+    - got系列
+      - got
+        - <a href="https://github.com/sindresorhus/got" target="_blank noopener noreferrer">sindresorhus/got</a>
+      - got-cjs
+        - <a href="https://github.com/apify/got-cjs" target="_blank noopener noreferrer">apify/got-cjs</a>
+  - 异步操作系列
+    - p-queue(限速promise队列)
+      - <a href="https://github.com/sindresorhus/p-queue" target="_blank noopener noreferrer">sindresorhus/p-queue</a>
+    - promise-pool(并发限速)
+      - <a href="https://github.com/supercharge/promise-pool" target="_blank noopener noreferrer">supercharge/promise-pool</a>
+    - opossum(nodejs异步断路器)
+      - <a href="https://github.com/nodeshift/opossum" target="_blank noopener noreferrer">nodeshift/opossum</a>
+    - p-limit(异步并发限制池)
+      - <a href="https://github.com/sindresorhus/p-limit" target="_blank noopener noreferrer">sindresorhus/p-limit</a>
+    - p-map(Promise.all支持设定并发数和失败策略)
+      - <a href="https://github.com/sindresorhus/p-map" target="_blank noopener noreferrer">sindresorhus/p-map</a>
+    - async-sema
+      - <a href="https://github.com/vercel/async-sema" target="_blank noopener noreferrer">vercel/async-sema</a>
+    - async(异步函数大全)
+      - <a href="https://github.com/caolan/async" target="_blank noopener noreferrer">caolan/async</a>
+    - p-lazy(延迟执行的promise)
+      - <a href="https://github.com/sindresorhus/p-lazy" target="_blank noopener noreferrer">sindresorhus/p-lazy</a>
+    - queue(异步并发队列工具/冷门)
+      - <a href="https://github.com/jessetane/queue" target="_blank noopener noreferrer">jessetane/queue</a>
+  - mail邮件系列
+    - nodemailer
+      - <a href="https://github.com/nodemailer/nodemailer" target="_blank noopener noreferrer">nodemailer/nodemailer</a>
+    - maildev(本地测试邮件服务)
+      - <a href="https://github.com/maildev/maildev" target="_blank noopener noreferrer">maildev/maildev</a>
+    - mailgun.js(mailgun sdk)
+      - <a href="https://github.com/mailgun/mailgun.js" target="_blank noopener noreferrer">mailgun/mailgun.js</a>
+    - jsx-mail(jsx编写邮件/冷门)
+      - <a href="https://github.com/Theryston/jsx-mail" target="_blank noopener noreferrer">Theryston/jsx-mail</a>
+    - Haraka(smtp服务器)
+      - <a href="https://github.com/haraka/Haraka" target="_blank noopener noreferrer">haraka/Haraka</a>
+    - mailparser(邮件解析器)
+      - <a href="https://github.com/nodemailer/mailparser" target="_blank noopener noreferrer">nodemailer/mailparser</a>
+    - node-imap(imap收邮件客户端)
+      - <a href="https://github.com/mscdex/node-imap" target="_blank noopener noreferrer">mscdex/node-imap</a>
+  - ws系列
+    - nodejs-websocket
+      - <a href="https://github.com/sitegui/nodejs-websocket" target="_blank noopener noreferrer">sitegui/nodejs-websocket</a>
+    - ws
+      - <a href="https://github.com/websockets/ws" target="_blank noopener noreferrer">websockets/ws</a>
+    - sockjs
+      - <a href="https://github.com/sockjs/sockjs-node" target="_blank noopener noreferrer">sockjs/sockjs-node</a>
+      - <a href="https://github.com/sockjs/sockjs-client" target="_blank noopener noreferrer">sockjs/sockjs-client</a>
+    - socket.io
+      - <a href="https://github.com/socketio/socket.io" target="_blank noopener noreferrer">socketio/socket.io</a>
+    - faye-websocket-node
+      - <a href="https://github.com/faye/faye-websocket-node" target="_blank noopener noreferrer">faye/faye-websocket-node</a>
+    - socketcluster
+      - <a href="https://github.com/SocketCluster/socketcluster" target="_blank noopener noreferrer">SocketCluster/socketcluster</a>
+    - sockette(最小的)
+      - <a href="https://github.com/lukeed/sockette" target="_blank noopener noreferrer">lukeed/sockette</a>
+    - feathers(基于ws的框架)
+      - <a href="https://github.com/feathersjs/feathers" target="_blank noopener noreferrer">feathersjs/feathers</a>
+    - engine.io
+      - <a href="https://github.com/socketio/engine.io" target="_blank noopener noreferrer">socketio/engine.io</a>
+    - fastify-websocket
+      - <a href="https://github.com/fastify/fastify-websocket" target="_blank noopener noreferrer">fastify/fastify-websocket</a>
+  - 打包系列
+    - 打包为二进制
+      - caxa
+        - <a href="https://github.com/leafac/caxa" target="_blank noopener noreferrer">leafac/caxa</a>
+      - pkg
+        - <a href="https://github.com/vercel/pkg" target="_blank noopener noreferrer">vercel/pkg</a>
+      - nexe
+        - <a href="https://github.com/nexe/nexe" target="_blank noopener noreferrer">nexe/nexe</a>
+    - 整合单文件
+      - ncc
+        - <a href="https://github.com/vercel/ncc" target="_blank noopener noreferrer">vercel/ncc</a>
+  - xml系列
+    - fast-xml-parser
+      - <a href="https://github.com/NaturalIntelligence/fast-xml-parser" target="_blank noopener noreferrer">NaturalIntelligence/fast-xml-parser</a>
+    - xml2js(解析xml)
+      - <a href="https://github.com/Leonidas-from-XIV/node-xml2js" target="_blank noopener noreferrer">Leonidas-from-XIV/node-xml2js</a>
+    - libxmljs(解析xml)
+      - <a href="https://github.com/libxmljs/libxmljs" target="_blank noopener noreferrer">libxmljs/libxmljs</a>
+    - sax-js(流式解析xml/html)
+      - <a href="https://github.com/isaacs/sax-js" target="_blank noopener noreferrer">isaacs/sax-js</a>
+    - js2xmlparser(js对象转成xml)
+      - <a href="https://github.com/michaelkourlas/node-js2xmlparser" target="_blank noopener noreferrer">michaelkourlas/node-js2xmlparser</a>
+    - xmlbuilder2(xml生成器)
+      - <a href="https://github.com/oozcitak/xmlbuilder2" target="_blank noopener noreferrer">oozcitak/xmlbuilder2</a>
+    - camaro(xml转json)
+      - <a href="https://github.com/tuananh/camaro" target="_blank noopener noreferrer">tuananh/camaro</a>
+  - xlsx解析系列
+    - node-xlsx
+      - <a href="https://github.com/mgcrea/node-xlsx" target="_blank noopener noreferrer">mgcrea/node-xlsx</a>
+    - xlsx-extract
+      - <a href="https://github.com/ffalt/xlsx-extract" target="_blank noopener noreferrer">ffalt/xlsx-extract</a>
+  - 字符编码系列
+    - iconv-lite(转换字符串编码)
+      - <a href="https://github.com/ashtuchkin/iconv-lite" target="_blank noopener noreferrer">ashtuchkin/iconv-lite</a>
+    - node-chardet(编码检测)
+      - <a href="https://github.com/runk/node-chardet" target="_blank noopener noreferrer">runk/node-chardet</a>
+    - encoding.js(检测转换日文/browser可用)
+      - <a href="https://github.com/polygonplanet/encoding.js" target="_blank noopener noreferrer">polygonplanet/encoding.js</a>
+  - JSON/序列化系列
+    - json.stringify系列
+      - @nuxt/devalue(JSON.stringify加强版)
+        - <a href="https://github.com/nuxt-contrib/devalue" target="_blank noopener noreferrer">nuxt-contrib/devalue</a>
+      - json-stringify-safe
+        - <a href="https://github.com/moll/json-stringify-safe" target="_blank noopener noreferrer">moll/json-stringify-safe</a>
+      - fast-json-stringify(2倍速json序列化)
+        - <a href="https://github.com/fastify/fast-json-stringify" target="_blank noopener noreferrer">fastify/fast-json-stringify</a>
+      - slow-json-stringify(老)
+        - <a href="https://github.com/lucagez/slow-json-stringify" target="_blank noopener noreferrer">lucagez/slow-json-stringify</a>
+      - safe-json-value(安全的序列化)
+        - <a href="https://github.com/ehmicky/safe-json-value" target="_blank noopener noreferrer">ehmicky/safe-json-value</a>
+      - typescript-json(快5倍的stringify/需要搭配ts)
+        - <a href="https://github.com/samchon/typescript-json" target="_blank noopener noreferrer">samchon/typescript-json</a>
+      - json-stable-stringify(确定性的json.stringify/hash一致)
+        - <a href="https://github.com/ljharb/json-stable-stringify" target="_blank noopener noreferrer">ljharb/json-stable-stringify</a>
+    - 流式读取大json
+      - JSONStream
+        - <a href="https://github.com/dominictarr/JSONStream" target="_blank noopener noreferrer">dominictarr/JSONStream</a>
+      - jsonparse(jsonstream底层)
+        - <a href="https://github.com/creationix/jsonparse" target="_blank noopener noreferrer">creationix/jsonparse</a>
+      - jsonstream2(冷)
+        - <a href="https://github.com/sergioramos/jsonstream2" target="_blank noopener noreferrer">sergioramos/jsonstream2</a>
+      - jsonstream-next(冷)
+        - <a href="https://github.com/yocontra/JSONStream" target="_blank noopener noreferrer">yocontra/JSONStream</a>
+      - stream-json
+        - <a href="https://github.com/uhop/stream-json" target="_blank noopener noreferrer">uhop/stream-json</a>
+      - big-json(冷)
+        - <a href="https://github.com/DonutEspresso/big-json" target="_blank noopener noreferrer">DonutEspresso/big-json</a>
+      - streamparser-json
+        - <a href="https://github.com/juanjoDiaz/streamparser-json" target="_blank noopener noreferrer">juanjoDiaz/streamparser-json</a>
+    - json.parse系列
+      - destr(更快的json.parse)
+        - <a href="https://github.com/unjs/destr" target="_blank noopener noreferrer">unjs/destr</a>
+      - secure-json-parse
+        - <a href="https://github.com/fastify/secure-json-parse" target="_blank noopener noreferrer">fastify/secure-json-parse</a>
+      - bourne
+        - <a href="https://github.com/hapijs/bourne" target="_blank noopener noreferrer">hapijs/bourne</a>
+    - js-bson(二进制读写json)
+      - <a href="https://github.com/mongodb/js-bson" target="_blank noopener noreferrer">mongodb/js-bson</a>
+    - json5系列
+      - comment-json(解析带注释的json)
+        - <a href="https://github.com/kaelzhang/node-comment-json" target="_blank noopener noreferrer">kaelzhang/node-comment-json</a>
+      - json5
+        - <a href="https://github.com/json5/json5" target="_blank noopener noreferrer">json5/json5</a>
+      - node-jsonc-parser
+        - <a href="https://github.com/microsoft/node-jsonc-parser" target="_blank noopener noreferrer">microsoft/node-jsonc-parser</a>
+    - typescript-json-serializer(json/ts class序列化工具)
+      - <a href="https://github.com/GillianPerard/typescript-json-serializer" target="_blank noopener noreferrer">GillianPerard/typescript-json-serializer</a>
+  - sandbox隔离运行沙箱系列
+    - vm2
+      - <a href="https://github.com/patriksimek/vm2" target="_blank noopener noreferrer">patriksimek/vm2</a>
+    - safeify(冷)
+      - <a href="https://github.com/Houfeng/safeify" target="_blank noopener noreferrer">Houfeng/safeify</a>
+  - proxy代理系列
+    - node-pac-resolver(识别pac验证网址)
+      - <a href="https://github.com/TooTallNate/node-pac-resolver" target="_blank noopener noreferrer">TooTallNate/node-pac-resolver</a>
+    - node-http-proxy(基于原生http的代理)
+      - <a href="https://github.com/http-party/node-http-proxy" target="_blank noopener noreferrer">http-party/node-http-proxy</a>
+    - cord-anywhere(代理附加cors跨域头)
+      - <a href="https://github.com/Rob--W/cors-anywhere" target="_blank noopener noreferrer">Rob--W/cors-anywhere</a>
+    - http-proxy-middleware
+      - <a href="https://github.com/chimurai/http-proxy-middleware" target="_blank noopener noreferrer">chimurai/http-proxy-middleware</a>
+  - serve服务系列
+    - http-server(0配置server)
+      - <a href="https://github.com/http-party/http-server" target="_blank noopener noreferrer">http-party/http-server</a>
+    - live-server
+      - <a href="https://github.com/tapio/live-server" target="_blank noopener noreferrer">tapio/live-server</a>
+    - serve
+      - <a href="https://github.com/vercel/serve" target="_blank noopener noreferrer">vercel/serve</a>
+    - directory-serve(生成二维码方便手机用)
+      - <a href="https://github.com/cube-root/directory-serve" target="_blank noopener noreferrer">cube-root/directory-serve</a>
+  - public-static静态资源提供系列
+    - sirv(提供publicDir功能工具)
+      - <a href="https://github.com/lukeed/sirv" target="_blank noopener noreferrer">lukeed/sirv</a>
+    - send(流式提供资源的服务)
+      - <a href="https://github.com/pillarjs/send" target="_blank noopener noreferrer">pillarjs/send</a>
+  - stream流处理/操作系列
+    - pump(stream流处理库/流安全)
+      - <a href="https://github.com/mafintosh/pump" target="_blank noopener noreferrer">mafintosh/pump</a>
+    - event-stream(不维护了)
+      - <a href="https://github.com/dominictarr/event-stream" target="_blank noopener noreferrer">dominictarr/event-stream</a>
+    - stromjs(操作stream函数库)
+      - <a href="https://github.com/lewisdiamond/stromjs" target="_blank noopener noreferrer">lewisdiamond/stromjs</a>
+    - QuickReader(高性能流读取器/边下载变读)
+      - <a href="https://github.com/EtherDream/QuickReader" target="_blank noopener noreferrer">EtherDream/QuickReader</a>
+    - StreamSaver.js(流式下载)
+      - <a href="https://github.com/jimmywarting/StreamSaver.js" target="_blank noopener noreferrer">jimmywarting/StreamSaver.js</a>
+  - download下载系列
+    - download
+      - <a href="https://github.com/kevva/download" target="_blank noopener noreferrer">kevva/download</a>
+    - node-downloader-helper
+      - <a href="https://github.com/hgouveia/node-downloader-helper" target="_blank noopener noreferrer">hgouveia/node-downloader-helper</a>
+  - v8系列
+    - jsvu(快速安装js引擎的工具)
+      - <a href="https://github.com/GoogleChromeLabs/jsvu" target="_blank noopener noreferrer">GoogleChromeLabs/jsvu</a>
+    - v8-profiler-next(v8分析器sdk)
+      - <a href="https://github.com/hyj1991/v8-profiler-next" target="_blank noopener noreferrer">hyj1991/v8-profiler-next</a>
+  - 算法工具
+    - yallist(双向链表)
+      - <a href="https://github.com/isaacs/yallist" target="_blank noopener noreferrer">isaacs/yallist</a>
+    - fastq(nodejs队列实现)
+      - <a href="https://github.com/mcollina/fastq" target="_blank noopener noreferrer">mcollina/fastq</a>
+    - yocto-queue(微型队列)
+      - <a href="https://github.com/sindresorhus/yocto-queue" target="_blank noopener noreferrer">sindresorhus/yocto-queue</a>
+    - js-sdsl(c++stl同样的算法工具库)
+      - <a href="https://github.com/js-sdsl/js-sdsl" target="_blank noopener noreferrer">js-sdsl/js-sdsl</a>
+    - noble-curves(椭圆曲线实现)
+      - <a href="https://github.com/paulmillr/noble-curves" target="_blank noopener noreferrer">paulmillr/noble-curves</a>
+    - node-timsort(快速排序)
+      - <a href="https://github.com/mziccard/node-timsort" target="_blank noopener noreferrer">mziccard/node-timsort</a>
+  - modern现代化系列
+    - swc系列
+      - swc
+        - <a href="https://github.com/swc-project/swc" target="_blank noopener noreferrer">swc-project/swc</a>
+      - swc-loader
+        - <a href="https://github.com/swc-project/swc-loader" target="_blank noopener noreferrer">swc-project/swc-loader</a>
+      - swc-node(napi封的swc)
+        - <a href="https://github.com/swc-project/swc-node" target="_blank noopener noreferrer">swc-project/swc-node</a>
+      - swc/plugins(一些swc插件)
+        - <a href="https://github.com/swc-project/plugins" target="_blank noopener noreferrer">swc-project/plugins</a>
+      - swc-plugin-vue-jsx(转译vue jsx插件)
+        - <a href="https://github.com/g-plane/swc-plugin-vue-jsx" target="_blank noopener noreferrer">g-plane/swc-plugin-vue-jsx</a>
+      - swc-ast-viewer(ast查看面板/信息更好)
+        - <a href="https://github.com/magic-akari/swc-ast-viewer" target="_blank noopener noreferrer">magic-akari/swc-ast-viewer</a>
+    - esbuild系列
+      - esbuild-node-loader(esbuild+ts node运行时)
+        - <a href="https://github.com/antfu/esbuild-node-loader" target="_blank noopener noreferrer">antfu/esbuild-node-loader</a>
+      - esbuild-registry(node -r运行时)
+        - <a href="https://github.com/egoist/esbuild-register" target="_blank noopener noreferrer">egoist/esbuild-register</a>
+      - esbuild-runner(node esbuild运行时)
+        - <a href="https://github.com/folke/esbuild-runner" target="_blank noopener noreferrer">folke/esbuild-runner</a>
+      - esbuild-plugin-less(支持less/冷门)
+        - <a href="https://github.com/iam-medvedev/esbuild-plugin-less" target="_blank noopener noreferrer">iam-medvedev/esbuild-plugin-less</a>
+      - browserslist-to-esbuild(将browserlist配置转为esbuild格式)
+        - <a href="https://github.com/marcofugaro/browserslist-to-esbuild" target="_blank noopener noreferrer">marcofugaro/browserslist-to-esbuild</a>
+      - esbuild
+        - <a href="https://github.com/evanw/esbuild" target="_blank noopener noreferrer">evanw/esbuild</a>
+    - esm native兼容系列
+      - simport(兼容方案)
+        - <a href="https://github.com/coderaiser/simport" target="_blank noopener noreferrer">coderaiser/simport</a>
+      - import-meta-resolve(esm模块查找/冷门门)
+        - <a href="https://github.com/wooorm/import-meta-resolve" target="_blank noopener noreferrer">wooorm/import-meta-resolve</a>
+      - mlly(esm导入兼容方法)
+        - <a href="https://github.com/unjs/mlly" target="_blank noopener noreferrer">unjs/mlly</a>
+    - css系列
+      - pasecss(go的css selector遍历器)
+        - <a href="https://github.com/yisar/peacecss" target="_blank noopener noreferrer">yisar/peacecss</a>
+      - lightningcss
+        - <a href="https://github.com/parcel-bundler/lightningcss" target="_blank noopener noreferrer">parcel-bundler/lightningcss</a>
+    - ts-runtime运行时系列
+      - jiti
+        - <a href="https://github.com/unjs/jiti" target="_blank noopener noreferrer">unjs/jiti</a>
+      - ts-eager(esbuild基础/陈旧)
+        - <a href="https://github.com/bustle/ts-eager" target="_blank noopener noreferrer">bustle/ts-eager</a>
+      - esno
+        - <a href="https://github.com/esbuild-kit/esno" target="_blank noopener noreferrer">esbuild-kit/esno</a>
+      - tsx
+        - <a href="https://github.com/esbuild-kit/tsx" target="_blank noopener noreferrer">esbuild-kit/tsx</a>
+    - nitro(nuxt3编译服务器)
+      - <a href="https://github.com/unjs/nitro" target="_blank noopener noreferrer">unjs/nitro</a>
+    - modernweb-dev/web(现代工具集文档总结)
+      - <a href="https://github.com/modernweb-dev/web" target="_blank noopener noreferrer">modernweb-dev/web</a>
+    - unimport(类似lowimport)
+      - <a href="https://github.com/unjs/unimport" target="_blank noopener noreferrer">unjs/unimport</a>
+    - import/export导入导出分析系列
+      - es-module-lexer(快速解析es模块词法)
+        - <a href="https://github.com/guybedford/es-module-lexer" target="_blank noopener noreferrer">guybedford/es-module-lexer</a>
+      - cjs-module-lexer(分析cjs导出exports)
+        - <a href="https://github.com/nodejs/cjs-module-lexer" target="_blank noopener noreferrer">nodejs/cjs-module-lexer</a>
+      - crequire(分析cjs require)
+        - <a href="https://github.com/seajs/crequire" target="_blank noopener noreferrer">seajs/crequire</a>
+      - magicast(导出ast识别/修改)
+        - <a href="https://github.com/unjs/magicast" target="_blank noopener noreferrer">unjs/magicast</a>
+    - cjs/esm导入相互转换系列
+      - moduloze(将cjs转为esm格式)
+        - <a href="https://github.com/getify/moduloze" target="_blank noopener noreferrer">getify/moduloze</a>
+      - rewrite-imports(esm导入转cjs)
+        - <a href="https://github.com/lukeed/rewrite-imports" target="_blank noopener noreferrer">lukeed/rewrite-imports</a>
+    - esm2cjs(一些esm包的cjs fork版)
+      - <a href="https://github.com/esm2cjs" target="_blank noopener noreferrer">esm2cjs</a>
+    - format系列
+      - dprint系列
+        - dprint
+          - <a href="https://github.com/dprint/dprint" target="_blank noopener noreferrer">dprint/dprint</a>
+        - dprint-node(使用dprint格式化代码)
+          - <a href="https://github.com/devongovett/dprint-node" target="_blank noopener noreferrer">devongovett/dprint-node</a>
+        - dprint-plugin-css
+          - <a href="https://github.com/disrupted/dprint-plugin-css" target="_blank noopener noreferrer">disrupted/dprint-plugin-css</a>
+        - malva(scss/less/css格式化插件/冷门)
+          - <a href="https://github.com/g-plane/malva" target="_blank noopener noreferrer">g-plane/malva</a>
+        - markup_fmt(vue/svelte格式化)
+          - <a href="https://github.com/g-plane/markup_fmt" target="_blank noopener noreferrer">g-plane/markup_fmt</a>
+      - biome系列
+        - rome(rust的prettier替代)
+          - <a href="https://github.com/rome/tools" target="_blank noopener noreferrer">rome/tools</a>
+        - eslint-config-biome
+          - <a href="https://github.com/SrBrahma/eslint-config-biome" target="_blank noopener noreferrer">SrBrahma/eslint-config-biome</a>
+        - biome
+          - <a href="https://github.com/biomejs/biome" target="_blank noopener noreferrer">biomejs/biome</a>
+      - oxc(lint/rust写的)
+        - <a href="https://github.com/oxc-project/oxc" target="_blank noopener noreferrer">oxc-project/oxc</a>
+    - tsc-check替代系列
+      - stc(tsc类型检查替代品)
+        - <a href="https://github.com/dudykr/stc" target="_blank noopener noreferrer">dudykr/stc</a>
+      - ezno
+        - <a href="https://github.com/kaleidawave/ezno" target="_blank noopener noreferrer">kaleidawave/ezno</a>
+  - ssh/terminal终端系列
+    - ssh2(node连接ssh)
+      - <a href="https://github.com/mscdex/ssh2" target="_blank noopener noreferrer">mscdex/ssh2</a>
+    - node-pty(在node模拟shell终端/和xterm搭配)
+      - <a href="https://github.com/microsoft/node-pty" target="_blank noopener noreferrer">microsoft/node-pty</a>
+    - ssh2-sftp-client(sftp)
+      - <a href="https://github.com/theophilusx/ssh2-sftp-client" target="_blank noopener noreferrer">theophilusx/ssh2-sftp-client</a>
+    - xterm系列
+      - xterm.js(网页终端)
+        - <a href="https://github.com/xtermjs/xterm.js" target="_blank noopener noreferrer">xtermjs/xterm.js</a>
+      - xterm-addon-attach(搭配ws传输)
+        - <a href="https://www.npmjs.com/package/xterm-addon-attach" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - webpod(ssh命令执行工具)
+      - <a href="https://github.com/webpod/webpod" target="_blank noopener noreferrer">webpod/webpod</a>
+  - ini解析系列
+    - ini(读取ini格式文件)
+      - <a href="https://github.com/npm/ini" target="_blank noopener noreferrer">npm/ini</a>
+  - https证书生成系列
+    - selfsigned(生成https证书/没有自信任)
+      - <a href="https://github.com/jfromaniello/selfsigned" target="_blank noopener noreferrer">jfromaniello/selfsigned</a>
+    - trusted-cert(ali ice的)
+      - <a href="https://github.com/sprying/trusted-cert" target="_blank noopener noreferrer">sprying/trusted-cert</a>
+  - http2系列
+    - node-spdy
+      - <a href="https://github.com/spdy-http2/node-spdy" target="_blank noopener noreferrer">spdy-http2/node-spdy</a>
+  - locale获取系列
+    - os-locale
+      - <a href="https://github.com/sindresorhus/os-locale" target="_blank noopener noreferrer">sindresorhus/os-locale</a>
+  - script脚本运行系列
+    - package.json#scripts运行系列
+      - npm-run-all(并行串行运行script)
+        - <a href="https://github.com/mysticatea/npm-run-all" target="_blank noopener noreferrer">mysticatea/npm-run-all</a>
+      - concurrently(并发npm script/更优)
+        - <a href="https://github.com/open-cli-tools/concurrently" target="_blank noopener noreferrer">open-cli-tools/concurrently</a>
+      - wireit(支持类turbo关联任务)
+        - <a href="https://github.com/google/wireit" target="_blank noopener noreferrer">google/wireit</a>
+      - cross-os(支持不同os运行不同script/冷门)
+        - <a href="https://github.com/milewski/cross-os" target="_blank noopener noreferrer">milewski/cross-os</a>
+    - task任务运行系列
+      - gulp
+        - <a href="https://github.com/gulpjs/gulp" target="_blank noopener noreferrer">gulpjs/gulp</a>
+      - taskr
+        - <a href="https://github.com/lukeed/taskr" target="_blank noopener noreferrer">lukeed/taskr</a>
+  - pdf系列(node)
+    - pdf2json(node用)
+      - <a href="https://github.com/modesty/pdf2json" target="_blank noopener noreferrer">modesty/pdf2json</a>
+    - pdfkit(nodejs生成pdf)
+      - <a href="https://github.com/foliojs/pdfkit" target="_blank noopener noreferrer">foliojs/pdfkit</a>
+    - npm-pdfreader(从pdf读取文本和表格)
+      - <a href="https://github.com/adrienjoly/npm-pdfreader" target="_blank noopener noreferrer">adrienjoly/npm-pdfreader</a>
+    - html转pdf系列
+      - print-ready(html转pdf/冷门)
+        - <a href="https://github.com/humanwhocodes/print-ready" target="_blank noopener noreferrer">humanwhocodes/print-ready</a>
+      - node-wkhtmltopdf
+        - <a href="https://github.com/devongovett/node-wkhtmltopdf" target="_blank noopener noreferrer">devongovett/node-wkhtmltopdf</a>
+    - pdf转图片系列
+      - pdf-poppler(冷)
+        - <a href="https://github.com/kb47/pdf-poppler" target="_blank noopener noreferrer">kb47/pdf-poppler</a>
+      - pdf-images(依赖于pdfinfo)
+        - <a href="https://github.com/kartik1998/pdf-images" target="_blank noopener noreferrer">kartik1998/pdf-images</a>
+    - node-poppler(使用poppler读取pdf信息)
+      - <a href="https://github.com/Fdawgs/node-poppler" target="_blank noopener noreferrer">Fdawgs/node-poppler</a>
+    - unpdf(pdf操作/冷门)
+      - <a href="https://github.com/unjs/unpdf" target="_blank noopener noreferrer">unjs/unpdf</a>
+    - node-signpdf(pdf签名库)
+      - <a href="https://github.com/vbuch/node-signpdf" target="_blank noopener noreferrer">vbuch/node-signpdf</a>
+  - promisify系列
+    - es6-promisify
+      - <a href="https://github.com/mikehall314/es6-promisify" target="_blank noopener noreferrer">mikehall314/es6-promisify</a>
+    - pify
+      - <a href="https://github.com/sindresorhus/pify" target="_blank noopener noreferrer">sindresorhus/pify</a>
+  - clipboard系统剪贴板系列
+    - clipboardy(访问系剪切板)
+      - <a href="https://github.com/sindresorhus/clipboardy" target="_blank noopener noreferrer">sindresorhus/clipboardy</a>
+    - pb(非命令行/冷门)
+      - <a href="https://github.com/SheetJS/pb" target="_blank noopener noreferrer">SheetJS/pb</a>
+    - Clipboard(基于napi)
+      - <a href="https://github.com/Brooooooklyn/Clipboard" target="_blank noopener noreferrer">Brooooooklyn/Clipboard</a>
+    - node-copy-paste
+      - <a href="https://github.com/xavi-/node-copy-paste" target="_blank noopener noreferrer">xavi-/node-copy-paste</a>
+  - rss系列
+    - RSSHub
+      - <a href="https://github.com/DIYgod/RSSHub" target="_blank noopener noreferrer">DIYgod/RSSHub</a>
+    - RSSHub-Radar(chrome插件/给浏览的页面快速订阅rss)
+      - <a href="https://github.com/DIYgod/RSSHub-Radar" target="_blank noopener noreferrer">DIYgod/RSSHub-Radar</a>
+    - feed(rss生成工具)
+      - <a href="https://github.com/jpmonette/feed" target="_blank noopener noreferrer">jpmonette/feed</a>
+    - eleventy-activity-feed(rss生成/冷门)
+      - <a href="https://github.com/11ty/eleventy-activity-feed" target="_blank noopener noreferrer">11ty/eleventy-activity-feed</a>
+    - RSSWorker(CF worker rss获取工具/支持b站动态)
+      - <a href="https://github.com/yllhwa/RSSWorker" target="_blank noopener noreferrer">yllhwa/RSSWorker</a>
+  - sitemap.js(sitemap生成工具)
+    - <a href="https://github.com/ekalinin/sitemap.js" target="_blank noopener noreferrer">ekalinin/sitemap.js</a>
+  - node-microtime(获取微秒精度的时间)
+    - <a href="https://github.com/wadey/node-microtime" target="_blank noopener noreferrer">wadey/node-microtime</a>
+  - node-soap(soap服务器/客户端)
+    - <a href="https://github.com/vpulim/node-soap" target="_blank noopener noreferrer">vpulim/node-soap</a>
+  - nft(依赖追踪工具/收集可能使用的所有依赖文件列表)
+    - <a href="https://github.com/vercel/nft" target="_blank noopener noreferrer">vercel/nft</a>
+  - npm系列
+    - binary-mirror-config(所有tb源的二进制地址)
+      - <a href="https://github.com/cnpm/binary-mirror-config" target="_blank noopener noreferrer">cnpm/binary-mirror-config</a>
+    - all-the-package-names(所有npm包名)
+      - <a href="https://github.com/nice-registry/all-the-package-names" target="_blank noopener noreferrer">nice-registry/all-the-package-names</a>
+    - npm-high-impact(获取高影响力包)
+      - <a href="https://github.com/wooorm/npm-high-impact" target="_blank noopener noreferrer">wooorm/npm-high-impact</a>
+    - @arethetypeswrong/history(高影响力包合集)
+      - <a href="https://www.npmjs.com/package/@arethetypeswrong/history" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - validate-npm-package-name(校验包名)
+      - <a href="https://github.com/npm/validate-npm-package-name" target="_blank noopener noreferrer">npm/validate-npm-package-name</a>
+    - pacote(获取npm包元信息工具)
+      - <a href="https://github.com/npm/pacote" target="_blank noopener noreferrer">npm/pacote</a>
+    - latest-version(获取npm包最新的版本)
+      - <a href="https://github.com/sindresorhus/latest-version" target="_blank noopener noreferrer">sindresorhus/latest-version</a>
+  - monorepo构建方案
+    - lage(ms)
+      - <a href="https://github.com/microsoft/lage" target="_blank noopener noreferrer">microsoft/lage</a>
+    - lerna
+      - <a href="https://github.com/lerna/lerna" target="_blank noopener noreferrer">lerna/lerna</a>
+    - rushstack
+      - <a href="https://github.com/microsoft/rushstack" target="_blank noopener noreferrer">microsoft/rushstack</a>
+    - lerna-lite(lerna按需取用版/冷门)
+      - <a href="https://github.com/lerna-lite/lerna-lite" target="_blank noopener noreferrer">lerna-lite/lerna-lite</a>
+    - moon(rust写的/冷门)
+      - <a href="https://github.com/moonrepo/moon" target="_blank noopener noreferrer">moonrepo/moon</a>
+    - nx系列
+      - nx
+        - <a href="https://github.com/nrwl/nx" target="_blank noopener noreferrer">nrwl/nx</a>
+      - jscutlery/semver(语义化管理版本发布/插件)
+        - <a href="https://github.com/jscutlery/semver" target="_blank noopener noreferrer">jscutlery/semver</a>
+    - turborepo系列
+      - turborepo
+        - <a href="https://github.com/vercel/turborepo" target="_blank noopener noreferrer">vercel/turborepo</a>
+      - turbocache(缓存server实现)
+        - <a href="https://github.com/promer94/turbocache" target="_blank noopener noreferrer">promer94/turbocache</a>
+      - turbowatch(watch文件变动运行任务)
+        - <a href="https://github.com/gajus/turbowatch" target="_blank noopener noreferrer">gajus/turbowatch</a>
+  - ip系列
+    - public-ip(获取当前电脑的公网ip)
+      - <a href="https://github.com/sindresorhus/public-ip" target="_blank noopener noreferrer">sindresorhus/public-ip</a>
+    - adress(获取ip和mac等)
+      - <a href="https://github.com/node-modules/address" target="_blank noopener noreferrer">node-modules/address</a>
+    - ip-packet(编码解码ip包)
+      - <a href="https://github.com/mafintosh/ip-packet" target="_blank noopener noreferrer">mafintosh/ip-packet</a>
+    - cidr-tools(ipv4/v6操作工具函数)
+      - <a href="https://github.com/silverwind/cidr-tools" target="_blank noopener noreferrer">silverwind/cidr-tools</a>
+    - ip-address(解析操作ipv4/v6)
+      - <a href="https://github.com/beaugunderson/ip-address" target="_blank noopener noreferrer">beaugunderson/ip-address</a>
+  - string-strip-html(xss/从字符串中去除html标签)
+    - <a href="https://github.com/codsen/codsen/tree/main/packages/string-strip-html" target="_blank noopener noreferrer">codsen/codsen/tree/main/packages/string-strip-html</a>
+  - protobuf系列
+    - protobuf.js
+      - <a href="https://github.com/protobufjs/protobuf.js" target="_blank noopener noreferrer">protobufjs/protobuf.js</a>
+    - protoscript(protobuf运行时/代码生成器)
+      - <a href="https://github.com/tatethurston/protoscript" target="_blank noopener noreferrer">tatethurston/protoscript</a>
+    - protobuf-es
+      - <a href="https://github.com/bufbuild/protobuf-es" target="_blank noopener noreferrer">bufbuild/protobuf-es</a>
+  - meta获取网站信息系列
+    - link-preview-js
+      - <a href="https://github.com/ospfranco/link-preview-js" target="_blank noopener noreferrer">ospfranco/link-preview-js</a>
+    - metascraper(抓取网页/文章元信息)
+      - <a href="https://github.com/microlinkhq/metascraper" target="_blank noopener noreferrer">microlinkhq/metascraper</a>
+    - article-parser(给定网页提取文章的工具)
+      - <a href="https://github.com/ndaidong/article-parser" target="_blank noopener noreferrer">ndaidong/article-parser</a>
+    - unfurl(元数据抓取)
+      - <a href="https://github.com/jacktuck/unfurl" target="_blank noopener noreferrer">jacktuck/unfurl</a>
+    - article-extractor(文章信息提取)
+      - <a href="https://github.com/extractus/article-extractor" target="_blank noopener noreferrer">extractus/article-extractor</a>
+    - openGraphScraper(网站og信息抓取)
+      - <a href="https://github.com/jshemas/openGraphScraper" target="_blank noopener noreferrer">jshemas/openGraphScraper</a>
+  - caniuse系列
+    - caniuse-embed(caniuse图床)
+      - <a href="https://github.com/ireade/caniuse-embed" target="_blank noopener noreferrer">ireade/caniuse-embed</a>
+    - css-browser-support(从caniuse和mdn查询css浏览器支持结果)
+      - <a href="https://github.com/5t3ph/css-browser-support" target="_blank noopener noreferrer">5t3ph/css-browser-support</a>
+  - node开发调试重启系列
+    - nodemon(监视更改)
+      - <a href="https://github.com/remy/nodemon" target="_blank noopener noreferrer">remy/nodemon</a>
+    - ts-node-dev(监视重启)
+      - <a href="https://github.com/wclr/ts-node-dev" target="_blank noopener noreferrer">wclr/ts-node-dev</a>
+    - node-dev(热重启)
+      - <a href="https://github.com/fgnass/node-dev" target="_blank noopener noreferrer">fgnass/node-dev</a>
+    - ts-node
+      - <a href="https://github.com/TypeStrong/ts-node" target="_blank noopener noreferrer">TypeStrong/ts-node</a>
+  - fast-querystring(更快的node:querystring)
+    - <a href="https://github.com/anonrig/fast-querystring" target="_blank noopener noreferrer">anonrig/fast-querystring</a>
+  - binary二进制系列
+    - isBinaryFile(检测是否为二进制文件)
+      - <a href="https://github.com/gjtorikian/isBinaryFile" target="_blank noopener noreferrer">gjtorikian/isBinaryFile</a>
+    - binary-parser(二进制解析器)
+      - <a href="https://github.com/keichi/binary-parser" target="_blank noopener noreferrer">keichi/binary-parser</a>
+    - istextorbinary(区分文本/二进制方法)
+      - <a href="https://github.com/bevry/istextorbinary" target="_blank noopener noreferrer">bevry/istextorbinary</a>
+  - bytenode(将js编译成字节码保护)
+    - <a href="https://github.com/bytenode/bytenode" target="_blank noopener noreferrer">bytenode/bytenode</a>
+  - psd/photoshop系列
+    - psd(解析photoshop的psd)
+      - <a href="https://github.com/webtoon/psd" target="_blank noopener noreferrer">webtoon/psd</a>
+    - Photoshop-Export-Layers-to-Files-Fast(图层导出单文件)
+      - <a href="https://github.com/antipalindrome/Photoshop-Export-Layers-to-Files-Fast" target="_blank noopener noreferrer">antipalindrome/Photoshop-Export-Layers-to-Files-Fast</a>
+    - ag-psd(强大的psd解析)
+      - <a href="https://github.com/Agamnentzar/ag-psd" target="_blank noopener noreferrer">Agamnentzar/ag-psd</a>
+    - psd.js(老)
+      - <a href="https://github.com/meltingice/psd.js" target="_blank noopener noreferrer">meltingice/psd.js</a>
+  - ip数据系列
+    - lib-qqwry(纯真ip数据库)
+      - <a href="https://github.com/cnwhy/lib-qqwry" target="_blank noopener noreferrer">cnwhy/lib-qqwry</a>
+    - IPDB(国家级IP数据库)
+      - <a href="https://github.com/tmplink/IPDB" target="_blank noopener noreferrer">tmplink/IPDB</a>
+    - ip-index(ip数据查询/离线)
+      - <a href="https://github.com/Umkus/ip-index" target="_blank noopener noreferrer">Umkus/ip-index</a>
+  - lock锁系列
+    - node-redlock(基于redis的分布式锁)
+      - <a href="https://github.com/mike-marcacci/node-redlock" target="_blank noopener noreferrer">mike-marcacci/node-redlock</a>
+    - verrou(使用数据库加锁工具/冷门)
+      - <a href="https://github.com/Julien-R44/verrou" target="_blank noopener noreferrer">Julien-R44/verrou</a>
+  - network-cache网络缓存系列
+    - pretty-cache-header(cache-control头创建工具)
+      - <a href="https://github.com/jjenzz/pretty-cache-header" target="_blank noopener noreferrer">jjenzz/pretty-cache-header</a>
+    - nocache
+      - <a href="https://github.com/helmetjs/nocache" target="_blank noopener noreferrer">helmetjs/nocache</a>
+  - 音视频系列
+    - 音频系列
+      - symphonia(nodejs音频播放库)
+        - <a href="https://github.com/tropicbliss/symphonia" target="_blank noopener noreferrer">tropicbliss/symphonia</a>
+    - video视频操作系列
+      - rtsp系列
+        - node-rtsp-stream
+          - <a href="https://github.com/kyriesent/node-rtsp-stream" target="_blank noopener noreferrer">kyriesent/node-rtsp-stream</a>
+        - node-media-server
+          - <a href="https://github.com/illuspas/Node-Media-Server" target="_blank noopener noreferrer">illuspas/Node-Media-Server</a>
+        - rtsp-streaming-server(冷)
+          - <a href="https://github.com/chriswiggins/rtsp-streaming-server" target="_blank noopener noreferrer">chriswiggins/rtsp-streaming-server</a>
+        - rtsp播放器
+          - jsmpeg-player
+            - <a href="https://github.com/cycjimmy/jsmpeg-player" target="_blank noopener noreferrer">cycjimmy/jsmpeg-player</a>
+      - FECreator(视频制作库)
+        - <a href="https://github.com/tnfe/FFCreator" target="_blank noopener noreferrer">tnfe/FFCreator</a>
+      - ffmpeg系列
+        - node-fluent-ffmpeg
+          - <a href="https://github.com/fluent-ffmpeg/node-fluent-ffmpeg" target="_blank noopener noreferrer">fluent-ffmpeg/node-fluent-ffmpeg</a>
+        - node-ffmpeg-installer
+          - <a href="https://github.com/kribblo/node-ffmpeg-installer" target="_blank noopener noreferrer">kribblo/node-ffmpeg-installer</a>
+        - ffmpeg-static(二进制文件)
+          - <a href="https://github.com/eugeneware/ffmpeg-static" target="_blank noopener noreferrer">eugeneware/ffmpeg-static</a>
+      - handbrake-js(视频格式转换)
+        - <a href="https://github.com/75lb/handbrake-js" target="_blank noopener noreferrer">75lb/handbrake-js</a>
+    - webrtc系列
+      - node-datachannel(rtc数据传输库)
+        - <a href="https://github.com/murat-dogan/node-datachannel" target="_blank noopener noreferrer">murat-dogan/node-datachannel</a>
+  - cookies系列(node)
+    - cookies(操作cookie for node)
+      - <a href="https://github.com/pillarjs/cookies" target="_blank noopener noreferrer">pillarjs/cookies</a>
+    - tough-cookie(cookie的node实现)
+      - <a href="https://github.com/salesforce/tough-cookie" target="_blank noopener noreferrer">salesforce/tough-cookie</a>
+  - heapdump内存堆快照系列
+    - node-heapdump(导出node内存堆快照)
+      - <a href="https://github.com/bnoordhuis/node-heapdump" target="_blank noopener noreferrer">bnoordhuis/node-heapdump</a>
+    - devtoolx(heapdump分析工具)
+      - <a href="https://github.com/noslate-project/devtoolx" target="_blank noopener noreferrer">noslate-project/devtoolx</a>
+    - 内存泄漏排查工具
+      - fuite(模拟pup查找网页内存泄露)
+        - <a href="https://github.com/nolanlawson/fuite" target="_blank noopener noreferrer">nolanlawson/fuite</a>
+      - memlab
+        - <a href="https://github.com/facebookincubator/memlab" target="_blank noopener noreferrer">facebookincubator/memlab</a>
+      - node-memwatch
+        - <a href="https://github.com/lloyd/node-memwatch" target="_blank noopener noreferrer">lloyd/node-memwatch</a>
+  - gensync(生成器函数转sync/async函数)
+    - <a href="https://github.com/loganfsmyth/gensync" target="_blank noopener noreferrer">loganfsmyth/gensync</a>
+  - deps依赖检测系列
+    - dependency-cruiser(检测依赖关系/循环依赖)
+      - <a href="https://github.com/sverweij/dependency-cruiser" target="_blank noopener noreferrer">sverweij/dependency-cruiser</a>
+    - madge(生成项目文件的依赖图)
+      - <a href="https://github.com/pahen/madge" target="_blank noopener noreferrer">pahen/madge</a>
+    - skott(比madge快)
+      - <a href="https://github.com/antoine-coulon/skott" target="_blank noopener noreferrer">antoine-coulon/skott</a>
+  - node-segfault-handler(segmentation错误调试)
+    - <a href="https://github.com/ddopson/node-segfault-handler" target="_blank noopener noreferrer">ddopson/node-segfault-handler</a>
+  - otpauth(otp生成器)
+    - <a href="https://github.com/hectorm/otpauth" target="_blank noopener noreferrer">hectorm/otpauth</a>
+  - profile/性能/火焰图分析系列
+    - 0x(node单命令火焰图分析)
+      - <a href="https://github.com/davidmarkclements/0x" target="_blank noopener noreferrer">davidmarkclements/0x</a>
+    - speedscope(node --cpu-prof分析工具)
+      - <a href="https://github.com/jlfwong/speedscope" target="_blank noopener noreferrer">jlfwong/speedscope</a>
+    - blocked-at(寻找缓慢同步task)
+      - <a href="https://github.com/naugtur/blocked-at" target="_blank noopener noreferrer">naugtur/blocked-at</a>
+  - escape转义系列
+    - fast-escape(更快的html转义/rust)
+      - <a href="https://github.com/napi-rs/fast-escape" target="_blank noopener noreferrer">napi-rs/fast-escape</a>
+    - escape-html(转义html片段中的字符)
+      - <a href="https://github.com/component/escape-html" target="_blank noopener noreferrer">component/escape-html</a>
+  - geo坐标系列
+    - node-geo-tz(基于gps坐标查找时区)
+      - <a href="https://github.com/evansiroky/node-geo-tz" target="_blank noopener noreferrer">evansiroky/node-geo-tz</a>
+    - tz-lookup(根据坐标查时区)
+      - <a href="https://github.com/photostructure/tz-lookup" target="_blank noopener noreferrer">photostructure/tz-lookup</a>
+  - untildify(获取去掉波浪线完整路径)
+    - <a href="https://github.com/sindresorhus/untildify" target="_blank noopener noreferrer">sindresorhus/untildify</a>
+  - emoji系列
+    - emoji-regex(匹配文本中的emoji)
+      - <a href="https://github.com/mathiasbynens/emoji-regex" target="_blank noopener noreferrer">mathiasbynens/emoji-regex</a>
+    - node-emoji(查找字符串emoji/emoji字符化)
+      - <a href="https://github.com/omnidan/node-emoji" target="_blank noopener noreferrer">omnidan/node-emoji</a>
+  - node-tlds(获取顶级域列表)
+    - <a href="https://github.com/stephenmathieson/node-tlds" target="_blank noopener noreferrer">stephenmathieson/node-tlds</a>
+  - error系列
+    - combine-errors(将多个错误组合成一个错误)
+      - <a href="https://github.com/MatthewMueller/combine-errors" target="_blank noopener noreferrer">MatthewMueller/combine-errors</a>
+    - es-aggregate-error(聚合错误提案)
+      - <a href="https://github.com/es-shims/AggregateError" target="_blank noopener noreferrer">es-shims/AggregateError</a>
+  - node-diskusage(检测磁盘路径剩余空间大小)
+    - <a href="https://github.com/jduncanator/node-diskusage" target="_blank noopener noreferrer">jduncanator/node-diskusage</a>
+  - canvas系列
+    - node-pureimage(web canvas api复刻)
+      - <a href="https://github.com/joshmarinacci/node-pureimage" target="_blank noopener noreferrer">joshmarinacci/node-pureimage</a>
+    - node-canvas系列
+      - node-canvas(在node使用canvas)
+        - <a href="https://github.com/Automattic/node-canvas" target="_blank noopener noreferrer">Automattic/node-canvas</a>
+      - inkpaint(轻量canvas/冷门)
+        - <a href="https://github.com/drawcall/inkpaint" target="_blank noopener noreferrer">drawcall/inkpaint</a>
+      - skia-canvas
+        - <a href="https://github.com/samizdatco/skia-canvas" target="_blank noopener noreferrer">samizdatco/skia-canvas</a>
+      - Brooooooklyn/canvas(不需要node-gyp的canvas/rust)
+        - <a href="https://github.com/Brooooooklyn/canvas" target="_blank noopener noreferrer">Brooooooklyn/canvas</a>
+      - canvaskit-wasm
+        - <a href="https://github.com/google/skia/tree/main/modules/canvaskit" target="_blank noopener noreferrer">google/skia/tree/main/modules/canvaskit</a>
+  - yaml系列
+    - js-yaml(解析yml文件)
+      - <a href="https://github.com/nodeca/js-yaml" target="_blank noopener noreferrer">nodeca/js-yaml</a>
+    - yaml
+      - <a href="https://github.com/eemeli/yaml" target="_blank noopener noreferrer">eemeli/yaml</a>
+  - change-file-extension(改变文件后缀)
+    - <a href="https://github.com/sindresorhus/change-file-extension" target="_blank noopener noreferrer">sindresorhus/change-file-extension</a>
+  - pos机打印系列
+    - node-escpos
+      - <a href="https://github.com/song940/node-escpos" target="_blank noopener noreferrer">song940/node-escpos</a>
+  - tmp临时文件创建系列
+    - tmp-promise(创建系统临时文件夹)
+      - <a href="https://github.com/benjamingr/tmp-promise" target="_blank noopener noreferrer">benjamingr/tmp-promise</a>
+    - temporary-path(获取随机临时路径)
+      - <a href="https://github.com/sindresorhus/temporary-path" target="_blank noopener noreferrer">sindresorhus/temporary-path</a>
+  - system系统信息获取系列
+    - system-architecture(获取真实的系统架构arch)
+      - <a href="https://github.com/sindresorhus/system-architecture" target="_blank noopener noreferrer">sindresorhus/system-architecture</a>
+    - getmac(获取mac信息)
+      - <a href="https://github.com/bevry/getmac" target="_blank noopener noreferrer">bevry/getmac</a>
+  - wait-on(资源可用检测库)
+    - <a href="https://github.com/jeffbski/wait-on" target="_blank noopener noreferrer">jeffbski/wait-on</a>
+  - usb系列
+    - node-usb(在node层与usb设备通信)
+      - <a href="https://github.com/node-usb/node-usb" target="_blank noopener noreferrer">node-usb/node-usb</a>
+    - node-hid
+      - <a href="https://github.com/node-hid/node-hid" target="_blank noopener noreferrer">node-hid/node-hid</a>
+  - web-push系列
+    - web-push
+      - <a href="https://github.com/web-push-libs/web-push" target="_blank noopener noreferrer">web-push-libs/web-push</a>
+    - vapidkeys.com(生成vapid key)
+      - <a href="https://vapidkeys.com/" target="_blank noopener noreferrer">vapidkeys.com</a>
+  - url系列
+    - parseurl(解析url)
+      - <a href="https://github.com/pillarjs/parseurl" target="_blank noopener noreferrer">pillarjs/parseurl</a>
+    - url-join
+      - <a href="https://github.com/jfromaniello/url-join" target="_blank noopener noreferrer">jfromaniello/url-join</a>
+    - tldts(url解析/冷门)
+      - <a href="https://github.com/remusao/tldts" target="_blank noopener noreferrer">remusao/tldts</a>
+  - slug系列
+    - github-slugger(生成一个和github标题一样格式的slug)
+      - <a href="https://github.com/Flet/github-slugger" target="_blank noopener noreferrer">Flet/github-slugger</a>
+    - slugify(slug工具/字符串转唯一id)
+      - <a href="https://github.com/sindresorhus/slugify" target="_blank noopener noreferrer">sindresorhus/slugify</a>
+    - slugify
+      - <a href="https://github.com/simov/slugify" target="_blank noopener noreferrer">simov/slugify</a>
+  - node-serialport(串行端口sdk)
+    - <a href="https://github.com/serialport/node-serialport" target="_blank noopener noreferrer">serialport/node-serialport</a>
+  - hostile(/etc/hosts文件操作库)
+    - <a href="https://github.com/feross/hostile" target="_blank noopener noreferrer">feross/hostile</a>
+- 教程
+  - path
+    - <a href="https://www.jb51.net/article/58311.htm" target="_blank noopener noreferrer">www.jb51.net</a>
+  - data-view
+    - <a href="https://blog.csdn.net/qq_34754747/article/details/104054119" target="_blank noopener noreferrer">blog.csdn.net</a>
+  - TextDecoder
+    - <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/TextDecoder" target="_blank noopener noreferrer">developer.mozilla.org</a>
+  - @type/node
+    - httpRequestArgs
+      - <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/ef49ffb4c80e2b4dc1eb84d6faba47478cd6f3b1/types/node/v10/http.d.ts" target="_blank noopener noreferrer">DefinitelyTyped/DefinitelyTyped/blob/ef49ffb4c80e2b4dc1eb84d6faba47478cd6f3b1/types/node/v10/http.d.ts</a>
+  - websocket
+    - <a href="http://www.ruanyifeng.com/blog/2017/05/websocket.html" target="_blank noopener noreferrer">www.ruanyifeng.com</a>
+  - files-download
+    - <a href="https://zhuanlan.zhihu.com/p/97768916" target="_blank noopener noreferrer">zhuanlan.zhihu.com</a>
+    - <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader#readAsArrayBuffer()" target="_blank noopener noreferrer">developer.mozilla.org</a>
+  - TextEncoder
+    - <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/TextEncoder" target="_blank noopener noreferrer">developer.mozilla.org</a>
+  - node.js中文网(node-api-cn)
+    - <a href="http://nodejs.cn/api/" target="_blank noopener noreferrer">nodejs.cn</a>
+    - <a href="https://github.com/nodejscn/node-api-cn" target="_blank noopener noreferrer">nodejscn/node-api-cn</a>
+  - nodebestpractices(nodejs最佳实践)
+    - <a href="https://github.com/goldbergyoni/nodebestpractices/blob/master/README.chinese.md" target="_blank noopener noreferrer">goldbergyoni/nodebestpractices/blob/master/README.chinese.md</a>
+  - deep-into-node(深入理解node)
+    - <a href="https://github.com/yjhjstz/deep-into-node" target="_blank noopener noreferrer">yjhjstz/deep-into-node</a>
+  - nodejs技术栈(教程)
+    - <a href="https://www.nodejs.red/#/README" target="_blank noopener noreferrer">www.nodejs.red</a>
+    - <a href="https://github.com/qufei1993/Nodejs-Roadmap" target="_blank noopener noreferrer">qufei1993/Nodejs-Roadmap</a>
+  - awesome-node(nodejs大全)
+    - <a href="https://github.com/sindresorhus/awesome-nodejs" target="_blank noopener noreferrer">sindresorhus/awesome-nodejs</a>
+  - understand-nodejs(通过源码分析nodejs原理)
+    - <a href="https://github.com/theanarkh/understand-nodejs" target="_blank noopener noreferrer">theanarkh/understand-nodejs</a>
+- Framework
+  - Express
+    - 教程
+      - <a href="https://www.jianshu.com/p/2d811f606d83" target="_blank noopener noreferrer">www.jianshu.com</a>
+      - <a href="https://www.jianshu.com/p/96d068f842b0" target="_blank noopener noreferrer">www.jianshu.com</a>
+    - 中间件
+      - compression(gzip压缩)
+        - <a href="https://github.com/expressjs/compression" target="_blank noopener noreferrer">expressjs/compression</a>
+      - cookie-session
+        - <a href="https://github.com/expressjs/cookie-session" target="_blank noopener noreferrer">expressjs/cookie-session</a>
+      - body-parser
+        - <a href="https://github.com/expressjs/body-parser" target="_blank noopener noreferrer">expressjs/body-parser</a>
+      - cors
+        - <a href="https://github.com/expressjs/cors" target="_blank noopener noreferrer">expressjs/cors</a>
+      - express-validator(校验)
+        - <a href="https://github.com/express-validator/express-validator" target="_blank noopener noreferrer">express-validator/express-validator</a>
+      - http-proxy
+        - <a href="https://github.com/villadora/express-http-proxy" target="_blank noopener noreferrer">villadora/express-http-proxy</a>
+      - express-gateway(网关)
+        - <a href="https://github.com/ExpressGateway/express-gateway" target="_blank noopener noreferrer">ExpressGateway/express-gateway</a>
+      - morgan(http请求记录器)
+        - <a href="https://github.com/expressjs/morgan" target="_blank noopener noreferrer">expressjs/morgan</a>
+      - helment(提供各种安全策略http标头)
+        - <a href="https://github.com/helmetjs/helmet" target="_blank noopener noreferrer">helmetjs/helmet</a>
+      - serve-static(静态资源提供)
+        - <a href="https://github.com/expressjs/serve-static" target="_blank noopener noreferrer">expressjs/serve-static</a>
+      - raw-body(获取原始buffer body)
+        - <a href="https://github.com/stream-utils/raw-body" target="_blank noopener noreferrer">stream-utils/raw-body</a>
+      - express-session(session)
+        - <a href="https://github.com/expressjs/session" target="_blank noopener noreferrer">expressjs/session</a>
+      - express-ws
+        - <a href="https://github.com/HenningM/express-ws" target="_blank noopener noreferrer">HenningM/express-ws</a>
+      - cookie-parser(cookie中间件)
+        - <a href="https://github.com/expressjs/cookie-parser" target="_blank noopener noreferrer">expressjs/cookie-parser</a>
+      - csurf(提供csrf保护中间件)
+        - <a href="https://github.com/expressjs/csurf" target="_blank noopener noreferrer">expressjs/csurf</a>
+      - express-openapi-validator(openapi格式的校验器)
+        - <a href="https://github.com/cdimascio/express-openapi-validator" target="_blank noopener noreferrer">cdimascio/express-openapi-validator</a>
+      - response-time(计算响应时间中间件)
+        - <a href="https://github.com/expressjs/response-time" target="_blank noopener noreferrer">expressjs/response-time</a>
+      - express-healthcheck(老)
+        - <a href="https://github.com/lennym/express-healthcheck" target="_blank noopener noreferrer">lennym/express-healthcheck</a>
+      - overload过载保护系列
+        - event-loop-lag(检测时间循环延迟)
+          - <a href="https://github.com/pebble/event-loop-lag" target="_blank noopener noreferrer">pebble/event-loop-lag</a>
+        - overload-protection
+          - <a href="https://github.com/davidmarkclements/overload-protection" target="_blank noopener noreferrer">davidmarkclements/overload-protection</a>
+      - rate-limit速率限制系列
+        - express-rate-limit(请求限速中间件)
+          - <a href="https://github.com/nfriedly/express-rate-limit" target="_blank noopener noreferrer">nfriedly/express-rate-limit</a>
+        - express-rate-limit(速率限制工具)
+          - <a href="https://github.com/express-rate-limit/express-rate-limit" target="_blank noopener noreferrer">express-rate-limit/express-rate-limit</a>
+        - express-slow-down(速度限制器)
+          - <a href="https://github.com/express-rate-limit/express-slow-down" target="_blank noopener noreferrer">express-rate-limit/express-slow-down</a>
+    - 模板项目
+      - node-express-boilerplate
+        - <a href="https://github.com/hagopj13/node-express-boilerplate" target="_blank noopener noreferrer">hagopj13/node-express-boilerplate</a>
+      - typescript-express-starer
+        - <a href="https://github.com/ljlm0402/typescript-express-starter" target="_blank noopener noreferrer">ljlm0402/typescript-express-starter</a>
+      - express-typescript-boilerplate
+        - <a href="https://github.com/w3tecch/express-typescript-boilerplate" target="_blank noopener noreferrer">w3tecch/express-typescript-boilerplate</a>
+    - 工具库
+      - overnight(提供装饰器路由)
+        - <a href="https://github.com/seanpmaxwell/overnight" target="_blank noopener noreferrer">seanpmaxwell/overnight</a>
+      - route-list(打印显示精美的路由列表)
+        - <a href="https://github.com/VladimirMikulic/route-list" target="_blank noopener noreferrer">VladimirMikulic/route-list</a>
+      - express-mysql-session(mysql会话链接)
+        - <a href="https://github.com/chill117/express-mysql-session" target="_blank noopener noreferrer">chill117/express-mysql-session</a>
+  - koa
+    - 官方项目
+      - <a href="https://github.com/koajs/koa" target="_blank noopener noreferrer">koajs/koa</a>
+    - 插件
+      - koa-router
+        - <a href="https://github.com/koajs/router" target="_blank noopener noreferrer">koajs/router</a>
+      - koa2-validation(校验router传来的参数)
+        - <a href="https://github.com/gedennis/koa2-validation" target="_blank noopener noreferrer">gedennis/koa2-validation</a>
+      - koa-csrf
+        - <a href="https://github.com/koajs/csrf" target="_blank noopener noreferrer">koajs/csrf</a>
+      - koa-static
+        - <a href="https://github.com/koajs/static" target="_blank noopener noreferrer">koajs/static</a>
+      - koa-compose
+        - <a href="https://github.com/koajs/compose" target="_blank noopener noreferrer">koajs/compose</a>
+      - koa-jwt
+        - <a href="https://github.com/koajs/jwt" target="_blank noopener noreferrer">koajs/jwt</a>
+      - koa-logger
+        - <a href="https://github.com/koajs/logger" target="_blank noopener noreferrer">koajs/logger</a>
+      - proxy系列
+        - koa-better-http-proxy
+          - <a href="https://github.com/nsimmons/koa-better-http-proxy" target="_blank noopener noreferrer">nsimmons/koa-better-http-proxy</a>
+        - koa2-http-proxy-middleware(冷)
+          - <a href="https://github.com/qianlongo/koa2-http-proxy-middleware" target="_blank noopener noreferrer">qianlongo/koa2-http-proxy-middleware</a>
+      - cors系列
+        - koa-cors
+          - <a href="https://github.com/evert0n/koa-cors" target="_blank noopener noreferrer">evert0n/koa-cors</a>
+        - koa2-cors
+          - <a href="https://github.com/zadzbw/koa2-cors" target="_blank noopener noreferrer">zadzbw/koa2-cors</a>
+      - body解析系列
+        - koa-bodyparser
+          - <a href="https://github.com/koajs/bodyparser" target="_blank noopener noreferrer">koajs/bodyparser</a>
+        - koa-body
+          - <a href="https://github.com/koajs/koa-body" target="_blank noopener noreferrer">koajs/koa-body</a>
+      - koa-session
+        - <a href="https://github.com/koajs/session" target="_blank noopener noreferrer">koajs/session</a>
+      - koa-connect(兼容使用express middleware)
+        - <a href="https://github.com/vkurchatkin/koa-connect" target="_blank noopener noreferrer">vkurchatkin/koa-connect</a>
+      - koa-send(发送文件)
+        - <a href="https://github.com/koajs/send" target="_blank noopener noreferrer">koajs/send</a>
+    - 示例项目
+      - typescript-koa-example
+        - <a href="https://github.com/typeorm/typescript-koa-example" target="_blank noopener noreferrer">typeorm/typescript-koa-example</a>
+      - koa-ts
+        - <a href="https://github.com/unix/koa-ts" target="_blank noopener noreferrer">unix/koa-ts</a>
+    - 文档
+      - koa-docs-Zh-CN
+        - <a href="https://github.com/demopark/koa-docs-Zh-CN" target="_blank noopener noreferrer">demopark/koa-docs-Zh-CN</a>
+  - fastify系列
+    - fastify
+      - <a href="https://github.com/fastify/fastify" target="_blank noopener noreferrer">fastify/fastify</a>
+    - fastify-rate-limit(限速)
+      - <a href="https://github.com/fastify/fastify-rate-limit" target="_blank noopener noreferrer">fastify/fastify-rate-limit</a>
+    - fastify-helmet(安全响应头管理)
+      - <a href="https://github.com/fastify/fastify-helmet" target="_blank noopener noreferrer">fastify/fastify-helmet</a>
+    - fastify-raw-body
+      - <a href="https://github.com/Eomm/fastify-raw-body" target="_blank noopener noreferrer">Eomm/fastify-raw-body</a>
+    - under-pressure(服务压力过大检测)
+      - <a href="https://github.com/fastify/under-pressure" target="_blank noopener noreferrer">fastify/under-pressure</a>
+  - farrow(冷门)
+    - <a href="https://github.com/farrow-js/farrow" target="_blank noopener noreferrer">farrow-js/farrow</a>
+  - node-restify
+    - <a href="https://github.com/restify/node-restify" target="_blank noopener noreferrer">restify/node-restify</a>
+  - hapi
+    - github
+      - <a href="https://github.com/hapijs/hapi" target="_blank noopener noreferrer">hapijs/hapi</a>
+  - sails(express封装)
+    - <a href="https://github.com/balderdashy/sails" target="_blank noopener noreferrer">balderdashy/sails</a>
+  - thinkjs(360)
+    - <a href="https://github.com/thinkjs/thinkjs" target="_blank noopener noreferrer">thinkjs/thinkjs</a>
+  - marble(函数式响应框架/rxjs)
+    - <a href="https://github.com/marblejs/marble" target="_blank noopener noreferrer">marblejs/marble</a>
+  - tinyhttp(轻量少依赖的mini框架)
+    - <a href="https://github.com/tinyhttp/tinyhttp" target="_blank noopener noreferrer">tinyhttp/tinyhttp</a>
+  - h3(高性能最小框架)
+    - <a href="https://github.com/unjs/h3" target="_blank noopener noreferrer">unjs/h3</a>
+  - http原生系列
+    - connect(http支持middleware)
+      - <a href="https://github.com/senchalabs/connect" target="_blank noopener noreferrer">senchalabs/connect</a>
+  - deepkit-framework(新)
+    - <a href="https://github.com/deepkit/deepkit-framework" target="_blank noopener noreferrer">deepkit/deepkit-framework</a>
+  - polka(微型server/vitepress在用)
+    - <a href="https://github.com/lukeed/polka" target="_blank noopener noreferrer">lukeed/polka</a>
+  - hono(适用deno/node/bun)
+    - <a href="https://github.com/honojs/hono" target="_blank noopener noreferrer">honojs/hono</a>
+  - foal(一体化框架/大合集)
+    - <a href="https://github.com/FoalTS/foal" target="_blank noopener noreferrer">FoalTS/foal</a>
+  - RPC系列
+    - trpc(server/client一体rpc通讯框架)
+      - <a href="https://github.com/trpc/trpc" target="_blank noopener noreferrer">trpc/trpc</a>
+    - grpc
+      - <a href="https://github.com/grpc/grpc-node" target="_blank noopener noreferrer">grpc/grpc-node</a>
+    - jayson(json-rpc客户端/服务器)
+      - <a href="https://github.com/tedeh/jayson" target="_blank noopener noreferrer">tedeh/jayson</a>
+  - mojo.js(冷)
+    - <a href="https://github.com/mojolicious/mojo.js" target="_blank noopener noreferrer">mojolicious/mojo.js</a>
+  - midway系列
+    - midway
+      - <a href="https://github.com/midwayjs/midway" target="_blank noopener noreferrer">midwayjs/midway</a>
+    - @midwayjs/mock(测试用)
+      - <a href="https://www.npmjs.com/package/@midwayjs/mock" target="_blank noopener noreferrer">www.npmjs.com</a>
+  - remult(全栈curd+orm框架)
+    - <a href="https://github.com/remult/remult" target="_blank noopener noreferrer">remult/remult</a>
+  - hyper-express(冷)
+    - <a href="https://github.com/kartikk221/hyper-express" target="_blank noopener noreferrer">kartikk221/hyper-express</a>
+  - egg系列
+    - egg
+      - <a href="https://github.com/eggjs/egg" target="_blank noopener noreferrer">eggjs/egg</a>
+    - tegg
+      - <a href="https://github.com/eggjs/tegg" target="_blank noopener noreferrer">eggjs/tegg</a>
+  - hattip(支持各种runtime的类express框架/冷门)
+    - <a href="https://github.com/hattipjs/hattip" target="_blank noopener noreferrer">hattipjs/hattip</a>
+  - tsed
+    - <a href="https://github.com/tsedio/tsed" target="_blank noopener noreferrer">tsedio/tsed</a>
+  - expressots(冷)
+    - <a href="https://github.com/expressots/expressots" target="_blank noopener noreferrer">expressots/expressots</a>
+  - sonik(专用于edge/CF worker)
+    - <a href="https://github.com/sonikjs/sonik" target="_blank noopener noreferrer">sonikjs/sonik</a>
+- 运维
+  - pm2系列
+    - pm2-cluster-prometheus(prom的多线程汇集器)
+      - <a href="https://github.com/JakeH/pm2-cluster-prometheus" target="_blank noopener noreferrer">JakeH/pm2-cluster-prometheus</a>
+    - pm2
+      - <a href="https://github.com/Unitech/pm2" target="_blank noopener noreferrer">Unitech/pm2</a>
+    - prom-client
+      - <a href="https://github.com/siimon/prom-client" target="_blank noopener noreferrer">siimon/prom-client</a>
+  - forever
+    - <a href="https://github.com/foreversd/forever" target="_blank noopener noreferrer">foreversd/forever</a>
+- 项目
+  - NeteaseCloudMusicApi
+    - <a href="https://github.com/Binaryify/NeteaseCloudMusicApi" target="_blank noopener noreferrer">Binaryify/NeteaseCloudMusicApi</a>
+    - <a href="https://neteasecloudmusicapi.vercel.app/#/" target="_blank noopener noreferrer">neteasecloudmusicapi.vercel.app</a>
+  - node-elm(nodejs+Mogodb后台/有点老)
+    - <a href="https://github.com/bailicangdu/node-elm" target="_blank noopener noreferrer">bailicangdu/node-elm</a>
+  - wikimoeCard(wiki抽卡)
+    - <a href="https://github.com/eeg1412/wikimoeCardByNodeJS" target="_blank noopener noreferrer">eeg1412/wikimoeCardByNodeJS</a>
+- 冷门插件
+  - parallel-webpack
+    - <a href="https://github.com/trivago/parallel-webpack" target="_blank noopener noreferrer">trivago/parallel-webpack</a>
+  - negative-array(支持负索引的数组)
+    - <a href="https://github.com/sindresorhus/negative-array" target="_blank noopener noreferrer">sindresorhus/negative-array</a>
+  - obs-studio-node(在node上实现obs/only win)
+    - <a href="https://github.com/stream-labs/obs-studio-node" target="_blank noopener noreferrer">stream-labs/obs-studio-node</a>
+  - timefind(查询网站archive.org数据)
+    - <a href="https://github.com/Cykelero/timefind" target="_blank noopener noreferrer">Cykelero/timefind</a>
+  - construct-js(操作bit/bytes数据构建文件库)
+    - <a href="https://github.com/francisrstokes/construct-js" target="_blank noopener noreferrer">francisrstokes/construct-js</a>
+  - node-worker-farm(多进程执行函数工具)
+    - <a href="https://github.com/rvagg/node-worker-farm" target="_blank noopener noreferrer">rvagg/node-worker-farm</a>
+  - randoma(伪随机数生成器)
+    - <a href="https://github.com/sindresorhus/randoma" target="_blank noopener noreferrer">sindresorhus/randoma</a>
+  - browser-or-node(检测代码运行的环境/位置)
+    - <a href="https://github.com/flexdinesh/browser-or-node" target="_blank noopener noreferrer">flexdinesh/browser-or-node</a>
+  - reusify(重用obj/func以加快速度)
+    - <a href="https://github.com/mcollina/reusify" target="_blank noopener noreferrer">mcollina/reusify</a>
+  - find-my-way(框架解耦的快速路由)
+    - <a href="https://github.com/delvedor/find-my-way" target="_blank noopener noreferrer">delvedor/find-my-way</a>
+  - node-jira-client(jira rest api)
+    - <a href="https://github.com/jira-node/node-jira-client" target="_blank noopener noreferrer">jira-node/node-jira-client</a>
+  - socksv5(将socks5转tcp请求)
+    - <a href="https://github.com/mscdex/socksv5" target="_blank noopener noreferrer">mscdex/socksv5</a>
+  - tasuku(nodejs的最小task运行器)
+    - <a href="https://github.com/privatenumber/tasuku" target="_blank noopener noreferrer">privatenumber/tasuku</a>
+  - falso(在node中生成假数据)
+    - <a href="https://github.com/ngneat/falso" target="_blank noopener noreferrer">ngneat/falso</a>
+  - robots-parser(robots.txt解析器)
+    - <a href="https://github.com/samclarke/robots-parser" target="_blank noopener noreferrer">samclarke/robots-parser</a>
+  - filequeue(控制读取并发数/防止读同一文件次数过多)
+    - <a href="https://github.com/treygriffith/filequeue" target="_blank noopener noreferrer">treygriffith/filequeue</a>
+  - elasticsearch-js(es的js sdk)
+    - <a href="https://github.com/elastic/elasticsearch-js" target="_blank noopener noreferrer">elastic/elasticsearch-js</a>
+  - mapper(ts对象映射器)
+    - <a href="https://github.com/nartc/mapper" target="_blank noopener noreferrer">nartc/mapper</a>
+  - aperture-node(macos录屏库)
+    - <a href="https://github.com/wulkano/aperture-node" target="_blank noopener noreferrer">wulkano/aperture-node</a>
+  - url-unshort(解短链接得到真实连接)
+    - <a href="https://github.com/nodeca/url-unshort" target="_blank noopener noreferrer">nodeca/url-unshort</a>
+  - node-mock-os(mock os模块的工具)
+    - <a href="https://github.com/lfortin/node-mock-os" target="_blank noopener noreferrer">lfortin/node-mock-os</a>
+  - export-size(获取export的各文件大小)
+    - <a href="https://github.com/antfu/export-size" target="_blank noopener noreferrer">antfu/export-size</a>
+  - npm-keyword(获取某个关键字的包列表)
+    - <a href="https://github.com/sindresorhus/npm-keyword" target="_blank noopener noreferrer">sindresorhus/npm-keyword</a>
+  - pidtree(获取子pid列表)
+    - <a href="https://github.com/simonepri/pidtree" target="_blank noopener noreferrer">simonepri/pidtree</a>
+  - cat-names(随机生成猫名字)
+    - <a href="https://github.com/sindresorhus/cat-names" target="_blank noopener noreferrer">sindresorhus/cat-names</a>
+  - deasync(将异步函数变为同步/冷门)
+    - <a href="https://github.com/abbr/deasync" target="_blank noopener noreferrer">abbr/deasync</a>
+  - brotli-wasm(br算法编码/解码器)
+    - <a href="https://github.com/httptoolkit/brotli-wasm" target="_blank noopener noreferrer">httptoolkit/brotli-wasm</a>
+  - nats.js(连接nats的工具)
+    - <a href="https://github.com/nats-io/nats.js" target="_blank noopener noreferrer">nats-io/nats.js</a>
+  - whoiser(whois查询工具)
+    - <a href="https://github.com/LayeredStudio/whoiser" target="_blank noopener noreferrer">LayeredStudio/whoiser</a>
+  - human-signals(终止信号signals速查)
+    - <a href="https://github.com/ehmicky/human-signals" target="_blank noopener noreferrer">ehmicky/human-signals</a>
+  - node-retry(重试工具/指数退避策略)
+    - <a href="https://github.com/tim-kos/node-retry" target="_blank noopener noreferrer">tim-kos/node-retry</a>
+  - node-libcurl(node上使用curl)
+    - <a href="https://github.com/JCMais/node-libcurl" target="_blank noopener noreferrer">JCMais/node-libcurl</a>
+  - node-ble(蓝牙工具库)
+    - <a href="https://github.com/chrvadala/node-ble" target="_blank noopener noreferrer">chrvadala/node-ble</a>
+  - lazy-value(在使用值的时候才执行计算)
+    - <a href="https://github.com/sindresorhus/lazy-value" target="_blank noopener noreferrer">sindresorhus/lazy-value</a>
+  - node-calls-python(在nodejs内调用python)
+    - <a href="https://github.com/hmenyus/node-calls-python" target="_blank noopener noreferrer">hmenyus/node-calls-python</a>
+  - writable-dom(流式响应写入节点)
+    - <a href="https://github.com/marko-js/writable-dom" target="_blank noopener noreferrer">marko-js/writable-dom</a>
+  - ics(iCalendar生成器)
+    - <a href="https://github.com/adamgibbons/ics" target="_blank noopener noreferrer">adamgibbons/ics</a>
+  - go-get-folder-size(更快的文件大小获取/go写的/冷门)
+    - <a href="https://github.com/markthree/go-get-folder-size" target="_blank noopener noreferrer">markthree/go-get-folder-size</a>
+  - python-shell(高效运行python脚本)
+    - <a href="https://github.com/extrabacon/python-shell" target="_blank noopener noreferrer">extrabacon/python-shell</a>
+  - malibu(csrf中间件/框架通用)
+    - <a href="https://github.com/tinyhttp/malibu" target="_blank noopener noreferrer">tinyhttp/malibu</a>
+  - linker.js(直接访问c文件/冷门)
+    - <a href="https://github.com/bitair-org/linker.js" target="_blank noopener noreferrer">bitair-org/linker.js</a>
+  - icc(解析icc文件工具)
+    - <a href="https://github.com/lovell/icc" target="_blank noopener noreferrer">lovell/icc</a>
+  - is-wsl(检测当前是否在wsl环境)
+    - <a href="https://github.com/sindresorhus/is-wsl" target="_blank noopener noreferrer">sindresorhus/is-wsl</a>
+  - node-i18n-iso-countries(根据国家缩写获得全名)
+    - <a href="https://github.com/michaelwittig/node-i18n-iso-countries" target="_blank noopener noreferrer">michaelwittig/node-i18n-iso-countries</a>
+  - node-osc(osc协议通信库)
+    - <a href="https://github.com/MylesBorins/node-osc" target="_blank noopener noreferrer">MylesBorins/node-osc</a>
+  - nodejs-mobile(在手机上运行node)
+    - <a href="https://github.com/nodejs-mobile/nodejs-mobile" target="_blank noopener noreferrer">nodejs-mobile/nodejs-mobile</a>
+  - unix-permissions(linux权限代码获取/转换)
+    - <a href="https://github.com/ehmicky/unix-permissions" target="_blank noopener noreferrer">ehmicky/unix-permissions</a>
+  - tinyld(字符串语言识别)
+    - <a href="https://github.com/komodojp/tinyld" target="_blank noopener noreferrer">komodojp/tinyld</a>
+- 模板项目
+  - hackathon-starter
+    - <a href="https://github.com/sahat/hackathon-starter" target="_blank noopener noreferrer">sahat/hackathon-starter</a>
+  - practica(生成一个最佳实践模板项目)
+    - <a href="https://github.com/practicajs/practica" target="_blank noopener noreferrer">practicajs/practica</a>
+  - node-service-template(node服务器模板)
+    - <a href="https://github.com/lokalise/node-service-template" target="_blank noopener noreferrer">lokalise/node-service-template</a>
+- database工具集
+  - robo3T(支援mongodb浏览)
+    - <a href="https://github.com/Studio3T/robomongo" target="_blank noopener noreferrer">Studio3T/robomongo</a>
+- nestjs
+  - 工具
+    - nestjs-config(config service)
+      - <a href="https://github.com/nestjsx/nestjs-config" target="_blank noopener noreferrer">nestjsx/nestjs-config</a>
+    - @nestjs-modules/mailer(邮件服务)
+      - <a href="https://github.com/nest-modules/mailer" target="_blank noopener noreferrer">nest-modules/mailer</a>
+    - @nestjs/testing(e2e测试)
+      - <a href="https://www.npmjs.com/package/@nestjs/testing" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - nestia(更快的校验和工具deco)
+      - <a href="https://github.com/samchon/nestia" target="_blank noopener noreferrer">samchon/nestia</a>
+    - throttler(速率限制)
+      - <a href="https://github.com/nestjs/throttler" target="_blank noopener noreferrer">nestjs/throttler</a>
+    - automock(测试service的工具)
+      - <a href="https://github.com/automock/automock" target="_blank noopener noreferrer">automock/automock</a>
+  - repo
+    - <a href="https://github.com/nestjs/nest" target="_blank noopener noreferrer">nestjs/nest</a>
+  - 实战项目
+    - nest-blog
+      - <a href="https://github.com/koala-coding/nest-blog" target="_blank noopener noreferrer">koala-coding/nest-blog</a>
+    - nestDemo
+      - <a href="https://github.com/FunnyLiu/nestDemo" target="_blank noopener noreferrer">FunnyLiu/nestDemo</a>
+    - Nine-chat-backend
+      - <a href="https://github.com/longyanjiang/Nine-chat-backend" target="_blank noopener noreferrer">longyanjiang/Nine-chat-backend</a>
+    - nest-todo
+      - <a href="https://github.com/haixiangyan/nest-todo" target="_blank noopener noreferrer">haixiangyan/nest-todo</a>
+    - nest-project
+      - <a href="https://github.com/likaia/nest-project" target="_blank noopener noreferrer">likaia/nest-project</a>
+    - nestjs-boilerplate(模板)
+      - <a href="https://github.com/brocoders/nestjs-boilerplate" target="_blank noopener noreferrer">brocoders/nestjs-boilerplate</a>
+- 应用层
+  - node版本管理/切换系列
+    - fnm(node版本管理工具/rust)
+      - <a href="https://github.com/Schniz/fnm" target="_blank noopener noreferrer">Schniz/fnm</a>
+    - nvs(node版本切换工具)
+      - <a href="https://github.com/jasongin/nvs" target="_blank noopener noreferrer">jasongin/nvs</a>
+    - nvm-windows(windows平台nodejs版本管理工具)
+      - <a href="https://github.com/coreybutler/nvm-windows" target="_blank noopener noreferrer">coreybutler/nvm-windows</a>
+    - nvm
+      - <a href="https://github.com/nvm-sh/nvm" target="_blank noopener noreferrer">nvm-sh/nvm</a>
+    - tj/n
+      - <a href="https://github.com/tj/n" target="_blank noopener noreferrer">tj/n</a>
+    - volta(toolchains管理工具)
+      - <a href="https://github.com/volta-cli/volta" target="_blank noopener noreferrer">volta-cli/volta</a>
+    - nve(使用指定node版本运行脚本/冷门)
+      - <a href="https://github.com/ehmicky/nve" target="_blank noopener noreferrer">ehmicky/nve</a>
+    - nave
+      - <a href="https://github.com/isaacs/nave" target="_blank noopener noreferrer">isaacs/nave</a>
+    - nodeenv(创建隔离node版本环境工具)
+      - <a href="https://github.com/ekalinin/nodeenv" target="_blank noopener noreferrer">ekalinin/nodeenv</a>
+  - node-clinic(对node应用性能诊断的库)
+    - <a href="https://github.com/clinicjs/node-clinic" target="_blank noopener noreferrer">clinicjs/node-clinic</a>
+  - fkill-cli(跨平台kill进程工具)
+    - <a href="https://github.com/sindresorhus/fkill-cli" target="_blank noopener noreferrer">sindresorhus/fkill-cli</a>
+  - node-website-scraper(下载网站的工具)
+    - <a href="https://github.com/website-scraper/node-website-scraper" target="_blank noopener noreferrer">website-scraper/node-website-scraper</a>
+  - deprank(使用PageRank查找代码中最重要的文件)
+    - <a href="https://github.com/codemix/deprank" target="_blank noopener noreferrer">codemix/deprank</a>
+  - create-dmg(将mac app创建为dmg)
+    - <a href="https://github.com/sindresorhus/create-dmg" target="_blank noopener noreferrer">sindresorhus/create-dmg</a>
+  - dead-link死链检测工具系列
+    - linkinator(查找站点死链的工具)
+      - <a href="https://github.com/JustinBeckwith/linkinator" target="_blank noopener noreferrer">JustinBeckwith/linkinator</a>
+    - check-html-links
+      - <a href="https://github.com/modernweb-dev/rocket/tree/main/packages/check-html-links" target="_blank noopener noreferrer">modernweb-dev/rocket/tree/main/packages/check-html-links</a>
+  - loadtest(负载测试工具)
+    - <a href="https://github.com/alexfernandez/loadtest" target="_blank noopener noreferrer">alexfernandez/loadtest</a>
+  - favicon生成系列
+    - favicons(生成可能用到的所有favicon)
+      - <a href="https://github.com/itgalaxy/favicons" target="_blank noopener noreferrer">itgalaxy/favicons</a>
+    - favpie(冷)
+      - <a href="https://github.com/pixel-point/favpie" target="_blank noopener noreferrer">pixel-point/favpie</a>
+  - collapsify(爬取网站所有资源到单文件)
+    - <a href="https://github.com/cloudflare/collapsify" target="_blank noopener noreferrer">cloudflare/collapsify</a>
+  - jscpd(重复代码检测)
+    - <a href="https://github.com/kucherenko/jscpd" target="_blank noopener noreferrer">kucherenko/jscpd</a>
+  - localtunnel(公开本地网络环境)
+    - <a href="https://github.com/localtunnel/localtunnel" target="_blank noopener noreferrer">localtunnel/localtunnel</a>
+- addon
+  - 工具
+    - napi系列
+      - napi-rs(在rust编译nodejs插件)
+        - <a href="https://github.com/napi-rs/napi-rs" target="_blank noopener noreferrer">napi-rs/napi-rs</a>
+      - napi-wasm(napi导出wasm)
+        - <a href="https://github.com/devongovett/napi-wasm" target="_blank noopener noreferrer">devongovett/napi-wasm</a>
+    - node-addon-api
+      - <a href="https://github.com/nodejs/node-addon-api" target="_blank noopener noreferrer">nodejs/node-addon-api</a>
+    - node-gyp(编译addon)
+      - <a href="https://github.com/nodejs/node-gyp" target="_blank noopener noreferrer">nodejs/node-gyp</a>
+    - node-bindings(addon导入器)
+      - <a href="https://github.com/TooTallNate/node-bindings" target="_blank noopener noreferrer">TooTallNate/node-bindings</a>
+    - neon(用rust开发原生模块/napi竞品)
+      - <a href="https://github.com/neon-bindings/neon" target="_blank noopener noreferrer">neon-bindings/neon</a>
+    - cmake-js(node-gyp竞品/编译c++到addon)
+      - <a href="https://github.com/cmake-js/cmake-js" target="_blank noopener noreferrer">cmake-js/cmake-js</a>
+  - 实战项目
+    - node-addon-example
+      - <a href="https://github.com/nodejs/node-addon-examples" target="_blank noopener noreferrer">nodejs/node-addon-examples</a>
+    - nyaa-nodejs-demp(来一打cpp拓展随书代码)
+      - <a href="https://github.com/XadillaX/nyaa-nodejs-demo" target="_blank noopener noreferrer">XadillaX/nyaa-nodejs-demo</a>
+    - easy-sleep(跨平台sleep)
+      - <a href="https://github.com/qufei1993/easy-sleep" target="_blank noopener noreferrer">qufei1993/easy-sleep</a>
+## React
+- 全局状态管理
+  - hox
+    - <a href="https://github.com/umijs/hox" target="_blank noopener noreferrer">umijs/hox</a>
+  - Mobx
+    - mobx-react-lite(已存档)
+      - <a href="https://github.com/mobxjs/mobx-react-lite" target="_blank noopener noreferrer">mobxjs/mobx-react-lite</a>
+    - mobx
+      - <a href="https://github.com/mobxjs/mobx" target="_blank noopener noreferrer">mobxjs/mobx</a>
+    - mobx-react(已archive)
+      - <a href="https://github.com/mobxjs/mobx-react" target="_blank noopener noreferrer">mobxjs/mobx-react</a>
+  - icestore
+    - <a href="https://github.com/ice-lab/icestore" target="_blank noopener noreferrer">ice-lab/icestore</a>
+  - nanostores
+    - <a href="https://github.com/nanostores/nanostores" target="_blank noopener noreferrer">nanostores/nanostores</a>
+  - react-model(非全局/方轮子)
+    - <a href="https://github.com/byte-fe/react-model" target="_blank noopener noreferrer">byte-fe/react-model</a>
+  - redux系
+    - redux-toolkit
+      - <a href="https://github.com/reduxjs/redux-toolkit" target="_blank noopener noreferrer">reduxjs/redux-toolkit</a>
+    - redux-thunk
+      - <a href="https://github.com/reduxjs/redux-thunk" target="_blank noopener noreferrer">reduxjs/redux-thunk</a>
+    - redux-persist
+      - <a href="https://github.com/rt2zz/redux-persist" target="_blank noopener noreferrer">rt2zz/redux-persist</a>
+    - reselect
+      - <a href="https://github.com/reduxjs/reselect" target="_blank noopener noreferrer">reduxjs/reselect</a>
+    - redux-observable(结合rxjs)
+      - <a href="https://github.com/redux-observable/redux-observable" target="_blank noopener noreferrer">redux-observable/redux-observable</a>
+    - typesafe-actions(redux action工具类型)
+      - <a href="https://github.com/piotrwitek/typesafe-actions" target="_blank noopener noreferrer">piotrwitek/typesafe-actions</a>
+    - redux-actions(生成actions/陈旧)
+      - <a href="https://github.com/redux-utilities/redux-actions" target="_blank noopener noreferrer">redux-utilities/redux-actions</a>
+    - redux-saga
+      - <a href="https://github.com/redux-saga/redux-saga" target="_blank noopener noreferrer">redux-saga/redux-saga</a>
+    - react-redux
+      - <a href="https://github.com/reduxjs/react-redux" target="_blank noopener noreferrer">reduxjs/react-redux</a>
+    - redux-mock-store(模拟测试redux的store)
+      - <a href="https://github.com/reduxjs/redux-mock-store" target="_blank noopener noreferrer">reduxjs/redux-mock-store</a>
+    - redux-immutable(redux和immutable一起用)
+      - <a href="https://github.com/gajus/redux-immutable" target="_blank noopener noreferrer">gajus/redux-immutable</a>
+  - rematch(redux framework)
+    - <a href="https://github.com/rematch/rematch" target="_blank noopener noreferrer">rematch/rematch</a>
+  - teaful
+    - <a href="https://github.com/teafuljs/teaful" target="_blank noopener noreferrer">teafuljs/teaful</a>
+  - unstated-next
+    - <a href="https://github.com/jamiebuilds/unstated-next" target="_blank noopener noreferrer">jamiebuilds/unstated-next</a>
+  - elf(建立在rxjs上的)
+    - <a href="https://github.com/ngneat/elf" target="_blank noopener noreferrer">ngneat/elf</a>
+  - dva
+    - <a href="https://github.com/dvajs/dva" target="_blank noopener noreferrer">dvajs/dva</a>
+  - jotai系列
+    - Jotai
+      - <a href="https://github.com/pmndrs/jotai" target="_blank noopener noreferrer">pmndrs/jotai</a>
+    - jotai-suspense
+      - <a href="https://github.com/jotaijs/jotai-suspense" target="_blank noopener noreferrer">jotaijs/jotai-suspense</a>
+    - jotai-cache(缓存atom/特别是http请求)
+      - <a href="https://github.com/jotaijs/jotai-cache" target="_blank noopener noreferrer">jotaijs/jotai-cache</a>
+    - swc-jotai(swc热更新支持)
+      - <a href="https://github.com/pmndrs/swc-jotai" target="_blank noopener noreferrer">pmndrs/swc-jotai</a>
+    - jotai-valtio(连接valtio和jotai)
+      - <a href="https://github.com/jotai-labs/jotai-valtio" target="_blank noopener noreferrer">jotai-labs/jotai-valtio</a>
+    - jotai-cache(可以缓存异步atom数据)
+      - <a href="https://github.com/jotaijs/jotai-cache" target="_blank noopener noreferrer">jotaijs/jotai-cache</a>
+    - jotai-recoil(和recoil同步)
+      - <a href="https://github.com/jotaijs/jotai-recoil" target="_blank noopener noreferrer">jotaijs/jotai-recoil</a>
+    - jotai-signal
+      - <a href="https://github.com/jotaijs/jotai-signal" target="_blank noopener noreferrer">jotaijs/jotai-signal</a>
+    - jotai-uncontrolled
+      - <a href="https://github.com/jotaijs/jotai-uncontrolled" target="_blank noopener noreferrer">jotaijs/jotai-uncontrolled</a>
+    - jotai-tanstack-query(和RQ搭配)
+      - <a href="https://github.com/jotaijs/jotai-tanstack-query" target="_blank noopener noreferrer">jotaijs/jotai-tanstack-query</a>
+    - jotai-molecules(分子/多个原子组合)
+      - <a href="https://github.com/saasquatch/bunshi" target="_blank noopener noreferrer">saasquatch/bunshi</a>
+    - jotai-recoil-adapter(recoil迁移到jotai/不完善)
+      - <a href="https://github.com/clockelliptic/jotai-recoil-adapter" target="_blank noopener noreferrer">clockelliptic/jotai-recoil-adapter</a>
+  - hookstate
+    - <a href="https://github.com/avkonst/hookstate" target="_blank noopener noreferrer">avkonst/hookstate</a>
+  - react-hooks-global-state(简单)
+    - <a href="https://github.com/dai-shi/react-hooks-global-state" target="_blank noopener noreferrer">dai-shi/react-hooks-global-state</a>
+  - kea
+    - <a href="https://github.com/keajs/kea" target="_blank noopener noreferrer">keajs/kea</a>
+  - constate
+    - <a href="https://github.com/diegohaz/constate" target="_blank noopener noreferrer">diegohaz/constate</a>
+  - use-context-selector(避免context的rerender的select)
+    - <a href="https://github.com/dai-shi/use-context-selector" target="_blank noopener noreferrer">dai-shi/use-context-selector</a>
+  - react-tracked(useState全局存储/Proxy跟踪state)
+    - <a href="https://github.com/dai-shi/react-tracked" target="_blank noopener noreferrer">dai-shi/react-tracked</a>
+  - little-state-machine
+    - <a href="https://github.com/beekai-oss/little-state-machine" target="_blank noopener noreferrer">beekai-oss/little-state-machine</a>
+  - legend-state(细粒度状态管理)
+    - <a href="https://github.com/LegendApp/legend-state" target="_blank noopener noreferrer">LegendApp/legend-state</a>
+  - recoil系列
+    - Recoil
+      - <a href="https://github.com/facebookexperimental/Recoil" target="_blank noopener noreferrer">facebookexperimental/Recoil</a>
+    - recoil-sync(状态与外部同步工具)
+      - <a href="https://www.npmjs.com/package/recoil-sync" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - @recoiljs/refine(原子类型校验)
+      - <a href="https://www.npmjs.com/package/@recoiljs/refine" target="_blank noopener noreferrer">www.npmjs.com</a>
+  - use-atom
+    - <a href="https://github.com/dai-shi/use-atom" target="_blank noopener noreferrer">dai-shi/use-atom</a>
+  - zustand系列
+    - zustand(2021最受欢迎)
+      - <a href="https://github.com/pmndrs/zustand" target="_blank noopener noreferrer">pmndrs/zustand</a>
+    - zundo(redo/undo插件)
+      - <a href="https://github.com/charkour/zundo" target="_blank noopener noreferrer">charkour/zundo</a>
+    - zustand-signal
+      - <a href="https://github.com/dai-shi/zustand-signal" target="_blank noopener noreferrer">dai-shi/zustand-signal</a>
+    - use-zustand(性能更好但有撕裂问题)
+      - <a href="https://github.com/dai-shi/use-zustand" target="_blank noopener noreferrer">dai-shi/use-zustand</a>
+    - zustood(zustand升级版)
+      - <a href="https://github.com/udecode/zustood" target="_blank noopener noreferrer">udecode/zustood</a>
+  - signal系列
+    - create-react-signals(signal的抽象实现)
+      - <a href="https://github.com/dai-shi/create-react-signals" target="_blank noopener noreferrer">dai-shi/create-react-signals</a>
+    - signia(tldraw出品)
+      - <a href="https://github.com/tldraw/signia" target="_blank noopener noreferrer">tldraw/signia</a>
+  - valtio系列
+    - valtio(proxy实现的state)
+      - <a href="https://github.com/pmndrs/valtio" target="_blank noopener noreferrer">pmndrs/valtio</a>
+    - valtio-signal
+      - <a href="https://github.com/dai-shi/valtio-signal" target="_blank noopener noreferrer">dai-shi/valtio-signal</a>
+    - use-valtio(不适用uSES的纯方案)
+      - <a href="https://github.com/dai-shi/use-valtio" target="_blank noopener noreferrer">dai-shi/use-valtio</a>
+    - valtio-yjs
+      - <a href="https://github.com/valtiojs/valtio-yjs" target="_blank noopener noreferrer">valtiojs/valtio-yjs</a>
+  - easy-peasy(类似redux)
+    - <a href="https://github.com/ctrlplusb/easy-peasy" target="_blank noopener noreferrer">ctrlplusb/easy-peasy</a>
+  - zedux(冷)
+    - <a href="https://github.com/Omnistac/zedux" target="_blank noopener noreferrer">Omnistac/zedux</a>
+  - react-sweet-state(冷)
+    - <a href="https://github.com/atlassian/react-sweet-state" target="_blank noopener noreferrer">atlassian/react-sweet-state</a>
+  - will-this-react-global-state-work-in-concurrent-rendering(撕裂问题对比)
+    - <a href="https://github.com/dai-shi/will-this-react-global-state-work-in-concurrent-rendering" target="_blank noopener noreferrer">dai-shi/will-this-react-global-state-work-in-concurrent-rendering</a>
+- 常用库集合
+  - icons系列
+    - react-flag-kit(各国国旗)
+      - <a href="https://github.com/umidbekk/react-flag-kit" target="_blank noopener noreferrer">umidbekk/react-flag-kit</a>
+    - react-feather(feather react版)
+      - <a href="https://github.com/feathericons/react-feather" target="_blank noopener noreferrer">feathericons/react-feather</a>
+    - gromment-icons(react图标库)
+      - <a href="https://github.com/grommet/grommet-icons" target="_blank noopener noreferrer">grommet/grommet-icons</a>
+    - react-icons(react svg图标大全)
+      - <a href="https://github.com/react-icons/react-icons" target="_blank noopener noreferrer">react-icons/react-icons</a>
+    - supercons(冷)
+      - <a href="https://github.com/lachlanjc/supercons" target="_blank noopener noreferrer">lachlanjc/supercons</a>
+    - styled-icons
+      - <a href="https://github.com/styled-icons/styled-icons" target="_blank noopener noreferrer">styled-icons/styled-icons</a>
+    - react-icons-kit
+      - <a href="https://github.com/wmira/react-icons-kit" target="_blank noopener noreferrer">wmira/react-icons-kit</a>
+    - phosphor-react
+      - <a href="https://github.com/phosphor-icons/phosphor-react" target="_blank noopener noreferrer">phosphor-icons/phosphor-react</a>
+    - uiball-loaders(loading图标)
+      - <a href="https://github.com/GriffinJohnston/uiball-loaders" target="_blank noopener noreferrer">GriffinJohnston/uiball-loaders</a>
+    - tabler-icons-react(mantine推荐)
+      - <a href="https://github.com/konradkalemba/tabler-icons-react" target="_blank noopener noreferrer">konradkalemba/tabler-icons-react</a>
+    - react-fontawesome
+      - <a href="https://github.com/FortAwesome/react-fontawesome" target="_blank noopener noreferrer">FortAwesome/react-fontawesome</a>
+    - mdi-react(material design icons组件)
+      - <a href="https://github.com/levrik/mdi-react" target="_blank noopener noreferrer">levrik/mdi-react</a>
+  - virtual虚拟列表/无限滚动系列
+    - virtualized(虚拟列表解决方案)
+      - <a href="https://github.com/bvaughn/react-virtualized" target="_blank noopener noreferrer">bvaughn/react-virtualized</a>
+    - react-virtuoso(最强大的虚拟列表)
+      - <a href="https://github.com/petyosi/react-virtuoso" target="_blank noopener noreferrer">petyosi/react-virtuoso</a>
+    - react-cool-virtual(虚拟列表的简易hooks)
+      - <a href="https://github.com/wellyshen/react-cool-virtual" target="_blank noopener noreferrer">wellyshen/react-cool-virtual</a>
+    - react-infinite-scroller(无限滚动组件/陈旧)
+      - <a href="https://github.com/danbovey/react-infinite-scroller" target="_blank noopener noreferrer">danbovey/react-infinite-scroller</a>
+    - react-infinitegrid(无限滚动列表库)
+      - <a href="https://github.com/naver/egjs-infinitegrid/tree/master/packages/react-infinitegrid" target="_blank noopener noreferrer">naver/egjs-infinitegrid/tree/master/packages/react-infinitegrid</a>
+    - virtual(多框架适配器支持)
+      - <a href="https://github.com/TanStack/virtual" target="_blank noopener noreferrer">TanStack/virtual</a>
+    - react-easy-infinite-scroll-hook(超冷)
+      - <a href="https://github.com/vdmrgv/react-easy-infinite-scroll-hook" target="_blank noopener noreferrer">vdmrgv/react-easy-infinite-scroll-hook</a>
+    - react-window
+      - <a href="https://github.com/bvaughn/react-window" target="_blank noopener noreferrer">bvaughn/react-window</a>
+    - virtua(冷)
+      - <a href="https://github.com/inokawa/virtua" target="_blank noopener noreferrer">inokawa/virtua</a>
+    - react-infinite-scroll-component(无限滚动组件/陈旧)
+      - <a href="https://github.com/ankeetmaini/react-infinite-scroll-component" target="_blank noopener noreferrer">ankeetmaini/react-infinite-scroll-component</a>
+  - Form(表单框架)
+    - formily
+      - <a href="https://github.com/alibaba/formily" target="_blank noopener noreferrer">alibaba/formily</a>
+      - <a href="https://formilyjs.org/#/bdCRC5/dzUZU8il" target="_blank noopener noreferrer">formilyjs.org</a>
+    - x-render(阿里飞猪表单框架)
+      - <a href="https://github.com/alibaba/x-render" target="_blank noopener noreferrer">alibaba/x-render</a>
+    - formik
+      - <a href="https://github.com/formium/formik" target="_blank noopener noreferrer">formium/formik</a>
+      - <a href="https://github.com/jaredpalmer/formik" target="_blank noopener noreferrer">jaredpalmer/formik</a>
+    - react-auto-formgenerator(根据json生成表单)
+      - <a href="https://github.com/zayn-m/react-auto-formgenerator" target="_blank noopener noreferrer">zayn-m/react-auto-formgenerator</a>
+    - react-jsonschema-form
+      - <a href="https://github.com/rjsf-team/react-jsonschema-form" target="_blank noopener noreferrer">rjsf-team/react-jsonschema-form</a>
+    - fomir(vercel出品/冷门)
+      - <a href="https://github.com/forsigner/fomir" target="_blank noopener noreferrer">forsigner/fomir</a>
+    - react-final-form
+      - <a href="https://github.com/final-form/react-final-form" target="_blank noopener noreferrer">final-form/react-final-form</a>
+    - react-hook-form系列
+      - react-hook-form
+        - <a href="https://github.com/react-hook-form/react-hook-form" target="_blank noopener noreferrer">react-hook-form/react-hook-form</a>
+      - react-hook-form-jsonschema(json schema生成表单)
+        - <a href="https://github.com/vtex/react-hook-form-jsonschema" target="_blank noopener noreferrer">vtex/react-hook-form-jsonschema</a>
+      - react-hook-form-persist(选定存储记忆react-hook-form数据)
+        - <a href="https://github.com/tiaanduplessis/react-hook-form-persist" target="_blank noopener noreferrer">tiaanduplessis/react-hook-form-persist</a>
+      - resolvers(配套schema校验器)
+        - <a href="https://github.com/react-hook-form/resolvers" target="_blank noopener noreferrer">react-hook-form/resolvers</a>
+    - snoopHub(快速在线问卷搭建/冷门)
+      - <a href="https://github.com/snoopForms/snoopHub" target="_blank noopener noreferrer">snoopForms/snoopHub</a>
+    - drip-form(jd/冷门)
+      - <a href="https://github.com/JDFED/drip-form" target="_blank noopener noreferrer">JDFED/drip-form</a>
+    - @shopify/react-form
+      - <a href="https://github.com/Shopify/quilt/tree/main/packages/react-form" target="_blank noopener noreferrer">Shopify/quilt/tree/main/packages/react-form</a>
+    - react-ts-form(冷)
+      - <a href="https://github.com/iway1/react-ts-form" target="_blank noopener noreferrer">iway1/react-ts-form</a>
+    - tanstack/form(冷)
+      - <a href="https://github.com/tanstack/form" target="_blank noopener noreferrer">tanstack/form</a>
+    - houseform(冷)
+      - <a href="https://github.com/houseform/houseform" target="_blank noopener noreferrer">houseform/houseform</a>
+    - modular-forms(冷)
+      - <a href="https://github.com/fabian-hiller/modular-forms" target="_blank noopener noreferrer">fabian-hiller/modular-forms</a>
+    - react-form-simple(冷)
+      - <a href="https://github.com/easy-form/react-form-simple" target="_blank noopener noreferrer">easy-form/react-form-simple</a>
+  - toast(通知)
+    - react-toastify
+      - <a href="https://github.com/fkhadra/react-toastify" target="_blank noopener noreferrer">fkhadra/react-toastify</a>
+      - <a href="https://fkhadra.github.io/react-toastify/introduction" target="_blank noopener noreferrer">fkhadra.github.io</a>
+    - react-hot-toast
+      - <a href="https://github.com/timolins/react-hot-toast" target="_blank noopener noreferrer">timolins/react-hot-toast</a>
+    - notistack(左下角material风格)
+      - <a href="https://github.com/iamhosseindhv/notistack" target="_blank noopener noreferrer">iamhosseindhv/notistack</a>
+    - reapop(一个弹出消息通知系统)
+      - <a href="https://github.com/LouisBarranqueiro/reapop" target="_blank noopener noreferrer">LouisBarranqueiro/reapop</a>
+    - sonner
+      - <a href="https://github.com/emilkowalski/sonner" target="_blank noopener noreferrer">emilkowalski/sonner</a>
+  - 基础组件系列
+    - react-tags(tags最原始组件)
+      - <a href="https://github.com/react-tags/react-tags" target="_blank noopener noreferrer">react-tags/react-tags</a>
+    - react-autosuggest(自动补全输入组件)
+      - <a href="https://github.com/moroshko/react-autosuggest" target="_blank noopener noreferrer">moroshko/react-autosuggest</a>
+    - react-number-format(格式化输入的文本)
+      - <a href="https://github.com/s-yadav/react-number-format" target="_blank noopener noreferrer">s-yadav/react-number-format</a>
+    - react-dropdown(下拉组件)
+      - <a href="https://github.com/fraserxu/react-dropdown" target="_blank noopener noreferrer">fraserxu/react-dropdown</a>
+    - react-compound-slider(复合滑块组件)
+      - <a href="https://github.com/sghall/react-compound-slider" target="_blank noopener noreferrer">sghall/react-compound-slider</a>
+    - react-tabs(多tab组件基础)
+      - <a href="https://github.com/reactjs/react-tabs" target="_blank noopener noreferrer">reactjs/react-tabs</a>
+    - select多选组件
+      - reaselct(多选select组件)
+        - <a href="https://github.com/reaviz/reaselct" target="_blank noopener noreferrer">reaviz/reaselct</a>
+      - react-select(单选/多选组件)
+        - <a href="https://github.com/JedWatson/react-select" target="_blank noopener noreferrer">JedWatson/react-select</a>
+        - <a href="https://react-select.com/home" target="_blank noopener noreferrer">react-select.com</a>
+    - collapse折叠组件系列
+      - react-collapsed(折叠组件)
+        - <a href="https://github.com/roginfarrer/react-collapsed" target="_blank noopener noreferrer">roginfarrer/react-collapsed</a>
+      - rc-collapse
+        - <a href="https://github.com/react-component/collapse" target="_blank noopener noreferrer">react-component/collapse</a>
+      - react-accessible-accordion(满足wai-aria的手风琴组件)
+        - <a href="https://github.com/springload/react-accessible-accordion" target="_blank noopener noreferrer">springload/react-accessible-accordion</a>
+      - React-fast-accordion(手风琴/冷门)
+        - <a href="https://github.com/ShivamJoker/React-fast-accordion" target="_blank noopener noreferrer">ShivamJoker/React-fast-accordion</a>
+      - react-collapsible
+        - <a href="https://github.com/glennflanagan/react-collapsible" target="_blank noopener noreferrer">glennflanagan/react-collapsible</a>
+      - react-accordion(手风琴组件)
+        - <a href="https://github.com/szhsin/react-accordion" target="_blank noopener noreferrer">szhsin/react-accordion</a>
+    - pagination分页组件系列
+      - react-paginate(创建分页基础)
+        - <a href="https://github.com/AdeleD/react-paginate" target="_blank noopener noreferrer">AdeleD/react-paginate</a>
+      - react-responsive-pagination(屏幕宽度响应式分页组件)
+        - <a href="https://github.com/jonelantha/react-responsive-pagination" target="_blank noopener noreferrer">jonelantha/react-responsive-pagination</a>
+    - react-textarea-autosize(自动适应内容尺寸的textarea组件)
+      - <a href="https://github.com/Andarist/react-textarea-autosize" target="_blank noopener noreferrer">Andarist/react-textarea-autosize</a>
+    - react-switch(可拖拽的switch开关组件)
+      - <a href="https://github.com/markusenglund/react-switch" target="_blank noopener noreferrer">markusenglund/react-switch</a>
+    - rc-image(antd image底层)
+      - <a href="https://github.com/react-component/image" target="_blank noopener noreferrer">react-component/image</a>
+    - rc-progress(圆形进度条)
+      - <a href="https://github.com/react-component/progress" target="_blank noopener noreferrer">react-component/progress</a>
+    - react-pro-sidebar(sidebar/很一般)
+      - <a href="https://github.com/azouaoui-med/react-pro-sidebar" target="_blank noopener noreferrer">azouaoui-med/react-pro-sidebar</a>
+    - react-timezone-select(时区选择器/冷门)
+      - <a href="https://github.com/ndom91/react-timezone-select" target="_blank noopener noreferrer">ndom91/react-timezone-select</a>
+    - react-easy-edit(可编辑输入框原型组件)
+      - <a href="https://github.com/giorgosart/react-easy-edit" target="_blank noopener noreferrer">giorgosart/react-easy-edit</a>
+    - react-tag-autocomplete(自动补全tag组件)
+      - <a href="https://github.com/i-like-robots/react-tag-autocomplete" target="_blank noopener noreferrer">i-like-robots/react-tag-autocomplete</a>
+  - css-in-js
+    - styled-components
+      - <a href="https://github.com/styled-components/styled-components" target="_blank noopener noreferrer">styled-components/styled-components</a>
+      - styled-theming(主题方案)
+        - <a href="https://github.com/styled-components/styled-theming" target="_blank noopener noreferrer">styled-components/styled-theming</a>
+    - emotion系列
+      - emotion
+        - <a href="https://github.com/emotion-js/emotion" target="_blank noopener noreferrer">emotion-js/emotion</a>
+      - tss-react(基于emotion)
+        - <a href="https://github.com/garronej/tss-react" target="_blank noopener noreferrer">garronej/tss-react</a>
+    - stitches
+      - <a href="https://github.com/modulz/stitches" target="_blank noopener noreferrer">modulz/stitches</a>
+    - styled-system(box容器style系统)
+      - <a href="https://github.com/styled-system/styled-system" target="_blank noopener noreferrer">styled-system/styled-system</a>
+    - linaria(0运行时)
+      - <a href="https://github.com/callstack/linaria" target="_blank noopener noreferrer">callstack/linaria</a>
+    - vanilla-extract(css-in-ts)
+      - <a href="https://github.com/vanilla-extract-css/vanilla-extract" target="_blank noopener noreferrer">vanilla-extract-css/vanilla-extract</a>
+    - styled-jsx(完整style内容书写支持)
+      - <a href="https://github.com/vercel/styled-jsx" target="_blank noopener noreferrer">vercel/styled-jsx</a>
+    - radium(老旧)
+      - <a href="https://github.com/FormidableLabs/radium" target="_blank noopener noreferrer">FormidableLabs/radium</a>
+    - theming(主题hooks方案)
+      - <a href="https://github.com/cssinjs/theming#usetheme" target="_blank noopener noreferrer">cssinjs/theming#usetheme</a>
+    - goober(轻量)
+      - <a href="https://github.com/cristianbote/goober" target="_blank noopener noreferrer">cristianbote/goober</a>
+    - glamor(旧)
+      - <a href="https://github.com/threepointone/glamor" target="_blank noopener noreferrer">threepointone/glamor</a>
+    - griffel(微软)
+      - <a href="https://github.com/microsoft/griffel" target="_blank noopener noreferrer">microsoft/griffel</a>
+    - xstyled(实用优先/冷门)
+      - <a href="https://github.com/styled-components/xstyled" target="_blank noopener noreferrer">styled-components/xstyled</a>
+    - precompile/atom预编译系列
+      - compiled(预编译css-in-js框架)
+        - <a href="https://github.com/atlassian-labs/compiled" target="_blank noopener noreferrer">atlassian-labs/compiled</a>
+      - css-out-js(超冷)
+        - <a href="https://github.com/siddharthkp/css-out-js" target="_blank noopener noreferrer">siddharthkp/css-out-js</a>
+      - stylify(把样式写在class里自动产出优化样式atom类)
+        - <a href="https://github.com/stylify/packages" target="_blank noopener noreferrer">stylify/packages</a>
+      - style9系列
+        - style9(类fb的类名/预编译优化/冷门)
+          - <a href="https://github.com/johanholmerin/style9" target="_blank noopener noreferrer">johanholmerin/style9</a>
+        - style9-webpack(另一个支持插件)
+          - <a href="https://github.com/SukkaW/style9-webpack" target="_blank noopener noreferrer">SukkaW/style9-webpack</a>
+    - tailwind系列
+      - tailwind-styled-component(原子css的sc写法)
+        - <a href="https://github.com/MathiasGilson/tailwind-styled-component" target="_blank noopener noreferrer">MathiasGilson/tailwind-styled-component</a>
+      - twind(tailwind最小解决方案)
+        - <a href="https://github.com/tw-in-js/twind" target="_blank noopener noreferrer">tw-in-js/twind</a>
+      - twin.macro(css-in-js+tailwind)
+        - <a href="https://github.com/ben-rogerson/twin.macro" target="_blank noopener noreferrer">ben-rogerson/twin.macro</a>
+      - twc(复用tailwind样式的组件)
+        - <a href="https://github.com/gregberge/twc" target="_blank noopener noreferrer">gregberge/twc</a>
+    - stitches(0运行时)
+      - <a href="https://github.com/stitchesjs/stitches" target="_blank noopener noreferrer">stitchesjs/stitches</a>
+    - cssinjs(antd5底层样式方案)
+      - <a href="https://github.com/ant-design/cssinjs" target="_blank noopener noreferrer">ant-design/cssinjs</a>
+    - tw-classed(tailwind+css-in-js/超冷)
+      - <a href="https://github.com/sannajammeh/tw-classed" target="_blank noopener noreferrer">sannajammeh/tw-classed</a>
+    - styletron(组件设计样式工具包)
+      - <a href="https://github.com/styletron/styletron" target="_blank noopener noreferrer">styletron/styletron</a>
+    - react-jss
+      - <a href="https://github.com/cssinjs/jss" target="_blank noopener noreferrer">cssinjs/jss</a>
+    - antd-style(基于antd5 css in js包做的/冷门)
+      - <a href="https://github.com/arvinxx/antd-style" target="_blank noopener noreferrer">arvinxx/antd-style</a>
+    - macaron(冷)
+      - <a href="https://github.com/macaron-css/macaron" target="_blank noopener noreferrer">macaron-css/macaron</a>
+    - ecsstatic(支持scss/冷门)
+      - <a href="https://github.com/mayank99/ecsstatic" target="_blank noopener noreferrer">mayank99/ecsstatic</a>
+    - css-components(css modules样式和css in js组件搭配/冷门)
+      - <a href="https://github.com/phantomstudios/css-components" target="_blank noopener noreferrer">phantomstudios/css-components</a>
+    - cva(预创建变体风格)
+      - <a href="https://github.com/joe-bell/cva" target="_blank noopener noreferrer">joe-bell/cva</a>
+    - panda系列
+      - panda(chakra-ui底层)
+        - <a href="https://github.com/chakra-ui/panda" target="_blank noopener noreferrer">chakra-ui/panda</a>
+      - tw2panda(转换tailwind到panda)
+        - <a href="https://github.com/astahmer/tw2panda" target="_blank noopener noreferrer">astahmer/tw2panda</a>
+    - stylex(fb的)
+      - <a href="https://github.com/facebook/stylex" target="_blank noopener noreferrer">facebook/stylex</a>
+  - drag(拖拽库)
+    - use-gesture
+      - <a href="https://github.com/pmndrs/use-gesture" target="_blank noopener noreferrer">pmndrs/use-gesture</a>
+    - beautiful-dnd
+      - <a href="https://github.com/atlassian/react-beautiful-dnd" target="_blank noopener noreferrer">atlassian/react-beautiful-dnd</a>
+    - react-dnd
+      - <a href="https://github.com/react-dnd/react-dnd" target="_blank noopener noreferrer">react-dnd/react-dnd</a>
+    - react-movable
+      - <a href="https://github.com/tajo/react-movable" target="_blank noopener noreferrer">tajo/react-movable</a>
+    - react-sortable-hoc
+      - <a href="https://github.com/clauderic/react-sortable-hoc" target="_blank noopener noreferrer">clauderic/react-sortable-hoc</a>
+    - dnd-kit
+      - <a href="https://github.com/clauderic/dnd-kit" target="_blank noopener noreferrer">clauderic/dnd-kit</a>
+    - react-grid-dnd(网格拖拽)
+      - <a href="https://github.com/bmcmahen/react-grid-dnd" target="_blank noopener noreferrer">bmcmahen/react-grid-dnd</a>
+    - react-rnd(创建一个自由resize可拖拽的组件)
+      - <a href="https://github.com/bokuweb/react-rnd" target="_blank noopener noreferrer">bokuweb/react-rnd</a>
+    - react-draggable
+      - <a href="https://github.com/react-grid-layout/react-draggable" target="_blank noopener noreferrer">react-grid-layout/react-draggable</a>
+    - react-sortable-tree(一个拖拽数组件/陈旧)
+      - <a href="https://github.com/frontend-collective/react-sortable-tree" target="_blank noopener noreferrer">frontend-collective/react-sortable-tree</a>
+    - react-moveable(任意变形拖拽工具)
+      - <a href="https://github.com/daybrush/moveable/tree/master/packages/react-moveable" target="_blank noopener noreferrer">daybrush/moveable/tree/master/packages/react-moveable</a>
+    - 页面节点拖拽布局系列
+      - react-page(所见即所得页面编辑器)
+        - <a href="https://github.com/react-page/react-page" target="_blank noopener noreferrer">react-page/react-page</a>
+      - puck
+        - <a href="https://github.com/measuredco/puck" target="_blank noopener noreferrer">measuredco/puck</a>
+  - animation(动画库)
+    - react-spring
+      - <a href="https://www.react-spring.io/" target="_blank noopener noreferrer">www.react-spring.io</a>
+      - <a href="https://github.com/pmndrs/react-spring" target="_blank noopener noreferrer">pmndrs/react-spring</a>
+    - framer-motion
+      - <a href="https://github.com/framer/motion" target="_blank noopener noreferrer">framer/motion</a>
+    - react-move(轻动画库)
+      - <a href="https://github.com/sghall/react-move" target="_blank noopener noreferrer">sghall/react-move</a>
+    - ant-motion
+      - <a href="https://github.com/ant-design/ant-motion" target="_blank noopener noreferrer">ant-design/ant-motion</a>
+    - scenejs(时间轴动画)
+      - <a href="https://github.com/daybrush/scenejs" target="_blank noopener noreferrer">daybrush/scenejs</a>
+    - react-lottie
+      - 官网
+        - <a href="https://lottiefiles.com/" target="_blank noopener noreferrer">lottiefiles.com</a>
+      - <a href="https://github.com/chenqingspring/react-lottie" target="_blank noopener noreferrer">chenqingspring/react-lottie</a>
+    - react-transition-group
+      - <a href="https://github.com/reactjs/react-transition-group" target="_blank noopener noreferrer">reactjs/react-transition-group</a>
+    - react-motion(旧)
+      - <a href="https://github.com/chenglou/react-motion" target="_blank noopener noreferrer">chenglou/react-motion</a>
+    - react-transition-state(简单的过渡动画hook)
+      - <a href="https://github.com/szhsin/react-transition-state" target="_blank noopener noreferrer">szhsin/react-transition-state</a>
+    - transition-hook(轻量的过渡hook)
+      - <a href="https://github.com/iamyoki/transition-hook" target="_blank noopener noreferrer">iamyoki/transition-hook</a>
+    - tamagui(支持RN)
+      - <a href="https://github.com/tamagui/tamagui" target="_blank noopener noreferrer">tamagui/tamagui</a>
+    - react-flip-toolkit(多节点位置重排自动动画库)
+      - <a href="https://github.com/aholachek/react-flip-toolkit" target="_blank noopener noreferrer">aholachek/react-flip-toolkit</a>
+    - react-just-parallax(视差工具/冷门)
+      - <a href="https://github.com/michalzalobny/react-just-parallax" target="_blank noopener noreferrer">michalzalobny/react-just-parallax</a>
+    - motion-canvas(用jsx编写动画)
+      - <a href="https://github.com/motion-canvas/motion-canvas" target="_blank noopener noreferrer">motion-canvas/motion-canvas</a>
+    - react-ansi-animation(ansi动画展示器)
+      - <a href="https://github.com/chung-leong/react-ansi-animation" target="_blank noopener noreferrer">chung-leong/react-ansi-animation</a>
+    - react-parallax-tilt(视差立体效果)
+      - <a href="https://github.com/mkosir/react-parallax-tilt" target="_blank noopener noreferrer">mkosir/react-parallax-tilt</a>
+    - react-magic-motion(自动添加动画效果/冷门)
+      - <a href="https://github.com/etesam913/react-magic-motion" target="_blank noopener noreferrer">etesam913/react-magic-motion</a>
+  - ui库
+    - reactstrap(基于bootstrap)
+      - <a href="https://reactstrap.github.io/" target="_blank noopener noreferrer">reactstrap.github.io</a>
+      - <a href="https://github.com/reactstrap/reactstrap" target="_blank noopener noreferrer">reactstrap/reactstrap</a>
+    - react-bulma
+      - <a href="https://github.com/couds/react-bulma-components" target="_blank noopener noreferrer">couds/react-bulma-components</a>
+    - chakra-ui
+      - <a href="https://chakra-ui.com/docs/components/tabs" target="_blank noopener noreferrer">chakra-ui.com</a>
+      - doc
+        - <a href="https://chakra-ui.com/" target="_blank noopener noreferrer">chakra-ui.com</a>
+        - <a href="https://github.com/chakra-ui/chakra-ui" target="_blank noopener noreferrer">chakra-ui/chakra-ui</a>
+    - semantic-ui
+      - <a href="https://github.com/Semantic-Org/Semantic-UI" target="_blank noopener noreferrer">Semantic-Org/Semantic-UI</a>
+      - <a href="https://semantic-ui.com/" target="_blank noopener noreferrer">semantic-ui.com</a>
+      - react
+        - <a href="https://github.com/Semantic-Org/Semantic-UI-React" target="_blank noopener noreferrer">Semantic-Org/Semantic-UI-React</a>
+        - <a href="https://react.semantic-ui.com/" target="_blank noopener noreferrer">react.semantic-ui.com</a>
+    - desktop(win10/mac 组件)
+      - <a href="https://github.com/gabrielbull/react-desktop" target="_blank noopener noreferrer">gabrielbull/react-desktop</a>
+    - zent(有赞ui)
+      - <a href="https://github.com/youzan/zent" target="_blank noopener noreferrer">youzan/zent</a>
+      - <a href="https://youzan.github.io/zent/zh/guides/install" target="_blank noopener noreferrer">youzan.github.io</a>
+    - rebass
+      - <a href="https://github.com/rebassjs/rebass" target="_blank noopener noreferrer">rebassjs/rebass</a>
+    - react-reduction
+      - <a href="https://github.com/reduction-admin/react-reduction" target="_blank noopener noreferrer">reduction-admin/react-reduction</a>
+    - kendo-ui-core
+      - <a href="https://github.com/telerik/kendo-ui-core" target="_blank noopener noreferrer">telerik/kendo-ui-core</a>
+    - blueprint
+      - <a href="https://github.com/palantir/blueprint" target="_blank noopener noreferrer">palantir/blueprint</a>
+    - reakit
+      - <a href="https://github.com/reakit/reakit" target="_blank noopener noreferrer">reakit/reakit</a>
+    - evergreen
+      - <a href="https://evergreen.segment.com/components/buttons" target="_blank noopener noreferrer">evergreen.segment.com</a>
+    - react-spectrum(adobe a11y友好组件库)
+      - <a href="https://github.com/adobe/react-spectrum" target="_blank noopener noreferrer">adobe/react-spectrum</a>
+    - react-windows-ui(win10风格)
+      - <a href="https://github.com/virtualvivek/react-windows-ui" target="_blank noopener noreferrer">virtualvivek/react-windows-ui</a>
+    - rsuite
+      - <a href="https://github.com/rsuite/rsuite" target="_blank noopener noreferrer">rsuite/rsuite</a>
+    - react95(复古)
+      - <a href="https://github.com/arturbien/React95" target="_blank noopener noreferrer">arturbien/React95</a>
+    - headlessui
+      - <a href="https://github.com/tailwindlabs/headlessui" target="_blank noopener noreferrer">tailwindlabs/headlessui</a>
+    - windmill-react-ui
+      - <a href="https://github.com/estevanmaito/windmill-react-ui" target="_blank noopener noreferrer">estevanmaito/windmill-react-ui</a>
+    - nextui
+      - <a href="https://github.com/nextui-org/nextui" target="_blank noopener noreferrer">nextui-org/nextui</a>
+    - primereact
+      - <a href="https://github.com/primefaces/primereact" target="_blank noopener noreferrer">primefaces/primereact</a>
+    - evergreen
+      - <a href="https://github.com/segmentio/evergreen" target="_blank noopener noreferrer">segmentio/evergreen</a>
+    - geist-ui
+      - <a href="https://github.com/geist-org/geist-ui" target="_blank noopener noreferrer">geist-org/geist-ui</a>
+    - fluentui(微软ui)
+      - <a href="https://github.com/microsoft/fluentui" target="_blank noopener noreferrer">microsoft/fluentui</a>
+    - primitives
+      - <a href="https://github.com/radix-ui/primitives" target="_blank noopener noreferrer">radix-ui/primitives</a>
+    - semi-design
+      - <a href="https://github.com/DouyinFE/semi-design" target="_blank noopener noreferrer">DouyinFE/semi-design</a>
+    - ariakit
+      - <a href="https://github.com/ariakit/ariakit" target="_blank noopener noreferrer">ariakit/ariakit</a>
+    - antd
+      - <a href="https://github.com/ant-design/ant-design" target="_blank noopener noreferrer">ant-design/ant-design</a>
+    - baseweb
+      - <a href="https://github.com/uber/baseweb" target="_blank noopener noreferrer">uber/baseweb</a>
+    - circuit-ui
+      - <a href="https://github.com/sumup-oss/circuit-ui" target="_blank noopener noreferrer">sumup-oss/circuit-ui</a>
+    - supabase/ui
+      - <a href="https://github.com/supabase/ui" target="_blank noopener noreferrer">supabase/ui</a>
+    - theme-ui
+      - <a href="https://github.com/system-ui/theme-ui" target="_blank noopener noreferrer">system-ui/theme-ui</a>
+    - gitlanding(落地页组件库/冷门)
+      - <a href="https://github.com/thieryw/gitlanding" target="_blank noopener noreferrer">thieryw/gitlanding</a>
+    - tiny-ui(冷)
+      - <a href="https://github.com/wangdicoder/tiny-ui" target="_blank noopener noreferrer">wangdicoder/tiny-ui</a>
+    - react-bootstrap系列
+      - react-bootstrap
+        - <a href="https://react-bootstrap.github.io/" target="_blank noopener noreferrer">react-bootstrap.github.io</a>
+        - <a href="https://github.com/react-bootstrap/react-bootstrap" target="_blank noopener noreferrer">react-bootstrap/react-bootstrap</a>
+      - react-bootstrap-typeahead(bootstrap样式自动补全组件)
+        - <a href="https://github.com/ericgio/react-bootstrap-typeahead" target="_blank noopener noreferrer">ericgio/react-bootstrap-typeahead</a>
+    - smooth-ui(老/dead)
+      - <a href="https://github.com/smooth-code/smooth-ui" target="_blank noopener noreferrer">smooth-code/smooth-ui</a>
+    - primer/react(github design)
+      - <a href="https://github.com/primer/react" target="_blank noopener noreferrer">primer/react</a>
+    - alibaba-fusion/next(fusion design)
+      - <a href="https://github.com/alibaba-fusion/next" target="_blank noopener noreferrer">alibaba-fusion/next</a>
+    - formation(冷)
+      - <a href="https://github.com/joshdschneider/formation" target="_blank noopener noreferrer">joshdschneider/formation</a>
+    - amplify-ui(aws设计)
+      - <a href="https://github.com/aws-amplify/amplify-ui" target="_blank noopener noreferrer">aws-amplify/amplify-ui</a>
+    - reach-ui(a11y基础设施)
+      - <a href="https://github.com/reach/reach-ui" target="_blank noopener noreferrer">reach/reach-ui</a>
+    - eui
+      - <a href="https://github.com/elastic/eui" target="_blank noopener noreferrer">elastic/eui</a>
+    - gestalt
+      - <a href="https://github.com/pinterest/gestalt" target="_blank noopener noreferrer">pinterest/gestalt</a>
+    - arco-design
+      - <a href="https://github.com/arco-design/arco-design" target="_blank noopener noreferrer">arco-design/arco-design</a>
+    - cloudscape/components(aws组件特色设计)
+      - <a href="https://github.com/cloudscape-design/components" target="_blank noopener noreferrer">cloudscape-design/components</a>
+    - vscode-webview-ui-toolkit(vscode风格组件库)
+      - <a href="https://github.com/microsoft/vscode-webview-ui-toolkit" target="_blank noopener noreferrer">microsoft/vscode-webview-ui-toolkit</a>
+    - polaris(shopify design)
+      - <a href="https://github.com/Shopify/polaris" target="_blank noopener noreferrer">Shopify/polaris</a>
+    - dracula-ui
+      - <a href="https://github.com/dracula/dracula-ui" target="_blank noopener noreferrer">dracula/dracula-ui</a>
+    - carbon(ibm design)
+      - <a href="https://github.com/carbon-design-system/carbon" target="_blank noopener noreferrer">carbon-design-system/carbon</a>
+    - neopop-web(立体风格组件库/内容少/冷门)
+      - <a href="https://github.com/CRED-CLUB/neopop-web" target="_blank noopener noreferrer">CRED-CLUB/neopop-web</a>
+    - mui系列
+      - material-ui
+        - <a href="https://github.com/mui/material-ui" target="_blank noopener noreferrer">mui/material-ui</a>
+      - mui-x
+        - <a href="https://github.com/mui/mui-x" target="_blank noopener noreferrer">mui/mui-x</a>
+    - mdb-react-ui-kit(mui复刻/冷门)
+      - <a href="https://github.com/mdbootstrap/mdb-react-ui-kit" target="_blank noopener noreferrer">mdbootstrap/mdb-react-ui-kit</a>
+    - hiui(xiaomi)
+      - <a href="https://github.com/XiaoMi/hiui" target="_blank noopener noreferrer">XiaoMi/hiui</a>
+    - mantine系列
+      - mantine(蓝色/有点像facebook)
+        - <a href="https://github.com/mantinedev/mantine" target="_blank noopener noreferrer">mantinedev/mantine</a>
+      - mantine-datatable(复杂表格)
+        - <a href="https://github.com/icflorescu/mantine-datatable" target="_blank noopener noreferrer">icflorescu/mantine-datatable</a>
+    - React95
+      - <a href="https://github.com/react95-io/React95" target="_blank noopener noreferrer">react95-io/React95</a>
+    - tailwind基于系列
+      - material-tailwind(基于tailwind)
+        - <a href="https://github.com/creativetimofficial/material-tailwind" target="_blank noopener noreferrer">creativetimofficial/material-tailwind</a>
+      - shadcn/ui
+        - <a href="https://github.com/shadcn-ui/ui" target="_blank noopener noreferrer">shadcn-ui/ui</a>
+      - windy(tailwind基础的组件库/冷门)
+        - <a href="https://github.com/webeetle/windy" target="_blank noopener noreferrer">webeetle/windy</a>
+      - rewindui(基于tailwind)
+        - <a href="https://github.com/rewindui/rewindui" target="_blank noopener noreferrer">rewindui/rewindui</a>
+    - deca-ui(超冷)
+      - <a href="https://github.com/deca-org/deca-ui" target="_blank noopener noreferrer">deca-org/deca-ui</a>
+    - camome(冷)
+      - <a href="https://github.com/camomeui/camome" target="_blank noopener noreferrer">camomeui/camome</a>
+    - ark(无头组件库/冷门)
+      - <a href="https://github.com/chakra-ui/ark" target="_blank noopener noreferrer">chakra-ui/ark</a>
+    - kuma-ui(支持rsc/冷门)
+      - <a href="https://github.com/poteboy/kuma-ui" target="_blank noopener noreferrer">poteboy/kuma-ui</a>
+    - klein-react(微盟/冷门)
+      - <a href="https://github.com/weimob-tech/klein-react" target="_blank noopener noreferrer">weimob-tech/klein-react</a>
+    - flowbite-react
+      - <a href="https://github.com/themesberg/flowbite-react" target="_blank noopener noreferrer">themesberg/flowbite-react</a>
+    - reactist(冷)
+      - <a href="https://github.com/Doist/reactist" target="_blank noopener noreferrer">Doist/reactist</a>
+    - neobrutalism-components(平板风格组件/冷门)
+      - <a href="https://github.com/ekmas/neobrutalism-components" target="_blank noopener noreferrer">ekmas/neobrutalism-components</a>
+    - porsche-design-system(保时捷组件库)
+      - <a href="https://github.com/porsche-design-system/porsche-design-system" target="_blank noopener noreferrer">porsche-design-system/porsche-design-system</a>
+    - react-winplaza-98(98风格组件库/冷门)
+      - <a href="https://github.com/lisandro52/react-winplaza-98" target="_blank noopener noreferrer">lisandro52/react-winplaza-98</a>
+    - prismane(冷)
+      - <a href="https://github.com/prismaneui/prismane" target="_blank noopener noreferrer">prismaneui/prismane</a>
+    - keep-react(冷)
+      - <a href="https://github.com/StaticMania/keep-react" target="_blank noopener noreferrer">StaticMania/keep-react</a>
+  - emoji-mart(选择emoji的组件)
+    - <a href="https://github.com/missive/emoji-mart" target="_blank noopener noreferrer">missive/emoji-mart</a>
+  - highlight-words(高亮文本段中的部分文本)
+    - <a href="https://github.com/bvaughn/react-highlight-words" target="_blank noopener noreferrer">bvaughn/react-highlight-words</a>
+  - halogen(loading spin集合)
+    - <a href="https://github.com/yuanyan/halogen" target="_blank noopener noreferrer">yuanyan/halogen</a>
+  - image-crop(图片裁剪)
+    - react-cropper(依赖了jq)
+      - <a href="https://github.com/react-cropper/react-cropper" target="_blank noopener noreferrer">react-cropper/react-cropper</a>
+    - react-image-crop
+      - <a href="https://github.com/sekoyo/react-image-crop" target="_blank noopener noreferrer">sekoyo/react-image-crop</a>
+    - react-image-pan-zoom-rotate
+      - <a href="https://github.com/mgorabbani/react-image-pan-zoom-rotate" target="_blank noopener noreferrer">mgorabbani/react-image-pan-zoom-rotate</a>
+    - use-smartcrop(图片自动裁剪显示主区域)
+      - <a href="https://github.com/useflyyer/use-smartcrop" target="_blank noopener noreferrer">useflyyer/use-smartcrop</a>
+    - react-easy-crop
+      - <a href="https://github.com/ValentinH/react-easy-crop" target="_blank noopener noreferrer">ValentinH/react-easy-crop</a>
+    - react-cropper-pro(冷)
+      - <a href="https://github.com/MrXujiang/react-cropper-pro" target="_blank noopener noreferrer">MrXujiang/react-cropper-pro</a>
+    - react-advanced-cropper(加强版cropper)
+      - <a href="https://github.com/advanced-cropper/react-advanced-cropper" target="_blank noopener noreferrer">advanced-cropper/react-advanced-cropper</a>
+  - map地图系列
+    - google-map(谷歌地图)
+      - <a href="https://github.com/google-map-react/google-map-react" target="_blank noopener noreferrer">google-map-react/google-map-react</a>
+    - baidu-map(百度地图)
+      - <a href="https://github.com/uiwjs/react-baidu-map" target="_blank noopener noreferrer">uiwjs/react-baidu-map</a>
+    - react-map-gl(基于mapbox)
+      - <a href="https://github.com/visgl/react-map-gl" target="_blank noopener noreferrer">visgl/react-map-gl</a>
+    - react-leaflet(封装的leaflet地图)
+      - <a href="https://github.com/PaulLeCam/react-leaflet" target="_blank noopener noreferrer">PaulLeCam/react-leaflet</a>
+    - react-simple-maps(d3+svg简约世界地图)
+      - <a href="https://github.com/zcreativelabs/react-simple-maps" target="_blank noopener noreferrer">zcreativelabs/react-simple-maps</a>
+    - react-amap(高德地图/陈旧)
+      - <a href="https://github.com/ElemeFE/react-amap" target="_blank noopener noreferrer">ElemeFE/react-amap</a>
+    - react-google-maps(新版谷歌地图)
+      - <a href="https://github.com/visgl/react-google-maps" target="_blank noopener noreferrer">visgl/react-google-maps</a>
+  - request请求库系列
+    - react-cancelable(支持取消请求的hook包裹)
+      - <a href="https://github.com/vladagurets/react-cancelable" target="_blank noopener noreferrer">vladagurets/react-cancelable</a>
+    - react-query系列
+      - react-query
+        - <a href="https://github.com/TanStack/query" target="_blank noopener noreferrer">TanStack/query</a>
+      - react-query-helper(RQ的加强封装)
+        - <a href="https://github.com/dano-inc/react-query-helper" target="_blank noopener noreferrer">dano-inc/react-query-helper</a>
+      - query-key-factory(RQ keys管理器)
+        - <a href="https://github.com/lukemorales/query-key-factory" target="_blank noopener noreferrer">lukemorales/query-key-factory</a>
+    - swr系列
+      - swr
+        - <a href="https://github.com/vercel/swr" target="_blank noopener noreferrer">vercel/swr</a>
+      - use-mutation
+        - <a href="https://github.com/sergiodxa/use-mutation" target="_blank noopener noreferrer">sergiodxa/use-mutation</a>
+      - swr-devtools(类似RQ devtools)
+        - <a href="https://github.com/koba04/swr-devtools" target="_blank noopener noreferrer">koba04/swr-devtools</a>
+  - docs(文档生成)
+    - react-styleguidist
+      - <a href="https://github.com/styleguidist/react-styleguidist" target="_blank noopener noreferrer">styleguidist/react-styleguidist</a>
+    - react-docgen(识别react组件prop信息)
+      - <a href="https://github.com/reactjs/react-docgen" target="_blank noopener noreferrer">reactjs/react-docgen</a>
+    - react-showroom(根据type生成组件文档)
+      - <a href="https://github.com/malcolm-kee/react-showroom" target="_blank noopener noreferrer">malcolm-kee/react-showroom</a>
+    - ladle(react版storybook)
+      - <a href="https://github.com/tajo/ladle" target="_blank noopener noreferrer">tajo/ladle</a>
+    - bisheng(antd文档生成工具)
+      - <a href="https://github.com/benjycui/bisheng" target="_blank noopener noreferrer">benjycui/bisheng</a>
+    - dumi系列
+      - dumi(react)
+        - <a href="https://github.com/umijs/dumi" target="_blank noopener noreferrer">umijs/dumi</a>
+      - dumi-theme-mobile(文档主题)
+        - <a href="https://github.com/umijs/dumi/tree/master/packages/theme-mobile" target="_blank noopener noreferrer">umijs/dumi/tree/master/packages/theme-mobile</a>
+    - vocs(react版vitepress)
+      - <a href="https://github.com/wevm/vocs" target="_blank noopener noreferrer">wevm/vocs</a>
+    - rspress
+      - <a href="https://github.com/web-infra-dev/rspress" target="_blank noopener noreferrer">web-infra-dev/rspress</a>
+  - immuatble数据不可变方案
+    - immer
+      - <a href="https://github.com/immerjs/immer" target="_blank noopener noreferrer">immerjs/immer</a>
+    - immutable-js
+      - <a href="https://github.com/immutable-js/immutable-js" target="_blank noopener noreferrer">immutable-js/immutable-js</a>
+    - immutability-helper
+      - <a href="https://github.com/kolodny/immutability-helper" target="_blank noopener noreferrer">kolodny/immutability-helper</a>
+    - seamless-immutable(老)
+      - <a href="https://github.com/rtfeldman/seamless-immutable" target="_blank noopener noreferrer">rtfeldman/seamless-immutable</a>
+    - proxy-memoize(可控层数的代理)
+      - <a href="https://github.com/dai-shi/proxy-memoize" target="_blank noopener noreferrer">dai-shi/proxy-memoize</a>
+    - structura.js(immer替代品/冷门)
+      - <a href="https://github.com/GiuseppeRaso/structura.js" target="_blank noopener noreferrer">GiuseppeRaso/structura.js</a>
+    - mutative(immer替代品/冷门)
+      - <a href="https://github.com/unadlib/mutative" target="_blank noopener noreferrer">unadlib/mutative</a>
+  - pdf系列
+    - react-pdf(展示pdf)
+      - <a href="https://github.com/wojtekmaj/react-pdf" target="_blank noopener noreferrer">wojtekmaj/react-pdf</a>
+    - react-pdf(使用react创建pdf)
+      - <a href="https://github.com/diegomura/react-pdf" target="_blank noopener noreferrer">diegomura/react-pdf</a>
+    - react-view-pdf(展示pdf)
+      - <a href="https://github.com/ZEISS/react-view-pdf" target="_blank noopener noreferrer">ZEISS/react-view-pdf</a>
+    - react-pdf-js(展示pdf/陈旧)
+      - <a href="https://github.com/mikecousins/react-pdf-js" target="_blank noopener noreferrer">mikecousins/react-pdf-js</a>
+    - react-pdf-viewer(展示pdf)
+      - <a href="https://github.com/react-pdf-viewer/react-pdf-viewer" target="_blank noopener noreferrer">react-pdf-viewer/react-pdf-viewer</a>
+    - react-pdf-highlighter(给pdf高亮)
+      - <a href="https://github.com/agentcooper/react-pdf-highlighter" target="_blank noopener noreferrer">agentcooper/react-pdf-highlighter</a>
+    - react-reader(epub查看器)
+      - <a href="https://github.com/gerhardsletten/react-reader" target="_blank noopener noreferrer">gerhardsletten/react-reader</a>
+    - pdfme(react构建pdf)
+      - <a href="https://github.com/pdfme/pdfme" target="_blank noopener noreferrer">pdfme/pdfme</a>
+  - markdown系列
+    - react-markdown
+      - <a href="https://github.com/remarkjs/react-markdown" target="_blank noopener noreferrer">remarkjs/react-markdown</a>
+    - react-marksome(md的子集/节省)
+      - <a href="https://github.com/miguel-silva/react-marksome" target="_blank noopener noreferrer">miguel-silva/react-marksome</a>
+    - markdown-to-jsx(react组件转html)
+      - <a href="https://github.com/probablyup/markdown-to-jsx" target="_blank noopener noreferrer">probablyup/markdown-to-jsx</a>
+    - markdown-to-jsx(直接渲染md文本)
+      - <a href="https://github.com/quantizor/markdown-to-jsx" target="_blank noopener noreferrer">quantizor/markdown-to-jsx</a>
+  - table(表格)
+    - rsuite-table
+      - <a href="https://github.com/rsuite/rsuite-table" target="_blank noopener noreferrer">rsuite/rsuite-table</a>
+      - <a href="http://rsuite.github.io/rsuite-table/" target="_blank noopener noreferrer">rsuite.github.io</a>
+    - react-base-table
+      - <a href="https://github.com/Autodesk/react-base-table" target="_blank noopener noreferrer">Autodesk/react-base-table</a>
+    - ali-react-table
+      - <a href="https://github.com/alibaba/ali-react-table" target="_blank noopener noreferrer">alibaba/ali-react-table</a>
+      - <a href="https://ali-react-table.js.org/" target="_blank noopener noreferrer">ali-react-table.js.org</a>
+    - react-data-table-component(面向多功能多数据)
+      - <a href="https://github.com/jbetancur/react-data-table-component" target="_blank noopener noreferrer">jbetancur/react-data-table-component</a>
+    - mui-datatables(简单)
+      - <a href="https://github.com/gregnb/mui-datatables" target="_blank noopener noreferrer">gregnb/mui-datatables</a>
+    - reactdatagrid
+      - <a href="https://github.com/inovua/reactdatagrid" target="_blank noopener noreferrer">inovua/reactdatagrid</a>
+    - react-grid-table(冷)
+      - <a href="https://github.com/NadavShaar/react-grid-table" target="_blank noopener noreferrer">NadavShaar/react-grid-table</a>
+    - material-table(老)
+      - <a href="https://github.com/mbrn/material-table" target="_blank noopener noreferrer">mbrn/material-table</a>
+    - react-table(功能全)
+      - <a href="https://github.com/TanStack/react-table" target="_blank noopener noreferrer">TanStack/react-table</a>
+    - react-datasheet(像excel的表格)
+      - <a href="https://github.com/nadbm/react-datasheet" target="_blank noopener noreferrer">nadbm/react-datasheet</a>
+    - react-spreadsheet(excel表格/预发布)
+      - <a href="https://github.com/iddan/react-spreadsheet" target="_blank noopener noreferrer">iddan/react-spreadsheet</a>
+    - glide-data-grid(快速数据表格)
+      - <a href="https://github.com/glideapps/glide-data-grid" target="_blank noopener noreferrer">glideapps/glide-data-grid</a>
+    - @tanstack/react-table(无头最简表格/无样式)
+      - <a href="https://github.com/tanstack/table" target="_blank noopener noreferrer">tanstack/table</a>
+    - react-super-responsive-table(适合手机端的响应式表格/冷门/简约)
+      - <a href="https://github.com/coston/react-super-responsive-table" target="_blank noopener noreferrer">coston/react-super-responsive-table</a>
+    - react-spreadsheet-grid(类似excel可编辑/陈旧)
+      - <a href="https://github.com/denisraslov/react-spreadsheet-grid" target="_blank noopener noreferrer">denisraslov/react-spreadsheet-grid</a>
+    - reactgrid(spreadsheet)
+      - <a href="https://github.com/silevis/reactgrid" target="_blank noopener noreferrer">silevis/reactgrid</a>
+    - react-data-grid(可编辑的表格)
+      - <a href="https://github.com/adazzle/react-data-grid" target="_blank noopener noreferrer">adazzle/react-data-grid</a>
+    - ka-table(可编辑表格/功能多/冷门)
+      - <a href="https://github.com/komarovalexander/ka-table" target="_blank noopener noreferrer">komarovalexander/ka-table</a>
+    - react-table-library(轻量级表格/冷门)
+      - <a href="https://github.com/table-library/react-table-library" target="_blank noopener noreferrer">table-library/react-table-library</a>
+    - material-react-table(冷)
+      - <a href="https://github.com/KevinVandy/material-react-table" target="_blank noopener noreferrer">KevinVandy/material-react-table</a>
+    - fixed-data-table-2
+      - <a href="https://github.com/schrodinger/fixed-data-table-2" target="_blank noopener noreferrer">schrodinger/fixed-data-table-2</a>
+    - react-datasheet-grid(可编辑的表格)
+      - <a href="https://github.com/nick-keller/react-datasheet-grid" target="_blank noopener noreferrer">nick-keller/react-datasheet-grid</a>
+  - 图表系列
+    - viser(图表)
+      - <a href="https://github.com/viserjs/viser" target="_blank noopener noreferrer">viserjs/viser</a>
+    - recharts(基于d3)
+      - <a href="https://github.com/recharts/recharts" target="_blank noopener noreferrer">recharts/recharts</a>
+    - sparklines(走势图/不维护了)
+      - <a href="https://github.com/borisyankov/react-sparklines" target="_blank noopener noreferrer">borisyankov/react-sparklines</a>
+    - react-jsx-highcharts(更富交互的highcharts)
+      - <a href="https://github.com/whawker/react-jsx-highcharts" target="_blank noopener noreferrer">whawker/react-jsx-highcharts</a>
+    - react-highcharts
+      - <a href="https://github.com/kirjs/react-highcharts" target="_blank noopener noreferrer">kirjs/react-highcharts</a>
+    - mafs(数学库/坐标系/line等)
+      - <a href="https://github.com/stevenpetryk/mafs" target="_blank noopener noreferrer">stevenpetryk/mafs</a>
+    - chart-race-react(竞赛图条表)
+      - <a href="https://github.com/bchao1/chart-race-react" target="_blank noopener noreferrer">bchao1/chart-race-react</a>
+    - react-d3-cloud(d3词云组件)
+      - <a href="https://github.com/Yoctol/react-d3-cloud" target="_blank noopener noreferrer">Yoctol/react-d3-cloud</a>
+    - echarts-for-react(echarts react版)
+      - <a href="https://github.com/hustcc/echarts-for-react" target="_blank noopener noreferrer">hustcc/echarts-for-react</a>
+    - reaviz(基于d3的图表库)
+      - <a href="https://github.com/reaviz/reaviz" target="_blank noopener noreferrer">reaviz/reaviz</a>
+    - react-chartjs-2
+      - <a href="https://github.com/reactchartjs/react-chartjs-2" target="_blank noopener noreferrer">reactchartjs/react-chartjs-2</a>
+    - ant-design-charts
+      - <a href="https://github.com/ant-design/ant-design-charts" target="_blank noopener noreferrer">ant-design/ant-design-charts</a>
+    - graphire(3d空间点连接图)
+      - <a href="https://github.com/flavioschneider/graphire" target="_blank noopener noreferrer">flavioschneider/graphire</a>
+    - react-tree-graph(生成svg tree/冷门门)
+      - <a href="https://github.com/jpb12/react-tree-graph" target="_blank noopener noreferrer">jpb12/react-tree-graph</a>
+    - nivo(基于d3的react图表)
+      - <a href="https://github.com/plouc/nivo" target="_blank noopener noreferrer">plouc/nivo</a>
+    - victory(简约图表)
+      - <a href="https://github.com/FormidableLabs/victory" target="_blank noopener noreferrer">FormidableLabs/victory</a>
+    - 热力图系列
+      - react-calendar-heatmap(d3基础的热力块图/类似github)
+        - <a href="https://github.com/kevinsqi/react-calendar-heatmap" target="_blank noopener noreferrer">kevinsqi/react-calendar-heatmap</a>
+      - react-grid-heatmap
+        - <a href="https://github.com/arunghosh/react-grid-heatmap" target="_blank noopener noreferrer">arunghosh/react-grid-heatmap</a>
+    - react-google-charts(google charts封装)
+      - <a href="https://github.com/rakannimer/react-google-charts" target="_blank noopener noreferrer">rakannimer/react-google-charts</a>
+    - react-d3-speedomater(仪表盘组件)
+      - <a href="https://github.com/palerdot/react-d3-speedometer" target="_blank noopener noreferrer">palerdot/react-d3-speedometer</a>
+    - react-hexgrid(构建六边形网格/冷门)
+      - <a href="https://github.com/Hellenic/react-hexgrid" target="_blank noopener noreferrer">Hellenic/react-hexgrid</a>
+    - react-sketch(素描板)
+      - <a href="https://github.com/tbolis/react-sketch" target="_blank noopener noreferrer">tbolis/react-sketch</a>
+    - react-vis(老)
+      - <a href="https://github.com/uber/react-vis" target="_blank noopener noreferrer">uber/react-vis</a>
+    - visx(3d图表/airbnb/外国风格)
+      - <a href="https://github.com/airbnb/visx" target="_blank noopener noreferrer">airbnb/visx</a>
+    - BizCharts(ali/基于g2通用图表库)
+      - <a href="https://github.com/alibaba/BizCharts" target="_blank noopener noreferrer">alibaba/BizCharts</a>
+    - reagraph(基于webgl的3d图表/立体/冷门)
+      - <a href="https://github.com/reaviz/reagraph" target="_blank noopener noreferrer">reaviz/reagraph</a>
+    - 流程图/连线图系列
+      - ggeditor(可视化连线图编辑)
+        - <a href="https://github.com/alibaba/GGEditor" target="_blank noopener noreferrer">alibaba/GGEditor</a>
+      - react-flow(连线图)
+        - <a href="https://github.com/xyflow/xyflow" target="_blank noopener noreferrer">xyflow/xyflow</a>
+      - reaflow(流程连线图)
+        - <a href="https://github.com/reaviz/reaflow" target="_blank noopener noreferrer">reaviz/reaflow</a>
+      - react-archer(节点连线图/冷门)
+        - <a href="https://github.com/pierpo/react-archer" target="_blank noopener noreferrer">pierpo/react-archer</a>
+      - react-digraph(节点连线图)
+        - <a href="https://github.com/uber/react-digraph" target="_blank noopener noreferrer">uber/react-digraph</a>
+      - react-d3-tree(节点连线图/冷门)
+        - <a href="https://github.com/bkrem/react-d3-tree" target="_blank noopener noreferrer">bkrem/react-d3-tree</a>
+    - tremor(图表库)
+      - <a href="https://github.com/tremorlabs/tremor" target="_blank noopener noreferrer">tremorlabs/tremor</a>
+    - react-pivottable(可放缩的图表/冷门/陈旧)
+      - <a href="https://github.com/plotly/react-pivottable" target="_blank noopener noreferrer">plotly/react-pivottable</a>
+    - ui5-webcomponents-react(ui5风格图表/冷门)
+      - <a href="https://github.com/SAP/ui5-webcomponents-react" target="_blank noopener noreferrer">SAP/ui5-webcomponents-react</a>
+    - chartjs-react(chartjs-2替代品/冷门)
+      - <a href="https://github.com/xr0master/chartjs-react" target="_blank noopener noreferrer">xr0master/chartjs-react</a>
+    - polaris-viz(shopify的图表库)
+      - <a href="https://github.com/Shopify/polaris-viz" target="_blank noopener noreferrer">Shopify/polaris-viz</a>
+    - unovis
+      - <a href="https://github.com/f5/unovis" target="_blank noopener noreferrer">f5/unovis</a>
+    - gantt-task-react(甘特图)
+      - <a href="https://github.com/MaTeMaTuK/gantt-task-react" target="_blank noopener noreferrer">MaTeMaTuK/gantt-task-react</a>
+  - 富文本
+    - braft-editor(富文本编辑器)
+      - <a href="https://github.com/margox/braft-editor" target="_blank noopener noreferrer">margox/braft-editor</a>
+      - <a href="https://braft.margox.cn/" target="_blank noopener noreferrer">braft.margox.cn</a>
+    - draft-js(简单富文本编辑器)
+      - <a href="https://github.com/facebook/draft-js" target="_blank noopener noreferrer">facebook/draft-js</a>
+    - react-quill
+      - <a href="https://github.com/zenoamaro/react-quill" target="_blank noopener noreferrer">zenoamaro/react-quill</a>
+    - ckeditor5-react
+      - <a href="https://github.com/ckeditor/ckeditor5-react" target="_blank noopener noreferrer">ckeditor/ckeditor5-react</a>
+    - ckeditor4-react
+      - <a href="https://github.com/ckeditor/ckeditor4-react" target="_blank noopener noreferrer">ckeditor/ckeditor4-react</a>
+    - slate(测试中编辑器)
+      - <a href="https://github.com/ianstormtaylor/slate" target="_blank noopener noreferrer">ianstormtaylor/slate</a>
+    - react-trix-rte(冷/简陋)
+      - <a href="https://github.com/abhaynikam/react-trix-rte" target="_blank noopener noreferrer">abhaynikam/react-trix-rte</a>
+    - lexical(fb的)
+      - <a href="https://github.com/facebook/lexical" target="_blank noopener noreferrer">facebook/lexical</a>
+    - react-simplemde-editor(简单)
+      - <a href="https://github.com/RIP21/react-simplemde-editor" target="_blank noopener noreferrer">RIP21/react-simplemde-editor</a>
+    - verbum(基于lexical的封装)
+      - <a href="https://github.com/ozanyurtsever/verbum" target="_blank noopener noreferrer">ozanyurtsever/verbum</a>
+    - react-draft-wysiwyg(draft所见即所得编辑器)
+      - <a href="https://github.com/jpuri/react-draft-wysiwyg" target="_blank noopener noreferrer">jpuri/react-draft-wysiwyg</a>
+    - editable(冷)
+      - <a href="https://github.com/editablejs/editable" target="_blank noopener noreferrer">editablejs/editable</a>
+    - react-prosemirror
+      - <a href="https://github.com/nytimes/react-prosemirror" target="_blank noopener noreferrer">nytimes/react-prosemirror</a>
+    - novel(notion风格所见即所得编辑器)
+      - <a href="https://github.com/steven-tey/novel" target="_blank noopener noreferrer">steven-tey/novel</a>
+    - plate
+      - <a href="https://github.com/udecode/plate" target="_blank noopener noreferrer">udecode/plate</a>
+    - react-md-editor(markdown编辑器)
+      - <a href="https://github.com/uiwjs/react-md-editor" target="_blank noopener noreferrer">uiwjs/react-md-editor</a>
+  - 代码编辑器
+    - jsoneditor(json编辑器)
+      - <a href="https://github.com/josdejong/jsoneditor" target="_blank noopener noreferrer">josdejong/jsoneditor</a>
+    - codemirror2(代码编辑器)
+      - <a href="https://github.com/scniro/react-codemirror2" target="_blank noopener noreferrer">scniro/react-codemirror2</a>
+    - monaco
+      - @monaco-editor/react
+        - <a href="https://github.com/suren-atoyan/monaco-react" target="_blank noopener noreferrer">suren-atoyan/monaco-react</a>
+      - react-monaco-editor
+        - <a href="https://github.com/react-monaco-editor/react-monaco-editor" target="_blank noopener noreferrer">react-monaco-editor/react-monaco-editor</a>
+    - react-simple-code-editor
+      - <a href="https://github.com/satya164/react-simple-code-editor" target="_blank noopener noreferrer">satya164/react-simple-code-editor</a>
+    - sandpack
+      - sandpack-react
+        - <a href="https://github.com/codesandbox/sandpack" target="_blank noopener noreferrer">codesandbox/sandpack</a>
+      - theme生成器
+        - <a href="https://sandpack.codesandbox.io/theme" target="_blank noopener noreferrer">sandpack.codesandbox.io</a>
+      - sandpack-bundler(自搭建后端服务)
+        - <a href="https://github.com/codesandbox/sandpack-bundler" target="_blank noopener noreferrer">codesandbox/sandpack-bundler</a>
+    - react-diff-viewer(diff展示器)
+      - <a href="https://github.com/praneshr/react-diff-viewer" target="_blank noopener noreferrer">praneshr/react-diff-viewer</a>
+    - textarea高亮编辑代码系列
+      - react-textarea-code-editor(textarea里高亮编辑器/冷门)
+        - <a href="https://github.com/uiwjs/react-textarea-code-editor" target="_blank noopener noreferrer">uiwjs/react-textarea-code-editor</a>
+      - rich-textarea(可输入彩色块的input area)
+        - <a href="https://github.com/inokawa/rich-textarea" target="_blank noopener noreferrer">inokawa/rich-textarea</a>
+    - react-json-view(json编辑器/陈旧/不维护了)
+      - <a href="https://github.com/mac-s-g/react-json-view" target="_blank noopener noreferrer">mac-s-g/react-json-view</a>
+    - kodemoapp/player(代码教程展示器)
+      - <a href="https://github.com/kodemoapp/player" target="_blank noopener noreferrer">kodemoapp/player</a>
+    - json-viewer(json预览器)
+      - <a href="https://github.com/TexteaInc/json-viewer" target="_blank noopener noreferrer">TexteaInc/json-viewer</a>
+  - iframe-component(iframe组件)
+    - <a href="https://github.com/ryanseddon/react-frame-component" target="_blank noopener noreferrer">ryanseddon/react-frame-component</a>
+  - keep-alive(路由缓存)
+    - react-keep-alive
+      - <a href="https://github.com/StructureBuilder/react-keep-alive" target="_blank noopener noreferrer">StructureBuilder/react-keep-alive</a>
+    - react-router-cache-route
+      - <a href="https://github.com/CJY0208/react-router-cache-route" target="_blank noopener noreferrer">CJY0208/react-router-cache-route</a>
+    - react-keepalive-router
+      - <a href="https://github.com/GoodLuckAlien/react-keepalive-router" target="_blank noopener noreferrer">GoodLuckAlien/react-keepalive-router</a>
+    - react-activation(较活跃)
+      - <a href="https://github.com/CJY0208/react-activation" target="_blank noopener noreferrer">CJY0208/react-activation</a>
+  - i18n国际化
+    - react-intl-universal
+      - <a href="https://github.com/alibaba/react-intl-universal" target="_blank noopener noreferrer">alibaba/react-intl-universal</a>
+    - react-intl
+      - <a href="https://github.com/formatjs/formatjs" target="_blank noopener noreferrer">formatjs/formatjs</a>
+    - react-i18next
+      - <a href="https://github.com/i18next/react-i18next" target="_blank noopener noreferrer">i18next/react-i18next</a>
+    - schummar-translate(利用ts提供国际化函数代码补全)
+      - <a href="https://github.com/schummar/schummar-translate" target="_blank noopener noreferrer">schummar/schummar-translate</a>
+    - Talkr(最轻量的实现)
+      - <a href="https://github.com/DoneDeal0/Talkr" target="_blank noopener noreferrer">DoneDeal0/Talkr</a>
+    - js-lingui
+      - <a href="https://github.com/lingui/js-lingui" target="_blank noopener noreferrer">lingui/js-lingui</a>
+    - rosetta(老)
+      - <a href="https://github.com/lukeed/rosetta" target="_blank noopener noreferrer">lukeed/rosetta</a>
+    - @loveholidays/phrasebook(react-i18next替代品/冷门)
+      - <a href="https://github.com/loveholidays/phrasebook" target="_blank noopener noreferrer">loveholidays/phrasebook</a>
+    - react-i18nify(冷)
+      - <a href="https://github.com/sealninja/react-i18nify" target="_blank noopener noreferrer">sealninja/react-i18nify</a>
+  - react-360(全景/凉了)
+    - <a href="https://github.com/facebookarchive/react-360" target="_blank noopener noreferrer">facebookarchive/react-360</a>
+  - react-darkreader(一键切换暗黑模式)
+    - <a href="https://github.com/Turkyden/react-darkreader" target="_blank noopener noreferrer">Turkyden/react-darkreader</a>
+  - useWorker(使用worker的hooks)
+    - <a href="https://github.com/alewin/useWorker" target="_blank noopener noreferrer">alewin/useWorker</a>
+  - hooks大全系列
+    - react-use
+      - <a href="https://github.com/streamich/react-use" target="_blank noopener noreferrer">streamich/react-use</a>
+    - rooks(react-hooks)
+      - <a href="https://github.com/imbhargav5/rooks" target="_blank noopener noreferrer">imbhargav5/rooks</a>
+    - beautiful-react-hooks
+      - <a href="https://github.com/antonioru/beautiful-react-hooks" target="_blank noopener noreferrer">antonioru/beautiful-react-hooks</a>
+    - react-recipes(brh的补充)
+      - <a href="https://github.com/craig1123/react-recipes" target="_blank noopener noreferrer">craig1123/react-recipes</a>
+    - react-hanger
+      - <a href="https://github.com/kitze/react-hanger" target="_blank noopener noreferrer">kitze/react-hanger</a>
+    - usehooks
+      - <a href="https://github.com/uidotdev/usehooks" target="_blank noopener noreferrer">uidotdev/usehooks</a>
+    - react-hookz/web
+      - <a href="https://github.com/react-hookz/web" target="_blank noopener noreferrer">react-hookz/web</a>
+    - usehooks-ts
+      - <a href="https://github.com/juliencrn/usehooks-ts" target="_blank noopener noreferrer">juliencrn/usehooks-ts</a>
+    - ahooks
+      - <a href="https://github.com/alibaba/hooks" target="_blank noopener noreferrer">alibaba/hooks</a>
+  - react-portal(传送门)
+    - <a href="https://github.com/tajo/react-portal" target="_blank noopener noreferrer">tajo/react-portal</a>
+  - react-content-loader(svg创建骨架屏)
+    - <a href="https://github.com/danilowoz/react-content-loader" target="_blank noopener noreferrer">danilowoz/react-content-loader</a>
+  - react-useportal
+    - <a href="https://github.com/alex-cory/react-useportal" target="_blank noopener noreferrer">alex-cory/react-useportal</a>
+  - useHooks系列
+    - use-http
+      - <a href="https://github.com/ava/use-http" target="_blank noopener noreferrer">ava/use-http</a>
+    - use-local-storage
+      - <a href="https://github.com/rehooks/local-storage" target="_blank noopener noreferrer">rehooks/local-storage</a>
+    - use-media
+      - <a href="https://github.com/streamich/use-media" target="_blank noopener noreferrer">streamich/use-media</a>
+    - use-debounce
+      - <a href="https://github.com/xnimorz/use-debounce" target="_blank noopener noreferrer">xnimorz/use-debounce</a>
+    - use-onclickoutside
+      - <a href="https://github.com/Andarist/use-onclickoutside" target="_blank noopener noreferrer">Andarist/use-onclickoutside</a>
+    - useFilePicker
+      - <a href="https://github.com/Jaaneek/useFilePicker" target="_blank noopener noreferrer">Jaaneek/useFilePicker</a>
+    - react-async-hook(useAsync)
+      - <a href="https://github.com/slorber/react-async-hook" target="_blank noopener noreferrer">slorber/react-async-hook</a>
+    - axios-hooks(axios的hooks版本)
+      - <a href="https://github.com/simoneb/axios-hooks" target="_blank noopener noreferrer">simoneb/axios-hooks</a>
+    - react-use-event-hook(useEvent实现)
+      - <a href="https://github.com/scottrippey/react-use-event-hook" target="_blank noopener noreferrer">scottrippey/react-use-event-hook</a>
+    - react-use-exceljs(exceljs+filesave/冷门)
+      - <a href="https://github.com/dadamssg/react-use-exceljs" target="_blank noopener noreferrer">dadamssg/react-use-exceljs</a>
+  - react-headroom(下滚隐藏标题上滚出现)
+    - <a href="https://github.com/KyleAMathews/react-headroom" target="_blank noopener noreferrer">KyleAMathews/react-headroom</a>
+  - react-error-boundary
+    - <a href="https://github.com/bvaughn/react-error-boundary" target="_blank noopener noreferrer">bvaughn/react-error-boundary</a>
+  - react-time-ago(本地化时间显示)
+    - <a href="https://github.com/catamphetamine/react-time-ago" target="_blank noopener noreferrer">catamphetamine/react-time-ago</a>
+  - react-pouchdb(浏览器同步数据库)
+    - <a href="https://github.com/ArnoSaine/react-pouchdb" target="_blank noopener noreferrer">ArnoSaine/react-pouchdb</a>
+  - react-div-100vh(移动端100vh/去掉安全区域)
+    - <a href="https://github.com/mvasin/react-div-100vh" target="_blank noopener noreferrer">mvasin/react-div-100vh</a>
+  - Ioc(控制反转)
+    - inversify-react(依赖注入)
+      - <a href="https://github.com/Kukkimonsuta/inversify-react" target="_blank noopener noreferrer">Kukkimonsuta/inversify-react</a>
+    - react-inversify(依赖注入/冷门门另一种实现)
+      - <a href="https://github.com/sergey-su/react-inversify" target="_blank noopener noreferrer">sergey-su/react-inversify</a>
+  - react-wavify(波浪水纹)
+    - <a href="https://github.com/woofers/react-wavify" target="_blank noopener noreferrer">woofers/react-wavify</a>
+  - 轮播图系列
+    - nuka-carousel(纯净的轮播图组件)
+      - <a href="https://github.com/FormidableLabs/nuka-carousel" target="_blank noopener noreferrer">FormidableLabs/nuka-carousel</a>
+    - react-swipeable-views
+      - <a href="https://github.com/oliviertassinari/react-swipeable-views" target="_blank noopener noreferrer">oliviertassinari/react-swipeable-views</a>
+    - react-swipeable
+      - <a href="https://github.com/FormidableLabs/react-swipeable" target="_blank noopener noreferrer">FormidableLabs/react-swipeable</a>
+    - react-carousel-minimal(轻量轮播图组件)
+      - <a href="https://github.com/sahilsaha7773/react-carousel-minimal" target="_blank noopener noreferrer">sahilsaha7773/react-carousel-minimal</a>
+    - react-slick(轮播图组件)
+      - <a href="https://github.com/akiran/react-slick" target="_blank noopener noreferrer">akiran/react-slick</a>
+    - react-image-gallery
+      - <a href="https://github.com/xiaolin/react-image-gallery" target="_blank noopener noreferrer">xiaolin/react-image-gallery</a>
+    - react-responsive-carousel
+      - <a href="https://github.com/leandrowd/react-responsive-carousel" target="_blank noopener noreferrer">leandrowd/react-responsive-carousel</a>
+    - react-simple-image-slider(图片轮播展示组件)
+      - <a href="https://github.com/kimcoder/react-simple-image-slider" target="_blank noopener noreferrer">kimcoder/react-simple-image-slider</a>
+    - react-carousel(简单轮播图)
+      - <a href="https://github.com/brainhubeu/react-carousel" target="_blank noopener noreferrer">brainhubeu/react-carousel</a>
+    - pure-react-carousel(高定制轮播图)
+      - <a href="https://github.com/express-labs/pure-react-carousel" target="_blank noopener noreferrer">express-labs/pure-react-carousel</a>
+    - caroumesh(轮播3d模型组件)
+      - <a href="https://github.com/Adonis-Stavridis/caroumesh" target="_blank noopener noreferrer">Adonis-Stavridis/caroumesh</a>
+    - react-insta-stories(Instagram风格轮播图)
+      - <a href="https://github.com/mohitk05/react-insta-stories" target="_blank noopener noreferrer">mohitk05/react-insta-stories</a>
+    - marquee(滚动展示区域组件)
+      - <a href="https://github.com/devnomic/marquee" target="_blank noopener noreferrer">devnomic/marquee</a>
+    - react-snap-carousel(冷)
+      - <a href="https://github.com/richardscarrott/react-snap-carousel" target="_blank noopener noreferrer">richardscarrott/react-snap-carousel</a>
+  - react-burger-menu(侧边推出栏/带动画)
+    - <a href="https://github.com/negomi/react-burger-menu" target="_blank noopener noreferrer">negomi/react-burger-menu</a>
+  - react-spinners(加载器)
+    - <a href="https://github.com/davidhu2000/react-spinners" target="_blank noopener noreferrer">davidhu2000/react-spinners</a>
+  - datepicker组件
+    - react-date-range(可选范围的datepicker)
+      - <a href="https://github.com/hypeserver/react-date-range" target="_blank noopener noreferrer">hypeserver/react-date-range</a>
+    - react-datepicker(时间日期选择组件)
+      - <a href="https://github.com/Hacker0x01/react-datepicker" target="_blank noopener noreferrer">Hacker0x01/react-datepicker</a>
+    - react-day-picker
+      - <a href="https://github.com/gpbl/react-day-picker" target="_blank noopener noreferrer">gpbl/react-day-picker</a>
+  - highlight高亮库
+    - react-syntax-highlight
+      - <a href="https://github.com/react-syntax-highlighter/react-syntax-highlighter" target="_blank noopener noreferrer">react-syntax-highlighter/react-syntax-highlighter</a>
+    - prism-react-renderer(prism的优化渲染器)
+      - <a href="https://github.com/FormidableLabs/prism-react-renderer" target="_blank noopener noreferrer">FormidableLabs/prism-react-renderer</a>
+  - craft.js(拖放移动区块编辑器)
+    - <a href="https://github.com/prevwong/craft.js" target="_blank noopener noreferrer">prevwong/craft.js</a>
+  - react-device-detect(检测设备类型的快捷变量)
+    - <a href="https://github.com/duskload/react-device-detect" target="_blank noopener noreferrer">duskload/react-device-detect</a>
+  - react-menu(各种下拉菜单的实例和组件)
+    - <a href="https://github.com/szhsin/react-menu" target="_blank noopener noreferrer">szhsin/react-menu</a>
+  - counter数字动增系列
+    - react-countup(数字动态增加)
+      - <a href="https://github.com/glennreyes/react-countup" target="_blank noopener noreferrer">glennreyes/react-countup</a>
+    - react-animated-numbers(类似彩票式动增)
+      - <a href="https://github.com/heyman333/react-animated-numbers" target="_blank noopener noreferrer">heyman333/react-animated-numbers</a>
+  - trigger触发器系列
+    - react-popper(trigger pop选择方向的底层)
+      - <a href="https://github.com/floating-ui/react-popper" target="_blank noopener noreferrer">floating-ui/react-popper</a>
+    - tippyjs-react
+      - <a href="https://github.com/atomiks/tippyjs-react" target="_blank noopener noreferrer">atomiks/tippyjs-react</a>
+  - 状态机
+    - useStateMachine
+      - <a href="https://github.com/cassiozen/useStateMachine" target="_blank noopener noreferrer">cassiozen/useStateMachine</a>
+  - calendar日历系列
+    - react-big-calendar(大日历)
+      - <a href="https://github.com/jquense/react-big-calendar" target="_blank noopener noreferrer">jquense/react-big-calendar</a>
+    - react-multi-date-picker(世界多地冷门日历选择器)
+      - <a href="https://github.com/shahabyazdi/react-multi-date-picker" target="_blank noopener noreferrer">shahabyazdi/react-multi-date-picker</a>
+    - react-calendar
+      - <a href="https://github.com/wojtekmaj/react-calendar" target="_blank noopener noreferrer">wojtekmaj/react-calendar</a>
+    - Schedulely(日历组件)
+      - <a href="https://github.com/bruceharrison1984/Schedulely" target="_blank noopener noreferrer">bruceharrison1984/Schedulely</a>
+  - modal系列
+    - react-modal(弹窗组件基础)
+      - <a href="https://github.com/reactjs/react-modal" target="_blank noopener noreferrer">reactjs/react-modal</a>
+    - nice-modal-react(一个多modal管理方案/限antd等)
+      - <a href="https://github.com/eBay/nice-modal-react" target="_blank noopener noreferrer">eBay/nice-modal-react</a>
+    - react-responsive-modal(简陋modal原型)
+      - <a href="https://github.com/pradel/react-responsive-modal" target="_blank noopener noreferrer">pradel/react-responsive-modal</a>
+    - rodal(带动画的弹窗/冷门)
+      - <a href="https://github.com/chenjiahan/rodal" target="_blank noopener noreferrer">chenjiahan/rodal</a>
+  - cmd+k弹出搜索框系列
+    - kbar(cmd+k快捷键功能组件)
+      - <a href="https://github.com/timc1/kbar" target="_blank noopener noreferrer">timc1/kbar</a>
+    - ninjia-keys
+      - <a href="https://github.com/ssleptsov/ninja-keys" target="_blank noopener noreferrer">ssleptsov/ninja-keys</a>
+    - react-cmdk
+      - <a href="https://github.com/albingroen/react-cmdk" target="_blank noopener noreferrer">albingroen/react-cmdk</a>
+    - cmdk
+      - <a href="https://github.com/pacocoursey/cmdk" target="_blank noopener noreferrer">pacocoursey/cmdk</a>
+    - kmenu(冷)
+      - <a href="https://github.com/harshhhdev/kmenu" target="_blank noopener noreferrer">harshhhdev/kmenu</a>
+  - react-use-websocket(ws hook)
+    - <a href="https://github.com/robtaussig/react-use-websocket" target="_blank noopener noreferrer">robtaussig/react-use-websocket</a>
+  - cookies系列
+    - cookies(cookie大全)
+      - <a href="https://github.com/reactivestack/cookies" target="_blank noopener noreferrer">reactivestack/cookies</a>
+    - use-cookie-consent(GDPR cookie规范)
+      - <a href="https://github.com/use-cookie-consent/use-cookie-consent-core" target="_blank noopener noreferrer">use-cookie-consent/use-cookie-consent-core</a>
+    - react-cookie-consent(简约cookie同意栏)
+      - <a href="https://github.com/Mastermindzh/react-cookie-consent" target="_blank noopener noreferrer">Mastermindzh/react-cookie-consent</a>
+    - useCookie
+      - <a href="https://github.com/tylerwolff/useCookie" target="_blank noopener noreferrer">tylerwolff/useCookie</a>
+  - loadable按需加载系列
+    - react-loadable(组件异步加载工具)
+      - <a href="https://github.com/jamiebuilds/react-loadable" target="_blank noopener noreferrer">jamiebuilds/react-loadable</a>
+    - react-hydration-on-demand(按需hydrate)
+      - <a href="https://github.com/valcol/react-hydration-on-demand" target="_blank noopener noreferrer">valcol/react-hydration-on-demand</a>
+  - heart-switch(心形switch组件)
+    - <a href="https://github.com/anatoliygatt/heart-switch" target="_blank noopener noreferrer">anatoliygatt/heart-switch</a>
+  - router路由竞品系列
+    - hookrouter(router hook)
+      - <a href="https://github.com/Paratron/hookrouter" target="_blank noopener noreferrer">Paratron/hookrouter</a>
+    - react-motion-router(动画路由/冷门)
+      - <a href="https://github.com/nxtexe/react-motion-router" target="_blank noopener noreferrer">nxtexe/react-motion-router</a>
+    - react-chicane(简单的路由)
+      - <a href="https://github.com/zoontek/react-chicane" target="_blank noopener noreferrer">zoontek/react-chicane</a>
+    - itty-router(简单路由)
+      - <a href="https://github.com/kwhitley/itty-router" target="_blank noopener noreferrer">kwhitley/itty-router</a>
+    - wouter(mini尺寸路由)
+      - <a href="https://github.com/molefrog/wouter" target="_blank noopener noreferrer">molefrog/wouter</a>
+    - swan-io/chicane(带type提示的RR)
+      - <a href="https://github.com/swan-io/chicane" target="_blank noopener noreferrer">swan-io/chicane</a>
+    - tanstack/router系列
+      - react-location/tanstack-router(react-router竞品)
+        - <a href="https://github.com/TanStack/router" target="_blank noopener noreferrer">TanStack/router</a>
+      - tanstack-router-rsc
+        - <a href="https://github.com/robin4a4/tanstack-router-rsc" target="_blank noopener noreferrer">robin4a4/tanstack-router-rsc</a>
+  - image图片预览/灯箱系列
+    - react-image
+      - <a href="https://github.com/mbrevda/react-image" target="_blank noopener noreferrer">mbrevda/react-image</a>
+    - react-image-lightbox(灯箱组件)
+      - <a href="https://github.com/frontend-collective/react-image-lightbox" target="_blank noopener noreferrer">frontend-collective/react-image-lightbox</a>
+    - react-inner-image-zoom(图片放大镜)
+      - <a href="https://github.com/laurenashpole/react-inner-image-zoom" target="_blank noopener noreferrer">laurenashpole/react-inner-image-zoom</a>
+    - react-photo-view(功能全/冷门)
+      - <a href="https://github.com/MinJieLiu/react-photo-view" target="_blank noopener noreferrer">MinJieLiu/react-photo-view</a>
+    - react-medium-image-zoom(medium风格的图片预览组件)
+      - <a href="https://github.com/rpearce/react-medium-image-zoom" target="_blank noopener noreferrer">rpearce/react-medium-image-zoom</a>
+    - unpic-img(img优化组件/冷门)
+      - <a href="https://github.com/ascorbic/unpic-img" target="_blank noopener noreferrer">ascorbic/unpic-img</a>
+    - yet-another-react-lightbox(灯箱/图片预览组件)
+      - <a href="https://github.com/igordanchenko/yet-another-react-lightbox" target="_blank noopener noreferrer">igordanchenko/yet-another-react-lightbox</a>
+  - reveal揭示系列
+    - react-awesome-reveal(动态揭示)
+      - <a href="https://github.com/morellodev/react-awesome-reveal" target="_blank noopener noreferrer">morellodev/react-awesome-reveal</a>
+    - react-reveal(动态揭示/陈旧)
+      - <a href="https://github.com/rnosov/react-reveal" target="_blank noopener noreferrer">rnosov/react-reveal</a>
+  - sticky悬浮挂边系列
+    - react-sticknode(不限滚动/粘性一个节点在视口)
+      - <a href="https://github.com/yahoo/react-stickynode" target="_blank noopener noreferrer">yahoo/react-stickynode</a>
+    - react-sticky-box
+      - <a href="https://github.com/codecks-io/react-sticky-box" target="_blank noopener noreferrer">codecks-io/react-sticky-box</a>
+    - react-stick(将一个节点吸附在另一个节点上/冷门)
+      - <a href="https://github.com/signavio/react-stick" target="_blank noopener noreferrer">signavio/react-stick</a>
+  - lazyload懒加载系列
+    - react-lazyload
+      - <a href="https://github.com/twobin/react-lazyload" target="_blank noopener noreferrer">twobin/react-lazyload</a>
+    - react-lazy-load(老)
+      - <a href="https://github.com/loktar00/react-lazy-load" target="_blank noopener noreferrer">loktar00/react-lazy-load</a>
+    - react-lazy-load-image-component(老/冷门)
+      - <a href="https://github.com/Aljullu/react-lazy-load-image-component" target="_blank noopener noreferrer">Aljullu/react-lazy-load-image-component</a>
+    - react-lazy-images(老)
+      - <a href="https://github.com/fpapado/react-lazy-images" target="_blank noopener noreferrer">fpapado/react-lazy-images</a>
+  - react render探测/渲染工具
+    - why-did-you-render(判断渲染原因)
+      - <a href="https://github.com/welldone-software/why-did-you-render" target="_blank noopener noreferrer">welldone-software/why-did-you-render</a>
+    - react-lifecycle-visualizer(生命周期探测/陈旧)
+      - <a href="https://github.com/Oblosys/react-lifecycle-visualizer" target="_blank noopener noreferrer">Oblosys/react-lifecycle-visualizer</a>
+    - react-render-tracker(react渲染次数跟踪)
+      - <a href="https://github.com/lahmatiy/react-render-tracker" target="_blank noopener noreferrer">lahmatiy/react-render-tracker</a>
+    - tilg(react渲染/变量更改调试工具)
+      - <a href="https://github.com/shuding/tilg" target="_blank noopener noreferrer">shuding/tilg</a>
+    - useRerender(打印重渲染情况)
+      - <a href="https://github.com/geobde/useRerender" target="_blank noopener noreferrer">geobde/useRerender</a>
+    - react-hook-tracer(显示state变化/冷门)
+      - <a href="https://github.com/Oblosys/react-hook-tracer" target="_blank noopener noreferrer">Oblosys/react-hook-tracer</a>
+  - typing打字系列
+    - react-typical(老)
+      - <a href="https://github.com/catalinmiron/react-typical" target="_blank noopener noreferrer">catalinmiron/react-typical</a>
+  - 音视频系列
+    - 音频系列
+      - media录制/音频录制系列
+        - react-media-recorder(音视频录制库)
+          - <a href="https://github.com/0x006F/react-media-recorder" target="_blank noopener noreferrer">0x006F/react-media-recorder</a>
+        - react-media-recorder(录制demo)
+          - <a href="https://github.com/haixiangyan/react-media-recorder" target="_blank noopener noreferrer">haixiangyan/react-media-recorder</a>
+      - 音频播放器系列
+        - react-modern-audio-player(音频播放器/冷门)
+          - <a href="https://github.com/slash9494/react-modern-audio-player" target="_blank noopener noreferrer">slash9494/react-modern-audio-player</a>
+        - audio-player(音频播放器/冷门)
+          - <a href="https://github.com/madzadev/audio-player" target="_blank noopener noreferrer">madzadev/audio-player</a>
+      - wavesurfer-react(波形图组件)
+        - <a href="https://github.com/ShiiRochi/wavesurfer-react" target="_blank noopener noreferrer">ShiiRochi/wavesurfer-react</a>
+    - 视频系列
+      - react-webcam(调用摄像头组件)
+        - <a href="https://github.com/mozmorris/react-webcam" target="_blank noopener noreferrer">mozmorris/react-webcam</a>
+      - video视频系列
+        - remotion(用react创作视频)
+          - <a href="https://github.com/remotion-dev/remotion" target="_blank noopener noreferrer">remotion-dev/remotion</a>
+        - liqvid(用react制作视频)
+          - <a href="https://github.com/liqvidjs/liqvid" target="_blank noopener noreferrer">liqvidjs/liqvid</a>
+      - 视频播放器系列
+        - plyr-react(简单播放器)
+          - <a href="https://github.com/chintan9/plyr-react" target="_blank noopener noreferrer">chintan9/plyr-react</a>
+        - react-player(播放器/可播放各种社交媒体视频)
+          - <a href="https://github.com/cookpete/react-player" target="_blank noopener noreferrer">cookpete/react-player</a>
+  - 礼花系列(react)
+    - react-rewards(点击礼花效果)
+      - <a href="https://github.com/thedevelobear/react-rewards" target="_blank noopener noreferrer">thedevelobear/react-rewards</a>
+    - react-canvas-confetti(礼花效果)
+      - <a href="https://github.com/ulitcos/react-canvas-confetti" target="_blank noopener noreferrer">ulitcos/react-canvas-confetti</a>
+  - grid拖拽网格系列
+    - react-flex-ready(flex弹性网格布局)
+      - <a href="https://github.com/smakosh/react-flex-ready" target="_blank noopener noreferrer">smakosh/react-flex-ready</a>
+    - react-grid-layout(可拖拽grid网格布局块)
+      - <a href="https://github.com/react-grid-layout/react-grid-layout" target="_blank noopener noreferrer">react-grid-layout/react-grid-layout</a>
+  - 手势系列
+    - react-quick-pinch-zoom(手势放大缩小/移动位置)
+      - <a href="https://github.com/retyui/react-quick-pinch-zoom" target="_blank noopener noreferrer">retyui/react-quick-pinch-zoom</a>
+  - cx系列(合并class的工具)
+    - clsx(classnames同类)
+      - <a href="https://github.com/lukeed/clsx" target="_blank noopener noreferrer">lukeed/clsx</a>
+    - classnames
+      - <a href="https://github.com/JedWatson/classnames" target="_blank noopener noreferrer">JedWatson/classnames</a>
+    - classnames-es-ts(es格式/用于vite)
+      - <a href="https://www.npmjs.com/package/classnames-es-ts" target="_blank noopener noreferrer">www.npmjs.com</a>
+  - clipboard剪贴板系列
+    - react-copy-to-clipboard
+      - <a href="https://github.com/nkbt/react-copy-to-clipboard" target="_blank noopener noreferrer">nkbt/react-copy-to-clipboard</a>
+    - react-use-clipboard(冷)
+      - <a href="https://github.com/danoc/react-use-clipboard" target="_blank noopener noreferrer">danoc/react-use-clipboard</a>
+    - use-clipboard-copy
+      - <a href="https://github.com/wsmd/use-clipboard-copy" target="_blank noopener noreferrer">wsmd/use-clipboard-copy</a>
+    - use-clippy(剪贴板hook)
+      - <a href="https://github.com/CharlesStover/use-clippy" target="_blank noopener noreferrer">CharlesStover/use-clippy</a>
+  - visibility可见性系列
+    - react-intersection-observer(observer监控)
+      - <a href="https://github.com/thebuilder/react-intersection-observer" target="_blank noopener noreferrer">thebuilder/react-intersection-observer</a>
+    - react-page-visibility(判断页面是否可见)
+      - <a href="https://github.com/pgilad/react-page-visibility" target="_blank noopener noreferrer">pgilad/react-page-visibility</a>
+  - react18升级系列
+    - types-react-codemod(升级types的codemod)
+      - <a href="https://github.com/eps1lon/types-react-codemod" target="_blank noopener noreferrer">eps1lon/types-react-codemod</a>
+  - types/props类型系列
+    - react-redux-typescript-guide(react/redux ts 类型指南)
+      - <a href="https://github.com/piotrwitek/react-redux-typescript-guide" target="_blank noopener noreferrer">piotrwitek/react-redux-typescript-guide</a>
+    - prop-types(React props类型检查)
+      - <a href="https://github.com/facebook/prop-types" target="_blank noopener noreferrer">facebook/prop-types</a>
+    - typescript-cheatsheets/react(ts教程)
+      - <a href="https://github.com/typescript-cheatsheets/react" target="_blank noopener noreferrer">typescript-cheatsheets/react</a>
+  - polyfill系列
+    - use-sync-external-store(向后兼容的垫片)
+      - <a href="https://www.npmjs.com/package/use-sync-external-store" target="_blank noopener noreferrer">www.npmjs.com</a>
+  - click/launch打开代码编辑器系列
+    - react-dev-inspector(点击组件跳到ide)
+      - <a href="https://github.com/zthxxx/react-dev-inspector" target="_blank noopener noreferrer">zthxxx/react-dev-inspector</a>
+    - click-to-component(点击component打开对应文件)
+      - <a href="https://github.com/ericclemmons/click-to-component" target="_blank noopener noreferrer">ericclemmons/click-to-component</a>
+    - launch-editor(打开file工具)
+      - <a href="https://github.com/yyx990803/launch-editor" target="_blank noopener noreferrer">yyx990803/launch-editor</a>
+    - locatorjs(搭配chrome插件/更好看)
+      - <a href="https://github.com/infi-pc/locatorjs" target="_blank noopener noreferrer">infi-pc/locatorjs</a>
+    - code-inspector(实现不好/冷门)
+      - <a href="https://github.com/zh-lx/code-inspector" target="_blank noopener noreferrer">zh-lx/code-inspector</a>
+  - upload上传文件系列
+    - rc-upload(拖拽上传组件)
+      - <a href="https://github.com/react-component/upload" target="_blank noopener noreferrer">react-component/upload</a>
+    - react-dropzone(创建可拖拽上传的节点区域)
+      - <a href="https://github.com/react-dropzone/react-dropzone" target="_blank noopener noreferrer">react-dropzone/react-dropzone</a>
+    - react-uploady(现代上传组件基础/hooks/冷门)
+      - <a href="https://github.com/rpldy/react-uploady" target="_blank noopener noreferrer">rpldy/react-uploady</a>
+  - svg系列
+    - svg2jsx
+      - <a href="https://github.com/balajmarius/svg2jsx" target="_blank noopener noreferrer">balajmarius/svg2jsx</a>
+    - svgr
+      - <a href="https://github.com/gregberge/svgr" target="_blank noopener noreferrer">gregberge/svgr</a>
+    - react-svg(像dom一样渲染svg组件)
+      - <a href="https://github.com/tanem/react-svg" target="_blank noopener noreferrer">tanem/react-svg</a>
+    - react-inlinesvg
+      - <a href="https://github.com/gilbarbara/react-inlinesvg" target="_blank noopener noreferrer">gilbarbara/react-inlinesvg</a>
+    - svgps.app(svg打包转json)
+      - <a href="https://github.com/aykutkardas/svgps.app" target="_blank noopener noreferrer">aykutkardas/svgps.app</a>
+  - hoist-non-react-statics(传导静态方法/hoc)
+    - <a href="https://github.com/mridgway/hoist-non-react-statics" target="_blank noopener noreferrer">mridgway/hoist-non-react-statics</a>
+  - color颜色选择器系列
+    - use-color(处理color rgb)
+      - <a href="https://github.com/junhoyeo/use-color" target="_blank noopener noreferrer">junhoyeo/use-color</a>
+    - react-color(颜色选择器)
+      - <a href="https://github.com/casesandberg/react-color" target="_blank noopener noreferrer">casesandberg/react-color</a>
+    - react-color-palette(color选择器)
+      - <a href="https://github.com/Wondermarin/react-color-palette" target="_blank noopener noreferrer">Wondermarin/react-color-palette</a>
+    - react-colorful(简约颜色选择器)
+      - <a href="https://github.com/omgovich/react-colorful" target="_blank noopener noreferrer">omgovich/react-colorful</a>
+    - harmony(新颖的选择器/冷门)
+      - <a href="https://github.com/newfrgmnt/harmony" target="_blank noopener noreferrer">newfrgmnt/harmony</a>
+  - scroll滚动系列(react)
+    - react-scroll-parallax(滚动视差效果)
+      - <a href="https://github.com/jscottsmith/react-scroll-parallax" target="_blank noopener noreferrer">jscottsmith/react-scroll-parallax</a>
+    - react-page-scroller(fullpage全页滚动)
+      - <a href="https://github.com/VikLiegostaiev/react-page-scroller" target="_blank noopener noreferrer">VikLiegostaiev/react-page-scroller</a>
+    - react-horizontal-scrolling-menu(水平滚动容器组件/支持touch)
+      - <a href="https://github.com/asmyshlyaev177/react-horizontal-scrolling-menu" target="_blank noopener noreferrer">asmyshlyaev177/react-horizontal-scrolling-menu</a>
+    - react-scrollama(story telling滚动介绍)
+      - <a href="https://github.com/jsonkao/react-scrollama" target="_blank noopener noreferrer">jsonkao/react-scrollama</a>
+    - scrollex(多种滚动效果的库)
+      - <a href="https://github.com/malerba118/scrollex" target="_blank noopener noreferrer">malerba118/scrollex</a>
+    - react-fullpage(fullpage)
+      - <a href="https://github.com/alvarotrigo/react-fullpage" target="_blank noopener noreferrer">alvarotrigo/react-fullpage</a>
+    - react-custom-scroll(虚拟滚动条)
+      - <a href="https://github.com/rommguy/react-custom-scroll" target="_blank noopener noreferrer">rommguy/react-custom-scroll</a>
+    - react-remove-scroll(锁定当前节点为滚动区域)
+      - <a href="https://github.com/theKashey/react-remove-scroll" target="_blank noopener noreferrer">theKashey/react-remove-scroll</a>
+    - scrollytelling(滚动进度展示动画工具)
+      - <a href="https://github.com/basementstudio/scrollytelling" target="_blank noopener noreferrer">basementstudio/scrollytelling</a>
+    - react-scroll-sync(滚动进度同步)
+      - <a href="https://github.com/okonet/react-scroll-sync" target="_blank noopener noreferrer">okonet/react-scroll-sync</a>
+  - preview即时编写组件预览系列
+    - react-runner(直接运行react代码得到结果)
+      - <a href="https://github.com/nihgwu/react-runner" target="_blank noopener noreferrer">nihgwu/react-runner</a>
+    - devjar(冷)
+      - <a href="https://github.com/huozhi/devjar" target="_blank noopener noreferrer">huozhi/devjar</a>
+    - react-live(实时编写预览react组件)
+      - <a href="https://github.com/FormidableLabs/react-live" target="_blank noopener noreferrer">FormidableLabs/react-live</a>
+    - playroom
+      - <a href="https://github.com/seek-oss/playroom" target="_blank noopener noreferrer">seek-oss/playroom</a>
+    - react-exercise-playground(在线预览渲染/支持第三方库)
+      - <a href="https://github.com/fewismuch/react-playground" target="_blank noopener noreferrer">fewismuch/react-playground</a>
+  - avatar头像系列
+    - boring-avatars(随机生成头像的组件)
+      - <a href="https://github.com/boringdesigners/boring-avatars" target="_blank noopener noreferrer">boringdesigners/boring-avatars</a>
+    - react-nice-avatar(自动生成头像)
+      - <a href="https://github.com/chilllab/react-nice-avatar" target="_blank noopener noreferrer">chilllab/react-nice-avatar</a>
+    - react-avatar-editor(头像编辑器/简陋)
+      - <a href="https://github.com/mosch/react-avatar-editor" target="_blank noopener noreferrer">mosch/react-avatar-editor</a>
+  - timeline时间线组件系列
+    - react-chrono(时间线组件)
+      - <a href="https://github.com/prabhuignoto/react-chrono" target="_blank noopener noreferrer">prabhuignoto/react-chrono</a>
+    - planby(水平时间线/排播表组件)
+      - <a href="https://github.com/karolkozer/planby" target="_blank noopener noreferrer">karolkozer/planby</a>
+  - time-ago系列(几秒/几分钟以前显示组件)
+    - timeago-react
+      - <a href="https://github.com/hustcc/timeago-react" target="_blank noopener noreferrer">hustcc/timeago-react</a>
+    - react-timeago
+      - <a href="https://github.com/nmn/react-timeago" target="_blank noopener noreferrer">nmn/react-timeago</a>
+  - tree树形组件系列
+    - react-arborist(树形展示组件)
+      - <a href="https://github.com/brimdata/react-arborist" target="_blank noopener noreferrer">brimdata/react-arborist</a>
+    - react-checkbox-tree(多级树checkbox组件)
+      - <a href="https://github.com/jakezatecky/react-checkbox-tree" target="_blank noopener noreferrer">jakezatecky/react-checkbox-tree</a>
+    - react-complex-tree(可多选/拖放的tree组件/文件夹)
+      - <a href="https://github.com/lukasbach/react-complex-tree" target="_blank noopener noreferrer">lukasbach/react-complex-tree</a>
+  - parser解析器系列
+    - html-react-parser(html转react组件语法)
+      - <a href="https://github.com/remarkablemark/html-react-parser" target="_blank noopener noreferrer">remarkablemark/html-react-parser</a>
+    - react-jsx-parser(jsx解析器)
+      - <a href="https://github.com/TroyAlford/react-jsx-parser" target="_blank noopener noreferrer">TroyAlford/react-jsx-parser</a>
+  - meta生成系列
+    - react-helmet(动态meta设定)
+      - <a href="https://github.com/nfl/react-helmet" target="_blank noopener noreferrer">nfl/react-helmet</a>
+    - react-helmet-async
+      - <a href="https://github.com/staylor/react-helmet-async" target="_blank noopener noreferrer">staylor/react-helmet-async</a>
+  - tooltip系列
+    - react-floater(更基础的自定义tooltip弹出内容)
+      - <a href="https://github.com/gilbarbara/react-floater" target="_blank noopener noreferrer">gilbarbara/react-floater</a>
+    - react-tooltip
+      - <a href="https://github.com/ReactTooltip/react-tooltip" target="_blank noopener noreferrer">ReactTooltip/react-tooltip</a>
+    - rc-tooltip
+      - <a href="https://github.com/react-component/tooltip" target="_blank noopener noreferrer">react-component/tooltip</a>
+  - pin/captcha验证码输入系列
+    - react-pin-field(pin码/验证码输入组件)
+      - <a href="https://github.com/soywod/react-pin-field" target="_blank noopener noreferrer">soywod/react-pin-field</a>
+    - rci(验证码输入)
+      - <a href="https://github.com/leonardodino/rci" target="_blank noopener noreferrer">leonardodino/rci</a>
+    - react-hcaptcha(captcha组件)
+      - <a href="https://github.com/hCaptcha/react-hcaptcha" target="_blank noopener noreferrer">hCaptcha/react-hcaptcha</a>
+  - excel/csv系列
+    - react-csv
+      - <a href="https://github.com/react-csv/react-csv" target="_blank noopener noreferrer">react-csv/react-csv</a>
+  - email邮件系列
+    - react-email-editor(拖拽式编辑邮件)
+      - <a href="https://github.com/unlayer/react-email-editor" target="_blank noopener noreferrer">unlayer/react-email-editor</a>
+    - react-letter(显示邮件原样)
+      - <a href="https://github.com/mat-sz/react-letter" target="_blank noopener noreferrer">mat-sz/react-letter</a>
+    - mailing(用react构建/发送邮件)
+      - <a href="https://github.com/sofn-xyz/mailing" target="_blank noopener noreferrer">sofn-xyz/mailing</a>
+    - react-email(用react写mail)
+      - <a href="https://github.com/resendlabs/react-email" target="_blank noopener noreferrer">resendlabs/react-email</a>
+    - mjml-react
+      - <a href="https://github.com/Faire/mjml-react" target="_blank noopener noreferrer">Faire/mjml-react</a>
+    - react-email
+      - <a href="https://github.com/resend/react-email" target="_blank noopener noreferrer">resend/react-email</a>
+  - loadable-components(分包工具)
+    - <a href="https://github.com/gregberge/loadable-components" target="_blank noopener noreferrer">gregberge/loadable-components</a>
+  - graphql系列
+    - graphql-react
+      - <a href="https://github.com/jaydenseric/graphql-react" target="_blank noopener noreferrer">jaydenseric/graphql-react</a>
+  - guide引导指南系列
+    - react-joyride(用户指南引导库)
+      - <a href="https://github.com/gilbarbara/react-joyride" target="_blank noopener noreferrer">gilbarbara/react-joyride</a>
+    - reactour
+      - <a href="https://github.com/elrumordelaluz/reactour" target="_blank noopener noreferrer">elrumordelaluz/reactour</a>
+    - react-shepherd(冷)
+      - <a href="https://github.com/shepherd-pro/react-shepherd" target="_blank noopener noreferrer">shepherd-pro/react-shepherd</a>
+  - notion模仿系列
+    - react-notion-x(notion复刻)
+      - <a href="https://github.com/NotionX/react-notion-x" target="_blank noopener noreferrer">NotionX/react-notion-x</a>
+    - BlockNote(冷)
+      - <a href="https://github.com/TypeCellOS/BlockNote" target="_blank noopener noreferrer">TypeCellOS/BlockNote</a>
+  - chat对话聊天组件系列
+    - react-chat-widget(对话聊天组件)
+      - <a href="https://github.com/Wolox/react-chat-widget" target="_blank noopener noreferrer">Wolox/react-chat-widget</a>
+    - react-chat-elements(聊天组件/冷门)
+      - <a href="https://github.com/Detaysoft/react-chat-elements" target="_blank noopener noreferrer">Detaysoft/react-chat-elements</a>
+    - pro-chat(聊天对话组件/冷门)
+      - <a href="https://github.com/ant-design/pro-chat" target="_blank noopener noreferrer">ant-design/pro-chat</a>
+  - react-refresh/HMR系列
+    - react-hot-loader
+      - <a href="https://github.com/gaearon/react-hot-loader" target="_blank noopener noreferrer">gaearon/react-hot-loader</a>
+      - <a href="https://github.com/hot-loader/react-dom" target="_blank noopener noreferrer">hot-loader/react-dom</a>
+    - react-refresh-webpack-plugin(react-fast-refresh)
+      - <a href="https://github.com/pmmmwh/react-refresh-webpack-plugin" target="_blank noopener noreferrer">pmmmwh/react-refresh-webpack-plugin</a>
+  - a11y系列
+    - downshift(创建a11y的select用的hooks)
+      - <a href="https://github.com/downshift-js/downshift" target="_blank noopener noreferrer">downshift-js/downshift</a>
+  - cra修改配置系列
+    - craco
+      - <a href="https://github.com/dilanx/craco" target="_blank noopener noreferrer">dilanx/craco</a>
+    - react-app-rewired
+      - <a href="https://github.com/timarney/react-app-rewired" target="_blank noopener noreferrer">timarney/react-app-rewired</a>
+  - gallery画廊组件系列
+    - react-grid-gallery(图片画廊组件)
+      - <a href="https://github.com/benhowell/react-grid-gallery" target="_blank noopener noreferrer">benhowell/react-grid-gallery</a>
+    - react-visual-grid(无限画廊/冷门)
+      - <a href="https://github.com/prabhuignoto/react-visual-grid" target="_blank noopener noreferrer">prabhuignoto/react-visual-grid</a>
+  - resize监听节点大小系列
+    - use-resize-observer(监听元素大小)
+      - <a href="https://github.com/ZeeCoder/use-resize-observer" target="_blank noopener noreferrer">ZeeCoder/use-resize-observer</a>
+    - react-cool-dimensions
+      - <a href="https://github.com/wellyshen/react-cool-dimensions" target="_blank noopener noreferrer">wellyshen/react-cool-dimensions</a>
+    - react-use-measure
+      - <a href="https://github.com/pmndrs/react-use-measure" target="_blank noopener noreferrer">pmndrs/react-use-measure</a>
+    - react-resize-detector
+      - <a href="https://github.com/maslianok/react-resize-detector" target="_blank noopener noreferrer">maslianok/react-resize-detector</a>
+  - split多分面板系列
+    - react-split-pane(分多面板控件)
+      - <a href="https://github.com/tomkp/react-split-pane" target="_blank noopener noreferrer">tomkp/react-split-pane</a>
+    - splitter(冷)
+      - <a href="https://github.com/devbookhq/splitter" target="_blank noopener noreferrer">devbookhq/splitter</a>
+  - resize/多窗口面板系列
+    - react-mosaic(网格管理组件/resize)
+      - <a href="https://github.com/nomcopter/react-mosaic" target="_blank noopener noreferrer">nomcopter/react-mosaic</a>
+    - react-resizable-panels(冷)
+      - <a href="https://github.com/bvaughn/react-resizable-panels" target="_blank noopener noreferrer">bvaughn/react-resizable-panels</a>
+    - dockview(多窗口管理组件/冷门)
+      - <a href="https://github.com/mathuo/dockview" target="_blank noopener noreferrer">mathuo/dockview</a>
+  - react-resizable(任意拖动resize大小的组件)
+    - <a href="https://github.com/react-grid-layout/react-resizable" target="_blank noopener noreferrer">react-grid-layout/react-resizable</a>
+  - react-hotkeys-hook(hotkey快捷键hook)
+    - <a href="https://github.com/JohannesKlauss/react-hotkeys-hook" target="_blank noopener noreferrer">JohannesKlauss/react-hotkeys-hook</a>
+  - sign签名库系列
+    - react-signature-pad-wrapper(平滑逼真的签名组件)
+      - <a href="https://github.com/michaeldzjap/react-signature-pad-wrapper" target="_blank noopener noreferrer">michaeldzjap/react-signature-pad-wrapper</a>
+    - react-sign2(冷)
+      - <a href="https://github.com/MrXujiang/react-sign" target="_blank noopener noreferrer">MrXujiang/react-sign</a>
+  - waterfall瀑布流系列
+    - react-plock(瀑布流组件)
+      - <a href="https://github.com/askides/react-plock" target="_blank noopener noreferrer">askides/react-plock</a>
+    - autoresponsive-react
+      - <a href="https://github.com/xudafeng/autoresponsive-react" target="_blank noopener noreferrer">xudafeng/autoresponsive-react</a>
+  - qrcode二维码系列
+    - qrcode.react
+      - <a href="https://github.com/zpao/qrcode.react" target="_blank noopener noreferrer">zpao/qrcode.react</a>
+    - react-qrcode-logo(支持配置背景图/冷门)
+      - <a href="https://github.com/gcoro/react-qrcode-logo" target="_blank noopener noreferrer">gcoro/react-qrcode-logo</a>
+  - RSC系列
+    - 工具库
+      - wakuwork(RSC框架)
+        - <a href="https://github.com/dai-shi/waku" target="_blank noopener noreferrer">dai-shi/waku</a>
+      - rsc-parser(rsc解析工具)
+        - <a href="https://github.com/alvarlagerlof/rsc-parser" target="_blank noopener noreferrer">alvarlagerlof/rsc-parser</a>
+      - zact(服务端zod校验库)
+        - <a href="https://github.com/pingdotgg/zact" target="_blank noopener noreferrer">pingdotgg/zact</a>
+      - bright(支持rsc的语法高亮库)
+        - <a href="https://github.com/code-hike/bright" target="_blank noopener noreferrer">code-hike/bright</a>
+    - 案例
+      - mfng(RSC实践实例)
+        - <a href="https://github.com/unstubbable/mfng" target="_blank noopener noreferrer">unstubbable/mfng</a>
+      - server-components-demo(rsc demo)
+        - <a href="https://github.com/reactjs/server-components-demo" target="_blank noopener noreferrer">reactjs/server-components-demo</a>
+      - rsc-demo
+        - <a href="https://github.com/ziir/rsc-demo" target="_blank noopener noreferrer">ziir/rsc-demo</a>
+  - fiber hack系列
+    - its-fine(使用当前的fiber/hack方式)
+      - <a href="https://github.com/pmndrs/its-fine" target="_blank noopener noreferrer">pmndrs/its-fine</a>
+    - react-fiber-traverse(遍历fiber/陈旧)
+      - <a href="https://github.com/bendtherules/react-fiber-traverse" target="_blank noopener noreferrer">bendtherules/react-fiber-traverse</a>
+  - cli命令行构建工具系列
+    - ink(用react开发响应式命令行工具)
+      - <a href="https://github.com/vadimdemedes/ink" target="_blank noopener noreferrer">vadimdemedes/ink</a>
+    - pastel(类似nextjs构建命令行工具)
+      - <a href="https://github.com/vadimdemedes/pastel" target="_blank noopener noreferrer">vadimdemedes/pastel</a>
+  - react-spreadsheet-import(Excel文件导入展示组件)
+    - <a href="https://github.com/UgnisSoftware/react-spreadsheet-import" target="_blank noopener noreferrer">UgnisSoftware/react-spreadsheet-import</a>
+  - react-js-cron(cron选择组件)
+    - <a href="https://github.com/xrutayisire/react-js-cron" target="_blank noopener noreferrer">xrutayisire/react-js-cron</a>
+  - suspend-react(将异步行为包在Suspense内)
+    - <a href="https://github.com/pmndrs/suspend-react" target="_blank noopener noreferrer">pmndrs/suspend-react</a>
+  - drawer系列
+    - rc-drawer(抽屉)
+      - <a href="https://github.com/react-component/drawer" target="_blank noopener noreferrer">react-component/drawer</a>
+    - react-spring-bottom-sheet(mobile形式底部上滑菜单)
+      - <a href="https://github.com/stipsan/react-spring-bottom-sheet" target="_blank noopener noreferrer">stipsan/react-spring-bottom-sheet</a>
+    - react-modal-sheet(底部上弹窗组件/冷门)
+      - <a href="https://github.com/Temzasse/react-modal-sheet" target="_blank noopener noreferrer">Temzasse/react-modal-sheet</a>
+    - vaul(底部上弹组件)
+      - <a href="https://github.com/emilkowalski/vaul" target="_blank noopener noreferrer">emilkowalski/vaul</a>
+  - media媒体查询系列
+    - react-responsive(媒体查询hooks)
+      - <a href="https://github.com/yocontra/react-responsive" target="_blank noopener noreferrer">yocontra/react-responsive</a>
+    - fresnel(媒体查询断点条件渲染组件)
+      - <a href="https://github.com/artsy/fresnel" target="_blank noopener noreferrer">artsy/fresnel</a>
+    - react-media(媒体查询hook/陈旧)
+      - <a href="https://github.com/ReactTraining/react-media" target="_blank noopener noreferrer">ReactTraining/react-media</a>
+  - selection区块选择系列
+    - react-selectable-fast(范围区块选择组件/陈旧)
+      - <a href="https://github.com/valerybugakov/react-selectable-fast" target="_blank noopener noreferrer">valerybugakov/react-selectable-fast</a>
+    - react-selectable-box(冷/支持drag)
+      - <a href="https://github.com/linxianxi/react-selectable-box" target="_blank noopener noreferrer">linxianxi/react-selectable-box</a>
+- docs
+  - create-react-app
+    - <a href="https://create-react-app.bootcss.com/" target="_blank noopener noreferrer">create-react-app.bootcss.com</a>
+  - react-illustration-series
+    - <a href="https://github.com/7kms/react-illustration-series" target="_blank noopener noreferrer">7kms/react-illustration-series</a>
+- 测试框架/工具
+  - enzyme
+    - enzyme(ui测试框架)
+      - <a href="https://github.com/enzymejs/enzyme" target="_blank noopener noreferrer">enzymejs/enzyme</a>
+    - enzyme-matchers(jest-enzyme)
+      - <a href="https://github.com/enzymejs/enzyme-matchers" target="_blank noopener noreferrer">enzymejs/enzyme-matchers</a>
+    - enzyme-to-json(序列化react组件方便snapshot)
+      - <a href="https://github.com/adriantoine/enzyme-to-json" target="_blank noopener noreferrer">adriantoine/enzyme-to-json</a>
+    - enzyme-example-jest
+      - <a href="https://github.com/vjwilson/enzyme-example-jest" target="_blank noopener noreferrer">vjwilson/enzyme-example-jest</a>
+  - RTL系列
+    - react-testing-library
+      - <a href="https://github.com/testing-library/react-testing-library" target="_blank noopener noreferrer">testing-library/react-testing-library</a>
+    - user-event(模拟用户输入)
+      - <a href="https://github.com/testing-library/user-event" target="_blank noopener noreferrer">testing-library/user-event</a>
+    - jest-dom(扩展匹配方法)
+      - <a href="https://github.com/testing-library/jest-dom" target="_blank noopener noreferrer">testing-library/jest-dom</a>
+    - react-hooks-testing-library(纯hooks测试)
+      - <a href="https://github.com/testing-library/react-hooks-testing-library" target="_blank noopener noreferrer">testing-library/react-hooks-testing-library</a>
+    - jest-preview(支持即时预览测试组件)
+      - <a href="https://github.com/nvh95/jest-preview" target="_blank noopener noreferrer">nvh95/jest-preview</a>
+  - react-test-renderer(代替jsdom渲染react组件)
+    - <a href="https://www.npmjs.com/package/react-test-renderer" target="_blank noopener noreferrer">www.npmjs.com</a>
+  - reassure(react组件性能测试工具)
+    - <a href="https://github.com/callstack/reassure" target="_blank noopener noreferrer">callstack/reassure</a>
+  - reactime(react组件时间旅行state/dom观测)
+    - <a href="https://github.com/open-source-labs/reactime" target="_blank noopener noreferrer">open-source-labs/reactime</a>
+  - react-nil(react空渲染器)
+    - <a href="https://github.com/pmndrs/react-nil" target="_blank noopener noreferrer">pmndrs/react-nil</a>
+- 冷门库
+  - use-unmount-signal(fetch中断信号)
+    - <a href="https://github.com/expo/use-unmount-signal" target="_blank noopener noreferrer">expo/use-unmount-signal</a>
+  - react-tracking(收集打点库)
+    - <a href="https://github.com/nytimes/react-tracking" target="_blank noopener noreferrer">nytimes/react-tracking</a>
+  - react-country-region-selector(世界各国选择器)
+    - <a href="https://github.com/country-regions/react-country-region-selector" target="_blank noopener noreferrer">country-regions/react-country-region-selector</a>
+  - rc-queue-anim(排队进行动画组件)
+    - <a href="https://github.com/react-component/queue-anim" target="_blank noopener noreferrer">react-component/queue-anim</a>
+  - auth0-react
+    - <a href="https://github.com/auth0/auth0-react" target="_blank noopener noreferrer">auth0/auth0-react</a>
+  - react-dart
+    - <a href="https://github.com/Workiva/react-dart" target="_blank noopener noreferrer">Workiva/react-dart</a>
+  - react-ga(google统计)
+    - <a href="https://github.com/react-ga/react-ga" target="_blank noopener noreferrer">react-ga/react-ga</a>
+  - webrix(提供各种组件代码块)
+    - <a href="https://github.com/open-amdocs/webrix" target="_blank noopener noreferrer">open-amdocs/webrix</a>
+  - react-gradient-picker(更精确的color pick)
+    - <a href="https://github.com/odedglas/react-linear-gradient-picker" target="_blank noopener noreferrer">odedglas/react-linear-gradient-picker</a>
+  - rc/tabs(tab组件基础)
+    - <a href="https://github.com/react-component/tabs" target="_blank noopener noreferrer">react-component/tabs</a>
+  - react-performance-testing(测试运行时性能的库)
+    - <a href="https://github.com/keiya01/react-performance-testing" target="_blank noopener noreferrer">keiya01/react-performance-testing</a>
+  - react-web-editor(组件随意拖动)
+    - <a href="https://github.com/CHEWCHEWW/react-web-editor" target="_blank noopener noreferrer">CHEWCHEWW/react-web-editor</a>
+  - react-if(条件语句变成组件渲染内容)
+    - <a href="https://github.com/romac/react-if" target="_blank noopener noreferrer">romac/react-if</a>
+  - superplate(创建react模板项目的脚手架)
+    - <a href="https://github.com/pankod/superplate" target="_blank noopener noreferrer">pankod/superplate</a>
+  - react-intl-tel-input(国际电话校验输入框)
+    - <a href="https://github.com/patw0929/react-intl-tel-input" target="_blank noopener noreferrer">patw0929/react-intl-tel-input</a>
+  - react-static(渐进式react静态站点生成器)
+    - <a href="https://github.com/react-static/react-static" target="_blank noopener noreferrer">react-static/react-static</a>
+  - react-awesome-query-builder(query构建查询器)
+    - <a href="https://github.com/ukrbublik/react-awesome-query-builder" target="_blank noopener noreferrer">ukrbublik/react-awesome-query-builder</a>
+  - react-freeze(防止不可见的组件渲染)
+    - <a href="https://github.com/software-mansion-labs/react-freeze" target="_blank noopener noreferrer">software-mansion-labs/react-freeze</a>
+  - react-focus-lock(锁定焦点到某区域)
+    - <a href="https://github.com/theKashey/react-focus-lock" target="_blank noopener noreferrer">theKashey/react-focus-lock</a>
+  - react-canvas-draw(支持canvas画画)
+    - <a href="https://github.com/embiem/react-canvas-draw" target="_blank noopener noreferrer">embiem/react-canvas-draw</a>
+  - use-constant(获取一个不变常量的hook)
+    - <a href="https://github.com/Andarist/use-constant" target="_blank noopener noreferrer">Andarist/use-constant</a>
+  - leva(react修改属性gui面板)
+    - <a href="https://github.com/pmndrs/leva" target="_blank noopener noreferrer">pmndrs/leva</a>
+  - react-share(分享组件)
+    - <a href="https://github.com/nygardk/react-share" target="_blank noopener noreferrer">nygardk/react-share</a>
+  - react-speech-kit(使用浏览器内置语音api)
+    - <a href="https://github.com/MikeyParton/react-speech-kit" target="_blank noopener noreferrer">MikeyParton/react-speech-kit</a>
+  - react-script-hook(加载外部script的hook)
+    - <a href="https://github.com/hupe1980/react-script-hook" target="_blank noopener noreferrer">hupe1980/react-script-hook</a>
+  - button按钮系列
+    - react-awesome-button(立体感的button组件)
+      - <a href="https://github.com/rcaferati/react-awesome-button" target="_blank noopener noreferrer">rcaferati/react-awesome-button</a>
+    - react-waves-effect(按钮波纹动画)
+      - <a href="https://github.com/LeulAria/react-waves-effect" target="_blank noopener noreferrer">LeulAria/react-waves-effect</a>
+  - react-mentions(在输入框@某人的弹出列表)
+    - <a href="https://github.com/signavio/react-mentions" target="_blank noopener noreferrer">signavio/react-mentions</a>
+  - react-click-away-listener(监听点击到外部区域)
+    - <a href="https://github.com/ooade/react-click-away-listener" target="_blank noopener noreferrer">ooade/react-click-away-listener</a>
+  - react-text-truncate(截断多行文本组件)
+    - <a href="https://github.com/ShinyChang/React-Text-Truncate" target="_blank noopener noreferrer">ShinyChang/React-Text-Truncate</a>
+  - interweave(安全渲染html)
+    - <a href="https://github.com/milesj/interweave" target="_blank noopener noreferrer">milesj/interweave</a>
+  - react-string-replace(安全的替换字符串/可使用jsx)
+    - <a href="https://github.com/iansinnott/react-string-replace" target="_blank noopener noreferrer">iansinnott/react-string-replace</a>
+  - hamburger-react(汉堡按钮组件)
+    - <a href="https://github.com/luukdv/hamburger-react" target="_blank noopener noreferrer">luukdv/hamburger-react</a>
+  - react-embed(嵌入社交内容url转组件显示)
+    - <a href="https://github.com/streamich/react-embed" target="_blank noopener noreferrer">streamich/react-embed</a>
+  - allotment(分隔/调整多视图组件)
+    - <a href="https://github.com/johnwalley/allotment" target="_blank noopener noreferrer">johnwalley/allotment</a>
+  - use-undo(react undo实现)
+    - <a href="https://github.com/homerchen19/use-undo" target="_blank noopener noreferrer">homerchen19/use-undo</a>
+  - reactable(在react中使用R展示数据表格)
+    - <a href="https://github.com/glin/reactable" target="_blank noopener noreferrer">glin/reactable</a>
+  - react-text-transition(动画文本变化组件)
+    - <a href="https://github.com/WinterCore/react-text-transition" target="_blank noopener noreferrer">WinterCore/react-text-transition</a>
+  - react-idle-timer(检测用户是否空闲/状态)
+    - <a href="https://github.com/SupremeTechnopriest/react-idle-timer" target="_blank noopener noreferrer">SupremeTechnopriest/react-idle-timer</a>
+  - react-terminal-ui(命令行组件)
+    - <a href="https://github.com/jonmbake/react-terminal-ui" target="_blank noopener noreferrer">jonmbake/react-terminal-ui</a>
+  - perfect-cursors(提供同步cursor指针显示/协作)
+    - <a href="https://github.com/steveruizok/perfect-cursors" target="_blank noopener noreferrer">steveruizok/perfect-cursors</a>
+  - react-rating(五星评分组件)
+    - <a href="https://github.com/smastrom/react-rating" target="_blank noopener noreferrer">smastrom/react-rating</a>
+  - react-tether(tooltip定位引擎)
+    - <a href="https://github.com/danreeves/react-tether" target="_blank noopener noreferrer">danreeves/react-tether</a>
+  - dark-mode-toggle(dark模式切换组件)
+    - <a href="https://github.com/anatoliygatt/dark-mode-toggle" target="_blank noopener noreferrer">anatoliygatt/dark-mode-toggle</a>
+  - app系列库
+    - react-google-calendar-api(和谷歌日历集成api)
+      - <a href="https://github.com/Kubessandra/react-google-calendar-api" target="_blank noopener noreferrer">Kubessandra/react-google-calendar-api</a>
+    - react-linkedin-login-oauth2(在react中登录linked)
+      - <a href="https://github.com/nvh95/react-linkedin-login-oauth2" target="_blank noopener noreferrer">nvh95/react-linkedin-login-oauth2</a>
+    - react-apple-signin-auth(apple登录鉴权库)
+      - <a href="https://github.com/A-Tokyo/react-apple-signin-auth" target="_blank noopener noreferrer">A-Tokyo/react-apple-signin-auth</a>
+    - react-oauth(google oauth)
+      - <a href="https://github.com/MomenSherif/react-oauth" target="_blank noopener noreferrer">MomenSherif/react-oauth</a>
+  - react-json-to-csv(json转csv下载组件)
+    - <a href="https://github.com/coston/react-json-to-csv" target="_blank noopener noreferrer">coston/react-json-to-csv</a>
+  - ReactShadow(使用shadow dom)
+    - <a href="https://github.com/Wildhoney/ReactShadow" target="_blank noopener noreferrer">Wildhoney/ReactShadow</a>
+  - react-screen-wake-lock(防止屏幕休眠锁定工具)
+    - <a href="https://github.com/jorisre/react-screen-wake-lock" target="_blank noopener noreferrer">jorisre/react-screen-wake-lock</a>
+  - react-text-loop(文本上下切换循环库)
+    - <a href="https://github.com/braposo/react-text-loop" target="_blank noopener noreferrer">braposo/react-text-loop</a>
+  - react-use-wizard(向导流程组件)
+    - <a href="https://github.com/devrnt/react-use-wizard" target="_blank noopener noreferrer">devrnt/react-use-wizard</a>
+  - react-wrap-balancer(让标题文字换行展示更均衡)
+    - <a href="https://github.com/shuding/react-wrap-balancer" target="_blank noopener noreferrer">shuding/react-wrap-balancer</a>
+  - react-simple-keyboard(虚拟的键盘组件)
+    - <a href="https://github.com/hodgef/react-simple-keyboard" target="_blank noopener noreferrer">hodgef/react-simple-keyboard</a>
+  - disable-react-devtools(禁用react devtools/冷门)
+    - <a href="https://github.com/fvilers/disable-react-devtools" target="_blank noopener noreferrer">fvilers/disable-react-devtools</a>
+  - highlightable-input(部分文字高亮的输入框组件)
+    - <a href="https://github.com/Justineo/highlightable-input" target="_blank noopener noreferrer">Justineo/highlightable-input</a>
+  - console-feed(将console.log日志显示到组件上)
+    - <a href="https://github.com/samdenty/console-feed" target="_blank noopener noreferrer">samdenty/console-feed</a>
+  - suspense(Suspense工具函数)
+    - <a href="https://github.com/bvaughn/suspense" target="_blank noopener noreferrer">bvaughn/suspense</a>
+  - react-contexify(右键菜单组件)
+    - <a href="https://github.com/fkhadra/react-contexify" target="_blank noopener noreferrer">fkhadra/react-contexify</a>
+  - bling(代码抽取/colocating)
+    - <a href="https://github.com/TanStack/bling" target="_blank noopener noreferrer">TanStack/bling</a>
+  - react-csv-reader(csv文件查看器)
+    - <a href="https://github.com/nzambello/react-csv-reader" target="_blank noopener noreferrer">nzambello/react-csv-reader</a>
+  - react-clock(时钟组件)
+    - <a href="https://github.com/wojtekmaj/react-clock" target="_blank noopener noreferrer">wojtekmaj/react-clock</a>
+  - react-math-keyboard(数学/数字输入键盘组件)
+    - <a href="https://github.com/krirkrirk/react-math-keyboard" target="_blank noopener noreferrer">krirkrirk/react-math-keyboard</a>
+  - html-to-react(html解析转react组件/过滤xss)
+    - <a href="https://github.com/aknuds1/html-to-react" target="_blank noopener noreferrer">aknuds1/html-to-react</a>
+  - react-to-print(打印react组件工具)
+    - <a href="https://github.com/gregnb/react-to-print" target="_blank noopener noreferrer">gregnb/react-to-print</a>
+  - react-credit-cards-2(信用卡组件)
+    - <a href="https://github.com/felquis/react-credit-cards-2" target="_blank noopener noreferrer">felquis/react-credit-cards-2</a>
+  - react-glow(卡片hover发光效果组件)
+    - <a href="https://github.com/codaworks/react-glow" target="_blank noopener noreferrer">codaworks/react-glow</a>
+- next.js
+  - 插件库
+    - next-sitemap
+      - <a href="https://github.com/iamvishnusankar/next-sitemap" target="_blank noopener noreferrer">iamvishnusankar/next-sitemap</a>
+    - next-netlify-starter
+      - <a href="https://github.com/cassidoo/next-netlify-starter" target="_blank noopener noreferrer">cassidoo/next-netlify-starter</a>
+    - next-auth
+      - <a href="https://github.com/nextauthjs/next-auth" target="_blank noopener noreferrer">nextauthjs/next-auth</a>
+    - nookies(cookie)
+      - <a href="https://github.com/maticzav/nookies" target="_blank noopener noreferrer">maticzav/nookies</a>
+    - next-transpile-modules(monorepo支持仓外直接导入tsx)
+      - <a href="https://github.com/martpie/next-transpile-modules" target="_blank noopener noreferrer">martpie/next-transpile-modules</a>
+    - flags(注入flag的hook)
+      - <a href="https://github.com/happykit/flags" target="_blank noopener noreferrer">happykit/flags</a>
+    - next-seo
+      - <a href="https://github.com/garmeeh/next-seo" target="_blank noopener noreferrer">garmeeh/next-seo</a>
+    - next-plugin-antd-less(搭配antd使用)
+      - <a href="https://github.com/SolidZORO/next-plugin-antd-less" target="_blank noopener noreferrer">SolidZORO/next-plugin-antd-less</a>
+    - @next/bundle-analyzer
+      - <a href="https://www.npmjs.com/package/@next/bundle-analyzer" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - i18n系列
+      - next-intl
+        - <a href="https://github.com/amannn/next-intl" target="_blank noopener noreferrer">amannn/next-intl</a>
+      - next-international(类型安全i18n)
+        - <a href="https://github.com/QuiiBz/next-international" target="_blank noopener noreferrer">QuiiBz/next-international</a>
+      - next-i18next
+        - <a href="https://github.com/i18next/next-i18next" target="_blank noopener noreferrer">i18next/next-i18next</a>
+      - next-translate
+        - <a href="https://github.com/aralroca/next-translate" target="_blank noopener noreferrer">aralroca/next-translate</a>
+      - next-export-i18n(支持next export的i18n库)
+        - <a href="https://github.com/martinkr/next-export-i18n" target="_blank noopener noreferrer">martinkr/next-export-i18n</a>
+    - nextjs-mf(mf支持)
+      - <a href="https://github.com/module-federation/nextjs-mf" target="_blank noopener noreferrer">module-federation/nextjs-mf</a>
+    - nestjs-prisma(prisma集成)
+      - <a href="https://github.com/notiz-dev/nestjs-prisma" target="_blank noopener noreferrer">notiz-dev/nestjs-prisma</a>
+    - open-next(serverless nextjs能力替代方案)
+      - <a href="https://github.com/serverless-stack/open-next" target="_blank noopener noreferrer">serverless-stack/open-next</a>
+    - next-image-loader(统一处理image的插件)
+      - <a href="https://github.com/aiji42/next-image-loader" target="_blank noopener noreferrer">aiji42/next-image-loader</a>
+    - next-mdx-remote(在gSP里编译mdx)
+      - <a href="https://github.com/hashicorp/next-mdx-remote" target="_blank noopener noreferrer">hashicorp/next-mdx-remote</a>
+    - next-remote-watch(支持外部数据更改hmr)
+      - <a href="https://github.com/hashicorp/next-remote-watch" target="_blank noopener noreferrer">hashicorp/next-remote-watch</a>
+    - nextjs-openai(openai接入组件)
+      - <a href="https://github.com/gptlabs/nextjs-openai" target="_blank noopener noreferrer">gptlabs/nextjs-openai</a>
+    - relay-nextjs(与relay集成)
+      - <a href="https://github.com/RevereCRE/relay-nextjs" target="_blank noopener noreferrer">RevereCRE/relay-nextjs</a>
+    - next-route-visualizer(路由关系可视化)
+      - <a href="https://github.com/DiiiaZoTe/next-route-visualizer" target="_blank noopener noreferrer">DiiiaZoTe/next-route-visualizer</a>
+    - next-on-pages(部署到CF pages一键工具)
+      - <a href="https://github.com/cloudflare/next-on-pages" target="_blank noopener noreferrer">cloudflare/next-on-pages</a>
+    - next-typesafe-url(query校验获取工具)
+      - <a href="https://github.com/ethanniser/next-typesafe-url" target="_blank noopener noreferrer">ethanniser/next-typesafe-url</a>
+    - nextjs-auth0(auth0集成)
+      - <a href="https://github.com/auth0/nextjs-auth0" target="_blank noopener noreferrer">auth0/nextjs-auth0</a>
+    - profile-next-cold-starts(分析nextjs启动时间火焰图/冷门)
+      - <a href="https://github.com/remorses/profile-next-cold-starts" target="_blank noopener noreferrer">remorses/profile-next-cold-starts</a>
+    - next-themes(主题切换)
+      - <a href="https://github.com/pacocoursey/next-themes" target="_blank noopener noreferrer">pacocoursey/next-themes</a>
+    - next-safe-action(server action type工具函数)
+      - <a href="https://github.com/TheEdoRan/next-safe-action" target="_blank noopener noreferrer">TheEdoRan/next-safe-action</a>
+    - next-usequerystate(url query管理状态)
+      - <a href="https://github.com/47ng/next-usequerystate" target="_blank noopener noreferrer">47ng/next-usequerystate</a>
+    - iron-session(cookie工具/可存数据)
+      - <a href="https://github.com/vvo/iron-session" target="_blank noopener noreferrer">vvo/iron-session</a>
+    - hydration-overlay(水合错误显示插件)
+      - <a href="https://github.com/BuilderIO/hydration-overlay" target="_blank noopener noreferrer">BuilderIO/hydration-overlay</a>
+    - rsc-cache(rsc服务端组件缓存库)
+      - <a href="https://github.com/fredkiss3/rsc-cache" target="_blank noopener noreferrer">fredkiss3/rsc-cache</a>
+    - next-route-handler-pipe(请求合并工具函数/冷门)
+      - <a href="https://github.com/KolbySisk/next-route-handler-pipe" target="_blank noopener noreferrer">KolbySisk/next-route-handler-pipe</a>
+  - 相关框架
+    - blitz(next.js全栈框架)
+      - <a href="https://github.com/blitz-js/blitz" target="_blank noopener noreferrer">blitz-js/blitz</a>
+    - outstatic(基于nextjs的cms博客)
+      - <a href="https://github.com/avitorio/outstatic" target="_blank noopener noreferrer">avitorio/outstatic</a>
+  - 实战项目
+    - typescript-nextjs-starter(ts启动模板项目)
+      - <a href="https://github.com/jpedroschmitz/typescript-nextjs-starter" target="_blank noopener noreferrer">jpedroschmitz/typescript-nextjs-starter</a>
+    - on-demand-isr(按需isr/next 12)
+      - <a href="https://github.com/leerob/on-demand-isr" target="_blank noopener noreferrer">leerob/on-demand-isr</a>
+    - blog.maximeheckel(不错的一个博客)
+      - <a href="https://github.com/MaximeHeckel/blog.maximeheckel.com" target="_blank noopener noreferrer">MaximeHeckel/blog.maximeheckel.com</a>
+    - start-ui-web(脚手架模板项目)
+      - <a href="https://github.com/BearStudio/start-ui-web" target="_blank noopener noreferrer">BearStudio/start-ui-web</a>
+    - create-t3-app(创建一个nextjs全栈脚手架)
+      - <a href="https://github.com/t3-oss/create-t3-app" target="_blank noopener noreferrer">t3-oss/create-t3-app</a>
+    - taxonomy(nextjs 13新特性实例项目)
+      - <a href="https://github.com/shadcn/taxonomy" target="_blank noopener noreferrer">shadcn/taxonomy</a>
+    - nextjs-subscription-payments(支付页模板)
+      - <a href="https://github.com/vercel/nextjs-subscription-payments" target="_blank noopener noreferrer">vercel/nextjs-subscription-payments</a>
+    - app-playground(layout技术示例项目)
+      - <a href="https://github.com/vercel/app-playground" target="_blank noopener noreferrer">vercel/app-playground</a>
+    - Next-js-Boilerplate(模板)
+      - <a href="https://github.com/ixartz/Next-js-Boilerplate" target="_blank noopener noreferrer">ixartz/Next-js-Boilerplate</a>
+    - nextgram(平行路由例子)
+      - <a href="https://github.com/vercel-labs/nextgram" target="_blank noopener noreferrer">vercel-labs/nextgram</a>
+    - examples-next-prisma-starter(trpc+prisma模板)
+      - <a href="https://github.com/trpc/examples-next-prisma-starter" target="_blank noopener noreferrer">trpc/examples-next-prisma-starter</a>
+    - nextjs-mongodb-app(mongodb例子)
+      - <a href="https://github.com/hoangvvo/nextjs-mongodb-app" target="_blank noopener noreferrer">hoangvvo/nextjs-mongodb-app</a>
+    - next-contentlayer(contentlayer+mdx模板项目)
+      - <a href="https://github.com/shadcn/next-contentlayer" target="_blank noopener noreferrer">shadcn/next-contentlayer</a>
+  - blog
+    - theme
+      - nextra(swc作者同款)
+        - <a href="https://github.com/shuding/nextra" target="_blank noopener noreferrer">shuding/nextra</a>
+      - tailwind-nextjs-starter-blog
+        - <a href="https://github.com/timlrx/tailwind-nextjs-starter-blog" target="_blank noopener noreferrer">timlrx/tailwind-nextjs-starter-blog</a>
+      - nextjs-blog-theme(可定制theme的启动器)
+        - <a href="https://github.com/netlify-templates/nextjs-blog-theme" target="_blank noopener noreferrer">netlify-templates/nextjs-blog-theme</a>
+      - nextjs-notion-starter-kit(notion风格)
+        - <a href="https://github.com/transitive-bullshit/nextjs-notion-starter-kit" target="_blank noopener noreferrer">transitive-bullshit/nextjs-notion-starter-kit</a>
+  - repo
+    - <a href="https://github.com/vercel/next.js" target="_blank noopener noreferrer">vercel/next.js</a>
+- 特冷门库
+  - reactant(接近angular的react框架)
+    - <a href="https://github.com/unadlib/reactant" target="_blank noopener noreferrer">unadlib/reactant</a>
+  - reactronica(制作音乐DAW示例)
+    - <a href="https://github.com/unkleho/reactronica" target="_blank noopener noreferrer">unkleho/reactronica</a>
+  - reactive-crdt(基于yjs的多人协作实现)
+    - <a href="https://github.com/YousefED/reactive-crdt" target="_blank noopener noreferrer">YousefED/reactive-crdt</a>
+  - react-google-autocomplete(谷歌地点补全输入组件)
+    - <a href="https://github.com/ErrorPro/react-google-autocomplete" target="_blank noopener noreferrer">ErrorPro/react-google-autocomplete</a>
+  - heo(一个func用ref的解决方案)
+    - <a href="https://github.com/MinJieLiu/heo" target="_blank noopener noreferrer">MinJieLiu/heo</a>
+  - easytimer-react-hook(秒表倒计时器组件/冷门)
+    - <a href="https://github.com/albert-gonzalez/easytimer-react-hook" target="_blank noopener noreferrer">albert-gonzalez/easytimer-react-hook</a>
+  - react-use-kana(日文姓自动填充假名)
+    - <a href="https://github.com/ohbarye/react-use-kana" target="_blank noopener noreferrer">ohbarye/react-use-kana</a>
+  - react-json-reconciler(使用react-reconciler将jsx转json)
+    - <a href="https://github.com/intuit/react-json-reconciler" target="_blank noopener noreferrer">intuit/react-json-reconciler</a>
+  - turnstone(一个搜索组件)
+    - <a href="https://github.com/tomsouthall/turnstone" target="_blank noopener noreferrer">tomsouthall/turnstone</a>
+  - react-custom-roulette(轮盘组件)
+    - <a href="https://github.com/effectussoftware/react-custom-roulette" target="_blank noopener noreferrer">effectussoftware/react-custom-roulette</a>
+  - numeric-stepper(步长组件)
+    - <a href="https://github.com/anatoliygatt/numeric-stepper" target="_blank noopener noreferrer">anatoliygatt/numeric-stepper</a>
+  - react-winbox(winbox窗口管理器组件)
+    - <a href="https://github.com/RickoNoNo3/react-winbox" target="_blank noopener noreferrer">RickoNoNo3/react-winbox</a>
+  - react-dnd-treeview(可拖拽移动的文件结构树)
+    - <a href="https://github.com/minop1205/react-dnd-treeview" target="_blank noopener noreferrer">minop1205/react-dnd-treeview</a>
+  - react-smooth-corners(让元素圆角更平滑的组件)
+    - <a href="https://github.com/DJanoskova/react-smooth-corners" target="_blank noopener noreferrer">DJanoskova/react-smooth-corners</a>
+  - react-float-menu(悬浮菜单组件)
+    - <a href="https://github.com/prabhuignoto/react-float-menu" target="_blank noopener noreferrer">prabhuignoto/react-float-menu</a>
+  - react-multi-email(多个邮箱输入组件)
+    - <a href="https://github.com/axisj/react-multi-email" target="_blank noopener noreferrer">axisj/react-multi-email</a>
+  - forgetti(react forget民间自制版)
+    - <a href="https://github.com/lxsmnsyc/forgetti" target="_blank noopener noreferrer">lxsmnsyc/forgetti</a>
+  - react-prod-sourcemaps(调试react生产环境source map)
+    - <a href="https://github.com/markerikson/react-prod-sourcemaps" target="_blank noopener noreferrer">markerikson/react-prod-sourcemaps</a>
+  - react-knob-headless(旋钮组件/冷门)
+    - <a href="https://github.com/satelllte/react-knob-headless" target="_blank noopener noreferrer">satelllte/react-knob-headless</a>
+  - scratch-card(抽奖刮卡组件)
+    - <a href="https://github.com/1587315093/scratch-card" target="_blank noopener noreferrer">1587315093/scratch-card</a>
+- 可视化
+  - react-konva(konva节点式canvas)
+    - <a href="https://github.com/konvajs/react-konva" target="_blank noopener noreferrer">konvajs/react-konva</a>
+  - react-three系列
+    - react-three-fiber(支持react式使用three.js)
+      - <a href="https://github.com/pmndrs/react-three-fiber" target="_blank noopener noreferrer">pmndrs/react-three-fiber</a>
+    - react-three-flex(支持three内flex布局)
+      - <a href="https://github.com/pmndrs/react-three-flex" target="_blank noopener noreferrer">pmndrs/react-three-flex</a>
+    - drei(react-three-fiber helper)
+      - <a href="https://github.com/pmndrs/drei" target="_blank noopener noreferrer">pmndrs/drei</a>
+    - use-cannon(react-three-fiber的动画hook)
+      - <a href="https://github.com/pmndrs/use-cannon" target="_blank noopener noreferrer">pmndrs/use-cannon</a>
+    - react-xr(基于three-fiber构建VR/AR应用)
+      - <a href="https://github.com/pmndrs/react-xr" target="_blank noopener noreferrer">pmndrs/react-xr</a>
+    - react-three-offscreen(在worker里渲染)
+      - <a href="https://github.com/pmndrs/react-three-offscreen" target="_blank noopener noreferrer">pmndrs/react-three-offscreen</a>
+    - triplex(react three fiber编辑器)
+      - <a href="https://github.com/try-triplex/triplex" target="_blank noopener noreferrer">try-triplex/triplex</a>
+    - react-three-map(联动gl地图和three物体工具)
+      - <a href="https://github.com/RodrigoHamuy/react-three-map" target="_blank noopener noreferrer">RodrigoHamuy/react-three-map</a>
+  - react-canvas(老)
+    - <a href="https://github.com/Flipboard/react-canvas" target="_blank noopener noreferrer">Flipboard/react-canvas</a>
+  - kepler.gl(geo地理空间数据分析库)
+    - <a href="https://github.com/keplergl/kepler.gl" target="_blank noopener noreferrer">keplergl/kepler.gl</a>
+  - react-ape(用canvas/webgl渲染内置组件)
+    - <a href="https://github.com/raphamorim/react-ape" target="_blank noopener noreferrer">raphamorim/react-ape</a>
+  - react-sketch-canvas(canvas画板绘图)
+    - <a href="https://github.com/vinothpandian/react-sketch-canvas" target="_blank noopener noreferrer">vinothpandian/react-sketch-canvas</a>
+  - react-unity-webgl(react与unity webgl通信)
+    - <a href="https://github.com/jeffreylanters/react-unity-webgl" target="_blank noopener noreferrer">jeffreylanters/react-unity-webgl</a>
+  - react-cytoscapejs(图论库react版)
+    - <a href="https://github.com/plotly/react-cytoscapejs" target="_blank noopener noreferrer">plotly/react-cytoscapejs</a>
+  - gltfjsx(gltf转jsx)
+    - <a href="https://github.com/pmndrs/gltfjsx" target="_blank noopener noreferrer">pmndrs/gltfjsx</a>
+- 后台模板
+  - ant-design-pro
+    - <a href="https://github.com/ant-design/ant-design-pro" target="_blank noopener noreferrer">ant-design/ant-design-pro</a>
+  - horizon-ui-chakra(基于chakra ui)
+    - <a href="https://github.com/horizon-ui/horizon-ui-chakra" target="_blank noopener noreferrer">horizon-ui/horizon-ui-chakra</a>
+  - Hooks-Admin
+    - <a href="https://github.com/HalseySpicy/Hooks-Admin" target="_blank noopener noreferrer">HalseySpicy/Hooks-Admin</a>
+  - material-kit-react(基于mui)
+    - <a href="https://github.com/devias-io/material-kit-react" target="_blank noopener noreferrer">devias-io/material-kit-react</a>
+  - react-admin(mui风格)
+    - <a href="https://github.com/marmelab/react-admin" target="_blank noopener noreferrer">marmelab/react-admin</a>
+- 周边框架
+  - direflow(用react创建web component/冷门)
+    - <a href="https://github.com/Silind-Software/direflow" target="_blank noopener noreferrer">Silind-Software/direflow</a>
+  - haunted(web component react hooks实现)
+    - <a href="https://github.com/matthewp/haunted" target="_blank noopener noreferrer">matthewp/haunted</a>
+  - refine(antd+react的大数据框架)
+    - <a href="https://github.com/refinedev/refine" target="_blank noopener noreferrer">refinedev/refine</a>
+  - umi系列
+    - umi-plugin-extensions(用umi开发chrome拓展)
+      - <a href="https://github.com/arvinxx/umi-plugin-extensions" target="_blank noopener noreferrer">arvinxx/umi-plugin-extensions</a>
+    - umi
+      - <a href="https://github.com/umijs/umi" target="_blank noopener noreferrer">umijs/umi</a>
+  - react_on_rails(rails+react)
+    - <a href="https://github.com/shakacode/react_on_rails" target="_blank noopener noreferrer">shakacode/react_on_rails</a>
+  - modern.js(字节web infra)
+    - <a href="https://github.com/web-infra-dev/modern.js" target="_blank noopener noreferrer">web-infra-dev/modern.js</a>
+  - remix系列
+    - repo
+      - <a href="https://github.com/remix-run/remix" target="_blank noopener noreferrer">remix-run/remix</a>
+    - 实战
+      - hackernews-remix-react
+        - <a href="https://github.com/clintonwoo/hackernews-remix-react" target="_blank noopener noreferrer">clintonwoo/hackernews-remix-react</a>
+      - indie-stack(remix技术栈集合)
+        - <a href="https://github.com/remix-run/indie-stack" target="_blank noopener noreferrer">remix-run/indie-stack</a>
+      - remix-stacks(remix技术栈推荐)
+        - <a href="https://github.com/jlengstorf/remix-stacks" target="_blank noopener noreferrer">jlengstorf/remix-stacks</a>
+      - remix/examples(官方example合集)
+        - <a href="https://github.com/remix-run/examples" target="_blank noopener noreferrer">remix-run/examples</a>
+    - 工具
+      - remix-flat-routes(全扁平式路由支持)
+        - <a href="https://github.com/kiliman/remix-flat-routes" target="_blank noopener noreferrer">kiliman/remix-flat-routes</a>
+      - remix-forms(actions表单支持)
+        - <a href="https://github.com/SeasonedSoftware/remix-forms" target="_blank noopener noreferrer">SeasonedSoftware/remix-forms</a>
+      - remix-page-blocks(remix建站代码块)
+        - <a href="https://github.com/AlexandroMtzG/remix-page-blocks" target="_blank noopener noreferrer">AlexandroMtzG/remix-page-blocks</a>
+      - remix-utils(实用工具/cache控制等)
+        - <a href="https://github.com/sergiodxa/remix-utils" target="_blank noopener noreferrer">sergiodxa/remix-utils</a>
+      - remix-compute(将remix部署到netlify edge的工具)
+        - <a href="https://github.com/netlify/remix-compute" target="_blank noopener noreferrer">netlify/remix-compute</a>
+      - remix-sitemap(sitemap生成)
+        - <a href="https://github.com/fedeya/remix-sitemap" target="_blank noopener noreferrer">fedeya/remix-sitemap</a>
+      - conform(remix hooks增强库)
+        - <a href="https://github.com/edmundhung/conform" target="_blank noopener noreferrer">edmundhung/conform</a>
+      - remix-json-routes(用json配置路由表)
+        - <a href="https://github.com/brophdawg11/remix-json-routes" target="_blank noopener noreferrer">brophdawg11/remix-json-routes</a>
+      - Remix-Dev-Tools(增强开发工具)
+        - <a href="https://github.com/Code-Forge-Net/Remix-Dev-Tools" target="_blank noopener noreferrer">Code-Forge-Net/Remix-Dev-Tools</a>
+      - strip-sourcemaps(去除server loader source map)
+        - <a href="https://github.com/kiliman/strip-sourcemaps" target="_blank noopener noreferrer">kiliman/strip-sourcemaps</a>
+  - create-react-app-esbuild
+    - <a href="https://github.com/pradel/create-react-app-esbuild" target="_blank noopener noreferrer">pradel/create-react-app-esbuild</a>
+  - preact系列
+    - preact
+      - <a href="https://github.com/preactjs/preact" target="_blank noopener noreferrer">preactjs/preact</a>
+    - preact-reconciler(preact渲染器/three)
+      - <a href="https://github.com/CodyJasonBennett/preact-reconciler" target="_blank noopener noreferrer">CodyJasonBennett/preact-reconciler</a>
+- 其他
+  - 框架设计
+    - server-component
+      - demo
+        - <a href="https://github.com/marvinhagemeister/preact-server-component-demo" target="_blank noopener noreferrer">marvinhagemeister/preact-server-component-demo</a>
+    - flat-file-system-routing
+      - <a href="https://gist.github.com/jamiebuilds/86d467ee4353cb316edce8e69ad19237" target="_blank noopener noreferrer">gist.github.com</a>
+  - awesome-react-components(库大全)
+    - <a href="https://github.com/brillout/awesome-react-components" target="_blank noopener noreferrer">brillout/awesome-react-components</a>
+  - awesome-react-renderer(渲染器大全)
+    - <a href="https://github.com/chentsulin/awesome-react-renderer" target="_blank noopener noreferrer">chentsulin/awesome-react-renderer</a>
+  - awesome-react
+    - <a href="https://github.com/enaqx/awesome-react" target="_blank noopener noreferrer">enaqx/awesome-react</a>
+- 模板项目
+  - bulletproof-react
+    - <a href="https://github.com/alan2207/bulletproof-react" target="_blank noopener noreferrer">alan2207/bulletproof-react</a>
+## Vue
+- 工具库
+  - drag
+    - visual-drag
+      - <a href="https://github.com/woai3c/visual-drag-demo" target="_blank noopener noreferrer">woai3c/visual-drag-demo</a>
+    - Vue.Draggable(拖拽排序)
+      - <a href="https://github.com/SortableJS/Vue.Draggable" target="_blank noopener noreferrer">SortableJS/Vue.Draggable</a>
+    - vue.draggable.next(vue3)
+      - <a href="https://github.com/SortableJS/vue.draggable.next" target="_blank noopener noreferrer">SortableJS/vue.draggable.next</a>
+    - vue-drag-resize(支持拖拽和resize)
+      - <a href="https://github.com/kirillmurashov/vue-drag-resize" target="_blank noopener noreferrer">kirillmurashov/vue-drag-resize</a>
+    - vue3-dnd(不维护了)
+      - <a href="https://github.com/hcg1023/vue3-dnd" target="_blank noopener noreferrer">hcg1023/vue3-dnd</a>
+    - vue-draggable-plus
+      - <a href="https://github.com/Alfred-Skyblue/vue-draggable-plus" target="_blank noopener noreferrer">Alfred-Skyblue/vue-draggable-plus</a>
+    - es-drager(拖拽网格工具/vue3)
+      - <a href="https://github.com/vangleer/es-drager" target="_blank noopener noreferrer">vangleer/es-drager</a>
+  - ui库
+    - vuestic-ui(vue3)
+      - <a href="https://github.com/epicmaxco/vuestic-ui" target="_blank noopener noreferrer">epicmaxco/vuestic-ui</a>
+    - heyui(vue2)
+      - <a href="https://github.com/heyui/heyui" target="_blank noopener noreferrer">heyui/heyui</a>
+    - primevue(vue2/3)
+      - <a href="https://github.com/primefaces/primevue" target="_blank noopener noreferrer">primefaces/primevue</a>
+    - balm(vue3/冷门门)
+      - <a href="https://github.com/balmjs/balm-ui" target="_blank noopener noreferrer">balmjs/balm-ui</a>
+    - naive-ui(vue3)
+      - <a href="https://github.com/tusen-ai/naive-ui" target="_blank noopener noreferrer">tusen-ai/naive-ui</a>
+    - quasar(vue3)
+      - <a href="https://github.com/quasarframework/quasar" target="_blank noopener noreferrer">quasarframework/quasar</a>
+    - mijin(tailwind/冷门门)
+      - <a href="https://github.com/lecoueyl/mijin" target="_blank noopener noreferrer">lecoueyl/mijin</a>
+    - buefy
+      - <a href="https://github.com/buefy/buefy" target="_blank noopener noreferrer">buefy/buefy</a>
+    - idux(vue3)
+      - <a href="https://github.com/IDuxFE/idux" target="_blank noopener noreferrer">IDuxFE/idux</a>
+    - vue-tailwind(基于taildwind的组件库/vue2)
+      - <a href="https://github.com/alfonsobries/vue-tailwind" target="_blank noopener noreferrer">alfonsobries/vue-tailwind</a>
+    - vue-material(vue2)
+      - <a href="https://github.com/vuematerial/vue-material" target="_blank noopener noreferrer">vuematerial/vue-material</a>
+    - bootstrap-vue
+      - <a href="https://github.com/bootstrap-vue/bootstrap-vue" target="_blank noopener noreferrer">bootstrap-vue/bootstrap-vue</a>
+    - vuetify
+      - <a href="https://github.com/vuetifyjs/vuetify" target="_blank noopener noreferrer">vuetifyjs/vuetify</a>
+    - ViewUI(vue2/收费)
+      - <a href="https://github.com/view-design/ViewUI" target="_blank noopener noreferrer">view-design/ViewUI</a>
+    - muse-ui(vue2/material风格)
+      - <a href="https://github.com/museui/muse-ui" target="_blank noopener noreferrer">museui/muse-ui</a>
+    - vuesax(vue2)
+      - <a href="https://github.com/lusaxweb/vuesax" target="_blank noopener noreferrer">lusaxweb/vuesax</a>
+    - tedesign系列
+      - tdesign-vue-next(vue3)
+        - <a href="https://github.com/Tencent/tdesign-vue-next" target="_blank noopener noreferrer">Tencent/tdesign-vue-next</a>
+      - tdesign-vue(vue2)
+        - <a href="https://github.com/Tencent/tdesign-vue" target="_blank noopener noreferrer">Tencent/tdesign-vue</a>
+    - arco-design-vue(vue3)
+      - <a href="https://github.com/arco-design/arco-design-vue" target="_blank noopener noreferrer">arco-design/arco-design-vue</a>
+    - ViewUIPlus(iview/vue3)
+      - <a href="https://github.com/view-design/ViewUIPlus" target="_blank noopener noreferrer">view-design/ViewUIPlus</a>
+    - element系列
+      - element
+        - <a href="https://github.com/ElemeFE/element" target="_blank noopener noreferrer">ElemeFE/element</a>
+      - 主题自定义
+        - <a href="https://elementui.github.io/theme-chalk-preview/#/zh-CN" target="_blank noopener noreferrer">elementui.github.io</a>
+      - element-china-area-data(省市联动数据)
+        - <a href="https://github.com/Plortinus/element-china-area-data" target="_blank noopener noreferrer">Plortinus/element-china-area-data</a>
+    - element-plus
+      - <a href="https://github.com/element-plus/element-plus" target="_blank noopener noreferrer">element-plus/element-plus</a>
+    - vexip-ui(vue3/冷门)
+      - <a href="https://github.com/qmhc/vexip-ui" target="_blank noopener noreferrer">qmhc/vexip-ui</a>
+    - Lew-UI(vue3/冷门)
+      - <a href="https://github.com/lewkamtao/Lew-UI" target="_blank noopener noreferrer">lewkamtao/Lew-UI</a>
+    - varnish(vue3+tailwind/冷门)
+      - <a href="https://github.com/caneara/varnish" target="_blank noopener noreferrer">caneara/varnish</a>
+    - kpc(金山design/冷门)
+      - <a href="https://github.com/ksc-fe/kpc" target="_blank noopener noreferrer">ksc-fe/kpc</a>
+    - fighting-design(vue3/冷门)
+      - <a href="https://github.com/FightingDesign/fighting-design" target="_blank noopener noreferrer">FightingDesign/fighting-design</a>
+    - vue-devui(vue3/冷门)
+      - <a href="https://github.com/DevCloudFE/vue-devui" target="_blank noopener noreferrer">DevCloudFE/vue-devui</a>
+    - ant-design-vue
+      - <a href="https://github.com/vueComponent/ant-design-vue" target="_blank noopener noreferrer">vueComponent/ant-design-vue</a>
+    - flowbite-vue(基于tailwind/冷门)
+      - <a href="https://github.com/themesberg/flowbite-vue" target="_blank noopener noreferrer">themesberg/flowbite-vue</a>
+    - anu(冷)
+      - <a href="https://github.com/jd-solanki/anu" target="_blank noopener noreferrer">jd-solanki/anu</a>
+    - inkline(vue3)
+      - <a href="https://github.com/inkline/inkline" target="_blank noopener noreferrer">inkline/inkline</a>
+    - chakra-ui-vue
+      - <a href="https://github.com/chakra-ui/chakra-ui-vue" target="_blank noopener noreferrer">chakra-ui/chakra-ui-vue</a>
+    - radix-vue
+      - <a href="https://github.com/radix-vue/radix-vue" target="_blank noopener noreferrer">radix-vue/radix-vue</a>
+    - Equal(vue3/基于tailwind)
+      - <a href="https://github.com/Equal-UI/Equal" target="_blank noopener noreferrer">Equal-UI/Equal</a>
+  - progress-bar
+    - <a href="https://mp.weixin.qq.com/s/3xbayaKrjgXayIwGRRWyJQ" target="_blank noopener noreferrer">mp.weixin.qq.com</a>
+  - vue-slider-component(左右滑块组件)
+    - <a href="https://github.com/NightCatSama/vue-slider-component" target="_blank noopener noreferrer">NightCatSama/vue-slider-component</a>
+  - 代码编辑器
+    - vue-codemirror
+      - <a href="https://github.com/surmon-china/vue-codemirror" target="_blank noopener noreferrer">surmon-china/vue-codemirror</a>
+    - mavonEditor(md可视化编辑器)
+      - <a href="https://github.com/hinesboy/mavonEditor" target="_blank noopener noreferrer">hinesboy/mavonEditor</a>
+    - vue-diff(code diff显示器)
+      - <a href="https://github.com/hoiheart/vue-diff" target="_blank noopener noreferrer">hoiheart/vue-diff</a>
+    - simple-code-editor(vue3)
+      - <a href="https://github.com/justcaliturner/simple-code-editor" target="_blank noopener noreferrer">justcaliturner/simple-code-editor</a>
+  - vue-mata(头信息)
+    - <a href="https://github.com/nuxt/vue-meta" target="_blank noopener noreferrer">nuxt/vue-meta</a>
+  - vue-error-boundary
+    - <a href="https://github.com/dillonchanis/vue-error-boundary" target="_blank noopener noreferrer">dillonchanis/vue-error-boundary</a>
+  - vue-skeleton-webpack-plugin(骨架屏方案)
+    - <a href="https://github.com/lavas-project/vue-skeleton-webpack-plugin" target="_blank noopener noreferrer">lavas-project/vue-skeleton-webpack-plugin</a>
+  - tb-skeleton(骨架屏)
+    - <a href="https://github.com/anthinkingcoder/tb-skeleton" target="_blank noopener noreferrer">anthinkingcoder/tb-skeleton</a>
+  - loading和progress库
+    - vue-simple-spinner(spinner加载图标)
+      - <a href="https://github.com/dzwillia/vue-simple-spinner" target="_blank noopener noreferrer">dzwillia/vue-simple-spinner</a>
+    - vue-radial-progress(环形进度条)
+      - <a href="https://github.com/wyzantinc/vue-radial-progress" target="_blank noopener noreferrer">wyzantinc/vue-radial-progress</a>
+    - vue-loading-overlay(加载图标)
+      - <a href="https://github.com/ankurk91/vue-loading-overlay" target="_blank noopener noreferrer">ankurk91/vue-loading-overlay</a>
+    - vue-progress-path(加载图标)
+      - <a href="https://github.com/Akryum/vue-progress-path" target="_blank noopener noreferrer">Akryum/vue-progress-path</a>
+    - vue-loading-button(可以加载的button)
+      - <a href="https://github.com/shwilliam/vue-loading-button" target="_blank noopener noreferrer">shwilliam/vue-loading-button</a>
+    - epic-spinners(loading图案)
+      - <a href="https://github.com/epicmaxco/epic-spinners" target="_blank noopener noreferrer">epicmaxco/epic-spinners</a>
+    - easy-circular-progress(环形进度)
+      - <a href="https://github.com/dreambo8563/easy-circular-progress" target="_blank noopener noreferrer">dreambo8563/easy-circular-progress</a>
+    - vuejs-progress-bar(简单的进度条/圆柱进度)
+      - <a href="https://github.com/larsmars/vuejs-progress-bar" target="_blank noopener noreferrer">larsmars/vuejs-progress-bar</a>
+    - vue-circle-counter(圆形进度/虚线)
+      - <a href="https://github.com/snirp/vue-circle-counter" target="_blank noopener noreferrer">snirp/vue-circle-counter</a>
+    - vue-simple-progress(简单左右进度条)
+      - <a href="https://github.com/dzwillia/vue-simple-progress" target="_blank noopener noreferrer">dzwillia/vue-simple-progress</a>
+    - vue-wait(管理一个页面多个loading)
+      - <a href="https://github.com/f/vue-wait" target="_blank noopener noreferrer">f/vue-wait</a>
+    - vue-content-loader(svg的骨架屏)
+      - <a href="https://github.com/egoist/vue-content-loader" target="_blank noopener noreferrer">egoist/vue-content-loader</a>
+  - 全局状态管理
+    - harlem(vue3)
+      - <a href="https://github.com/andrewcourtice/harlem" target="_blank noopener noreferrer">andrewcourtice/harlem</a>
+    - vuex系列
+      - vuex-persistedstate(vuex数据持久化)
+        - <a href="https://github.com/robinvdvleuten/vuex-persistedstate" target="_blank noopener noreferrer">robinvdvleuten/vuex-persistedstate</a>
+      - vuex-orm
+        - <a href="https://github.com/vuex-orm/vuex-orm" target="_blank noopener noreferrer">vuex-orm/vuex-orm</a>
+      - vuex
+        - <a href="https://github.com/vuejs/vuex" target="_blank noopener noreferrer">vuejs/vuex</a>
+      - vuex-persist(数据持久化)
+        - <a href="https://github.com/championswimmer/vuex-persist" target="_blank noopener noreferrer">championswimmer/vuex-persist</a>
+    - pinia系列
+      - pinia(vuex5特性先行试验/原子/简单)
+        - <a href="https://github.com/vuejs/pinia" target="_blank noopener noreferrer">vuejs/pinia</a>
+      - colada(历史状态调试器)
+        - <a href="https://github.com/oslabs-beta/colada" target="_blank noopener noreferrer">oslabs-beta/colada</a>
+      - pinia-plugin-persistedstate(持久化)
+        - <a href="https://github.com/prazdevs/pinia-plugin-persistedstate" target="_blank noopener noreferrer">prazdevs/pinia-plugin-persistedstate</a>
+  - vue-sauce(在组件后附带该组件源码)
+    - <a href="https://github.com/byteboomers/vue-sauce" target="_blank noopener noreferrer">byteboomers/vue-sauce</a>
+  - vue-heatmapjs(热点图)
+    - <a href="https://github.com/BrockReece/vue-heatmapjs" target="_blank noopener noreferrer">BrockReece/vue-heatmapjs</a>
+  - vue-advanced-chat(聊天室组件)
+    - <a href="https://github.com/antoine92190/vue-advanced-chat" target="_blank noopener noreferrer">antoine92190/vue-advanced-chat</a>
+  - select选择器组件系列
+    - vue-multiselect(通用多选组件)
+      - <a href="https://github.com/shentao/vue-multiselect" target="_blank noopener noreferrer">shentao/vue-multiselect</a>
+    - vue-select(基础select组件)
+      - <a href="https://github.com/sagalbot/vue-select" target="_blank noopener noreferrer">sagalbot/vue-select</a>
+  - vue-demi(同时编写兼容vue2/3的组件)
+    - <a href="https://github.com/vueuse/vue-demi" target="_blank noopener noreferrer">vueuse/vue-demi</a>
+  - vue-global-api(vue3 hook全局声明/防eslint报错)
+    - <a href="https://github.com/antfu/vue-global-api" target="_blank noopener noreferrer">antfu/vue-global-api</a>
+  - Vue-layout(可视化布局工具/陈旧)
+    - <a href="https://github.com/jaweii/Vue-Layout" target="_blank noopener noreferrer">jaweii/Vue-Layout</a>
+  - vue-grid-layout(vue版的react-grid)
+    - <a href="https://github.com/jbaysolutions/vue-grid-layout" target="_blank noopener noreferrer">jbaysolutions/vue-grid-layout</a>
+  - 图表库
+    - x-flowchart-vue(流程图编辑器)
+      - <a href="https://github.com/OXOYO/X-Flowchart-Vue" target="_blank noopener noreferrer">OXOYO/X-Flowchart-Vue</a>
+    - vue-okr-tree(树图)
+      - <a href="https://github.com/qq449245884/vue-okr-tree" target="_blank noopener noreferrer">qq449245884/vue-okr-tree</a>
+    - vue-chartjs
+      - <a href="https://github.com/apertureless/vue-chartjs" target="_blank noopener noreferrer">apertureless/vue-chartjs</a>
+    - vue-apexcharts(老)
+      - <a href="https://github.com/apexcharts/vue-apexcharts" target="_blank noopener noreferrer">apexcharts/vue-apexcharts</a>
+    - echarts系列
+      - vue-echarts
+        - <a href="https://github.com/ecomfe/vue-echarts" target="_blank noopener noreferrer">ecomfe/vue-echarts</a>
+      - v-charts(vue2)
+        - <a href="https://github.com/ElemeFE/v-charts" target="_blank noopener noreferrer">ElemeFE/v-charts</a>
+    - vue-ganttastic(甘特图/冷门)
+      - <a href="https://github.com/zunnzunn/vue-ganttastic" target="_blank noopener noreferrer">zunnzunn/vue-ganttastic</a>
+    - vue-skia(基于skia的2d绘图库/冷门)
+      - <a href="https://github.com/rustq/vue-skia" target="_blank noopener noreferrer">rustq/vue-skia</a>
+    - relation-graph(连线关系图库)
+      - <a href="https://github.com/seeksdream/relation-graph" target="_blank noopener noreferrer">seeksdream/relation-graph</a>
+    - vue-flow(流程图/vue3)
+      - <a href="https://github.com/bcakmakoglu/vue-flow" target="_blank noopener noreferrer">bcakmakoglu/vue-flow</a>
+  - vue-qr(vue2/3支持qr库)
+    - <a href="https://github.com/Binaryify/vue-qr" target="_blank noopener noreferrer">Binaryify/vue-qr</a>
+  - vue-socket.io
+    - <a href="https://github.com/MetinSeylan/Vue-Socket.io" target="_blank noopener noreferrer">MetinSeylan/Vue-Socket.io</a>
+  - 页面切换器
+    - vue-navigation
+      - <a href="https://github.com/zack24q/vue-navigation" target="_blank noopener noreferrer">zack24q/vue-navigation</a>
+    - vue-page-stack
+      - <a href="https://github.com/hezhongfeng/vue-page-stack" target="_blank noopener noreferrer">hezhongfeng/vue-page-stack</a>
+  - form系列
+    - vee-validate(表单校验器)
+      - <a href="https://github.com/logaretm/vee-validate" target="_blank noopener noreferrer">logaretm/vee-validate</a>
+    - formkit(vue3表单框架)
+      - <a href="https://github.com/formkit/formkit" target="_blank noopener noreferrer">formkit/formkit</a>
+    - vuelidate(vue数据结构校验器)
+      - <a href="https://github.com/vuelidate/vuelidate" target="_blank noopener noreferrer">vuelidate/vuelidate</a>
+    - vue-form-making(可视化表单设计器)
+      - <a href="https://github.com/GavinZhuLei/vue-form-making" target="_blank noopener noreferrer">GavinZhuLei/vue-form-making</a>
+    - vue-formulate
+      - <a href="https://github.com/wearebraid/vue-formulate" target="_blank noopener noreferrer">wearebraid/vue-formulate</a>
+    - vorms(表单校验/冷门)
+      - <a href="https://github.com/Mini-ghost/vorms" target="_blank noopener noreferrer">Mini-ghost/vorms</a>
+    - vueform
+      - <a href="https://github.com/vueform/vueform" target="_blank noopener noreferrer">vueform/vueform</a>
+  - vue-tour(用户引导工具)
+    - <a href="https://github.com/pulsardev/vue-tour" target="_blank noopener noreferrer">pulsardev/vue-tour</a>
+  - vue-parallax(视差)
+    - <a href="https://github.com/apertureless/vue-parallax" target="_blank noopener noreferrer">apertureless/vue-parallax</a>
+  - slider(轮播图系列)
+    - vue-agile(轮播图组件)
+      - <a href="https://github.com/lukaszflorczak/vue-agile" target="_blank noopener noreferrer">lukaszflorczak/vue-agile</a>
+    - vue-carousel-3d(轮播图组件)
+      - <a href="https://github.com/wlada/vue-carousel-3d" target="_blank noopener noreferrer">wlada/vue-carousel-3d</a>
+    - vue-concise-slider
+      - <a href="https://github.com/warpcgd/vue-concise-slider" target="_blank noopener noreferrer">warpcgd/vue-concise-slider</a>
+  - typer(打字系列)
+    - vue-typed-js(自动打字)
+      - <a href="https://github.com/Orlandster/vue-typed-js" target="_blank noopener noreferrer">Orlandster/vue-typed-js</a>
+    - vue-typer(打字)
+      - <a href="https://github.com/cngu/vue-typer" target="_blank noopener noreferrer">cngu/vue-typer</a>
+  - vue-bar(spark bar/火花bar)
+    - <a href="https://github.com/DeviaVir/vue-bar" target="_blank noopener noreferrer">DeviaVir/vue-bar</a>
+  - i18n系列
+    - vue-i18n
+      - <a href="https://kazupon.github.io/vue-i18n/zh/" target="_blank noopener noreferrer">kazupon.github.io</a>
+      - <a href="https://github.com/kazupon/vue-i18n" target="_blank noopener noreferrer">kazupon/vue-i18n</a>
+      - <a href="https://blog.csdn.net/qq_42269433/article/details/90902247" target="_blank noopener noreferrer">blog.csdn.net</a>
+    - vuex-i18n(vue2)
+      - <a href="https://github.com/dkfbasel/vuex-i18n" target="_blank noopener noreferrer">dkfbasel/vuex-i18n</a>
+    - vue-i18n-next(vue3)
+      - <a href="https://github.com/intlify/vue-i18n-next" target="_blank noopener noreferrer">intlify/vue-i18n-next</a>
+    - vue-cli-plugin-i18n
+      - <a href="https://github.com/intlify/vue-cli-plugin-i18n" target="_blank noopener noreferrer">intlify/vue-cli-plugin-i18n</a>
+  - 虚拟列表系列
+    - vue-virtual-scroller(虚拟滚动)
+      - <a href="https://github.com/Akryum/vue-virtual-scroller" target="_blank noopener noreferrer">Akryum/vue-virtual-scroller</a>
+    - vue-virtual-scroll-list
+      - <a href="https://github.com/tangbc/vue-virtual-scroll-list" target="_blank noopener noreferrer">tangbc/vue-virtual-scroll-list</a>
+    - vue-virtual-scroll-grid(vue3支持)
+      - <a href="https://github.com/rocwang/vue-virtual-scroll-grid" target="_blank noopener noreferrer">rocwang/vue-virtual-scroll-grid</a>
+    - vue3-infinite-list
+      - <a href="https://github.com/tnfe/vue3-infinite-list" target="_blank noopener noreferrer">tnfe/vue3-infinite-list</a>
+  - 脚手架(社区)
+    - vite-vue3-starter
+      - <a href="https://github.com/XPoet/vite-vue3-starter" target="_blank noopener noreferrer">XPoet/vite-vue3-starter</a>
+  - analyze系列
+    - vue-baidu-analytics
+      - <a href="https://github.com/analyticsjs/vue-baidu-analytics" target="_blank noopener noreferrer">analyticsjs/vue-baidu-analytics</a>
+    - vue-cnzz-analytics
+      - <a href="https://github.com/analyticsjs/vue-cnzz-analytics" target="_blank noopener noreferrer">analyticsjs/vue-cnzz-analytics</a>
+  - 图片展示系列
+    - v-lazy-image
+      - <a href="https://github.com/alexjoverm/v-lazy-image" target="_blank noopener noreferrer">alexjoverm/v-lazy-image</a>
+    - vue-lazyload(懒加载图片)
+      - <a href="https://github.com/hilongjw/vue-lazyload" target="_blank noopener noreferrer">hilongjw/vue-lazyload</a>
+    - progressive-image-element(渐进式加载图片)
+      - <a href="https://github.com/andreruffert/progressive-image-element" target="_blank noopener noreferrer">andreruffert/progressive-image-element</a>
+    - v-viewer(图片展示库)
+      - <a href="https://github.com/mirari/v-viewer" target="_blank noopener noreferrer">mirari/v-viewer</a>
+  - unplugin系列
+    - unplugin(wp/rollup/vite统一插件系统)
+      - <a href="https://github.com/unjs/unplugin" target="_blank noopener noreferrer">unjs/unplugin</a>
+    - unplugin-vue-components(自动导入vue组件/省去手写)
+      - <a href="https://github.com/antfu/unplugin-vue-components" target="_blank noopener noreferrer">antfu/unplugin-vue-components</a>
+    - unplugin-auto-import(自动导入vue3 hook)
+      - <a href="https://github.com/antfu/unplugin-auto-import" target="_blank noopener noreferrer">antfu/unplugin-auto-import</a>
+    - unplugin-vue-define-options(在setup中使用options api)
+      - <a href="https://github.com/sxzz/unplugin-vue-define-options" target="_blank noopener noreferrer">sxzz/unplugin-vue-define-options</a>
+    - unplugin-icons(按需加载iconify的插件)
+      - <a href="https://github.com/antfu/unplugin-icons" target="_blank noopener noreferrer">antfu/unplugin-icons</a>
+    - unplugin-ast(通用ast遍历/冷门/玩具)
+      - <a href="https://github.com/sxzz/unplugin-ast" target="_blank noopener noreferrer">sxzz/unplugin-ast</a>
+  - 地图系列
+    - Vue2Leaflet(交互式地图leaflet vue版)
+      - <a href="https://github.com/vue-leaflet/Vue2Leaflet" target="_blank noopener noreferrer">vue-leaflet/Vue2Leaflet</a>
+    - vue-baidu-map(百度地图for vue2)
+      - <a href="https://github.com/Dafrok/vue-baidu-map" target="_blank noopener noreferrer">Dafrok/vue-baidu-map</a>
+  - table表格系列
+    - vue-easytable(vue系table组件)
+      - <a href="https://github.com/Happy-Coding-Clans/vue-easytable" target="_blank noopener noreferrer">Happy-Coding-Clans/vue-easytable</a>
+    - vue-good-table
+      - <a href="https://github.com/xaksis/vue-good-table" target="_blank noopener noreferrer">xaksis/vue-good-table</a>
+    - vxe-table
+      - <a href="https://github.com/x-extends/vxe-table" target="_blank noopener noreferrer">x-extends/vxe-table</a>
+  - toast系列
+    - vue-toasted
+      - <a href="https://github.com/shakee93/vue-toasted" target="_blank noopener noreferrer">shakee93/vue-toasted</a>
+    - vue-sweetalert2
+      - <a href="https://github.com/avil13/vue-sweetalert2" target="_blank noopener noreferrer">avil13/vue-sweetalert2</a>
+  - notifacation系列
+    - vue-toastification
+      - <a href="https://github.com/Maronato/vue-toastification" target="_blank noopener noreferrer">Maronato/vue-toastification</a>
+    - vue-notifications(老)
+      - <a href="https://github.com/se-panfilov/vue-notifications" target="_blank noopener noreferrer">se-panfilov/vue-notifications</a>
+  - icons系列
+    - vue-awesome(awesome icon)
+      - <a href="https://github.com/Justineo/vue-awesome" target="_blank noopener noreferrer">Justineo/vue-awesome</a>
+    - vue-feather-icons(老)
+      - <a href="https://github.com/egoist/vue-feather-icons" target="_blank noopener noreferrer">egoist/vue-feather-icons</a>
+    - vue-material-design-icons(冷)
+      - <a href="https://github.com/robcresswell/vue-material-design-icons" target="_blank noopener noreferrer">robcresswell/vue-material-design-icons</a>
+    - vue-unicons
+      - <a href="https://github.com/antonreshetov/vue-unicons" target="_blank noopener noreferrer">antonreshetov/vue-unicons</a>
+    - element-plus-icons
+      - <a href="https://github.com/element-plus/element-plus-icons" target="_blank noopener noreferrer">element-plus/element-plus-icons</a>
+    - ant-design-icons
+      - <a href="https://github.com/ant-design/ant-design-icons" target="_blank noopener noreferrer">ant-design/ant-design-icons</a>
+  - waterfall瀑布流系列
+    - vue2-waterfall(瀑布流组件/陈旧)
+      - <a href="https://github.com/PLDaily/vue2-waterfall" target="_blank noopener noreferrer">PLDaily/vue2-waterfall</a>
+    - vue-waterfall2(冷)
+      - <a href="https://github.com/AwesomeDevin/vue-waterfall2" target="_blank noopener noreferrer">AwesomeDevin/vue-waterfall2</a>
+    - vue-waterfall-easy
+      - <a href="https://github.com/lfyfly/vue-waterfall-easy" target="_blank noopener noreferrer">lfyfly/vue-waterfall-easy</a>
+    - vue-waterfall
+      - <a href="https://github.com/MopTym/vue-waterfall" target="_blank noopener noreferrer">MopTym/vue-waterfall</a>
+  - vue-starport(多路由下共享组件/有动画)
+    - <a href="https://github.com/antfu/vue-starport" target="_blank noopener noreferrer">antfu/vue-starport</a>
+  - portal-vue(vue2的teleport传送插件)
+    - <a href="https://github.com/LinusBorg/portal-vue" target="_blank noopener noreferrer">LinusBorg/portal-vue</a>
+  - floating-vue(tooltip/pop弹出框组件)
+    - <a href="https://github.com/Akryum/floating-vue" target="_blank noopener noreferrer">Akryum/floating-vue</a>
+  - vue-color(颜色选择器)
+    - <a href="https://github.com/xiaokaike/vue-color" target="_blank noopener noreferrer">xiaokaike/vue-color</a>
+  - graphql系列
+    - vue-apollo(graphql)
+      - <a href="https://github.com/vuejs/apollo" target="_blank noopener noreferrer">vuejs/apollo</a>
+    - villus(小的graphql client)
+      - <a href="https://github.com/logaretm/villus" target="_blank noopener noreferrer">logaretm/villus</a>
+  - upload上传系列
+    - vue-uploader(批量文件上传组件)
+      - <a href="https://github.com/simple-uploader/vue-uploader" target="_blank noopener noreferrer">simple-uploader/vue-uploader</a>
+    - vue-upload-component(上传组件)
+      - <a href="https://github.com/lian-yue/vue-upload-component" target="_blank noopener noreferrer">lian-yue/vue-upload-component</a>
+  - hooks系列
+    - vueuse(use库)
+      - <a href="https://github.com/vueuse/vueuse" target="_blank noopener noreferrer">vueuse/vueuse</a>
+    - vue-composable(各种组合工具库)
+      - <a href="https://github.com/pikax/vue-composable" target="_blank noopener noreferrer">pikax/vue-composable</a>
+    - vueuse/head(vue3头部/支持ssr)
+      - <a href="https://github.com/vueuse/head" target="_blank noopener noreferrer">vueuse/head</a>
+  - request请求库系列
+    - vue-query
+      - <a href="https://github.com/DamianOsipiuk/vue-query" target="_blank noopener noreferrer">DamianOsipiuk/vue-query</a>
+    - vue-axios
+      - <a href="https://github.com/imcvampire/vue-axios" target="_blank noopener noreferrer">imcvampire/vue-axios</a>
+    - vue-resource
+      - <a href="https://github.com/pagekit/vue-resource" target="_blank noopener noreferrer">pagekit/vue-resource</a>
+    - vue-request
+      - <a href="https://github.com/attojs/vue-request" target="_blank noopener noreferrer">attojs/vue-request</a>
+    - vue-concurrency(异步竞态管理工具)
+      - <a href="https://github.com/MartinMalinda/vue-concurrency" target="_blank noopener noreferrer">MartinMalinda/vue-concurrency</a>
+    - swrv(swr vue版)
+      - <a href="https://github.com/Kong/swrv" target="_blank noopener noreferrer">Kong/swrv</a>
+  - animate动画系列
+    - vue-kinesis
+      - <a href="https://github.com/Aminerman/vue-kinesis" target="_blank noopener noreferrer">Aminerman/vue-kinesis</a>
+    - @vueuse/motion(vue版motion)
+      - <a href="https://github.com/vueuse/motion" target="_blank noopener noreferrer">vueuse/motion</a>
+    - tinymotion(小动画组件)
+      - <a href="https://github.com/lepikhinb/tinymotion" target="_blank noopener noreferrer">lepikhinb/tinymotion</a>
+  - ssr系列
+    - ssr
+      - <a href="https://github.com/zhangyuang/ssr" target="_blank noopener noreferrer">zhangyuang/ssr</a>
+  - vue-barcode(创建条形码)
+    - <a href="https://github.com/fengyuanchen/vue-barcode" target="_blank noopener noreferrer">fengyuanchen/vue-barcode</a>
+  - vue-tel-input(国际时区电话号码输入组件/vue3)
+    - <a href="https://github.com/iamstevendao/vue-tel-input" target="_blank noopener noreferrer">iamstevendao/vue-tel-input</a>
+  - scroll滚动系列(vue)
+    - vue-scrollama(滚动驱动交互识别)
+      - <a href="https://github.com/vgshenoy/vue-scrollama" target="_blank noopener noreferrer">vgshenoy/vue-scrollama</a>
+    - vue-smooth-scroll(平滑滚动)
+      - <a href="https://github.com/ocordeiro/vue-smooth-scroll" target="_blank noopener noreferrer">ocordeiro/vue-smooth-scroll</a>
+    - vue-infinite-slide-bar(无限水平滚动条)
+      - <a href="https://github.com/biigpongsatorn/vue-infinite-slide-bar" target="_blank noopener noreferrer">biigpongsatorn/vue-infinite-slide-bar</a>
+  - vue-command-palette(cmd+k面板)
+    - <a href="https://github.com/xiaoluoboding/vue-command-palette" target="_blank noopener noreferrer">xiaoluoboding/vue-command-palette</a>
+  - terminal组件系列
+    - temir(用vue组件写terminal的输出)
+      - <a href="https://github.com/webfansplz/temir" target="_blank noopener noreferrer">webfansplz/temir</a>
+    - vue-termui
+      - <a href="https://github.com/vue-terminal/vue-termui" target="_blank noopener noreferrer">vue-terminal/vue-termui</a>
+    - vue-command(终端模拟组件)
+      - <a href="https://github.com/ndabAP/vue-command" target="_blank noopener noreferrer">ndabAP/vue-command</a>
+  - datepicker系列
+    - vuejs-datepicker(vue2)
+      - <a href="https://github.com/charliekassel/vuejs-datepicker" target="_blank noopener noreferrer">charliekassel/vuejs-datepicker</a>
+    - vue3-datepicker(vue3)
+      - <a href="https://github.com/icehaunter/vue3-datepicker" target="_blank noopener noreferrer">icehaunter/vue3-datepicker</a>
+  - 富文本系列
+    - element-tiptap(需要element-ui)
+      - <a href="https://github.com/Leecason/element-tiptap" target="_blank noopener noreferrer">Leecason/element-tiptap</a>
+    - lexical-vue(vue3)
+      - <a href="https://github.com/wobsoriano/lexical-vue" target="_blank noopener noreferrer">wobsoriano/lexical-vue</a>
+  - vue-monoplasty-slide-verify(滑块验证组件)
+    - <a href="https://github.com/monoplasty/vue-monoplasty-slide-verify" target="_blank noopener noreferrer">monoplasty/vue-monoplasty-slide-verify</a>
+  - pinceau(css-in-ts for vue)
+    - <a href="https://github.com/Tahul/pinceau" target="_blank noopener noreferrer">Tahul/pinceau</a>
+  - vue-mixable(mixin转composition api)
+    - <a href="https://github.com/LinusBorg/vue-mixable" target="_blank noopener noreferrer">LinusBorg/vue-mixable</a>
+  - vue-promised(让loading不闪烁/延后的组件)
+    - <a href="https://github.com/posva/vue-promised" target="_blank noopener noreferrer">posva/vue-promised</a>
+  - tsconfig(vue的tsconfig模板)
+    - <a href="https://github.com/vuejs/tsconfig" target="_blank noopener noreferrer">vuejs/tsconfig</a>
+  - 可视化系列
+    - tres(threejs+vue封装)
+      - <a href="https://github.com/tresjs/tres" target="_blank noopener noreferrer">tresjs/tres</a>
+  - volar系列
+    - volar(language-tools)
+      - <a href="https://github.com/vuejs/language-tools" target="_blank noopener noreferrer">vuejs/language-tools</a>
+    - volar.js
+      - <a href="https://github.com/volarjs/volar.js" target="_blank noopener noreferrer">volarjs/volar.js</a>
+    - monaco-volar(让monaco支持volar提示)
+      - <a href="https://github.com/Kingwl/monaco-volar" target="_blank noopener noreferrer">Kingwl/monaco-volar</a>
+  - v-lazy-show(优化v-show)
+    - <a href="https://github.com/antfu/v-lazy-show" target="_blank noopener noreferrer">antfu/v-lazy-show</a>
+  - vue-sonner(toast消息组件)
+    - <a href="https://github.com/xiaoluoboding/vue-sonner" target="_blank noopener noreferrer">xiaoluoboding/vue-sonner</a>
+  - vue-reuse-template(重用模板template支持)
+    - <a href="https://github.com/antfu/vue-reuse-template" target="_blank noopener noreferrer">antfu/vue-reuse-template</a>
+  - pdf系列
+    - pdfvuer(vue2/vue3)
+      - <a href="https://github.com/arkokoley/pdfvuer" target="_blank noopener noreferrer">arkokoley/pdfvuer</a>
+    - vue3-pdfjs(冷)
+      - <a href="https://github.com/randolphtellis/vue3-pdfjs" target="_blank noopener noreferrer">randolphtellis/vue3-pdfjs</a>
+    - vue-office(pdf/word/excel展示组件)
+      - <a href="https://github.com/501351981/vue-office" target="_blank noopener noreferrer">501351981/vue-office</a>
+  - vue-vine(另一种写vue sfc的格式)
+    - <a href="https://github.com/vue-vine/vue-vine" target="_blank noopener noreferrer">vue-vine/vue-vine</a>
+  - deco装饰器系列
+    - vue-facing-decorator(vue3支持)
+      - <a href="https://github.com/facing-dev/vue-facing-decorator" target="_blank noopener noreferrer">facing-dev/vue-facing-decorator</a>
+  - pagination分页器
+    - vuejs-paginate-next
+      - <a href="https://github.com/cloudeep/vuejs-paginate-next" target="_blank noopener noreferrer">cloudeep/vuejs-paginate-next</a>
+    - vue-awesome-paginate
+      - <a href="https://github.com/peshanghiwa/vue-awesome-paginate" target="_blank noopener noreferrer">peshanghiwa/vue-awesome-paginate</a>
+  - 音视频系列
+    - audio音频系列
+      - vue-audio-recorder(录音库/陈旧)
+        - <a href="https://github.com/grishkovelli/vue-audio-recorder" target="_blank noopener noreferrer">grishkovelli/vue-audio-recorder</a>
+  - qrcode系列
+    - qrcode.vue
+      - <a href="https://github.com/scopewu/qrcode.vue" target="_blank noopener noreferrer">scopewu/qrcode.vue</a>
+    - vue-qrcode-reader(二维码扫描功能/需要摄像头权限)
+      - <a href="https://github.com/gruhn/vue-qrcode-reader" target="_blank noopener noreferrer">gruhn/vue-qrcode-reader</a>
+  - sign签字组件
+    - vue3-sign(签字组件/冷门)
+      - <a href="https://github.com/open-vue3/vue3-sign" target="_blank noopener noreferrer">open-vue3/vue3-sign</a>
+    - vue-signature-pad
+      - <a href="https://github.com/neighborhood999/vue-signature-pad" target="_blank noopener noreferrer">neighborhood999/vue-signature-pad</a>
+  - image图片编辑系列
+    - vue-fabric-editor(图片编辑器/复杂)
+      - <a href="https://github.com/nihaojob/vue-fabric-editor" target="_blank noopener noreferrer">nihaojob/vue-fabric-editor</a>
+    - vue-cropper(图片裁剪)
+      - <a href="https://github.com/xyxiao001/vue-cropper" target="_blank noopener noreferrer">xyxiao001/vue-cropper</a>
+  - vue-plugin-hiprint(可视化报表设计器)
+    - <a href="https://github.com/CcSimple/vue-plugin-hiprint" target="_blank noopener noreferrer">CcSimple/vue-plugin-hiprint</a>
+- vite
+  - 插件库
+    - vite-plugin-pages(文件系统的路由)
+      - <a href="https://github.com/hannoeru/vite-plugin-pages" target="_blank noopener noreferrer">hannoeru/vite-plugin-pages</a>
+    - vite-plugin-md(md作为vue组件使用)
+      - <a href="https://github.com/antfu/vite-plugin-md" target="_blank noopener noreferrer">antfu/vite-plugin-md</a>
+    - vite-plugin-components(vite按需组件自动引入)
+      - <a href="https://github.com/antfu/vite-plugin-components" target="_blank noopener noreferrer">antfu/vite-plugin-components</a>
+    - vite-ssg(静态页面生成器)
+      - <a href="https://github.com/antfu/vite-ssg" target="_blank noopener noreferrer">antfu/vite-ssg</a>
+    - vite-plugin-react-svg(svgr作用)
+      - <a href="https://github.com/visualfanatic/vite-svg" target="_blank noopener noreferrer">visualfanatic/vite-svg</a>
+    - vite-plugin-optimize-persist(持续动态化分析依赖)
+      - <a href="https://github.com/antfu/vite-plugin-optimize-persist" target="_blank noopener noreferrer">antfu/vite-plugin-optimize-persist</a>
+    - @vite/plugin-legacy(兼容低版本浏览器)
+      - <a href="https://www.npmjs.com/package/@vitejs/plugin-legacy" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - ssr系列
+      - vite-plugin-ssr/vike
+        - <a href="https://github.com/vikejs/vike" target="_blank noopener noreferrer">vikejs/vike</a>
+      - vite-ssr
+        - <a href="https://github.com/frandiox/vite-ssr" target="_blank noopener noreferrer">frandiox/vite-ssr</a>
+      - vite-plugin-vue-server-ref(在客户端和server间共享状态)
+        - <a href="https://github.com/antfu/vite-plugin-vue-server-ref" target="_blank noopener noreferrer">antfu/vite-plugin-vue-server-ref</a>
+    - vitesse(vite starter工具)
+      - <a href="https://github.com/antfu/vitesse" target="_blank noopener noreferrer">antfu/vitesse</a>
+    - trois(支持vite+three的组件化)
+      - <a href="https://github.com/troisjs/trois" target="_blank noopener noreferrer">troisjs/trois</a>
+    - i18n
+      - vite-plugin-vue-i18n
+        - <a href="https://github.com/intlify/bundle-tools" target="_blank noopener noreferrer">intlify/bundle-tools</a>
+    - vite-plugin-federation(module-federation实现)
+      - <a href="https://github.com/originjs/vite-plugin-federation" target="_blank noopener noreferrer">originjs/vite-plugin-federation</a>
+    - vite-plugin-mdx(mdx支持)
+      - <a href="https://github.com/brillout/vite-plugin-mdx" target="_blank noopener noreferrer">brillout/vite-plugin-mdx</a>
+    - vite-plugin-svg-icons(创建svg雪碧图)
+      - <a href="https://github.com/vbenjs/vite-plugin-svg-icons" target="_blank noopener noreferrer">vbenjs/vite-plugin-svg-icons</a>
+    - vite-plugin-mock(mock工具)
+      - <a href="https://github.com/vbenjs/vite-plugin-mock" target="_blank noopener noreferrer">vbenjs/vite-plugin-mock</a>
+    - vite-plugin-vue-setup-extend(自动继承options api name)
+      - <a href="https://github.com/vbenjs/vite-plugin-vue-setup-extend" target="_blank noopener noreferrer">vbenjs/vite-plugin-vue-setup-extend</a>
+    - vite-plugin-vue-images(自动导入图片)
+      - <a href="https://github.com/sampullman/vite-plugin-vue-images" target="_blank noopener noreferrer">sampullman/vite-plugin-vue-images</a>
+    - fastify-vite(为vite提供ssr)
+      - <a href="https://github.com/fastify/fastify-vite" target="_blank noopener noreferrer">fastify/fastify-vite</a>
+    - vite-plugin-dynamic-publicpath(动态类webpack publicPath)
+      - <a href="https://github.com/jy0529/vite-plugin-dynamic-publicpath" target="_blank noopener noreferrer">jy0529/vite-plugin-dynamic-publicpath</a>
+    - vite-plugin-terminal(实现浏览器和终端通信)
+      - <a href="https://github.com/patak-dev/vite-plugin-terminal" target="_blank noopener noreferrer">patak-dev/vite-plugin-terminal</a>
+    - vite-plugin-sleep
+      - <a href="https://github.com/IndexXuan/vite-plugin-sleep" target="_blank noopener noreferrer">IndexXuan/vite-plugin-sleep</a>
+    - @originjs/vite-plugin-commonjs(转换require)
+      - <a href="https://github.com/originjs/vite-plugins/tree/main/packages/vite-plugin-commonjs" target="_blank noopener noreferrer">originjs/vite-plugins/tree/main/packages/vite-plugin-commonjs</a>
+    - vite-plugin-vue-inspector(点击组件打开文件)
+      - <a href="https://github.com/webfansplz/vite-plugin-vue-inspector" target="_blank noopener noreferrer">webfansplz/vite-plugin-vue-inspector</a>
+    - vite-plugin-style-import(按需导入组件库样式)
+      - <a href="https://github.com/vbenjs/vite-plugin-style-import" target="_blank noopener noreferrer">vbenjs/vite-plugin-style-import</a>
+    - generouted(自动识别pages/*配置路由)
+      - <a href="https://github.com/oedotme/generouted" target="_blank noopener noreferrer">oedotme/generouted</a>
+    - vite-plugin-inspect(查看vite编译中间态代码)
+      - <a href="https://github.com/antfu/vite-plugin-inspect" target="_blank noopener noreferrer">antfu/vite-plugin-inspect</a>
+    - vite-plugin-externals(import转global变量调用)
+      - <a href="https://github.com/crcong/vite-plugin-externals" target="_blank noopener noreferrer">crcong/vite-plugin-externals</a>
+    - vite-plugin-rsw(整合wasm-pack)
+      - <a href="https://github.com/rwasm/vite-plugin-rsw" target="_blank noopener noreferrer">rwasm/vite-plugin-rsw</a>
+    - vite-vercel(使vite支持vercel edge function)
+      - <a href="https://github.com/egoist/vite-vercel" target="_blank noopener noreferrer">egoist/vite-vercel</a>
+    - vite-plugin-dts(生成.d.ts)
+      - <a href="https://github.com/qmhc/vite-plugin-dts" target="_blank noopener noreferrer">qmhc/vite-plugin-dts</a>
+    - vue支持系列
+      - vite-plugin-vue2(vue2支持)
+        - <a href="https://github.com/underfin/vite-plugin-vue2" target="_blank noopener noreferrer">underfin/vite-plugin-vue2</a>
+      - vite-plugin-vue2(vue2支持/官方)
+        - <a href="https://github.com/vitejs/vite-plugin-vue2" target="_blank noopener noreferrer">vitejs/vite-plugin-vue2</a>
+      - @vitejs/plugin-vue(vue3)
+        - <a href="https://www.npmjs.com/package/@vitejs/plugin-vue" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - vite-rollup-plugins(rollup插件相互兼容列表)
+      - <a href="https://github.com/patak-dev/vite-rollup-plugins" target="_blank noopener noreferrer">patak-dev/vite-rollup-plugins</a>
+    - vite-plugin-eslint(eslint插件)
+      - <a href="https://github.com/gxmari007/vite-plugin-eslint" target="_blank noopener noreferrer">gxmari007/vite-plugin-eslint</a>
+    - vite-plugin-notifier(热更新时新增动画)
+      - <a href="https://github.com/joshnuss/vite-plugin-notifier" target="_blank noopener noreferrer">joshnuss/vite-plugin-notifier</a>
+    - vite-plugin-svelte-console-remover(svelte/去除console)
+      - <a href="https://github.com/jhubbardsf/vite-plugin-svelte-console-remover" target="_blank noopener noreferrer">jhubbardsf/vite-plugin-svelte-console-remover</a>
+    - @vitejs/plugin-legacy(生成非esm产物)
+      - <a href="https://github.com/vitejs/vite/tree/main/packages/plugin-legacy" target="_blank noopener noreferrer">vitejs/vite/tree/main/packages/plugin-legacy</a>
+    - pwa系列
+      - vite-plugin-pwa(pwa支持)
+        - <a href="https://github.com/antfu/vite-plugin-pwa" target="_blank noopener noreferrer">antfu/vite-plugin-pwa</a>
+      - vite-pwa/vite-plugin-pwa
+        - <a href="https://github.com/vite-pwa/vite-plugin-pwa" target="_blank noopener noreferrer">vite-pwa/vite-plugin-pwa</a>
+    - vite-plugin-cloudflare(vite开发CF worker)
+      - <a href="https://github.com/Aslemammad/vite-plugin-cloudflare" target="_blank noopener noreferrer">Aslemammad/vite-plugin-cloudflare</a>
+    - awesome-vite(工具大全)
+      - <a href="https://github.com/vitejs/awesome-vite" target="_blank noopener noreferrer">vitejs/awesome-vite</a>
+    - vite-plugin-checker(ts checker插件)
+      - <a href="https://github.com/fi3ework/vite-plugin-checker" target="_blank noopener noreferrer">fi3ework/vite-plugin-checker</a>
+    - react支持系列
+      - vite-plugin-react-pages(react支持)
+        - <a href="https://github.com/vitejs/vite-plugin-react-pages" target="_blank noopener noreferrer">vitejs/vite-plugin-react-pages</a>
+      - vite-plugin-react-swc
+        - <a href="https://github.com/vitejs/vite-plugin-react-swc" target="_blank noopener noreferrer">vitejs/vite-plugin-react-swc</a>
+    - vite-plugin-warmup(提前预热预编译插件)
+      - <a href="https://github.com/bluwy/vite-plugin-warmup" target="_blank noopener noreferrer">bluwy/vite-plugin-warmup</a>
+    - vite-plugin-magic-comments(支持webpack异步导入注释/冷门)
+      - <a href="https://github.com/JiangWeixian/vite-plugin-magic-comments" target="_blank noopener noreferrer">JiangWeixian/vite-plugin-magic-comments</a>
+    - vite-plugin-conditional-compile(条件编译注释)
+      - <a href="https://github.com/KeJunMao/vite-plugin-conditional-compile" target="_blank noopener noreferrer">KeJunMao/vite-plugin-conditional-compile</a>
+    - compress/gzip压缩系列
+      - vite-plugin-compresssion(gzip压缩)
+        - <a href="https://github.com/anncwb/vite-plugin-compression" target="_blank noopener noreferrer">anncwb/vite-plugin-compression</a>
+      - vite-plugin-compression(gzip压缩插件)
+        - <a href="https://github.com/vbenjs/vite-plugin-compression" target="_blank noopener noreferrer">vbenjs/vite-plugin-compression</a>
+    - vite-plugin-vue-devtools
+      - <a href="https://github.com/webfansplz/vite-plugin-vue-devtools" target="_blank noopener noreferrer">webfansplz/vite-plugin-vue-devtools</a>
+    - tampermonkey开发系列
+      - vite-plugin-monkey
+        - <a href="https://github.com/lisonge/vite-plugin-monkey" target="_blank noopener noreferrer">lisonge/vite-plugin-monkey</a>
+      - tampermonkey-vite-template
+        - <a href="https://github.com/Rel1cx/tampermonkey-vite-template" target="_blank noopener noreferrer">Rel1cx/tampermonkey-vite-template</a>
+    - splitChunk拆包系列
+      - vite-plugin-webpackchunkname(像webpack一样分包/冷门)
+        - <a href="https://github.com/CaptainLiao/vite-plugin-webpackchunkname" target="_blank noopener noreferrer">CaptainLiao/vite-plugin-webpackchunkname</a>
+      - vite-plugin-chunk-split
+        - <a href="https://github.com/sanyuan0704/vite-plugin-chunk-split" target="_blank noopener noreferrer">sanyuan0704/vite-plugin-chunk-split</a>
+    - remdx(mdx支持)
+      - <a href="https://github.com/cpojer/remdx" target="_blank noopener noreferrer">cpojer/remdx</a>
+    - vite-bundle-visualizer(vite打包分析)
+      - <a href="https://github.com/KusStar/vite-bundle-visualizer" target="_blank noopener noreferrer">KusStar/vite-bundle-visualizer</a>
+    - vite-plugin-doctest(在注释中编写测试)
+      - <a href="https://github.com/ssssota/doc-vitest" target="_blank noopener noreferrer">ssssota/doc-vitest</a>
+    - vite-plugin-stylex(stylex支持)
+      - <a href="https://github.com/nonzzz/vite-plugin-stylex" target="_blank noopener noreferrer">nonzzz/vite-plugin-stylex</a>
+    - vite-for-wp(用vite开发wordpress主题)
+      - <a href="https://github.com/kucrut/vite-for-wp" target="_blank noopener noreferrer">kucrut/vite-for-wp</a>
+  - vitepress
+    - 插件
+      - vitepress-theme-demoblock(代码块/类似dumi)
+        - <a href="https://github.com/xinlei3166/vitepress-theme-demoblock" target="_blank noopener noreferrer">xinlei3166/vitepress-theme-demoblock</a>
+  - 测试库
+    - peeky
+      - <a href="https://github.com/Akryum/peeky" target="_blank noopener noreferrer">Akryum/peeky</a>
+  - 模板库
+    - vavite(服务端项目模板)
+      - <a href="https://github.com/cyco130/vavite" target="_blank noopener noreferrer">cyco130/vavite</a>
+    - create-vite-extra(deno/svelte等更多初始模板)
+      - <a href="https://github.com/bluwy/create-vite-extra" target="_blank noopener noreferrer">bluwy/create-vite-extra</a>
+  - repo
+    - <a href="https://github.com/vitejs/vite" target="_blank noopener noreferrer">vitejs/vite</a>
+- 冷门库
+  - formvuelate(动态schema表单)
+    - <a href="https://github.com/formvuelate/formvuelate" target="_blank noopener noreferrer">formvuelate/formvuelate</a>
+  - vodal(vue modal/陈旧)
+    - <a href="https://github.com/chenjiahan/vodal" target="_blank noopener noreferrer">chenjiahan/vodal</a>
+  - transx(各种动画组件/冷门)
+    - <a href="https://github.com/tnfe/transx" target="_blank noopener noreferrer">tnfe/transx</a>
+  - vue-horizontal-timeline(水平时间线组件)
+    - <a href="https://github.com/guastallaigor/vue-horizontal-timeline" target="_blank noopener noreferrer">guastallaigor/vue-horizontal-timeline</a>
+  - vue-instantsearch(用AIgolia搜索的组件)
+    - <a href="https://github.com/algolia/vue-instantsearch" target="_blank noopener noreferrer">algolia/vue-instantsearch</a>
+  - lotion(notion模仿)
+    - <a href="https://github.com/Dashibase/lotion" target="_blank noopener noreferrer">Dashibase/lotion</a>
+  - vue-bind-once(数据一致的绑定命令/ssr用)
+    - <a href="https://github.com/danielroe/vue-bind-once" target="_blank noopener noreferrer">danielroe/vue-bind-once</a>
+  - maska(input格式化输入组件)
+    - <a href="https://github.com/beholdr/maska" target="_blank noopener noreferrer">beholdr/maska</a>
+  - vue-compiler(vue的rust编译器/死)
+    - <a href="https://github.com/HerringtonDarkholme/vue-compiler" target="_blank noopener noreferrer">HerringtonDarkholme/vue-compiler</a>
+  - vue-tsx-support(vue2的tsx支持工具)
+    - <a href="https://github.com/wonderful-panda/vue-tsx-support" target="_blank noopener noreferrer">wonderful-panda/vue-tsx-support</a>
+  - vuex-composition-helpers(composition api封装)
+    - <a href="https://github.com/greenpress/vuex-composition-helpers" target="_blank noopener noreferrer">greenpress/vuex-composition-helpers</a>
+  - vue-safe-teleport(安全的teleport)
+    - <a href="https://github.com/Akryum/vue-safe-teleport" target="_blank noopener noreferrer">Akryum/vue-safe-teleport</a>
+  - vue-wrap-balancer(react-wrap-balancer复刻)
+    - <a href="https://github.com/wobsoriano/vue-wrap-balancer" target="_blank noopener noreferrer">wobsoriano/vue-wrap-balancer</a>
+  - fervid(rust版vue编译器/冷门)
+    - <a href="https://github.com/phoenix-ru/fervid" target="_blank noopener noreferrer">phoenix-ru/fervid</a>
+  - vueinfo(提取所有vue路由信息代码片段)
+    - <a href="https://github.com/phith0n/vueinfo" target="_blank noopener noreferrer">phith0n/vueinfo</a>
+- 特冷门库
+  - react-vue混用系列
+    - veaury(vue3和react混用)
+      - <a href="https://github.com/devilwjp/veaury" target="_blank noopener noreferrer">devilwjp/veaury</a>
+    - vuereact-combined(vue2混用)
+      - <a href="https://github.com/devilwjp/vuereact-combined" target="_blank noopener noreferrer">devilwjp/vuereact-combined</a>
+    - reactivue(在react里用vue-reactive)
+      - <a href="https://github.com/antfu/reactivue" target="_blank noopener noreferrer">antfu/reactivue</a>
+  - lunchboxjs(为vue定制的three.js/烂)
+    - <a href="https://github.com/breakfast-studio/lunchboxjs" target="_blank noopener noreferrer">breakfast-studio/lunchboxjs</a>
+- nuxt
+  - 模板
+    - vitesse-nuxt3
+      - <a href="https://github.com/antfu/vitesse-nuxt3" target="_blank noopener noreferrer">antfu/vitesse-nuxt3</a>
+    - content-wind(nuxt content模板)
+      - <a href="https://github.com/Atinux/content-wind" target="_blank noopener noreferrer">Atinux/content-wind</a>
+    - sidebase(基于nuxt3的模板)
+      - <a href="https://github.com/sidebase/sidebase" target="_blank noopener noreferrer">sidebase/sidebase</a>
+    - nuxt3-tailwind3-starter(nuxt3模板/陈旧)
+      - <a href="https://github.com/michelwaechter/nuxt3-tailwind3-starter" target="_blank noopener noreferrer">michelwaechter/nuxt3-tailwind3-starter</a>
+  - 工具
+    - nuxt/ui
+      - <a href="https://github.com/nuxt/ui" target="_blank noopener noreferrer">nuxt/ui</a>
+    - nuxt/content(集成md等的渲染能力)
+      - <a href="https://github.com/nuxt/content" target="_blank noopener noreferrer">nuxt/content</a>
+    - nuxt-ionic
+      - <a href="https://github.com/danielroe/nuxt-ionic" target="_blank noopener noreferrer">danielroe/nuxt-ionic</a>
+    - unhead(head标签生成工具)
+      - <a href="https://github.com/unjs/unhead" target="_blank noopener noreferrer">unjs/unhead</a>
+    - ionic(nuxt和ionic集成)
+      - <a href="https://github.com/nuxt-modules/ionic" target="_blank noopener noreferrer">nuxt-modules/ionic</a>
+    - @nuxtjs/tailwindcss(tailwind支持)
+      - <a href="https://github.com/nuxt-modules/tailwindcss" target="_blank noopener noreferrer">nuxt-modules/tailwindcss</a>
+    - nuxt-modules/icon(Icon组件)
+      - <a href="https://github.com/nuxt-modules/icon" target="_blank noopener noreferrer">nuxt-modules/icon</a>
+    - nuxt/devtools
+      - <a href="https://github.com/nuxt/devtools" target="_blank noopener noreferrer">nuxt/devtools</a>
+    - vite-pwa/nuxt(pwa插件)
+      - <a href="https://github.com/vite-pwa/nuxt" target="_blank noopener noreferrer">vite-pwa/nuxt</a>
+    - nuxt-seo-kit(seo插件)
+      - <a href="https://github.com/harlan-zw/nuxt-seo-kit" target="_blank noopener noreferrer">harlan-zw/nuxt-seo-kit</a>
+    - ipx(图片优化服务/unjs)
+      - <a href="https://github.com/unjs/ipx" target="_blank noopener noreferrer">unjs/ipx</a>
+  - nuxt3
+    - <a href="https://github.com/nuxt/framework" target="_blank noopener noreferrer">nuxt/framework</a>
+  - blog
+    - typography(排版主题)
+      - <a href="https://github.com/nuxt-themes/typography" target="_blank noopener noreferrer">nuxt-themes/typography</a>
+  - repo
+    - nuxt
+      - <a href="https://github.com/nuxt/nuxt" target="_blank noopener noreferrer">nuxt/nuxt</a>
+- 后台模板
+  - naive-ui-admin
+    - <a href="https://github.com/jekip/naive-ui-admin" target="_blank noopener noreferrer">jekip/naive-ui-admin</a>
+  - soybean-admin
+    - <a href="https://github.com/honghuangdc/soybean-admin" target="_blank noopener noreferrer">honghuangdc/soybean-admin</a>
+  - fearless
+    - <a href="https://github.com/zce/fearless" target="_blank noopener noreferrer">zce/fearless</a>
+  - vue-vben-admin
+    - <a href="https://github.com/vbenjs/vue-vben-admin" target="_blank noopener noreferrer">vbenjs/vue-vben-admin</a>
+  - ant-simple-pro
+    - <a href="https://github.com/lgf196/ant-simple-pro" target="_blank noopener noreferrer">lgf196/ant-simple-pro</a>
+  - vue3.0-template-admin
+    - <a href="https://github.com/GeekQiaQia/vue3.0-template-admin" target="_blank noopener noreferrer">GeekQiaQia/vue3.0-template-admin</a>
+  - vue-admin-box
+    - <a href="https://github.com/cmdparkour/vue-admin-box" target="_blank noopener noreferrer">cmdparkour/vue-admin-box</a>
+  - d2-admin
+    - <a href="https://github.com/d2-projects/d2-admin" target="_blank noopener noreferrer">d2-projects/d2-admin</a>
+  - vue-admin-better(收费)
+    - <a href="https://github.com/chuzhixin/vue-admin-better" target="_blank noopener noreferrer">chuzhixin/vue-admin-better</a>
+  - vue-pure-admin(vue3)
+    - <a href="https://github.com/xiaoxian521/vue-pure-admin" target="_blank noopener noreferrer">xiaoxian521/vue-pure-admin</a>
+  - gin-vue-admin(go+vue整套后台模板)
+    - <a href="https://github.com/flipped-aurora/gin-vue-admin" target="_blank noopener noreferrer">flipped-aurora/gin-vue-admin</a>
+  - vue-manage-system(vue3+element plus)
+    - <a href="https://github.com/lin-xin/vue-manage-system" target="_blank noopener noreferrer">lin-xin/vue-manage-system</a>
+  - vuestic-admin(bootstrap+vue3)
+    - <a href="https://github.com/epicmaxco/vuestic-admin" target="_blank noopener noreferrer">epicmaxco/vuestic-admin</a>
+  - ant-design-vue-pro
+    - <a href="https://github.com/vueComponent/ant-design-vue-pro" target="_blank noopener noreferrer">vueComponent/ant-design-vue-pro</a>
+  - iview-admin(vue2/陈旧)
+    - <a href="https://github.com/iview/iview-admin" target="_blank noopener noreferrer">iview/iview-admin</a>
+  - geeker-admin(vue3/内含数据大屏)
+    - <a href="https://github.com/HalseySpicy/Geeker-Admin" target="_blank noopener noreferrer">HalseySpicy/Geeker-Admin</a>
+  - vue-element-admin(vue2/经典)
+    - <a href="https://github.com/PanJiaChen/vue-element-admin" target="_blank noopener noreferrer">PanJiaChen/vue-element-admin</a>
+  - pure-admin-thin(pure-admin简版)
+    - <a href="https://github.com/xiaoxian521/pure-admin-thin" target="_blank noopener noreferrer">xiaoxian521/pure-admin-thin</a>
+- 实战项目
+  - PPTist
+    - <a href="https://github.com/pipipi-pikachu/PPTist" target="_blank noopener noreferrer">pipipi-pikachu/PPTist</a>
+- vue测试库系列
+  - vue-test-utils(vue2测试)
+    - <a href="https://github.com/vuejs/vue-test-utils" target="_blank noopener noreferrer">vuejs/vue-test-utils</a>
+  - vue-jest
+    - <a href="https://github.com/vuejs/vue-jest" target="_blank noopener noreferrer">vuejs/vue-jest</a>
+  - test-utils(vue3测试工具)
+    - <a href="https://github.com/vuejs/test-utils" target="_blank noopener noreferrer">vuejs/test-utils</a>
+  - vitest系列
+    - vitest
+      - <a href="https://github.com/vitest-dev/vitest" target="_blank noopener noreferrer">vitest-dev/vitest</a>
+    - vitest-preview(浏览器录制测试生成脚本)
+      - <a href="https://github.com/nvh95/vitest-preview" target="_blank noopener noreferrer">nvh95/vitest-preview</a>
+  - vue-testing-library(组件渲染测试)
+    - <a href="https://github.com/testing-library/vue-testing-library" target="_blank noopener noreferrer">testing-library/vue-testing-library</a>
+- vue文档系列
+  - vuepress
+    - <a href="https://vuepress.github.io/zh/" target="_blank noopener noreferrer">vuepress.github.io</a>
+    - theme
+      - vuepress-theme-vdoing
+        - <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank noopener noreferrer">xugaoyi/vuepress-theme-vdoing</a>
+      - vuepress-theme-reco
+        - <a href="https://github.com/vuepress-reco/vuepress-theme-reco" target="_blank noopener noreferrer">vuepress-reco/vuepress-theme-reco</a>
+    - 插件
+      - vuepress-plugin-bulletin-popover(公告板)
+        - <a href="https://www.npmjs.com/package/@vuepress-reco/vuepress-plugin-bulletin-popover" target="_blank noopener noreferrer">www.npmjs.com</a>
+      - 代码复制系列
+        - vuepress-plugin-nuggets-style-copy
+          - <a href="https://www.npmjs.com/package/vuepress-plugin-nuggets-style-copy" target="_blank noopener noreferrer">www.npmjs.com</a>
+        - vuepress-plugin-code-copy
+          - <a href="https://github.com/znicholasbrown/vuepress-plugin-code-copy" target="_blank noopener noreferrer">znicholasbrown/vuepress-plugin-code-copy</a>
+      - vuepress-plugin-copyright(版权)
+        - <a href="https://github.com/vuepress/vuepress-plugin-copyright" target="_blank noopener noreferrer">vuepress/vuepress-plugin-copyright</a>
+      - vuepress-plugin-bgm-player(播放器)
+        - <a href="https://www.npmjs.com/package/@vuepress-reco/vuepress-plugin-bgm-player" target="_blank noopener noreferrer">www.npmjs.com</a>
+      - vuepress-plugin-kan-ban-niang(看板娘)
+        - <a href="https://www.npmjs.com/package/@vuepress-reco/vuepress-plugin-kan-ban-niang" target="_blank noopener noreferrer">www.npmjs.com</a>
+      - vuepress-plugin-cursor-effects(点击礼花)
+        - <a href="https://github.com/moefyit/vuepress-plugin-cursor-effects" target="_blank noopener noreferrer">moefyit/vuepress-plugin-cursor-effects</a>
+      - vuepress-plugin-dynamic-title(隐藏页面动态改变标题)
+        - <a href="https://github.com/moefyit/vuepress-plugin-dynamic-title" target="_blank noopener noreferrer">moefyit/vuepress-plugin-dynamic-title</a>
+      - vuepress-plugin-extract-code(代码多文件展示)
+        - <a href="https://www.npmjs.com/package/@vuepress-reco/vuepress-plugin-extract-code" target="_blank noopener noreferrer">www.npmjs.com</a>
+      - vssue(issue评论插件)
+        - <a href="https://github.com/meteorlxy/vssue" target="_blank noopener noreferrer">meteorlxy/vssue</a>
+      - vuepress-plugin-sitemap
+        - <a href="https://github.com/ekoeryanto/vuepress-plugin-sitemap" target="_blank noopener noreferrer">ekoeryanto/vuepress-plugin-sitemap</a>
+      - vuepress-plugin-seo
+        - <a href="https://github.com/lorisleiva/vuepress-plugin-seo" target="_blank noopener noreferrer">lorisleiva/vuepress-plugin-seo</a>
+      - @vuepress/plugin-pwa
+        - <a href="https://www.npmjs.com/package/@vuepress/plugin-pwa" target="_blank noopener noreferrer">www.npmjs.com</a>
+      - vuepress-plugin-meting(aplayer简单播放器)
+        - <a href="https://github.com/moefyit/vuepress-plugin-meting" target="_blank noopener noreferrer">moefyit/vuepress-plugin-meting</a>
+    - repo
+      - <a href="https://github.com/vuejs/vuepress" target="_blank noopener noreferrer">vuejs/vuepress</a>
+    - vuepress-next
+      - <a href="https://github.com/vuepress/vuepress-next" target="_blank noopener noreferrer">vuepress/vuepress-next</a>
+  - vitepress系列
+    - vitepress
+      - <a href="https://github.com/vuejs/vitepress" target="_blank noopener noreferrer">vuejs/vitepress</a>
+    - vitepress-plugin-rss(支持rss/冷门)
+      - <a href="https://www.npmjs.com/package/vitepress-plugin-rss" target="_blank noopener noreferrer">www.npmjs.com</a>
+  - gridsome(基于vue的静态站点生成工具)
+    - <a href="https://github.com/gridsome/gridsome" target="_blank noopener noreferrer">gridsome/gridsome</a>
+  - histoire(基于vite的palyground/vue/冷门)
+    - <a href="https://github.com/histoire-dev/histoire" target="_blank noopener noreferrer">histoire-dev/histoire</a>
+  - iles(用于Vue的静态站点生成器)
+    - <a href="https://github.com/ElMassimo/iles" target="_blank noopener noreferrer">ElMassimo/iles</a>
+  - docus(nuxt文档站方案)
+    - <a href="https://github.com/nuxt-themes/docus" target="_blank noopener noreferrer">nuxt-themes/docus</a>
+- repo
+  - vue2/vue
+    - <a href="https://github.com/vuejs/vue" target="_blank noopener noreferrer">vuejs/vue</a>
+  - vue3/core
+    - <a href="https://github.com/vuejs/core" target="_blank noopener noreferrer">vuejs/core</a>
+    - <a href="https://github.com/vuejs/core/blob/main/.github/workflows/ci.yml" target="_blank noopener noreferrer">vuejs/core/blob/main/.github/workflows/ci.yml</a>
+## JavaScript
+- 工具库
+  - code-if(变量命名工具)
+    - <a href="https://unbug.github.io/codelf/" target="_blank noopener noreferrer">unbug.github.io</a>
+    - <a href="https://github.com/unbug/codelf" target="_blank noopener noreferrer">unbug/codelf</a>
+  - ua-parser
+    - <a href="https://github.com/faisalman/ua-parser-js" target="_blank noopener noreferrer">faisalman/ua-parser-js</a>
+    - <a href="https://www.npmjs.com/package/ua-parser-js" target="_blank noopener noreferrer">www.npmjs.com</a>
+  - animate(动画库)
+    - loading加载系列库
+      - spin-loader(加载动画)
+        - <a href="https://github.com/ConnorAtherton/loaders.css" target="_blank noopener noreferrer">ConnorAtherton/loaders.css</a>
+        - <a href="https://connoratherton.com/loaders" target="_blank noopener noreferrer">connoratherton.com</a>
+      - SpinKit(loading图案大全)
+        - <a href="https://github.com/tobiasahlin/SpinKit" target="_blank noopener noreferrer">tobiasahlin/SpinKit</a>
+      - css-loaders(加载动画)
+        - <a href="https://github.com/lukehaas/css-loaders" target="_blank noopener noreferrer">lukehaas/css-loaders</a>
+        - <a href="https://projects.lukehaas.me/css-loaders/" target="_blank noopener noreferrer">projects.lukehaas.me</a>
+      - csspin
+        - <a href="https://github.com/webkul/csspin" target="_blank noopener noreferrer">webkul/csspin</a>
+      - whirl(loading大全)
+        - <a href="https://github.com/jh3y/whirl" target="_blank noopener noreferrer">jh3y/whirl</a>
+      - three-dots(单节点加载动画大全)
+        - <a href="https://github.com/nzbin/three-dots" target="_blank noopener noreferrer">nzbin/three-dots</a>
+      - svg-spinners(一些24x24的svg加载图标)
+        - <a href="https://github.com/n3r4zzurr0/svg-spinners" target="_blank noopener noreferrer">n3r4zzurr0/svg-spinners</a>
+      - loadership.com(直接拷贝的加载动画)
+        - <a href="https://www.loadership.com/" target="_blank noopener noreferrer">www.loadership.com</a>
+      - ldrs(svg单加载节点动画)
+        - <a href="https://github.com/GriffinJohnston/ldrs" target="_blank noopener noreferrer">GriffinJohnston/ldrs</a>
+    - animxyz(简单可组合的动画库)
+      - <a href="https://github.com/ingram-projects/animxyz" target="_blank noopener noreferrer">ingram-projects/animxyz</a>
+      - <a href="https://animxyz.com/#sandbox" target="_blank noopener noreferrer">animxyz.com</a>
+    - anijs
+      - <a href="http://anijs.github.io/" target="_blank noopener noreferrer">anijs.github.io</a>
+      - <a href="https://github.com/anijs/anijs" target="_blank noopener noreferrer">anijs/anijs</a>
+    - bounce.js
+      - <a href="https://github.com/tictail/bounce.js" target="_blank noopener noreferrer">tictail/bounce.js</a>
+      - <a href="http://bouncejs.com/" target="_blank noopener noreferrer">bouncejs.com</a>
+    - odometer(乱动过渡出现文字)
+      - <a href="https://github.com/HubSpot/odometer" target="_blank noopener noreferrer">HubSpot/odometer</a>
+    - snabbt
+      - <a href="http://daniel-lundin.github.io/snabbt.js/" target="_blank noopener noreferrer">daniel-lundin.github.io</a>
+      - <a href="https://github.com/daniel-lundin/snabbt.js" target="_blank noopener noreferrer">daniel-lundin/snabbt.js</a>
+    - animate.css
+      - <a href="https://github.com/animate-css/animate.css" target="_blank noopener noreferrer">animate-css/animate.css</a>
+      - <a href="https://animate.style/" target="_blank noopener noreferrer">animate.style</a>
+    - kute(常用动画)
+      - <a href="https://github.com/thednp/kute.js" target="_blank noopener noreferrer">thednp/kute.js</a>
+    - velocity
+      - <a href="https://github.com/julianshapiro/velocity" target="_blank noopener noreferrer">julianshapiro/velocity</a>
+    - countup(数字变化)
+      - <a href="https://github.com/inorganik/countUp.js" target="_blank noopener noreferrer">inorganik/countUp.js</a>
+    - gsap
+      - <a href="https://github.com/greensock/GSAP" target="_blank noopener noreferrer">greensock/GSAP</a>
+      - <a href="https://blog.usejournal.com/vue-js-gsap-animations-26fc6b1c3c5a" target="_blank noopener noreferrer">blog.usejournal.com</a>
+      - <a href="https://greensock.com/docs/v3/Plugins/SplitTextPlugin" target="_blank noopener noreferrer">greensock.com</a>
+      - <a href="https://greensock.com/docs/v3/Eases/CustomEase" target="_blank noopener noreferrer">greensock.com</a>
+      - css-property
+        - <a href="https://greensock.com/docs/v3/GSAP/CorePlugins/CSSPlugin" target="_blank noopener noreferrer">greensock.com</a>
+      - 教程
+        - <a href="https://greensock.com/get-started/" target="_blank noopener noreferrer">greensock.com</a>
+      - slider
+        - <a href="https://codepen.io/GreenSock/pen/EPOyNp" target="_blank noopener noreferrer">codepen.io</a>
+        - <a href="https://vuetelemetry.com/" target="_blank noopener noreferrer">vuetelemetry.com</a>
+    - ola(平滑过程插值)
+      - <a href="https://github.com/franciscop/ola" target="_blank noopener noreferrer">franciscop/ola</a>
+    - anime(动画引擎)
+      - <a href="https://github.com/juliangarnier/anime" target="_blank noopener noreferrer">juliangarnier/anime</a>
+    - granim(颜色渐变)
+      - <a href="https://github.com/sarcadass/granim.js" target="_blank noopener noreferrer">sarcadass/granim.js</a>
+    - justgage(仪表盘-动画)
+      - <a href="https://github.com/toorshia/justgage" target="_blank noopener noreferrer">toorshia/justgage</a>
+    - tween.js(动画engine)
+      - <a href="https://github.com/tweenjs/tween.js" target="_blank noopener noreferrer">tweenjs/tween.js</a>
+    - lottie-web
+      - <a href="https://github.com/airbnb/lottie-web" target="_blank noopener noreferrer">airbnb/lottie-web</a>
+    - magic(简单动画)
+      - <a href="https://github.com/miniMAC/magic" target="_blank noopener noreferrer">miniMAC/magic</a>
+    - theatre(web动画编辑器)
+      - <a href="https://github.com/AriaMinaei/theatre" target="_blank noopener noreferrer">AriaMinaei/theatre</a>
+    - mojs(动画库)
+      - <a href="https://github.com/mojs/mojs" target="_blank noopener noreferrer">mojs/mojs</a>
+    - vizzu-lib(动画可视化与不同可视化类型间的转换)
+      - <a href="https://github.com/vizzuhq/vizzu-lib" target="_blank noopener noreferrer">vizzuhq/vizzu-lib</a>
+    - csshake(css抖动效果大全)
+      - <a href="https://github.com/elrumordelaluz/csshake" target="_blank noopener noreferrer">elrumordelaluz/csshake</a>
+    - libpag(腾讯pag.io/类似lottie)
+      - <a href="https://github.com/Tencent/libpag" target="_blank noopener noreferrer">Tencent/libpag</a>
+    - svg动画系列
+      - vivus.js(svg path动画)
+        - <a href="https://github.com/maxwellito/vivus" target="_blank noopener noreferrer">maxwellito/vivus</a>
+      - lazy-line-painter(svg路径动画)
+        - <a href="https://github.com/camoconnell/lazy-line-painter" target="_blank noopener noreferrer">camoconnell/lazy-line-painter</a>
+    - type打字系列
+      - ityped(打字动画)
+        - <a href="https://github.com/luisvinicius167/ityped" target="_blank noopener noreferrer">luisvinicius167/ityped</a>
+      - typed(打字动画)
+        - <a href="https://github.com/mattboldt/typed.js" target="_blank noopener noreferrer">mattboldt/typed.js</a>
+      - typeit(打字动画/商用收费)
+        - <a href="https://github.com/alexmacarthur/typeit" target="_blank noopener noreferrer">alexmacarthur/typeit</a>
+    - lax.js(边滚动边执行动画)
+      - <a href="https://github.com/alexfoxy/lax.js" target="_blank noopener noreferrer">alexfoxy/lax.js</a>
+    - auto-animate(给节点自动添加动画)
+      - <a href="https://github.com/formkit/auto-animate" target="_blank noopener noreferrer">formkit/auto-animate</a>
+    - popmotion(老)
+      - <a href="https://github.com/Popmotion/popmotion" target="_blank noopener noreferrer">Popmotion/popmotion</a>
+    - watching-you(构建跟随鼠标移动节点的动画)
+      - <a href="https://github.com/jj811208/watching-you" target="_blank noopener noreferrer">jj811208/watching-you</a>
+    - shifty(最快的动画引擎)
+      - <a href="https://github.com/jeremyckahn/shifty" target="_blank noopener noreferrer">jeremyckahn/shifty</a>
+    - barba(创建页面过渡平滑动画)
+      - <a href="https://github.com/barbajs/barba" target="_blank noopener noreferrer">barbajs/barba</a>
+    - swup(页面转换动画)
+      - <a href="https://github.com/swup/swup" target="_blank noopener noreferrer">swup/swup</a>
+    - popmotion(简单动画库)
+      - <a href="https://github.com/popmotion/popmotion" target="_blank noopener noreferrer">popmotion/popmotion</a>
+  - image-opera
+    - pica(调整大小)
+      - <a href="https://github.com/nodeca/pica" target="_blank noopener noreferrer">nodeca/pica</a>
+    - compressor(压缩图片)
+      - <a href="https://github.com/fengyuanchen/compressorjs" target="_blank noopener noreferrer">fengyuanchen/compressorjs</a>
+    - merge-images(多图合成一图)
+      - <a href="https://github.com/lukechilds/merge-images" target="_blank noopener noreferrer">lukechilds/merge-images</a>
+    - cropper(裁剪)
+      - <a href="https://github.com/fengyuanchen/cropperjs" target="_blank noopener noreferrer">fengyuanchen/cropperjs</a>
+    - smartcrop(智能裁剪)
+      - <a href="https://github.com/jwagner/smartcrop.js" target="_blank noopener noreferrer">jwagner/smartcrop.js</a>
+      - <a href="https://29a.ch/2014/04/03/smartcrop-content-aware-image-cropping" target="_blank noopener noreferrer">29a.ch</a>
+    - html2canvas
+      - <a href="https://github.com/niklasvh/html2canvas" target="_blank noopener noreferrer">niklasvh/html2canvas</a>
+    - dom-to-image
+      - <a href="https://github.com/tsayen/dom-to-image" target="_blank noopener noreferrer">tsayen/dom-to-image</a>
+    - canvas2Image
+      - <a href="https://github.com/hongru/canvas2image/blob/master/canvas2image.js" target="_blank noopener noreferrer">hongru/canvas2image/blob/master/canvas2image.js</a>
+    - html-to-image
+      - <a href="https://github.com/bubkoo/html-to-image" target="_blank noopener noreferrer">bubkoo/html-to-image</a>
+    - rasterizeHTML.js(html2canvas方案)
+      - <a href="https://github.com/cburgmer/rasterizeHTML.js" target="_blank noopener noreferrer">cburgmer/rasterizeHTML.js</a>
+    - 滤镜/图片效果系列
+      - vintageJS(复古滤镜效果/陈旧)
+        - <a href="https://github.com/rendro/vintageJS" target="_blank noopener noreferrer">rendro/vintageJS</a>
+      - lena(滤镜)
+        - <a href="https://fellipe.com/demos/lena-js/" target="_blank noopener noreferrer">fellipe.com</a>
+        - <a href="https://github.com/davidsonfellipe/lena.js" target="_blank noopener noreferrer">davidsonfellipe/lena.js</a>
+      - filterous-2(类似Instagram滤镜效果/陈旧/冷门)
+        - <a href="https://github.com/girliemac/filterous-2" target="_blank noopener noreferrer">girliemac/filterous-2</a>
+      - 故障效果系列
+        - glitch-canvas(给图片添加故障效果)
+          - <a href="https://github.com/snorpey/glitch-canvas" target="_blank noopener noreferrer">snorpey/glitch-canvas</a>
+        - powerglitch(添加故障效果工具)
+          - <a href="https://github.com/7ph/powerglitch" target="_blank noopener noreferrer">7ph/powerglitch</a>
+    - 现成图片编辑器组件系列
+      - darkroomjs(图片编辑工具/收费)
+        - <a href="https://github.com/MattKetmo/darkroomjs" target="_blank noopener noreferrer">MattKetmo/darkroomjs</a>
+      - tui.image-editor
+        - <a href="https://github.com/nhn/tui.image-editor" target="_blank noopener noreferrer">nhn/tui.image-editor</a>
+      - filerobot-image-editor
+        - <a href="https://github.com/scaleflex/filerobot-image-editor" target="_blank noopener noreferrer">scaleflex/filerobot-image-editor</a>
+    - js-image-carver(carving算法的图像缩放器/不失真)
+      - <a href="https://github.com/trekhleb/js-image-carver" target="_blank noopener noreferrer">trekhleb/js-image-carver</a>
+  - starability(五星评分组件)
+    - <a href="https://github.com/LunarLogic/starability" target="_blank noopener noreferrer">LunarLogic/starability</a>
+  - drap/drop(拖拽)
+    - draggable
+      - <a href="https://github.com/Shopify/draggable" target="_blank noopener noreferrer">Shopify/draggable</a>
+    - draggabilly
+      - <a href="https://github.com/desandro/draggabilly" target="_blank noopener noreferrer">desandro/draggabilly</a>
+    - dragula
+      - <a href="https://github.com/bevacqua/dragula" target="_blank noopener noreferrer">bevacqua/dragula</a>
+    - sortable(列表任意拖拽库)
+      - <a href="https://github.com/SortableJS/Sortable" target="_blank noopener noreferrer">SortableJS/Sortable</a>
+    - interact.js(拖拽/手势/堆叠等)
+      - <a href="https://github.com/taye/interact.js" target="_blank noopener noreferrer">taye/interact.js</a>
+    - dflex(冷)
+      - <a href="https://github.com/dflex-js/dflex" target="_blank noopener noreferrer">dflex-js/dflex</a>
+    - neodrag(多框架拖拽库/冷门)
+      - <a href="https://github.com/PuruVJ/neodrag" target="_blank noopener noreferrer">PuruVJ/neodrag</a>
+    - moveable(任意变形拖拽工具)
+      - <a href="https://github.com/daybrush/moveable" target="_blank noopener noreferrer">daybrush/moveable</a>
+    - gridstack.js(grid拖拽网格)
+      - <a href="https://github.com/gridstack/gridstack.js" target="_blank noopener noreferrer">gridstack/gridstack.js</a>
+  - atomic-css
+    - tailwind系列
+      - tailwind
+        - <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank noopener noreferrer">tailwindlabs/tailwindcss</a>
+      - tailwind-merge(合并atom类/去除合并)
+        - <a href="https://github.com/dcastil/tailwind-merge" target="_blank noopener noreferrer">dcastil/tailwind-merge</a>
+      - tailwind-helper(tailwind布局类生成助手)
+        - <a href="https://github.com/seb-graf/tailwind-helper" target="_blank noopener noreferrer">seb-graf/tailwind-helper</a>
+      - tailwindcss-perspective(perspective工具类)
+        - <a href="https://github.com/Kamona-WD/tailwindcss-perspective" target="_blank noopener noreferrer">Kamona-WD/tailwindcss-perspective</a>
+      - create-tw(tailwind项目创建脚手架)
+        - <a href="https://github.com/AndrejJurkin/create-tw" target="_blank noopener noreferrer">AndrejJurkin/create-tw</a>
+      - tailwindcss-plugin-starter(插件编写模板)
+        - <a href="https://github.com/cossssmin/tailwindcss-plugin-starter" target="_blank noopener noreferrer">cossssmin/tailwindcss-plugin-starter</a>
+      - tailwind工具网站系列
+        - 色阶生成工具
+          - taildwindshades(tailwind色阶生成工具)
+            - <a href="https://github.com/anheric/tailwindshades" target="_blank noopener noreferrer">anheric/tailwindshades</a>
+          - uicolors.app
+            - <a href="https://uicolors.app/create" target="_blank noopener noreferrer">uicolors.app</a>
+        - vanillabreeze.dev(tailwind转语义class网站)
+          - <a href="https://www.vanillabreeze.dev/" target="_blank noopener noreferrer">www.vanillabreeze.dev</a>
+        - tailwindcomponents.com(tailwind cheatsheet)
+          - <a href="https://tailwindcomponents.com/cheatsheet/" target="_blank noopener noreferrer">tailwindcomponents.com</a>
+        - manuarora.in/boxshadows(阴影tailwind大全)
+          - <a href="https://manuarora.in/boxshadows" target="_blank noopener noreferrer">manuarora.in</a>
+        - tints.dev(调色板生成器)
+          - <a href="https://www.tints.dev/" target="_blank noopener noreferrer">www.tints.dev</a>
+        - css-to-tailwind-converter(css转tailwind)
+          - <a href="https://www.loopple.com/tools/css-to-tailwind-converter" target="_blank noopener noreferrer">www.loopple.com</a>
+      - ui组件库系列
+        - daisyui(基于tailwind的组件库)
+          - <a href="https://github.com/saadeghi/daisyui" target="_blank noopener noreferrer">saadeghi/daisyui</a>
+        - vechaiui(tailwind+a11y组件库)
+          - <a href="https://github.com/vechai/vechaiui" target="_blank noopener noreferrer">vechai/vechaiui</a>
+        - tail-kit(tailwind2的组件库)
+          - <a href="https://github.com/Charlie85270/tail-kit" target="_blank noopener noreferrer">Charlie85270/tail-kit</a>
+        - merakiui(tailwind组件库/现成代码)
+          - <a href="https://github.com/merakiui/merakiui" target="_blank noopener noreferrer">merakiui/merakiui</a>
+        - hyperui.com(现成的组件代码)
+          - <a href="https://www.hyperui.dev/" target="_blank noopener noreferrer">www.hyperui.dev</a>
+        - tailwindcomponents.com(现成的组件代码)
+          - <a href="https://tailwindcomponents.com/" target="_blank noopener noreferrer">tailwindcomponents.com</a>
+        - Tailwind-Elements
+          - <a href="https://github.com/mdbootstrap/TW-Elements" target="_blank noopener noreferrer">mdbootstrap/TW-Elements</a>
+        - floatui.com(简单的组件现成代码)
+          - <a href="https://www.floatui.com/" target="_blank noopener noreferrer">www.floatui.com</a>
+        - preline
+          - <a href="https://github.com/htmlstreamofficial/preline" target="_blank noopener noreferrer">htmlstreamofficial/preline</a>
+        - rippleui
+          - <a href="https://github.com/Siumauricio/rippleui" target="_blank noopener noreferrer">Siumauricio/rippleui</a>
+        - sailboatui
+          - <a href="https://github.com/sailboatui/sailboatui" target="_blank noopener noreferrer">sailboatui/sailboatui</a>
+        - langui(适合ai站使用的组件)
+          - <a href="https://github.com/ahmadbilaldev/langui" target="_blank noopener noreferrer">ahmadbilaldev/langui</a>
+        - park-ui(冷)
+          - <a href="https://github.com/cschroeter/park-ui" target="_blank noopener noreferrer">cschroeter/park-ui</a>
+      - tailwindcss-forms(form表单样式支持)
+        - <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank noopener noreferrer">tailwindlabs/tailwindcss-forms</a>
+      - twify(初始化tailwind工具/冷门)
+        - <a href="https://github.com/tzsk/twify" target="_blank noopener noreferrer">tzsk/twify</a>
+      - @tailwindcss/typography(默认好看的排版区域/md)
+        - <a href="https://github.com/tailwindlabs/tailwindcss-typography" target="_blank noopener noreferrer">tailwindlabs/tailwindcss-typography</a>
+      - typewind(type支持/babel转类名/冷门)
+        - <a href="https://github.com/mokshit06/typewind" target="_blank noopener noreferrer">mokshit06/typewind</a>
+      - tailwindcss-fluid-type(流体响应式size插件/冷门)
+        - <a href="https://github.com/davidhellmann/tailwindcss-fluid-type" target="_blank noopener noreferrer">davidhellmann/tailwindcss-fluid-type</a>
+      - tailwind-variants(创建变体工具)
+        - <a href="https://github.com/nextui-org/tailwind-variants" target="_blank noopener noreferrer">nextui-org/tailwind-variants</a>
+      - tailwindcss-icons(使用各种icons)
+        - <a href="https://github.com/egoist/tailwindcss-icons" target="_blank noopener noreferrer">egoist/tailwindcss-icons</a>
+      - tailwindcss-3d(添加变换相关类名)
+        - <a href="https://github.com/sambauers/tailwindcss-3d" target="_blank noopener noreferrer">sambauers/tailwindcss-3d</a>
+      - nightwind(自动转换实现dark模式)
+        - <a href="https://github.com/jjranalli/nightwind" target="_blank noopener noreferrer">jjranalli/nightwind</a>
+    - windicss
+      - <a href="https://github.com/windicss/windicss" target="_blank noopener noreferrer">windicss/windicss</a>
+    - master-co/css(冷)
+      - <a href="https://github.com/master-co/css" target="_blank noopener noreferrer">master-co/css</a>
+    - inline-style-expand-shorthand(缩写属性展开为具体单属性工具)
+      - <a href="https://github.com/robinweser/inline-style-expand-shorthand" target="_blank noopener noreferrer">robinweser/inline-style-expand-shorthand</a>
+    - unocss系列
+      - unocss
+        - <a href="https://github.com/unocss/unocss" target="_blank noopener noreferrer">unocss/unocss</a>
+      - unplugin-attributify-to-class(使用类为css选择器)
+        - <a href="https://github.com/MellowCo/unplugin-attributify-to-class" target="_blank noopener noreferrer">MellowCo/unplugin-attributify-to-class</a>
+    - tokenami(原子css var/冷门)
+      - <a href="https://github.com/tokenami/tokenami" target="_blank noopener noreferrer">tokenami/tokenami</a>
+  - photo-sphere-viewer(全景)
+    - <a href="https://github.com/JeremyHeleine/Photo-Sphere-Viewer" target="_blank noopener noreferrer">JeremyHeleine/Photo-Sphere-Viewer</a>
+  - finger(指纹)
+    - fingerprintjs
+      - <a href="https://github.com/fingerprintjs/fingerprintjs" target="_blank noopener noreferrer">fingerprintjs/fingerprintjs</a>
+    - super-cookie
+      - <a href="https://github.com/jonasstrehle/supercookie" target="_blank noopener noreferrer">jonasstrehle/supercookie</a>
+    - 查看指纹网站
+      - <a href="https://www.whatismybrowser.com/" target="_blank noopener noreferrer">www.whatismybrowser.com</a>
+      - canvas指纹
+        - <a href="https://browserleaks.com/canvas" target="_blank noopener noreferrer">browserleaks.com</a>
+      - AudioContext指纹
+        - <a href="https://audiofingerprint.openwpm.com/" target="_blank noopener noreferrer">audiofingerprint.openwpm.com</a>
+    - clientjs
+      - <a href="https://github.com/jackspirou/clientjs" target="_blank noopener noreferrer">jackspirou/clientjs</a>
+    - CSS-Fingerprint-Study(css指纹/冷门)
+      - <a href="https://github.com/OliverBrotchie/CSS-Fingerprint-Study" target="_blank noopener noreferrer">OliverBrotchie/CSS-Fingerprint-Study</a>
+  - low-code(低代码)
+    - amis(baidu)
+      - <a href="https://github.com/baidu/amis" target="_blank noopener noreferrer">baidu/amis</a>
+    - ToolJet(收费)
+      - <a href="https://github.com/ToolJet/ToolJet" target="_blank noopener noreferrer">ToolJet/ToolJet</a>
+    - brick-design
+      - <a href="https://github.com/brick-design/brick-design" target="_blank noopener noreferrer">brick-design/brick-design</a>
+    - lowdefy
+      - <a href="https://github.com/lowdefy/lowdefy" target="_blank noopener noreferrer">lowdefy/lowdefy</a>
+    - 实例项目
+      - mometa(低代码平台/不迭代了)
+        - <a href="https://github.com/imcuttle/mometa" target="_blank noopener noreferrer">imcuttle/mometa</a>
+      - shida(视频快搭)
+        - <a href="https://github.com/tnfe/shida" target="_blank noopener noreferrer">tnfe/shida</a>
+      - jeecg-boot(java+vue整套低代码平台)
+        - <a href="https://github.com/jeecgboot/jeecg-boot" target="_blank noopener noreferrer">jeecgboot/jeecg-boot</a>
+      - mall-cook(商城低代码平台)
+        - <a href="https://github.com/wangyuan389/mall-cook" target="_blank noopener noreferrer">wangyuan389/mall-cook</a>
+      - yao(低代码解决方案)
+        - <a href="https://github.com/YaoApp/yao" target="_blank noopener noreferrer">YaoApp/yao</a>
+      - appsmith(数据源转后台)
+        - <a href="https://github.com/appsmithorg/appsmith" target="_blank noopener noreferrer">appsmithorg/appsmith</a>
+      - sparrow(低代码平台/不维护了)
+        - <a href="https://github.com/sparrow-js/sparrow" target="_blank noopener noreferrer">sparrow-js/sparrow</a>
+      - form-generator(element ui表单生成器/不维护了)
+        - <a href="https://github.com/JakHuang/form-generator" target="_blank noopener noreferrer">JakHuang/form-generator</a>
+    - node-red(编程低代码)
+      - <a href="https://github.com/node-red/node-red" target="_blank noopener noreferrer">node-red/node-red</a>
+    - foxpage(携程低代码框架/冷门)
+      - <a href="https://github.com/foxpage/foxpage" target="_blank noopener noreferrer">foxpage/foxpage</a>
+    - lowcode-engine(ali低代码引擎)
+      - <a href="https://github.com/alibaba/lowcode-engine" target="_blank noopener noreferrer">alibaba/lowcode-engine</a>
+    - imove(生成js函数)
+      - <a href="https://github.com/i5ting/imove" target="_blank noopener noreferrer">i5ting/imove</a>
+    - sunmao-ui(低代码框架/冷门)
+      - <a href="https://github.com/smartxworks/sunmao-ui" target="_blank noopener noreferrer">smartxworks/sunmao-ui</a>
+    - nocobase(低代码平台)
+      - <a href="https://github.com/nocobase/nocobase" target="_blank noopener noreferrer">nocobase/nocobase</a>
+    - h5-lowcode系列
+      - quark-h5(h5快搭)
+        - <a href="https://github.com/huangwei9527/quark-h5" target="_blank noopener noreferrer">huangwei9527/quark-h5</a>
+      - h5-Dooring(h5低代码平台)
+        - <a href="https://github.com/MrXujiang/h5-Dooring" target="_blank noopener noreferrer">MrXujiang/h5-Dooring</a>
+      - vite-vue3-lowcode(h5低代码平台)
+        - <a href="https://github.com/buqiyuan/vite-vue3-lowcode" target="_blank noopener noreferrer">buqiyuan/vite-vue3-lowcode</a>
+      - gods-pen(码良)
+        - <a href="https://github.com/ymm-tech/gods-pen" target="_blank noopener noreferrer">ymm-tech/gods-pen</a>
+      - luban-h5(鲁班)
+        - <a href="https://github.com/ly525/luban-h5" target="_blank noopener noreferrer">ly525/luban-h5</a>
+      - h5-factory(冷)
+        - <a href="https://github.com/yangyuji/h5-factory" target="_blank noopener noreferrer">yangyuji/h5-factory</a>
+      - tefact(星搭/冷门)
+        - <a href="https://github.com/staringos/tefact" target="_blank noopener noreferrer">staringos/tefact</a>
+    - steedos-platform(华炎魔方低代码平台/收费)
+      - <a href="https://github.com/steedos/steedos-platform" target="_blank noopener noreferrer">steedos/steedos-platform</a>
+    - awesome-lowcode(低国内代码从业交流/内容大全)
+      - <a href="https://github.com/taowen/awesome-lowcode" target="_blank noopener noreferrer">taowen/awesome-lowcode</a>
+    - tmagic-editor(tx可视化搭建平台)
+      - <a href="https://github.com/Tencent/tmagic-editor" target="_blank noopener noreferrer">Tencent/tmagic-editor</a>
+    - illa-builder(低代码平台/冷门)
+      - <a href="https://github.com/illacloud/illa-builder" target="_blank noopener noreferrer">illacloud/illa-builder</a>
+    - budibase(低代码平台)
+      - <a href="https://github.com/budibase/budibase" target="_blank noopener noreferrer">budibase/budibase</a>
+    - lowcode-engine-vue(lowcode engine vue版)
+      - <a href="https://github.com/KNXCloud/lowcode-engine-vue" target="_blank noopener noreferrer">KNXCloud/lowcode-engine-vue</a>
+    - drip-table(动态table方案/冷门)
+      - <a href="https://github.com/JDFED/drip-table" target="_blank noopener noreferrer">JDFED/drip-table</a>
+    - tango(网易)
+      - <a href="https://github.com/NetEase/tango" target="_blank noopener noreferrer">NetEase/tango</a>
+  - 浏览器文件操作(浏览器fs)
+    - <a href="https://github.com/jvilk/BrowserFS" target="_blank noopener noreferrer">jvilk/BrowserFS</a>
+  - jQuery系列
+    - tilt(3d倾斜效果)
+      - <a href="https://github.com/gijsroge/tilt.js" target="_blank noopener noreferrer">gijsroge/tilt.js</a>
+    - smoothstate(页面转换-动画)
+      - <a href="https://github.com/miguel-perez/smoothState.js" target="_blank noopener noreferrer">miguel-perez/smoothState.js</a>
+    - slick(轮播图)
+      - <a href="https://github.com/kenwheeler/slick" target="_blank noopener noreferrer">kenwheeler/slick</a>
+    - replace-jquery(将jq替换为原生mini)
+      - <a href="https://github.com/sachinchoolur/replace-jquery" target="_blank noopener noreferrer">sachinchoolur/replace-jquery</a>
+    - animsition(页面切换动画库)
+      - <a href="https://github.com/blivesta/animsition" target="_blank noopener noreferrer">blivesta/animsition</a>
+    - onepage-scroll(单页滚动)
+      - <a href="https://github.com/peachananr/onepage-scroll" target="_blank noopener noreferrer">peachananr/onepage-scroll</a>
+    - jquery-emoji(emoji输入框)
+      - <a href="https://github.com/eshengsky/jQuery-emoji" target="_blank noopener noreferrer">eshengsky/jQuery-emoji</a>
+    - flot(基于jQ的图表库)
+      - <a href="https://github.com/flot/flot" target="_blank noopener noreferrer">flot/flot</a>
+    - pptxjs(展示ppt)
+      - <a href="https://github.com/meshesha/PPTXjs" target="_blank noopener noreferrer">meshesha/PPTXjs</a>
+    - datetimepicker(date picker)
+      - <a href="https://github.com/xdan/datetimepicker" target="_blank noopener noreferrer">xdan/datetimepicker</a>
+    - imagesloaded(检测图片什么时候加载完)
+      - <a href="https://github.com/desandro/imagesloaded" target="_blank noopener noreferrer">desandro/imagesloaded</a>
+    - pagePiling.js(分页堆叠揭示效果)
+      - <a href="https://github.com/alvarotrigo/pagePiling.js" target="_blank noopener noreferrer">alvarotrigo/pagePiling.js</a>
+    - jquery-qrcode
+      - <a href="https://github.com/lrsjng/jquery-qrcode" target="_blank noopener noreferrer">lrsjng/jquery-qrcode</a>
+    - fancybox(lightbox/图片灯箱)
+      - <a href="https://github.com/fancyapps/fancybox" target="_blank noopener noreferrer">fancyapps/fancybox</a>
+    - sly(轮播图/支持手势)
+      - <a href="https://github.com/darsain/sly" target="_blank noopener noreferrer">darsain/sly</a>
+    - select2(基于jQ的select)
+      - <a href="https://github.com/select2/select2" target="_blank noopener noreferrer">select2/select2</a>
+    - bootbox(modal弹窗插件)
+      - <a href="https://github.com/makeusabrew/bootbox" target="_blank noopener noreferrer">makeusabrew/bootbox</a>
+    - jqapi(更好的jq文档)
+      - <a href="https://jqapi.com/" target="_blank noopener noreferrer">jqapi.com</a>
+    - gridster.js(格子拖拽插件/grid)
+      - <a href="https://github.com/dsmorse/gridster.js" target="_blank noopener noreferrer">dsmorse/gridster.js</a>
+  - crypto/hash加密系列
+    - aes-js
+      - <a href="https://github.com/ricmoo/aes-js" target="_blank noopener noreferrer">ricmoo/aes-js</a>
+    - jsencrypt(rsa)
+      - <a href="https://github.com/travist/jsencrypt" target="_blank noopener noreferrer">travist/jsencrypt</a>
+    - crypto-js(最全的加密库)
+      - <a href="https://github.com/brix/crypto-js" target="_blank noopener noreferrer">brix/crypto-js</a>
+    - sm-crypto(国密算法sm2/3)
+      - <a href="https://github.com/wechat-miniprogram/sm-crypto" target="_blank noopener noreferrer">wechat-miniprogram/sm-crypto</a>
+    - sm-crypto(国密算法)
+      - <a href="https://github.com/JuneAndGreen/sm-crypto" target="_blank noopener noreferrer">JuneAndGreen/sm-crypto</a>
+    - jsSHA
+      - <a href="https://github.com/Caligatio/jsSHA" target="_blank noopener noreferrer">Caligatio/jsSHA</a>
+    - openpgpjs(email加密算法实现)
+      - <a href="https://github.com/openpgpjs/openpgpjs" target="_blank noopener noreferrer">openpgpjs/openpgpjs</a>
+    - CyberChef(网络版瑞士军刀/web加解密在线工具)
+      - <a href="https://github.com/gchq/CyberChef" target="_blank noopener noreferrer">gchq/CyberChef</a>
+    - nodejs系列
+      - node-rsa(node端rsa)
+        - <a href="https://github.com/rzcoder/node-rsa" target="_blank noopener noreferrer">rzcoder/node-rsa</a>
+      - node-md5
+        - <a href="https://github.com/pvorb/node-md5" target="_blank noopener noreferrer">pvorb/node-md5</a>
+      - node.bcrypty.js
+        - <a href="https://github.com/kelektiv/node.bcrypt.js" target="_blank noopener noreferrer">kelektiv/node.bcrypt.js</a>
+    - crypto-random-string(生成高随机字符串)
+      - <a href="https://github.com/sindresorhus/crypto-random-string" target="_blank noopener noreferrer">sindresorhus/crypto-random-string</a>
+    - hash计算系列
+      - crypto-hash(node/浏览器通用一致的hash)
+        - <a href="https://github.com/sindresorhus/crypto-hash" target="_blank noopener noreferrer">sindresorhus/crypto-hash</a>
+      - blake-hash(blake3专注性能的哈希加密算法)
+        - <a href="https://github.com/Brooooooklyn/blake-hash" target="_blank noopener noreferrer">Brooooooklyn/blake-hash</a>
+      - ohash(快速hash计算)
+        - <a href="https://github.com/unjs/ohash" target="_blank noopener noreferrer">unjs/ohash</a>
+      - spark-md5(文件/字符串md5计算)
+        - <a href="https://github.com/satazor/js-spark-md5" target="_blank noopener noreferrer">satazor/js-spark-md5</a>
+      - sdbm(计算字符串的hash)
+        - <a href="https://github.com/sindresorhus/sdbm" target="_blank noopener noreferrer">sindresorhus/sdbm</a>
+      - fnv1a(散列hash计算方法)
+        - <a href="https://github.com/sindresorhus/fnv1a" target="_blank noopener noreferrer">sindresorhus/fnv1a</a>
+      - stable-hash(稳定hash)
+        - <a href="https://github.com/shuding/stable-hash" target="_blank noopener noreferrer">shuding/stable-hash</a>
+      - hash-sum(计算对象hash)
+        - <a href="https://github.com/bevacqua/hash-sum" target="_blank noopener noreferrer">bevacqua/hash-sum</a>
+      - fnv-plus(fnv1a算法)
+        - <a href="https://github.com/tjwebb/fnv-plus" target="_blank noopener noreferrer">tjwebb/fnv-plus</a>
+    - crypto-js-wasm(crypto wasm版/冷门)
+      - <a href="https://github.com/originjs/crypto-js-wasm" target="_blank noopener noreferrer">originjs/crypto-js-wasm</a>
+    - isa-l(压缩算法)
+      - <a href="https://github.com/intel/isa-l" target="_blank noopener noreferrer">intel/isa-l</a>
+    - bcrypt.js(老)
+      - <a href="https://github.com/dcodeIO/bcrypt.js" target="_blank noopener noreferrer">dcodeIO/bcrypt.js</a>
+    - jsrsasign
+      - <a href="https://github.com/kjur/jsrsasign" target="_blank noopener noreferrer">kjur/jsrsasign</a>
+    - staticrypt(html加密器)
+      - <a href="https://github.com/robinmoisson/staticrypt" target="_blank noopener noreferrer">robinmoisson/staticrypt</a>
+    - aws-sdk-js-crypto-helpers(crypto方法库/node通用)
+      - <a href="https://github.com/aws/aws-sdk-js-crypto-helpers" target="_blank noopener noreferrer">aws/aws-sdk-js-crypto-helpers</a>
+  - og-image(推特meta头生成)
+    - <a href="https://github.com/vercel/og-image" target="_blank noopener noreferrer">vercel/og-image</a>
+  - ast解析库
+    - jscodeshift
+      - <a href="https://github.com/facebook/jscodeshift" target="_blank noopener noreferrer">facebook/jscodeshift</a>
+    - estree(acorn通用type库)
+      - <a href="https://github.com/estree/estree" target="_blank noopener noreferrer">estree/estree</a>
+    - esprima系
+      - <a href="https://github.com/jquery/esprima" target="_blank noopener noreferrer">jquery/esprima</a>
+      - esquery(查找)
+        - <a href="https://github.com/estools/esquery" target="_blank noopener noreferrer">estools/esquery</a>
+      - escodegen(代码生成)
+        - <a href="https://github.com/estools/escodegen" target="_blank noopener noreferrer">estools/escodegen</a>
+    - mdast(md的ast)
+      - <a href="https://github.com/syntax-tree/mdast" target="_blank noopener noreferrer">syntax-tree/mdast</a>
+    - ts-morph(对ts解析更友好简约)
+      - <a href="https://github.com/dsherret/ts-morph" target="_blank noopener noreferrer">dsherret/ts-morph</a>
+    - recast
+      - <a href="https://github.com/benjamn/recast" target="_blank noopener noreferrer">benjamn/recast</a>
+    - css ast解析库
+      - stylis(轻量级css解析库)
+        - <a href="https://github.com/thysultan/stylis" target="_blank noopener noreferrer">thysultan/stylis</a>
+    - ast-types
+      - <a href="https://github.com/benjamn/ast-types" target="_blank noopener noreferrer">benjamn/ast-types</a>
+    - @ts-morpher(ts-morph更高级封装/冷门)
+      - <a href="https://github.com/LinbuduLab/morpher" target="_blank noopener noreferrer">LinbuduLab/morpher</a>
+    - 相关工具站点
+      - astexplrer.net
+        - <a href="https://astexplorer.net/" target="_blank noopener noreferrer">astexplorer.net</a>
+      - ts-ast-viewer.com
+        - <a href="https://ts-ast-viewer.com/#" target="_blank noopener noreferrer">ts-ast-viewer.com</a>
+    - babel系列
+      - @babel/core
+        - <a href="https://github.com/babel/babel/tree/main/packages/babel-core" target="_blank noopener noreferrer">babel/babel/tree/main/packages/babel-core</a>
+      - @babel/parser(ast解析器)
+        - <a href="https://github.com/babel/babel/tree/main/packages/babel-parser" target="_blank noopener noreferrer">babel/babel/tree/main/packages/babel-parser</a>
+      - @babel/traverse(遍历器)
+        - <a href="https://github.com/babel/babel/tree/main/packages/babel-traverse" target="_blank noopener noreferrer">babel/babel/tree/main/packages/babel-traverse</a>
+      - @babel/generator(生成器/ast转代码)
+        - <a href="https://github.com/babel/babel/tree/main/packages/babel-generator" target="_blank noopener noreferrer">babel/babel/tree/main/packages/babel-generator</a>
+      - @babel/types(type和方法帮助)
+        - <a href="https://github.com/babel/babel/tree/main/packages/babel-types" target="_blank noopener noreferrer">babel/babel/tree/main/packages/babel-types</a>
+      - @babel/template(字符串转ast)
+        - <a href="https://github.com/babel/babel/tree/main/packages/babel-template" target="_blank noopener noreferrer">babel/babel/tree/main/packages/babel-template</a>
+      - babel参考教程
+        - Babel-traverse-api-doc(babel/traverse api文档)
+          - <a href="https://github.com/RecluseXU/Babel-traverse-api-doc" target="_blank noopener noreferrer">RecluseXU/Babel-traverse-api-doc</a>
+        - babel-handbook(babel手册)
+          - <a href="https://github.com/jamiebuilds/babel-handbook" target="_blank noopener noreferrer">jamiebuilds/babel-handbook</a>
+      - babel插件系列
+        - babel-plugin-import
+          - <a href="https://github.com/umijs/babel-plugin-import" target="_blank noopener noreferrer">umijs/babel-plugin-import</a>
+        - babel-helper-plugin-utils(declare帮助声明函数)
+          - <a href="https://github.com/babel/babel/tree/main/packages/babel-helper-plugin-utils" target="_blank noopener noreferrer">babel/babel/tree/main/packages/babel-helper-plugin-utils</a>
+        - @babel/plugin-transform-react-jsx-source(jsx添加源信息)
+          - <a href="https://babel.dev/docs/en/babel-plugin-transform-react-jsx-source" target="_blank noopener noreferrer">babel.dev</a>
+        - babel-plugin-transform-imports(转换映射导入路径)
+          - <a href="https://www.npmjs.com/package/babel-plugin-transform-imports" target="_blank noopener noreferrer">www.npmjs.com</a>
+        - @babel/helper-module-imports(生成导入)
+          - <a href="https://babeljs.io/docs/babel-helper-module-imports" target="_blank noopener noreferrer">babeljs.io</a>
+        - @babel/helper-plugin-utils(编写插件类型提示)
+          - <a href="https://babeljs.io/docs/babel-helper-plugin-utils" target="_blank noopener noreferrer">babeljs.io</a>
+        - babel-plugin-module-resolver(支持alias)
+          - <a href="https://github.com/tleunen/babel-plugin-module-resolver" target="_blank noopener noreferrer">tleunen/babel-plugin-module-resolver</a>
+      - @babel/highlight系列
+        - tinyhighlight(轻量级fork)
+          - <a href="https://github.com/tinylibs/tinyhighlight" target="_blank noopener noreferrer">tinylibs/tinyhighlight</a>
+    - acorn系列
+      - acorn
+        - <a href="https://github.com/acornjs/acorn" target="_blank noopener noreferrer">acornjs/acorn</a>
+      - astring(ast转code)
+        - <a href="https://github.com/davidbonnet/astring" target="_blank noopener noreferrer">davidbonnet/astring</a>
+    - espree(eslint默认parser)
+      - <a href="https://github.com/eslint/espree" target="_blank noopener noreferrer">eslint/espree</a>
+    - ohm(自定义语法树分析/解释器的框架)
+      - <a href="https://github.com/harc/ohm" target="_blank noopener noreferrer">harc/ohm</a>
+    - meriyah(js解析器)
+      - <a href="https://github.com/meriyah/meriyah" target="_blank noopener noreferrer">meriyah/meriyah</a>
+    - php-parser(php ast解析库/nodejs)
+      - <a href="https://github.com/glayzzle/php-parser" target="_blank noopener noreferrer">glayzzle/php-parser</a>
+    - js-tokens(解析语句成token/冷门)
+      - <a href="https://github.com/lydell/js-tokens" target="_blank noopener noreferrer">lydell/js-tokens</a>
+    - ast-grep(通过ast匹配/grep/rust编写)
+      - <a href="https://github.com/ast-grep/ast-grep" target="_blank noopener noreferrer">ast-grep/ast-grep</a>
+    - lebab(将es5转换成es6)
+      - <a href="https://github.com/lebab/lebab" target="_blank noopener noreferrer">lebab/lebab</a>
+  - uuid系列
+    - uuid.js
+      - <a href="https://github.com/LiosK/UUID.js" target="_blank noopener noreferrer">LiosK/UUID.js</a>
+    - uuid
+      - <a href="https://github.com/uuidjs/uuid" target="_blank noopener noreferrer">uuidjs/uuid</a>
+    - shortid(短id)
+      - <a href="https://github.com/dylang/shortid" target="_blank noopener noreferrer">dylang/shortid</a>
+    - nanoid(mini id)
+      - <a href="https://github.com/ai/nanoid" target="_blank noopener noreferrer">ai/nanoid</a>
+    - hashids.js(youtube一样的id)
+      - <a href="https://github.com/niieani/hashids.js" target="_blank noopener noreferrer">niieani/hashids.js</a>
+    - hyperid(高性能id生成)
+      - <a href="https://github.com/mcollina/hyperid" target="_blank noopener noreferrer">mcollina/hyperid</a>
+    - ulid(更结构化/短的/陈旧)
+      - <a href="https://github.com/ulid/javascript" target="_blank noopener noreferrer">ulid/javascript</a>
+    - uuid-base64(压缩uuid到base64/冷门)
+      - <a href="https://github.com/ntharim/uuid-base64" target="_blank noopener noreferrer">ntharim/uuid-base64</a>
+    - cuid2(下一代uuid)
+      - <a href="https://github.com/paralleldrive/cuid2" target="_blank noopener noreferrer">paralleldrive/cuid2</a>
+  - patch-package(给node_modules打补丁)
+    - <a href="https://github.com/ds300/patch-package" target="_blank noopener noreferrer">ds300/patch-package</a>
+  - qrcode二维码库
+    - qrcode(二维码)
+      - <a href="https://github.com/soldair/node-qrcode" target="_blank noopener noreferrer">soldair/node-qrcode</a>
+    - jsQR(二维码)
+      - <a href="https://github.com/cozmo/jsQR" target="_blank noopener noreferrer">cozmo/jsQR</a>
+    - Awesome-qr.js
+      - <a href="https://github.com/SumiMakito/Awesome-qr.js" target="_blank noopener noreferrer">SumiMakito/Awesome-qr.js</a>
+    - barcode条形码系列
+      - quaggaJS
+        - <a href="https://github.com/serratus/quaggaJS" target="_blank noopener noreferrer">serratus/quaggaJS</a>
+      - JsBarcode(条形码库)
+        - <a href="https://github.com/lindell/JsBarcode" target="_blank noopener noreferrer">lindell/JsBarcode</a>
+      - quagga2(第二代)
+        - <a href="https://github.com/ericblade/quagga2" target="_blank noopener noreferrer">ericblade/quagga2</a>
+    - qr-scanner(二维码扫描库)
+      - <a href="https://github.com/nimiq/qr-scanner" target="_blank noopener noreferrer">nimiq/qr-scanner</a>
+    - qr-code(二维码web component)
+      - <a href="https://github.com/educastellano/qr-code" target="_blank noopener noreferrer">educastellano/qr-code</a>
+    - qrcodejs(生成二维码)
+      - <a href="https://github.com/davidshimjs/qrcodejs" target="_blank noopener noreferrer">davidshimjs/qrcodejs</a>
+    - qrcode-generator(老)
+      - <a href="https://github.com/kazuhikoarase/qrcode-generator" target="_blank noopener noreferrer">kazuhikoarase/qrcode-generator</a>
+    - headless-qr(qrcode-generator改进新版)
+      - <a href="https://github.com/Rich-Harris/headless-qr" target="_blank noopener noreferrer">Rich-Harris/headless-qr</a>
+    - qrcanvas(canvas生成qrcode)
+      - <a href="https://github.com/gera2ld/qrcanvas" target="_blank noopener noreferrer">gera2ld/qrcanvas</a>
+    - superwhite(HDR video高亮背景底)
+      - <a href="https://github.com/dtinth/superwhite" target="_blank noopener noreferrer">dtinth/superwhite</a>
+    - html5-qrcode(二维码扫描库)
+      - <a href="https://github.com/mebjas/html5-qrcode" target="_blank noopener noreferrer">mebjas/html5-qrcode</a>
+  - 数字处理/计算工具
+    - big.js(大数计算)
+      - <a href="https://github.com/MikeMcl/big.js" target="_blank noopener noreferrer">MikeMcl/big.js</a>
+    - filesize(从文件大小数字转带单位的可读格式)
+      - <a href="https://github.com/avoidwork/filesize.js" target="_blank noopener noreferrer">avoidwork/filesize.js</a>
+    - numeral(处理/格式化数字)
+      - <a href="https://github.com/adamwdraper/Numeral-js" target="_blank noopener noreferrer">adamwdraper/Numeral-js</a>
+    - bignumer.js(大数处理库)
+      - <a href="https://github.com/MikeMcl/bignumber.js" target="_blank noopener noreferrer">MikeMcl/bignumber.js</a>
+    - nzh(数字转中文数字)
+      - <a href="https://github.com/cnwhy/nzh" target="_blank noopener noreferrer">cnwhy/nzh</a>
+    - decimal.js(处理科学大小数更好)
+      - <a href="https://github.com/MikeMcl/decimal.js" target="_blank noopener noreferrer">MikeMcl/decimal.js</a>
+    - mathjs
+      - <a href="https://github.com/josdejong/mathjs" target="_blank noopener noreferrer">josdejong/mathjs</a>
+    - mljs/matrix(矩阵计算操作库)
+      - <a href="https://github.com/mljs/matrix" target="_blank noopener noreferrer">mljs/matrix</a>
+    - bigint系列
+      - jsbi(原生bitint实现polyfill)
+        - <a href="https://github.com/GoogleChromeLabs/jsbi" target="_blank noopener noreferrer">GoogleChromeLabs/jsbi</a>
+      - babel-plugin-transform-jsbi-to-bigint(取消jsbi调用的插件)
+        - <a href="https://github.com/GoogleChromeLabs/babel-plugin-transform-jsbi-to-bigint" target="_blank noopener noreferrer">GoogleChromeLabs/babel-plugin-transform-jsbi-to-bigint</a>
+    - json大数处理系列
+      - json-bigint(处理json中的大数)
+        - <a href="https://github.com/sidorares/json-bigint" target="_blank noopener noreferrer">sidorares/json-bigint</a>
+      - lossless-json(支持序列化解析json大数)
+        - <a href="https://github.com/josdejong/lossless-json" target="_blank noopener noreferrer">josdejong/lossless-json</a>
+    - vectorious(向量多维数组计算)
+      - <a href="https://github.com/mateogianolio/vectorious" target="_blank noopener noreferrer">mateogianolio/vectorious</a>
+  - math公式系列
+    - KaTeX(最快的数学排版/公式库/latex)
+      - <a href="https://github.com/KaTeX/KaTeX" target="_blank noopener noreferrer">KaTeX/KaTeX</a>
+    - MathJax-src
+      - <a href="https://github.com/mathjax/MathJax-src" target="_blank noopener noreferrer">mathjax/MathJax-src</a>
+    - nerdamer(数学表达式求值器)
+      - <a href="https://github.com/jiggzson/nerdamer" target="_blank noopener noreferrer">jiggzson/nerdamer</a>
+    - simple-statistics(统计函数库)
+      - <a href="https://github.com/simple-statistics/simple-statistics" target="_blank noopener noreferrer">simple-statistics/simple-statistics</a>
+    - mathlive(数学公式输入组件)
+      - <a href="https://github.com/arnog/mathlive" target="_blank noopener noreferrer">arnog/mathlive</a>
+    - number-precision(精确计算工具/冷门)
+      - <a href="https://github.com/nefe/number-precision" target="_blank noopener noreferrer">nefe/number-precision</a>
+  - highlight高亮系列
+    - highlight.js
+      - <a href="https://github.com/highlightjs/highlight.js" target="_blank noopener noreferrer">highlightjs/highlight.js</a>
+    - speed-highlight(冷)
+      - <a href="https://github.com/speed-highlight/core" target="_blank noopener noreferrer">speed-highlight/core</a>
+    - prism系列
+      - prism
+        - <a href="https://github.com/PrismJS/prism" target="_blank noopener noreferrer">PrismJS/prism</a>
+      - babel-plugin-prismjs(按需打包语言和主题)
+        - <a href="https://github.com/mAAdhaTTah/babel-plugin-prismjs" target="_blank noopener noreferrer">mAAdhaTTah/babel-plugin-prismjs</a>
+      - prism-themes(一些主题)
+        - <a href="https://github.com/PrismJS/prism-themes" target="_blank noopener noreferrer">PrismJS/prism-themes</a>
+    - lowlight(冷)
+      - <a href="https://github.com/wooorm/lowlight" target="_blank noopener noreferrer">wooorm/lowlight</a>
+    - 文本高亮系列
+      - texthighlighter(文本高亮)
+        - <a href="https://github.com/wstaeblein/texthighlighter" target="_blank noopener noreferrer">wstaeblein/texthighlighter</a>
+    - starry-night(类似github风格)
+      - <a href="https://github.com/wooorm/starry-night" target="_blank noopener noreferrer">wooorm/starry-night</a>
+    - shiki系列
+      - shiki
+        - <a href="https://github.com/shikijs/shiki" target="_blank noopener noreferrer">shikijs/shiki</a>
+      - shikiji(esm版shiki)
+        - <a href="https://github.com/antfu/shikiji" target="_blank noopener noreferrer">antfu/shikiji</a>
+    - sugar-high(轻量/冷门)
+      - <a href="https://github.com/huozhi/sugar-high" target="_blank noopener noreferrer">huozhi/sugar-high</a>
+  - 代码编辑器
+    - codemirror
+      - <a href="https://github.com/codemirror/CodeMirror" target="_blank noopener noreferrer">codemirror/CodeMirror</a>
+    - awesome-web-editor(编辑器大全)
+      - <a href="https://github.com/xjh22222228/awesome-web-editor" target="_blank noopener noreferrer">xjh22222228/awesome-web-editor</a>
+    - brace(ace的兼容版/陈旧)
+      - <a href="https://github.com/thlorenz/brace" target="_blank noopener noreferrer">thlorenz/brace</a>
+    - codemirror6系列
+      - dev(核心库)
+        - <a href="https://github.com/codemirror/dev" target="_blank noopener noreferrer">codemirror/dev</a>
+      - thememirror(一些主题合集)
+        - <a href="https://github.com/vadimdemedes/thememirror" target="_blank noopener noreferrer">vadimdemedes/thememirror</a>
+    - ace系列
+      - ace
+        - <a href="https://github.com/ajaxorg/ace" target="_blank noopener noreferrer">ajaxorg/ace</a>
+      - Ace-Editor-Web-Component(ace web component)
+        - <a href="https://github.com/MarketingPipeline/Ace-Editor-Web-Component" target="_blank noopener noreferrer">MarketingPipeline/Ace-Editor-Web-Component</a>
+    - monaco系列
+      - monaco-editor
+        - <a href="https://github.com/microsoft/monaco-editor" target="_blank noopener noreferrer">microsoft/monaco-editor</a>
+      - monaco-editor-auto-typings(自动加载import包类型声明)
+        - <a href="https://github.com/lukasbach/monaco-editor-auto-typings" target="_blank noopener noreferrer">lukasbach/monaco-editor-auto-typings</a>
+    - blog-cells(创建可运行的代码块)
+      - <a href="https://github.com/rameshvarun/blog-cells" target="_blank noopener noreferrer">rameshvarun/blog-cells</a>
+    - webcontainer系列
+      - webcontainer-core
+        - <a href="https://github.com/stackblitz/webcontainer-core" target="_blank noopener noreferrer">stackblitz/webcontainer-core</a>
+  - excel/docx(表格库)
+    - excel表格系列
+      - sheetjs
+        - <a href="https://github.com/SheetJS/sheetjs" target="_blank noopener noreferrer">SheetJS/sheetjs</a>
+      - exceljs(操作excel)
+        - <a href="https://github.com/exceljs/exceljs" target="_blank noopener noreferrer">exceljs/exceljs</a>
+      - handsontable(excel/收费)
+        - <a href="https://github.com/handsontable/handsontable" target="_blank noopener noreferrer">handsontable/handsontable</a>
+      - excellentexport(将表格导出excel)
+        - <a href="https://github.com/jmaister/excellentexport" target="_blank noopener noreferrer">jmaister/excellentexport</a>
+      - js-export-excel(中文excel导出)
+        - <a href="https://github.com/cuikangjie/js-export-excel" target="_blank noopener noreferrer">cuikangjie/js-export-excel</a>
+    - docx系列
+      - docx(创建docx)
+        - <a href="https://github.com/dolanmiu/docx" target="_blank noopener noreferrer">dolanmiu/docx</a>
+      - mammoth.js(预览docx/陈旧)
+        - <a href="https://github.com/mwilliamson/mammoth.js" target="_blank noopener noreferrer">mwilliamson/mammoth.js</a>
+      - docxjs(预览docx/冷门)
+        - <a href="https://github.com/zVolodymyr/docxjs" target="_blank noopener noreferrer">zVolodymyr/docxjs</a>
+      - docxtemplater(创建docx)
+        - <a href="https://github.com/open-xml-templating/docxtemplater" target="_blank noopener noreferrer">open-xml-templating/docxtemplater</a>
+      - easy-template-x(从模版生成docx/nodejs)
+        - <a href="https://github.com/alonrbar/easy-template-x" target="_blank noopener noreferrer">alonrbar/easy-template-x</a>
+    - lucksheet
+      - <a href="https://github.com/dream-num/Luckysheet" target="_blank noopener noreferrer">dream-num/Luckysheet</a>
+    - x-spreadsheet(支持协作)
+      - <a href="https://github.com/myliang/x-spreadsheet" target="_blank noopener noreferrer">myliang/x-spreadsheet</a>
+    - tabulator(大数据表格/多支持)
+      - <a href="https://github.com/olifolkerd/tabulator" target="_blank noopener noreferrer">olifolkerd/tabulator</a>
+    - hyperformula(excel函数支持库)
+      - <a href="https://github.com/handsontable/hyperformula" target="_blank noopener noreferrer">handsontable/hyperformula</a>
+    - fortune-sheet(excel表格组件/冷门)
+      - <a href="https://github.com/ruilisi/fortune-sheet" target="_blank noopener noreferrer">ruilisi/fortune-sheet</a>
+    - etherpad-lite(实时协作的文档)
+      - <a href="https://github.com/ether/etherpad-lite" target="_blank noopener noreferrer">ether/etherpad-lite</a>
+    - officegen(ppt/docx/xlsx生成/nodejs)
+      - <a href="https://github.com/Ziv-Barber/officegen" target="_blank noopener noreferrer">Ziv-Barber/officegen</a>
+  - web-components组件系列
+    - time-elements(time标签)
+      - <a href="https://github.com/github/time-elements" target="_blank noopener noreferrer">github/time-elements</a>
+    - relative-time-element(相对时间)
+      - <a href="https://github.com/github/relative-time-element" target="_blank noopener noreferrer">github/relative-time-element</a>
+    - a2k(windows2000风格的组件/冷门)
+      - <a href="https://github.com/andrico1234/a2k" target="_blank noopener noreferrer">andrico1234/a2k</a>
+    - qr-code
+      - <a href="https://github.com/bitjson/qr-code" target="_blank noopener noreferrer">bitjson/qr-code</a>
+    - table-saw(能动态适配宽度的原生table标签)
+      - <a href="https://github.com/zachleat/table-saw" target="_blank noopener noreferrer">zachleat/table-saw</a>
+    - browser-window(仿浏览器窗口web组件)
+      - <a href="https://github.com/zachleat/browser-window" target="_blank noopener noreferrer">zachleat/browser-window</a>
+    - sparkly-text(闪闪发光文本组件)
+      - <a href="https://github.com/stefanjudis/sparkly-text" target="_blank noopener noreferrer">stefanjudis/sparkly-text</a>
+    - autosize-textarea(自动大小输入框/冷门)
+      - <a href="https://github.com/andrico1234/autosize-textarea" target="_blank noopener noreferrer">andrico1234/autosize-textarea</a>
+    - snow-fall(雪花飘飞效果组件)
+      - <a href="https://github.com/zachleat/snow-fall" target="_blank noopener noreferrer">zachleat/snow-fall</a>
+    - click-spark(点击火花效果组件)
+      - <a href="https://github.com/hexagoncircle/click-spark" target="_blank noopener noreferrer">hexagoncircle/click-spark</a>
+  - eslint/prettier(格式化系列)
+    - @typescript-eslint-plugin(typescript的eslint插件)
+      - <a href="https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin" target="_blank noopener noreferrer">typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin</a>
+    - eslint-rule-composer(允许从其他rule创建新rule)
+      - <a href="https://github.com/not-an-aardvark/eslint-rule-composer" target="_blank noopener noreferrer">not-an-aardvark/eslint-rule-composer</a>
+    - eslint-nibble(eslint报告可视化)
+      - <a href="https://github.com/IanVS/eslint-nibble" target="_blank noopener noreferrer">IanVS/eslint-nibble</a>
+    - prettier插件
+      - prettier-plugin-tailwindcss(taildwind css自动排序)
+        - <a href="https://github.com/tailwindlabs/prettier-plugin-tailwindcss" target="_blank noopener noreferrer">tailwindlabs/prettier-plugin-tailwindcss</a>
+      - prettier-plugin-packagejson(pkg.json排序)
+        - <a href="https://github.com/matzkoh/prettier-plugin-packagejson" target="_blank noopener noreferrer">matzkoh/prettier-plugin-packagejson</a>
+      - prettier-plugin-organize-imports(自动组织导入/清除)
+        - <a href="https://github.com/simonhaenisch/prettier-plugin-organize-imports" target="_blank noopener noreferrer">simonhaenisch/prettier-plugin-organize-imports</a>
+      - prettier-plugin-sort-imports(导入排序插件)
+        - <a href="https://github.com/trivago/prettier-plugin-sort-imports" target="_blank noopener noreferrer">trivago/prettier-plugin-sort-imports</a>
+      - prettier-plugin-multiline-arrays(控制数组每行元素个数)
+        - <a href="https://github.com/electrovir/prettier-plugin-multiline-arrays" target="_blank noopener noreferrer">electrovir/prettier-plugin-multiline-arrays</a>
+      - ianvs/prettier-plugin-sort-imports(另一个导入排序/冷门)
+        - <a href="https://github.com/ianvs/prettier-plugin-sort-imports" target="_blank noopener noreferrer">ianvs/prettier-plugin-sort-imports</a>
+      - prettier-plugin-sort-imports(不对副作用排序版)
+        - <a href="https://github.com/IanVS/prettier-plugin-sort-imports" target="_blank noopener noreferrer">IanVS/prettier-plugin-sort-imports</a>
+    - quick-lint-js(eslint的替代品)
+      - <a href="https://github.com/quick-lint/quick-lint-js" target="_blank noopener noreferrer">quick-lint/quick-lint-js</a>
+    - typescript-eslint
+      - <a href="https://github.com/typescript-eslint/typescript-eslint" target="_blank noopener noreferrer">typescript-eslint/typescript-eslint</a>
+    - react系列
+      - eslint-plugin-jest-dom
+        - <a href="https://github.com/testing-library/eslint-plugin-jest-dom" target="_blank noopener noreferrer">testing-library/eslint-plugin-jest-dom</a>
+      - eslint-plugin-testing-library
+        - <a href="https://github.com/testing-library/eslint-plugin-testing-library" target="_blank noopener noreferrer">testing-library/eslint-plugin-testing-library</a>
+      - eslint-plugin-react
+        - <a href="https://github.com/jsx-eslint/eslint-plugin-react" target="_blank noopener noreferrer">jsx-eslint/eslint-plugin-react</a>
+      - eslint-plugin-react-hooks
+        - <a href="https://www.npmjs.com/package/eslint-plugin-react-hooks" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - vue系列
+      - vue-eslint-parser(vue的eslint解析器)
+        - <a href="https://github.com/vuejs/vue-eslint-parser" target="_blank noopener noreferrer">vuejs/vue-eslint-parser</a>
+      - eslint-plugin-vue
+        - <a href="https://github.com/vuejs/eslint-plugin-vue" target="_blank noopener noreferrer">vuejs/eslint-plugin-vue</a>
+      - typescript-eslint-parser-for-extra-files(支持解析导入的vue文件类型)
+        - <a href="https://github.com/ota-meshi/typescript-eslint-parser-for-extra-files" target="_blank noopener noreferrer">ota-meshi/typescript-eslint-parser-for-extra-files</a>
+    - prettier支持
+      - eslint-plugin-prettier(prettier必备启动器)
+        - <a href="https://github.com/prettier/eslint-plugin-prettier" target="_blank noopener noreferrer">prettier/eslint-plugin-prettier</a>
+      - eslint-config-prettier(prettier必备关闭冲突规则)
+        - <a href="https://github.com/prettier/eslint-config-prettier" target="_blank noopener noreferrer">prettier/eslint-config-prettier</a>
+    - import支持
+      - eslint-plugin-import
+        - <a href="https://github.com/import-js/eslint-plugin-import" target="_blank noopener noreferrer">import-js/eslint-plugin-import</a>
+      - eslint-import-resolver-typescript(支持ts paths别名)
+        - <a href="https://github.com/alexgorbatchev/eslint-import-resolver-typescript" target="_blank noopener noreferrer">alexgorbatchev/eslint-import-resolver-typescript</a>
+    - @rushstack/eslint-patch(解eslint config解决路径问题)
+      - <a href="https://github.com/microsoft/rushstack/tree/master/eslint/eslint-patch" target="_blank noopener noreferrer">microsoft/rushstack/tree/master/eslint/eslint-patch</a>
+    - 其他plugins系列
+      - eslint-plugin-eslint-comments(disable要写注释)
+        - <a href="https://github.com/mysticatea/eslint-plugin-eslint-comments" target="_blank noopener noreferrer">mysticatea/eslint-plugin-eslint-comments</a>
+      - @ts-safeql/eslint-plugin(校验sql语句正确性)
+        - <a href="https://github.com/ts-safeql/safeql" target="_blank noopener noreferrer">ts-safeql/safeql</a>
+      - eslint-plugin-jsx-a11y(a11y规则)
+        - <a href="https://github.com/jsx-eslint/eslint-plugin-jsx-a11y" target="_blank noopener noreferrer">jsx-eslint/eslint-plugin-jsx-a11y</a>
+      - eslint-plugin-n(nodejs规则)
+        - <a href="https://github.com/eslint-community/eslint-plugin-n" target="_blank noopener noreferrer">eslint-community/eslint-plugin-n</a>
+      - eslint-plugin-unicorn(强大的eslint规则)
+        - <a href="https://github.com/sindresorhus/eslint-plugin-unicorn" target="_blank noopener noreferrer">sindresorhus/eslint-plugin-unicorn</a>
+      - eslint-plugin-regexp(正则性能检测插件)
+        - <a href="https://github.com/ota-meshi/eslint-plugin-regexp" target="_blank noopener noreferrer">ota-meshi/eslint-plugin-regexp</a>
+      - eslint-plugin-graphql(graphQL)
+        - <a href="https://github.com/apollographql/eslint-plugin-graphql" target="_blank noopener noreferrer">apollographql/eslint-plugin-graphql</a>
+      - eslint-plugin-expect-type(检测类型错误的插件)
+        - <a href="https://github.com/JoshuaKGoldberg/eslint-plugin-expect-type" target="_blank noopener noreferrer">JoshuaKGoldberg/eslint-plugin-expect-type</a>
+      - eslint-plugin-perfectionist(对导入/属性等各种排序)
+        - <a href="https://github.com/azat-io/eslint-plugin-perfectionist" target="_blank noopener noreferrer">azat-io/eslint-plugin-perfectionist</a>
+      - eslint-plugin-check-file(保持文件夹文件命名格式一致)
+        - <a href="https://github.com/DukeLuo/eslint-plugin-check-file" target="_blank noopener noreferrer">DukeLuo/eslint-plugin-check-file</a>
+      - eslint-plugin-deprecation(警告弃用代码)
+        - <a href="https://github.com/gund/eslint-plugin-deprecation" target="_blank noopener noreferrer">gund/eslint-plugin-deprecation</a>
+      - eslint-plugin-no-only-tests(防止jest.only测试)
+        - <a href="https://github.com/levibuzolic/eslint-plugin-no-only-tests" target="_blank noopener noreferrer">levibuzolic/eslint-plugin-no-only-tests</a>
+      - eslint-plugin-never-disable(禁止禁用eslint的注释)
+        - <a href="https://github.com/JoshuaKGoldberg/eslint-plugin-never-disable" target="_blank noopener noreferrer">JoshuaKGoldberg/eslint-plugin-never-disable</a>
+    - eslint-define-config(defineConfig类型提示)
+      - <a href="https://github.com/Shinigami92/eslint-define-config" target="_blank noopener noreferrer">Shinigami92/eslint-define-config</a>
+    - flat-config支持
+      - globals(env变量集)
+        - <a href="https://github.com/sindresorhus/globals" target="_blank noopener noreferrer">sindresorhus/globals</a>
+      - confusing-browser-globals(浏览器全局变量)
+        - <a href="https://github.com/facebook/create-react-app/tree/main/packages/confusing-browser-globals" target="_blank noopener noreferrer">facebook/create-react-app/tree/main/packages/confusing-browser-globals</a>
+      - eslint-config-galex(flat config复杂实现实例)
+        - <a href="https://github.com/ljosberinn/eslint-config-galex" target="_blank noopener noreferrer">ljosberinn/eslint-config-galex</a>
+    - eslint-formatter系列
+      - eslint-formatter-pretty(更好看的打印)
+        - <a href="https://github.com/sindresorhus/eslint-formatter-pretty" target="_blank noopener noreferrer">sindresorhus/eslint-formatter-pretty</a>
+      - eslint-formatters(eslint v9移除的格式化功能包)
+        - <a href="https://github.com/fregante/eslint-formatters" target="_blank noopener noreferrer">fregante/eslint-formatters</a>
+    - js-beautify(格式化脚本工具)
+      - <a href="https://github.com/beautify-web/js-beautify" target="_blank noopener noreferrer">beautify-web/js-beautify</a>
+  - file-saver(保存文件)
+    - <a href="https://github.com/eligrey/FileSaver.js" target="_blank noopener noreferrer">eligrey/FileSaver.js</a>
+  - skeleton(骨架屏)
+    - page-skeleton-webpack-plugin(饿了么骨架屏生成)
+      - <a href="https://github.com/ElemeFE/page-skeleton-webpack-plugin" target="_blank noopener noreferrer">ElemeFE/page-skeleton-webpack-plugin</a>
+    - dps(骨架屏生成)
+      - <a href="https://github.com/famanoder/dps" target="_blank noopener noreferrer">famanoder/dps</a>
+    - prerender-spa-plugin(pp预渲染插件/陈旧)
+      - <a href="https://github.com/chrisvfritz/prerender-spa-plugin" target="_blank noopener noreferrer">chrisvfritz/prerender-spa-plugin</a>
+    - awesome-skeleton(骨架屏生成/pup/陈旧)
+      - <a href="https://github.com/kaola-fed/awesome-skeleton" target="_blank noopener noreferrer">kaola-fed/awesome-skeleton</a>
+  - micro微前端
+    - icestark
+      - <a href="https://micro-frontends.ice.work/" target="_blank noopener noreferrer">micro-frontends.ice.work</a>
+      - <a href="https://github.com/ice-lab/icestark" target="_blank noopener noreferrer">ice-lab/icestark</a>
+    - emp(基于wp5 mf实现的)
+      - <a href="https://github.com/efoxTeam/emp" target="_blank noopener noreferrer">efoxTeam/emp</a>
+    - repluggable(冷)
+      - <a href="https://github.com/wix/repluggable" target="_blank noopener noreferrer">wix/repluggable</a>
+    - micro-app(京东)
+      - <a href="https://github.com/micro-zoe/micro-app" target="_blank noopener noreferrer">micro-zoe/micro-app</a>
+    - garfish
+      - <a href="https://github.com/modern-js-dev/garfish" target="_blank noopener noreferrer">modern-js-dev/garfish</a>
+    - satumjs(平头哥团队)
+      - <a href="https://github.com/satumjs" target="_blank noopener noreferrer">satumjs</a>
+    - alibabacloud-alfa(阿里云)
+      - <a href="https://github.com/aliyun/alibabacloud-alfa" target="_blank noopener noreferrer">aliyun/alibabacloud-alfa</a>
+    - wujie(腾讯/冷门)
+      - <a href="https://github.com/Tencent/wujie" target="_blank noopener noreferrer">Tencent/wujie</a>
+    - lingjie(携程)
+      - <a href="https://github.com/lingjie-js/lingjie" target="_blank noopener noreferrer">lingjie-js/lingjie</a>
+    - qiankun系列
+      - qiankun
+        - <a href="https://github.com/umijs/qiankun" target="_blank noopener noreferrer">umijs/qiankun</a>
+      - vite混用
+        - vite-plugin-legacy-qiankun
+          - <a href="https://github.com/lishaobos/vite-plugin-legacy-qiankun" target="_blank noopener noreferrer">lishaobos/vite-plugin-legacy-qiankun</a>
+        - vite-plugin-qiankun
+          - <a href="https://github.com/tengmaoqing/vite-plugin-qiankun" target="_blank noopener noreferrer">tengmaoqing/vite-plugin-qiankun</a>
+        - vite-qiankun-starter
+          - <a href="https://github.com/micro-fe-solution/vite-qiankun-starter" target="_blank noopener noreferrer">micro-fe-solution/vite-qiankun-starter</a>
+  - pdf/epub系列
+    - pdfmake(生成pdf)
+      - <a href="https://github.com/bpampuch/pdfmake" target="_blank noopener noreferrer">bpampuch/pdfmake</a>
+    - pdf.js
+      - <a href="https://github.com/mozilla/pdf.js" target="_blank noopener noreferrer">mozilla/pdf.js</a>
+    - svg2pdf.js
+      - <a href="https://github.com/yWorks/svg2pdf.js" target="_blank noopener noreferrer">yWorks/svg2pdf.js</a>
+    - jsPDF(画pdf)
+      - <a href="https://github.com/parallax/jsPDF" target="_blank noopener noreferrer">parallax/jsPDF</a>
+    - pdfjs
+      - <a href="https://github.com/rkusa/pdfjs" target="_blank noopener noreferrer">rkusa/pdfjs</a>
+    - pdf-lib(创建/修改pdf)
+      - <a href="https://github.com/Hopding/pdf-lib" target="_blank noopener noreferrer">Hopding/pdf-lib</a>
+    - epub.js
+      - <a href="https://github.com/futurepress/epub.js" target="_blank noopener noreferrer">futurepress/epub.js</a>
+    - jscanify(文档图片扫描)
+      - <a href="https://github.com/ColonelParrot/jscanify" target="_blank noopener noreferrer">ColonelParrot/jscanify</a>
+    - pdf2htmlEX(pdf转html工具)
+      - <a href="https://github.com/pdf2htmlEX/pdf2htmlEX" target="_blank noopener noreferrer">pdf2htmlEX/pdf2htmlEX</a>
+  - type系列/类型编程
+    - utility-types
+      - <a href="https://github.com/piotrwitek/utility-types" target="_blank noopener noreferrer">piotrwitek/utility-types</a>
+    - type-fest
+      - <a href="https://github.com/sindresorhus/type-fest" target="_blank noopener noreferrer">sindresorhus/type-fest</a>
+    - ts-toolbelt
+      - <a href="https://github.com/millsp/ts-toolbelt" target="_blank noopener noreferrer">millsp/ts-toolbelt</a>
+    - typetype(生成type的编程语言)
+      - <a href="https://github.com/mistlog/typetype" target="_blank noopener noreferrer">mistlog/typetype</a>
+    - type-zoo(老)
+      - <a href="https://github.com/pelotom/type-zoo" target="_blank noopener noreferrer">pelotom/type-zoo</a>
+    - type-challenges(type体操题合集)
+      - <a href="https://github.com/type-challenges/type-challenges" target="_blank noopener noreferrer">type-challenges/type-challenges</a>
+    - SimplyTyped(老)
+      - <a href="https://github.com/andnp/SimplyTyped" target="_blank noopener noreferrer">andnp/SimplyTyped</a>
+    - froebel(新)
+      - <a href="https://github.com/MathisBullinger/froebel" target="_blank noopener noreferrer">MathisBullinger/froebel</a>
+    - nominal(防止两个类型混淆的工具)
+      - <a href="https://github.com/modfy/nominal" target="_blank noopener noreferrer">modfy/nominal</a>
+    - hotscript(大量lodash方法类型/冷门)
+      - <a href="https://github.com/gvergnaud/hotscript" target="_blank noopener noreferrer">gvergnaud/hotscript</a>
+    - ts-reset(优化不好用的默认类型)
+      - <a href="https://github.com/total-typescript/ts-reset" target="_blank noopener noreferrer">total-typescript/ts-reset</a>
+    - ts-result系列
+      - ts-results(result/ok/error包装实现)
+        - <a href="https://github.com/vultix/ts-results" target="_blank noopener noreferrer">vultix/ts-results</a>
+      - ts-async-results
+        - <a href="https://github.com/movesthatmatter/ts-async-results" target="_blank noopener noreferrer">movesthatmatter/ts-async-results</a>
+      - neverthrow
+        - <a href="https://github.com/supermacro/neverthrow" target="_blank noopener noreferrer">supermacro/neverthrow</a>
+      - pattycake(ts-pattern替代品/更快/冷门)
+        - <a href="https://github.com/aidenybai/pattycake" target="_blank noopener noreferrer">aidenybai/pattycake</a>
+    - typed-query-selector(更好类型提示的querySelector)
+      - <a href="https://github.com/g-plane/typed-query-selector" target="_blank noopener noreferrer">g-plane/typed-query-selector</a>
+    - detype(去除ts类型到js)
+      - <a href="https://github.com/cyco130/detype" target="_blank noopener noreferrer">cyco130/detype</a>
+    - ts-version(在类型中获取TS版本)
+      - <a href="https://github.com/phryneas/ts-version" target="_blank noopener noreferrer">phryneas/ts-version</a>
+    - string-ts(加强字符串方法类型提示)
+      - <a href="https://github.com/gustavoguichard/string-ts" target="_blank noopener noreferrer">gustavoguichard/string-ts</a>
+  - table表格
+    - gridjs
+      - <a href="https://github.com/grid-js/gridjs" target="_blank noopener noreferrer">grid-js/gridjs</a>
+    - ag-grid
+      - <a href="https://github.com/ag-grid/ag-grid" target="_blank noopener noreferrer">ag-grid/ag-grid</a>
+    - cheetah-grid(类excel可编辑表格)
+      - <a href="https://github.com/future-architect/cheetah-grid" target="_blank noopener noreferrer">future-architect/cheetah-grid</a>
+    - sortable(原生表格排序工具/冷门)
+      - <a href="https://github.com/tofsjonas/sortable" target="_blank noopener noreferrer">tofsjonas/sortable</a>
+    - tui.grid
+      - <a href="https://github.com/nhn/tui.grid" target="_blank noopener noreferrer">nhn/tui.grid</a>
+  - 跨页面通信
+    - postmate(postMessage库)
+      - <a href="https://github.com/dollarshaveclub/postmate" target="_blank noopener noreferrer">dollarshaveclub/postmate</a>
+    - broadcast-channel
+      - <a href="https://github.com/pubkey/broadcast-channel" target="_blank noopener noreferrer">pubkey/broadcast-channel</a>
+    - sysend.js
+      - <a href="https://github.com/jcubic/sysend.js" target="_blank noopener noreferrer">jcubic/sysend.js</a>
+  - polyfill库
+    - Modernizr(检测浏览器支持性)
+      - <a href="https://github.com/Modernizr/Modernizr" target="_blank noopener noreferrer">Modernizr/Modernizr</a>
+    - css-polyfill系列
+      - flex-gap-polyfill
+        - <a href="https://github.com/limitlessloop/flex-gap-polyfill" target="_blank noopener noreferrer">limitlessloop/flex-gap-polyfill</a>
+      - css-vars-polyfill(theme方案/动态css-var)
+        - <a href="https://github.com/jhildenbiddle/css-vars-ponyfill" target="_blank noopener noreferrer">jhildenbiddle/css-vars-ponyfill</a>
+      - spanning-css-polyfill(多屏css媒体兼容库)
+        - <a href="https://github.com/foldable-devices/spanning-css-polyfill" target="_blank noopener noreferrer">foldable-devices/spanning-css-polyfill</a>
+      - Respond(css3媒体查询min-width垫片)
+        - <a href="https://github.com/scottjehl/Respond" target="_blank noopener noreferrer">scottjehl/Respond</a>
+      - container-query-polyfill(容器查询polyfill)
+        - <a href="https://github.com/GoogleChromeLabs/container-query-polyfill" target="_blank noopener noreferrer">GoogleChromeLabs/container-query-polyfill</a>
+      - css-toggles(toggle css特性polyfill/试验)
+        - <a href="https://github.com/oddbird/css-toggles" target="_blank noopener noreferrer">oddbird/css-toggles</a>
+      - inert(css inert polyfill)
+        - <a href="https://github.com/WICG/inert" target="_blank noopener noreferrer">WICG/inert</a>
+    - 特性polyfill系列
+      - proxy-polyfill
+        - <a href="https://github.com/GoogleChrome/proxy-polyfill" target="_blank noopener noreferrer">GoogleChrome/proxy-polyfill</a>
+      - @js-temporal/polyfill(temporal的polyfill)
+        - <a href="https://github.com/js-temporal/temporal-polyfill" target="_blank noopener noreferrer">js-temporal/temporal-polyfill</a>
+      - raf(RAF polyfill)
+        - <a href="https://github.com/chrisdickinson/raf" target="_blank noopener noreferrer">chrisdickinson/raf</a>
+      - resize-observer
+        - <a href="https://github.com/juggle/resize-observer" target="_blank noopener noreferrer">juggle/resize-observer</a>
+      - resize-obserber-polyfill
+        - <a href="https://github.com/que-etc/resize-observer-polyfill" target="_blank noopener noreferrer">que-etc/resize-observer-polyfill</a>
+      - sd-streams(ReadableStream polyfill)
+        - <a href="https://github.com/stardazed/sd-streams" target="_blank noopener noreferrer">stardazed/sd-streams</a>
+      - web-animations-js(animete api填充)
+        - <a href="https://github.com/web-animations/web-animations-js" target="_blank noopener noreferrer">web-animations/web-animations-js</a>
+      - scrollyfills(scrollend polyfill)
+        - <a href="https://github.com/argyleink/scrollyfills" target="_blank noopener noreferrer">argyleink/scrollyfills</a>
+      - fetch polyfill系列
+        - fetch(window.fetch polyfill)
+          - <a href="https://github.com/github/fetch" target="_blank noopener noreferrer">github/fetch</a>
+        - unfetch
+          - <a href="https://github.com/developit/unfetch" target="_blank noopener noreferrer">developit/unfetch</a>
+      - scroll-timeline
+        - <a href="https://github.com/flackr/scroll-timeline" target="_blank noopener noreferrer">flackr/scroll-timeline</a>
+      - shadowrealms-polyfill(shadowrealms补丁)
+        - <a href="https://github.com/leobalter/shadowrealms-polyfill" target="_blank noopener noreferrer">leobalter/shadowrealms-polyfill</a>
+      - record-tuple-polyfill
+        - <a href="https://github.com/bloomberg/record-tuple-polyfill" target="_blank noopener noreferrer">bloomberg/record-tuple-polyfill</a>
+      - globalThis
+        - <a href="https://github.com/es-shims/globalThis" target="_blank noopener noreferrer">es-shims/globalThis</a>
+      - es6-proxy-polyfill
+        - <a href="https://github.com/ambit-tsai/es6-proxy-polyfill" target="_blank noopener noreferrer">ambit-tsai/es6-proxy-polyfill</a>
+      - custom-event-polyfill(兼容ie)
+        - <a href="https://github.com/kumarharsh/custom-event-polyfill" target="_blank noopener noreferrer">kumarharsh/custom-event-polyfill</a>
+      - polywasm(wasm polyfill)
+        - <a href="https://github.com/evanw/polywasm" target="_blank noopener noreferrer">evanw/polywasm</a>
+      - mutation-events-polyfill(节点突变polyfill)
+        - <a href="https://github.com/mfreed7/mutation-events-polyfill" target="_blank noopener noreferrer">mfreed7/mutation-events-polyfill</a>
+      - seamless-scroll-polyfill(scrollIntoView polyfill)
+        - <a href="https://github.com/magic-akari/seamless-scroll-polyfill" target="_blank noopener noreferrer">magic-akari/seamless-scroll-polyfill</a>
+      - typedarray
+        - <a href="https://github.com/es-shims/typedarray" target="_blank noopener noreferrer">es-shims/typedarray</a>
+      - iterator-helpers
+        - <a href="https://github.com/es-shims/iterator-helpers" target="_blank noopener noreferrer">es-shims/iterator-helpers</a>
+      - requestidlecallback-polyfill
+        - <a href="https://github.com/pladaria/requestidlecallback-polyfill" target="_blank noopener noreferrer">pladaria/requestidlecallback-polyfill</a>
+    - es polyfill系列
+      - es-abstract(es规范抽象操作)
+        - <a href="https://github.com/ljharb/es-abstract" target="_blank noopener noreferrer">ljharb/es-abstract</a>
+      - es6-shim(es6垫片)
+        - <a href="https://github.com/paulmillr/es6-shim" target="_blank noopener noreferrer">paulmillr/es6-shim</a>
+      - core-js系列
+        - core-js
+          - <a href="https://github.com/zloirock/core-js" target="_blank noopener noreferrer">zloirock/core-js</a>
+        - core-js-builder
+          - <a href="https://github.com/zloirock/core-js/tree/master/packages/core-js-builder" target="_blank noopener noreferrer">zloirock/core-js/tree/master/packages/core-js-builder</a>
+        - core-js-compat
+          - <a href="https://github.com/zloirock/core-js/tree/master/packages/core-js-compat" target="_blank noopener noreferrer">zloirock/core-js/tree/master/packages/core-js-compat</a>
+      - proposal-symbol-predicates实现(stage1)
+        - is-well-known-symbol
+          - <a href="https://github.com/inspect-js/is-well-known-symbol" target="_blank noopener noreferrer">inspect-js/is-well-known-symbol</a>
+        - is-registered-symbol
+          - <a href="https://github.com/inspect-js/is-registered-symbol" target="_blank noopener noreferrer">inspect-js/is-registered-symbol</a>
+      - es5-shim
+        - <a href="https://github.com/es-shims/es5-shim" target="_blank noopener noreferrer">es-shims/es5-shim</a>
+    - polyfill服务
+      - polyfill.io(低版本可选兼容)
+        - <a href="https://polyfill.io/v3/url-builder/" target="_blank noopener noreferrer">polyfill.io</a>
+        - server(自建服务)
+          - <a href="https://github.com/Financial-Times/polyfill-service" target="_blank noopener noreferrer">Financial-Times/polyfill-service</a>
+        - aliyun-cdn落地
+          - <a href="http://polyfill.alicdn.com/polyfill.min.js" target="_blank noopener noreferrer">polyfill.alicdn.com</a>
+    - html polyfill系列
+      - webcomponents-polyfills
+        - <a href="https://github.com/webcomponents/polyfills" target="_blank noopener noreferrer">webcomponents/polyfills</a>
+      - details-element-polyfill(&lt;details /&gt;标签补丁)
+        - <a href="https://github.com/javan/details-element-polyfill" target="_blank noopener noreferrer">javan/details-element-polyfill</a>
+      - html5shiv(在ie中开启html5)
+        - <a href="https://github.com/aFarkas/html5shiv" target="_blank noopener noreferrer">aFarkas/html5shiv</a>
+    - avif.js(avif polyfill)
+      - <a href="https://github.com/Kagami/avif.js" target="_blank noopener noreferrer">Kagami/avif.js</a>
+    - whatwg-node(一些node特性polyfill)
+      - <a href="https://github.com/ardatan/whatwg-node" target="_blank noopener noreferrer">ardatan/whatwg-node</a>
+  - ribbon.js(网页一条丝带)
+    - <a href="https://github.com/hustcc/ribbon.js" target="_blank noopener noreferrer">hustcc/ribbon.js</a>
+  - webpack系列
+    - webpack-dashboard(webpack打包时运行面板)
+      - <a href="https://github.com/FormidableLabs/webpack-dashboard" target="_blank noopener noreferrer">FormidableLabs/webpack-dashboard</a>
+    - mini-svg-data-uri(svg使用uri缩小编码)
+      - <a href="https://github.com/tigt/mini-svg-data-uri" target="_blank noopener noreferrer">tigt/mini-svg-data-uri</a>
+    - webpack-node-externals(方便排除node_modules作为externals)
+      - <a href="https://github.com/liady/webpack-node-externals" target="_blank noopener noreferrer">liady/webpack-node-externals</a>
+    - translate翻译支持系列
+      - translate-language-webpack-plugin
+        - <a href="https://github.com/ywymoshi/translate-language-webpack-plugin" target="_blank noopener noreferrer">ywymoshi/translate-language-webpack-plugin</a>
+      - language-tw-loader
+        - <a href="https://github.com/maoxiaoquan/language-tw-loader" target="_blank noopener noreferrer">maoxiaoquan/language-tw-loader</a>
+    - loader系列
+      - image-webpack-loader(链路上压缩图片)
+        - <a href="https://github.com/tcoopman/image-webpack-loader" target="_blank noopener noreferrer">tcoopman/image-webpack-loader</a>
+      - typings-for-css-modules-loader(自动生成 css module export type)
+        - <a href="https://github.com/TeamSupercell/typings-for-css-modules-loader" target="_blank noopener noreferrer">TeamSupercell/typings-for-css-modules-loader</a>
+      - expose-loader(将库导到全局挂载)
+        - <a href="https://github.com/webpack-contrib/expose-loader" target="_blank noopener noreferrer">webpack-contrib/expose-loader</a>
+      - style-loader
+        - <a href="https://github.com/webpack-contrib/style-loader" target="_blank noopener noreferrer">webpack-contrib/style-loader</a>
+      - isomorphic-style-loader(ssr的style-loader)
+        - <a href="https://github.com/kriasoft/isomorphic-style-loader" target="_blank noopener noreferrer">kriasoft/isomorphic-style-loader</a>
+      - source-map-loader(支持映射原代码文件)
+        - <a href="https://github.com/webpack-contrib/source-map-loader" target="_blank noopener noreferrer">webpack-contrib/source-map-loader</a>
+      - imports-loader(添加全局导入)
+        - <a href="https://github.com/webpack-contrib/imports-loader" target="_blank noopener noreferrer">webpack-contrib/imports-loader</a>
+      - ts-loader系列
+        - ts-loader
+          - <a href="https://github.com/TypeStrong/ts-loader" target="_blank noopener noreferrer">TypeStrong/ts-loader</a>
+        - react-refresh-transformer(ts-loader支持HMR)
+          - <a href="https://github.com/Jack-Works/react-refresh-transformer" target="_blank noopener noreferrer">Jack-Works/react-refresh-transformer</a>
+        - ts-import-plugin(babel-import-plugin的实现)
+          - <a href="https://github.com/ts-plugin/ts-import-plugin" target="_blank noopener noreferrer">ts-plugin/ts-import-plugin</a>
+    - plugin插件系列
+      - dotenv-webpack(defineplugin封装)
+        - <a href="https://github.com/mrsteele/dotenv-webpack" target="_blank noopener noreferrer">mrsteele/dotenv-webpack</a>
+      - fork-ts-checker-webpack-plugin(类型检查剥离插件)
+        - <a href="https://github.com/TypeStrong/fork-ts-checker-webpack-plugin" target="_blank noopener noreferrer">TypeStrong/fork-ts-checker-webpack-plugin</a>
+      - webpack-bundle-size-analyzer(webpaack打包产物来源大小分析)
+        - <a href="https://github.com/robertknight/webpack-bundle-size-analyzer" target="_blank noopener noreferrer">robertknight/webpack-bundle-size-analyzer</a>
+      - webpack-deadcode-plugin(扫描未使用的文件)
+        - <a href="https://github.com/MQuy/webpack-deadcode-plugin" target="_blank noopener noreferrer">MQuy/webpack-deadcode-plugin</a>
+      - inspectpack(检测重复依赖插件)
+        - <a href="https://github.com/FormidableLabs/inspectpack" target="_blank noopener noreferrer">FormidableLabs/inspectpack</a>
+      - webpack-obfuscator(代码混淆插件)
+        - <a href="https://github.com/javascript-obfuscator/webpack-obfuscator" target="_blank noopener noreferrer">javascript-obfuscator/webpack-obfuscator</a>
+      - webpack-spritesmith(聚合生成精灵图插件)
+        - <a href="https://github.com/mixtur/webpack-spritesmith" target="_blank noopener noreferrer">mixtur/webpack-spritesmith</a>
+      - speed-meature-webpack-plugin(计算速度)
+        - <a href="https://github.com/stephencookdev/speed-measure-webpack-plugin" target="_blank noopener noreferrer">stephencookdev/speed-measure-webpack-plugin</a>
+      - progress-bar-webpack-plugin(进度条)
+        - <a href="https://github.com/clessg/progress-bar-webpack-plugin" target="_blank noopener noreferrer">clessg/progress-bar-webpack-plugin</a>
+      - webpack-virtual-modules(虚拟动态模块)
+        - <a href="https://github.com/sysgears/webpack-virtual-modules" target="_blank noopener noreferrer">sysgears/webpack-virtual-modules</a>
+      - nodemon-webpack-plugin(搭配nodemon自动重启/开发server)
+        - <a href="https://github.com/Izhaki/nodemon-webpack-plugin" target="_blank noopener noreferrer">Izhaki/nodemon-webpack-plugin</a>
+      - webpack-shell-plugin-next(在webpack编译各个期间执行shell)
+        - <a href="https://github.com/s00d/webpack-shell-plugin-next" target="_blank noopener noreferrer">s00d/webpack-shell-plugin-next</a>
+      - sw-precache-webpack-plugin(自动生成sw.js对产物缓存)
+        - <a href="https://github.com/goldhand/sw-precache-webpack-plugin" target="_blank noopener noreferrer">goldhand/sw-precache-webpack-plugin</a>
+      - webpack-delete-sourcemaps-plugin(构建完删除source map/冷门)
+        - <a href="https://github.com/AlexBeauchemin/webpack-delete-sourcemaps-plugin" target="_blank noopener noreferrer">AlexBeauchemin/webpack-delete-sourcemaps-plugin</a>
+      - webpack-bundle-analyzer
+        - <a href="https://github.com/webpack-contrib/webpack-bundle-analyzer" target="_blank noopener noreferrer">webpack-contrib/webpack-bundle-analyzer</a>
+      - tsconfig-paths-webpack-plugin(根据tsconfig中的paths加载模块)
+        - <a href="https://github.com/dividab/tsconfig-paths-webpack-plugin" target="_blank noopener noreferrer">dividab/tsconfig-paths-webpack-plugin</a>
+      - purgecss-webpack-plugin(css tree shake)
+        - <a href="https://github.com/FullHuman/purgecss" target="_blank noopener noreferrer">FullHuman/purgecss</a>
+      - critters(内联关键css插件)
+        - <a href="https://github.com/GoogleChromeLabs/critters" target="_blank noopener noreferrer">GoogleChromeLabs/critters</a>
+      - webpack-stats-plugin(输出stats.json文件)
+        - <a href="https://github.com/FormidableLabs/webpack-stats-plugin" target="_blank noopener noreferrer">FormidableLabs/webpack-stats-plugin</a>
+      - html系列
+        - html-webpack-plugin
+          - <a href="https://github.com/jantimon/html-webpack-plugin" target="_blank noopener noreferrer">jantimon/html-webpack-plugin</a>
+        - html-inline-script-webpack-plugin(内联脚本)
+          - <a href="https://github.com/icelam/html-inline-script-webpack-plugin" target="_blank noopener noreferrer">icelam/html-inline-script-webpack-plugin</a>
+      - devtools-ignore-webpack-plugin(隐藏内部错误栈显示)
+        - <a href="https://github.com/mondaychen/devtools-ignore-webpack-plugin" target="_blank noopener noreferrer">mondaychen/devtools-ignore-webpack-plugin</a>
+      - html-bundler-webpack-plugin(html单入口打包/冷门)
+        - <a href="https://github.com/webdiscus/html-bundler-webpack-plugin" target="_blank noopener noreferrer">webdiscus/html-bundler-webpack-plugin</a>
+    - loader编写工具系列
+      - loader-utils
+        - <a href="https://github.com/webpack/loader-utils" target="_blank noopener noreferrer">webpack/loader-utils</a>
+      - schema-utils
+        - <a href="https://github.com/webpack/schema-utils" target="_blank noopener noreferrer">webpack/schema-utils</a>
+    - MF系列
+      - module-federation-examples(模块联邦示例)
+        - <a href="https://github.com/module-federation/module-federation-examples" target="_blank noopener noreferrer">module-federation/module-federation-examples</a>
+      - module-federation/typescript(type生成支持)
+        - <a href="https://github.com/module-federation/typescript" target="_blank noopener noreferrer">module-federation/typescript</a>
+      - module-federation/node(node的模块联邦支持)
+        - <a href="https://github.com/module-federation/node" target="_blank noopener noreferrer">module-federation/node</a>
+      - hel(运行时无关的mf加载工具)
+        - <a href="https://github.com/tnfe/hel" target="_blank noopener noreferrer">tnfe/hel</a>
+      - universe(MF常用工具包/node mf等)
+        - <a href="https://github.com/module-federation/universe" target="_blank noopener noreferrer">module-federation/universe</a>
+      - @module-federation/fmr(热更新工具)
+        - <a href="https://www.npmjs.com/package/@module-federation/fmr" target="_blank noopener noreferrer">www.npmjs.com</a>
+      - federated-rsc(mf+RSC demo)
+        - <a href="https://github.com/jacob-ebey/federated-rsc" target="_blank noopener noreferrer">jacob-ebey/federated-rsc</a>
+      - @module-federation/enhanced(mf v1.5)
+        - <a href="https://www.npmjs.com/package/@module-federation/enhanced" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - statoscope(打包结果可视化分析)
+      - <a href="https://github.com/statoscope/statoscope" target="_blank noopener noreferrer">statoscope/statoscope</a>
+    - perfsee(打包结果分析)
+      - <a href="https://github.com/perfsee/perfsee" target="_blank noopener noreferrer">perfsee/perfsee</a>
+    - repo(本体)
+      - <a href="https://github.com/webpack/webpack" target="_blank noopener noreferrer">webpack/webpack</a>
+  - database(indexdb等)存储方案
+    - localForage
+      - <a href="https://github.com/localForage/localForage" target="_blank noopener noreferrer">localForage/localForage</a>
+    - lowdb(小型数据库)
+      - <a href="https://github.com/typicode/lowdb" target="_blank noopener noreferrer">typicode/lowdb</a>
+    - sql.js(浏览器indexdb存储)
+      - <a href="https://github.com/sql-js/sql.js" target="_blank noopener noreferrer">sql-js/sql.js</a>
+    - Dexie.js(indexdb包装顶层工具)
+      - <a href="https://github.com/dexie/Dexie.js" target="_blank noopener noreferrer">dexie/Dexie.js</a>
+    - rxdb(应用实时数据库)
+      - <a href="https://github.com/pubkey/rxdb" target="_blank noopener noreferrer">pubkey/rxdb</a>
+    - tinybase(一种结构化存储/数据库形式)
+      - <a href="https://github.com/tinyplex/tinybase" target="_blank noopener noreferrer">tinyplex/tinybase</a>
+    - js-sdsl(c++ STL规范的浏览器存储)
+      - <a href="https://github.com/ZLY201/js-sdsl" target="_blank noopener noreferrer">ZLY201/js-sdsl</a>
+    - lovefield(web app关系型数据库/陈旧)
+      - <a href="https://github.com/google/lovefield" target="_blank noopener noreferrer">google/lovefield</a>
+    - idb(promise的indexdb api)
+      - <a href="https://github.com/jakearchibald/idb" target="_blank noopener noreferrer">jakearchibald/idb</a>
+    - ImmortalDB(浏览器kv存储)
+      - <a href="https://github.com/gruns/ImmortalDB" target="_blank noopener noreferrer">gruns/ImmortalDB</a>
+    - LokiJS(内存数据库)
+      - <a href="https://github.com/techfort/LokiJS" target="_blank noopener noreferrer">techfort/LokiJS</a>
+    - 浏览器sql数据库系列
+      - PouchDB(浏览器数据库)
+        - <a href="https://github.com/pouchdb/pouchdb" target="_blank noopener noreferrer">pouchdb/pouchdb</a>
+      - alasql(浏览器sql数据库)
+        - <a href="https://github.com/AlaSQL/alasql" target="_blank noopener noreferrer">AlaSQL/alasql</a>
+      - alasql(浏览器sql数据库)
+        - <a href="https://github.com/alasql/alasql" target="_blank noopener noreferrer">alasql/alasql</a>
+  - web-worker系列
+    - alloy-worker通信框架
+      - <a href="https://github.com/AlloyTeam/alloy-worker" target="_blank noopener noreferrer">AlloyTeam/alloy-worker</a>
+    - worker-loader
+      - <a href="https://github.com/webpack-contrib/worker-loader" target="_blank noopener noreferrer">webpack-contrib/worker-loader</a>
+    - worker-plugin
+      - <a href="https://github.com/GoogleChromeLabs/worker-plugin" target="_blank noopener noreferrer">GoogleChromeLabs/worker-plugin</a>
+    - comlink
+      - <a href="https://github.com/GoogleChromeLabs/comlink" target="_blank noopener noreferrer">GoogleChromeLabs/comlink</a>
+    - workerize-loader(自动迁移函数到worker)
+      - <a href="https://github.com/developit/workerize-loader" target="_blank noopener noreferrer">developit/workerize-loader</a>
+    - workerize
+      - <a href="https://github.com/developit/workerize" target="_blank noopener noreferrer">developit/workerize</a>
+    - greenlet(将 async 函数移动到单独线程中)
+      - <a href="https://github.com/developit/greenlet" target="_blank noopener noreferrer">developit/greenlet</a>
+    - workly(将函数或类简单迁移到worker)
+      - <a href="https://github.com/pshihn/workly" target="_blank noopener noreferrer">pshihn/workly</a>
+    - threads.js(将密集型任务移动到node.js/worker)
+      - <a href="https://github.com/andywer/threads.js" target="_blank noopener noreferrer">andywer/threads.js</a>
+    - promise-worker(api封装promise化)
+      - <a href="https://github.com/nolanlawson/promise-worker" target="_blank noopener noreferrer">nolanlawson/promise-worker</a>
+    - partytown(将第三方库放至web worker运行)
+      - <a href="https://github.com/BuilderIO/partytown" target="_blank noopener noreferrer">BuilderIO/partytown</a>
+    - worker-dom(在worker中模拟dom)
+      - <a href="https://github.com/ampproject/worker-dom" target="_blank noopener noreferrer">ampproject/worker-dom</a>
+    - 实战项目系列
+      - Web-Worker(政采云一个demo)
+        - <a href="https://github.com/Pulset/Web-Worker" target="_blank noopener noreferrer">Pulset/Web-Worker</a>
+    - workerpool(将任务分配到worker pool中执行)
+      - <a href="https://github.com/josdejong/workerpool" target="_blank noopener noreferrer">josdejong/workerpool</a>
+    - wayne(sw中的路由库/类似express)
+      - <a href="https://github.com/jcubic/wayne" target="_blank noopener noreferrer">jcubic/wayne</a>
+    - typed-worker(worker类型安全工具/冷门)
+      - <a href="https://github.com/egoist/typed-worker" target="_blank noopener noreferrer">egoist/typed-worker</a>
+    - workbox-webpack-plugin(生成sw.js/pwa)
+      - <a href="https://github.com/GoogleChrome/workbox/tree/v6/packages/workbox-webpack-plugin" target="_blank noopener noreferrer">GoogleChrome/workbox/tree/v6/packages/workbox-webpack-plugin</a>
+    - run(代码移到worker运行/超冷)
+      - <a href="https://github.com/slashd-analytics/run" target="_blank noopener noreferrer">slashd-analytics/run</a>
+    - workbox
+      - <a href="https://github.com/googlechrome/workbox" target="_blank noopener noreferrer">googlechrome/workbox</a>
+    - concurrent.js(加载代码到worker/冷门)
+      - <a href="https://github.com/bitair-org/concurrent.js" target="_blank noopener noreferrer">bitair-org/concurrent.js</a>
+    - web-worker(node/browser一致的worker实现)
+      - <a href="https://github.com/developit/web-worker" target="_blank noopener noreferrer">developit/web-worker</a>
+  - 浏览器判断
+    - browser
+      - <a href="https://github.com/mumuy/browser" target="_blank noopener noreferrer">mumuy/browser</a>
+  - markdown系列
+    - turndown(html2md)
+      - <a href="https://github.com/mixmark-io/turndown" target="_blank noopener noreferrer">mixmark-io/turndown</a>
+    - html-to-md(html转md)
+      - <a href="https://github.com/stonehank/html-to-md" target="_blank noopener noreferrer">stonehank/html-to-md</a>
+    - showdown
+      - <a href="https://github.com/showdownjs/showdown" target="_blank noopener noreferrer">showdownjs/showdown</a>
+    - milkdown(md+插件式)
+      - <a href="https://github.com/Saul-Mirone/milkdown" target="_blank noopener noreferrer">Saul-Mirone/milkdown</a>
+    - markdown-it系列
+      - markdown-it(markdown解析库)
+        - <a href="https://github.com/markdown-it/markdown-it" target="_blank noopener noreferrer">markdown-it/markdown-it</a>
+      - markdown-it-chain(像webpack chain一样配置markdown-it)
+        - <a href="https://github.com/ULIVZ/markdown-it-chain" target="_blank noopener noreferrer">ULIVZ/markdown-it-chain</a>
+      - markwodn-it-container(自定义markdown fence围栏语法)
+        - <a href="https://github.com/markdown-it/markdown-it-container" target="_blank noopener noreferrer">markdown-it/markdown-it-container</a>
+      - markdown-it-anchor(顶部添加锚点)
+        - <a href="https://github.com/valeriangalliat/markdown-it-anchor" target="_blank noopener noreferrer">valeriangalliat/markdown-it-anchor</a>
+      - markdown-it-for-inline(简化插件编写)
+        - <a href="https://github.com/markdown-it/markdown-it-for-inline" target="_blank noopener noreferrer">markdown-it/markdown-it-for-inline</a>
+      - markdown-it-github-alerts(github风格tips块)
+        - <a href="https://github.com/antfu/markdown-it-github-alerts" target="_blank noopener noreferrer">antfu/markdown-it-github-alerts</a>
+    - mdx系列
+      - mdx
+        - <a href="https://github.com/mdx-js/mdx" target="_blank noopener noreferrer">mdx-js/mdx</a>
+      - codehike(增强mdx阅读体验)
+        - <a href="https://github.com/code-hike/codehike" target="_blank noopener noreferrer">code-hike/codehike</a>
+      - contentlayer(连接md与cms/生成可导入的产物)
+        - <a href="https://github.com/contentlayerdev/contentlayer" target="_blank noopener noreferrer">contentlayerdev/contentlayer</a>
+      - mdxjs-rs(rust mdx解析器)
+        - <a href="https://github.com/wooorm/mdxjs-rs" target="_blank noopener noreferrer">wooorm/mdxjs-rs</a>
+      - editor(在线mdx编辑器)
+        - <a href="https://github.com/mdx-editor/editor" target="_blank noopener noreferrer">mdx-editor/editor</a>
+      - mdx-bundler(mdx构建/渲染器)
+        - <a href="https://github.com/kentcdodds/mdx-bundler" target="_blank noopener noreferrer">kentcdodds/mdx-bundler</a>
+    - 底层工具基础
+      - rehype系列
+        - rehype(html处理器)
+          - <a href="https://github.com/rehypejs/rehype" target="_blank noopener noreferrer">rehypejs/rehype</a>
+        - rehype-pretty-code(代码高亮插件)
+          - <a href="https://github.com/atomiks/rehype-pretty-code" target="_blank noopener noreferrer">atomiks/rehype-pretty-code</a>
+        - rehype-slug(给标题添加id)
+          - <a href="https://github.com/rehypejs/rehype-slug" target="_blank noopener noreferrer">rehypejs/rehype-slug</a>
+        - rehype-autolink-headings(标题添加链接)
+          - <a href="https://github.com/rehypejs/rehype-autolink-headings" target="_blank noopener noreferrer">rehypejs/rehype-autolink-headings</a>
+        - rehype-prism-plus(代码块高亮)
+          - <a href="https://github.com/timlrx/rehype-prism-plus" target="_blank noopener noreferrer">timlrx/rehype-prism-plus</a>
+        - rehype-katex(支持katex)
+          - <a href="https://github.com/mattfeng/rehype-katex" target="_blank noopener noreferrer">mattfeng/rehype-katex</a>
+      - micromark(极简md转换库)
+        - <a href="https://github.com/micromark/micromark" target="_blank noopener noreferrer">micromark/micromark</a>
+      - unified系列
+        - unified
+          - <a href="https://github.com/unifiedjs/unified" target="_blank noopener noreferrer">unifiedjs/unified</a>
+        - unified-stream
+          - <a href="https://github.com/unifiedjs/unified-stream" target="_blank noopener noreferrer">unifiedjs/unified-stream</a>
+      - remark系列
+        - remark(md处理器)
+          - <a href="https://github.com/remarkjs/remark" target="_blank noopener noreferrer">remarkjs/remark</a>
+        - remark-gfm(支持表格/列表/删除线等)
+          - <a href="https://github.com/remarkjs/remark-gfm" target="_blank noopener noreferrer">remarkjs/remark-gfm</a>
+        - remark-math(支持数学公式)
+          - <a href="https://github.com/remarkjs/remark-math" target="_blank noopener noreferrer">remarkjs/remark-math</a>
+        - remark-external-links(链接全部外部化)
+          - <a href="https://github.com/remarkjs/remark-external-links" target="_blank noopener noreferrer">remarkjs/remark-external-links</a>
+        - remark-unwrap-images(删除图像周围的段落)
+          - <a href="https://github.com/remarkjs/remark-unwrap-images" target="_blank noopener noreferrer">remarkjs/remark-unwrap-images</a>
+        - unist-util-visit(节点遍历器)
+          - <a href="https://github.com/syntax-tree/unist-util-visit" target="_blank noopener noreferrer">syntax-tree/unist-util-visit</a>
+        - remark-shaku-code-annotate(error下划线)
+          - <a href="https://github.com/JSerZANP/shaku/tree/main/packages/remark-shaku-code-annotate" target="_blank noopener noreferrer">JSerZANP/shaku/tree/main/packages/remark-shaku-code-annotate</a>
+        - remark-frontmatter(解析frontmatter)
+          - <a href="https://github.com/remarkjs/remark-frontmatter" target="_blank noopener noreferrer">remarkjs/remark-frontmatter</a>
+        - remark-mdx-frontmatter
+          - <a href="https://github.com/remcohaszing/remark-mdx-frontmatter" target="_blank noopener noreferrer">remcohaszing/remark-mdx-frontmatter</a>
+        - shaku(更多高亮种类支持)
+          - <a href="https://github.com/JSerZANP/shaku" target="_blank noopener noreferrer">JSerZANP/shaku</a>
+    - 小众体系
+      - retext
+        - <a href="https://github.com/retextjs/retext" target="_blank noopener noreferrer">retextjs/retext</a>
+      - redot
+        - <a href="https://github.com/redotjs/redot" target="_blank noopener noreferrer">redotjs/redot</a>
+    - markmap(md转思维导图)
+      - <a href="https://github.com/gera2ld/markmap" target="_blank noopener noreferrer">gera2ld/markmap</a>
+    - doocs/md(仿wx)
+      - <a href="https://github.com/doocs/md" target="_blank noopener noreferrer">doocs/md</a>
+    - markdoc(类md语法变体/一处编写各种渲染)
+      - <a href="https://github.com/markdoc/markdoc" target="_blank noopener noreferrer">markdoc/markdoc</a>
+    - markdown-table(生成github风格的md语法)
+      - <a href="https://github.com/wooorm/markdown-table" target="_blank noopener noreferrer">wooorm/markdown-table</a>
+    - cherry-markdown(tx)
+      - <a href="https://github.com/Tencent/cherry-markdown" target="_blank noopener noreferrer">Tencent/cherry-markdown</a>
+    - Markdown-Tag(md web component即开即用/冷门)
+      - <a href="https://github.com/MarketingPipeline/Markdown-Tag" target="_blank noopener noreferrer">MarketingPipeline/Markdown-Tag</a>
+    - markdownlint(markdown lint)
+      - <a href="https://github.com/DavidAnson/markdownlint" target="_blank noopener noreferrer">DavidAnson/markdownlint</a>
+    - mdast-util-to-string(获取md语法渲染后的纯文本)
+      - <a href="https://github.com/syntax-tree/mdast-util-to-string" target="_blank noopener noreferrer">syntax-tree/mdast-util-to-string</a>
+    - frontmatter头解析系列
+      - gray-matter(解析yml markdown头)
+        - <a href="https://github.com/jonschlinkert/gray-matter" target="_blank noopener noreferrer">jonschlinkert/gray-matter</a>
+      - ultramatter(小于1kb的解析器/冷门)
+        - <a href="https://github.com/natemoo-re/ultramatter" target="_blank noopener noreferrer">natemoo-re/ultramatter</a>
+    - parse解析系列
+      - marked(markdown解析库)
+        - <a href="https://github.com/markedjs/marked" target="_blank noopener noreferrer">markedjs/marked</a>
+      - snarkdown(1kb的md解析器/过于简单)
+        - <a href="https://github.com/developit/snarkdown" target="_blank noopener noreferrer">developit/snarkdown</a>
+      - markdown-rs(rust md解析器)
+        - <a href="https://github.com/wooorm/markdown-rs" target="_blank noopener noreferrer">wooorm/markdown-rs</a>
+      - mdast系列
+        - mdast-util-from-markdown(解析ast)
+          - <a href="https://github.com/syntax-tree/mdast-util-from-markdown" target="_blank noopener noreferrer">syntax-tree/mdast-util-from-markdown</a>
+        - mdast-util-gfm(gfm解析插件)
+          - <a href="https://github.com/syntax-tree/mdast-util-gfm" target="_blank noopener noreferrer">syntax-tree/mdast-util-gfm</a>
+        - mdast-util-to-hast(转hast语法)
+          - <a href="https://github.com/syntax-tree/mdast-util-to-hast" target="_blank noopener noreferrer">syntax-tree/mdast-util-to-hast</a>
+        - hast-util-to-html(hast转html)
+          - <a href="https://github.com/syntax-tree/hast-util-to-html" target="_blank noopener noreferrer">syntax-tree/hast-util-to-html</a>
+        - micromark-extension-gfm(让gfm支持micromark特性)
+          - <a href="https://github.com/micromark/micromark-extension-gfm" target="_blank noopener noreferrer">micromark/micromark-extension-gfm</a>
+        - unist-util-select(遍历选择器selector)
+          - <a href="https://github.com/syntax-tree/unist-util-select" target="_blank noopener noreferrer">syntax-tree/unist-util-select</a>
+  - 流式数据编程
+    - cyclejs
+      - <a href="https://github.com/cyclejs/cyclejs" target="_blank noopener noreferrer">cyclejs/cyclejs</a>
+    - rxjs系列
+      - rxjs
+        - <a href="https://github.com/ReactiveX/rxjs" target="_blank noopener noreferrer">ReactiveX/rxjs</a>
+      - rxjs-hooks
+        - <a href="https://github.com/LeetCode-OpenSource/rxjs-hooks" target="_blank noopener noreferrer">LeetCode-OpenSource/rxjs-hooks</a>
+      - rxjs-spy(调试工具/陈旧)
+        - <a href="https://github.com/cartant/rxjs-spy" target="_blank noopener noreferrer">cartant/rxjs-spy</a>
+      - rxjs-devtools(spy devtools搭配/陈旧)
+        - <a href="https://github.com/ardoq/rxjs-devtools" target="_blank noopener noreferrer">ardoq/rxjs-devtools</a>
+    - lfi(流式处理数据/pipe/冷门)
+      - <a href="https://github.com/TomerAberbach/lfi" target="_blank noopener noreferrer">TomerAberbach/lfi</a>
+    - xstream(类似rxjs)
+      - <a href="https://github.com/staltz/xstream" target="_blank noopener noreferrer">staltz/xstream</a>
+  - docs文档系列
+    - api文档生成系列
+      - redoc
+        - <a href="https://github.com/Redocly/redoc" target="_blank noopener noreferrer">Redocly/redoc</a>
+      - swagger系列
+        - swagger-ui-dist
+          - <a href="https://github.com/swagger-api/swagger-ui" target="_blank noopener noreferrer">swagger-api/swagger-ui</a>
+        - swagger-ui-express
+          - <a href="https://github.com/scottie1984/swagger-ui-express" target="_blank noopener noreferrer">scottie1984/swagger-ui-express</a>
+    - docsify(api文档生成器)
+      - <a href="https://github.com/docsifyjs/docsify" target="_blank noopener noreferrer">docsifyjs/docsify</a>
+    - tsdoc
+      - <a href="https://github.com/microsoft/tsdoc" target="_blank noopener noreferrer">microsoft/tsdoc</a>
+    - storybook系列
+      - storybook
+        - <a href="https://github.com/storybookjs/storybook" target="_blank noopener noreferrer">storybookjs/storybook</a>
+      - storybook-react-i18next(i18n支持)
+        - <a href="https://github.com/stevensacks/storybook-react-i18next" target="_blank noopener noreferrer">stevensacks/storybook-react-i18next</a>
+      - loki(sb视觉回归工具)
+        - <a href="https://github.com/oblador/loki" target="_blank noopener noreferrer">oblador/loki</a>
+    - docs.page(零配置文档生成/需要依赖他的服务)
+      - <a href="https://github.com/invertase/docs.page" target="_blank noopener noreferrer">invertase/docs.page</a>
+    - awesome-static-generators(静态站点生成器大全)
+      - <a href="https://github.com/myles/awesome-static-generators" target="_blank noopener noreferrer">myles/awesome-static-generators</a>
+    - typedoc(ts项目的文档生成器)
+      - <a href="https://github.com/TypeStrong/typedoc" target="_blank noopener noreferrer">TypeStrong/typedoc</a>
+    - jsdoc系列
+      - jsdoc
+        - <a href="https://github.com/jsdoc/jsdoc" target="_blank noopener noreferrer">jsdoc/jsdoc</a>
+      - jsdoc-to-markdown
+        - <a href="https://github.com/jsdoc2md/jsdoc-to-markdown" target="_blank noopener noreferrer">jsdoc2md/jsdoc-to-markdown</a>
+    - 文档站方案系列
+      - docz(文档生成)
+        - <a href="https://github.com/doczjs/docz" target="_blank noopener noreferrer">doczjs/docz</a>
+      - slate(漂亮doc生成工具)
+        - <a href="https://github.com/slatedocs/slate" target="_blank noopener noreferrer">slatedocs/slate</a>
+      - eleventy(使用node的静态站点生成器)
+        - <a href="https://github.com/11ty/eleventy" target="_blank noopener noreferrer">11ty/eleventy</a>
+      - elderjs(专注seo的静态站点生成器)
+        - <a href="https://github.com/Elderjs/elderjs" target="_blank noopener noreferrer">Elderjs/elderjs</a>
+      - capri(静态站点生成器/island/超冷)
+        - <a href="https://github.com/capri-js/capri" target="_blank noopener noreferrer">capri-js/capri</a>
+      - mkdocs-material
+        - <a href="https://github.com/squidfunk/mkdocs-material" target="_blank noopener noreferrer">squidfunk/mkdocs-material</a>
+      - docusaurus系列
+        - docusaurus(fb的文档站工具)
+          - <a href="https://github.com/facebook/docusaurus" target="_blank noopener noreferrer">facebook/docusaurus</a>
+        - twoslash(代码type提示插件)
+          - <a href="https://github.com/shikijs/twoslash" target="_blank noopener noreferrer">shikijs/twoslash</a>
+      - quartz(md生成静态站点)
+        - <a href="https://github.com/jackyzha0/quartz" target="_blank noopener noreferrer">jackyzha0/quartz</a>
+  - page-lifecyle(页面生命周期监听器)
+    - <a href="https://github.com/GoogleChromeLabs/page-lifecycle" target="_blank noopener noreferrer">GoogleChromeLabs/page-lifecycle</a>
+  - mock系列
+    - rap2-delos(mock方案站点)
+      - <a href="https://github.com/thx/rap2-delos" target="_blank noopener noreferrer">thx/rap2-delos</a>
+    - json-server(mock方案)
+      - <a href="https://github.com/typicode/json-server" target="_blank noopener noreferrer">typicode/json-server</a>
+    - yapi
+      - <a href="https://github.com/YMFE/yapi" target="_blank noopener noreferrer">YMFE/yapi</a>
+    - faker(制造假数据)
+      - <a href="https://github.com/faker-js/faker" target="_blank noopener noreferrer">faker-js/faker</a>
+    - chinese-random-name(随机生成中文名)
+      - <a href="https://github.com/XadillaX/chinese-random-name" target="_blank noopener noreferrer">XadillaX/chinese-random-name</a>
+    - msw系列
+      - msw(mock库)
+        - <a href="https://github.com/mswjs/msw" target="_blank noopener noreferrer">mswjs/msw</a>
+      - @mswjs/data(创建假数据)
+        - <a href="https://github.com/mswjs/data" target="_blank noopener noreferrer">mswjs/data</a>
+    - service-mocker(超老)
+      - <a href="https://github.com/service-mocker/service-mocker" target="_blank noopener noreferrer">service-mocker/service-mocker</a>
+    - miragejs(mock服务器)
+      - <a href="https://github.com/miragejs/miragejs" target="_blank noopener noreferrer">miragejs/miragejs</a>
+    - test-data-bot(生成mock数据)
+      - <a href="https://github.com/jackfranklin/test-data-bot" target="_blank noopener noreferrer">jackfranklin/test-data-bot</a>
+  - posthtml(处理html工具)
+    - <a href="https://github.com/posthtml/posthtml" target="_blank noopener noreferrer">posthtml/posthtml</a>
+  - source-map系列
+    - vlq(source-map列号解码)
+      - <a href="https://github.com/Rich-Harris/vlq" target="_blank noopener noreferrer">Rich-Harris/vlq</a>
+    - source-map-visualization(可视化分析source-map)
+      - <a href="https://github.com/evanw/source-map-visualization" target="_blank noopener noreferrer">evanw/source-map-visualization</a>
+    - source-map-visualization(另一个可视化分析source-map)
+      - <a href="https://github.com/sokra/source-map-visualization" target="_blank noopener noreferrer">sokra/source-map-visualization</a>
+    - remapping(合并链路的source-map)
+      - <a href="https://github.com/ampproject/remapping" target="_blank noopener noreferrer">ampproject/remapping</a>
+    - merge-source-map(合并source-map)
+      - <a href="https://github.com/keik/merge-source-map" target="_blank noopener noreferrer">keik/merge-source-map</a>
+    - convert-souce-map(将内联source-map转为json)
+      - <a href="https://github.com/thlorenz/convert-source-map" target="_blank noopener noreferrer">thlorenz/convert-source-map</a>
+    - offset-sourcemap-lines(给source-map施加偏移量/附加注释等)
+      - <a href="https://github.com/twada/offset-sourcemap-lines" target="_blank noopener noreferrer">twada/offset-sourcemap-lines</a>
+    - source-map-support(使编译到js的语言获取source-map支持)
+      - <a href="https://github.com/evanw/node-source-map-support" target="_blank noopener noreferrer">evanw/node-source-map-support</a>
+    - trace-mapping(source-map无需wasm版/冷门)
+      - <a href="https://github.com/jridgewell/trace-mapping" target="_blank noopener noreferrer">jridgewell/trace-mapping</a>
+  - preprocess(预处理html条件编译库)
+    - <a href="https://github.com/jsoverson/preprocess" target="_blank noopener noreferrer">jsoverson/preprocess</a>
+  - 富文本编辑器
+    - wangEditor
+      - <a href="https://github.com/wangeditor-team/wangEditor" target="_blank noopener noreferrer">wangeditor-team/wangEditor</a>
+    - tinymce
+      - <a href="https://github.com/tinymce/tinymce" target="_blank noopener noreferrer">tinymce/tinymce</a>
+    - ueditor(baidu富文本/已存档)
+      - <a href="https://github.com/fex-team/ueditor" target="_blank noopener noreferrer">fex-team/ueditor</a>
+    - kindeditor(弱/已不怎么维护)
+      - <a href="https://github.com/kindsoft/kindeditor" target="_blank noopener noreferrer">kindsoft/kindeditor</a>
+    - simditor(老)
+      - <a href="https://github.com/mycolorway/simditor" target="_blank noopener noreferrer">mycolorway/simditor</a>
+    - summernote
+      - <a href="https://github.com/summernote/summernote" target="_blank noopener noreferrer">summernote/summernote</a>
+    - jodit
+      - <a href="https://github.com/xdan/jodit" target="_blank noopener noreferrer">xdan/jodit</a>
+    - editor.md
+      - <a href="https://github.com/pandao/editor.md" target="_blank noopener noreferrer">pandao/editor.md</a>
+    - prosemirror系列
+      - prosemirror-view
+        - <a href="https://github.com/ProseMirror/prosemirror-view" target="_blank noopener noreferrer">ProseMirror/prosemirror-view</a>
+      - prosemirror
+        - <a href="https://github.com/ProseMirror/prosemirror" target="_blank noopener noreferrer">ProseMirror/prosemirror</a>
+    - tiptap2
+      - <a href="https://github.com/ueberdosis/tiptap" target="_blank noopener noreferrer">ueberdosis/tiptap</a>
+    - syllepsis(冷)
+      - <a href="https://github.com/bytedance/syllepsis" target="_blank noopener noreferrer">bytedance/syllepsis</a>
+    - stylo
+      - <a href="https://github.com/papyrs/stylo" target="_blank noopener noreferrer">papyrs/stylo</a>
+    - ContentTools
+      - <a href="https://github.com/GetmeUK/ContentTools" target="_blank noopener noreferrer">GetmeUK/ContentTools</a>
+    - bytemd
+      - <a href="https://github.com/bytedance/bytemd" target="_blank noopener noreferrer">bytedance/bytemd</a>
+    - tui.editor
+      - <a href="https://github.com/nhn/tui.editor" target="_blank noopener noreferrer">nhn/tui.editor</a>
+    - easy-markdown-editor
+      - <a href="https://github.com/Ionaru/easy-markdown-editor" target="_blank noopener noreferrer">Ionaru/easy-markdown-editor</a>
+    - quill系列
+      - quill
+        - <a href="https://github.com/quilljs/quill" target="_blank noopener noreferrer">quilljs/quill</a>
+      - quill-better-table
+        - <a href="https://github.com/soccerloway/quill-better-table" target="_blank noopener noreferrer">soccerloway/quill-better-table</a>
+      - quill-delta-to-html(转delta数据)
+        - <a href="https://github.com/nozer/quill-delta-to-html" target="_blank noopener noreferrer">nozer/quill-delta-to-html</a>
+      - parchment(quill的dom概念)
+        - <a href="https://github.com/quilljs/parchment" target="_blank noopener noreferrer">quilljs/parchment</a>
+    - ckeditor5
+      - <a href="https://github.com/ckeditor/ckeditor5" target="_blank noopener noreferrer">ckeditor/ckeditor5</a>
+    - trix(所见即所得编辑器)
+      - <a href="https://github.com/basecamp/trix" target="_blank noopener noreferrer">basecamp/trix</a>
+    - editor.js(块式富文本编辑器)
+      - <a href="https://github.com/codex-team/editor.js" target="_blank noopener noreferrer">codex-team/editor.js</a>
+    - blocksuite(冷)
+      - <a href="https://github.com/toeverything/blocksuite" target="_blank noopener noreferrer">toeverything/blocksuite</a>
+    - megadraft
+      - <a href="https://github.com/globocom/megadraft" target="_blank noopener noreferrer">globocom/megadraft</a>
+    - canvas-editor(canvas实现的富文本编辑器)
+      - <a href="https://github.com/Hufe921/canvas-editor" target="_blank noopener noreferrer">Hufe921/canvas-editor</a>
+    - aieditor(支持ai生成/冷门)
+      - <a href="https://github.com/aieditor-team/aieditor" target="_blank noopener noreferrer">aieditor-team/aieditor</a>
+  - 前端展示系列/ppt
+    - reveal.js(html作为ppt演示框架)
+      - <a href="https://github.com/hakimel/reveal.js" target="_blank noopener noreferrer">hakimel/reveal.js</a>
+    - slidev(开发者向mk转幻灯片展示)
+      - <a href="https://github.com/slidevjs/slidev" target="_blank noopener noreferrer">slidevjs/slidev</a>
+    - remark(网页ppt展示工具)
+      - <a href="https://github.com/gnab/remark" target="_blank noopener noreferrer">gnab/remark</a>
+    - nodeppt
+      - <a href="https://github.com/ksky521/nodeppt" target="_blank noopener noreferrer">ksky521/nodeppt</a>
+    - WebSlides(ppt工具)
+      - <a href="https://github.com/webslides/WebSlides" target="_blank noopener noreferrer">webslides/WebSlides</a>
+    - PpteGenJS(ppt展示工具)
+      - <a href="https://github.com/gitbrent/PptxGenJS" target="_blank noopener noreferrer">gitbrent/PptxGenJS</a>
+    - reveal-md(使用reveal.js转换md文件)
+      - <a href="https://github.com/webpro/reveal-md" target="_blank noopener noreferrer">webpro/reveal-md</a>
+    - impress.js(老旧)
+      - <a href="https://github.com/impress/impress.js" target="_blank noopener noreferrer">impress/impress.js</a>
+    - spectacle(用react jsx来展示ppt)
+      - <a href="https://github.com/FormidableLabs/spectacle" target="_blank noopener noreferrer">FormidableLabs/spectacle</a>
+    - deckdeckgo(制作slider)
+      - <a href="https://github.com/deckgo/deckdeckgo" target="_blank noopener noreferrer">deckgo/deckdeckgo</a>
+  - muuri(容器方格任意拖拽库)
+    - <a href="https://github.com/haltu/muuri#getting-started" target="_blank noopener noreferrer">haltu/muuri#getting-started</a>
+  - headroom(下滚时隐藏导航的库)
+    - <a href="https://github.com/WickyNilliams/headroom.js" target="_blank noopener noreferrer">WickyNilliams/headroom.js</a>
+  - gif系列
+    - gif.js
+      - <a href="https://github.com/jnordberg/gif.js" target="_blank noopener noreferrer">jnordberg/gif.js</a>
+    - gifshot
+      - <a href="https://github.com/yahoo/gifshot" target="_blank noopener noreferrer">yahoo/gifshot</a>
+    - libgif
+      - <a href="https://github.com/kelyvin/libgif-js" target="_blank noopener noreferrer">kelyvin/libgif-js</a>
+    - gif-parser-web(冷/可解析数据)
+      - <a href="https://github.com/likaia/gif-parser-web" target="_blank noopener noreferrer">likaia/gif-parser-web</a>
+    - gifuct-js(gif解析器)
+      - <a href="https://github.com/matt-way/gifuct-js" target="_blank noopener noreferrer">matt-way/gifuct-js</a>
+  - search快速搜索库
+    - fusejs(模糊搜索)
+      - <a href="https://github.com/krisk/Fuse" target="_blank noopener noreferrer">krisk/Fuse</a>
+    - holmes(快速列表搜索隐藏)
+      - <a href="https://github.com/Haroenv/holmes" target="_blank noopener noreferrer">Haroenv/holmes</a>
+    - lunr.js
+      - <a href="https://github.com/olivernn/lunr.js" target="_blank noopener noreferrer">olivernn/lunr.js</a>
+    - liqe(根据对象的key搜索)
+      - <a href="https://github.com/gajus/liqe" target="_blank noopener noreferrer">gajus/liqe</a>
+    - fuzzysort(快速模糊搜索库)
+      - <a href="https://github.com/farzher/fuzzysort" target="_blank noopener noreferrer">farzher/fuzzysort</a>
+    - uFuzzy(模糊搜索)
+      - <a href="https://github.com/leeoniya/uFuzzy" target="_blank noopener noreferrer">leeoniya/uFuzzy</a>
+    - 全文搜索引擎系列
+      - flexsearch(全文搜索工具)
+        - <a href="https://github.com/nextapps-de/flexsearch" target="_blank noopener noreferrer">nextapps-de/flexsearch</a>
+      - lyra(全文搜索引擎)
+        - <a href="https://github.com/LyraSearch/lyra" target="_blank noopener noreferrer">LyraSearch/lyra</a>
+      - minisearch
+        - <a href="https://github.com/lucaong/minisearch" target="_blank noopener noreferrer">lucaong/minisearch</a>
+      - orama
+        - <a href="https://github.com/oramasearch/orama" target="_blank noopener noreferrer">oramasearch/orama</a>
+    - command-score(模糊字符串匹配库)
+      - <a href="https://github.com/superhuman/command-score" target="_blank noopener noreferrer">superhuman/command-score</a>
+  - postcss系列
+    - postcss-purgecss
+      - <a href="https://github.com/FullHuman/purgecss/tree/master/packages/postcss-purgecss" target="_blank noopener noreferrer">FullHuman/purgecss/tree/master/packages/postcss-purgecss</a>
+    - postcss-focus
+      - <a href="https://github.com/postcss/postcss-focus" target="_blank noopener noreferrer">postcss/postcss-focus</a>
+    - postcss-functions(css处理使用js)
+      - <a href="https://github.com/andyjansson/postcss-functions" target="_blank noopener noreferrer">andyjansson/postcss-functions</a>
+    - postcss-html(处理html中的css)
+      - <a href="https://github.com/gucong3000/postcss-html" target="_blank noopener noreferrer">gucong3000/postcss-html</a>
+    - postcss-selector-parser(选择器解析器)
+      - <a href="https://github.com/postcss/postcss-selector-parser" target="_blank noopener noreferrer">postcss/postcss-selector-parser</a>
+    - postcss-rs(postcss rust版重写)
+      - <a href="https://github.com/postcss-rs/postcss-rs" target="_blank noopener noreferrer">postcss-rs/postcss-rs</a>
+    - css-modules支持
+      - postcss-modules-scope(抽取class并exports)
+        - <a href="https://github.com/css-modules/postcss-modules-scope" target="_blank noopener noreferrer">css-modules/postcss-modules-scope</a>
+    - postcss-media-minmax(更易懂的media query写法转换)
+      - <a href="https://github.com/postcss/postcss-media-minmax" target="_blank noopener noreferrer">postcss/postcss-media-minmax</a>
+    - postcss-custom-media(自定义media语法)
+      - <a href="https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-custom-media" target="_blank noopener noreferrer">csstools/postcss-plugins/tree/main/plugins/postcss-custom-media</a>
+    - nested支持
+      - postcss-nested
+        - <a href="https://github.com/postcss/postcss-nested" target="_blank noopener noreferrer">postcss/postcss-nested</a>
+      - postcss-nesting(新仓库)
+        - <a href="https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting" target="_blank noopener noreferrer">csstools/postcss-plugins/tree/main/plugins/postcss-nesting</a>
+    - postcss-prefix-selector(给全部样式添加前缀选择器)
+      - <a href="https://github.com/RadValentin/postcss-prefix-selector" target="_blank noopener noreferrer">RadValentin/postcss-prefix-selector</a>
+    - postcss-csso(使用csso压缩css)
+      - <a href="https://github.com/lahmatiy/postcss-csso" target="_blank noopener noreferrer">lahmatiy/postcss-csso</a>
+    - @csstools/postcss-cascade-layers(cascade级联层支持)
+      - <a href="https://www.npmjs.com/package/@csstools/postcss-cascade-layers" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - import导入系列
+      - postcss-import(支持@import导入)
+        - <a href="https://github.com/postcss/postcss-import" target="_blank noopener noreferrer">postcss/postcss-import</a>
+      - postcss-import-url(支持url导入样式表)
+        - <a href="https://github.com/unlight/postcss-import-url" target="_blank noopener noreferrer">unlight/postcss-import-url</a>
+      - postcss-import-ext-glob(批量导入样式表)
+        - <a href="https://github.com/dimitrinicolas/postcss-import-ext-glob" target="_blank noopener noreferrer">dimitrinicolas/postcss-import-ext-glob</a>
+    - postcss-jit-props(提供全局css变量替换使用)
+      - <a href="https://github.com/GoogleChromeLabs/postcss-jit-props" target="_blank noopener noreferrer">GoogleChromeLabs/postcss-jit-props</a>
+    - postcss-100vh-fix(100vh更好的兼容)
+      - <a href="https://github.com/postcss/postcss-100vh-fix" target="_blank noopener noreferrer">postcss/postcss-100vh-fix</a>
+  - 操作回放
+    - TimeCat
+      - <a href="https://github.com/oct16/TimeCat" target="_blank noopener noreferrer">oct16/TimeCat</a>
+    - rrweb系列
+      - rrweb(回放操作)
+        - <a href="https://github.com/rrweb-io/rrweb" target="_blank noopener noreferrer">rrweb-io/rrweb</a>
+      - rrweb-snapshot
+        - <a href="https://github.com/rrweb-io/rrweb/tree/master/packages/rrweb-snapshot" target="_blank noopener noreferrer">rrweb-io/rrweb/tree/master/packages/rrweb-snapshot</a>
+      - rrweb-player
+        - <a href="https://github.com/rrweb-io/rrweb/tree/master/packages/rrweb-player" target="_blank noopener noreferrer">rrweb-io/rrweb/tree/master/packages/rrweb-player</a>
+  - sweetalert2(中央弹窗alert)
+    - <a href="https://github.com/sweetalert2/sweetalert2" target="_blank noopener noreferrer">sweetalert2/sweetalert2</a>
+  - hotkey系列
+    - hotkeys(键盘快捷键库)
+      - <a href="https://github.com/jaywcjlove/hotkeys" target="_blank noopener noreferrer">jaywcjlove/hotkeys</a>
+    - keyboardjs
+      - <a href="https://github.com/RobertWHurst/KeyboardJS" target="_blank noopener noreferrer">RobertWHurst/KeyboardJS</a>
+    - hotkey
+      - <a href="https://github.com/github/hotkey" target="_blank noopener noreferrer">github/hotkey</a>
+    - keymaster(老)
+      - <a href="https://github.com/madrobby/keymaster" target="_blank noopener noreferrer">madrobby/keymaster</a>
+    - tinykeys
+      - <a href="https://github.com/jamiebuilds/tinykeys" target="_blank noopener noreferrer">jamiebuilds/tinykeys</a>
+    - mousetrap(老)
+      - <a href="https://github.com/ccampbell/mousetrap" target="_blank noopener noreferrer">ccampbell/mousetrap</a>
+  - date时区/处理时间库
+    - fecha
+      - <a href="https://github.com/taylorhakes/fecha" target="_blank noopener noreferrer">taylorhakes/fecha</a>
+    - dayjs
+      - <a href="https://github.com/iamkun/dayjs" target="_blank noopener noreferrer">iamkun/dayjs</a>
+    - date-fns-tz(给date-fns添加intl)
+      - <a href="https://github.com/marnusw/date-fns-tz" target="_blank noopener noreferrer">marnusw/date-fns-tz</a>
+    - date-fns
+      - <a href="https://github.com/date-fns/date-fns" target="_blank noopener noreferrer">date-fns/date-fns</a>
+    - timezone(支持时区计算)
+      - <a href="https://github.com/bigeasy/timezone" target="_blank noopener noreferrer">bigeasy/timezone</a>
+    - luxon
+      - <a href="https://github.com/moment/luxon" target="_blank noopener noreferrer">moment/luxon</a>
+    - timeago.js(获取多少time之前)
+      - <a href="https://github.com/hustcc/timeago.js" target="_blank noopener noreferrer">hustcc/timeago.js</a>
+    - @vvo/tzdb(所有时区的信息IANA TZDB)
+      - <a href="https://github.com/vvo/tzdb" target="_blank noopener noreferrer">vvo/tzdb</a>
+    - spacetime(轻量时区库)
+      - <a href="https://github.com/spencermountain/spacetime" target="_blank noopener noreferrer">spencermountain/spacetime</a>
+    - timewave(更小的luxon/冷门)
+      - <a href="https://github.com/anywhichway/timewave" target="_blank noopener noreferrer">anywhichway/timewave</a>
+    - momentjs系列
+      - moment
+        - <a href="https://github.com/moment/moment" target="_blank noopener noreferrer">moment/moment</a>
+      - moment-timezone(moment地区时钟支持)
+        - <a href="https://github.com/moment/moment-timezone" target="_blank noopener noreferrer">moment/moment-timezone</a>
+      - eslint-plugin-you-dont-need-momentjs
+        - <a href="https://github.com/you-dont-need/You-Dont-Need-Momentjs" target="_blank noopener noreferrer">you-dont-need/You-Dont-Need-Momentjs</a>
+    - js-joda
+      - <a href="https://github.com/js-joda/js-joda" target="_blank noopener noreferrer">js-joda/js-joda</a>
+    - chrono(自然语言解析器)
+      - <a href="https://github.com/wanasit/chrono" target="_blank noopener noreferrer">wanasit/chrono</a>
+    - globalize(时间日期国际化库/陈旧)
+      - <a href="https://github.com/globalizejs/globalize" target="_blank noopener noreferrer">globalizejs/globalize</a>
+  - print-js(拉起浏览器打印功能)
+    - <a href="https://github.com/crabbly/Print.js" target="_blank noopener noreferrer">crabbly/Print.js</a>
+  - string字符串系列
+    - string-similarity(字符串相似度查询)
+      - <a href="https://github.com/aceakash/string-similarity" target="_blank noopener noreferrer">aceakash/string-similarity</a>
+    - string.js(操作字符串/陈旧)
+      - <a href="https://github.com/jprichardson/string.js" target="_blank noopener noreferrer">jprichardson/string.js</a>
+    - voca(字符串操作库)
+      - <a href="https://github.com/panzerdp/voca" target="_blank noopener noreferrer">panzerdp/voca</a>
+    - anchorme.js(扫描字符串给链接附加a标签)
+      - <a href="https://github.com/alexcorvi/anchorme.js" target="_blank noopener noreferrer">alexcorvi/anchorme.js</a>
+    - stringz(unicode感知字符串填补限制库)
+      - <a href="https://github.com/sallar/stringz" target="_blank noopener noreferrer">sallar/stringz</a>
+    - underscore.string(字符串操作库大全)
+      - <a href="https://github.com/esamattis/underscore.string" target="_blank noopener noreferrer">esamattis/underscore.string</a>
+    - magic-string-extra(magic-string升级版)
+      - <a href="https://github.com/antfu/magic-string-extra" target="_blank noopener noreferrer">antfu/magic-string-extra</a>
+    - string-left-right(查找给定索引左右非空字符)
+      - <a href="https://github.com/codsen/codsen/tree/main/packages/string-left-right" target="_blank noopener noreferrer">codsen/codsen/tree/main/packages/string-left-right</a>
+    - magic-string系列
+      - magic-string(操作字符串ast)
+        - <a href="https://github.com/Rich-Harris/magic-string" target="_blank noopener noreferrer">Rich-Harris/magic-string</a>
+      - magic-string-rs
+        - <a href="https://github.com/h-a-n-a/magic-string-rs" target="_blank noopener noreferrer">h-a-n-a/magic-string-rs</a>
+  - browser-fs-access(浏览器filesystem api操作文件)
+    - <a href="https://github.com/GoogleChromeLabs/browser-fs-access" target="_blank noopener noreferrer">GoogleChromeLabs/browser-fs-access</a>
+  - 状态机系列
+    - xstate
+      - <a href="https://github.com/statelyai/xstate" target="_blank noopener noreferrer">statelyai/xstate</a>
+    - javascript-state-machine
+      - <a href="https://github.com/jakesgordon/javascript-state-machine" target="_blank noopener noreferrer">jakesgordon/javascript-state-machine</a>
+    - zag(冷)
+      - <a href="https://github.com/chakra-ui/zag" target="_blank noopener noreferrer">chakra-ui/zag</a>
+  - carousel轮播图系列
+    - flickity(轮播图)
+      - <a href="https://github.com/metafizzy/flickity" target="_blank noopener noreferrer">metafizzy/flickity</a>
+    - splide(轻量轮播图)
+      - <a href="https://github.com/Splidejs/splide" target="_blank noopener noreferrer">Splidejs/splide</a>
+    - egjs-flicking
+      - <a href="https://github.com/naver/egjs-flicking" target="_blank noopener noreferrer">naver/egjs-flicking</a>
+    - embla-carousel(全框架适用的轮播图)
+      - <a href="https://github.com/davidjerleke/embla-carousel" target="_blank noopener noreferrer">davidjerleke/embla-carousel</a>
+    - glide(无依赖的轮播库)
+      - <a href="https://github.com/glidejs/glide" target="_blank noopener noreferrer">glidejs/glide</a>
+    - slider
+      - <a href="https://github.com/p-m-p/slider" target="_blank noopener noreferrer">p-m-p/slider</a>
+  - tooltip系列
+    - hint.css
+      - <a href="https://github.com/chinchang/hint.css" target="_blank noopener noreferrer">chinchang/hint.css</a>
+    - helipopper(popper的高级封装/tooltip)
+      - <a href="https://github.com/ngneat/helipopper" target="_blank noopener noreferrer">ngneat/helipopper</a>
+  - signature_pad(canvas签名库)
+    - <a href="https://github.com/szimek/signature_pad" target="_blank noopener noreferrer">szimek/signature_pad</a>
+  - html解析系列
+    - himalaya(html解析为json)
+      - <a href="https://github.com/andrejewski/himalaya" target="_blank noopener noreferrer">andrejewski/himalaya</a>
+    - html-parse-stringify(html解析库)
+      - <a href="https://github.com/HenrikJoreteg/html-parse-stringify" target="_blank noopener noreferrer">HenrikJoreteg/html-parse-stringify</a>
+    - htmlparser2
+      - <a href="https://github.com/fb55/htmlparser2" target="_blank noopener noreferrer">fb55/htmlparser2</a>
+    - node-html-parser
+      - <a href="https://github.com/taoqf/node-html-parser" target="_blank noopener noreferrer">taoqf/node-html-parser</a>
+    - parse5
+      - <a href="https://github.com/inikulin/parse5" target="_blank noopener noreferrer">inikulin/parse5</a>
+  - tagify(多tag组件)
+    - <a href="https://github.com/yairEO/tagify" target="_blank noopener noreferrer">yairEO/tagify</a>
+  - clipboard系列
+    - clipboard.js
+      - <a href="https://github.com/zenorocha/clipboard.js" target="_blank noopener noreferrer">zenorocha/clipboard.js</a>
+    - clipboard-copy(轻量)
+      - <a href="https://github.com/feross/clipboard-copy" target="_blank noopener noreferrer">feross/clipboard-copy</a>
+    - copy-image-clipboard(复制图片到剪贴板)
+      - <a href="https://github.com/LuanEdCosta/copy-image-clipboard" target="_blank noopener noreferrer">LuanEdCosta/copy-image-clipboard</a>
+    - clipboard-polyfill
+      - <a href="https://github.com/lgarron/clipboard-polyfill" target="_blank noopener noreferrer">lgarron/clipboard-polyfill</a>
+    - copy-text-to-clipboard
+      - <a href="https://github.com/sindresorhus/copy-text-to-clipboard" target="_blank noopener noreferrer">sindresorhus/copy-text-to-clipboard</a>
+  - event-bus总线系列
+    - mitt
+      - <a href="https://github.com/developit/mitt" target="_blank noopener noreferrer">developit/mitt</a>
+    - tiny-emitter
+      - <a href="https://github.com/scottcorgan/tiny-emitter" target="_blank noopener noreferrer">scottcorgan/tiny-emitter</a>
+    - @trutoo/event-bus(micro app用/冷门)
+      - <a href="https://github.com/trutoo/event-bus" target="_blank noopener noreferrer">trutoo/event-bus</a>
+    - emittery
+      - <a href="https://github.com/sindresorhus/emittery" target="_blank noopener noreferrer">sindresorhus/emittery</a>
+    - nanoevents
+      - <a href="https://github.com/ai/nanoevents" target="_blank noopener noreferrer">ai/nanoevents</a>
+    - eventemitter3
+      - <a href="https://github.com/primus/eventemitter3" target="_blank noopener noreferrer">primus/eventemitter3</a>
+  - trigger触发器系列
+    - floating-ui(已存档)
+      - <a href="https://github.com/atomiks/floating-ui" target="_blank noopener noreferrer">atomiks/floating-ui</a>
+    - tippyjs
+      - <a href="https://github.com/atomiks/tippyjs" target="_blank noopener noreferrer">atomiks/tippyjs</a>
+    - popper-core
+      - <a href="https://github.com/popperjs/popper-core" target="_blank noopener noreferrer">popperjs/popper-core</a>
+    - tether(tooltip定位引擎)
+      - <a href="https://github.com/shipshapecode/tether" target="_blank noopener noreferrer">shipshapecode/tether</a>
+    - floating-ui(浮动元素工具包)
+      - <a href="https://github.com/floating-ui/floating-ui" target="_blank noopener noreferrer">floating-ui/floating-ui</a>
+    - nanopop(popper简版)
+      - <a href="https://github.com/simonwep/nanopop" target="_blank noopener noreferrer">simonwep/nanopop</a>
+  - request请求系列
+    - umi-request
+      - <a href="https://github.com/umijs/umi-request" target="_blank noopener noreferrer">umijs/umi-request</a>
+    - fly(兼容小程序/RN等的请求库)
+      - <a href="https://github.com/wendux/fly" target="_blank noopener noreferrer">wendux/fly</a>
+    - superagent(ajax的优化版)
+      - <a href="https://github.com/ladjs/superagent" target="_blank noopener noreferrer">ladjs/superagent</a>
+    - apisauce(axios封装)
+      - <a href="https://github.com/infinitered/apisauce" target="_blank noopener noreferrer">infinitered/apisauce</a>
+    - ngify(类似angular http/冷门)
+      - <a href="https://github.com/ngify/ngify" target="_blank noopener noreferrer">ngify/ngify</a>
+    - redaxios(微型axios/功能不全)
+      - <a href="https://github.com/developit/redaxios" target="_blank noopener noreferrer">developit/redaxios</a>
+    - fetch系列
+      - isomorphic-fetch
+        - <a href="https://github.com/matthew-andrews/isomorphic-fetch" target="_blank noopener noreferrer">matthew-andrews/isomorphic-fetch</a>
+      - ky(tiny fetch)
+        - <a href="https://github.com/sindresorhus/ky" target="_blank noopener noreferrer">sindresorhus/ky</a>
+      - hyper-fetch(冷)
+        - <a href="https://github.com/BetterTyped/hyper-fetch" target="_blank noopener noreferrer">BetterTyped/hyper-fetch</a>
+      - ohmyfetch
+        - <a href="https://github.com/unjs/ohmyfetch" target="_blank noopener noreferrer">unjs/ohmyfetch</a>
+      - next-fetch
+        - <a href="https://github.com/vercel-labs/next-fetch" target="_blank noopener noreferrer">vercel-labs/next-fetch</a>
+      - wretch(fetch小包装)
+        - <a href="https://github.com/elbywan/wretch" target="_blank noopener noreferrer">elbywan/wretch</a>
+      - cross-fetch
+        - <a href="https://github.com/lquixada/cross-fetch" target="_blank noopener noreferrer">lquixada/cross-fetch</a>
+      - ofetch(unjs用的)
+        - <a href="https://github.com/unjs/ofetch" target="_blank noopener noreferrer">unjs/ofetch</a>
+    - axios系列
+      - axios
+        - <a href="https://github.com/axios/axios" target="_blank noopener noreferrer">axios/axios</a>
+      - axios-mock-adapter
+        - <a href="https://github.com/ctimmerm/axios-mock-adapter" target="_blank noopener noreferrer">ctimmerm/axios-mock-adapter</a>
+      - axios-cache-interceptor(缓存插件)
+        - <a href="https://github.com/arthurfiorette/axios-cache-interceptor" target="_blank noopener noreferrer">arthurfiorette/axios-cache-interceptor</a>
+      - axios-retry
+        - <a href="https://github.com/softonic/axios-retry" target="_blank noopener noreferrer">softonic/axios-retry</a>
+      - axios-cookiejar-support
+        - <a href="https://github.com/3846masa/axios-cookiejar-support" target="_blank noopener noreferrer">3846masa/axios-cookiejar-support</a>
+      - axios-token-manager(token管理/冷门)
+        - <a href="https://github.com/mickeypuri/axios-token-manager" target="_blank noopener noreferrer">mickeypuri/axios-token-manager</a>
+      - axios-ky-adapter(底层使用ky fetch api兼容器)
+        - <a href="https://github.com/Skayo/axios-ky-adapter" target="_blank noopener noreferrer">Skayo/axios-ky-adapter</a>
+      - axios-auth-refresh(自动刷新权限库)
+        - <a href="https://github.com/Flyrell/axios-auth-refresh" target="_blank noopener noreferrer">Flyrell/axios-auth-refresh</a>
+    - alova(冷)
+      - <a href="https://github.com/alovajs/alova" target="_blank noopener noreferrer">alovajs/alova</a>
+    - fetch-event-source(支持sse请求)
+      - <a href="https://github.com/Azure/fetch-event-source" target="_blank noopener noreferrer">Azure/fetch-event-source</a>
+  - guide用户引导系列
+    - intro.js(指南引导库)
+      - <a href="https://github.com/usablica/intro.js" target="_blank noopener noreferrer">usablica/intro.js</a>
+    - shepherd
+      - <a href="https://github.com/shepherd-pro/shepherd" target="_blank noopener noreferrer">shepherd-pro/shepherd</a>
+    - driver.js(用户引导)
+      - <a href="https://github.com/kamranahmedse/driver.js" target="_blank noopener noreferrer">kamranahmedse/driver.js</a>
+    - lusift(冷)
+      - <a href="https://github.com/lusift/lusift" target="_blank noopener noreferrer">lusift/lusift</a>
+  - css reset系列
+    - ress(css reset)
+      - <a href="https://github.com/filipelinhares/ress" target="_blank noopener noreferrer">filipelinhares/ress</a>
+    - modern-normalize
+      - <a href="https://github.com/sindresorhus/modern-normalize" target="_blank noopener noreferrer">sindresorhus/modern-normalize</a>
+    - reseter.css(结合了normalize和resetcss)
+      - <a href="https://github.com/resetercss/reseter.css" target="_blank noopener noreferrer">resetercss/reseter.css</a>
+    - normalize.css
+      - <a href="https://github.com/necolas/normalize.css" target="_blank noopener noreferrer">necolas/normalize.css</a>
+    - minireset.css
+      - <a href="https://github.com/jgthms/minireset.css" target="_blank noopener noreferrer">jgthms/minireset.css</a>
+    - modern-css-reset
+      - <a href="https://github.com/hankchizljaw/modern-css-reset" target="_blank noopener noreferrer">hankchizljaw/modern-css-reset</a>
+    - sanitize.css
+      - <a href="https://github.com/csstools/sanitize.css" target="_blank noopener noreferrer">csstools/sanitize.css</a>
+  - xss系列
+    - js-xss
+      - <a href="https://github.com/leizongmin/js-xss" target="_blank noopener noreferrer">leizongmin/js-xss</a>
+    - sanitize-html
+      - <a href="https://github.com/apostrophecms/sanitize-html" target="_blank noopener noreferrer">apostrophecms/sanitize-html</a>
+    - dompurify
+      - <a href="https://github.com/cure53/DOMPurify" target="_blank noopener noreferrer">cure53/DOMPurify</a>
+  - utils实用工具系列
+    - lodash
+      - <a href="https://github.com/lodash/lodash" target="_blank noopener noreferrer">lodash/lodash</a>
+    - zepto(简洁jquery)
+      - <a href="https://github.com/madrobby/zepto" target="_blank noopener noreferrer">madrobby/zepto</a>
+    - underscore
+      - <a href="https://github.com/jashkenas/underscore" target="_blank noopener noreferrer">jashkenas/underscore</a>
+    - ramda
+      - <a href="https://github.com/ramda/ramda" target="_blank noopener noreferrer">ramda/ramda</a>
+    - jquery
+      - <a href="https://github.com/jquery/jquery" target="_blank noopener noreferrer">jquery/jquery</a>
+    - just
+      - <a href="https://github.com/angus-c/just" target="_blank noopener noreferrer">angus-c/just</a>
+    - ts-belt(ts的fp风格工具库)
+      - <a href="https://github.com/mobily/ts-belt" target="_blank noopener noreferrer">mobily/ts-belt</a>
+    - umbrella(jquery竞品)
+      - <a href="https://github.com/franciscop/umbrella" target="_blank noopener noreferrer">franciscop/umbrella</a>
+    - collect.js(处理数组/对象的工具函数)
+      - <a href="https://github.com/ecrmnn/collect.js" target="_blank noopener noreferrer">ecrmnn/collect.js</a>
+    - remeda(类似lodash)
+      - <a href="https://github.com/remeda/remeda" target="_blank noopener noreferrer">remeda/remeda</a>
+    - radash
+      - <a href="https://github.com/rayepps/radash" target="_blank noopener noreferrer">rayepps/radash</a>
+  - qs系列
+    - querystringify
+      - <a href="https://github.com/unshiftio/querystringify" target="_blank noopener noreferrer">unshiftio/querystringify</a>
+    - query-string
+      - <a href="https://github.com/sindresorhus/query-string" target="_blank noopener noreferrer">sindresorhus/query-string</a>
+    - querystring
+      - <a href="https://github.com/Gozala/querystring" target="_blank noopener noreferrer">Gozala/querystring</a>
+    - qs
+      - <a href="https://github.com/ljharb/qs" target="_blank noopener noreferrer">ljharb/qs</a>
+  - query系列
+    - ufo(解析query等)
+      - <a href="https://github.com/unjs/ufo" target="_blank noopener noreferrer">unjs/ufo</a>
+  - rollup系列
+    - rollup-plugin-off-main-thread(使用worker)
+      - <a href="https://github.com/surma/rollup-plugin-off-main-thread" target="_blank noopener noreferrer">surma/rollup-plugin-off-main-thread</a>
+    - rollup-plugin-chrome-extension(帮助构建chrome ext的插件)
+      - <a href="https://github.com/extend-chrome/rollup-plugin-chrome-extension" target="_blank noopener noreferrer">extend-chrome/rollup-plugin-chrome-extension</a>
+    - rollup-plugin-esbuild(使用esbuild)
+      - <a href="https://github.com/egoist/rollup-plugin-esbuild" target="_blank noopener noreferrer">egoist/rollup-plugin-esbuild</a>
+    - rollup-plugin-external-globals(import转global变量)
+      - <a href="https://github.com/eight04/rollup-plugin-external-globals" target="_blank noopener noreferrer">eight04/rollup-plugin-external-globals</a>
+    - rollup-plugin-dts(生成.d.ts声明文件)
+      - <a href="https://github.com/Swatinem/rollup-plugin-dts" target="_blank noopener noreferrer">Swatinem/rollup-plugin-dts</a>
+    - rollup-plugin-styles(通用多样式打包支持插件)
+      - <a href="https://github.com/Anidetrix/rollup-plugin-styles" target="_blank noopener noreferrer">Anidetrix/rollup-plugin-styles</a>
+    - rollup-plugin-serve(启动一个静态服务)
+      - <a href="https://github.com/thgh/rollup-plugin-serve" target="_blank noopener noreferrer">thgh/rollup-plugin-serve</a>
+    - rollup-plugin-livereload(监听文件变化就刷新页面)
+      - <a href="https://github.com/thgh/rollup-plugin-livereload" target="_blank noopener noreferrer">thgh/rollup-plugin-livereload</a>
+    - rollup-plugin-polyfill-node(node polyfill)
+      - <a href="https://github.com/FredKSchott/rollup-plugin-polyfill-node" target="_blank noopener noreferrer">FredKSchott/rollup-plugin-polyfill-node</a>
+    - rollup
+      - <a href="https://github.com/rollup/rollup" target="_blank noopener noreferrer">rollup/rollup</a>
+    - rollup-plugin-vue(不维护了)
+      - <a href="https://github.com/vuejs/rollup-plugin-vue" target="_blank noopener noreferrer">vuejs/rollup-plugin-vue</a>
+    - rollup-plugin-pure(给函数添加纯函数注释)
+      - <a href="https://github.com/danielroe/rollup-plugin-pure" target="_blank noopener noreferrer">danielroe/rollup-plugin-pure</a>
+    - rollup-plugin-banner2(添加banner)
+      - <a href="https://github.com/stropho/rollup-plugin-banner2" target="_blank noopener noreferrer">stropho/rollup-plugin-banner2</a>
+    - rollup-preserve-directives(保持shebang)
+      - <a href="https://github.com/huozhi/rollup-preserve-directives" target="_blank noopener noreferrer">huozhi/rollup-preserve-directives</a>
+  - openseadragon(高分辨率图片查看器)
+    - <a href="https://github.com/openseadragon/openseadragon" target="_blank noopener noreferrer">openseadragon/openseadragon</a>
+  - 图片预览/放大系列
+    - drift(图片悬浮放大功能)
+      - <a href="https://github.com/imgix/drift" target="_blank noopener noreferrer">imgix/drift</a>
+    - luminous(图像灯箱/点击预览功能)
+      - <a href="https://github.com/imgix/luminous" target="_blank noopener noreferrer">imgix/luminous</a>
+    - viewerjs
+      - <a href="https://github.com/fengyuanchen/viewerjs" target="_blank noopener noreferrer">fengyuanchen/viewerjs</a>
+    - Parvus(无依赖的图片预览组件/冷门)
+      - <a href="https://github.com/deoostfrees/Parvus" target="_blank noopener noreferrer">deoostfrees/Parvus</a>
+    - medium-zoom(放大预览图片)
+      - <a href="https://github.com/francoischalifour/medium-zoom" target="_blank noopener noreferrer">francoischalifour/medium-zoom</a>
+    - lightGallery(画廊/点击可放大)
+      - <a href="https://github.com/sachinchoolur/lightGallery" target="_blank noopener noreferrer">sachinchoolur/lightGallery</a>
+    - PhotoSwipe(图像放大组件)
+      - <a href="https://github.com/dimsemenov/PhotoSwipe" target="_blank noopener noreferrer">dimsemenov/PhotoSwipe</a>
+  - i18n(框架无关)
+    - fbt
+      - <a href="https://github.com/facebook/fbt" target="_blank noopener noreferrer">facebook/fbt</a>
+    - i18next系列
+      - i18next
+        - <a href="https://github.com/i18next/i18next" target="_blank noopener noreferrer">i18next/i18next</a>
+      - i18next-browser-languageDetector(检测用户语言)
+        - <a href="https://github.com/i18next/i18next-browser-languageDetector" target="_blank noopener noreferrer">i18next/i18next-browser-languageDetector</a>
+      - i18next-http-backend(可搭配storybook)
+        - <a href="https://github.com/i18next/i18next-http-backend" target="_blank noopener noreferrer">i18next/i18next-http-backend</a>
+  - history(history路由)
+    - <a href="https://github.com/remix-run/history" target="_blank noopener noreferrer">remix-run/history</a>
+  - virtual-dom虚拟dom系列
+    - snabbdom(虚拟dom库)
+      - <a href="https://github.com/snabbdom/snabbdom" target="_blank noopener noreferrer">snabbdom/snabbdom</a>
+    - million(框架无关的虚拟dom)
+      - <a href="https://github.com/aidenybai/million" target="_blank noopener noreferrer">aidenybai/million</a>
+    - million-react(million底层的react+vite开发模板)
+      - <a href="https://github.com/aidenybai/million-react" target="_blank noopener noreferrer">aidenybai/million-react</a>
+    - dom节点快速变形系列
+      - morphdom(节点属性快速变形工具/非虚拟dom)
+        - <a href="https://github.com/patrick-steele-idem/morphdom" target="_blank noopener noreferrer">patrick-steele-idem/morphdom</a>
+      - idiomorph
+        - <a href="https://github.com/bigskysoftware/idiomorph" target="_blank noopener noreferrer">bigskysoftware/idiomorph</a>
+      - nanomorph
+        - <a href="https://github.com/choojs/nanomorph" target="_blank noopener noreferrer">choojs/nanomorph</a>
+    - maquette(轻量/冷门)
+      - <a href="https://github.com/AFASSoftware/maquette" target="_blank noopener noreferrer">AFASSoftware/maquette</a>
+  - design-tokens/system系列
+    - theo
+      - <a href="https://github.com/salesforce-ux/theo" target="_blank noopener noreferrer">salesforce-ux/theo</a>
+    - style-dictionary
+      - <a href="https://github.com/amzn/style-dictionary" target="_blank noopener noreferrer">amzn/style-dictionary</a>
+    - diez
+      - <a href="https://github.com/diez/diez" target="_blank noopener noreferrer">diez/diez</a>
+    - tokencss(css变量套餐/冷门)
+      - <a href="https://github.com/tokencss/tokencss" target="_blank noopener noreferrer">tokencss/tokencss</a>
+    - mirrorful(design system/生成色阶)
+      - <a href="https://github.com/Mirrorful/mirrorful" target="_blank noopener noreferrer">Mirrorful/mirrorful</a>
+  - color颜色系列
+    - grade(主要颜色提取)
+      - <a href="https://github.com/benhowdle89/grade" target="_blank noopener noreferrer">benhowdle89/grade</a>
+    - color(颜色处理转换库)
+      - <a href="https://github.com/Qix-/color" target="_blank noopener noreferrer">Qix-/color</a>
+    - color-thief(获取图片主色调)
+      - <a href="https://github.com/lokesh/color-thief" target="_blank noopener noreferrer">lokesh/color-thief</a>
+    - randomColor(随机颜色库)
+      - <a href="https://github.com/davidmerfield/randomColor" target="_blank noopener noreferrer">davidmerfield/randomColor</a>
+    - chroma.js(颜色转换库)
+      - <a href="https://github.com/gka/chroma.js" target="_blank noopener noreferrer">gka/chroma.js</a>
+    - TinyColor(颜色转换)
+      - <a href="https://github.com/bgrins/TinyColor" target="_blank noopener noreferrer">bgrins/TinyColor</a>
+    - nice-color-palettes(获取一组色调)
+      - <a href="https://github.com/Jam3/nice-color-palettes" target="_blank noopener noreferrer">Jam3/nice-color-palettes</a>
+    - color.js(颜色格式转换)
+      - <a href="https://github.com/LeaVerou/color.js" target="_blank noopener noreferrer">LeaVerou/color.js</a>
+    - colors(颜色系统/搭配stitches)
+      - <a href="https://github.com/radix-ui/colors" target="_blank noopener noreferrer">radix-ui/colors</a>
+    - colorgrad-js(计算渐变颜色库/rust)
+      - <a href="https://github.com/mazznoer/colorgrad-js" target="_blank noopener noreferrer">mazznoer/colorgrad-js</a>
+    - leonardo(生成梯度颜色/专业)
+      - <a href="https://github.com/adobe/leonardo" target="_blank noopener noreferrer">adobe/leonardo</a>
+    - one-color(颜色计算互转)
+      - <a href="https://github.com/One-com/one-color" target="_blank noopener noreferrer">One-com/one-color</a>
+    - colord(颜色转换/支持node)
+      - <a href="https://github.com/omgovich/colord" target="_blank noopener noreferrer">omgovich/colord</a>
+    - poline(神秘调色板配色生成)
+      - <a href="https://github.com/meodai/poline" target="_blank noopener noreferrer">meodai/poline</a>
+    - font-color-contrast(计算给定颜色对比度最高的字体颜色/黑白)
+      - <a href="https://github.com/russoedu/font-color-contrast" target="_blank noopener noreferrer">russoedu/font-color-contrast</a>
+    - polished(sc底层颜色调整工具函数)
+      - <a href="https://github.com/styled-components/polished" target="_blank noopener noreferrer">styled-components/polished</a>
+    - fast-average-color(计算图像平均主色调)
+      - <a href="https://github.com/fast-average-color/fast-average-color" target="_blank noopener noreferrer">fast-average-color/fast-average-color</a>
+    - color-sorter(按色谱排序颜色)
+      - <a href="https://github.com/projectwallace/color-sorter" target="_blank noopener noreferrer">projectwallace/color-sorter</a>
+    - swiftcarrot/color-fns(颜色转换函数)
+      - <a href="https://github.com/swiftcarrot/color-fns" target="_blank noopener noreferrer">swiftcarrot/color-fns</a>
+    - spectral.js(获取渐变色)
+      - <a href="https://github.com/rvanwijnen/spectral.js" target="_blank noopener noreferrer">rvanwijnen/spectral.js</a>
+    - culori(颜色工具函数)
+      - <a href="https://github.com/Evercoder/culori" target="_blank noopener noreferrer">Evercoder/culori</a>
+  - emoji系列
+    - twemoji
+      - <a href="https://twemoji.twitter.com/" target="_blank noopener noreferrer">twemoji.twitter.com</a>
+      - <a href="https://github.com/twitter/twemoji" target="_blank noopener noreferrer">twitter/twemoji</a>
+      - <a href="https://github.com/twitter/twemoji/blob/master/LEGACY.md" target="_blank noopener noreferrer">twitter/twemoji/blob/master/LEGACY.md</a>
+      - <a href="https://twitter.github.io/twemoji/" target="_blank noopener noreferrer">twitter.github.io</a>
+    - noto-emoji(google noto font)
+      - <a href="https://github.com/googlefonts/noto-emoji" target="_blank noopener noreferrer">googlefonts/noto-emoji</a>
+      - colrv1-fonts(google fonts使用方式)
+        - <a href="https://developer.chrome.com/blog/colrv1-fonts/" target="_blank noopener noreferrer">developer.chrome.com</a>
+    - emoji-button(emoji选择面板组件)
+      - <a href="https://github.com/joeattardi/emoji-button" target="_blank noopener noreferrer">joeattardi/emoji-button</a>
+    - is-emoji-supported(检测是否支持某个emoji/冷门)
+      - <a href="https://github.com/koala-interactive/is-emoji-supported" target="_blank noopener noreferrer">koala-interactive/is-emoji-supported</a>
+    - picmo(emoji选择器/全)
+      - <a href="https://github.com/joeattardi/picmo" target="_blank noopener noreferrer">joeattardi/picmo</a>
+    - fluentui-emoji(ms的3d emoji图标)
+      - <a href="https://github.com/microsoft/fluentui-emoji" target="_blank noopener noreferrer">microsoft/fluentui-emoji</a>
+    - emoji-picker-element(emoji选择器web component)
+      - <a href="https://github.com/nolanlawson/emoji-picker-element" target="_blank noopener noreferrer">nolanlawson/emoji-picker-element</a>
+  - home-template主页模板系列
+    - ant-design-landing
+      - <a href="https://github.com/ant-design/ant-design-landing" target="_blank noopener noreferrer">ant-design/ant-design-landing</a>
+    - Dopefolio(简单的主页模板)
+      - <a href="https://github.com/rammcodes/Dopefolio" target="_blank noopener noreferrer">rammcodes/Dopefolio</a>
+  - progress进度条系列
+    - progress(浏览器进度条)
+      - <a href="https://github.com/rstacruz/nprogress" target="_blank noopener noreferrer">rstacruz/nprogress</a>
+    - pace.js(ajax注入进度条)
+      - <a href="https://github.com/CodeByZach/pace" target="_blank noopener noreferrer">CodeByZach/pace</a>
+  - form表单系列
+    - jsonforms
+      - <a href="https://github.com/eclipsesource/jsonforms" target="_blank noopener noreferrer">eclipsesource/jsonforms</a>
+    - formio.js(json schema表单创建器)
+      - <a href="https://github.com/formio/formio.js" target="_blank noopener noreferrer">formio/formio.js</a>
+  - pluralize(转换单词复数/单数化)
+    - <a href="https://github.com/plurals/pluralize" target="_blank noopener noreferrer">plurals/pluralize</a>
+  - migrate代码迁移系列
+    - ts-migrate(js to ts)
+      - <a href="https://github.com/airbnb/ts-migrate" target="_blank noopener noreferrer">airbnb/ts-migrate</a>
+    - flow-to-ts
+      - <a href="https://github.com/Khan/flow-to-ts" target="_blank noopener noreferrer">Khan/flow-to-ts</a>
+  - screenshot截屏系列
+    - js-screen-shot(网页截屏库)
+      - <a href="https://github.com/likaia/js-screen-shot" target="_blank noopener noreferrer">likaia/js-screen-shot</a>
+    - screenshot(基于Media Api的截图库)
+      - <a href="https://github.com/xataio/screenshot" target="_blank noopener noreferrer">xataio/screenshot</a>
+    - feedbackplus(调用浏览器api截屏)
+      - <a href="https://github.com/ColonelParrot/feedbackplus" target="_blank noopener noreferrer">ColonelParrot/feedbackplus</a>
+  - base64/baseX系列
+    - js-base64
+      - <a href="https://github.com/dankogai/js-base64" target="_blank noopener noreferrer">dankogai/js-base64</a>
+    - base64-js
+      - <a href="https://github.com/beatgammit/base64-js" target="_blank noopener noreferrer">beatgammit/base64-js</a>
+    - Base64.js
+      - <a href="https://github.com/davidchambers/Base64.js" target="_blank noopener noreferrer">davidchambers/Base64.js</a>
+    - base2048
+      - <a href="https://github.com/qntm/base2048" target="_blank noopener noreferrer">qntm/base2048</a>
+  - systemjs/import-maps系列
+    - systemjs(过气esm动态模块加载库)
+      - <a href="https://github.com/systemjs/systemjs" target="_blank noopener noreferrer">systemjs/systemjs</a>
+    - jspm/generator(jsp帮助导入器)
+      - <a href="https://github.com/jspm/generator" target="_blank noopener noreferrer">jspm/generator</a>
+    - es-module-shims(es import-maps导入垫片)
+      - <a href="https://github.com/guybedford/es-module-shims" target="_blank noopener noreferrer">guybedford/es-module-shims</a>
+    - import-maps
+      - <a href="https://github.com/WICG/import-maps" target="_blank noopener noreferrer">WICG/import-maps</a>
+    - importly(自动生成imports-map的命令行/冷门)
+      - <a href="https://github.com/chase-moskal/importly" target="_blank noopener noreferrer">chase-moskal/importly</a>
+  - jsx转译系列
+    - sucrase
+      - <a href="https://github.com/alangpierce/sucrase" target="_blank noopener noreferrer">alangpierce/sucrase</a>
+    - @babel/standalone
+      - <a href="https://babeljs.io/docs/en/babel-standalone" target="_blank noopener noreferrer">babeljs.io</a>
+    - buble(老)
+      - <a href="https://github.com/bublejs/buble" target="_blank noopener noreferrer">bublejs/buble</a>
+  - exif图片元信息解析系列
+    - exif-js(获取照片exif信息)
+      - <a href="https://github.com/exif-js/exif-js" target="_blank noopener noreferrer">exif-js/exif-js</a>
+    - JavaScript-Load-Image
+      - <a href="https://github.com/blueimp/JavaScript-Load-Image" target="_blank noopener noreferrer">blueimp/JavaScript-Load-Image</a>
+    - node环境系列
+      - exiftool-vendored.js(for node)
+        - <a href="https://github.com/photostructure/exiftool-vendored.js" target="_blank noopener noreferrer">photostructure/exiftool-vendored.js</a>
+      - exif-reader
+        - <a href="https://github.com/devongovett/exif-reader" target="_blank noopener noreferrer">devongovett/exif-reader</a>
+  - diff对比系列
+    - jsdiff(对比两份字符串的区别/可diff文件)
+      - <a href="https://github.com/kpdecker/jsdiff" target="_blank noopener noreferrer">kpdecker/jsdiff</a>
+    - microdiff(比较两个对象的差异部分)
+      - <a href="https://github.com/AsyncBanana/microdiff" target="_blank noopener noreferrer">AsyncBanana/microdiff</a>
+    - striff(字符串对比)
+      - <a href="https://github.com/alexmacarthur/striff" target="_blank noopener noreferrer">alexmacarthur/striff</a>
+    - superdiff(快速diff出对象差异/冷门)
+      - <a href="https://github.com/DoneDeal0/superdiff" target="_blank noopener noreferrer">DoneDeal0/superdiff</a>
+    - concordance(对比对象/字符串差异)
+      - <a href="https://github.com/concordancejs/concordance" target="_blank noopener noreferrer">concordancejs/concordance</a>
+    - micromorph(dom diff库/冷门)
+      - <a href="https://github.com/natemoo-re/micromorph" target="_blank noopener noreferrer">natemoo-re/micromorph</a>
+  - js运行时
+    - quickjs
+      - <a href="https://github.com/bellard/quickjs" target="_blank noopener noreferrer">bellard/quickjs</a>
+    - quickjs-rs
+      - <a href="https://github.com/theduke/quickjs-rs" target="_blank noopener noreferrer">theduke/quickjs-rs</a>
+    - txiki.js(基于quickjs轻量)
+      - <a href="https://github.com/saghul/txiki.js" target="_blank noopener noreferrer">saghul/txiki.js</a>
+    - sablejs(js in js方案)
+      - <a href="https://github.com/sablejs/sablejs" target="_blank noopener noreferrer">sablejs/sablejs</a>
+    - boa(rust写的运行时)
+      - <a href="https://github.com/boa-dev/boa" target="_blank noopener noreferrer">boa-dev/boa</a>
+    - duktape
+      - <a href="https://github.com/svaarala/duktape" target="_blank noopener noreferrer">svaarala/duktape</a>
+    - kaluma(微型js引擎)
+      - <a href="https://github.com/kaluma-project/kaluma" target="_blank noopener noreferrer">kaluma-project/kaluma</a>
+    - 用于微控制器的js引擎
+      - microvium(世界上最小的js引擎)
+        - <a href="https://github.com/coder-mike/microvium" target="_blank noopener noreferrer">coder-mike/microvium</a>
+      - Espruino
+        - <a href="https://github.com/espruino/Espruino" target="_blank noopener noreferrer">espruino/Espruino</a>
+    - blueboat(serverless js runtime/rust)
+      - <a href="https://github.com/losfair/blueboat" target="_blank noopener noreferrer">losfair/blueboat</a>
+    - jsc-rs(jsc的rust binding)
+      - <a href="https://github.com/Brooooooklyn/jsc-rs" target="_blank noopener noreferrer">Brooooooklyn/jsc-rs</a>
+    - just(linux小型js runtime)
+      - <a href="https://github.com/just-js/just" target="_blank noopener noreferrer">just-js/just</a>
+    - noslate(serverless用的js runtime)
+      - <a href="https://github.com/noslate-project/noslate" target="_blank noopener noreferrer">noslate-project/noslate</a>
+    - devicescript(用于物联网设备的ts微引擎)
+      - <a href="https://github.com/microsoft/devicescript" target="_blank noopener noreferrer">microsoft/devicescript</a>
+    - graaljs(jar包)
+      - <a href="https://github.com/oracle/graaljs" target="_blank noopener noreferrer">oracle/graaljs</a>
+    - mujs
+      - <a href="https://mujs.com/" target="_blank noopener noreferrer">mujs.com</a>
+    - dune(阉割版runtime/冷门)
+      - <a href="https://github.com/aalykiot/dune" target="_blank noopener noreferrer">aalykiot/dune</a>
+    - jerryscript(轻量级/适合内存小)
+      - <a href="https://github.com/jerryscript-project/jerryscript" target="_blank noopener noreferrer">jerryscript-project/jerryscript</a>
+  - ui库
+    - bootstrap系列
+      - bootstrap
+        - <a href="https://github.com/twbs/bootstrap" target="_blank noopener noreferrer">twbs/bootstrap</a>
+      - bootstrap-fileinput(文件input组件)
+        - <a href="https://github.com/kartik-v/bootstrap-fileinput" target="_blank noopener noreferrer">kartik-v/bootstrap-fileinput</a>
+      - bootswatch(bootstrap各种主题)
+        - <a href="https://github.com/thomaspark/bootswatch" target="_blank noopener noreferrer">thomaspark/bootswatch</a>
+    - foundation-sites
+      - <a href="https://github.com/foundation/foundation-sites" target="_blank noopener noreferrer">foundation/foundation-sites</a>
+    - bulma
+      - <a href="https://github.com/jgthms/bulma" target="_blank noopener noreferrer">jgthms/bulma</a>
+    - milligram(老)
+      - <a href="https://github.com/milligram/milligram" target="_blank noopener noreferrer">milligram/milligram</a>
+    - pure
+      - <a href="https://github.com/pure-css/pure" target="_blank noopener noreferrer">pure-css/pure</a>
+    - tachyons
+      - <a href="https://github.com/tachyons-css/tachyons" target="_blank noopener noreferrer">tachyons-css/tachyons</a>
+    - materialize(老)
+      - <a href="https://github.com/Dogfalo/materialize" target="_blank noopener noreferrer">Dogfalo/materialize</a>
+    - agnosticui(支持多框架)
+      - <a href="https://github.com/agnosticui/agnosticui" target="_blank noopener noreferrer">agnosticui/agnosticui</a>
+    - primer/css(github风格)
+      - <a href="https://github.com/primer/css" target="_blank noopener noreferrer">primer/css</a>
+    - 98.css
+      - <a href="https://github.com/jdan/98.css" target="_blank noopener noreferrer">jdan/98.css</a>
+    - nes.css(任天堂风ui)
+      - <a href="https://github.com/nostalgic-css/NES.css" target="_blank noopener noreferrer">nostalgic-css/NES.css</a>
+    - clay.css(粘土风css)
+      - <a href="https://github.com/codeAdrian/clay.css" target="_blank noopener noreferrer">codeAdrian/clay.css</a>
+    - system.css(apple旧版风css)
+      - <a href="https://github.com/sakofchit/system.css" target="_blank noopener noreferrer">sakofchit/system.css</a>
+    - devices.css(纯css的iphone样式)
+      - <a href="https://github.com/picturepan2/devices.css" target="_blank noopener noreferrer">picturepan2/devices.css</a>
+    - mdb-ui-kit(boostrap5+mui)
+      - <a href="https://github.com/mdbootstrap/mdb-ui-kit" target="_blank noopener noreferrer">mdbootstrap/mdb-ui-kit</a>
+    - simple.css(非常简单的样式库)
+      - <a href="https://github.com/kevquirk/simple.css" target="_blank noopener noreferrer">kevquirk/simple.css</a>
+    - bamboo(简单/冷门)
+      - <a href="https://github.com/rilwis/bamboo" target="_blank noopener noreferrer">rilwis/bamboo</a>
+    - pico(语义html样式库)
+      - <a href="https://github.com/picocss/pico" target="_blank noopener noreferrer">picocss/pico</a>
+    - PSone.css(最终幻想7 ui/冷门)
+      - <a href="https://github.com/98mprice/PSone.css" target="_blank noopener noreferrer">98mprice/PSone.css</a>
+    - w2ui
+      - <a href="https://github.com/vitmalina/w2ui" target="_blank noopener noreferrer">vitmalina/w2ui</a>
+    - materialize(新版materialize fork)
+      - <a href="https://github.com/materializecss/materialize" target="_blank noopener noreferrer">materializecss/materialize</a>
+    - atlassian-design-for-bootstrap(bootstrap改进版)
+      - <a href="https://github.com/fastbootstrap/atlassian-design-for-bootstrap" target="_blank noopener noreferrer">fastbootstrap/atlassian-design-for-bootstrap</a>
+  - error系列
+    - invariant(开发时详细错误/生产一般错误)
+      - <a href="https://github.com/zertosh/invariant" target="_blank noopener noreferrer">zertosh/invariant</a>
+    - tiny-invariant
+      - <a href="https://github.com/alexreardon/tiny-invariant" target="_blank noopener noreferrer">alexreardon/tiny-invariant</a>
+    - modern-errors(更多包装好的错误封装)
+      - <a href="https://github.com/ehmicky/modern-errors" target="_blank noopener noreferrer">ehmicky/modern-errors</a>
+  - regex正则匹配系列
+    - xregexp(正则循环匹配增强库)
+      - <a href="https://github.com/slevithan/xregexp" target="_blank noopener noreferrer">slevithan/xregexp</a>
+    - path-to-regexp(url路径正则匹配)
+      - <a href="https://github.com/pillarjs/path-to-regexp" target="_blank noopener noreferrer">pillarjs/path-to-regexp</a>
+    - escape-string-regexp(将字符串里的转义字符符合正则模式)
+      - <a href="https://github.com/sindresorhus/escape-string-regexp" target="_blank noopener noreferrer">sindresorhus/escape-string-regexp</a>
+    - wild-wild-path(支持正则和通配符的路径访问器)
+      - <a href="https://github.com/ehmicky/wild-wild-path" target="_blank noopener noreferrer">ehmicky/wild-wild-path</a>
+    - magic-regexp(更可读的正则创建库)
+      - <a href="https://github.com/unjs/magic-regexp" target="_blank noopener noreferrer">unjs/magic-regexp</a>
+    - to-regex-range(创建匹配两个数字范围的正则)
+      - <a href="https://github.com/micromatch/to-regex-range" target="_blank noopener noreferrer">micromatch/to-regex-range</a>
+    - super-expressive(正则创建工具)
+      - <a href="https://github.com/francisrstokes/super-expressive" target="_blank noopener noreferrer">francisrstokes/super-expressive</a>
+    - ts-regex-builder(正则构建器/冷门)
+      - <a href="https://github.com/callstack/ts-regex-builder" target="_blank noopener noreferrer">callstack/ts-regex-builder</a>
+  - toast系列
+    - toastr(很简单的toast/notification)
+      - <a href="https://github.com/CodeSeven/toastr" target="_blank noopener noreferrer">CodeSeven/toastr</a>
+      - <a href="https://codeseven.github.io/toastr/demo.html" target="_blank noopener noreferrer">codeseven.github.io</a>
+    - toastify-js
+      - <a href="https://github.com/apvarun/toastify-js" target="_blank noopener noreferrer">apvarun/toastify-js</a>
+  - notification系列
+    - awesome-notifications
+      - <a href="https://github.com/f3oall/awesome-notifications" target="_blank noopener noreferrer">f3oall/awesome-notifications</a>
+  - 手势库
+    - hammer.js(多点触摸事件库)
+      - <a href="https://github.com/hammerjs/hammer.js" target="_blank noopener noreferrer">hammerjs/hammer.js</a>
+    - swiper(手势+pullpage滚动)
+      - <a href="https://github.com/nolimits4web/swiper" target="_blank noopener noreferrer">nolimits4web/swiper</a>
+    - any-touch(支持6种手势/冷门)
+      - <a href="https://github.com/any86/any-touch" target="_blank noopener noreferrer">any86/any-touch</a>
+  - 抽奖系列
+    - lucky-canvas(转盘/九宫格抽奖组件)
+      - <a href="https://github.com/buuing/lucky-canvas" target="_blank noopener noreferrer">buuing/lucky-canvas</a>
+    - lottery(年会抽奖程序)
+      - <a href="https://github.com/moshang-xc/lottery" target="_blank noopener noreferrer">moshang-xc/lottery</a>
+    - lottery(老)
+      - <a href="https://github.com/fouber/lottery" target="_blank noopener noreferrer">fouber/lottery</a>
+    - nutui-bingo(基于nutui)
+      - <a href="https://github.com/jdf2e/nutui-bingo" target="_blank noopener noreferrer">jdf2e/nutui-bingo</a>
+  - harfbuzzjs(计算文本整形长度/wasm)
+    - <a href="https://github.com/harfbuzz/harfbuzzjs" target="_blank noopener noreferrer">harfbuzz/harfbuzzjs</a>
+  - npm-registry自建系列
+    - verdaccio(本地自建npm)
+      - <a href="https://github.com/verdaccio/verdaccio" target="_blank noopener noreferrer">verdaccio/verdaccio</a>
+    - npm-registry-firewall(registry代理防火墙/可规则过滤)
+      - <a href="https://github.com/antongolub/npm-registry-firewall" target="_blank noopener noreferrer">antongolub/npm-registry-firewall</a>
+    - cnpmcore
+      - <a href="https://github.com/cnpm/cnpmcore" target="_blank noopener noreferrer">cnpm/cnpmcore</a>
+  - a11y系列
+    - readability(语义化解析document)
+      - <a href="https://github.com/mozilla/readability" target="_blank noopener noreferrer">mozilla/readability</a>
+    - accessibility(一个a11y增强工具栏)
+      - <a href="https://github.com/ranbuch/accessibility" target="_blank noopener noreferrer">ranbuch/accessibility</a>
+  - scroll滚动/reveal揭示系列
+    - scroll-bar(js虚拟滚动条系列)
+      - simplebar
+        - <a href="https://github.com/Grsmto/simplebar" target="_blank noopener noreferrer">Grsmto/simplebar</a>
+      - OverlayScrollbars
+        - <a href="https://github.com/KingSora/OverlayScrollbars" target="_blank noopener noreferrer">KingSora/OverlayScrollbars</a>
+    - aos(滚动时节点不同方向渐入)
+      - <a href="https://github.com/michalsnik/aos" target="_blank noopener noreferrer">michalsnik/aos</a>
+    - ScrollMagic(随滚动的动画效果)
+      - <a href="https://github.com/janpaepke/ScrollMagic" target="_blank noopener noreferrer">janpaepke/ScrollMagic</a>
+    - scroll-snap/fullpage全屏单页滚动系列
+      - fullPage.js
+        - <a href="https://github.com/alvarotrigo/fullPage.js" target="_blank noopener noreferrer">alvarotrigo/fullPage.js</a>
+      - scroll-snap(老牌)
+        - <a href="https://github.com/lucafalasco/scroll-snap" target="_blank noopener noreferrer">lucafalasco/scroll-snap</a>
+    - scroll-reveal(滚动揭示)
+      - <a href="https://www.cnblogs.com/lalalagq/p/9973564.html" target="_blank noopener noreferrer">www.cnblogs.com</a>
+      - <a href="https://github.com/jlmakes/scrollreveal" target="_blank noopener noreferrer">jlmakes/scrollreveal</a>
+      - <a href="https://scrollrevealjs.org/guide/customization.html" target="_blank noopener noreferrer">scrollrevealjs.org</a>
+      - <a href="https://scrollrevealjs.org/api/defaults.html" target="_blank noopener noreferrer">scrollrevealjs.org</a>
+    - direction-reveal(识别鼠标方向显示隐藏元素/陈旧)
+      - <a href="https://github.com/NigelOToole/direction-reveal" target="_blank noopener noreferrer">NigelOToole/direction-reveal</a>
+    - locomotive-scroll(节点在视口动画平滑进入)
+      - <a href="https://github.com/locomotivemtl/locomotive-scroll" target="_blank noopener noreferrer">locomotivemtl/locomotive-scroll</a>
+    - lenis(滚动视差/冷门)
+      - <a href="https://github.com/studio-freight/lenis" target="_blank noopener noreferrer">studio-freight/lenis</a>
+    - scrolly-video(视频跟随滚动播放)
+      - <a href="https://github.com/dkaoster/scrolly-video" target="_blank noopener noreferrer">dkaoster/scrolly-video</a>
+    - ScrollTrigger(滚动触发的动画)
+      - <a href="https://github.com/terwanerik/ScrollTrigger" target="_blank noopener noreferrer">terwanerik/ScrollTrigger</a>
+  - deepmerge递归合并器
+    - deepmerge(深合并)
+      - <a href="https://github.com/TehShrike/deepmerge" target="_blank noopener noreferrer">TehShrike/deepmerge</a>
+    - defu(递归merge合并器/nodejs)
+      - <a href="https://github.com/unjs/defu" target="_blank noopener noreferrer">unjs/defu</a>
+  - color颜色选择器系列
+    - iro.js(简约颜色选择器组件)
+      - <a href="https://github.com/jaames/iro.js" target="_blank noopener noreferrer">jaames/iro.js</a>
+    - colorjoe(老)
+      - <a href="https://github.com/bebraw/colorjoe" target="_blank noopener noreferrer">bebraw/colorjoe</a>
+    - huebee(冷/不太好用)
+      - <a href="https://github.com/metafizzy/huebee" target="_blank noopener noreferrer">metafizzy/huebee</a>
+    - vanilla-colorful
+      - <a href="https://github.com/web-padawan/vanilla-colorful" target="_blank noopener noreferrer">web-padawan/vanilla-colorful</a>
+  - 文件上传系列
+    - filepond
+      - <a href="https://github.com/pqina/filepond" target="_blank noopener noreferrer">pqina/filepond</a>
+    - webuploader(baidu批量文件上传组件)
+      - <a href="https://github.com/fex-team/webuploader" target="_blank noopener noreferrer">fex-team/webuploader</a>
+    - dropzone(将元素变为上传zone)
+      - <a href="https://github.com/dropzone/dropzone" target="_blank noopener noreferrer">dropzone/dropzone</a>
+    - fine-uploader(拖拽上传/已存档)
+      - <a href="https://github.com/FineUploader/fine-uploader" target="_blank noopener noreferrer">FineUploader/fine-uploader</a>
+    - uppy
+      - <a href="https://github.com/transloadit/uppy" target="_blank noopener noreferrer">transloadit/uppy</a>
+    - uppload(图片上传器)
+      - <a href="https://github.com/elninotech/uppload" target="_blank noopener noreferrer">elninotech/uppload</a>
+  - 规则引擎系列
+    - nools
+      - <a href="https://github.com/noolsjs/nools" target="_blank noopener noreferrer">noolsjs/nools</a>
+    - peg.js(规则引擎/自定义dsl)
+      - <a href="https://github.com/pegjs/pegjs" target="_blank noopener noreferrer">pegjs/pegjs</a>
+    - jison
+      - <a href="https://github.com/zaach/jison" target="_blank noopener noreferrer">zaach/jison</a>
+    - peggy(新版peg)
+      - <a href="https://github.com/peggyjs/peggy" target="_blank noopener noreferrer">peggyjs/peggy</a>
+  - typescript-plugins系列
+    - typescript-plugin-css-modules(支持css module提示)
+      - <a href="https://github.com/mrmckeb/typescript-plugin-css-modules" target="_blank noopener noreferrer">mrmckeb/typescript-plugin-css-modules</a>
+  - grapheme字符簇分隔系列
+    - graphemer(字素簇Intl.segmentor实现)
+      - <a href="https://github.com/flmnt/graphemer" target="_blank noopener noreferrer">flmnt/graphemer</a>
+    - grapheme-splitter(分隔unicode字符成人为可读单字符)
+      - <a href="https://github.com/orling/grapheme-splitter" target="_blank noopener noreferrer">orling/grapheme-splitter</a>
+    - emoji知识
+      - 基础emoji
+        - <a href="https://unicode.org/Public/emoji/15.0/emoji-sequences.txt" target="_blank noopener noreferrer">unicode.org</a>
+      - ZWJ零宽emoji
+        - <a href="https://unicode.org/Public/emoji/15.0/emoji-zwj-sequences.txt" target="_blank noopener noreferrer">unicode.org</a>
+      - 标签拉丁emoji
+        - <a href="https://emojipedia.org/emoji-tag-sequence/" target="_blank noopener noreferrer">emojipedia.org</a>
+    - character-js(字素蔟分离/最新数据)
+      - <a href="https://github.com/alipay/character-js" target="_blank noopener noreferrer">alipay/character-js</a>
+  - release现代monorepo发包工具
+    - release-it
+      - <a href="https://github.com/release-it/release-it" target="_blank noopener noreferrer">release-it/release-it</a>
+    - changesets
+      - <a href="https://github.com/changesets/changesets" target="_blank noopener noreferrer">changesets/changesets</a>
+  - ms毫秒/语义化转换系列
+    - ms(语义化语言转毫秒)
+      - <a href="https://github.com/vercel/ms" target="_blank noopener noreferrer">vercel/ms</a>
+    - pretty-ms(毫秒转可读)
+      - <a href="https://github.com/sindresorhus/pretty-ms" target="_blank noopener noreferrer">sindresorhus/pretty-ms</a>
+    - HumanizeDuration.js(毫秒转可读)
+      - <a href="https://github.com/EvanHahn/HumanizeDuration.js" target="_blank noopener noreferrer">EvanHahn/HumanizeDuration.js</a>
+  - is-online(检查网络连接是否正常)
+    - <a href="https://github.com/sindresorhus/is-online" target="_blank noopener noreferrer">sindresorhus/is-online</a>
+  - 虚拟列表系列
+    - virtual(headless)
+      - <a href="https://github.com/tanstack/virtual" target="_blank noopener noreferrer">tanstack/virtual</a>
+  - currency货币系列
+    - dinero.js(多国货币操作库)
+      - <a href="https://github.com/dinerojs/dinero.js" target="_blank noopener noreferrer">dinerojs/dinero.js</a>
+    - currencyFormatter.js(老)
+      - <a href="https://github.com/osrec/currencyFormatter.js" target="_blank noopener noreferrer">osrec/currencyFormatter.js</a>
+    - accounting.js(老)
+      - <a href="https://github.com/openexchangerates/accounting.js" target="_blank noopener noreferrer">openexchangerates/accounting.js</a>
+  - chess国际象棋系列
+    - chessboardjs
+      - <a href="https://github.com/oakmac/chessboardjs" target="_blank noopener noreferrer">oakmac/chessboardjs</a>
+    - chess.js
+      - <a href="https://github.com/jhlywa/chess.js" target="_blank noopener noreferrer">jhlywa/chess.js</a>
+    - react-chessboard(国际象棋棋盘)
+      - <a href="https://github.com/Clariity/react-chessboard" target="_blank noopener noreferrer">Clariity/react-chessboard</a>
+  - equal对比全等系列
+    - fast-deep-equal
+      - <a href="https://github.com/epoberezkin/fast-deep-equal" target="_blank noopener noreferrer">epoberezkin/fast-deep-equal</a>
+    - dequal(深对比)
+      - <a href="https://github.com/lukeed/dequal" target="_blank noopener noreferrer">lukeed/dequal</a>
+  - css工具/theme变量系列
+    - breakpoint(sass媒体查询工具函数)
+      - <a href="https://github.com/at-import/breakpoint" target="_blank noopener noreferrer">at-import/breakpoint</a>
+    - css-media-vars(css变量媒体查询方案)
+      - <a href="https://github.com/propjockey/css-media-vars" target="_blank noopener noreferrer">propjockey/css-media-vars</a>
+    - open-props(css变量预设包)
+      - <a href="https://github.com/argyleink/open-props" target="_blank noopener noreferrer">argyleink/open-props</a>
+    - finder(选择器生成器)
+      - <a href="https://github.com/antonmedv/finder" target="_blank noopener noreferrer">antonmedv/finder</a>
+    - css-variable(css主题方案/冷门)
+      - <a href="https://github.com/jantimon/css-variable" target="_blank noopener noreferrer">jantimon/css-variable</a>
+    - sass/scss系列
+      - dart-sass
+        - <a href="https://github.com/sass/dart-sass" target="_blank noopener noreferrer">sass/dart-sass</a>
+      - sass.js(可在浏览器运行)
+        - <a href="https://github.com/medialize/sass.js" target="_blank noopener noreferrer">medialize/sass.js</a>
+    - squircle-houdini-css(houdini api创建圆角)
+      - <a href="https://github.com/PavelLaptev/css-houdini-squircle" target="_blank noopener noreferrer">PavelLaptev/css-houdini-squircle</a>
+    - antd-style(antd css in js design token)
+      - <a href="https://github.com/ant-design/antd-style" target="_blank noopener noreferrer">ant-design/antd-style</a>
+    - utopia-core-scss(计算clamp大小的sass函数)
+      - <a href="https://github.com/trys/utopia-core-scss" target="_blank noopener noreferrer">trys/utopia-core-scss</a>
+  - pinyin/汉字系列
+    - cnchar(汉字笔画拆解库)
+      - <a href="https://github.com/theajack/cnchar" target="_blank noopener noreferrer">theajack/cnchar</a>
+    - pinyin(汉字拼音查询)
+      - <a href="https://github.com/hotoo/pinyin" target="_blank noopener noreferrer">hotoo/pinyin</a>
+    - pinyin-pro(汉字转拼音)
+      - <a href="https://github.com/zh-lx/pinyin-pro" target="_blank noopener noreferrer">zh-lx/pinyin-pro</a>
+  - cursor鼠标指针系列
+    - blobity(改变鼠标指针/收费)
+      - <a href="https://github.com/gmrchk/blobity" target="_blank noopener noreferrer">gmrchk/blobity</a>
+    - cursor-effects(各种鼠标指针移动效果)
+      - <a href="https://github.com/tholman/cursor-effects" target="_blank noopener noreferrer">tholman/cursor-effects</a>
+  - yarn.lock系列
+    - yarn-deduplicate(去除yarn.lock重复依赖的工具)
+      - <a href="https://github.com/scinos/yarn-deduplicate" target="_blank noopener noreferrer">scinos/yarn-deduplicate</a>
+    - synp(yarn.lock和package-lock互转)
+      - <a href="https://github.com/imsnif/synp" target="_blank noopener noreferrer">imsnif/synp</a>
+    - nodejs-lockfile-parser(lock文件解析)
+      - <a href="https://github.com/snyk/nodejs-lockfile-parser" target="_blank noopener noreferrer">snyk/nodejs-lockfile-parser</a>
+    - syncyarnlock(将yarn.lock版本固定到package.json)
+      - <a href="https://github.com/vasilevich/sync-yarnlock-into-packagejson" target="_blank noopener noreferrer">vasilevich/sync-yarnlock-into-packagejson</a>
+  - browserslist(浏览器兼容列表查询包)
+    - <a href="https://github.com/browserslist/browserslist" target="_blank noopener noreferrer">browserslist/browserslist</a>
+  - link调试系列
+    - yalc(开发link调试工具)
+      - <a href="https://github.com/wclr/yalc" target="_blank noopener noreferrer">wclr/yalc</a>
+    - relative-deps(从本地安装依赖)
+      - <a href="https://github.com/mweststrate/relative-deps" target="_blank noopener noreferrer">mweststrate/relative-deps</a>
+    - link(更安全的npm link/冷门)
+      - <a href="https://github.com/privatenumber/link" target="_blank noopener noreferrer">privatenumber/link</a>
+  - .d.ts生成/dts系列
+    - npm-dts(帮助js库生成.d.ts)
+      - <a href="https://github.com/vytenisu/npm-dts" target="_blank noopener noreferrer">vytenisu/npm-dts</a>
+    - downlevel-dts(降级新type到旧type/适配小于4)
+      - <a href="https://github.com/sandersn/downlevel-dts" target="_blank noopener noreferrer">sandersn/downlevel-dts</a>
+    - dts-gen(dts生成)
+      - <a href="https://github.com/microsoft/dts-gen" target="_blank noopener noreferrer">microsoft/dts-gen</a>
+    - @microsoft/api-extractor(dts抽取)
+      - <a href="https://www.npmjs.com/package/@microsoft/api-extractor" target="_blank noopener noreferrer">www.npmjs.com</a>
+  - 多人协作系列
+    - liveblocks(构建多人同步协作体验的工具)
+      - <a href="https://github.com/liveblocks/liveblocks" target="_blank noopener noreferrer">liveblocks/liveblocks</a>
+    - replicache(免费商用/收费/协作库)
+      - <a href="https://github.com/rocicorp/replicache" target="_blank noopener noreferrer">rocicorp/replicache</a>
+    - FluidFramework(构建多人协作的后端)
+      - <a href="https://github.com/microsoft/FluidFramework" target="_blank noopener noreferrer">microsoft/FluidFramework</a>
+    - tangle(基于wasm的协作同步/冷门)
+      - <a href="https://github.com/kettle11/tangle" target="_blank noopener noreferrer">kettle11/tangle</a>
+    - driftdb(实时数据后端/冷门)
+      - <a href="https://github.com/drifting-in-space/driftdb" target="_blank noopener noreferrer">drifting-in-space/driftdb</a>
+    - partykit(多人协作前后端一体工具包/冷门)
+      - <a href="https://github.com/partykit/partykit" target="_blank noopener noreferrer">partykit/partykit</a>
+  - performance页面性能指标检测系列
+    - stats.js(页面js性能监控/FPS视图)
+      - <a href="https://github.com/mrdoob/stats.js" target="_blank noopener noreferrer">mrdoob/stats.js</a>
+    - web-vitals
+      - <a href="https://github.com/GoogleChrome/web-vitals" target="_blank noopener noreferrer">GoogleChrome/web-vitals</a>
+    - webpagetest(可docker运行的网站指标测试工具)
+      - <a href="https://github.com/WPO-Foundation/webpagetest" target="_blank noopener noreferrer">WPO-Foundation/webpagetest</a>
+    - sitespeed.io(页面性能指标测试)
+      - <a href="https://github.com/sitespeedio/sitespeed.io" target="_blank noopener noreferrer">sitespeedio/sitespeed.io</a>
+    - webperf-snippets(测量性能指标代码片段)
+      - <a href="https://github.com/nucliweb/webperf-snippets" target="_blank noopener noreferrer">nucliweb/webperf-snippets</a>
+    - perfume.js(页面性能指标获取工具)
+      - <a href="https://github.com/Zizzamia/perfume.js" target="_blank noopener noreferrer">Zizzamia/perfume.js</a>
+  - bot/spider爬虫系列
+    - isbot(根据UA判断是否是爬虫)
+      - <a href="https://github.com/omrilotan/isbot" target="_blank noopener noreferrer">omrilotan/isbot</a>
+    - crawlee(爬虫工具)
+      - <a href="https://github.com/apify/crawlee" target="_blank noopener noreferrer">apify/crawlee</a>
+    - EasySpider(可视化爬虫采集系统)
+      - <a href="https://github.com/NaiboWang/EasySpider" target="_blank noopener noreferrer">NaiboWang/EasySpider</a>
+  - window窗口管理器系列
+    - winbox(创建弹出窗口/窗口管理器)
+      - <a href="https://github.com/nextapps-de/winbox" target="_blank noopener noreferrer">nextapps-de/winbox</a>
+    - rc-dock(支持贴边附着)
+      - <a href="https://github.com/ticlo/rc-dock" target="_blank noopener noreferrer">ticlo/rc-dock</a>
+  - cloneDeep深拷贝系列
+    - fast-copy(更快的cloneDeep/深拷贝)
+      - <a href="https://github.com/planttheidea/fast-copy" target="_blank noopener noreferrer">planttheidea/fast-copy</a>
+    - klona(轻量深拷贝)
+      - <a href="https://github.com/lukeed/klona" target="_blank noopener noreferrer">lukeed/klona</a>
+  - calendar日历系列
+    - fullcalendar(大日历)
+      - <a href="https://github.com/fullcalendar/fullcalendar" target="_blank noopener noreferrer">fullcalendar/fullcalendar</a>
+    - calendso(收费日历组件)
+      - <a href="https://github.com/calendso/calendso" target="_blank noopener noreferrer">calendso/calendso</a>
+    - calendar-base(生成日历绘制数据的底层工具)
+      - <a href="https://github.com/WesSouza/calendar-base" target="_blank noopener noreferrer">WesSouza/calendar-base</a>
+    - add-to-calendar-button(添加日程到日历/支持多平台)
+      - <a href="https://github.com/jekuer/add-to-calendar-button" target="_blank noopener noreferrer">jekuer/add-to-calendar-button</a>
+    - tui.calendar(复杂日历组件)
+      - <a href="https://github.com/nhn/tui.calendar" target="_blank noopener noreferrer">nhn/tui.calendar</a>
+    - calendar.js(农历转换)
+      - <a href="https://github.com/jjonline/calendar.js" target="_blank noopener noreferrer">jjonline/calendar.js</a>
+    - Calendar.js(日历组件)
+      - <a href="https://github.com/williamtroup/Calendar.js" target="_blank noopener noreferrer">williamtroup/Calendar.js</a>
+    - schedule-x(material风格日历组件)
+      - <a href="https://github.com/schedule-x/schedule-x" target="_blank noopener noreferrer">schedule-x/schedule-x</a>
+  - select选择器组件系列
+    - slim-select
+      - <a href="https://github.com/brianvoe/slim-select" target="_blank noopener noreferrer">brianvoe/slim-select</a>
+    - Choices(原生select/input tag实现)
+      - <a href="https://github.com/Choices-js/Choices" target="_blank noopener noreferrer">Choices-js/Choices</a>
+  - monitor监控系列
+    - web-see(冷)
+      - <a href="https://github.com/xy-sea/web-see" target="_blank noopener noreferrer">xy-sea/web-see</a>
+    - error-stack-parser(错误堆栈解析)
+      - <a href="https://github.com/stacktracejs/error-stack-parser" target="_blank noopener noreferrer">stacktracejs/error-stack-parser</a>
+  - iframe-resizer(自动调整iframe大小适应内容)
+    - <a href="https://github.com/davidjbradshaw/iframe-resizer" target="_blank noopener noreferrer">davidjbradshaw/iframe-resizer</a>
+  - gui参数面板系列
+    - tweakpane(支持参数微调gui)
+      - <a href="https://github.com/cocopon/tweakpane" target="_blank noopener noreferrer">cocopon/tweakpane</a>
+    - lil-gui
+      - <a href="https://github.com/georgealways/lil-gui" target="_blank noopener noreferrer">georgealways/lil-gui</a>
+    - dat.gui
+      - <a href="https://github.com/dataarts/dat.gui" target="_blank noopener noreferrer">dataarts/dat.gui</a>
+    - knobs
+      - <a href="https://github.com/yaireo/knobs" target="_blank noopener noreferrer">yaireo/knobs</a>
+    - guify
+      - <a href="https://github.com/colejd/guify" target="_blank noopener noreferrer">colejd/guify</a>
+  - type运行时校验系列
+    - io-ts
+      - <a href="https://github.com/gcanti/io-ts" target="_blank noopener noreferrer">gcanti/io-ts</a>
+    - ts-auto-guard(根据type生成校验函数cli)
+      - <a href="https://github.com/rhys-vdw/ts-auto-guard" target="_blank noopener noreferrer">rhys-vdw/ts-auto-guard</a>
+    - typescript-is(type转校验函数/搭配ts-loader)
+      - <a href="https://github.com/woutervh-/typescript-is" target="_blank noopener noreferrer">woutervh-/typescript-is</a>
+    - @deepkit/type(实验性type转更小的校验函数)
+      - <a href="https://github.com/deepkit/deepkit-framework/tree/master/packages/type" target="_blank noopener noreferrer">deepkit/deepkit-framework/tree/master/packages/type</a>
+    - typia
+      - <a href="https://github.com/samchon/typia" target="_blank noopener noreferrer">samchon/typia</a>
+    - typescript-rtti
+      - <a href="https://github.com/typescript-rtti/typescript-rtti" target="_blank noopener noreferrer">typescript-rtti/typescript-rtti</a>
+  - 简繁转换
+    - OpenCC(还支持wasm)
+      - <a href="https://github.com/BYVoid/OpenCC" target="_blank noopener noreferrer">BYVoid/OpenCC</a>
+    - chinese-convert-example(几种方案合集)
+      - <a href="https://github.com/sorrycc/chinese-convert-example" target="_blank noopener noreferrer">sorrycc/chinese-convert-example</a>
+    - tongwen/dictionaries(简繁对应字典)
+      - <a href="https://github.com/tongwentang/tongwen-core/tree/master/dictionaries" target="_blank noopener noreferrer">tongwentang/tongwen-core/tree/master/dictionaries</a>
+  - input输入框系列
+    - Inputmask(input输入格式限制工具)
+      - <a href="https://github.com/RobinHerbots/Inputmask" target="_blank noopener noreferrer">RobinHerbots/Inputmask</a>
+    - intl-tel-input(国际化电话号码输入框)
+      - <a href="https://github.com/jackocnr/intl-tel-input" target="_blank noopener noreferrer">jackocnr/intl-tel-input</a>
+    - textarea-autosize
+      - <a href="https://github.com/github/textarea-autosize" target="_blank noopener noreferrer">github/textarea-autosize</a>
+  - text-blance字体平衡系列
+    - balance-text
+      - <a href="https://github.com/adobe/balance-text" target="_blank noopener noreferrer">adobe/balance-text</a>
+    - text-balancer
+      - <a href="https://github.com/nytimes/text-balancer" target="_blank noopener noreferrer">nytimes/text-balancer</a>
+  - rough-notation(给节点添加彩色线注释/高亮)
+    - <a href="https://github.com/rough-stuff/rough-notation" target="_blank noopener noreferrer">rough-stuff/rough-notation</a>
+  - deco实用装饰器系列
+    - catch-decorator-ts(class捕获错误装饰器)
+      - <a href="https://github.com/valjic1/catch-decorator-ts" target="_blank noopener noreferrer">valjic1/catch-decorator-ts</a>
+    - helpful-decorators
+      - <a href="https://github.com/NetanelBasal/helpful-decorators" target="_blank noopener noreferrer">NetanelBasal/helpful-decorators</a>
+  - pwa系列
+    - 常用网站
+      - appsco.pe
+        - <a href="https://appsco.pe/" target="_blank noopener noreferrer">appsco.pe</a>
+      - pwastats.com
+        - <a href="https://www.pwastats.com/" target="_blank noopener noreferrer">www.pwastats.com</a>
+      - pwapp.net(国内)
+        - <a href="https://pwapp.net/" target="_blank noopener noreferrer">pwapp.net</a>
+  - lazyload懒加载系列
+    - lazysizes(原生图片懒加载库)
+      - <a href="https://github.com/aFarkas/lazysizes" target="_blank noopener noreferrer">aFarkas/lazysizes</a>
+    - vanilla-lazyload
+      - <a href="https://github.com/verlok/vanilla-lazyload" target="_blank noopener noreferrer">verlok/vanilla-lazyload</a>
+  - waterfall/masonry瀑布流系列
+    - masonry(瀑布流布局)
+      - <a href="https://github.com/desandro/masonry" target="_blank noopener noreferrer">desandro/masonry</a>
+    - macy.js(老)
+      - <a href="https://github.com/bigbite/macy.js" target="_blank noopener noreferrer">bigbite/macy.js</a>
+  - string-width字符宽度系列
+    - string-width(获取字符宽度)
+      - <a href="https://github.com/sindresorhus/string-width" target="_blank noopener noreferrer">sindresorhus/string-width</a>
+    - eastasianwidth(获取东亚字符/汉字的宽度)
+      - <a href="https://github.com/komagata/eastasianwidth" target="_blank noopener noreferrer">komagata/eastasianwidth</a>
+  - stringify/serialize序列化系列
+    - serialize-javascript(序列化任何数据/正则/函数等)
+      - <a href="https://github.com/yahoo/serialize-javascript" target="_blank noopener noreferrer">yahoo/serialize-javascript</a>
+    - devalue(序列化任何数据/Date/循环引用等)
+      - <a href="https://github.com/Rich-Harris/devalue" target="_blank noopener noreferrer">Rich-Harris/devalue</a>
+    - seroval(序列化对象为js/冷门)
+      - <a href="https://github.com/lxsmnsyc/seroval" target="_blank noopener noreferrer">lxsmnsyc/seroval</a>
+    - telejson(支持序列化更多对象/冷门)
+      - <a href="https://github.com/storybookjs/telejson" target="_blank noopener noreferrer">storybookjs/telejson</a>
+    - superjson(序列化更多对象)
+      - <a href="https://github.com/blitz-js/superjson" target="_blank noopener noreferrer">blitz-js/superjson</a>
+  - memo缓存函数系列
+    - memoize-one(只记住最近一次调用的缓存函数库)
+      - <a href="https://github.com/alexreardon/memoize-one" target="_blank noopener noreferrer">alexreardon/memoize-one</a>
+    - nano-memoize
+      - <a href="https://github.com/anywhichway/nano-memoize" target="_blank noopener noreferrer">anywhichway/nano-memoize</a>
+    - moize
+      - <a href="https://github.com/planttheidea/moize" target="_blank noopener noreferrer">planttheidea/moize</a>
+  - casl(权限/授权工具)
+    - <a href="https://github.com/stalniy/casl" target="_blank noopener noreferrer">stalniy/casl</a>
+  - prefetch/prerender预渲染系列
+    - PreloadJs(预加载资源)
+      - <a href="https://github.com/CreateJS/PreloadJS" target="_blank noopener noreferrer">CreateJS/PreloadJS</a>
+    - quicklink
+      - <a href="https://github.com/GoogleChromeLabs/quicklink" target="_blank noopener noreferrer">GoogleChromeLabs/quicklink</a>
+    - guess
+      - <a href="https://github.com/guess-js/guess" target="_blank noopener noreferrer">guess-js/guess</a>
+    - tachyon(冷)
+      - <a href="https://github.com/weebney/tachyon" target="_blank noopener noreferrer">weebney/tachyon</a>
+  - mpa/静态站系列
+    - flamethrower(静态站点加速/和spa一样快)
+      - <a href="https://github.com/fireship-io/flamethrower" target="_blank noopener noreferrer">fireship-io/flamethrower</a>
+    - waystone(让mpa和spa一样快/冷门)
+      - <a href="https://github.com/lxsmnsyc/waystone" target="_blank noopener noreferrer">lxsmnsyc/waystone</a>
+  - head头系列
+    - HEAD(head头大全)
+      - <a href="https://github.com/joshbuchea/HEAD" target="_blank noopener noreferrer">joshbuchea/HEAD</a>
+    - capo.js(将head按最佳实践排序)
+      - <a href="https://github.com/rviscomi/capo.js" target="_blank noopener noreferrer">rviscomi/capo.js</a>
+  - autocomplete自动补全/完成系列
+    - autocomplete
+      - <a href="https://github.com/algolia/autocomplete" target="_blank noopener noreferrer">algolia/autocomplete</a>
+    - typeahead.js(推特的自动补全组件/陈旧)
+      - <a href="https://github.com/twitter/typeahead.js" target="_blank noopener noreferrer">twitter/typeahead.js</a>
+  - cldr国家数据
+    - cldr-json
+      - <a href="https://github.com/unicode-org/cldr-json" target="_blank noopener noreferrer">unicode-org/cldr-json</a>
+    - cldr-localenames-modern(各国家标识和名称)
+      - <a href="https://github.com/unicode-org/cldr-json/tree/main/cldr-json/cldr-localenames-modern" target="_blank noopener noreferrer">unicode-org/cldr-json/tree/main/cldr-json/cldr-localenames-modern</a>
+  - email系列
+    - mjml(创建响应式邮件)
+      - <a href="https://github.com/mjmlio/mjml" target="_blank noopener noreferrer">mjmlio/mjml</a>
+  - share分享系列
+    - goodshare.js(分享至多平台)
+      - <a href="https://github.com/koddr/goodshare.js" target="_blank noopener noreferrer">koddr/goodshare.js</a>
+    - sharer.js
+      - <a href="https://github.com/ellisonleao/sharer.js" target="_blank noopener noreferrer">ellisonleao/sharer.js</a>
+    - shareon(分享按钮/冷门)
+      - <a href="https://github.com/kytta/shareon" target="_blank noopener noreferrer">kytta/shareon</a>
+  - cookie系列
+    - js-cookie(操作cookie)
+      - <a href="https://github.com/js-cookie/js-cookie" target="_blank noopener noreferrer">js-cookie/js-cookie</a>
+    - cookieconsent(cookie同意组件)
+      - <a href="https://github.com/orestbida/cookieconsent" target="_blank noopener noreferrer">orestbida/cookieconsent</a>
+  - sort排序系列
+    - sort-on(排序数组中对象)
+      - <a href="https://github.com/sindresorhus/sort-on" target="_blank noopener noreferrer">sindresorhus/sort-on</a>
+    - sort-keys(对对象的key排序)
+      - <a href="https://github.com/sindresorhus/sort-keys" target="_blank noopener noreferrer">sindresorhus/sort-keys</a>
+  - ie系列
+    - ie67891011-css-hacks
+      - <a href="https://gist.github.com/vidaaudrey/c16774076391d09e7ec7dbb7ed7a3189" target="_blank noopener noreferrer">gist.github.com</a>
+  - selection范围区块选择系列
+    - selection(多区块选择组件)
+      - <a href="https://github.com/Simonwep/selection" target="_blank noopener noreferrer">Simonwep/selection</a>
+    - selecto(可选择范围的格子组件)
+      - <a href="https://github.com/daybrush/selecto" target="_blank noopener noreferrer">daybrush/selecto</a>
+- 可视化
+  - three.js系列
+    - 教程
+      - <a href="http://www.yanhuangxueyuan.com/" target="_blank noopener noreferrer">www.yanhuangxueyuan.com</a>
+      - <a href="http://www.yanhuangxueyuan.com/Three.js/" target="_blank noopener noreferrer">www.yanhuangxueyuan.com</a>
+      - 探索three.js
+        - <a href="https://discoverthreejs.com/zh/book/introduction/" target="_blank noopener noreferrer">discoverthreejs.com</a>
+    - 实战项目
+      - threejs-login-view
+        - <a href="https://github.com/Yanzengyong/threejs-login-view" target="_blank noopener noreferrer">Yanzengyong/threejs-login-view</a>
+    - three.js
+      - <a href="https://github.com/mrdoob/three.js" target="_blank noopener noreferrer">mrdoob/three.js</a>
+    - postprocessing(为three实现图像滤镜效果)
+      - <a href="https://github.com/pmndrs/postprocessing" target="_blank noopener noreferrer">pmndrs/postprocessing</a>
+    - screen-space-reflections(创建屏幕反射)
+      - <a href="https://github.com/0beqz/screen-space-reflections" target="_blank noopener noreferrer">0beqz/screen-space-reflections</a>
+    - theatre(和three.js一起做3d场景动画)
+      - <a href="https://github.com/theatre-js/theatre" target="_blank noopener noreferrer">theatre-js/theatre</a>
+  - StackBlur(canvas高斯模糊)
+    - <a href="https://github.com/flozz/StackBlur" target="_blank noopener noreferrer">flozz/StackBlur</a>
+  - matter.js(2d物理引擎)
+    - <a href="https://github.com/liabru/matter-js" target="_blank noopener noreferrer">liabru/matter-js</a>
+  - GCanvas(跨平台canvas渲染引擎)
+    - <a href="https://github.com/alibaba/GCanvas" target="_blank noopener noreferrer">alibaba/GCanvas</a>
+  - gitgraph(git分支图)
+    - <a href="https://github.com/nicoespeon/gitgraph.js" target="_blank noopener noreferrer">nicoespeon/gitgraph.js</a>
+  - vis-network(有向线图)
+    - <a href="https://github.com/visjs/vis-network" target="_blank noopener noreferrer">visjs/vis-network</a>
+  - raphael(老画图库)
+    - <a href="https://github.com/DmitryBaranovskiy/raphael/" target="_blank noopener noreferrer">DmitryBaranovskiy/raphael/</a>
+  - oasis-engine/engine(2d/3d引擎/蚂蚁)
+    - <a href="https://github.com/oasis-engine/engine" target="_blank noopener noreferrer">oasis-engine/engine</a>
+  - p5.js(绘图库)
+    - <a href="https://github.com/processing/p5.js" target="_blank noopener noreferrer">processing/p5.js</a>
+  - css3d-engine(轻量3d库/陈旧)
+    - <a href="https://github.com/shrekshrek/css3d-engine" target="_blank noopener noreferrer">shrekshrek/css3d-engine</a>
+  - aep(css3d后身3d库)
+    - <a href="https://github.com/shrekshrek/aep" target="_blank noopener noreferrer">shrekshrek/aep</a>
+  - EaseIJS(canvas封装)
+    - <a href="https://github.com/CreateJS/EaselJS" target="_blank noopener noreferrer">CreateJS/EaselJS</a>
+  - cornerstone(医学影像库)
+    - <a href="https://github.com/cornerstonejs/cornerstone" target="_blank noopener noreferrer">cornerstonejs/cornerstone</a>
+  - cornerstoneTools(医学影像库工具)
+    - <a href="https://github.com/cornerstonejs/cornerstoneTools" target="_blank noopener noreferrer">cornerstonejs/cornerstoneTools</a>
+  - konva(2d引擎)
+    - <a href="https://github.com/konvajs/konva" target="_blank noopener noreferrer">konvajs/konva</a>
+  - zrender(2d渲染器/echarts的)
+    - <a href="https://github.com/ecomfe/zrender" target="_blank noopener noreferrer">ecomfe/zrender</a>
+  - antv系列
+    - AVA(数据统计可视化)
+      - <a href="https://github.com/antvis/AVA" target="_blank noopener noreferrer">antvis/AVA</a>
+    - G(渲染引擎)
+      - <a href="https://github.com/antvis/G" target="_blank noopener noreferrer">antvis/G</a>
+    - s2(大数据Excel表)
+      - <a href="https://github.com/antvis/S2" target="_blank noopener noreferrer">antvis/S2</a>
+    - g6(关系图库)
+      - <a href="https://github.com/antvis/G6" target="_blank noopener noreferrer">antvis/G6</a>
+    - L7(地理空间图表)
+      - <a href="https://github.com/antvis/L7" target="_blank noopener noreferrer">antvis/L7</a>
+    - g2栈(通用图表)
+      - g2(普通图表库)
+        - <a href="https://github.com/antvis/G2" target="_blank noopener noreferrer">antvis/G2</a>
+      - G2Plot(g2的封装/更易用)
+        - <a href="https://github.com/antvis/G2Plot" target="_blank noopener noreferrer">antvis/G2Plot</a>
+    - x6栈(流程图)
+      - X6(连线图/流程图)
+        - <a href="https://github.com/antvis/X6" target="_blank noopener noreferrer">antvis/X6</a>
+      - XFlow(流程图编辑)
+        - <a href="https://github.com/antvis/XFlow" target="_blank noopener noreferrer">antvis/XFlow</a>
+    - f2栈(手机端图表)
+      - f2(手机端图表库/兼容小程序)
+        - <a href="https://github.com/antvis/F2" target="_blank noopener noreferrer">antvis/F2</a>
+      - F6(手机端图表/陈旧)
+        - <a href="https://github.com/antvis/F6" target="_blank noopener noreferrer">antvis/F6</a>
+      - F2Native(原生手机端图表)
+        - <a href="https://github.com/antvis/F2Native" target="_blank noopener noreferrer">antvis/F2Native</a>
+  - 计算工具
+    - geodesy(计算地球形状距离库)
+      - <a href="https://github.com/chrisveness/geodesy" target="_blank noopener noreferrer">chrisveness/geodesy</a>
+    - flatbush(二维点和矩形的快速静态空间索引)
+      - <a href="https://github.com/mourner/flatbush" target="_blank noopener noreferrer">mourner/flatbush</a>
+    - math.gl(用于地理空间3d的数学模块)
+      - <a href="https://github.com/uber-web/math.gl" target="_blank noopener noreferrer">uber-web/math.gl</a>
+  - uPlot(小又快的图表库)
+    - <a href="https://github.com/leeoniya/uPlot" target="_blank noopener noreferrer">leeoniya/uPlot</a>
+  - AR/xr系列
+    - AR.js
+      - <a href="https://github.com/AR-js-org/AR.js" target="_blank noopener noreferrer">AR-js-org/AR.js</a>
+    - jsartoolkit5
+      - <a href="https://github.com/artoolkitx/jsartoolkit5" target="_blank noopener noreferrer">artoolkitx/jsartoolkit5</a>
+    - three.ar.js
+      - <a href="https://github.com/google-ar/three.ar.js" target="_blank noopener noreferrer">google-ar/three.ar.js</a>
+    - mind-ar-js(人脸识别)
+      - <a href="https://github.com/hiukim/mind-ar-js" target="_blank noopener noreferrer">hiukim/mind-ar-js</a>
+    - natuerlich(three+xr库)
+      - <a href="https://github.com/coconut-xr/natuerlich" target="_blank noopener noreferrer">coconut-xr/natuerlich</a>
+  - 全景/虚拟现实系列
+    - aframe(虚拟现实构建库)
+      - <a href="https://github.com/aframevr/aframe" target="_blank noopener noreferrer">aframevr/aframe</a>
+    - panolens.js(全景库)
+      - <a href="https://github.com/pchen66/panolens.js" target="_blank noopener noreferrer">pchen66/panolens.js</a>
+    - pannellum(web全景查看库)
+      - <a href="https://github.com/mpetroff/pannellum" target="_blank noopener noreferrer">mpetroff/pannellum</a>
+  - 流程图/连线图系列
+    - cytoscape(图论/有向/连线图库)
+      - <a href="https://github.com/cytoscape/cytoscape.js" target="_blank noopener noreferrer">cytoscape/cytoscape.js</a>
+    - jsplumb(老牌连线流程图库)
+      - <a href="https://github.com/jsplumb/jsplumb" target="_blank noopener noreferrer">jsplumb/jsplumb</a>
+    - LogicFlow(didi流程图库/有点烂)
+      - <a href="https://github.com/didi/LogicFlow" target="_blank noopener noreferrer">didi/LogicFlow</a>
+    - welabx-g6(连线流程图/冷门)
+      - <a href="https://github.com/claudewowo/welabx-g6" target="_blank noopener noreferrer">claudewowo/welabx-g6</a>
+    - flowy(创建流程图的最小库)
+      - <a href="https://github.com/alyssaxuu/flowy" target="_blank noopener noreferrer">alyssaxuu/flowy</a>
+    - wireflow(实时流程图协作工具)
+      - <a href="https://github.com/vanila-io/wireflow" target="_blank noopener noreferrer">vanila-io/wireflow</a>
+    - butterfly(流程图组件)
+      - <a href="https://github.com/alibaba/butterfly" target="_blank noopener noreferrer">alibaba/butterfly</a>
+    - gojs(流程图库/陈旧)
+      - <a href="https://github.com/NorthwoodsSoftware/GoJS" target="_blank noopener noreferrer">NorthwoodsSoftware/GoJS</a>
+    - flowchart-fun(根据文本生成流程图和图表/react)
+      - <a href="https://github.com/tone-row/flowchart-fun" target="_blank noopener noreferrer">tone-row/flowchart-fun</a>
+    - d3-graphviz(基于d3的连线图/冷门)
+      - <a href="https://github.com/magjac/d3-graphviz" target="_blank noopener noreferrer">magjac/d3-graphviz</a>
+    - bpmn连线图系列
+      - bpmn-js(连线图)
+        - <a href="https://github.com/bpmn-io/bpmn-js" target="_blank noopener noreferrer">bpmn-io/bpmn-js</a>
+      - bpmn-moddle(bpmn xml读写)
+        - <a href="https://github.com/bpmn-io/bpmn-moddle" target="_blank noopener noreferrer">bpmn-io/bpmn-moddle</a>
+    - DgrmJS(svg流程图库)
+      - <a href="https://github.com/AlexeyBoiko/DgrmJS" target="_blank noopener noreferrer">AlexeyBoiko/DgrmJS</a>
+    - Drawflow(简单的连线图)
+      - <a href="https://github.com/jerosoler/Drawflow" target="_blank noopener noreferrer">jerosoler/Drawflow</a>
+    - rete(节点编辑器/陈旧)
+      - <a href="https://github.com/retejs/rete" target="_blank noopener noreferrer">retejs/rete</a>
+    - nodl(连线节点库/可拖动/小窗口)
+      - <a href="https://github.com/emilwidlund/nodl" target="_blank noopener noreferrer">emilwidlund/nodl</a>
+    - flowchart.js(编程流程图/限定语法)
+      - <a href="https://github.com/adrai/flowchart.js" target="_blank noopener noreferrer">adrai/flowchart.js</a>
+    - pro-flow(节点流程图)
+      - <a href="https://github.com/ant-design/pro-flow" target="_blank noopener noreferrer">ant-design/pro-flow</a>
+  - 树状图
+    - OrgChart(组织结构图)
+      - <a href="https://github.com/dabeng/OrgChart" target="_blank noopener noreferrer">dabeng/OrgChart</a>
+    - NN-SVG(神经网络图)
+      - <a href="https://github.com/alexlenail/NN-SVG" target="_blank noopener noreferrer">alexlenail/NN-SVG</a>
+  - draw绘图/画板系列
+    - tldraw(手写风格drawio工具)
+      - <a href="https://github.com/tldraw/tldraw" target="_blank noopener noreferrer">tldraw/tldraw</a>
+    - atrament.js(canvas画笔画图板)
+      - <a href="https://github.com/jakubfiala/atrament.js" target="_blank noopener noreferrer">jakubfiala/atrament.js</a>
+    - miniPaint(画图板工具)
+      - <a href="https://github.com/viliusle/miniPaint" target="_blank noopener noreferrer">viliusle/miniPaint</a>
+    - lazy-brush(可调的笔刷)
+      - <a href="https://github.com/dulnan/lazy-brush" target="_blank noopener noreferrer">dulnan/lazy-brush</a>
+    - perfect-freehand(手绘/画笔面板)
+      - <a href="https://github.com/steveruizok/perfect-freehand" target="_blank noopener noreferrer">steveruizok/perfect-freehand</a>
+    - 画板应用系列
+      - flatdraw(一个画板draw应用)
+        - <a href="https://github.com/diogocapela/flatdraw" target="_blank noopener noreferrer">diogocapela/flatdraw</a>
+      - svg-drawing(可以回放的画板)
+        - <a href="https://github.com/CatsJuice/svg-drawing" target="_blank noopener noreferrer">CatsJuice/svg-drawing</a>
+      - paint-board
+        - <a href="https://github.com/LHRUN/paint-board" target="_blank noopener noreferrer">LHRUN/paint-board</a>
+    - pictode(绘图画板)
+      - <a href="https://github.com/JessYan0913/pictode" target="_blank noopener noreferrer">JessYan0913/pictode</a>
+  - fabric系列
+    - fabric.js
+      - <a href="https://github.com/fabricjs/fabric.js" target="_blank noopener noreferrer">fabricjs/fabric.js</a>
+    - fabric-brush(笔刷工具)
+      - <a href="https://github.com/tennisonchan/fabric-brush" target="_blank noopener noreferrer">tennisonchan/fabric-brush</a>
+    - fabricjs-image-editor-origin(fabric图片编辑工具)
+      - <a href="https://github.com/pegasus1982/fabricjs-image-editor-origin" target="_blank noopener noreferrer">pegasus1982/fabricjs-image-editor-origin</a>
+  - draw手绘风格系列
+    - rough(手绘风格绘图库)
+      - <a href="https://github.com/rough-stuff/rough" target="_blank noopener noreferrer">rough-stuff/rough</a>
+    - roughViz(手绘风格图表)
+      - <a href="https://github.com/jwilber/roughViz" target="_blank noopener noreferrer">jwilber/roughViz</a>
+    - chart.xkcd(star-history用)
+      - <a href="https://github.com/timqian/chart.xkcd" target="_blank noopener noreferrer">timqian/chart.xkcd</a>
+    - excalidraw(手绘图表/没有自动对齐)
+      - <a href="https://github.com/excalidraw/excalidraw" target="_blank noopener noreferrer">excalidraw/excalidraw</a>
+    - excalidraw-claymate(升级版excalidraw/支持多场景)
+      - <a href="https://github.com/dai-shi/excalidraw-claymate" target="_blank noopener noreferrer">dai-shi/excalidraw-claymate</a>
+    - excalidraw-animate(将excalidraw进行动画演示)
+      - <a href="https://github.com/dai-shi/excalidraw-animate" target="_blank noopener noreferrer">dai-shi/excalidraw-animate</a>
+    - excalidraw-room(协作demo)
+      - <a href="https://github.com/excalidraw/excalidraw-room" target="_blank noopener noreferrer">excalidraw/excalidraw-room</a>
+    - excalidraw-cn(中文版excalidraw)
+      - <a href="https://github.com/korbinzhao/excalidraw-cn" target="_blank noopener noreferrer">korbinzhao/excalidraw-cn</a>
+  - omio.js(轻量级3d物理引擎/陈旧)
+    - <a href="https://github.com/lo-th/Oimo.js" target="_blank noopener noreferrer">lo-th/Oimo.js</a>
+  - webgl系列
+    - phenpmenon(轻量webgl api)
+      - <a href="https://github.com/vaneenige/phenomenon" target="_blank noopener noreferrer">vaneenige/phenomenon</a>
+    - cobe(5kb的webgl渲染库/渲染地球)
+      - <a href="https://github.com/shuding/cobe" target="_blank noopener noreferrer">shuding/cobe</a>
+    - deck.gl(地理空间化数据层)
+      - <a href="https://github.com/visgl/deck.gl" target="_blank noopener noreferrer">visgl/deck.gl</a>
+    - twgl.js(webgl底层调用工具库)
+      - <a href="https://github.com/greggman/twgl.js" target="_blank noopener noreferrer">greggman/twgl.js</a>
+    - ogl(最小的webgl库)
+      - <a href="https://github.com/oframe/ogl" target="_blank noopener noreferrer">oframe/ogl</a>
+    - swissgl(webgl2 api封装)
+      - <a href="https://github.com/google/swissgl" target="_blank noopener noreferrer">google/swissgl</a>
+    - orillusion(3d引擎/webgpu/冷门)
+      - <a href="https://github.com/Orillusion/orillusion" target="_blank noopener noreferrer">Orillusion/orillusion</a>
+    - glslify(glsl)
+      - <a href="https://github.com/glslify/glslify" target="_blank noopener noreferrer">glslify/glslify</a>
+  - 地图系列
+    - Data收集
+      - DataV.GeoAtlas(中国地图echarts数据集)
+        - <a href="https://datav.aliyun.com/portal/school/atlas/area_selector" target="_blank noopener noreferrer">datav.aliyun.com</a>
+      - geojson.io(geo编辑器)
+        - <a href="https://geojson.io/" target="_blank noopener noreferrer">geojson.io</a>
+      - terrain2stl(导出地图stl文件)
+        - <a href="https://jthatch.com/Terrain2STL/" target="_blank noopener noreferrer">jthatch.com</a>
+      - echarts-maps(echarts地图数据/陈旧)
+        - <a href="https://github.com/echarts-maps" target="_blank noopener noreferrer">echarts-maps</a>
+    - sanddance(地图和多统计表格子)
+      - <a href="https://github.com/microsoft/SandDance" target="_blank noopener noreferrer">microsoft/SandDance</a>
+      - <a href="https://microsoft.github.io/SandDance/app/" target="_blank noopener noreferrer">microsoft.github.io</a>
+    - mapus(实时协作地图)
+      - <a href="https://github.com/alyssaxuu/mapus" target="_blank noopener noreferrer">alyssaxuu/mapus</a>
+    - openlayers(地图库)
+      - <a href="https://github.com/openlayers/openlayers" target="_blank noopener noreferrer">openlayers/openlayers</a>
+    - maplibre-gl-js(世界地图库)
+      - <a href="https://github.com/maplibre/maplibre-gl-js" target="_blank noopener noreferrer">maplibre/maplibre-gl-js</a>
+    - mapbox-gl-js
+      - <a href="https://github.com/mapbox/mapbox-gl-js" target="_blank noopener noreferrer">mapbox/mapbox-gl-js</a>
+    - leaflet(手机端友好的地图)
+      - <a href="https://github.com/Leaflet/Leaflet" target="_blank noopener noreferrer">Leaflet/Leaflet</a>
+    - maptalks.js(轻量2d/3d地图库)
+      - <a href="https://github.com/maptalks/maptalks.js" target="_blank noopener noreferrer">maptalks/maptalks.js</a>
+    - turf(geo地图引擎库)
+      - <a href="https://github.com/Turfjs/turf" target="_blank noopener noreferrer">Turfjs/turf</a>
+    - mapkick.js(mapbox封装/冷门)
+      - <a href="https://github.com/ankane/mapkick.js" target="_blank noopener noreferrer">ankane/mapkick.js</a>
+    - 矢量瓦片系列
+      - download.geofabrik.de
+        - <a href="https://download.geofabrik.de/" target="_blank noopener noreferrer">download.geofabrik.de</a>
+      - openmaptiles.org(收费)
+        - <a href="https://openmaptiles.org/" target="_blank noopener noreferrer">openmaptiles.org</a>
+    - supercluster(地理空间点聚类展示库)
+      - <a href="https://github.com/mapbox/supercluster" target="_blank noopener noreferrer">mapbox/supercluster</a>
+  - 礼花/烟花效果系列
+    - canvas-confetti(礼花效果)
+      - <a href="https://github.com/catdad/canvas-confetti" target="_blank noopener noreferrer">catdad/canvas-confetti</a>
+    - fireworks-js(放烟花效果)
+      - <a href="https://github.com/crashmax-dev/fireworks-js" target="_blank noopener noreferrer">crashmax-dev/fireworks-js</a>
+    - party-js(点击礼花效果)
+      - <a href="https://github.com/yiliansource/party-js" target="_blank noopener noreferrer">yiliansource/party-js</a>
+  - perspective(基于wasm的图表库)
+    - <a href="https://github.com/finos/perspective/" target="_blank noopener noreferrer">finos/perspective/</a>
+  - svg系列
+    - apexcharts.js(svg图表库)
+      - <a href="https://github.com/apexcharts/apexcharts.js" target="_blank noopener noreferrer">apexcharts/apexcharts.js</a>
+    - zdog(伪画布svg 3d引擎/陈旧)
+      - <a href="https://github.com/metafizzy/zdog" target="_blank noopener noreferrer">metafizzy/zdog</a>
+    - svgedit(svg在线编辑工具)
+      - <a href="https://github.com/SVG-Edit/svgedit" target="_blank noopener noreferrer">SVG-Edit/svgedit</a>
+    - snap.svg(svg引擎)
+      - <a href="https://github.com/adobe-webplatform/Snap.svg" target="_blank noopener noreferrer">adobe-webplatform/Snap.svg</a>
+    - svg.js
+      - <a href="https://github.com/svgdotjs/svg.js" target="_blank noopener noreferrer">svgdotjs/svg.js</a>
+    - svgtofont(多svg集合成字体文件)
+      - <a href="https://github.com/jaywcjlove/svgtofont" target="_blank noopener noreferrer">jaywcjlove/svgtofont</a>
+    - svg-path-morph(svg平滑插值)
+      - <a href="https://github.com/Minibrams/svg-path-morph" target="_blank noopener noreferrer">Minibrams/svg-path-morph</a>
+    - satori系列
+      - satori(html+css生成svg图片)
+        - <a href="https://github.com/vercel/satori" target="_blank noopener noreferrer">vercel/satori</a>
+      - satori-html
+        - <a href="https://github.com/natemoo-re/satori-html" target="_blank noopener noreferrer">natemoo-re/satori-html</a>
+      - og-img(生成og图/serverless/和框架无关)
+        - <a href="https://github.com/fabian-hiller/og-img" target="_blank noopener noreferrer">fabian-hiller/og-img</a>
+    - svg-icons-cli(svg精灵图构建工具)
+      - <a href="https://github.com/alexanderson1993/svg-icons-cli" target="_blank noopener noreferrer">alexanderson1993/svg-icons-cli</a>
+  - windowjs(canvas编译到win系统窗口程序)
+    - <a href="https://github.com/windowjs/windowjs" target="_blank noopener noreferrer">windowjs/windowjs</a>
+  - ngraph.path(图路径查找库)
+    - <a href="https://github.com/anvaka/ngraph.path" target="_blank noopener noreferrer">anvaka/ngraph.path</a>
+  - 冷门可视化系列
+    - easy-canvas(canvas渲染组件库/破)
+      - <a href="https://github.com/Gitjinfeiyang/easy-canvas" target="_blank noopener noreferrer">Gitjinfeiyang/easy-canvas</a>
+  - two.js(渲染器无关的2d绘图库)
+    - <a href="https://github.com/jonobr1/two.js" target="_blank noopener noreferrer">jonobr1/two.js</a>
+  - d3周边系列
+    - c3(d3的封装)
+      - <a href="https://github.com/c3js/c3" target="_blank noopener noreferrer">c3js/c3</a>
+    - plotly.js(图表库/基于d3)
+      - <a href="https://github.com/plotly/plotly.js" target="_blank noopener noreferrer">plotly/plotly.js</a>
+    - plottable(基于d3的模块化图表)
+      - <a href="https://github.com/palantir/plottable" target="_blank noopener noreferrer">palantir/plottable</a>
+    - d3.js
+      - 官网
+        - <a href="https://d3js.org/" target="_blank noopener noreferrer">d3js.org</a>
+      - wiki
+        - <a href="https://github.com/d3/d3/wiki" target="_blank noopener noreferrer">d3/d3/wiki</a>
+        - <a href="https://github.com/d3/d3/wiki/CN-Home" target="_blank noopener noreferrer">d3/d3/wiki/CN-Home</a>
+        - <a href="https://github.com/d3/d3/wiki/API--%E4%B8%AD%E6%96%87%E6%89%8B%E5%86%8C" target="_blank noopener noreferrer">d3/d3/wiki/API--%E4%B8%AD%E6%96%87%E6%89%8B%E5%86%8C</a>
+      - docs-zh
+        - <a href="https://d3js.org.cn/" target="_blank noopener noreferrer">d3js.org.cn</a>
+      - example
+        - <a href="https://observablehq.com/@d3/gallery" target="_blank noopener noreferrer">observablehq.com</a>
+      - api
+        - <a href="https://github.com/d3/d3/blob/master/API.md" target="_blank noopener noreferrer">d3/d3/blob/master/API.md</a>
+      - github
+        - <a href="https://github.com/d3/d3" target="_blank noopener noreferrer">d3/d3</a>
+      - 入门教程
+        - <a href="https://blog.csdn.net/qq_34414916/article/details/80029352" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - <a href="https://blog.csdn.net/qq_34414916/article/details/80029808" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - <a href="https://blog.csdn.net/qq_34414916/article/details/80032354" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - scale
+          - <a href="https://blog.csdn.net/qq_34832846/article/details/90510150" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - <a href="https://blog.csdn.net/qq_34414916/article/details/80032731" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - <a href="https://blog.csdn.net/qq_34414916/article/details/80033730" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - <a href="https://blog.csdn.net/qq_34414916/article/details/80035695" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - <a href="https://blog.csdn.net/qq_34414916/article/details/80035926" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - <a href="https://blog.csdn.net/qq_34414916/article/details/80036301" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - zoom
+          - <a href="https://blog.csdn.net/weixin_39703282/article/details/82855038" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - <a href="https://blog.csdn.net/qq_34414916/article/details/80038989" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - 总览
+          - <a href="https://blog.csdn.net/qq_34414916/article/details/80026029" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - 旧版
+          - <a href="https://blog.csdn.net/qq_31052401/article/details/93786425" target="_blank noopener noreferrer">blog.csdn.net</a>
+      - 图谱
+        - <a href="https://www.jianshu.com/p/80ae6153527e" target="_blank noopener noreferrer">www.jianshu.com</a>
+        - 可收缩
+          - <a href="https://codepen.io/zhulinpinyu/pen/EaZrmM/?editors=0010" target="_blank noopener noreferrer">codepen.io</a>
+          - <a href="http://bl.ocks.org/jdarling/2503502" target="_blank noopener noreferrer">bl.ocks.org</a>
+        - <a href="https://blog.csdn.net/selina_chan/article/details/51260516" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - <a href="https://blog.csdn.net/czy279470138/article/details/88419831" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - 王超明(ths企业图谱)
+          - <a href="https://www.cnblogs.com/amingxiansen/p/13167190.html" target="_blank noopener noreferrer">www.cnblogs.com</a>
+          - <a href="https://www.cnblogs.com/amingxiansen/p/13192325.html" target="_blank noopener noreferrer">www.cnblogs.com</a>
+        - <a href="https://blog.csdn.net/weixin_38164631/article/details/107693747" target="_blank noopener noreferrer">blog.csdn.net</a>
+        - <a href="https://blog.csdn.net/qq_39408204/article/details/89015757" target="_blank noopener noreferrer">blog.csdn.net</a>
+    - billboard.js(基于d3的图表库)
+      - <a href="https://github.com/naver/billboard.js" target="_blank noopener noreferrer">naver/billboard.js</a>
+    - dc.js(多维筛选图表/基于d3)
+      - <a href="https://github.com/dc-js/dc.js" target="_blank noopener noreferrer">dc-js/dc.js</a>
+    - d3-cloud(基于d3的词云)
+      - <a href="https://github.com/jasondavies/d3-cloud" target="_blank noopener noreferrer">jasondavies/d3-cloud</a>
+    - metrics-graphics(基于d3优化时间序列)
+      - <a href="https://github.com/metricsgraphics/metrics-graphics" target="_blank noopener noreferrer">metricsgraphics/metrics-graphics</a>
+    - cubism(时间序列图/陈旧)
+      - <a href="https://github.com/square/cubism" target="_blank noopener noreferrer">square/cubism</a>
+    - d3plus(d3的升级优化版)
+      - <a href="https://github.com/d3plus/d3plus" target="_blank noopener noreferrer">d3plus/d3plus</a>
+    - d3-3d(3d支持)
+      - <a href="https://github.com/Niekes/d3-3d" target="_blank noopener noreferrer">Niekes/d3-3d</a>
+  - animockup(创建产品介绍动画)
+    - <a href="https://github.com/alyssaxuu/animockup" target="_blank noopener noreferrer">alyssaxuu/animockup</a>
+  - paper.js(一个矢量图形脚本框架)
+    - <a href="https://github.com/paperjs/paper.js" target="_blank noopener noreferrer">paperjs/paper.js</a>
+  - 视差系列
+    - vanilla(3d效果)
+      - <a href="https://github.com/micku7zu/vanilla-tilt.js" target="_blank noopener noreferrer">micku7zu/vanilla-tilt.js</a>
+    - parallax(3d视差)
+      - <a href="https://github.com/wagerfield/parallax" target="_blank noopener noreferrer">wagerfield/parallax</a>
+    - simpleParallax(视差)
+      - <a href="https://github.com/geosigno/simpleParallax.js" target="_blank noopener noreferrer">geosigno/simpleParallax.js</a>
+    - rellax
+      - <a href="https://github.com/dixonandmoe/rellax" target="_blank noopener noreferrer">dixonandmoe/rellax</a>
+    - atropos(hover悬浮视差效果)
+      - <a href="https://github.com/nolimits4web/atropos" target="_blank noopener noreferrer">nolimits4web/atropos</a>
+    - jarallax
+      - <a href="https://github.com/nk-o/jarallax" target="_blank noopener noreferrer">nk-o/jarallax</a>
+  - shader-park-core(快速创建shader着色器图形)
+    - <a href="https://github.com/shader-park/shader-park-core" target="_blank noopener noreferrer">shader-park/shader-park-core</a>
+  - piling.js(堆块操作/堆叠的库)
+    - <a href="https://github.com/flekschas/piling.js" target="_blank noopener noreferrer">flekschas/piling.js</a>
+  - 通用图表库
+    - charts.css(简单的图表库)
+      - <a href="https://github.com/ChartsCSS/charts.css" target="_blank noopener noreferrer">ChartsCSS/charts.css</a>
+    - charts(svg/简单)
+      - <a href="https://github.com/frappe/charts" target="_blank noopener noreferrer">frappe/charts</a>
+    - highcharts
+      - <a href="https://github.com/highcharts/highcharts" target="_blank noopener noreferrer">highcharts/highcharts</a>
+    - tui.chart(浏览器支持性好)
+      - <a href="https://github.com/nhn/tui.chart" target="_blank noopener noreferrer">nhn/tui.chart</a>
+    - chartist-js(非常老旧/ie)
+      - <a href="https://github.com/gionkunz/chartist-js" target="_blank noopener noreferrer">gionkunz/chartist-js</a>
+    - chart.js(简单图表库)
+      - <a href="https://github.com/chartjs/Chart.js" target="_blank noopener noreferrer">chartjs/Chart.js</a>
+    - observablehq/plot
+      - <a href="https://github.com/observablehq/plot" target="_blank noopener noreferrer">observablehq/plot</a>
+    - dygraphs(老)
+      - <a href="https://github.com/danvk/dygraphs" target="_blank noopener noreferrer">danvk/dygraphs</a>
+    - VChart(visactor)
+      - <a href="https://github.com/VisActor/VChart" target="_blank noopener noreferrer">VisActor/VChart</a>
+    - echarts系列
+      - echarts
+        - <a href="https://github.com/apache/echarts" target="_blank noopener noreferrer">apache/echarts</a>
+      - echarts-gl
+        - <a href="https://github.com/ecomfe/echarts-gl" target="_blank noopener noreferrer">ecomfe/echarts-gl</a>
+  - color-legend-element(图例组件/冷门)
+    - <a href="https://github.com/clhenrick/color-legend-element" target="_blank noopener noreferrer">clhenrick/color-legend-element</a>
+  - cesium(地球渲染库)
+    - <a href="https://github.com/CesiumGS/cesium" target="_blank noopener noreferrer">CesiumGS/cesium</a>
+  - 节点连接库
+    - sigma.js(可视化数千个连接的节点)
+      - <a href="https://github.com/jacomyal/sigma.js" target="_blank noopener noreferrer">jacomyal/sigma.js</a>
+    - neo4jd3(基于d3/冷门)
+      - <a href="https://github.com/eisman/neo4jd3" target="_blank noopener noreferrer">eisman/neo4jd3</a>
+    - neovis.js
+      - <a href="https://github.com/neo4j-contrib/neovis.js" target="_blank noopener noreferrer">neo4j-contrib/neovis.js</a>
+  - particles粒子系列
+    - vanta(webgl 3d动画背景)
+      - <a href="https://github.com/tengbao/vanta" target="_blank noopener noreferrer">tengbao/vanta</a>
+    - Particles.js-ts(背景粒子动画)
+      - <a href="https://github.com/tsparticles/tsparticles" target="_blank noopener noreferrer">tsparticles/tsparticles</a>
+    - particles(粒子)
+      - <a href="https://github.com/VincentGarreau/particles.js" target="_blank noopener noreferrer">VincentGarreau/particles.js</a>
+    - canvas-nest(粒子)
+      - <a href="https://github.com/hustcc/canvas-nest.js" target="_blank noopener noreferrer">hustcc/canvas-nest.js</a>
+  - perspective(webassembly加速的图表库)
+    - <a href="https://github.com/finos/perspective" target="_blank noopener noreferrer">finos/perspective</a>
+  - 可视化语法系列
+    - vega(json语法结构)
+      - <a href="https://github.com/vega/vega" target="_blank noopener noreferrer">vega/vega</a>
+  - big-screen大屏项目系列
+    - go-view(gitee/可配置大屏平台)
+      - <a href="https://gitee.com/dromara/go-view" target="_blank noopener noreferrer">gitee.com</a>
+    - iDataV(大屏合集/陈旧)
+      - <a href="https://github.com/yyhsong/iDataV" target="_blank noopener noreferrer">yyhsong/iDataV</a>
+    - dataease(数据分析平台/大屏模板/java)
+      - <a href="https://github.com/dataease/dataease" target="_blank noopener noreferrer">dataease/dataease</a>
+    - react系列
+      - react-big-screen(gitee/react大屏/陈旧)
+        - <a href="https://gitee.com/MTrun/react-big-screen" target="_blank noopener noreferrer">gitee.com</a>
+      - DataV-React(大屏组件库/react/陈旧)
+        - <a href="https://github.com/DataV-Team/DataV-React" target="_blank noopener noreferrer">DataV-Team/DataV-React</a>
+    - vue系列
+      - Big-Screen-Vue-Datav-Echarts(vue大屏/陈旧)
+        - <a href="https://github.com/qiyankai/Big-Screen-Vue-Datav-Echarts" target="_blank noopener noreferrer">qiyankai/Big-Screen-Vue-Datav-Echarts</a>
+      - DataV(大屏组件库/vue)
+        - <a href="https://github.com/DataV-Team/DataV" target="_blank noopener noreferrer">DataV-Team/DataV</a>
+    - 搭建系列
+      - openDataV(大屏搭建)
+        - <a href="https://github.com/AnsGoo/openDataV" target="_blank noopener noreferrer">AnsGoo/openDataV</a>
+      - FlyFish(大屏搭建)
+        - <a href="https://github.com/CloudWise-OpenSource/FlyFish" target="_blank noopener noreferrer">CloudWise-OpenSource/FlyFish</a>
+  - gantt甘特图系列
+    - gantt(甘特图组件)
+      - <a href="https://github.com/frappe/gantt" target="_blank noopener noreferrer">frappe/gantt</a>
+    - markwhen(用md like语法写甘特图/timeline)
+      - <a href="https://github.com/kochrt/markwhen" target="_blank noopener noreferrer">kochrt/markwhen</a>
+    - dhtmlx-gantt(收费)
+      - <a href="https://github.com/DHTMLX/gantt" target="_blank noopener noreferrer">DHTMLX/gantt</a>
+  - gpu系列
+    - gpu.js(gpu加速运算)
+      - <a href="https://github.com/gpujs/gpu.js" target="_blank noopener noreferrer">gpujs/gpu.js</a>
+    - detect-gpu(检测gpu信息)
+      - <a href="https://github.com/pmndrs/detect-gpu" target="_blank noopener noreferrer">pmndrs/detect-gpu</a>
+    - gpu-io(gpu计算库)
+      - <a href="https://github.com/amandaghassaei/gpu-io" target="_blank noopener noreferrer">amandaghassaei/gpu-io</a>
+    - Simple-GPU(简化webgpu编程/冷门)
+      - <a href="https://github.com/stackgpu/Simple-GPU" target="_blank noopener noreferrer">stackgpu/Simple-GPU</a>
+    - taichi.js(taichi js版本/webgpu工具)
+      - <a href="https://github.com/AmesingFlank/taichi.js" target="_blank noopener noreferrer">AmesingFlank/taichi.js</a>
+  - lightweight-charts(金融领域图表库)
+    - <a href="https://github.com/tradingview/lightweight-charts" target="_blank noopener noreferrer">tradingview/lightweight-charts</a>
+  - constrain(用于演示数学约束解的图像)
+    - <a href="https://github.com/andrewcmyers/constrain" target="_blank noopener noreferrer">andrewcmyers/constrain</a>
+  - vesseljs(船舶设计工具/冷门)
+    - <a href="https://github.com/shiplab/vesseljs" target="_blank noopener noreferrer">shiplab/vesseljs</a>
+  - pixijs系列
+    - pixi.js(2d webgl/canvas轻量高效库)
+      - <a href="https://github.com/pixijs/pixijs" target="_blank noopener noreferrer">pixijs/pixijs</a>
+    - pixi-react
+      - <a href="https://github.com/pixijs/pixi-react" target="_blank noopener noreferrer">pixijs/pixi-react</a>
+  - curtainsjs(波纹效果创建)
+    - <a href="https://github.com/martinlaxenaire/curtainsjs" target="_blank noopener noreferrer">martinlaxenaire/curtainsjs</a>
+  - canvas-sketch(创建艺术art工具)
+    - <a href="https://github.com/mattdesl/canvas-sketch" target="_blank noopener noreferrer">mattdesl/canvas-sketch</a>
+  - spacekit(构建3d空间可视化/冷门)
+    - <a href="https://github.com/typpo/spacekit" target="_blank noopener noreferrer">typpo/spacekit</a>
+  - 绘图语言系列
+    - pintora(js画架构图等各种图)
+      - <a href="https://github.com/hikerpig/pintora" target="_blank noopener noreferrer">hikerpig/pintora</a>
+    - mermaid(语言描述生成连线图)
+      - <a href="https://github.com/mermaid-js/mermaid" target="_blank noopener noreferrer">mermaid-js/mermaid</a>
+    - typograms(标点符号画图表)
+      - <a href="https://github.com/google/typograms" target="_blank noopener noreferrer">google/typograms</a>
+    - penrose(一种创建图表的语言/主要用于数学)
+      - <a href="https://github.com/penrose/penrose" target="_blank noopener noreferrer">penrose/penrose</a>
+  - heat热力图系列
+    - headmap.js(热力图)
+      - <a href="https://github.com/pa7/heatmap.js" target="_blank noopener noreferrer">pa7/heatmap.js</a>
+    - Heat.js(类似github地砖图/冷门)
+      - <a href="https://github.com/williamtroup/Heat.js" target="_blank noopener noreferrer">williamtroup/Heat.js</a>
+- 工具站点
+  - FrontMonitor
+    - <a href="https://www.oneapm.com/index.html" target="_blank noopener noreferrer">www.oneapm.com</a>
+    - <a href="https://www.datadoghq.com/" target="_blank noopener noreferrer">www.datadoghq.com</a>
+    - <a href="https://www.frontjs.com/" target="_blank noopener noreferrer">www.frontjs.com</a>
+  - docschina(中文文档大全)
+    - <a href="https://docschina.org/" target="_blank noopener noreferrer">docschina.org</a>
+  - i-hate-regex(正则大全搜索)
+    - <a href="https://github.com/geongeorge/i-hate-regex" target="_blank noopener noreferrer">geongeorge/i-hate-regex</a>
+  - color(颜色生成/配色系列)
+    - coolors.co(主题色生成)
+      - <a href="https://coolors.co/" target="_blank noopener noreferrer">coolors.co</a>
+      - <a href="https://www.cssfontstack.com/oldsites/hexcolortool/" target="_blank noopener noreferrer">www.cssfontstack.com</a>
+    - zhongguose(中国色)
+      - <a href="http://zhongguose.com/" target="_blank noopener noreferrer">zhongguose.com</a>
+    - materialpalette(material色彩搭配)
+      - <a href="https://www.materialpalette.com/light-green/lime" target="_blank noopener noreferrer">www.materialpalette.com</a>
+    - happyhues(入门级色系搭配)
+      - <a href="https://www.happyhues.co/" target="_blank noopener noreferrer">www.happyhues.co</a>
+    - huemint.com(网站配色生成)
+      - <a href="https://huemint.com/" target="_blank noopener noreferrer">huemint.com</a>
+    - colorbrewer(地图线性配色选择帮助)
+      - <a href="https://github.com/axismaps/colorbrewer" target="_blank noopener noreferrer">axismaps/colorbrewer</a>
+    - webgradients.com(渐变色大全)
+      - <a href="https://webgradients.com/" target="_blank noopener noreferrer">webgradients.com</a>
+    - hue.tools(颜色混合器)
+      - <a href="https://hue.tools/" target="_blank noopener noreferrer">hue.tools</a>
+    - canva.com/colors(色轮取色工具)
+      - <a href="https://www.canva.com/colors/color-wheel/" target="_blank noopener noreferrer">www.canva.com</a>
+    - colorsinspo.com(配色)
+      - <a href="https://colorsinspo.com/" target="_blank noopener noreferrer">colorsinspo.com</a>
+    - color-palette-generator(配色)
+      - <a href="https://mybrandnewlogo.com/ja/color-palette-generator" target="_blank noopener noreferrer">mybrandnewlogo.com</a>
+    - colorbox.io(色阶搭配)
+      - <a href="https://colorbox.io/" target="_blank noopener noreferrer">colorbox.io</a>
+    - herokuapp.com(色阶搭配)
+      - <a href="https://lyft-colorbox.herokuapp.com/" target="_blank noopener noreferrer">lyft-colorbox.herokuapp.com</a>
+    - alphredo.app(半透明颜色生成器)
+      - <a href="https://alphredo.app/" target="_blank noopener noreferrer">alphredo.app</a>
+    - oklch.com(oklch和rgba互转)
+      - <a href="https://oklch.com/#70,0.1,352,100" target="_blank noopener noreferrer">oklch.com</a>
+    - accessible-color(生成对比度高的配色系列)
+      - <a href="https://venngage.com/tools/accessible-color-palette-generator" target="_blank noopener noreferrer">venngage.com</a>
+    - colorhunt.co(配色)
+      - <a href="https://colorhunt.co/" target="_blank noopener noreferrer">colorhunt.co</a>
+    - websafecolors(web安全色)
+      - <a href="https://www.bootcss.com/p/websafecolors/" target="_blank noopener noreferrer">www.bootcss.com</a>
+    - colorhunter.com(配色/广告多)
+      - <a href="http://www.colorhunter.com/" target="_blank noopener noreferrer">www.colorhunter.com</a>
+    - color-wheel(adobe色盘配色)
+      - <a href="https://color.adobe.com/zh/create/color-wheel" target="_blank noopener noreferrer">color.adobe.com</a>
+    - mobilepalette(mobile端颜色搭配)
+      - <a href="https://mobilepalette.colorion.co/" target="_blank noopener noreferrer">mobilepalette.colorion.co</a>
+    - culrs.com(配色)
+      - <a href="https://culrs.com/#/" target="_blank noopener noreferrer">culrs.com</a>
+    - contrast对比度工具
+      - contrastchecker(查看前后景颜色对比度)
+        - <a href="https://webaim.org/resources/contrastchecker/" target="_blank noopener noreferrer">webaim.org</a>
+      - colorcontrast.app(查看颜色对比度)
+        - <a href="https://colorcontrast.app/#fg=%23107db5&bg=%23fff&level=aa&format=rgb&algo=WCAG2&filter=none" target="_blank noopener noreferrer">colorcontrast.app</a>
+      - oddcontrast.com(oklch对比度测试)
+        - <a href="https://www.oddcontrast.com/" target="_blank noopener noreferrer">www.oddcontrast.com</a>
+      - colourcontrast.cc(对比度检查工具)
+        - <a href="https://colourcontrast.cc/" target="_blank noopener noreferrer">colourcontrast.cc</a>
+    - hex-to-lch(hex转lch)
+      - <a href="https://atmos.style/color-converter/hex-to-lch" target="_blank noopener noreferrer">atmos.style</a>
+    - cccolor(生成大量渐变色阶)
+      - <a href="https://fffuel.co/cccolor/" target="_blank noopener noreferrer">fffuel.co</a>
+  - easings.co(贝塞尔曲线各种 case 测试)
+    - <a href="https://easings.co/" target="_blank noopener noreferrer">easings.co</a>
+  - cubic-bezier.com(贝塞尔曲线调试)
+    - <a href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_blank noopener noreferrer">cubic-bezier.com</a>
+  - neumorphism.io(中性 button css生成)
+    - <a href="https://neumorphism.io/#b6a4a4" target="_blank noopener noreferrer">neumorphism.io</a>
+  - gka(将gif帧图合成并生成@keyframe)
+    - <a href="https://github.com/gkajs/gka" target="_blank noopener noreferrer">gkajs/gka</a>
+  - squoosh(在线图片压缩工具)
+    - <a href="https://github.com/GoogleChromeLabs/squoosh" target="_blank noopener noreferrer">GoogleChromeLabs/squoosh</a>
+  - CSSgram(css的Instagram的滤镜)
+    - <a href="https://github.com/una/CSSgram" target="_blank noopener noreferrer">una/CSSgram</a>
+  - picsum.photos(随机获取指定size图片)
+    - <a href="https://picsum.photos/" target="_blank noopener noreferrer">picsum.photos</a>
+  - cssdb.org(全部postcss-stage特性一览)
+    - <a href="https://cssdb.org/" target="_blank noopener noreferrer">cssdb.org</a>
+  - nginxconfig.io(可视化配置nginx.conf)
+    - <a href="https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN" target="_blank noopener noreferrer">www.digitalocean.com</a>
+  - sprite-generator(精灵图合成网站)
+    - <a href="https://www.toptal.com/developers/css/sprite-generator" target="_blank noopener noreferrer">www.toptal.com</a>
+  - css_tricks(卡劵生成器css)
+    - <a href="https://qishaoxuan.github.io/css_tricks/hollowOut/" target="_blank noopener noreferrer">qishaoxuan.github.io</a>
+    - <a href="https://github.com/QiShaoXuan/css_tricks" target="_blank noopener noreferrer">QiShaoXuan/css_tricks</a>
+  - bennettfeely-clippy(clip-path生成)
+    - <a href="https://bennettfeely.com/clippy/" target="_blank noopener noreferrer">bennettfeely.com</a>
+  - json2ts interface系列
+    - transform.tools
+      - <a href="https://transform.tools/json-to-typescript" target="_blank noopener noreferrer">transform.tools</a>
+    - quicktype
+      - <a href="https://github.com/quicktype/quicktype" target="_blank noopener noreferrer">quicktype/quicktype</a>
+  - schemastore(json schema配置提示)
+    - <a href="https://www.schemastore.org/json/" target="_blank noopener noreferrer">www.schemastore.org</a>
+  - grid网格生成器
+    - grid.layoutit
+      - <a href="https://grid.layoutit.com/" target="_blank noopener noreferrer">grid.layoutit.com</a>
+    - cssgrid-generator
+      - <a href="https://cssgrid-generator.netlify.app/" target="_blank noopener noreferrer">cssgrid-generator.netlify.app</a>
+      - <a href="https://github.com/sdras/cssgridgenerator" target="_blank noopener noreferrer">sdras/cssgridgenerator</a>
+    - grid.malven(grid模板大全)
+      - <a href="https://grid.malven.co/" target="_blank noopener noreferrer">grid.malven.co</a>
+  - font系列
+    - programmingfonts(在线测试本机所有字体显示)
+      - <a href="https://github.com/braver/programmingfonts" target="_blank noopener noreferrer">braver/programmingfonts</a>
+    - cssfontstack(查看web安全字体)
+      - <a href="https://www.cssfontstack.com/" target="_blank noopener noreferrer">www.cssfontstack.com</a>
+    - font-fallback-generator(后备字体font-rule生成器)
+      - <a href="https://screenspan.net/fallback" target="_blank noopener noreferrer">screenspan.net</a>
+  - cleancss-css-minify(css压缩工具)
+    - <a href="https://www.cleancss.com/css-minify/" target="_blank noopener noreferrer">www.cleancss.com</a>
+  - fontspace(各种字体生成图片/logo)
+    - <a href="https://www.fontspace.com/" target="_blank noopener noreferrer">www.fontspace.com</a>
+  - code代码分享系列
+    - ray.so
+      - <a href="https://ray.so/" target="_blank noopener noreferrer">ray.so</a>
+    - carbon.now.sh
+      - <a href="https://carbon.now.sh/" target="_blank noopener noreferrer">carbon.now.sh</a>
+    - codeimg.io
+      - <a href="https://codeimg.io/" target="_blank noopener noreferrer">codeimg.io</a>
+    - pastie(不好看)
+      - <a href="http://pastie.org/" target="_blank noopener noreferrer">pastie.org</a>
+    - showcode.app
+      - <a href="https://showcode.app/" target="_blank noopener noreferrer">showcode.app</a>
+    - chalk.ist
+      - <a href="https://chalk.ist/" target="_blank noopener noreferrer">chalk.ist</a>
+    - codetoimg.com
+      - <a href="https://codetoimg.com/" target="_blank noopener noreferrer">codetoimg.com</a>
+    - app.codeimage.dev
+      - <a href="https://app.codeimage.dev/" target="_blank noopener noreferrer">app.codeimage.dev</a>
+    - shade.dragi.me
+      - <a href="https://shade.dragi.me/" target="_blank noopener noreferrer">shade.dragi.me</a>
+  - readme.so(规范创建readme的工具)
+    - <a href="https://readme.so/cn" target="_blank noopener noreferrer">readme.so</a>
+  - snippet-generator(生成创建snippet工具)
+    - <a href="https://snippet-generator.app/" target="_blank noopener noreferrer">snippet-generator.app</a>
+  - favicon.io(提供png转ico)
+    - <a href="https://favicon.io/" target="_blank noopener noreferrer">favicon.io</a>
+  - 生成截图/套壳系列
+    - screely(生成浏览器外框的图片)
+      - <a href="https://www.screely.com/" target="_blank noopener noreferrer">www.screely.com</a>
+    - pika.rishimhan(生成好看的截图/需登录)
+      - <a href="https://pika.rishimohan.me/" target="_blank noopener noreferrer">pika.rishimohan.me</a>
+    - screenzy.io(添加截图外框/美化帮助)
+      - <a href="https://screenzy.io/" target="_blank noopener noreferrer">screenzy.io</a>
+    - poet.so(生成twitter/linked的漂亮截图)
+      - <a href="https://poet.so/" target="_blank noopener noreferrer">poet.so</a>
+    - screen.guru(生成网站首页截图)
+      - <a href="https://screen.guru/" target="_blank noopener noreferrer">screen.guru</a>
+    - bookmark.style(生成网站书签宣传图)
+      - <a href="https://www.bookmark.style/" target="_blank noopener noreferrer">www.bookmark.style</a>
+    - CoverView(文章封面生成)
+      - <a href="https://github.com/rutikwankhade/CoverView" target="_blank noopener noreferrer">rutikwankhade/CoverView</a>
+    - pika.style(图片套壳)
+      - <a href="https://pika.style/" target="_blank noopener noreferrer">pika.style</a>
+    - screen.traction.one(生成各种设备的产品图)
+      - <a href="https://screen.traction.one/" target="_blank noopener noreferrer">screen.traction.one</a>
+    - shots.so(各种设备/浏览器套壳)
+      - <a href="https://shots.so/" target="_blank noopener noreferrer">shots.so</a>
+    - mockups(各种设备外壳高清图)
+      - <a href="https://www.webmobilefirst.com/en/mockups/" target="_blank noopener noreferrer">www.webmobilefirst.com</a>
+    - twittershots.com(生成twitter截图/简版)
+      - <a href="https://twittershots.com/" target="_blank noopener noreferrer">twittershots.com</a>
+  - html转markdown系列
+    - html2md(hello-world社区出品工具站点)
+      - <a href="https://github.com/helloworld-Co/html2md" target="_blank noopener noreferrer">helloworld-Co/html2md</a>
+    - devtool.tech/html-md
+      - <a href="https://devtool.tech/html-md" target="_blank noopener noreferrer">devtool.tech</a>
+  - blob生成系列
+    - blobs.app(生成随机斑点svg)
+      - <a href="https://blobs.app/" target="_blank noopener noreferrer">blobs.app</a>
+    - blobmaker.app
+      - <a href="https://www.blobmaker.app/" target="_blank noopener noreferrer">www.blobmaker.app</a>
+  - glass玻璃效果生成系列
+    - glassmorphism(玻璃卡片css样式生成)
+      - <a href="https://hype4.academy/tools/glassmorphism-generator" target="_blank noopener noreferrer">hype4.academy</a>
+    - ui.glass(创建glass card)
+      - <a href="https://ui.glass/generator/" target="_blank noopener noreferrer">ui.glass</a>
+  - 渐变/网站背景生成系列
+    - cssgradient(各种渐变/背景/button)
+      - <a href="https://cssgradient.io/gradient-backgrounds/" target="_blank noopener noreferrer">cssgradient.io</a>
+    - uigradients.com(各种渐变颜色搭配/内容少)
+      - <a href="https://uigradients.com/#SinCityRed" target="_blank noopener noreferrer">uigradients.com</a>
+    - gradienta.io(各种背景渐变的网站)
+      - <a href="https://gradienta.io/" target="_blank noopener noreferrer">gradienta.io</a>
+    - coolbackgrounds.io(各种款式背景生成)
+      - <a href="https://coolbackgrounds.io/" target="_blank noopener noreferrer">coolbackgrounds.io</a>
+    - cssgradient.io(创建渐变背景)
+      - <a href="https://cssgradient.io/" target="_blank noopener noreferrer">cssgradient.io</a>
+    - svgbackgrounds.com(svg背景生成工具)
+      - <a href="https://www.svgbackgrounds.com/" target="_blank noopener noreferrer">www.svgbackgrounds.com</a>
+    - css-separator-generator(网站分隔背景生成)
+      - <a href="https://wweb.dev/resources/css-separator-generator/" target="_blank noopener noreferrer">wweb.dev</a>
+    - wickedbackgrounds.com(多层级海滩效果背景)
+      - <a href="https://wickedbackgrounds.com/app" target="_blank noopener noreferrer">wickedbackgrounds.com</a>
+    - bgjar.com(创建svg网站背景)
+      - <a href="https://bgjar.com/" target="_blank noopener noreferrer">bgjar.com</a>
+    - app.haikei.app(简单渐变背景生成)
+      - <a href="https://app.haikei.app/" target="_blank noopener noreferrer">app.haikei.app</a>
+    - meshgradient.in(简单/花哨的渐变背景)
+      - <a href="https://meshgradient.in/" target="_blank noopener noreferrer">meshgradient.in</a>
+    - products.ls.graphics(渐变图片下载)
+      - <a href="https://products.ls.graphics/mesh-gradients/" target="_blank noopener noreferrer">products.ls.graphics</a>
+    - pattern.monster(重复线条/svg生成)
+      - <a href="https://pattern.monster/" target="_blank noopener noreferrer">pattern.monster</a>
+    - visiwig.com(重复线条/版式生成/pattern)
+      - <a href="https://www.visiwig.com/patterns/" target="_blank noopener noreferrer">www.visiwig.com</a>
+    - animated-css-background-generator(简单动画元素运动背景生成)
+      - <a href="https://wweb.dev/resources/animated-css-background-generator/" target="_blank noopener noreferrer">wweb.dev</a>
+    - app.heazy.studio(各种svg背景生成)
+      - <a href="https://app.heazy.studio/" target="_blank noopener noreferrer">app.heazy.studio</a>
+    - gradientify.com(渐变背景生成)
+      - <a href="https://gradientify.com/" target="_blank noopener noreferrer">gradientify.com</a>
+    - cssgradienttext.com(渐变颜色文字背景工具)
+      - <a href="https://www.cssgradienttext.com/" target="_blank noopener noreferrer">www.cssgradienttext.com</a>
+    - csshero.org(渐变背景生成)
+      - <a href="https://csshero.org/mesher/" target="_blank noopener noreferrer">csshero.org</a>
+    - color-morph.com(渐变背景css生成)
+      - <a href="https://www.color-morph.com/" target="_blank noopener noreferrer">www.color-morph.com</a>
+    - svggradients.com(渐变svg图案)
+      - <a href="https://svggradients.com/" target="_blank noopener noreferrer">svggradients.com</a>
+    - gradients.ray.st(渐变图案png合集)
+      - <a href="https://gradients.ray.st/" target="_blank noopener noreferrer">gradients.ray.st</a>
+    - hypercolor.dev(简单渐变背景css/支持tailwind)
+      - <a href="https://hypercolor.dev/" target="_blank noopener noreferrer">hypercolor.dev</a>
+      - <a href="https://github.com/swc-project/plugins/blob/main/packages/styled-components/src/lib.rs" target="_blank noopener noreferrer">swc-project/plugins/blob/main/packages/styled-components/src/lib.rs</a>
+    - easing-gradients(渐变简单创建编辑器)
+      - <a href="https://larsenwork.com/easing-gradients/#editor" target="_blank noopener noreferrer">larsenwork.com</a>
+    - gradient.style(先进的渐变模型/颜色)
+      - <a href="https://gradient.style/" target="_blank noopener noreferrer">gradient.style</a>
+  - 测速系列
+    - pagespeed.web.dev(google)
+      - <a href="https://pagespeed.web.dev/" target="_blank noopener noreferrer">pagespeed.web.dev</a>
+    - tools.pingdom.com(可换地区)
+      - <a href="https://tools.pingdom.com/" target="_blank noopener noreferrer">tools.pingdom.com</a>
+    - www.webpagetest.org
+      - <a href="https://www.webpagetest.org/" target="_blank noopener noreferrer">www.webpagetest.org</a>
+    - gtmetrix.com
+      - <a href="https://gtmetrix.com/" target="_blank noopener noreferrer">gtmetrix.com</a>
+    - www.giftofspeed.com
+      - <a href="https://www.giftofspeed.com/" target="_blank noopener noreferrer">www.giftofspeed.com</a>
+    - pagelocity.com
+      - <a href="https://pagelocity.com/" target="_blank noopener noreferrer">pagelocity.com</a>
+    - performance.sucuri.net
+      - <a href="https://performance.sucuri.net/" target="_blank noopener noreferrer">performance.sucuri.net</a>
+    - gf.dev
+      - <a href="https://gf.dev/" target="_blank noopener noreferrer">gf.dev</a>
+    - dotcom-tools
+      - <a href="https://www.dotcom-tools.com/website-speed-test" target="_blank noopener noreferrer">www.dotcom-tools.com</a>
+    - dareboost
+      - <a href="https://www.dareboost.com/en" target="_blank noopener noreferrer">www.dareboost.com</a>
+  - echarts现成模板系列
+    - chartcube(antv图表帮助制作工具)
+      - <a href="https://chartcube.alipay.com/" target="_blank noopener noreferrer">chartcube.alipay.com</a>
+    - ppchart.com
+      - <a href="http://ppchart.com/#/" target="_blank noopener noreferrer">ppchart.com</a>
+    - isqqw.com
+      - <a href="https://www.isqqw.com/homepage" target="_blank noopener noreferrer">www.isqqw.com</a>
+    - makeapie.cn(makeapie cn)
+      - <a href="https://www.makeapie.cn/echarts" target="_blank noopener noreferrer">www.makeapie.cn</a>
+  - coupon.codelabo.cn(优惠券css)
+    - <a href="https://coupon.codelabo.cn/" target="_blank noopener noreferrer">coupon.codelabo.cn</a>
+  - 滤镜系列
+    - css-photo-filters(36个图片滤镜效果)
+      - <a href="https://baseline.is/tools/css-photo-filters/" target="_blank noopener noreferrer">baseline.is</a>
+  - textpop3d.web.app(生成3d效果文字)
+    - <a href="https://textpop3d.web.app/" target="_blank noopener noreferrer">textpop3d.web.app</a>
+  - svg操作工具
+    - svg-path-editor(svg path编辑)
+      - <a href="https://github.com/Yqnn/svg-path-editor" target="_blank noopener noreferrer">Yqnn/svg-path-editor</a>
+    - svg-path-visualizer(svg分析解析器)
+      - <a href="https://svg-path-visualizer.netlify.app/" target="_blank noopener noreferrer">svg-path-visualizer.netlify.app</a>
+    - warp-svg(svg扭曲器)
+      - <a href="https://pavellaptev.github.io/warp-svg/" target="_blank noopener noreferrer">pavellaptev.github.io</a>
+    - nano(最好的svg压缩器)
+      - <a href="https://vecta.io/nano" target="_blank noopener noreferrer">vecta.io</a>
+    - svgfm.chriskirknielsen(svg滤镜效果调试工具)
+      - <a href="https://svgfm.chriskirknielsen.com/" target="_blank noopener noreferrer">svgfm.chriskirknielsen.com</a>
+  - event loop事件循环系列
+    - jsv9000.app(event loop可视化)
+      - <a href="https://www.jsv9000.app/" target="_blank noopener noreferrer">www.jsv9000.app</a>
+    - loupe(事件循环可视化)
+      - <a href="http://latentflip.com/loupe" target="_blank noopener noreferrer">latentflip.com</a>
+  - 字体排版系列
+    - type-scale(页面不同大小字体rem生成)
+      - <a href="https://type-scale.com/" target="_blank noopener noreferrer">type-scale.com</a>
+    - responsive-font-calculator(响应式字体css生成)
+      - <a href="https://websemantics.uk/tools/responsive-font-calculator/" target="_blank noopener noreferrer">websemantics.uk</a>
+  - curlconverter.com(curl命令转代码/多语言支持)
+    - <a href="https://curlconverter.com/" target="_blank noopener noreferrer">curlconverter.com</a>
+  - ts-error-translator(ts错误人话翻译器)
+    - <a href="https://github.com/mattpocock/ts-error-translator" target="_blank noopener noreferrer">mattpocock/ts-error-translator</a>
+  - cdn免费系列
+    - jsdelivr
+      - <a href="https://www.jsdelivr.com/" target="_blank noopener noreferrer">www.jsdelivr.com</a>
+    - staticfile(七牛云/有限)
+      - <a href="https://staticfile.org/" target="_blank noopener noreferrer">staticfile.org</a>
+    - alicdn(支持拼接/有限)
+      - <a href="https://g.alicdn.com/code/lib/??react/18.0.0/umd/react.production.min.js,react-dom/18.0.0/umd/react-dom.production.min.js" target="_blank noopener noreferrer">g.alicdn.com</a>
+    - githack
+      - <a href="http://raw.githack.com/" target="_blank noopener noreferrer">raw.githack.com</a>
+    - statically
+      - <a href="https://statically.io/" target="_blank noopener noreferrer">statically.io</a>
+    - esm资源cdn系列
+      - skypack.dev
+        - <a href="https://www.skypack.dev/" target="_blank noopener noreferrer">www.skypack.dev</a>
+      - esm.sh
+        - <a href="https://esm.sh/" target="_blank noopener noreferrer">esm.sh</a>
+    - byted-static
+      - <a href="https://unpkg.byted-static.com/react/18.2.0/umd/react.production.min.js" target="_blank noopener noreferrer">unpkg.byted-static.com</a>
+  - json预览/可视化系列
+    - jsonhero.io
+      - <a href="https://jsonhero.io/" target="_blank noopener noreferrer">jsonhero.io</a>
+    - jsonvisio.com
+      - <a href="https://jsonvisio.com/editor" target="_blank noopener noreferrer">jsonvisio.com</a>
+    - jsoncrack.com
+      - <a href="https://jsoncrack.com/" target="_blank noopener noreferrer">jsoncrack.com</a>
+  - perf.link(对比不同语句执行速度)
+    - <a href="https://perf.link/" target="_blank noopener noreferrer">perf.link</a>
+  - tweetic.io(创建twitter的分享card代码)
+    - <a href="https://www.tweetic.io/" target="_blank noopener noreferrer">www.tweetic.io</a>
+  - wakatime.com(统计编码时间)
+    - <a href="https://wakatime.com/" target="_blank noopener noreferrer">wakatime.com</a>
+  - 关键词查库系列
+    - openbase.com(npm包分类查询网站)
+      - <a href="https://openbase.com/" target="_blank noopener noreferrer">openbase.com</a>
+    - bestofjs.org
+      - <a href="https://bestofjs.org/" target="_blank noopener noreferrer">bestofjs.org</a>
+  - terminalgif.com(模拟命令行交互导出gif)
+    - <a href="https://www.terminalgif.com/" target="_blank noopener noreferrer">www.terminalgif.com</a>
+  - npm系列
+    - npmgraph依赖视图系列
+      - npmgraph(查看依赖黑洞视图)
+        - <a href="https://github.com/npmgraph/npmgraph" target="_blank noopener noreferrer">npmgraph/npmgraph</a>
+      - npm.anvaka.com(查看依赖视图/慢)
+        - <a href="https://npm.anvaka.com/#/" target="_blank noopener noreferrer">npm.anvaka.com</a>
+    - npm包添加成本查看系列
+      - packagephobia(查看向项目添加新依赖的成本)
+        - <a href="https://github.com/styfle/packagephobia" target="_blank noopener noreferrer">styfle/packagephobia</a>
+      - bundlephobia.com
+        - <a href="https://bundlephobia.com/" target="_blank noopener noreferrer">bundlephobia.com</a>
+    - npmtrends(对比同类包下载量)
+      - <a href="https://npmtrends.com/" target="_blank noopener noreferrer">npmtrends.com</a>
+    - npmcharts(查看npm包star数量走势)
+      - <a href="https://npmcharts.com/" target="_blank noopener noreferrer">npmcharts.com</a>
+    - npm-stat(对比包下载量)
+      - <a href="https://npm-stat.com/" target="_blank noopener noreferrer">npm-stat.com</a>
+    - packagephobia.com(包大小统计器)
+      - <a href="https://packagephobia.com/" target="_blank noopener noreferrer">packagephobia.com</a>
+    - npm-stat(npm下载量对比)
+      - <a href="https://npm-stat.com/charts.html" target="_blank noopener noreferrer">npm-stat.com</a>
+    - namechecker(检测npm等源包名是否被注册)
+      - <a href="https://github.com/toddcooke/namechecker" target="_blank noopener noreferrer">toddcooke/namechecker</a>
+    - npm-burst(npm包各版本下载量统计)
+      - <a href="https://craigory.dev/npm-burst/" target="_blank noopener noreferrer">craigory.dev</a>
+    - package-majors(包各版本下载统计)
+      - <a href="https://github.com/NullVoxPopuli/package-majors" target="_blank noopener noreferrer">NullVoxPopuli/package-majors</a>
+    - npminsights(npm包下载柱状图统计)
+      - <a href="https://npminsights.vercel.app/" target="_blank noopener noreferrer">npminsights.vercel.app</a>
+    - npm-stat(包各版本下载图统计)
+      - <a href="https://npm-stat.link/" target="_blank noopener noreferrer">npm-stat.link</a>
+    - licenses.dev(分析npm包所有许可证)
+      - <a href="https://licenses.dev/" target="_blank noopener noreferrer">licenses.dev</a>
+  - httpbin.org(简单的CRUD测试服务)
+    - <a href="https://httpbin.org/" target="_blank noopener noreferrer">httpbin.org</a>
+  - diffchecker.com(对比代码差异)
+    - <a href="https://www.diffchecker.com/" target="_blank noopener noreferrer">www.diffchecker.com</a>
+  - browsersl.ist(browserslist查询)
+    - <a href="https://browsersl.ist/" target="_blank noopener noreferrer">browsersl.ist</a>
+  - patorjk.com(ASCII字符生成器)
+    - <a href="http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something" target="_blank noopener noreferrer">patorjk.com</a>
+  - fffuel.co/lllove(心形svg生成器)
+    - <a href="https://fffuel.co/lllove/" target="_blank noopener noreferrer">fffuel.co</a>
+  - piechartmaker.co(pie饼图生成器)
+    - <a href="https://piechartmaker.co/" target="_blank noopener noreferrer">piechartmaker.co</a>
+  - github趋势系列
+    - star-history.com(star趋势)
+      - <a href="https://star-history.com/" target="_blank noopener noreferrer">star-history.com</a>
+    - ossinsight.io(用户各种数据统计)
+      - <a href="https://ossinsight.io/" target="_blank noopener noreferrer">ossinsight.io</a>
+  - inappbrowser.com(检测app内嵌浏览器是否注入了脚本)
+    - <a href="https://inappbrowser.com/" target="_blank noopener noreferrer">inappbrowser.com</a>
+  - intl-explorer.com(intl实例游乐场)
+    - <a href="https://www.intl-explorer.com/?locale=zh-CN" target="_blank noopener noreferrer">www.intl-explorer.com</a>
+  - pastebin剪切板分享系列
+    - pastebin.mozilla
+      - <a href="https://pastebin.mozilla.org/" target="_blank noopener noreferrer">pastebin.mozilla.org</a>
+    - pastebin.ubuntu(需登录)
+      - <a href="https://pastebin.ubuntu.com/" target="_blank noopener noreferrer">pastebin.ubuntu.com</a>
+    - pastebin.com
+      - <a href="https://pastebin.com/" target="_blank noopener noreferrer">pastebin.com</a>
+  - bookmarklet书签系列
+    - mrcoles.com(创建bookmarklet)
+      - <a href="https://mrcoles.com/bookmarklet/" target="_blank noopener noreferrer">mrcoles.com</a>
+    - terser.org(压缩js用)
+      - <a href="https://try.terser.org/" target="_blank noopener noreferrer">try.terser.org</a>
+    - bookmarklet_editor(代码转书签)
+      - <a href="https://www.gibney.org/bookmarklet_editor" target="_blank noopener noreferrer">www.gibney.org</a>
+    - make-bookmarklets.com(创建js书签)
+      - <a href="https://make-bookmarklets.com/" target="_blank noopener noreferrer">make-bookmarklets.com</a>
+  - uiverse.io(各种炫酷按钮/卡片代码片段合集)
+    - <a href="https://uiverse.io/" target="_blank noopener noreferrer">uiverse.io</a>
+  - regex正则系列
+    - regex101.com
+      - <a href="https://regex101.com/" target="_blank noopener noreferrer">regex101.com</a>
+    - regexr.com(提供常见reg)
+      - <a href="https://regexr.com/" target="_blank noopener noreferrer">regexr.com</a>
+    - regex-vis.com(正则拆解说明)
+      - <a href="https://regex-vis.com/" target="_blank noopener noreferrer">regex-vis.com</a>
+  - translate.i18next(翻译i18n json文件)
+    - <a href="https://translate.i18next.com/" target="_blank noopener noreferrer">translate.i18next.com</a>
+  - vectormaker.co(图片转svg/算法生成路径)
+    - <a href="https://vectormaker.co/" target="_blank noopener noreferrer">vectormaker.co</a>
+  - jimpl.com(图片exif信息在线读取)
+    - <a href="https://jimpl.com/" target="_blank noopener noreferrer">jimpl.com</a>
+  - invisible-characters.com(零宽字符大全)
+    - <a href="https://invisible-characters.com/" target="_blank noopener noreferrer">invisible-characters.com</a>
+  - animate动画系列
+    - animista(即取即用小动画)
+      - <a href="https://animista.net/" target="_blank noopener noreferrer">animista.net</a>
+    - cssanimation.io(动画大全)
+      - <a href="https://cssanimation.io/" target="_blank noopener noreferrer">cssanimation.io</a>
+    - linear-easing-generator(linear动画函数创建工具)
+      - <a href="https://github.com/jakearchibald/linear-easing-generator" target="_blank noopener noreferrer">jakearchibald/linear-easing-generator</a>
+  - useragents.me(UA大全)
+    - <a href="https://www.useragents.me/" target="_blank noopener noreferrer">www.useragents.me</a>
+  - textcleaner.net(优化英文片段格式)
+    - <a href="https://textcleaner.net/" target="_blank noopener noreferrer">textcleaner.net</a>
+  - image图片处理系列
+    - pixelicious.xyz(图片马赛克化)
+      - <a href="https://www.pixelicious.xyz/" target="_blank noopener noreferrer">www.pixelicious.xyz</a>
+  - httpstat.us(返回各种响应码工具站)
+    - <a href="https://httpstat.us/" target="_blank noopener noreferrer">httpstat.us</a>
+  - meta-tags生成系列
+    - metatags.io(为站点创建分享og meta tag工具)
+      - <a href="https://metatags.io/" target="_blank noopener noreferrer">metatags.io</a>
+    - websitemetadata.com
+      - <a href="https://websitemetadata.com/meta-tags-generator" target="_blank noopener noreferrer">websitemetadata.com</a>
+  - svg系列
+    - svg波浪系列
+      - getwaves.io(静态波浪svg生成)
+        - <a href="https://getwaves.io/" target="_blank noopener noreferrer">getwaves.io</a>
+      - shape divider(波浪svg生成)
+        - <a href="https://www.shapedivider.app/" target="_blank noopener noreferrer">www.shapedivider.app</a>
+      - svgwave(svg波浪生成)
+        - <a href="https://svgwave.in/" target="_blank noopener noreferrer">svgwave.in</a>
+    - svgo优化压缩系列
+      - zhangxinxu-sp-svgo(svgo压缩)
+        - <a href="https://www.zhangxinxu.com/sp/svgo/" target="_blank noopener noreferrer">www.zhangxinxu.com</a>
+      - svgomg
+        - <a href="https://jakearchibald.github.io/svgomg/" target="_blank noopener noreferrer">jakearchibald.github.io</a>
+    - singlelinetext(单笔画字母svg生成)
+      - <a href="https://www.templatemaker.nl/singlelinetext/" target="_blank noopener noreferrer">www.templatemaker.nl</a>
+    - confetti-generator(svg彩纸屑生成器)
+      - <a href="https://www.magicpattern.design/tools/confetti-generator" target="_blank noopener noreferrer">www.magicpattern.design</a>
+    - durves(生成点阵波浪svg图)
+      - <a href="https://github.com/filipeedr/durves" target="_blank noopener noreferrer">filipeedr/durves</a>
+  - bundlescanner(扫描分析站点用的npm包)
+    - <a href="https://bundlescanner.com/website/google.com" target="_blank noopener noreferrer">bundlescanner.com</a>
+  - shadow阴影系列
+    - shadow-gradients(渐变色shadow阴影生成)
+      - <a href="https://alvarotrigo.com/shadow-gradients/" target="_blank noopener noreferrer">alvarotrigo.com</a>
+    - shadows.brumm.af(可视化shadows创建)
+      - <a href="https://shadows.brumm.af/" target="_blank noopener noreferrer">shadows.brumm.af</a>
+    - css-scroll-shadows(滚动边缘阴影样式生成)
+      - <a href="https://css-scroll-shadows.vercel.app/?bgColor=56097c&shadowColor=222222&pxSize=15" target="_blank noopener noreferrer">css-scroll-shadows.vercel.app</a>
+  - symbol直接copy使用符号系列
+    - withseismic/glyphs(可以直接copy使用的符号)
+      - <a href="https://x.withseismic.com/glyphs" target="_blank noopener noreferrer">x.withseismic.com</a>
+    - unicopy.cc
+      - <a href="https://unicopy.cc/" target="_blank noopener noreferrer">unicopy.cc</a>
+  - package.json检查系列
+    - publint(检查正确性)
+      - <a href="https://publint.dev/" target="_blank noopener noreferrer">publint.dev</a>
+    - arethetypeswrong(检查types正确性)
+      - <a href="https://arethetypeswrong.github.io/" target="_blank noopener noreferrer">arethetypeswrong.github.io</a>
+  - equal-table隐式转换对比表
+    - JavaScript-Equality-Table
+      - <a href="https://dorey.github.io/JavaScript-Equality-Table/" target="_blank noopener noreferrer">dorey.github.io</a>
+    - js-equality-game
+      - <a href="https://github.com/slikts/js-equality-game" target="_blank noopener noreferrer">slikts/js-equality-game</a>
+  - uptime.is(SLA时间计算)
+    - <a href="https://uptime.is/" target="_blank noopener noreferrer">uptime.is</a>
+  - js代码序列化转换系列
+    - aaencode(js代码emoji化)
+      - <a href="https://utf-8.jp/public/aaencode.html" target="_blank noopener noreferrer">utf-8.jp</a>
+    - jsfuck(js代码转中括号)
+      - <a href="http://www.jsfuck.com/" target="_blank noopener noreferrer">www.jsfuck.com</a>
+  - badge徽章站
+    - shields.io(github徽章站)
+      - <a href="https://shields.io/" target="_blank noopener noreferrer">shields.io</a>
+    - badgers.space
+      - <a href="https://badgers.space/" target="_blank noopener noreferrer">badgers.space</a>
+  - qrcode二维码系列
+    - qrcode-monkey.com(免费qr二维码生成器)
+      - <a href="https://www.qrcode-monkey.com/" target="_blank noopener noreferrer">www.qrcode-monkey.com</a>
+    - link-to-qr.com(网址二维码生成器)
+      - <a href="https://link-to-qr.com/" target="_blank noopener noreferrer">link-to-qr.com</a>
+    - qrbtf(二维码生成器)
+      - <a href="https://github.com/ciaochaos/qrbtf" target="_blank noopener noreferrer">ciaochaos/qrbtf</a>
+    - styled-qr-code-generator(一些风格的二维码生成)
+      - <a href="https://github.com/lyqht/styled-qr-code-generator" target="_blank noopener noreferrer">lyqht/styled-qr-code-generator</a>
+  - favicon.software(生成各种大小favicon)
+    - <a href="https://www.favicon.software/" target="_blank noopener noreferrer">www.favicon.software</a>
+  - avatar头像系列
+    - identicon.js(github风格的唯一头像生成器)
+      - <a href="https://github.com/stewartlord/identicon.js" target="_blank noopener noreferrer">stewartlord/identicon.js</a>
+    - pfpmaker.com(生成各种风格背景的头像)
+      - <a href="https://pfpmaker.com/" target="_blank noopener noreferrer">pfpmaker.com</a>
+    - unavatar(统一获取头像服务)
+      - <a href="https://github.com/microlinkhq/unavatar" target="_blank noopener noreferrer">microlinkhq/unavatar</a>
+  - 反混淆系列
+    - wakaru(反编译/反压缩js代码)
+      - <a href="https://github.com/pionxzh/wakaru" target="_blank noopener noreferrer">pionxzh/wakaru</a>
+    - deobfuscate.relative.im
+      - <a href="https://deobfuscate.relative.im/" target="_blank noopener noreferrer">deobfuscate.relative.im</a>
+  - clamp计算系列
+    - clamp-calculator(字体大小clamp计算器/始终合适)
+      - <a href="https://chrisburnell.com/clamp-calculator/" target="_blank noopener noreferrer">chrisburnell.com</a>
+    - utopia.fyi/clamp
+      - <a href="https://utopia.fyi/clamp/calculator/" target="_blank noopener noreferrer">utopia.fyi</a>
+    - clamp.vittoretrivi.dev(钳位计算)
+      - <a href="https://clamp.vittoretrivi.dev/" target="_blank noopener noreferrer">clamp.vittoretrivi.dev</a>
+    - min-max-calculator.9elements
+      - <a href="https://min-max-calculator.9elements.com/" target="_blank noopener noreferrer">min-max-calculator.9elements.com</a>
+  - border边框系列
+    - fancy-border-radius(自由可视化调整8角radius)
+      - <a href="https://9elements.github.io/fancy-border-radius/full-control.html" target="_blank noopener noreferrer">9elements.github.io</a>
+    - maxbittker/broider(9-patch边框制作)
+      - <a href="https://maxbittker.github.io/broider/" target="_blank noopener noreferrer">maxbittker.github.io</a>
+    - dashed-border-generator(虚线圆角边框svg生成)
+      - <a href="https://kovart.github.io/dashed-border-generator/" target="_blank noopener noreferrer">kovart.github.io</a>
+  - darkvisitors.com(已知的AI bot UA列表)
+    - <a href="https://darkvisitors.com/" target="_blank noopener noreferrer">darkvisitors.com</a>
+  - restcountries.com(获取国家信息的api)
+    - <a href="https://restcountries.com/" target="_blank noopener noreferrer">restcountries.com</a>
+- Fonts/设计
+  - Icon站集合/design
+    - flag-icon-css(所有国家国旗svg库)
+      - <a href="https://github.com/lipis/flag-icon-css" target="_blank noopener noreferrer">lipis/flag-icon-css</a>
+    - flag-icons(所有国旗svg)
+      - <a href="https://github.com/lipis/flag-icons" target="_blank noopener noreferrer">lipis/flag-icons</a>
+    - design-resources-for-developers(design/icon大全)
+      - <a href="https://github.com/bradtraversy/design-resources-for-developers" target="_blank noopener noreferrer">bradtraversy/design-resources-for-developers</a>
+    - css-file-icons(不同类型文件icon)
+      - <a href="https://github.com/colorswall/CSS-file-icons" target="_blank noopener noreferrer">colorswall/CSS-file-icons</a>
+    - iconshock(带颜色的 icon)
+      - <a href="https://www.iconshock.com/" target="_blank noopener noreferrer">www.iconshock.com</a>
+    - weather-icons(天气图标大全)
+      - <a href="https://github.com/erikflowers/weather-icons" target="_blank noopener noreferrer">erikflowers/weather-icons</a>
+    - RemixIcon
+      - <a href="https://github.com/Remix-Design/RemixIcon" target="_blank noopener noreferrer">Remix-Design/RemixIcon</a>
+    - FontAwesome
+      - <a href="https://fontawesome.dashgame.com/" target="_blank noopener noreferrer">fontawesome.dashgame.com</a>
+    - IconFont(阿里图标库)
+      - <a href="https://www.iconfont.cn/" target="_blank noopener noreferrer">www.iconfont.cn</a>
+    - bootstarp-icon
+      - <a href="https://icons.getbootstrap.com/" target="_blank noopener noreferrer">icons.getbootstrap.com</a>
+    - feather-icons
+      - <a href="https://feathericons.com/" target="_blank noopener noreferrer">feathericons.com</a>
+    - flaticon(icon大全/有些收费)
+      - <a href="https://www.flaticon.com/" target="_blank noopener noreferrer">www.flaticon.com</a>
+    - iconsax(icon图标集)
+      - <a href="https://github.com/rendinjast/iconsax-react" target="_blank noopener noreferrer">rendinjast/iconsax-react</a>
+    - iconoir.com
+      - <a href="https://iconoir.com/" target="_blank noopener noreferrer">iconoir.com</a>
+    - heroicons(tailwind维护的icons集)
+      - <a href="https://github.com/tailwindlabs/heroicons" target="_blank noopener noreferrer">tailwindlabs/heroicons</a>
+    - iconsvg.xyz(简单icon大全)
+      - <a href="https://iconsvg.xyz/" target="_blank noopener noreferrer">iconsvg.xyz</a>
+    - IconPark
+      - <a href="https://github.com/bytedance/IconPark" target="_blank noopener noreferrer">bytedance/IconPark</a>
+    - mono.company(少量图标)
+      - <a href="https://icons.mono.company/" target="_blank noopener noreferrer">icons.mono.company</a>
+    - iconscout
+      - <a href="https://iconscout.com/unicons" target="_blank noopener noreferrer">iconscout.com</a>
+    - evil-icons(老)
+      - <a href="https://github.com/evil-icons/evil-icons" target="_blank noopener noreferrer">evil-icons/evil-icons</a>
+    - bytesize-icons(老)
+      - <a href="https://github.com/danklammer/bytesize-icons" target="_blank noopener noreferrer">danklammer/bytesize-icons</a>
+    - iconduck(10w+图标)
+      - <a href="https://iconduck.com/" target="_blank noopener noreferrer">iconduck.com</a>
+    - svgrepo.com(svg图标大全)
+      - <a href="https://www.svgrepo.com/" target="_blank noopener noreferrer">www.svgrepo.com</a>
+    - phosphor-home(线性图标)
+      - <a href="https://github.com/phosphor-icons/phosphor-home" target="_blank noopener noreferrer">phosphor-icons/phosphor-home</a>
+    - 3dicons.so(3d图标大全)
+      - <a href="https://3dicons.co/" target="_blank noopener noreferrer">3dicons.co</a>
+    - dotown(像素图标)
+      - <a href="https://dotown.maeda-design-room.net/" target="_blank noopener noreferrer">dotown.maeda-design-room.net</a>
+    - ionicons(ionic的图标库)
+      - <a href="https://github.com/ionic-team/ionicons" target="_blank noopener noreferrer">ionic-team/ionicons</a>
+    - tabler-icons(svg图标大全)
+      - <a href="https://github.com/tabler/tabler-icons" target="_blank noopener noreferrer">tabler/tabler-icons</a>
+    - Font-Awesome
+      - <a href="https://github.com/FortAwesome/Font-Awesome" target="_blank noopener noreferrer">FortAwesome/Font-Awesome</a>
+    - pixelarticons.com(像素风svg图标大全)
+      - <a href="https://pixelarticons.com/" target="_blank noopener noreferrer">pixelarticons.com</a>
+    - MingCute(svg图标大全/冷门)
+      - <a href="https://github.com/Richard9394/MingCute" target="_blank noopener noreferrer">Richard9394/MingCute</a>
+    - majesticons(svg图标/冷门)
+      - <a href="https://github.com/halfmage/majesticons" target="_blank noopener noreferrer">halfmage/majesticons</a>
+    - simple-icons(各种品牌的svg图标大全)
+      - <a href="https://github.com/simple-icons/simple-icons" target="_blank noopener noreferrer">simple-icons/simple-icons</a>
+    - icones(图标大全/可复制各种框架格式)
+      - <a href="https://github.com/antfu/icones" target="_blank noopener noreferrer">antfu/icones</a>
+    - heroicons(图标集/不是很多)
+      - <a href="https://heroicons.com/" target="_blank noopener noreferrer">heroicons.com</a>
+    - radix-icons(小图标合集)
+      - <a href="https://icons.radix-ui.com/" target="_blank noopener noreferrer">icons.radix-ui.com</a>
+    - svgdoodles.com(svg涂鸦图案合集)
+      - <a href="https://svgdoodles.com/" target="_blank noopener noreferrer">svgdoodles.com</a>
+    - icons.download(图标集/可调粗细)
+      - <a href="https://icons.download/" target="_blank noopener noreferrer">icons.download</a>
+    - remixicon.com(大量图标)
+      - <a href="https://remixicon.com/" target="_blank noopener noreferrer">remixicon.com</a>
+    - healthicons.com(医疗品类图标合集)
+      - <a href="https://healthicons.org/" target="_blank noopener noreferrer">healthicons.org</a>
+    - lucide(图标合集)
+      - <a href="https://github.com/lucide-icons/lucide" target="_blank noopener noreferrer">lucide-icons/lucide</a>
+    - icones(图标超大合集)
+      - <a href="https://icones.js.org/" target="_blank noopener noreferrer">icones.js.org</a>
+    - sargamicons.com(少量精美图标合集)
+      - <a href="https://sargamicons.com/" target="_blank noopener noreferrer">sargamicons.com</a>
+    - browser-logos(高清版浏览器图标)
+      - <a href="https://github.com/alrra/browser-logos" target="_blank noopener noreferrer">alrra/browser-logos</a>
+    - css.gg(纯css实现的图标合集)
+      - <a href="https://github.com/astrit/css.gg" target="_blank noopener noreferrer">astrit/css.gg</a>
+    - icongo(svg图标大全/可搜索)
+      - <a href="https://github.com/jaywcjlove/icongo" target="_blank noopener noreferrer">jaywcjlove/icongo</a>
+    - ClockFace-font(时钟图标字体)
+      - <a href="https://github.com/ocodo/ClockFace-font" target="_blank noopener noreferrer">ocodo/ClockFace-font</a>
+    - futicons.com(未来风格的图标)
+      - <a href="https://futicons.com/" target="_blank noopener noreferrer">futicons.com</a>
+    - lucide.dev(图标合集)
+      - <a href="https://lucide.dev/" target="_blank noopener noreferrer">lucide.dev</a>
+    - slimicons.com(少量图标合集)
+      - <a href="https://slimicons.com/" target="_blank noopener noreferrer">slimicons.com</a>
+    - openmoji.org(表情符号合集)
+      - <a href="https://openmoji.org/" target="_blank noopener noreferrer">openmoji.org</a>
+    - tabler-icons.io(合集)
+      - <a href="https://tabler-icons.io/" target="_blank noopener noreferrer">tabler-icons.io</a>
+    - theme-toggles(主题切换/dark模式切换的动画按钮)
+      - <a href="https://github.com/alfiejones/theme-toggles" target="_blank noopener noreferrer">alfiejones/theme-toggles</a>
+    - atlasicons.vectopus(图标合集)
+      - <a href="https://atlasicons.vectopus.com/" target="_blank noopener noreferrer">atlasicons.vectopus.com</a>
+    - unicornicons(有交互动画的icon)
+      - <a href="https://unicornicons.com/icons" target="_blank noopener noreferrer">unicornicons.com</a>
+    - mac-cursors(mac指针集合图片下载)
+      - <a href="https://github.com/daviddarnes/mac-cursors" target="_blank noopener noreferrer">daviddarnes/mac-cursors</a>
+    - iconhunt.site(关键词搜索icon图标/svg)
+      - <a href="https://www.iconhunt.site/" target="_blank noopener noreferrer">www.iconhunt.site</a>
+    - iconify(图标合集工具包)
+      - <a href="https://iconify.design/" target="_blank noopener noreferrer">iconify.design</a>
+    - techicons.dev(各种技术工具的彩色图标)
+      - <a href="https://techicons.dev/" target="_blank noopener noreferrer">techicons.dev</a>
+    - flowbite.com/icons(svg图标合集)
+      - <a href="https://flowbite.com/icons/" target="_blank noopener noreferrer">flowbite.com</a>
+    - SuperTinyIcons(超小体积商标彩色svg icon)
+      - <a href="https://github.com/edent/SuperTinyIcons" target="_blank noopener noreferrer">edent/SuperTinyIcons</a>
+    - iosicongallery.com(apple store app图标合集)
+      - <a href="https://www.iosicongallery.com/" target="_blank noopener noreferrer">www.iosicongallery.com</a>
+    - iconbuddy.app(图标大全)
+      - <a href="https://iconbuddy.app/" target="_blank noopener noreferrer">iconbuddy.app</a>
+    - china_school_badge(中国大学校徽图标库)
+      - <a href="https://github.com/lovefc/china_school_badge" target="_blank noopener noreferrer">lovefc/china_school_badge</a>
+    - xicons(svg图标合集)
+      - <a href="https://www.xicons.org/#/" target="_blank noopener noreferrer">www.xicons.org</a>
+    - yesicon.app(18w图标支持中文搜索)
+      - <a href="https://yesicon.app/" target="_blank noopener noreferrer">yesicon.app</a>
+    - blendicons.com(图标站)
+      - <a href="https://blendicons.com/" target="_blank noopener noreferrer">blendicons.com</a>
+    - feylogos.com(公司商标合集)
+      - <a href="https://www.feylogos.com/" target="_blank noopener noreferrer">www.feylogos.com</a>
+  - Font工具
+    - jp
+      - <a href="https://w3g.jp/sample/css/font-family" target="_blank noopener noreferrer">w3g.jp</a>
+    - fontmin(字体最小化)
+      - <a href="https://github.com/ecomfe/fontmin" target="_blank noopener noreferrer">ecomfe/fontmin</a>
+    - font-spider(字体优化)
+      - <a href="https://github.com/aui/font-spider" target="_blank noopener noreferrer">aui/font-spider</a>
+    - 字体合并
+      - <a href="https://blog.csdn.net/wanglei1991gao/article/details/72912542" target="_blank noopener noreferrer">blog.csdn.net</a>
+      - <a href="https://en.m.fontke.com/tool/mergefonts/" target="_blank noopener noreferrer">en.m.fontke.com</a>
+    - emoji
+      - <a href="https://www.zhihu.com/question/25119921" target="_blank noopener noreferrer">www.zhihu.com</a>
+      - <a href="https://docs.microsoft.com/zh-cn/typography/font-list/segoe-ui-historic" target="_blank noopener noreferrer">docs.microsoft.com</a>
+    - 免费商用字体
+      - <a href="https://github.com/wordshub/free-font" target="_blank noopener noreferrer">wordshub/free-font</a>
+      - <a href="https://wordshub.github.io/free-font/" target="_blank noopener noreferrer">wordshub.github.io</a>
+    - uncut.wtf(90种英文字体下载)
+      - <a href="https://uncut.wtf/" target="_blank noopener noreferrer">uncut.wtf</a>
+    - coding-fonts.css-tricks.com(各种code用字体预览和下载)
+      - <a href="https://coding-fonts.css-tricks.com/" target="_blank noopener noreferrer">coding-fonts.css-tricks.com</a>
+    - webfontloader(字体加载器)
+      - <a href="https://github.com/typekit/webfontloader" target="_blank noopener noreferrer">typekit/webfontloader</a>
+    - ttf2woff2(ttf转woff2)
+      - <a href="https://github.com/nfroidure/ttf2woff2" target="_blank noopener noreferrer">nfroidure/ttf2woff2</a>
+    - 字体提供商系列
+      - fonts.google.com
+        - <a href="https://fonts.google.com/" target="_blank noopener noreferrer">fonts.google.com</a>
+      - fonts.adobe.com(typekit)
+        - <a href="https://fonts.adobe.com/" target="_blank noopener noreferrer">fonts.adobe.com</a>
+      - fonts.bunny.net(google font替代品)
+        - <a href="https://fonts.bunny.net/" target="_blank noopener noreferrer">fonts.bunny.net</a>
+      - fontshare.com
+        - <a href="https://www.fontshare.com/" target="_blank noopener noreferrer">www.fontshare.com</a>
+    - font-subset.disidu.com(在线字体裁剪)
+      - <a href="https://font-subset.disidu.com/" target="_blank noopener noreferrer">font-subset.disidu.com</a>
+    - fontkit(字体引擎/可转svg等)
+      - <a href="https://github.com/foliojs/fontkit" target="_blank noopener noreferrer">foliojs/fontkit</a>
+    - fallback防止字体加载布局偏移系列
+      - fontpie(冷)
+        - <a href="https://github.com/pixel-point/fontpie" target="_blank noopener noreferrer">pixel-point/fontpie</a>
+      - fontaine(支持多框架)
+        - <a href="https://github.com/danielroe/fontaine" target="_blank noopener noreferrer">danielroe/fontaine</a>
+      - capsize
+        - <a href="https://github.com/seek-oss/capsize" target="_blank noopener noreferrer">seek-oss/capsize</a>
+    - noscrape(混淆字体/防爬虫/冷门)
+      - <a href="https://github.com/schoenbergerb/noscrape" target="_blank noopener noreferrer">schoenbergerb/noscrape</a>
+    - fonty.io(查看网站使用的字体)
+      - <a href="https://fonty.io/" target="_blank noopener noreferrer">fonty.io</a>
+    - wakamaifondue.com(详细审查可变字体信息)
+      - <a href="https://wakamaifondue.com/" target="_blank noopener noreferrer">wakamaifondue.com</a>
+    - Slice(去除可变字体轴)
+      - <a href="https://github.com/source-foundry/Slice" target="_blank noopener noreferrer">source-foundry/Slice</a>
+    - woff2(ttf转woff2工具)
+      - <a href="https://github.com/google/woff2" target="_blank noopener noreferrer">google/woff2</a>
+    - YuzuMarker.FontDetection(cjk字体检测)
+      - <a href="https://github.com/JeffersonQin/YuzuMarker.FontDetection" target="_blank noopener noreferrer">JeffersonQin/YuzuMarker.FontDetection</a>
+    - fontforge(编辑字体工具)
+      - <a href="https://fontforge.org/en-US/" target="_blank noopener noreferrer">fontforge.org</a>
+  - 字体系列
+    - 中文字体系列
+      - kose-font(小赖字体)
+        - <a href="https://github.com/lxgw/kose-font" target="_blank noopener noreferrer">lxgw/kose-font</a>
+      - toneoz-font-pinyin-wenkai
+        - <a href="https://github.com/MoeYc/toneoz-font-pinyin-wenkai" target="_blank noopener noreferrer">MoeYc/toneoz-font-pinyin-wenkai</a>
+      - toneoz-font-pinyin-kai(带pinyin的字体)
+        - <a href="https://github.com/jeffreyxuan/toneoz-font-pinyin-kai" target="_blank noopener noreferrer">jeffreyxuan/toneoz-font-pinyin-kai</a>
+      - qiji-font(明代木板印刷字体)
+        - <a href="https://github.com/LingDong-/qiji-font" target="_blank noopener noreferrer">LingDong-/qiji-font</a>
+      - source-han-sans(思源黑体)
+        - <a href="https://github.com/adobe-fonts/source-han-sans" target="_blank noopener noreferrer">adobe-fonts/source-han-sans</a>
+      - alibaba普惠体
+        - <a href="https://fonts.alibabagroup.com/#/font" target="_blank noopener noreferrer">fonts.alibabagroup.com</a>
+      - Maple-font(圆角国产字体)
+        - <a href="https://github.com/subframe7536/Maple-font" target="_blank noopener noreferrer">subframe7536/Maple-font</a>
+      - kingsoft(金山云技术体)
+        - <a href="https://design.ksyun.com/font" target="_blank noopener noreferrer">design.ksyun.com</a>
+      - smiley-sans(得意黑字体)
+        - <a href="https://github.com/atelier-anchor/smiley-sans" target="_blank noopener noreferrer">atelier-anchor/smiley-sans</a>
+      - Sarasa-Gothic(更纱黑体)
+        - <a href="https://github.com/be5invis/Sarasa-Gothic" target="_blank noopener noreferrer">be5invis/Sarasa-Gothic</a>
+      - lxgw-wenkai系列
+        - LxgwWenKai(lxgw字体)
+          - <a href="https://github.com/lxgw/LxgwWenKai" target="_blank noopener noreferrer">lxgw/LxgwWenKai</a>
+        - lxgw-wenkai-webfont(npm包/style)
+          - <a href="https://github.com/chawyehsu/lxgw-wenkai-webfont" target="_blank noopener noreferrer">chawyehsu/lxgw-wenkai-webfont</a>
+      - FanWunMing(简对多繁字体)
+        - <a href="https://github.com/ayaka14732/FanWunMing" target="_blank noopener noreferrer">ayaka14732/FanWunMing</a>
+      - iansui(台湾繁体)
+        - <a href="https://github.com/ButTaiwan/iansui" target="_blank noopener noreferrer">ButTaiwan/iansui</a>
+      - I.Ming(一点明朝体)
+        - <a href="https://github.com/ichitenfont/I.Ming" target="_blank noopener noreferrer">ichitenfont/I.Ming</a>
+      - chiron-hei-hk(昭源黑体)
+        - <a href="https://github.com/chiron-fonts/chiron-hei-hk" target="_blank noopener noreferrer">chiron-fonts/chiron-hei-hk</a>
+      - zhuque(朱雀仿宋)
+        - <a href="https://github.com/TrionesType/zhuque" target="_blank noopener noreferrer">TrionesType/zhuque</a>
+      - source-han-serif(思源宋体/支持cjk)
+        - <a href="https://github.com/adobe-fonts/source-han-serif" target="_blank noopener noreferrer">adobe-fonts/source-han-serif</a>
+    - 日语字体系列
+      - yakuhanjp(日语半角标点字体)
+        - <a href="https://github.com/qrac/yakuhanjp" target="_blank noopener noreferrer">qrac/yakuhanjp</a>
+      - line-seed(日语/英语)
+        - <a href="https://seed.line.me/index_en.html" target="_blank noopener noreferrer">seed.line.me</a>
+      - Hina-Mincho(明朝)
+        - <a href="https://github.com/satsuyako/Hina-Mincho" target="_blank noopener noreferrer">satsuyako/Hina-Mincho</a>
+    - 英文字体系列
+      - McDonalds_Fries_Font(麦当劳番茄酱字体)
+        - <a href="https://github.com/mcdtaiwan/McDonalds_Fries_Font" target="_blank noopener noreferrer">mcdtaiwan/McDonalds_Fries_Font</a>
+      - cascadia-code(微软等宽编程字体)
+        - <a href="https://github.com/microsoft/cascadia-code" target="_blank noopener noreferrer">microsoft/cascadia-code</a>
+      - FiraCode
+        - <a href="https://github.com/tonsky/FiraCode" target="_blank noopener noreferrer">tonsky/FiraCode</a>
+      - Monocraft(mc风格字体)
+        - <a href="https://github.com/IdreesInc/Monocraft" target="_blank noopener noreferrer">IdreesInc/Monocraft</a>
+      - manrope(无衬线字体/仅限英文系)
+        - <a href="https://www.gent.media/manrope" target="_blank noopener noreferrer">www.gent.media</a>
+      - figtree(无衬线字体)
+        - <a href="https://github.com/erikdkennedy/figtree" target="_blank noopener noreferrer">erikdkennedy/figtree</a>
+      - mona-sans(Github开源字体)
+        - <a href="https://github.com/github/mona-sans" target="_blank noopener noreferrer">github/mona-sans</a>
+      - hubot-sans(Github开源可变字体)
+        - <a href="https://github.com/github/hubot-sans" target="_blank noopener noreferrer">github/hubot-sans</a>
+      - Iosevka(英语)
+        - <a href="https://github.com/be5invis/Iosevka" target="_blank noopener noreferrer">be5invis/Iosevka</a>
+      - shantell-sans(可变字体/英文)
+        - <a href="https://github.com/arrowtype/shantell-sans" target="_blank noopener noreferrer">arrowtype/shantell-sans</a>
+      - intel-one-mono(英文字体)
+        - <a href="https://github.com/intel/intel-one-mono" target="_blank noopener noreferrer">intel/intel-one-mono</a>
+      - comic-mono-font(comic mono圆滑等宽字体)
+        - <a href="https://github.com/dtinth/comic-mono-font" target="_blank noopener noreferrer">dtinth/comic-mono-font</a>
+      - opendyslexic(下部重的英文字体)
+        - <a href="https://github.com/antijingoist/opendyslexic" target="_blank noopener noreferrer">antijingoist/opendyslexic</a>
+      - Elstob-font(可变英文字体)
+        - <a href="https://github.com/psb1558/Elstob-font" target="_blank noopener noreferrer">psb1558/Elstob-font</a>
+      - geist(vercel开源)
+        - <a href="https://github.com/vercel/geist-font" target="_blank noopener noreferrer">vercel/geist-font</a>
+      - monaspace(github的)
+        - <a href="https://github.com/githubnext/monaspace" target="_blank noopener noreferrer">githubnext/monaspace</a>
+      - inter
+        - <a href="https://github.com/rsms/inter" target="_blank noopener noreferrer">rsms/inter</a>
+    - stateface(美国州形状字体)
+      - <a href="https://github.com/propublica/stateface" target="_blank noopener noreferrer">propublica/stateface</a>
+    - fonts(google-fonts)
+      - <a href="https://github.com/google/fonts" target="_blank noopener noreferrer">google/fonts</a>
+    - color-fonts(googlefonts)
+      - <a href="https://github.com/googlefonts/color-fonts" target="_blank noopener noreferrer">googlefonts/color-fonts</a>
+    - fontsource(google字体npm包版本)
+      - <a href="https://github.com/fontsource/fontsource" target="_blank noopener noreferrer">fontsource/fontsource</a>
+    - modern-font-stacks(使用系统字体/现代字体stack)
+      - <a href="https://github.com/system-fonts/modern-font-stacks" target="_blank noopener noreferrer">system-fonts/modern-font-stacks</a>
+    - 免费商用字体库(figma收集)
+      - <a href="https://www.figma.com/community/file/1256555346586156735/%E5%85%8D%E8%B4%B9%E5%95%86%E7%94%A8%E5%AD%97%E4%BD%93%E5%BA%93" target="_blank noopener noreferrer">www.figma.com</a>
+  - 插画
+    - manypixels(免费插画)
+      - <a href="https://www.manypixels.co/gallery" target="_blank noopener noreferrer">www.manypixels.co</a>
+  - iconfont平台方案系列
+    - yicon(老/冷门)
+      - <a href="https://github.com/YMFE/yicon" target="_blank noopener noreferrer">YMFE/yicon</a>
+    - nicon(冷)
+      - <a href="https://github.com/bolin-L/nicon" target="_blank noopener noreferrer">bolin-L/nicon</a>
+    - iconfont-build-tools(icon构建工具/不完整)
+      - <a href="https://github.com/black-golden-road/iconfont-build-tools" target="_blank noopener noreferrer">black-golden-road/iconfont-build-tools</a>
+  - figma系列
+    - figma-icon-automation(figma导出生成react组件图标插件)
+      - <a href="https://github.com/leadream/figma-icon-automation" target="_blank noopener noreferrer">leadream/figma-icon-automation</a>
+    - gitlab-figma-plugin(将figma资源上传到gitlab)
+      - <a href="https://gitlab.com/gitlab-org/gitlab-figma-plugin" target="_blank noopener noreferrer">gitlab.com</a>
+    - UpCon(figma上传到gitlab的插件)
+      - <a href="https://www.figma.com/community/plugin/1163682261351550326/UpCon" target="_blank noopener noreferrer">www.figma.com</a>
+    - plugin-samples(插件示例)
+      - <a href="https://github.com/figma/plugin-samples" target="_blank noopener noreferrer">figma/plugin-samples</a>
+    - FigmaToCode
+      - <a href="https://github.com/bernaferrari/FigmaToCode" target="_blank noopener noreferrer">bernaferrari/FigmaToCode</a>
+  - icon工具
+    - iconify(通用icon加载方案)
+      - <a href="https://github.com/iconify/iconify" target="_blank noopener noreferrer">iconify/iconify</a>
+- cli
+  - download-git-repo
+    - <a href="https://www.npmjs.com/package/download-git-repo" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - <a href="https://gitlab.com/flippidippi/download-git-repo" target="_blank noopener noreferrer">gitlab.com</a>
+  - log-symbols(显示✓x符号的工具)
+    - <a href="https://github.com/sindresorhus/log-symbols" target="_blank noopener noreferrer">sindresorhus/log-symbols</a>
+  - yeoman(仓库模板生成器)
+    - <a href="https://github.com/yeoman/yeoman" target="_blank noopener noreferrer">yeoman/yeoman</a>
+    - <a href="https://yeoman.io/" target="_blank noopener noreferrer">yeoman.io</a>
+  - plop(仓库模板生成器)
+    - <a href="https://github.com/plopjs/plop" target="_blank noopener noreferrer">plopjs/plop</a>
+  - which(寻找PATH中的命令是否存在)
+    - <a href="https://github.com/npm/node-which" target="_blank noopener noreferrer">npm/node-which</a>
+  - blessed-contrib(命令行可视化/图表)
+    - <a href="https://github.com/yaronn/blessed-contrib" target="_blank noopener noreferrer">yaronn/blessed-contrib</a>
+  - envinfo(生成操作系统环境报告信息)
+    - <a href="https://github.com/tabrindle/envinfo" target="_blank noopener noreferrer">tabrindle/envinfo</a>
+  - semver(比较版本)
+    - <a href="https://github.com/semver/semver" target="_blank noopener noreferrer">semver/semver</a>
+    - <a href="https://github.com/npm/node-semver" target="_blank noopener noreferrer">npm/node-semver</a>
+  - npminstall(使npm install更快更容易)
+    - <a href="https://github.com/cnpm/npminstall" target="_blank noopener noreferrer">cnpm/npminstall</a>
+  - 命令行参数解析系列
+    - minimist(解析命令行参数)
+      - <a href="https://github.com/minimistjs/minimist" target="_blank noopener noreferrer">minimistjs/minimist</a>
+    - yargs(解析参数)
+      - <a href="https://github.com/yargs/yargs" target="_blank noopener noreferrer">yargs/yargs</a>
+      - <a href="https://yargs.js.org/" target="_blank noopener noreferrer">yargs.js.org</a>
+    - arg
+      - <a href="https://github.com/vercel/arg" target="_blank noopener noreferrer">vercel/arg</a>
+    - nopt
+      - <a href="https://github.com/npm/nopt" target="_blank noopener noreferrer">npm/nopt</a>
+    - cac
+      - <a href="https://github.com/cacjs/cac" target="_blank noopener noreferrer">cacjs/cac</a>
+    - yargs-parser
+      - <a href="https://github.com/yargs/yargs-parser" target="_blank noopener noreferrer">yargs/yargs-parser</a>
+    - yargs-unparser(复原y-parser)
+      - <a href="https://github.com/yargs/yargs-unparser" target="_blank noopener noreferrer">yargs/yargs-unparser</a>
+    - mri
+      - <a href="https://github.com/lukeed/mri" target="_blank noopener noreferrer">lukeed/mri</a>
+  - size-limit(计算依赖大小)
+    - <a href="https://github.com/ai/size-limit" target="_blank noopener noreferrer">ai/size-limit</a>
+  - chrome-launcher(打开chrome工具)
+    - <a href="https://github.com/GoogleChrome/chrome-launcher" target="_blank noopener noreferrer">GoogleChrome/chrome-launcher</a>
+  - recursive-readdir(遍历读取所有文件路径)
+    - <a href="https://github.com/jergason/recursive-readdir" target="_blank noopener noreferrer">jergason/recursive-readdir</a>
+  - 模板引擎系列
+    - metalsmith
+      - <a href="https://github.com/segmentio/metalsmith" target="_blank noopener noreferrer">segmentio/metalsmith</a>
+    - consolidate
+      - <a href="https://github.com/tj/consolidate.js" target="_blank noopener noreferrer">tj/consolidate.js</a>
+    - handlebars.js(模板引擎)
+      - <a href="https://www.handlebarsjs.cn/" target="_blank noopener noreferrer">www.handlebarsjs.cn</a>
+      - <a href="https://github.com/handlebars-lang/handlebars.js" target="_blank noopener noreferrer">handlebars-lang/handlebars.js</a>
+      - <a href="https://handlebarsjs.com/guide/#nested-input-objects" target="_blank noopener noreferrer">handlebarsjs.com</a>
+    - ejs
+      - <a href="https://github.com/mde/ejs" target="_blank noopener noreferrer">mde/ejs</a>
+    - json-templater(冷)
+      - <a href="https://github.com/lightsofapollo/json-templater" target="_blank noopener noreferrer">lightsofapollo/json-templater</a>
+    - mustache.js
+      - <a href="https://github.com/janl/mustache.js" target="_blank noopener noreferrer">janl/mustache.js</a>
+    - hygen(无侵入的生成模板代码)
+      - <a href="https://github.com/jondot/hygen" target="_blank noopener noreferrer">jondot/hygen</a>
+    - eta
+      - <a href="https://github.com/eta-dev/eta" target="_blank noopener noreferrer">eta-dev/eta</a>
+  - 进度条系列
+    - progress-estimator(异步任务进度条/含时间)
+      - <a href="https://github.com/bvaughn/progress-estimator" target="_blank noopener noreferrer">bvaughn/progress-estimator</a>
+    - progress(命令行进度条)
+      - <a href="https://github.com/visionmedia/node-progress" target="_blank noopener noreferrer">visionmedia/node-progress</a>
+    - listr(命令行多task列表进度完成标示)
+      - <a href="https://github.com/SamVerschueren/listr" target="_blank noopener noreferrer">SamVerschueren/listr</a>
+    - node-progress
+      - <a href="https://github.com/visionmedia/node-progress#options" target="_blank noopener noreferrer">visionmedia/node-progress#options</a>
+    - progress.js
+      - <a href="https://github.com/NathanPB/progress.js" target="_blank noopener noreferrer">NathanPB/progress.js</a>
+    - listr2(task列表进度工具)
+      - <a href="https://github.com/cenk1cenk2/listr2" target="_blank noopener noreferrer">cenk1cenk2/listr2</a>
+    - cli-progress
+      - <a href="https://github.com/npkgz/cli-progress" target="_blank noopener noreferrer">npkgz/cli-progress</a>
+  - 打印系列
+    - @babel/code-frame(打印出错彩色代码)
+      - <a href="https://github.com/babel/babel" target="_blank noopener noreferrer">babel/babel</a>
+      - <a href="https://babel.dev/docs/en/babel-code-frame" target="_blank noopener noreferrer">babel.dev</a>
+    - treeify(终端打印树/文件夹结构等)
+      - <a href="https://github.com/notatestuser/treeify" target="_blank noopener noreferrer">notatestuser/treeify</a>
+    - boxen(打印一个方块区域)
+      - <a href="https://github.com/sindresorhus/boxen" target="_blank noopener noreferrer">sindresorhus/boxen</a>
+    - figlet.js(打印ASCII码字符)
+      - <a href="https://github.com/patorjk/figlet.js" target="_blank noopener noreferrer">patorjk/figlet.js</a>
+    - cosnole-png(打印png像素图)
+      - <a href="https://github.com/aantthony/console-png" target="_blank noopener noreferrer">aantthony/console-png</a>
+    - 彩色打印系列
+      - gradient-string(彩色渐变打印)
+        - <a href="https://github.com/bokub/gradient-string" target="_blank noopener noreferrer">bokub/gradient-string</a>
+      - cfonts(打印炫彩字)
+        - <a href="https://github.com/dominikwilkowski/cfonts" target="_blank noopener noreferrer">dominikwilkowski/cfonts</a>
+      - chalk-animation(带动画效果的彩色打印)
+        - <a href="https://github.com/bokub/chalk-animation" target="_blank noopener noreferrer">bokub/chalk-animation</a>
+      - kolorist(彩色打印/create-vue在用)
+        - <a href="https://github.com/marvinhagemeister/kolorist" target="_blank noopener noreferrer">marvinhagemeister/kolorist</a>
+      - picocolors(彩色打印)
+        - <a href="https://github.com/alexeyraspopov/picocolors" target="_blank noopener noreferrer">alexeyraspopov/picocolors</a>
+      - colorette(彩色打印)
+        - <a href="https://github.com/jorgebucaran/colorette" target="_blank noopener noreferrer">jorgebucaran/colorette</a>
+      - nanocolors(比chalk快的打印库)
+        - <a href="https://github.com/ai/nanocolors" target="_blank noopener noreferrer">ai/nanocolors</a>
+      - colors.js(彩色打印)
+        - <a href="https://github.com/Marak/colors.js" target="_blank noopener noreferrer">Marak/colors.js</a>
+      - lolcatjs(彩虹打印)
+        - lolcatjs
+          - <a href="https://github.com/robertmarsal/lolcatjs" target="_blank noopener noreferrer">robertmarsal/lolcatjs</a>
+        - lolcatjs-fork版
+          - <a href="https://github.com/darkobits/lolcatjs" target="_blank noopener noreferrer">darkobits/lolcatjs</a>
+      - chalk
+        - <a href="https://github.com/chalk/chalk" target="_blank noopener noreferrer">chalk/chalk</a>
+      - kleur(最快的彩色打印库)
+        - <a href="https://github.com/lukeed/kleur" target="_blank noopener noreferrer">lukeed/kleur</a>
+      - yoctocolors(最小最快的着色库)
+        - <a href="https://github.com/sindresorhus/yoctocolors" target="_blank noopener noreferrer">sindresorhus/yoctocolors</a>
+    - table(控制台打印数据表格)
+      - <a href="https://github.com/gajus/table" target="_blank noopener noreferrer">gajus/table</a>
+    - voici.js(数据表格整齐打印工具)
+      - <a href="https://github.com/larswaechter/voici.js" target="_blank noopener noreferrer">larswaechter/voici.js</a>
+    - placebo(打印诊断信息/开发中)
+      - <a href="https://github.com/RobinMalfait/placebo" target="_blank noopener noreferrer">RobinMalfait/placebo</a>
+    - log-update(覆盖以前的输出重刷打印)
+      - <a href="https://github.com/sindresorhus/log-update" target="_blank noopener noreferrer">sindresorhus/log-update</a>
+    - qrcode二维码打印系列
+      - qrcode-terminal(终端二维码打印)
+        - <a href="https://github.com/gtanner/qrcode-terminal" target="_blank noopener noreferrer">gtanner/qrcode-terminal</a>
+      - hqr(冷)
+        - <a href="https://github.com/hunghg255/hqr" target="_blank noopener noreferrer">hunghg255/hqr</a>
+    - marked-terminal(markdown高亮打印)
+      - <a href="https://github.com/mikaelbr/marked-terminal" target="_blank noopener noreferrer">mikaelbr/marked-terminal</a>
+  - loading系列
+    - cli-spinners(dots旋转器)
+      - <a href="https://github.com/sindresorhus/cli-spinners" target="_blank noopener noreferrer">sindresorhus/cli-spinners</a>
+    - clui(spinner图标loading显示)
+      - <a href="https://github.com/nathanpeck/clui" target="_blank noopener noreferrer">nathanpeck/clui</a>
+    - ora(spinner)
+      - <a href="https://github.com/sindresorhus/ora" target="_blank noopener noreferrer">sindresorhus/ora</a>
+  - prompt对话系列
+    - prompts(美观友好的交互式命令行)
+      - <a href="https://github.com/terkelg/prompts" target="_blank noopener noreferrer">terkelg/prompts</a>
+    - enquirer(美观的交互cli提示)
+      - <a href="https://github.com/enquirer/enquirer" target="_blank noopener noreferrer">enquirer/enquirer</a>
+    - inquirer(连续对话)
+      - <a href="https://github.com/SBoudrias/Inquirer.js" target="_blank noopener noreferrer">SBoudrias/Inquirer.js</a>
+    - clack(更好看的流程对话)
+      - <a href="https://github.com/natemoo-re/clack" target="_blank noopener noreferrer">natemoo-re/clack</a>
+  - cloc(统计代码行数工具)
+    - <a href="https://github.com/kentcdodds/cloc" target="_blank noopener noreferrer">kentcdodds/cloc</a>
+  - deprecate(方法废弃提示工具)
+    - <a href="https://github.com/brianc/node-deprecate" target="_blank noopener noreferrer">brianc/node-deprecate</a>
+  - clear(清屏控制台)
+    - <a href="https://github.com/bahamas10/node-clear" target="_blank noopener noreferrer">bahamas10/node-clear</a>
+  - install-peerdeps
+    - <a href="https://github.com/nathanhleung/install-peerdeps" target="_blank noopener noreferrer">nathanhleung/install-peerdeps</a>
+  - update-notifier(版本更新提醒工具)
+    - <a href="https://github.com/yeoman/update-notifier" target="_blank noopener noreferrer">yeoman/update-notifier</a>
+  - is-yarn-global(判断是否被yarn全局安装)
+    - <a href="https://github.com/LitoMore/is-yarn-global" target="_blank noopener noreferrer">LitoMore/is-yarn-global</a>
+  - is-installed-globally(判断该包是否被全局安装)
+    - <a href="https://github.com/sindresorhus/is-installed-globally" target="_blank noopener noreferrer">sindresorhus/is-installed-globally</a>
+  - terminal-link(打印可点击的link在终端)
+    - <a href="https://github.com/sindresorhus/terminal-link" target="_blank noopener noreferrer">sindresorhus/terminal-link</a>
+  - minify压缩系列
+    - clean-css(压缩css)
+      - <a href="https://github.com/clean-css/clean-css" target="_blank noopener noreferrer">clean-css/clean-css</a>
+    - csso(css结构化和压缩)
+      - <a href="https://github.com/css/csso" target="_blank noopener noreferrer">css/csso</a>
+    - UuglifyJS
+      - <a href="https://github.com/mishoo/UglifyJS" target="_blank noopener noreferrer">mishoo/UglifyJS</a>
+    - html压缩系列
+      - minify-html(html压缩/rust+esbuild)
+        - <a href="https://github.com/wilsonzlin/minify-html" target="_blank noopener noreferrer">wilsonzlin/minify-html</a>
+      - html-minifier(html压缩器)
+        - <a href="https://github.com/kangax/html-minifier" target="_blank noopener noreferrer">kangax/html-minifier</a>
+      - htmlnano
+        - <a href="https://github.com/posthtml/htmlnano" target="_blank noopener noreferrer">posthtml/htmlnano</a>
+  - pretty-time(把时间间隔显示的好看语义一点)
+    - <a href="https://github.com/jonschlinkert/pretty-time" target="_blank noopener noreferrer">jonschlinkert/pretty-time</a>
+  - beeper(发出哔声)
+    - <a href="https://github.com/sindresorhus/beeper" target="_blank noopener noreferrer">sindresorhus/beeper</a>
+  - watch监听文件改变系列
+    - onchange(监听文件改变执行命令)
+      - <a href="https://github.com/Qard/onchange" target="_blank noopener noreferrer">Qard/onchange</a>
+    - chokidar(跨平台监听文件变化库)
+      - <a href="https://github.com/paulmillr/chokidar" target="_blank noopener noreferrer">paulmillr/chokidar</a>
+    - browser-sync(监听文件改变页面reload工具)
+      - <a href="https://github.com/BrowserSync/browser-sync" target="_blank noopener noreferrer">BrowserSync/browser-sync</a>
+    - servor(冷)
+      - <a href="https://github.com/lukejacksonn/servor" target="_blank noopener noreferrer">lukejacksonn/servor</a>
+    - fsevents(macos文件变化监听/低级库)
+      - <a href="https://github.com/fsevents/fsevents" target="_blank noopener noreferrer">fsevents/fsevents</a>
+    - watchpack
+      - <a href="https://github.com/webpack/watchpack" target="_blank noopener noreferrer">webpack/watchpack</a>
+    - watcher(c++实现的监听器)
+      - <a href="https://github.com/parcel-bundler/watcher" target="_blank noopener noreferrer">parcel-bundler/watcher</a>
+  - stip-json-comments(删除json中的注释)
+    - <a href="https://github.com/sindresorhus/strip-json-comments" target="_blank noopener noreferrer">sindresorhus/strip-json-comments</a>
+  - mrm(config的codemod操作工具)
+    - <a href="https://github.com/sapegin/mrm" target="_blank noopener noreferrer">sapegin/mrm</a>
+  - 构建命令行工具系列
+    - oclif(构建cli命令行接口的框架/可打包)
+      - <a href="https://github.com/oclif/oclif" target="_blank noopener noreferrer">oclif/oclif</a>
+    - gluegun
+      - <a href="https://github.com/infinitered/gluegun" target="_blank noopener noreferrer">infinitered/gluegun</a>
+    - clipanion(no runtime)
+      - <a href="https://github.com/arcanis/clipanion" target="_blank noopener noreferrer">arcanis/clipanion</a>
+    - meow
+      - <a href="https://github.com/sindresorhus/meow" target="_blank noopener noreferrer">sindresorhus/meow</a>
+    - js-fire(通过对象创建cli/冷门)
+      - <a href="https://github.com/hobochild/js-fire" target="_blank noopener noreferrer">hobochild/js-fire</a>
+    - citty
+      - <a href="https://github.com/unjs/citty" target="_blank noopener noreferrer">unjs/citty</a>
+  - ncp(跨平台递归拷贝文件)
+    - <a href="https://github.com/AvianFlu/ncp" target="_blank noopener noreferrer">AvianFlu/ncp</a>
+  - shq-js(去除字符串的引号for shell)
+    - <a href="https://github.com/mk-pmb/shq-js" target="_blank noopener noreferrer">mk-pmb/shq-js</a>
+  - git操作库
+    - simple-git
+      - <a href="https://github.com/Brooooooklyn/simple-git" target="_blank noopener noreferrer">Brooooooklyn/simple-git</a>
+    - git-js
+      - <a href="https://github.com/steveukx/git-js" target="_blank noopener noreferrer">steveukx/git-js</a>
+    - parse-git-config(获取git信息)
+      - <a href="https://github.com/jonschlinkert/parse-git-config" target="_blank noopener noreferrer">jonschlinkert/parse-git-config</a>
+    - isomorphic-git(git浏览器版实现)
+      - <a href="https://github.com/isomorphic-git/isomorphic-git" target="_blank noopener noreferrer">isomorphic-git/isomorphic-git</a>
+  - import-lazy(懒/延迟导入)
+    - <a href="https://github.com/sindresorhus/import-lazy" target="_blank noopener noreferrer">sindresorhus/import-lazy</a>
+  - locate-path(像tryPaths一样寻找)
+    - <a href="https://github.com/sindresorhus/locate-path" target="_blank noopener noreferrer">sindresorhus/locate-path</a>
+  - 依赖系列
+    - npm-check-updates(检测升级依赖的最新版本)
+      - <a href="https://github.com/raineorshine/npm-check-updates" target="_blank noopener noreferrer">raineorshine/npm-check-updates</a>
+    - depcheck(检测有无未使用的依赖)
+      - <a href="https://github.com/depcheck/depcheck" target="_blank noopener noreferrer">depcheck/depcheck</a>
+    - pkg-install(安装依赖)
+      - <a href="https://github.com/dkundel/pkg-install" target="_blank noopener noreferrer">dkundel/pkg-install</a>
+    - npm-check(检测过时依赖并升级)
+      - <a href="https://github.com/dylang/npm-check" target="_blank noopener noreferrer">dylang/npm-check</a>
+    - nypm(自动识别包管理器/安装依赖)
+      - <a href="https://github.com/unjs/nypm" target="_blank noopener noreferrer">unjs/nypm</a>
+  - strip-ansi(字符串去除ansi转义码)
+    - <a href="https://github.com/chalk/strip-ansi" target="_blank noopener noreferrer">chalk/strip-ansi</a>
+  - CHANGELOG生成系列
+    - conventional-changelog-cli
+      - <a href="https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli" target="_blank noopener noreferrer">conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli</a>
+    - standard-version
+      - <a href="https://github.com/conventional-changelog/standard-version" target="_blank noopener noreferrer">conventional-changelog/standard-version</a>
+    - changelogen(基于commit简单changelog生成)
+      - <a href="https://github.com/unjs/changelogen" target="_blank noopener noreferrer">unjs/changelogen</a>
+    - changelogithub(加强版changelogen)
+      - <a href="https://github.com/antfu/changelogithub" target="_blank noopener noreferrer">antfu/changelogithub</a>
+  - version版本提升系列
+    - version-bump-prompt(可视化提升版本工具)
+      - <a href="https://github.com/JS-DevTools/version-bump-prompt" target="_blank noopener noreferrer">JS-DevTools/version-bump-prompt</a>
+    - auto(基于pr语义tag生成新版本)
+      - <a href="https://github.com/intuit/auto" target="_blank noopener noreferrer">intuit/auto</a>
+    - semantic-release
+      - <a href="https://github.com/semantic-release/semantic-release" target="_blank noopener noreferrer">semantic-release/semantic-release</a>
+    - bumpp(bump小优化/antfu)
+      - <a href="https://github.com/antfu/bumpp" target="_blank noopener noreferrer">antfu/bumpp</a>
+  - match通配符系列
+    - multimatch(通配符匹配规则)
+      - <a href="https://github.com/sindresorhus/multimatch" target="_blank noopener noreferrer">sindresorhus/multimatch</a>
+    - micromatch(通配/语法特殊)
+      - <a href="https://github.com/micromatch/micromatch" target="_blank noopener noreferrer">micromatch/micromatch</a>
+    - minimatch(glob风格匹配器)
+      - <a href="https://github.com/isaacs/minimatch" target="_blank noopener noreferrer">isaacs/minimatch</a>
+    - anymatch(globs风格)
+      - <a href="https://github.com/micromatch/anymatch" target="_blank noopener noreferrer">micromatch/anymatch</a>
+    - brace-expansion({}匹配多文件展开系列)
+      - <a href="https://github.com/juliangruber/brace-expansion" target="_blank noopener noreferrer">juliangruber/brace-expansion</a>
+    - picomatch(glob匹配/陈旧)
+      - <a href="https://github.com/micromatch/picomatch" target="_blank noopener noreferrer">micromatch/picomatch</a>
+  - config读取配置系列
+    - cosmiconfig(读取多格式config)
+      - <a href="https://github.com/davidtheclark/cosmiconfig" target="_blank noopener noreferrer">davidtheclark/cosmiconfig</a>
+    - proload(支持读取ts类配置)
+      - <a href="https://github.com/natemoo-re/proload" target="_blank noopener noreferrer">natemoo-re/proload</a>
+    - unconfig(读取配置/antfu/冷门)
+      - <a href="https://github.com/antfu/unconfig" target="_blank noopener noreferrer">antfu/unconfig</a>
+    - c12(nuxt3使用的)
+      - <a href="https://github.com/unjs/c12" target="_blank noopener noreferrer">unjs/c12</a>
+  - find寻找系列
+    - find-root(找到最近的package.json)
+      - <a href="https://github.com/junosuarez/find-root" target="_blank noopener noreferrer">junosuarez/find-root</a>
+    - find-up(向上寻找指定的文件位置)
+      - <a href="https://github.com/sindresorhus/find-up" target="_blank noopener noreferrer">sindresorhus/find-up</a>
+    - read-pkg-up(读取最近的package.json)
+      - <a href="https://github.com/sindresorhus/read-pkg-up" target="_blank noopener noreferrer">sindresorhus/read-pkg-up</a>
+  - commander解析参数系列
+    - commander.js(解析参数)
+      - <a href="https://github.com/tj/commander.js" target="_blank noopener noreferrer">tj/commander.js</a>
+    - sade
+      - <a href="https://github.com/lukeed/sade" target="_blank noopener noreferrer">lukeed/sade</a>
+  - v8-compile-cache(将模块打成字节码中间态)
+    - <a href="https://github.com/zertosh/v8-compile-cache" target="_blank noopener noreferrer">zertosh/v8-compile-cache</a>
+  - win-path路径兼容处理系列
+    - pathe
+      - <a href="https://github.com/unjs/pathe" target="_blank noopener noreferrer">unjs/pathe</a>
+    - slash(转换win斜线到单斜线)
+      - <a href="https://github.com/sindresorhus/slash" target="_blank noopener noreferrer">sindresorhus/slash</a>
+  - shell脚本运行工具系列
+    - shx(shelljs的包装/更简洁运行)
+      - <a href="https://github.com/shelljs/shx" target="_blank noopener noreferrer">shelljs/shx</a>
+    - shelljs(shell在nodejs里的实现)
+      - <a href="https://github.com/shelljs/shelljs" target="_blank noopener noreferrer">shelljs/shelljs</a>
+    - zx(js语法+shell混用)
+      - <a href="https://github.com/google/zx" target="_blank noopener noreferrer">google/zx</a>
+    - execa
+      - <a href="https://github.com/sindresorhus/execa" target="_blank noopener noreferrer">sindresorhus/execa</a>
+    - cross-spawn(解决win兼容性的spawn)
+      - <a href="https://github.com/moxystudio/node-cross-spawn" target="_blank noopener noreferrer">moxystudio/node-cross-spawn</a>
+    - tinysh(shell命令的小工具函数/冷门)
+      - <a href="https://github.com/antonmedv/tinysh" target="_blank noopener noreferrer">antonmedv/tinysh</a>
+    - node-powershell(powershell)
+      - <a href="https://github.com/rannn505/child-shell/tree/master/packages/node-powershell" target="_blank noopener noreferrer">rannn505/child-shell/tree/master/packages/node-powershell</a>
+    - fsxx(zx风格的fs文件操作)
+      - <a href="https://github.com/antfu/fsxx" target="_blank noopener noreferrer">antfu/fsxx</a>
+    - ez-spawn(冷)
+      - <a href="https://github.com/JS-DevTools/ez-spawn" target="_blank noopener noreferrer">JS-DevTools/ez-spawn</a>
+  - generator项目初始化工具系列
+    - yo系列
+      - yo
+        - <a href="https://github.com/yeoman/yo" target="_blank noopener noreferrer">yeoman/yo</a>
+      - generator
+        - <a href="https://github.com/yeoman/generator" target="_blank noopener noreferrer">yeoman/generator</a>
+    - projen
+      - <a href="https://github.com/projen/projen" target="_blank noopener noreferrer">projen/projen</a>
+  - plugins/hook插件策略
+    - hookable(nuxt3用)
+      - <a href="https://github.com/unjs/hookable" target="_blank noopener noreferrer">unjs/hookable</a>
+    - tapable
+      - <a href="https://github.com/webpack/tapable" target="_blank noopener noreferrer">webpack/tapable</a>
+  - unctx(创建全局上下文/给用户使用)
+    - <a href="https://github.com/unjs/unctx" target="_blank noopener noreferrer">unjs/unctx</a>
+  - mkdist(轻量级文件到文件编译器)
+    - <a href="https://github.com/unjs/mkdist" target="_blank noopener noreferrer">unjs/mkdist</a>
+  - git url解析系列
+    - giturl(将git url转为url)
+      - <a href="https://github.com/repo-utils/giturl" target="_blank noopener noreferrer">repo-utils/giturl</a>
+    - git-url-parse(git url解析)
+      - <a href="https://github.com/IonicaBizau/git-url-parse" target="_blank noopener noreferrer">IonicaBizau/git-url-parse</a>
+  - find-cache-dir(寻找node_modules/.cache位置)
+    - <a href="https://github.com/sindresorhus/find-cache-dir" target="_blank noopener noreferrer">sindresorhus/find-cache-dir</a>
+  - file-entry-cache(文件change缓存/检测change的文件)
+    - <a href="https://github.com/royriojas/file-entry-cache" target="_blank noopener noreferrer">royriojas/file-entry-cache</a>
+  - env加载环境变量系列
+    - dotenv
+      - <a href="https://github.com/motdotla/dotenv" target="_blank noopener noreferrer">motdotla/dotenv</a>
+    - dotenv-expand
+      - <a href="https://github.com/motdotla/dotenv-expand" target="_blank noopener noreferrer">motdotla/dotenv-expand</a>
+    - cross-env
+      - <a href="https://github.com/kentcdodds/cross-env" target="_blank noopener noreferrer">kentcdodds/cross-env</a>
+    - env-cmd
+      - <a href="https://github.com/toddbluhm/env-cmd" target="_blank noopener noreferrer">toddbluhm/env-cmd</a>
+    - neon-env(特冷)
+      - <a href="https://github.com/SuperchupuDev/neon-env" target="_blank noopener noreferrer">SuperchupuDev/neon-env</a>
+    - dotenv-flow
+      - <a href="https://github.com/kerimdzhanov/dotenv-flow" target="_blank noopener noreferrer">kerimdzhanov/dotenv-flow</a>
+    - t3-env(环境变量+zod类型提示工具)
+      - <a href="https://github.com/t3-oss/t3-env" target="_blank noopener noreferrer">t3-oss/t3-env</a>
+  - git-hooks系列
+    - husky
+      - <a href="https://github.com/typicode/husky" target="_blank noopener noreferrer">typicode/husky</a>
+    - simple-git-hooks
+      - <a href="https://github.com/toplenboren/simple-git-hooks" target="_blank noopener noreferrer">toplenboren/simple-git-hooks</a>
+  - copy拷贝文件系列
+    - copyfiles(解决静态资源不移动问题)
+      - <a href="https://github.com/calvinmetcalf/copyfiles" target="_blank noopener noreferrer">calvinmetcalf/copyfiles</a>
+    - cpy(拷贝文件函数)
+      - <a href="https://github.com/sindresorhus/cpy" target="_blank noopener noreferrer">sindresorhus/cpy</a>
+    - reflink(假copy/使用时再运行)
+      - <a href="https://github.com/pnpm/reflink" target="_blank noopener noreferrer">pnpm/reflink</a>
+  - require系列
+    - pirates(hook require)
+      - <a href="https://github.com/danez/pirates" target="_blank noopener noreferrer">danez/pirates</a>
+    - require-from-string(字符串require)
+      - <a href="https://github.com/floatdrop/require-from-string" target="_blank noopener noreferrer">floatdrop/require-from-string</a>
+  - package.json系列
+    - normalize-package-data(规范化package.json读取)
+      - <a href="https://github.com/npm/normalize-package-data" target="_blank noopener noreferrer">npm/normalize-package-data</a>
+    - clean-pkg-json(清理pakcage.json没用的字段)
+      - <a href="https://github.com/privatenumber/clean-pkg-json" target="_blank noopener noreferrer">privatenumber/clean-pkg-json</a>
+    - node-pkginfo(读取package.json)
+      - <a href="https://github.com/indexzero/node-pkginfo" target="_blank noopener noreferrer">indexzero/node-pkginfo</a>
+    - read-pkg(读取package.json文件)
+      - <a href="https://github.com/sindresorhus/read-pkg" target="_blank noopener noreferrer">sindresorhus/read-pkg</a>
+    - sort-package-json(重排序package.json)
+      - <a href="https://github.com/keithamus/sort-package-json" target="_blank noopener noreferrer">keithamus/sort-package-json</a>
+    - read-package-json(读取package.json)
+      - <a href="https://github.com/npm/read-package-json" target="_blank noopener noreferrer">npm/read-package-json</a>
+    - read-package-json-fast
+      - <a href="https://github.com/npm/read-package-json-fast" target="_blank noopener noreferrer">npm/read-package-json-fast</a>
+    - publint(检测package.json正确性)
+      - <a href="https://github.com/bluwy/publint" target="_blank noopener noreferrer">bluwy/publint</a>
+  - config-store全局持久化存储系列
+    - configstore(脚手架专用全局存储)
+      - <a href="https://github.com/yeoman/configstore" target="_blank noopener noreferrer">yeoman/configstore</a>
+    - conf
+      - <a href="https://github.com/sindresorhus/conf" target="_blank noopener noreferrer">sindresorhus/conf</a>
+  - license-checker(检测license)
+    - <a href="https://github.com/davglass/license-checker" target="_blank noopener noreferrer">davglass/license-checker</a>
+  - textlint(自然语言lint工具)
+    - <a href="https://github.com/textlint/textlint" target="_blank noopener noreferrer">textlint/textlint</a>
+  - es-check系列
+    - es-check(检测产物是否存在es6代码)
+      - <a href="https://github.com/yowainwright/es-check" target="_blank noopener noreferrer">yowainwright/es-check</a>
+    - @sugarat/es-check(冷)
+      - <a href="https://github.com/ATQQ/tools/tree/main/packages/cli/es-check" target="_blank noopener noreferrer">ATQQ/tools/tree/main/packages/cli/es-check</a>
+    - mpx-es-check
+      - <a href="https://github.com/mpx-ecology/mpx-es-check" target="_blank noopener noreferrer">mpx-ecology/mpx-es-check</a>
+  - distance文本差异猜测系列
+    - leven(检查文本差异/猜测文本近似)
+      - <a href="https://github.com/sindresorhus/leven" target="_blank noopener noreferrer">sindresorhus/leven</a>
+    - fastest-levenshtein(npm在用的猜测方式)
+      - <a href="https://github.com/ka-weihe/fastest-levenshtein" target="_blank noopener noreferrer">ka-weihe/fastest-levenshtein</a>
+  - lint-staged(提交阶段格式化)
+    - <a href="https://github.com/okonet/lint-staged" target="_blank noopener noreferrer">okonet/lint-staged</a>
+  - on-change(监听对象或数组中值的细粒度变化)
+    - <a href="https://github.com/sindresorhus/on-change" target="_blank noopener noreferrer">sindresorhus/on-change</a>
+  - is-env判断环境系列
+    - is-ci(判断是否在cicd中)
+      - <a href="https://github.com/watson/is-ci" target="_blank noopener noreferrer">watson/is-ci</a>
+    - std-env
+      - <a href="https://github.com/unjs/std-env" target="_blank noopener noreferrer">unjs/std-env</a>
+    - esm-env
+      - <a href="https://github.com/benmccann/esm-env" target="_blank noopener noreferrer">benmccann/esm-env</a>
+  - tabtab(tab自动补全子命令支持)
+    - <a href="https://github.com/mklabs/tabtab" target="_blank noopener noreferrer">mklabs/tabtab</a>
+  - tsc系列
+    - tsconfig系列
+      - tsconfig/bases(各种tsconfig继承模版)
+        - <a href="https://github.com/tsconfig/bases" target="_blank noopener noreferrer">tsconfig/bases</a>
+      - tsconfck(自动查找读取tsconfig.json/冷门)
+        - <a href="https://github.com/dominikg/tsconfck" target="_blank noopener noreferrer">dominikg/tsconfck</a>
+      - tsconfig-paths(加载path)
+        - <a href="https://github.com/dividab/tsconfig-paths" target="_blank noopener noreferrer">dividab/tsconfig-paths</a>
+      - get-tsconfig(加载tsconfig)
+        - <a href="https://github.com/privatenumber/get-tsconfig" target="_blank noopener noreferrer">privatenumber/get-tsconfig</a>
+    - tsc-watch(tsc watch支持生命周期hooks)
+      - <a href="https://github.com/gilamran/tsc-watch" target="_blank noopener noreferrer">gilamran/tsc-watch</a>
+    - paths支持系列(transformer)
+      - typescript-transform-paths(支持新版ts)
+        - <a href="https://github.com/LeDDGroup/typescript-transform-paths" target="_blank noopener noreferrer">LeDDGroup/typescript-transform-paths</a>
+      - ts-transform-paths
+        - <a href="https://github.com/OniVe/ts-transform-paths" target="_blank noopener noreferrer">OniVe/ts-transform-paths</a>
+    - ts-patch(patch tsc支持transformer)
+      - <a href="https://github.com/nonara/ts-patch" target="_blank noopener noreferrer">nonara/ts-patch</a>
+  - npm-packlist(获取要发布的文件列表)
+    - <a href="https://github.com/npm/npm-packlist" target="_blank noopener noreferrer">npm/npm-packlist</a>
+- cicd
+  - travis-ci
+    - <a href="https://segmentfault.com/a/1190000004415437" target="_blank noopener noreferrer">segmentfault.com</a>
+  - github actions
+    - netlify(自动部署netlify)
+      - <a href="https://github.com/nwtgck/actions-netlify" target="_blank noopener noreferrer">nwtgck/actions-netlify</a>
+    - codeql
+      - <a href="https://github.com/github/codeql-action" target="_blank noopener noreferrer">github/codeql-action</a>
+    - setup-node
+      - <a href="https://github.com/marketplace/actions/setup-node-js-environment" target="_blank noopener noreferrer">marketplace/actions/setup-node-js-environment</a>
+    - checkout(切换分支)
+      - <a href="https://github.com/marketplace/actions/checkout" target="_blank noopener noreferrer">marketplace/actions/checkout</a>
+    - create-release
+      - <a href="https://github.com/marketplace/actions/create-release-in-octopus-deploy" target="_blank noopener noreferrer">marketplace/actions/create-release-in-octopus-deploy</a>
+    - github-pages-action(部署gh-pages)
+      - <a href="https://github.com/marketplace/actions/github-pages-action" target="_blank noopener noreferrer">marketplace/actions/github-pages-action</a>
+    - npm-install
+      - <a href="https://github.com/marketplace/actions/npm-or-yarn-install-with-caching" target="_blank noopener noreferrer">marketplace/actions/npm-or-yarn-install-with-caching</a>
+    - ssh-actions(连接ssh)
+      - <a href="https://github.com/marketplace/actions/ssh-remote-commands" target="_blank noopener noreferrer">marketplace/actions/ssh-remote-commands</a>
+    - npm-publish
+      - <a href="https://github.com/JS-DevTools/npm-publish" target="_blank noopener noreferrer">JS-DevTools/npm-publish</a>
+      - <a href="https://github.com/pascalgn/npm-publish-action" target="_blank noopener noreferrer">pascalgn/npm-publish-action</a>
+    - gha-yarn-cache(缓存yarn依赖)
+      - <a href="https://github.com/c-hive/gha-yarn-cache" target="_blank noopener noreferrer">c-hive/gha-yarn-cache</a>
+    - 上下文语法说明
+      - <a href="https://docs.github.com/cn/actions/reference/context-and-expression-syntax-for-github-actions#example" target="_blank noopener noreferrer">docs.github.com</a>
+    - commit-comment
+      - <a href="https://github.com/peter-evans/commit-comment" target="_blank noopener noreferrer">peter-evans/commit-comment</a>
+    - release-changelog-builder-action(创建changelog流入release)
+      - <a href="https://github.com/mikepenz/release-changelog-builder-action" target="_blank noopener noreferrer">mikepenz/release-changelog-builder-action</a>
+    - git-mirror-action(同步git镜像仓库到其他git)
+      - <a href="https://github.com/wearerequired/git-mirror-action" target="_blank noopener noreferrer">wearerequired/git-mirror-action</a>
+    - github-push-action(push到github仓库)
+      - <a href="https://github.com/ad-m/github-push-action" target="_blank noopener noreferrer">ad-m/github-push-action</a>
+    - github-script(在github action里用js编写工作流)
+      - <a href="https://github.com/actions/github-script" target="_blank noopener noreferrer">actions/github-script</a>
+    - action-setup(action附加pnpm)
+      - <a href="https://github.com/pnpm/action-setup" target="_blank noopener noreferrer">pnpm/action-setup</a>
+    - discord-styled-releases(向discord转发消息的action)
+      - <a href="https://github.com/nhevia/discord-styled-releases" target="_blank noopener noreferrer">nhevia/discord-styled-releases</a>
+    - infracost(云服务成本估算)
+      - <a href="https://github.com/infracost/infracost" target="_blank noopener noreferrer">infracost/infracost</a>
+    - shot-scraper-template(用python shot-scraper进行网页截屏)
+      - <a href="https://github.com/simonw/shot-scraper-template" target="_blank noopener noreferrer">simonw/shot-scraper-template</a>
+    - compressed-size-action(计算产物体积diff)
+      - <a href="https://github.com/preactjs/compressed-size-action" target="_blank noopener noreferrer">preactjs/compressed-size-action</a>
+    - repo-visualizer(生成项目结构svg的可视化图)
+      - <a href="https://github.com/githubocto/repo-visualizer" target="_blank noopener noreferrer">githubocto/repo-visualizer</a>
+    - github-forks-sync-action(同步上游仓库到本仓)
+      - <a href="https://github.com/TobKed/github-forks-sync-action" target="_blank noopener noreferrer">TobKed/github-forks-sync-action</a>
+    - deploy-pages(新github actions部署pages工具)
+      - <a href="https://github.com/actions/deploy-pages" target="_blank noopener noreferrer">actions/deploy-pages</a>
+    - stale(标记/关闭不活跃的issue)
+      - <a href="https://github.com/actions/stale" target="_blank noopener noreferrer">actions/stale</a>
+    - release-please-action(bot发布并生成release changelog)
+      - <a href="https://github.com/google-github-actions/release-please-action" target="_blank noopener noreferrer">google-github-actions/release-please-action</a>
+    - yarn-lock-changes(显示yarn.lock文件依赖变化)
+      - <a href="https://github.com/Simek/yarn-lock-changes" target="_blank noopener noreferrer">Simek/yarn-lock-changes</a>
+    - toolkit(开发github actions的工具包)
+      - <a href="https://github.com/actions/toolkit" target="_blank noopener noreferrer">actions/toolkit</a>
+    - paths-filter(部分文件变动才执行action的工具)
+      - <a href="https://github.com/dorny/paths-filter" target="_blank noopener noreferrer">dorny/paths-filter</a>
+    - cache(缓存)
+      - <a href="https://github.com/actions/cache" target="_blank noopener noreferrer">actions/cache</a>
+    - artifact系列
+      - upload-artifact(actions打包上传产物)
+        - <a href="https://github.com/actions/upload-artifact" target="_blank noopener noreferrer">actions/upload-artifact</a>
+      - download-artifact
+        - <a href="https://github.com/actions/download-artifact" target="_blank noopener noreferrer">actions/download-artifact</a>
+    - wait-for-secrets(在ci中使用2fa)
+      - <a href="https://github.com/step-security/wait-for-secrets" target="_blank noopener noreferrer">step-security/wait-for-secrets</a>
+    - combine-prs(将多个PR合并为一个PR)
+      - <a href="https://github.com/github/combine-prs" target="_blank noopener noreferrer">github/combine-prs</a>
+    - first-interaction(第一次贡献提示消息)
+      - <a href="https://github.com/actions/first-interaction" target="_blank noopener noreferrer">actions/first-interaction</a>
+    - create-pull-request(创建PR)
+      - <a href="https://github.com/peter-evans/create-pull-request" target="_blank noopener noreferrer">peter-evans/create-pull-request</a>
+    - cross-platform-actions(提供不支持的平台运行环境)
+      - <a href="https://github.com/cross-platform-actions/action" target="_blank noopener noreferrer">cross-platform-actions/action</a>
+    - stale-repos(识别不活跃的repo)
+      - <a href="https://github.com/github/stale-repos" target="_blank noopener noreferrer">github/stale-repos</a>
+    - actions-permissions(检测action需要的最小权限)
+      - <a href="https://github.com/GitHubSecurityLab/actions-permissions" target="_blank noopener noreferrer">GitHubSecurityLab/actions-permissions</a>
+    - 模板系列
+      - typescript-action
+        - <a href="https://github.com/actions/typescript-action" target="_blank noopener noreferrer">actions/typescript-action</a>
+    - image-actions(自动压缩图片PR)
+      - <a href="https://github.com/calibreapp/image-actions" target="_blank noopener noreferrer">calibreapp/image-actions</a>
+    - github-actions-workflow-ts(用ts编写workflow生成yml)
+      - <a href="https://github.com/emmanuelnk/github-actions-workflow-ts" target="_blank noopener noreferrer">emmanuelnk/github-actions-workflow-ts</a>
+    - tsc-diagnostics-diff-action(诊断tsc性能)
+      - <a href="https://github.com/beerose/tsc-diagnostics-diff-action" target="_blank noopener noreferrer">beerose/tsc-diagnostics-diff-action</a>
+    - nissuer(无最小复现自动关闭issue)
+      - <a href="https://github.com/balazsorban44/nissuer" target="_blank noopener noreferrer">balazsorban44/nissuer</a>
+    - CodSpeedHQ(node/rust代码性能测试报告)
+      - <a href="https://github.com/CodSpeedHQ/action" target="_blank noopener noreferrer">CodSpeedHQ/action</a>
+    - markdownlint-cli2-action(格式化markdown文件)
+      - <a href="https://github.com/DavidAnson/markdownlint-cli2-action" target="_blank noopener noreferrer">DavidAnson/markdownlint-cli2-action</a>
+    - git-auto-commit-action(自动格式化)
+      - <a href="https://github.com/stefanzweifel/git-auto-commit-action" target="_blank noopener noreferrer">stefanzweifel/git-auto-commit-action</a>
+    - autofix.ci(自动格式化/具有权限的app)
+      - <a href="https://github.com/autofix-ci/autofix.ci" target="_blank noopener noreferrer">autofix-ci/autofix.ci</a>
+    - issues-helper
+      - <a href="https://github.com/actions-cool/issues-helper" target="_blank noopener noreferrer">actions-cool/issues-helper</a>
+    - changed-files(检测文件变化)
+      - <a href="https://github.com/tj-actions/changed-files" target="_blank noopener noreferrer">tj-actions/changed-files</a>
+    - slash-command-dispatch(回复触发其他流水线)
+      - <a href="https://github.com/peter-evans/slash-command-dispatch" target="_blank noopener noreferrer">peter-evans/slash-command-dispatch</a>
+    - test-reporter(显示文件级别的测试运行结果)
+      - <a href="https://github.com/dorny/test-reporter" target="_blank noopener noreferrer">dorny/test-reporter</a>
+  - 插件库
+    - renovate(依赖自动更新工作流)
+      - <a href="https://github.com/renovatebot/renovate" target="_blank noopener noreferrer">renovatebot/renovate</a>
+- 音视频/多媒体
+  - 音频
+    - annyang(语音识别)
+      - <a href="https://github.com/TalAter/annyang" target="_blank noopener noreferrer">TalAter/annyang</a>
+    - artyom.js(语音识别)
+      - <a href="https://github.com/sdkcarlos/artyom.js" target="_blank noopener noreferrer">sdkcarlos/artyom.js</a>
+    - peaks.js(音频波形组件)
+      - <a href="https://github.com/bbc/peaks.js" target="_blank noopener noreferrer">bbc/peaks.js</a>
+    - wave.js(音频波形可视化)
+      - <a href="https://github.com/foobar404/Wave.js" target="_blank noopener noreferrer">foobar404/Wave.js</a>
+    - wavesurfer.js(音波音轨canvas展示)
+      - <a href="https://github.com/katspaugh/wavesurfer.js" target="_blank noopener noreferrer">katspaugh/wavesurfer.js</a>
+    - 播放系列
+      - Tone.js(在web中创建音乐/音频框架)
+        - <a href="https://github.com/Tonejs/Tone.js" target="_blank noopener noreferrer">Tonejs/Tone.js</a>
+      - howler.js(跨平台音频播放库)
+        - <a href="https://github.com/goldfire/howler.js" target="_blank noopener noreferrer">goldfire/howler.js</a>
+      - ts-audio(播放音频/基于AudioContext)
+        - <a href="https://github.com/EvandroLG/ts-audio" target="_blank noopener noreferrer">EvandroLG/ts-audio</a>
+    - recorder录音系列
+      - js-audio-recorder(冷)
+        - <a href="https://github.com/2fps/recorder" target="_blank noopener noreferrer">2fps/recorder</a>
+      - mic-recorder(冷/陈旧)
+        - <a href="https://github.com/paraself/mic-recorder" target="_blank noopener noreferrer">paraself/mic-recorder</a>
+      - jquery系列(支持ie)
+        - MP3RecorderJS
+          - <a href="https://github.com/rajivepandey/MP3RecorderJS" target="_blank noopener noreferrer">rajivepandey/MP3RecorderJS</a>
+        - jRecorder
+          - <a href="https://github.com/sythoos/jRecorder" target="_blank noopener noreferrer">sythoos/jRecorder</a>
+      - recorder-js(老)
+        - <a href="https://github.com/ijsnow/studiojs/tree/master/recorder" target="_blank noopener noreferrer">ijsnow/studiojs/tree/master/recorder</a>
+      - Recorderjs(老)
+        - <a href="https://github.com/mattdiamond/Recorderjs" target="_blank noopener noreferrer">mattdiamond/Recorderjs</a>
+      - Recorder
+        - <a href="https://github.com/xiangyuecn/Recorder" target="_blank noopener noreferrer">xiangyuecn/Recorder</a>
+    - phonograph(流式传输大音乐文件/防止报错)
+      - <a href="https://github.com/Rich-Harris/phonograph" target="_blank noopener noreferrer">Rich-Harris/phonograph</a>
+    - crunker(音频拼接/冷门)
+      - <a href="https://github.com/jaggad/crunker" target="_blank noopener noreferrer">jaggad/crunker</a>
+    - quiet-js(libquiet js版)
+      - <a href="https://github.com/quiet/quiet-js" target="_blank noopener noreferrer">quiet/quiet-js</a>
+    - svguitar(创建svg吉他和弦图)
+      - <a href="https://github.com/omnibrain/svguitar" target="_blank noopener noreferrer">omnibrain/svguitar</a>
+    - SoundTouchJS(操控AudioContext音高/陈旧)
+      - <a href="https://github.com/cutterbl/SoundTouchJS" target="_blank noopener noreferrer">cutterbl/SoundTouchJS</a>
+    - ogg-polyfill(safari ogg polyfill)
+      - <a href="https://github.com/Web-Media-Foundation/infrastructure/tree/master/packages/ogg-polyfill" target="_blank noopener noreferrer">Web-Media-Foundation/infrastructure/tree/master/packages/ogg-polyfill</a>
+    - standardized-audio-context(跨平台标准AudioContext)
+      - <a href="https://github.com/chrisguttandin/standardized-audio-context" target="_blank noopener noreferrer">chrisguttandin/standardized-audio-context</a>
+    - meyda(音频特征提取库)
+      - <a href="https://github.com/meyda/meyda" target="_blank noopener noreferrer">meyda/meyda</a>
+    - audioMotion-analyzer(频谱分析)
+      - <a href="https://github.com/hvianna/audioMotion-analyzer" target="_blank noopener noreferrer">hvianna/audioMotion-analyzer</a>
+    - siriwave(复现siri波形动画)
+      - <a href="https://github.com/kopiro/siriwave" target="_blank noopener noreferrer">kopiro/siriwave</a>
+    - jsmediatags(音频信息提取库)
+      - <a href="https://github.com/aadsm/jsmediatags" target="_blank noopener noreferrer">aadsm/jsmediatags</a>
+  - 视频
+    - 播放器系列
+      - dplayer
+        - <a href="https://github.com/DIYgod/DPlayer" target="_blank noopener noreferrer">DIYgod/DPlayer</a>
+      - xgplayer
+        - <a href="https://github.com/bytedance/xgplayer" target="_blank noopener noreferrer">bytedance/xgplayer</a>
+      - plyr(简约)
+        - <a href="https://github.com/sampotts/plyr" target="_blank noopener noreferrer">sampotts/plyr</a>
+      - shaka-player
+        - <a href="https://github.com/shaka-project/shaka-player" target="_blank noopener noreferrer">shaka-project/shaka-player</a>
+      - indigo-player
+        - <a href="https://github.com/matvp91/indigo-player" target="_blank noopener noreferrer">matvp91/indigo-player</a>
+      - video.js
+        - <a href="https://github.com/videojs/video.js" target="_blank noopener noreferrer">videojs/video.js</a>
+      - mediaelement(音视频一致ui播放器)
+        - <a href="https://github.com/mediaelement/mediaelement" target="_blank noopener noreferrer">mediaelement/mediaelement</a>
+      - @mux/mux-player(支持定制)
+        - <a href="https://github.com/muxinc/elements" target="_blank noopener noreferrer">muxinc/elements</a>
+      - media-chrome(web component版增强播放器)
+        - <a href="https://github.com/muxinc/media-chrome" target="_blank noopener noreferrer">muxinc/media-chrome</a>
+      - mpegts.js(mpeg/ts播放器)
+        - <a href="https://github.com/xqq/mpegts.js" target="_blank noopener noreferrer">xqq/mpegts.js</a>
+      - ArtPlayer
+        - <a href="https://github.com/zhw2590582/ArtPlayer" target="_blank noopener noreferrer">zhw2590582/ArtPlayer</a>
+    - hls.js
+      - <a href="https://github.com/video-dev/hls.js" target="_blank noopener noreferrer">video-dev/hls.js</a>
+    - griffith(zhihu视频框架)
+      - <a href="https://github.com/zhihu/griffith" target="_blank noopener noreferrer">zhihu/griffith</a>
+    - tethr(webusb接口控制usb设备)
+      - <a href="https://github.com/baku89/tethr" target="_blank noopener noreferrer">baku89/tethr</a>
+    - webrtc系列
+      - webrtc-adapter
+        - <a href="https://github.com/webrtcHacks/adapter" target="_blank noopener noreferrer">webrtcHacks/adapter</a>
+      - peerjs(点对点webrtc)
+        - <a href="https://github.com/peers/peerjs" target="_blank noopener noreferrer">peers/peerjs</a>
+      - webrtc-tutorial(webrtc中文教程)
+        - <a href="https://github.com/Tinywan/WebRTC-tutorial" target="_blank noopener noreferrer">Tinywan/WebRTC-tutorial</a>
+      - mockrtc(用于webrtc测试的库)
+        - <a href="https://github.com/httptoolkit/mockrtc" target="_blank noopener noreferrer">httptoolkit/mockrtc</a>
+      - webrtc-streamer(rtsp解码等)
+        - <a href="https://github.com/mpromonet/webrtc-streamer" target="_blank noopener noreferrer">mpromonet/webrtc-streamer</a>
+      - @roamhq/wrtc(node新版webrtc)
+        - <a href="https://github.com/WonderInventions/node-webrtc" target="_blank noopener noreferrer">WonderInventions/node-webrtc</a>
+      - node-webrtc
+        - <a href="https://github.com/node-webrtc/node-webrtc" target="_blank noopener noreferrer">node-webrtc/node-webrtc</a>
+      - samples(官方代码示例仓库)
+        - <a href="https://github.com/webrtc/samples" target="_blank noopener noreferrer">webrtc/samples</a>
+    - mp4box.js(解码)
+      - <a href="https://github.com/gpac/mp4box.js" target="_blank noopener noreferrer">gpac/mp4box.js</a>
+    - mux.js(解码)
+      - <a href="https://github.com/videojs/mux.js" target="_blank noopener noreferrer">videojs/mux.js</a>
+    - etro(视频编辑框架/node/冷门)
+      - <a href="https://github.com/etro-js/etro" target="_blank noopener noreferrer">etro-js/etro</a>
+    - editly(视频编辑工具/基于ffmpeg)
+      - <a href="https://github.com/mifi/editly" target="_blank noopener noreferrer">mifi/editly</a>
+    - jsmpeg(解码mpeg1视频/.ts视频)
+      - <a href="https://github.com/phoboslab/jsmpeg" target="_blank noopener noreferrer">phoboslab/jsmpeg</a>
+    - webm系列
+      - webm-writer-js
+        - <a href="https://github.com/thenickdude/webm-writer-js" target="_blank noopener noreferrer">thenickdude/webm-writer-js</a>
+      - webm-muxer(性能更快)
+        - <a href="https://github.com/Vanilagy/webm-muxer" target="_blank noopener noreferrer">Vanilagy/webm-muxer</a>
+    - mediainfo.js(解析media信息)
+      - <a href="https://github.com/buzz/mediainfo.js" target="_blank noopener noreferrer">buzz/mediainfo.js</a>
+    - dash.js(播放mpeg dash视频)
+      - <a href="https://github.com/Dash-Industry-Forum/dash.js" target="_blank noopener noreferrer">Dash-Industry-Forum/dash.js</a>
+  - WEB MIDI
+    - JZZ(midi接口库)
+      - <a href="https://github.com/jazz-soft/JZZ" target="_blank noopener noreferrer">jazz-soft/JZZ</a>
+    - webmidi
+      - <a href="https://github.com/djipco/webmidi" target="_blank noopener noreferrer">djipco/webmidi</a>
+    - midival/core
+      - <a href="https://github.com/midival/core" target="_blank noopener noreferrer">midival/core</a>
+    - signal(midi在线编辑器)
+      - <a href="https://github.com/ryohey/signal" target="_blank noopener noreferrer">ryohey/signal</a>
+    - html-midi-player(midi展示工具)
+      - <a href="https://github.com/cifkao/html-midi-player" target="_blank noopener noreferrer">cifkao/html-midi-player</a>
+- 机器学习(深度学习/算法)
+  - ml5
+    - <a href="https://github.com/ml5js/ml5-library" target="_blank noopener noreferrer">ml5js/ml5-library</a>
+  - synaptic
+    - <a href="https://github.com/cazala/synaptic" target="_blank noopener noreferrer">cazala/synaptic</a>
+  - brain.js
+    - <a href="https://github.com/BrainJS/brain.js" target="_blank noopener noreferrer">BrainJS/brain.js</a>
+  - pipcook(ali web机器学习库)
+    - <a href="https://github.com/alibaba/pipcook" target="_blank noopener noreferrer">alibaba/pipcook</a>
+  - stdlib(统计库)
+    - <a href="https://github.com/stdlib-js/stdlib" target="_blank noopener noreferrer">stdlib-js/stdlib</a>
+  - ml(机器学习+算法库)
+    - <a href="https://github.com/mljs/ml" target="_blank noopener noreferrer">mljs/ml</a>
+  - tracking(实时追踪)
+    - <a href="https://github.com/eduardolundgren/tracking.js" target="_blank noopener noreferrer">eduardolundgren/tracking.js</a>
+  - hora-wasm(最临算法库)
+    - <a href="https://github.com/hora-search/hora-wasm" target="_blank noopener noreferrer">hora-search/hora-wasm</a>
+  - simplex-noise.js(简单噪声实现库)
+    - <a href="https://github.com/jwagner/simplex-noise.js" target="_blank noopener noreferrer">jwagner/simplex-noise.js</a>
+  - dann(深度学习神经网络库)
+    - <a href="https://github.com/matiasvlevi/Dann" target="_blank noopener noreferrer">matiasvlevi/Dann</a>
+  - OT系列
+    - ot.js(文档协作算法)
+      - <a href="https://github.com/Operational-Transformation/ot.js" target="_blank noopener noreferrer">Operational-Transformation/ot.js</a>
+    - sharedb(ot数据库/框架)
+      - <a href="https://github.com/share/sharedb" target="_blank noopener noreferrer">share/sharedb</a>
+    - yjs系列
+      - yjs
+        - <a href="https://github.com/yjs/yjs" target="_blank noopener noreferrer">yjs/yjs</a>
+      - y-protocols
+        - <a href="https://github.com/yjs/y-protocols" target="_blank noopener noreferrer">yjs/y-protocols</a>
+      - y-indexeddb
+        - <a href="https://github.com/yjs/y-indexeddb" target="_blank noopener noreferrer">yjs/y-indexeddb</a>
+      - y-redis
+        - <a href="https://github.com/yjs/y-redis" target="_blank noopener noreferrer">yjs/y-redis</a>
+      - y-websocket
+        - <a href="https://github.com/yjs/y-websocket" target="_blank noopener noreferrer">yjs/y-websocket</a>
+      - slate-yjs系列
+        - slate-yjs
+          - <a href="https://github.com/BitPhinix/slate-yjs" target="_blank noopener noreferrer">BitPhinix/slate-yjs</a>
+        - slate-yjs-example
+          - <a href="https://github.com/BitPhinix/slate-yjs-example" target="_blank noopener noreferrer">BitPhinix/slate-yjs-example</a>
+    - ottype系列
+      - slate-ottype
+        - <a href="https://github.com/qqwee/slate-ottype" target="_blank noopener noreferrer">qqwee/slate-ottype</a>
+      - ottype-slate(wip)
+        - <a href="https://github.com/pubuzhixing8/ottype-slate" target="_blank noopener noreferrer">pubuzhixing8/ottype-slate</a>
+    - changesets(ot实现)
+      - <a href="https://github.com/marcelklehr/changesets" target="_blank noopener noreferrer">marcelklehr/changesets</a>
+    - @atom/teletype(atom crdt实现)
+      - <a href="https://github.com/atom/teletype" target="_blank noopener noreferrer">atom/teletype</a>
+    - automerge(crud合并工具)
+      - <a href="https://github.com/automerge/automerge" target="_blank noopener noreferrer">automerge/automerge</a>
+    - octo系列
+      - octobase(CRDT rust数据库)
+        - <a href="https://github.com/toeverything/octobase" target="_blank noopener noreferrer">toeverything/octobase</a>
+      - y-octo(yjs rust版)
+        - <a href="https://github.com/y-crdt/y-octo" target="_blank noopener noreferrer">y-crdt/y-octo</a>
+    - automerge-classic(crdt)
+      - <a href="https://github.com/automerge/automerge-classic" target="_blank noopener noreferrer">automerge/automerge-classic</a>
+  - convnetjs(深度学习/陈旧)
+    - <a href="https://github.com/karpathy/convnetjs" target="_blank noopener noreferrer">karpathy/convnetjs</a>
+  - danfojs(数据分析库/类似pandas)
+    - <a href="https://github.com/javascriptdata/danfojs" target="_blank noopener noreferrer">javascriptdata/danfojs</a>
+  - face人脸识别系列
+    - face-api(人脸识别)
+      - <a href="https://github.com/vladmandic/face-api" target="_blank noopener noreferrer">vladmandic/face-api</a>
+      - node-demo
+        - <a href="https://github.com/vladmandic/face-api/blob/master/demo/node-canvas.js" target="_blank noopener noreferrer">vladmandic/face-api/blob/master/demo/node-canvas.js</a>
+    - picojs(老)
+      - <a href="https://github.com/nenadmarkus/picojs" target="_blank noopener noreferrer">nenadmarkus/picojs</a>
+  - OCR系列
+    - tesseract.js(ocr识别)
+      - <a href="https://github.com/naptha/tesseract.js" target="_blank noopener noreferrer">naptha/tesseract.js</a>
+    - Paddle.js(百度paddleocr)
+      - <a href="https://github.com/PaddlePaddle/Paddle.js" target="_blank noopener noreferrer">PaddlePaddle/Paddle.js</a>
+  - ai-cli系列
+    - ai-cli
+      - <a href="https://github.com/abhagsain/ai-cli" target="_blank noopener noreferrer">abhagsain/ai-cli</a>
+  - tensorflow系列
+    - tfjs(tensorflow)
+      - <a href="https://github.com/tensorflow/tfjs" target="_blank noopener noreferrer">tensorflow/tfjs</a>
+    - @tensorflow-models/pose-detection(姿势检测模型)
+      - <a href="https://www.npmjs.com/package/@tensorflow-models/pose-detection" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - @tensorflow/tfjs-backend-webgl(webgl加速后端)
+      - <a href="https://www.npmjs.com/package/@tensorflow/tfjs-backend-webgl" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - body-segmentation(人像分割模型)
+      - <a href="https://github.com/tensorflow/tfjs-models/tree/master/body-segmentation" target="_blank noopener noreferrer">tensorflow/tfjs-models/tree/master/body-segmentation</a>
+  - nlp系列
+    - node-nlp
+      - <a href="https://github.com/axa-group/nlp.js" target="_blank noopener noreferrer">axa-group/nlp.js</a>
+    - wink-nlp
+      - <a href="https://github.com/winkjs/wink-nlp" target="_blank noopener noreferrer">winkjs/wink-nlp</a>
+  - hugging-face系列
+    - huggingface.js(huggingface api sdk)
+      - <a href="https://github.com/huggingface/huggingface.js" target="_blank noopener noreferrer">huggingface/huggingface.js</a>
+    - transformers.js(在web上运行hugging face的工具)
+      - <a href="https://github.com/xenova/transformers.js" target="_blank noopener noreferrer">xenova/transformers.js</a>
+  - limdu(机器学习框架)
+    - <a href="https://github.com/erelsgl/limdu" target="_blank noopener noreferrer">erelsgl/limdu</a>
+  - nsfwjs(在浏览器识别nsfw内容)
+    - <a href="https://github.com/infinitered/nsfwjs" target="_blank noopener noreferrer">infinitered/nsfwjs</a>
+- Game/canvas
+  - phaser(2d游戏框架)
+    - <a href="https://github.com/phaserjs/phaser" target="_blank noopener noreferrer">phaserjs/phaser</a>
+  - babylon.js(游戏库)
+    - <a href="https://github.com/BabylonJS/Babylon.js" target="_blank noopener noreferrer">BabylonJS/Babylon.js</a>
+  - melonJS(轻量级游戏引擎/陈旧)
+    - <a href="https://github.com/melonjs/melonJS" target="_blank noopener noreferrer">melonjs/melonJS</a>
+  - Ga(极小html5游戏库/star不多)
+    - <a href="https://github.com/kittykatattack/ga" target="_blank noopener noreferrer">kittykatattack/ga</a>
+  - kontra(轻量h5游戏库/for 13kgame)
+    - <a href="https://github.com/straker/kontra" target="_blank noopener noreferrer">straker/kontra</a>
+  - LittleJS(快速渲染2d游戏引擎)
+    - <a href="https://github.com/KilledByAPixel/LittleJS" target="_blank noopener noreferrer">KilledByAPixel/LittleJS</a>
+  - kaboom(游戏库)
+    - <a href="https://github.com/replit/kaboom" target="_blank noopener noreferrer">replit/kaboom</a>
+  - eva.js(游戏交互引擎)
+    - <a href="https://github.com/eva-engine/eva.js" target="_blank noopener noreferrer">eva-engine/eva.js</a>
+  - stockfish.js(棋类游戏引擎)
+    - <a href="https://github.com/nmrugg/stockfish.js" target="_blank noopener noreferrer">nmrugg/stockfish.js</a>
+  - GDevelop(游戏引擎/收费)
+    - <a href="https://github.com/4ian/GDevelop" target="_blank noopener noreferrer">4ian/GDevelop</a>
+- 测试/工程化
+  - krama
+    - <a href="https://github.com/karma-runner/karma" target="_blank noopener noreferrer">karma-runner/karma</a>
+  - mocha
+    - <a href="https://github.com/mochajs/mocha" target="_blank noopener noreferrer">mochajs/mocha</a>
+  - stryker-js
+    - <a href="https://github.com/stryker-mutator/stryker-js" target="_blank noopener noreferrer">stryker-mutator/stryker-js</a>
+  - babel-plugin-tester(对比结果测试工具)
+    - <a href="https://github.com/babel-utils/babel-plugin-tester" target="_blank noopener noreferrer">babel-utils/babel-plugin-tester</a>
+  - surge(组件库pr可预览方案)
+    - <a href="https://github.com/sintaxi/surge" target="_blank noopener noreferrer">sintaxi/surge</a>
+  - jasmine(简单的js测试框架)
+    - <a href="https://github.com/jasmine/jasmine" target="_blank noopener noreferrer">jasmine/jasmine</a>
+  - fast-check(基于属性的测试框架/不懂)
+    - <a href="https://github.com/dubzzz/fast-check" target="_blank noopener noreferrer">dubzzz/fast-check</a>
+  - 覆盖率系列
+    - babel-plugin-istanbul(覆盖率插桩插件)
+      - <a href="https://github.com/istanbuljs/babel-plugin-istanbul" target="_blank noopener noreferrer">istanbuljs/babel-plugin-istanbul</a>
+    - nyc(测试覆盖率cov)
+      - <a href="https://github.com/istanbuljs/nyc" target="_blank noopener noreferrer">istanbuljs/nyc</a>
+    - istanbul(测试覆盖率)
+      - <a href="https://github.com/gotwarlost/istanbul" target="_blank noopener noreferrer">gotwarlost/istanbul</a>
+    - c8(node10原生覆盖率检测输出报告工具)
+      - <a href="https://github.com/bcoe/c8" target="_blank noopener noreferrer">bcoe/c8</a>
+    - ts type覆盖率系列
+      - type-coverage
+        - <a href="https://github.com/plantain-00/type-coverage" target="_blank noopener noreferrer">plantain-00/type-coverage</a>
+      - typescript-coverage-report
+        - <a href="https://github.com/alexcanessa/typescript-coverage-report" target="_blank noopener noreferrer">alexcanessa/typescript-coverage-report</a>
+  - 命令行测试工具(测试stdio/stdout)
+    - clet
+      - <a href="https://github.com/node-modules/clet" target="_blank noopener noreferrer">node-modules/clet</a>
+    - coffee
+      - <a href="https://github.com/node-modules/coffee" target="_blank noopener noreferrer">node-modules/coffee</a>
+  - jest
+    - jest
+      - <a href="https://github.com/facebook/jest" target="_blank noopener noreferrer">facebook/jest</a>
+    - jest-extended(一些附加匹配器)
+      - <a href="https://github.com/jest-community/jest-extended" target="_blank noopener noreferrer">jest-community/jest-extended</a>
+    - jest-watch-typeahead(watch变动)
+      - <a href="https://github.com/jest-community/jest-watch-typeahead" target="_blank noopener noreferrer">jest-community/jest-watch-typeahead</a>
+    - ts测试支持
+      - ts-jest
+        - <a href="https://github.com/kulshekhar/ts-jest" target="_blank noopener noreferrer">kulshekhar/ts-jest</a>
+      - swc-project/jest
+        - <a href="https://github.com/swc-project/jest" target="_blank noopener noreferrer">swc-project/jest</a>
+      - esbuild-jest
+        - <a href="https://github.com/aelbore/esbuild-jest" target="_blank noopener noreferrer">aelbore/esbuild-jest</a>
+      - jest-esbuild(支持传递选项)
+        - <a href="https://github.com/hannoeru/jest-esbuild" target="_blank noopener noreferrer">hannoeru/jest-esbuild</a>
+    - jest-light-runner(轻量级nodejs runner)
+      - <a href="https://github.com/nicolo-ribaudo/jest-light-runner" target="_blank noopener noreferrer">nicolo-ribaudo/jest-light-runner</a>
+    - jest-in-case(jest.each的同类品)
+      - <a href="https://github.com/atlassian/jest-in-case" target="_blank noopener noreferrer">atlassian/jest-in-case</a>
+    - jest-image-snapshot(测试中以图像为快照对比)
+      - <a href="https://github.com/americanexpress/jest-image-snapshot" target="_blank noopener noreferrer">americanexpress/jest-image-snapshot</a>
+    - jest-mock-process(mock process)
+      - <a href="https://github.com/EpicEric/jest-mock-process" target="_blank noopener noreferrer">EpicEric/jest-mock-process</a>
+    - jest_workaround(模块mock解决方案)
+      - <a href="https://github.com/magic-akari/jest_workaround" target="_blank noopener noreferrer">magic-akari/jest_workaround</a>
+    - jest-react(测试react的工具包)
+      - <a href="https://www.npmjs.com/package/jest-react" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - jest-puppeteer(jest的pp支持/e2e)
+      - <a href="https://github.com/argos-ci/jest-puppeteer" target="_blank noopener noreferrer">argos-ci/jest-puppeteer</a>
+    - jest-worker
+      - <a href="https://www.npmjs.com/package/jest-worker" target="_blank noopener noreferrer">www.npmjs.com</a>
+  - fixturez(文件系统模拟工具)
+    - <a href="https://github.com/jamiebuilds/fixturez" target="_blank noopener noreferrer">jamiebuilds/fixturez</a>
+  - 模拟浏览器系列
+    - taiko(更好的可视化界面)
+      - <a href="https://github.com/getgauge/taiko" target="_blank noopener noreferrer">getgauge/taiko</a>
+    - capture-website(puppeteer高级包装器/对网站/文件截图)
+      - <a href="https://github.com/sindresorhus/capture-website" target="_blank noopener noreferrer">sindresorhus/capture-website</a>
+    - puppeteer系列
+      - puppeteer-to-playwright
+        - <a href="https://github.com/checkly/puppeteer-to-playwright" target="_blank noopener noreferrer">checkly/puppeteer-to-playwright</a>
+      - puppeteer
+        - <a href="https://github.com/puppeteer/puppeteer" target="_blank noopener noreferrer">puppeteer/puppeteer</a>
+      - @puppeteer/replay(支持重放chrome record)
+        - <a href="https://github.com/puppeteer/replay" target="_blank noopener noreferrer">puppeteer/replay</a>
+      - puppeteer-heap-snapshot(生成快照堆)
+        - <a href="https://github.com/adriancooney/puppeteer-heap-snapshot" target="_blank noopener noreferrer">adriancooney/puppeteer-heap-snapshot</a>
+      - serverless运行系列
+        - chrome-aws-lambda(在aws支持chromium)
+          - <a href="https://github.com/alixaxel/chrome-aws-lambda" target="_blank noopener noreferrer">alixaxel/chrome-aws-lambda</a>
+        - @sparticuz/chromium
+          - <a href="https://github.com/Sparticuz/chromium" target="_blank noopener noreferrer">Sparticuz/chromium</a>
+    - macaca-playwright(移动端测试/冷门)
+      - <a href="https://github.com/macacajs/macaca-playwright" target="_blank noopener noreferrer">macacajs/macaca-playwright</a>
+    - browserless/chrome(更好的模拟浏览器docker镜像)
+      - <a href="https://github.com/browserless/chrome" target="_blank noopener noreferrer">browserless/chrome</a>
+  - e2e系列
+    - playwright(puppeteer一样模拟浏览器/支持更多浏览器)
+      - <a href="https://github.com/microsoft/playwright" target="_blank noopener noreferrer">microsoft/playwright</a>
+    - nightwatch(端到端e2e测试api框架)
+      - <a href="https://github.com/nightwatchjs/nightwatch" target="_blank noopener noreferrer">nightwatchjs/nightwatch</a>
+    - testcafe
+      - <a href="https://github.com/DevExpress/testcafe" target="_blank noopener noreferrer">DevExpress/testcafe</a>
+    - start-server-and-test(用于e2e启动流)
+      - <a href="https://github.com/bahmutov/start-server-and-test" target="_blank noopener noreferrer">bahmutov/start-server-and-test</a>
+    - webdriverio
+      - <a href="https://github.com/webdriverio/webdriverio" target="_blank noopener noreferrer">webdriverio/webdriverio</a>
+    - cypress系列
+      - cypress(模拟浏览器单测工具)
+        - <a href="https://github.com/cypress-io/cypress" target="_blank noopener noreferrer">cypress-io/cypress</a>
+      - 实战例子
+        - nextjs-cypress-ct-example(cy测试nextjs)
+          - <a href="https://github.com/mike-plummer/nextjs-cypress-ct-example" target="_blank noopener noreferrer">mike-plummer/nextjs-cypress-ct-example</a>
+        - cypress-realworld-app(官方示例项目)
+          - <a href="https://github.com/cypress-io/cypress-realworld-app" target="_blank noopener noreferrer">cypress-io/cypress-realworld-app</a>
+      - cypress-io/github-action
+        - <a href="https://github.com/cypress-io/github-action" target="_blank noopener noreferrer">cypress-io/github-action</a>
+      - cypress-real-events(模拟输入等工具函数)
+        - <a href="https://github.com/dmtrKovalenko/cypress-real-events" target="_blank noopener noreferrer">dmtrKovalenko/cypress-real-events</a>
+      - cypress-slow-down(让操作放缓便于观察)
+        - <a href="https://github.com/bahmutov/cypress-slow-down" target="_blank noopener noreferrer">bahmutov/cypress-slow-down</a>
+      - cypress-await(支持使用await/冷门)
+        - <a href="https://github.com/bahmutov/cypress-await" target="_blank noopener noreferrer">bahmutov/cypress-await</a>
+      - cy-spok(检查网络请求返回值类型的工具)
+        - <a href="https://github.com/bahmutov/cy-spok" target="_blank noopener noreferrer">bahmutov/cy-spok</a>
+    - CodeceptJS
+      - <a href="https://github.com/codeceptjs/CodeceptJS" target="_blank noopener noreferrer">codeceptjs/CodeceptJS</a>
+  - nodejs测试系列
+    - ava(测试nodejs程序)
+      - <a href="https://github.com/avajs/ava" target="_blank noopener noreferrer">avajs/ava</a>
+    - uvu(轻量测试)
+      - <a href="https://github.com/lukeed/uvu" target="_blank noopener noreferrer">lukeed/uvu</a>
+    - supertest(node http代理测试库)
+      - <a href="https://github.com/ladjs/supertest" target="_blank noopener noreferrer">ladjs/supertest</a>
+    - nut.js(native ui测试库/模拟操作)
+      - <a href="https://github.com/nut-tree/nut.js" target="_blank noopener noreferrer">nut-tree/nut.js</a>
+    - xv(0配置测试框架/冷门)
+      - <a href="https://github.com/typicode/xv" target="_blank noopener noreferrer">typicode/xv</a>
+    - tape
+      - <a href="https://github.com/ljharb/tape" target="_blank noopener noreferrer">ljharb/tape</a>
+    - rewire(monkey patch/模拟全局模块)
+      - <a href="https://github.com/jhnns/rewire" target="_blank noopener noreferrer">jhnns/rewire</a>
+    - node-deep-equal(assert.deepEqual)
+      - <a href="https://github.com/inspect-js/node-deep-equal" target="_blank noopener noreferrer">inspect-js/node-deep-equal</a>
+    - node-tap
+      - <a href="https://github.com/tapjs/node-tap" target="_blank noopener noreferrer">tapjs/node-tap</a>
+    - japa(冷)
+      - <a href="https://github.com/japa/runner" target="_blank noopener noreferrer">japa/runner</a>
+  - cucumber.js(语义化测试dsl基础)
+    - <a href="https://github.com/cucumber/cucumber-js" target="_blank noopener noreferrer">cucumber/cucumber-js</a>
+  - ts/type类型测试
+    - tsd(可以对ts工具type进行测试)
+      - <a href="https://github.com/SamVerschueren/tsd" target="_blank noopener noreferrer">SamVerschueren/tsd</a>
+    - expect-type(判断对象是否符合type)
+      - <a href="https://github.com/mmkal/ts/tree/main/packages/expect-type" target="_blank noopener noreferrer">mmkal/ts/tree/main/packages/expect-type</a>
+    - tsafe
+      - <a href="https://github.com/garronej/tsafe" target="_blank noopener noreferrer">garronej/tsafe</a>
+    - expect-type(vitest类型测试底层)
+      - <a href="https://github.com/mmkal/expect-type" target="_blank noopener noreferrer">mmkal/expect-type</a>
+    - @esfx/type-model
+      - <a href="https://github.com/esfx/esfx/tree/main/packages/type-model" target="_blank noopener noreferrer">esfx/esfx/tree/main/packages/type-model</a>
+    - dtslint
+      - <a href="https://github.com/microsoft/DefinitelyTyped-tools/tree/master/packages/dtslint" target="_blank noopener noreferrer">microsoft/DefinitelyTyped-tools/tree/master/packages/dtslint</a>
+  - 模拟库系列
+    - sinon(函数模拟库)
+      - <a href="https://github.com/sinonjs/sinon" target="_blank noopener noreferrer">sinonjs/sinon</a>
+    - testdouble.js
+      - <a href="https://github.com/testdouble/testdouble.js" target="_blank noopener noreferrer">testdouble/testdouble.js</a>
+  - assert断言库系列
+    - power-assert(断言库)
+      - <a href="https://github.com/power-assert-js/power-assert" target="_blank noopener noreferrer">power-assert-js/power-assert</a>
+    - chai(断言库)
+      - <a href="https://github.com/chaijs/chai" target="_blank noopener noreferrer">chaijs/chai</a>
+    - should.js(超老)
+      - <a href="https://github.com/tj/should.js" target="_blank noopener noreferrer">tj/should.js</a>
+    - expect.js(超老)
+      - <a href="https://github.com/Automattic/expect.js" target="_blank noopener noreferrer">Automattic/expect.js</a>
+  - http请求相关系列
+    - nock(http模拟mock库)
+      - <a href="https://github.com/nock/nock" target="_blank noopener noreferrer">nock/nock</a>
+    - pollyjs(重放/记录http请求)
+      - <a href="https://github.com/Netflix/pollyjs" target="_blank noopener noreferrer">Netflix/pollyjs</a>
+    - light-my-request(http注入模拟库/冷门)
+      - <a href="https://github.com/fastify/light-my-request" target="_blank noopener noreferrer">fastify/light-my-request</a>
+  - benchmark基准速度测试系列
+    - benchmark.js(基准性能测试库)
+      - <a href="https://github.com/bestiejs/benchmark.js" target="_blank noopener noreferrer">bestiejs/benchmark.js</a>
+    - tinybench
+      - <a href="https://github.com/tinylibs/tinybench" target="_blank noopener noreferrer">tinylibs/tinybench</a>
+    - benny
+      - <a href="https://github.com/caderek/benny" target="_blank noopener noreferrer">caderek/benny</a>
+    - bench-node
+      - <a href="https://github.com/RafaelGSS/bench-node" target="_blank noopener noreferrer">RafaelGSS/bench-node</a>
+    - cronometro(在隔离的线程中运行测试/冷门)
+      - <a href="https://github.com/ShogunPanda/cronometro" target="_blank noopener noreferrer">ShogunPanda/cronometro</a>
+  - a11y测试系列
+    - axe-core(a11y测试)
+      - <a href="https://github.com/dequelabs/axe-core" target="_blank noopener noreferrer">dequelabs/axe-core</a>
+    - a11y-automation(自动化测试a11y)
+      - <a href="https://github.com/MelSumner/a11y-automation" target="_blank noopener noreferrer">MelSumner/a11y-automation</a>
+    - axe-playwright(axe+pw测试)
+      - <a href="https://github.com/abhinaba-ghosh/axe-playwright" target="_blank noopener noreferrer">abhinaba-ghosh/axe-playwright</a>
+    - pa11y(网页a11y问题检测)
+      - <a href="https://github.com/pa11y/pa11y" target="_blank noopener noreferrer">pa11y/pa11y</a>
+  - node-mocks-http(模拟express的req和res)
+    - <a href="https://github.com/howardabrams/node-mocks-http" target="_blank noopener noreferrer">howardabrams/node-mocks-http</a>
+  - lighthouse打分系列
+    - flashlight(手机端lighthouse)
+      - <a href="https://github.com/bamlab/flashlight" target="_blank noopener noreferrer">bamlab/flashlight</a>
+    - lighthouse
+      - <a href="https://github.com/GoogleChrome/lighthouse" target="_blank noopener noreferrer">GoogleChrome/lighthouse</a>
+  - vest
+    - <a href="https://github.com/ealush/vest" target="_blank noopener noreferrer">ealush/vest</a>
+  - page-spy-web(远程调试查看console信息工具)
+    - <a href="https://github.com/HuolalaTech/page-spy-web" target="_blank noopener noreferrer">HuolalaTech/page-spy-web</a>
+- 非主流框架
+  - san(baidu兼容mvvm框架)
+    - <a href="https://github.com/baidu/san" target="_blank noopener noreferrer">baidu/san</a>
+  - uikit(基于原生dom节点的样式库)
+    - <a href="https://github.com/uikit/uikit" target="_blank noopener noreferrer">uikit/uikit</a>
+  - stimulus(接管片段html框架)
+    - <a href="https://github.com/hotwired/stimulus" target="_blank noopener noreferrer">hotwired/stimulus</a>
+  - meteor
+    - <a href="https://github.com/meteor/meteor" target="_blank noopener noreferrer">meteor/meteor</a>
+  - rakkasjs(nextjs替代品/冷门门)
+    - <a href="https://github.com/rakkasjs/rakkasjs" target="_blank noopener noreferrer">rakkasjs/rakkasjs</a>
+  - ssr框架系列
+    - ssr(react/vue通用ssr框架)
+      - <a href="https://github.com/ykfe/ssr" target="_blank noopener noreferrer">ykfe/ssr</a>
+    - beidou(ali ssr框架)
+      - <a href="https://github.com/alibaba/beidou" target="_blank noopener noreferrer">alibaba/beidou</a>
+    - egg-react-ssr
+      - <a href="https://github.com/ykfe/egg-react-ssr" target="_blank noopener noreferrer">ykfe/egg-react-ssr</a>
+  - wmr(聚合了很多现代特性的apps)
+    - <a href="https://github.com/preactjs/wmr" target="_blank noopener noreferrer">preactjs/wmr</a>
+  - vitedge(vite边缘渲染框架)
+    - <a href="https://github.com/frandiox/vitedge" target="_blank noopener noreferrer">frandiox/vitedge</a>
+  - halfmoon(内置dark模式的框架)
+    - <a href="https://github.com/halfmoonui/halfmoon" target="_blank noopener noreferrer">halfmoonui/halfmoon</a>
+  - mitosis(编写框架无关的代码/可转任意框架)
+    - <a href="https://github.com/BuilderIO/mitosis" target="_blank noopener noreferrer">BuilderIO/mitosis</a>
+  - openui5(编写一次多端运行)
+    - <a href="https://github.com/SAP/openui5" target="_blank noopener noreferrer">SAP/openui5</a>
+  - riot(web component形式的框架)
+    - <a href="https://github.com/riot/riot" target="_blank noopener noreferrer">riot/riot</a>
+  - molecule(轻量级ide ui框架/内置vscode ui)
+    - <a href="https://github.com/DTStack/molecule" target="_blank noopener noreferrer">DTStack/molecule</a>
+  - svemix(svelte版本的remix)
+    - <a href="https://github.com/svemix/svemix" target="_blank noopener noreferrer">svemix/svemix</a>
+  - hydrogen(shopee的react定制框架)
+    - <a href="https://github.com/Shopify/hydrogen" target="_blank noopener noreferrer">Shopify/hydrogen</a>
+  - svelte系列
+    - 插件
+      - route路由系列
+        - svelte-routing
+          - <a href="https://github.com/EmilTholin/svelte-routing" target="_blank noopener noreferrer">EmilTholin/svelte-routing</a>
+        - svelte-spa-router
+          - <a href="https://github.com/ItalyPaleAle/svelte-spa-router" target="_blank noopener noreferrer">ItalyPaleAle/svelte-spa-router</a>
+      - ssr系列
+        - svelte-kit
+          - <a href="https://github.com/sveltejs/kit" target="_blank noopener noreferrer">sveltejs/kit</a>
+        - sapper(基于svelte的ssr/已存档)
+          - <a href="https://github.com/sveltejs/sapper" target="_blank noopener noreferrer">sveltejs/sapper</a>
+      - svelte-native(基于NativeScript实现跨端)
+        - <a href="https://github.com/halfnelson/svelte-native" target="_blank noopener noreferrer">halfnelson/svelte-native</a>
+      - vite-plugin-svelte(vite支持开发)
+        - <a href="https://github.com/sveltejs/vite-plugin-svelte" target="_blank noopener noreferrer">sveltejs/vite-plugin-svelte</a>
+      - rustle(svelte的rust版编译器)
+        - <a href="https://github.com/pintariching/rustle" target="_blank noopener noreferrer">pintariching/rustle</a>
+      - svelte-jsoneditor(json编辑器)
+        - <a href="https://github.com/josdejong/svelte-jsoneditor" target="_blank noopener noreferrer">josdejong/svelte-jsoneditor</a>
+      - svelte-legos(工具库/类似hooks)
+        - <a href="https://github.com/ankurrsinghal/svelte-legos" target="_blank noopener noreferrer">ankurrsinghal/svelte-legos</a>
+      - svelte-inview(进入视野检测组件)
+        - <a href="https://github.com/maciekgrzybek/svelte-inview" target="_blank noopener noreferrer">maciekgrzybek/svelte-inview</a>
+      - svhighlight(代码高亮库)
+        - <a href="https://github.com/bennymi/svhighlight" target="_blank noopener noreferrer">bennymi/svhighlight</a>
+      - svelte-splitpanes(分格窗格)
+        - <a href="https://github.com/orefalo/svelte-splitpanes" target="_blank noopener noreferrer">orefalo/svelte-splitpanes</a>
+      - svelte-email(编写邮件的组件)
+        - <a href="https://github.com/carstenlebek/svelte-email" target="_blank noopener noreferrer">carstenlebek/svelte-email</a>
+      - threlte(threejs封装)
+        - <a href="https://github.com/threlte/threlte" target="_blank noopener noreferrer">threlte/threlte</a>
+      - svelte-sonner(toast)
+        - <a href="https://github.com/wobsoriano/svelte-sonner" target="_blank noopener noreferrer">wobsoriano/svelte-sonner</a>
+      - mdsvex(md支持)
+        - <a href="https://github.com/pngwn/mdsvex" target="_blank noopener noreferrer">pngwn/mdsvex</a>
+      - animotion(用svelte制作ppt)
+        - <a href="https://github.com/animotionjs/animotion" target="_blank noopener noreferrer">animotionjs/animotion</a>
+      - cmdk-sv(cmdk工具)
+        - <a href="https://github.com/huntabyte/cmdk-sv" target="_blank noopener noreferrer">huntabyte/cmdk-sv</a>
+      - sveltekit-superforms(基于zod的表单库)
+        - <a href="https://github.com/ciscoheat/sveltekit-superforms" target="_blank noopener noreferrer">ciscoheat/sveltekit-superforms</a>
+    - 测试
+      - svelte-testing-library
+        - <a href="https://github.com/testing-library/svelte-testing-library" target="_blank noopener noreferrer">testing-library/svelte-testing-library</a>
+    - 组件库
+      - svelte-material-ui
+        - <a href="https://github.com/hperrin/svelte-material-ui" target="_blank noopener noreferrer">hperrin/svelte-material-ui</a>
+      - carbon-components-svelte
+        - <a href="https://github.com/carbon-design-system/carbon-components-svelte" target="_blank noopener noreferrer">carbon-design-system/carbon-components-svelte</a>
+      - smelte
+        - <a href="https://github.com/matyunya/smelte" target="_blank noopener noreferrer">matyunya/smelte</a>
+      - Svelvet(react flow节点流程图表)
+        - <a href="https://github.com/open-source-labs/Svelvet" target="_blank noopener noreferrer">open-source-labs/Svelvet</a>
+      - skeleton
+        - <a href="https://github.com/Brain-Bones/skeleton" target="_blank noopener noreferrer">Brain-Bones/skeleton</a>
+      - svelte-headlessui
+        - <a href="https://github.com/CaptainCodeman/svelte-headlessui" target="_blank noopener noreferrer">CaptainCodeman/svelte-headlessui</a>
+      - flowbite-svelte
+        - <a href="https://github.com/themesberg/flowbite-svelte" target="_blank noopener noreferrer">themesberg/flowbite-svelte</a>
+      - skeleton(基于tailwind)
+        - <a href="https://github.com/skeletonlabs/skeleton" target="_blank noopener noreferrer">skeletonlabs/skeleton</a>
+      - stdf
+        - <a href="https://github.com/dufu1991/stdf" target="_blank noopener noreferrer">dufu1991/stdf</a>
+      - shadcn-svelte
+        - <a href="https://github.com/huntabyte/shadcn-svelte" target="_blank noopener noreferrer">huntabyte/shadcn-svelte</a>
+      - melt-ui(headless组件库)
+        - <a href="https://github.com/melt-ui/melt-ui" target="_blank noopener noreferrer">melt-ui/melt-ui</a>
+    - 模板项目
+      - svelte-webpack-starter
+        - <a href="https://github.com/baileyherbert/svelte-webpack-starter" target="_blank noopener noreferrer">baileyherbert/svelte-webpack-starter</a>
+  - medusa(shopify的代替/headless)
+    - <a href="https://github.com/medusajs/medusa" target="_blank noopener noreferrer">medusajs/medusa</a>
+  - moleculer(微服务框架)
+    - <a href="https://github.com/moleculerjs/moleculer" target="_blank noopener noreferrer">moleculerjs/moleculer</a>
+  - ember.js(21年第9的框架)
+    - <a href="https://github.com/emberjs/ember.js" target="_blank noopener noreferrer">emberjs/ember.js</a>
+  - rockpack(一个代替cra的cli)
+    - <a href="https://github.com/AlexSergey/rockpack" target="_blank noopener noreferrer">AlexSergey/rockpack</a>
+  - phoenix
+    - <a href="https://github.com/phoenixframework/phoenix" target="_blank noopener noreferrer">phoenixframework/phoenix</a>
+  - web-component框架系列
+    - omi(跨框架的框架/tx)
+      - <a href="https://github.com/Tencent/omi" target="_blank noopener noreferrer">Tencent/omi</a>
+    - lit(谷歌web-component框架)
+      - <a href="https://github.com/lit/lit" target="_blank noopener noreferrer">lit/lit</a>
+    - polymer(youtube框架)
+      - <a href="https://github.com/polymer/polymer" target="_blank noopener noreferrer">polymer/polymer</a>
+    - fast(ms)
+      - <a href="https://github.com/microsoft/fast" target="_blank noopener noreferrer">microsoft/fast</a>
+    - minze(极其简单的web component框架/冷门)
+      - <a href="https://github.com/n6ai/minze" target="_blank noopener noreferrer">n6ai/minze</a>
+    - stencil
+      - <a href="https://github.com/ionic-team/stencil" target="_blank noopener noreferrer">ionic-team/stencil</a>
+    - open-wc(帮助创建web component的工具)
+      - <a href="https://github.com/open-wc/open-wc" target="_blank noopener noreferrer">open-wc/open-wc</a>
+    - ficusjs(冷)
+      - <a href="https://github.com/ficusjs/ficusjs" target="_blank noopener noreferrer">ficusjs/ficusjs</a>
+    - atomico(用hooks构建)
+      - <a href="https://github.com/atomicojs/atomico" target="_blank noopener noreferrer">atomicojs/atomico</a>
+    - lwc(企业级web component框架)
+      - <a href="https://github.com/salesforce/lwc" target="_blank noopener noreferrer">salesforce/lwc</a>
+    - el(最小的web component框架/超冷)
+      - <a href="https://github.com/frameable/el" target="_blank noopener noreferrer">frameable/el</a>
+    - web component ui库系列
+      - Shoelace(web component ui组件库)
+        - <a href="https://github.com/shoelace-style/shoelace" target="_blank noopener noreferrer">shoelace-style/shoelace</a>
+      - lion(重视a11y的组件库)
+        - <a href="https://github.com/ing-bank/lion" target="_blank noopener noreferrer">ing-bank/lion</a>
+      - papanasi(少量组件/冷门)
+        - <a href="https://github.com/ckgrafico/papanasi" target="_blank noopener noreferrer">ckgrafico/papanasi</a>
+      - web-component-plus(重写element ui)
+        - <a href="https://github.com/wu-component/web-component-plus" target="_blank noopener noreferrer">wu-component/web-component-plus</a>
+      - baklava(冷)
+        - <a href="https://github.com/Trendyol/baklava" target="_blank noopener noreferrer">Trendyol/baklava</a>
+      - vscode-webview-elements(冷)
+        - <a href="https://github.com/bendera/vscode-webview-elements" target="_blank noopener noreferrer">bendera/vscode-webview-elements</a>
+      - material-web(mui web component/试验版)
+        - <a href="https://github.com/material-components/material-web" target="_blank noopener noreferrer">material-components/material-web</a>
+      - spectrum-web-components
+        - <a href="https://github.com/adobe/spectrum-web-components" target="_blank noopener noreferrer">adobe/spectrum-web-components</a>
+      - mdui(material风格)
+        - <a href="https://github.com/zdhxiong/mdui" target="_blank noopener noreferrer">zdhxiong/mdui</a>
+    - webc(single page component框架)
+      - <a href="https://github.com/11ty/webc" target="_blank noopener noreferrer">11ty/webc</a>
+    - catalyst(github的web component框架)
+      - <a href="https://github.com/github/catalyst" target="_blank noopener noreferrer">github/catalyst</a>
+    - quark-core(哈罗/冷门)
+      - <a href="https://github.com/hellof2e/quark-core" target="_blank noopener noreferrer">hellof2e/quark-core</a>
+  - alpine(2021第6的框架)
+    - <a href="https://github.com/alpinejs/alpine" target="_blank noopener noreferrer">alpinejs/alpine</a>
+  - htmx(2021第10)
+    - <a href="https://github.com/bigskysoftware/htmx" target="_blank noopener noreferrer">bigskysoftware/htmx</a>
+  - qooxdoo(spa框架)
+    - <a href="https://github.com/qooxdoo/qooxdoo" target="_blank noopener noreferrer">qooxdoo/qooxdoo</a>
+  - amplication(react+nestjs/付费)
+    - <a href="https://github.com/amplication/amplication" target="_blank noopener noreferrer">amplication/amplication</a>
+  - concent(react状态管理服务框架)
+    - <a href="https://github.com/concentjs/concent" target="_blank noopener noreferrer">concentjs/concent</a>
+  - 上古框架系列
+    - min.js
+      - <a href="https://github.com/remy/min.js" target="_blank noopener noreferrer">remy/min.js</a>
+    - aura
+      - <a href="https://github.com/aurajs/aura" target="_blank noopener noreferrer">aurajs/aura</a>
+    - spine
+      - <a href="https://github.com/spine/spine" target="_blank noopener noreferrer">spine/spine</a>
+    - sammy
+      - <a href="https://github.com/quirkey/sammy" target="_blank noopener noreferrer">quirkey/sammy</a>
+    - chibi
+      - <a href="https://github.com/kylebarrow/chibi" target="_blank noopener noreferrer">kylebarrow/chibi</a>
+    - tupai.js
+      - <a href="https://github.com/deyunanhai/tupai.js" target="_blank noopener noreferrer">deyunanhai/tupai.js</a>
+  - lemonadejs(无需转译的响应式库/冷门)
+    - <a href="https://github.com/lemonadejs/lemonadejs" target="_blank noopener noreferrer">lemonadejs/lemonadejs</a>
+  - 打包框架系列
+    - unbuild(一个即开即用的bundle工具)
+      - <a href="https://github.com/unjs/unbuild" target="_blank noopener noreferrer">unjs/unbuild</a>
+    - tsdx(凉)
+      - <a href="https://github.com/jaredpalmer/tsdx" target="_blank noopener noreferrer">jaredpalmer/tsdx</a>
+    - microbundle(基于rollup/陈旧)
+      - <a href="https://github.com/developit/microbundle" target="_blank noopener noreferrer">developit/microbundle</a>
+    - preconstruct(monorepo构建/冷门)
+      - <a href="https://github.com/preconstruct/preconstruct" target="_blank noopener noreferrer">preconstruct/preconstruct</a>
+    - tsup
+      - <a href="https://github.com/egoist/tsup" target="_blank noopener noreferrer">egoist/tsup</a>
+    - bunchee(swr用打包框架)
+      - <a href="https://github.com/huozhi/bunchee" target="_blank noopener noreferrer">huozhi/bunchee</a>
+    - packemon(特冷)
+      - <a href="https://github.com/milesj/packemon" target="_blank noopener noreferrer">milesj/packemon</a>
+    - dts-cli(tsdx的fork新维护版)
+      - <a href="https://github.com/weiran-zsd/dts-cli" target="_blank noopener noreferrer">weiran-zsd/dts-cli</a>
+    - snowpack(skypack esm)
+      - <a href="https://github.com/FredKSchott/snowpack" target="_blank noopener noreferrer">FredKSchott/snowpack</a>
+  - 全栈框架
+    - redwood(全栈框架react+graphql)
+      - <a href="https://github.com/redwoodjs/redwood" target="_blank noopener noreferrer">redwoodjs/redwood</a>
+    - adonisjs/core(全栈nodejs框架)
+      - <a href="https://github.com/adonisjs/core" target="_blank noopener noreferrer">adonisjs/core</a>
+    - derby(实时协作的全栈框架)
+      - <a href="https://github.com/derbyjs/derby" target="_blank noopener noreferrer">derbyjs/derby</a>
+  - voby(类似solid的框架)
+    - <a href="https://github.com/vobyjs/voby" target="_blank noopener noreferrer">vobyjs/voby</a>
+  - mithril.js(spa框架)
+    - <a href="https://github.com/MithrilJS/mithril.js" target="_blank noopener noreferrer">MithrilJS/mithril.js</a>
+  - redom(操作ui最快的库/小)
+    - <a href="https://github.com/redom/redom" target="_blank noopener noreferrer">redom/redom</a>
+  - fastify-dx(基于vite和fastify的框架)
+    - <a href="https://github.com/fastify/fastify-dx" target="_blank noopener noreferrer">fastify/fastify-dx</a>
+  - jsx语法框架/库系列
+    - jotai-jsx(不需要react的jsx框架)
+      - <a href="https://github.com/jotaijs/jotai-jsx" target="_blank noopener noreferrer">jotaijs/jotai-jsx</a>
+    - crank(异步支持的jsx框架)
+      - <a href="https://github.com/bikeshaving/crank" target="_blank noopener noreferrer">bikeshaving/crank</a>
+    - htm(jsx和模板混合html语法库)
+      - <a href="https://github.com/developit/htm" target="_blank noopener noreferrer">developit/htm</a>
+    - nano(轻量jsx框架)
+      - <a href="https://github.com/nanojsx/nano" target="_blank noopener noreferrer">nanojsx/nano</a>
+    - inferno(快速的react ui库)
+      - <a href="https://github.com/infernojs/inferno" target="_blank noopener noreferrer">infernojs/inferno</a>
+    - van(最小的jsx框架)
+      - <a href="https://github.com/vanjs-org/van" target="_blank noopener noreferrer">vanjs-org/van</a>
+  - fes.js(微众银行的vue3框架)
+    - <a href="https://github.com/WeBankFinTech/fes.js" target="_blank noopener noreferrer">WeBankFinTech/fes.js</a>
+  - 0js框架
+    - astro系列
+      - astro
+        - <a href="https://github.com/withastro/astro" target="_blank noopener noreferrer">withastro/astro</a>
+      - astro-spa
+        - <a href="https://github.com/RafidMuhymin/astro-spa" target="_blank noopener noreferrer">RafidMuhymin/astro-spa</a>
+      - starlight(基于astro的文档站方案/冷门)
+        - <a href="https://github.com/withastro/starlight" target="_blank noopener noreferrer">withastro/starlight</a>
+      - accessible-astro-starter(astro博客)
+        - <a href="https://github.com/markteekman/accessible-astro-starter" target="_blank noopener noreferrer">markteekman/accessible-astro-starter</a>
+      - astro-theme-typography(astro博客主题)
+        - <a href="https://github.com/Moeyua/astro-theme-typography" target="_blank noopener noreferrer">Moeyua/astro-theme-typography</a>
+    - qwik系列
+      - qwik(0js框架)
+        - <a href="https://github.com/BuilderIO/qwik" target="_blank noopener noreferrer">BuilderIO/qwik</a>
+      - 插件库
+        - QwikQL(graphql客户端)
+          - <a href="https://github.com/TahaSh/qwikql" target="_blank noopener noreferrer">TahaSh/qwikql</a>
+  - islands框架
+    - marko(ebay/仅交互水合)
+      - <a href="https://github.com/marko-js/marko" target="_blank noopener noreferrer">marko-js/marko</a>
+    - is-land(局部岛屿组件/特冷)
+      - <a href="https://github.com/11ty/is-land" target="_blank noopener noreferrer">11ty/is-land</a>
+    - marko-js/run(marko元框架)
+      - <a href="https://github.com/marko-js/run" target="_blank noopener noreferrer">marko-js/run</a>
+  - piral(使用微前端的应用框架)
+    - <a href="https://github.com/smapiot/piral" target="_blank noopener noreferrer">smapiot/piral</a>
+  - solid系列
+    - solidjs(类react框架)
+      - <a href="https://github.com/solidjs/solid" target="_blank noopener noreferrer">solidjs/solid</a>
+    - solid-start(基于solid的框架)
+      - <a href="https://github.com/solidjs/solid-start" target="_blank noopener noreferrer">solidjs/solid-start</a>
+    - solid-pebble(状态管理库)
+      - <a href="https://github.com/lxsmnsyc/solid-pebble" target="_blank noopener noreferrer">lxsmnsyc/solid-pebble</a>
+    - 组件库系列
+      - suid(material复刻)
+        - <a href="https://github.com/swordev/suid" target="_blank noopener noreferrer">swordev/suid</a>
+      - kobalte
+        - <a href="https://github.com/kobaltedev/kobalte" target="_blank noopener noreferrer">kobaltedev/kobalte</a>
+      - solid-material
+        - <a href="https://github.com/ceopaludetto/solid-material" target="_blank noopener noreferrer">ceopaludetto/solid-material</a>
+    - solid-primitives(工具库/类似hook)
+      - <a href="https://github.com/solidjs-community/solid-primitives" target="_blank noopener noreferrer">solidjs-community/solid-primitives</a>
+    - solid-mason(瀑布流组件)
+      - <a href="https://github.com/lxsmnsyc/solid-mason" target="_blank noopener noreferrer">lxsmnsyc/solid-mason</a>
+  - knockout(老)
+    - <a href="https://github.com/knockout/knockout" target="_blank noopener noreferrer">knockout/knockout</a>
+  - TypeRunner(tsc替代品/c++)
+    - <a href="https://github.com/marcj/TypeRunner" target="_blank noopener noreferrer">marcj/TypeRunner</a>
+  - pkg-manager包管理工具
+    - npm/cli
+      - <a href="https://github.com/npm/cli" target="_blank noopener noreferrer">npm/cli</a>
+    - yarn
+      - <a href="https://github.com/yarnpkg/yarn" target="_blank noopener noreferrer">yarnpkg/yarn</a>
+    - ultra(冷)
+      - <a href="https://github.com/nachoaldamav/ultra" target="_blank noopener noreferrer">nachoaldamav/ultra</a>
+    - bun系列
+      - bun
+        - <a href="https://github.com/oven-sh/bun" target="_blank noopener noreferrer">oven-sh/bun</a>
+      - baojs(基于bun的express)
+        - <a href="https://github.com/mattreid1/baojs" target="_blank noopener noreferrer">mattreid1/baojs</a>
+      - svelte-adapter-bun
+        - <a href="https://github.com/gornostay25/svelte-adapter-bun" target="_blank noopener noreferrer">gornostay25/svelte-adapter-bun</a>
+      - awesome-bun
+        - <a href="https://github.com/apvarun/awesome-bun" target="_blank noopener noreferrer">apvarun/awesome-bun</a>
+      - bnz(zx bun版)
+        - <a href="https://github.com/wobsoriano/bnx" target="_blank noopener noreferrer">wobsoriano/bnx</a>
+      - bun-types(bun的类型包)
+        - <a href="https://github.com/oven-sh/bun-types" target="_blank noopener noreferrer">oven-sh/bun-types</a>
+      - zarf(ts支持的web api框架)
+        - <a href="https://github.com/zarfjs/zarf" target="_blank noopener noreferrer">zarfjs/zarf</a>
+      - elysia(bun web框架)
+        - <a href="https://github.com/elysiajs/elysia" target="_blank noopener noreferrer">elysiajs/elysia</a>
+      - bun-lambda(aws lambda支持)
+        - <a href="https://github.com/oven-sh/bun/tree/main/packages/bun-lambda" target="_blank noopener noreferrer">oven-sh/bun/tree/main/packages/bun-lambda</a>
+      - marz(bun的RSC框架/冷门)
+        - <a href="https://github.com/hex2f/marz" target="_blank noopener noreferrer">hex2f/marz</a>
+      - hyperimport(在bun中导入其他语言文件)
+        - <a href="https://github.com/tr1ckydev/hyperimport" target="_blank noopener noreferrer">tr1ckydev/hyperimport</a>
+    - ni(自动识别包管理器)
+      - <a href="https://github.com/antfu/ni" target="_blank noopener noreferrer">antfu/ni</a>
+    - pnpm系列
+      - pnpm
+        - <a href="https://github.com/pnpm/pnpm" target="_blank noopener noreferrer">pnpm/pnpm</a>
+      - pacquet(rust版pnpm)
+        - <a href="https://github.com/pnpm/pacquet" target="_blank noopener noreferrer">pnpm/pacquet</a>
+  - aurelia
+    - <a href="https://github.com/aurelia/framework" target="_blank noopener noreferrer">aurelia/framework</a>
+  - malinajs(类似svelte的框架)
+    - <a href="https://github.com/malinajs/malinajs" target="_blank noopener noreferrer">malinajs/malinajs</a>
+  - rust构建工具系列
+    - farm(rollup平替)
+      - <a href="https://github.com/farm-fe/farm" target="_blank noopener noreferrer">farm-fe/farm</a>
+    - rspack(webpack平替)
+      - <a href="https://github.com/web-infra-dev/rspack" target="_blank noopener noreferrer">web-infra-dev/rspack</a>
+    - rolldown(rollup平替)
+      - <a href="https://github.com/rolldown-rs/rolldown" target="_blank noopener noreferrer">rolldown-rs/rolldown</a>
+- 非主流工具库
+  - urlcat(拼接url/支持reg)
+    - <a href="https://github.com/balazsbotond/urlcat" target="_blank noopener noreferrer">balazsbotond/urlcat</a>
+  - mix-img(baidu配置生成图片工具)
+    - <a href="https://github.com/baidu/mix-img" target="_blank noopener noreferrer">baidu/mix-img</a>
+  - gogocode(ast转换库/阿里妈妈)
+    - <a href="https://github.com/thx/gogocode" target="_blank noopener noreferrer">thx/gogocode</a>
+  - pipeline-editor(老旧的可视化组件web编辑器)
+    - <a href="https://github.com/page-pipepline/pipeline-editor" target="_blank noopener noreferrer">page-pipepline/pipeline-editor</a>
+  - wifi-card(wifi qr code)
+    - <a href="https://github.com/bndw/wifi-card" target="_blank noopener noreferrer">bndw/wifi-card</a>
+  - transmat(google拖拽微工具)
+    - <a href="https://github.com/google/transmat" target="_blank noopener noreferrer">google/transmat</a>
+  - store.js(一种浏览器全局存储/陈旧旧)
+    - <a href="https://github.com/marcuswestin/store.js" target="_blank noopener noreferrer">marcuswestin/store.js</a>
+  - estemplate(template替换语法)
+    - <a href="https://github.com/estools/estemplate" target="_blank noopener noreferrer">estools/estemplate</a>
+  - np(快捷发包工具)
+    - <a href="https://github.com/sindresorhus/np" target="_blank noopener noreferrer">sindresorhus/np</a>
+  - waypoints(滚动到某元素执行回调)
+    - <a href="https://github.com/imakewebthings/waypoints" target="_blank noopener noreferrer">imakewebthings/waypoints</a>
+  - jsii(js编译为其他语言包交互)
+    - <a href="https://github.com/aws/jsii" target="_blank noopener noreferrer">aws/jsii</a>
+  - ga-lite(google统计)
+    - <a href="https://github.com/jehna/ga-lite" target="_blank noopener noreferrer">jehna/ga-lite</a>
+  - cross-context-events(跨窗口事件共享)
+    - <a href="https://github.com/mia1024/cross-context-events" target="_blank noopener noreferrer">mia1024/cross-context-events</a>
+  - ultra-runner(monorepo统一运行bin工具库)
+    - <a href="https://github.com/folke/ultra-runner" target="_blank noopener noreferrer">folke/ultra-runner</a>
+  - linkifyjs(自动给文本加链接)
+    - <a href="https://github.com/Hypercontext/linkifyjs" target="_blank noopener noreferrer">Hypercontext/linkifyjs</a>
+  - Magic-Grid(随屏幕动态grid网格布局)
+    - <a href="https://github.com/e-oj/Magic-Grid" target="_blank noopener noreferrer">e-oj/Magic-Grid</a>
+  - slide-element(折叠/展开节点方法库)
+    - <a href="https://github.com/alexmacarthur/slide-element" target="_blank noopener noreferrer">alexmacarthur/slide-element</a>
+  - LSP系列
+    - vscode-languageserver(nodejs lsp)
+      - <a href="https://github.com/microsoft/vscode-languageserver-node" target="_blank noopener noreferrer">microsoft/vscode-languageserver-node</a>
+    - language-server-protocol(各语言lsp实现一览)
+      - <a href="https://github.com/microsoft/language-server-protocol" target="_blank noopener noreferrer">microsoft/language-server-protocol</a>
+    - vscode-json-languageservice(json lsp)
+      - <a href="https://github.com/microsoft/vscode-json-languageservice" target="_blank noopener noreferrer">microsoft/vscode-json-languageservice</a>
+  - Ladda(button内置loading器)
+    - <a href="https://github.com/hakimel/Ladda" target="_blank noopener noreferrer">hakimel/Ladda</a>
+  - noUiSlider(滑块组件)
+    - <a href="https://github.com/leongersen/noUiSlider" target="_blank noopener noreferrer">leongersen/noUiSlider</a>
+  - reading-time(估算文本阅读时间)
+    - <a href="https://github.com/ngryman/reading-time" target="_blank noopener noreferrer">ngryman/reading-time</a>
+  - deadcode解决系列
+    - unimported(查找未使用的文件/cli)
+      - <a href="https://github.com/smeijer/unimported" target="_blank noopener noreferrer">smeijer/unimported</a>
+    - ts-unused-exports(在ts项目中寻找未被使用的exports)
+      - <a href="https://github.com/pzavolinsky/ts-unused-exports" target="_blank noopener noreferrer">pzavolinsky/ts-unused-exports</a>
+    - ts-prune(在ts项目中查找未使用的exports)
+      - <a href="https://github.com/nadeesha/ts-prune" target="_blank noopener noreferrer">nadeesha/ts-prune</a>
+    - knip(扫描未使用的文件/冷门)
+      - <a href="https://github.com/webpro/knip" target="_blank noopener noreferrer">webpro/knip</a>
+  - hieroglyphy(将js代码转为[]()象形文字)
+    - <a href="https://github.com/alcuadrado/hieroglyphy" target="_blank noopener noreferrer">alcuadrado/hieroglyphy</a>
+  - npm-force-resolutions(npm的resolutions工具)
+    - <a href="https://github.com/rogeriochaves/npm-force-resolutions" target="_blank noopener noreferrer">rogeriochaves/npm-force-resolutions</a>
+  - deeplinks(增加文本选择hash提供链接定位)
+    - <a href="https://github.com/WesleyAC/deeplinks" target="_blank noopener noreferrer">WesleyAC/deeplinks</a>
+  - css-select(css选择器转xpath选择器)
+    - <a href="https://github.com/symfony/css-selector" target="_blank noopener noreferrer">symfony/css-selector</a>
+  - flip(翻页效果数字时钟)
+    - <a href="https://github.com/pqina/flip/" target="_blank noopener noreferrer">pqina/flip/</a>
+  - imask(无依赖的输入框验证器)
+    - <a href="https://github.com/uNmAnNeR/imaskjs" target="_blank noopener noreferrer">uNmAnNeR/imaskjs</a>
+  - enum-xyz(在js中使用枚举)
+    - <a href="https://github.com/chasefleming/enum-xyz" target="_blank noopener noreferrer">chasefleming/enum-xyz</a>
+  - jsonld.js(json-ld seo)
+    - <a href="https://github.com/digitalbazaar/jsonld.js" target="_blank noopener noreferrer">digitalbazaar/jsonld.js</a>
+  - can-i-ignore-scripts(是否可忽略ignore-scripts)
+    - <a href="https://github.com/naugtur/can-i-ignore-scripts" target="_blank noopener noreferrer">naugtur/can-i-ignore-scripts</a>
+  - git-history(动画方式查看git history变动change)
+    - <a href="https://github.com/pomber/git-history" target="_blank noopener noreferrer">pomber/git-history</a>
+  - img-comparison-slider(比较图像更改前后效果的分隔器)
+    - <a href="https://github.com/sneas/img-comparison-slider" target="_blank noopener noreferrer">sneas/img-comparison-slider</a>
+  - json-mask(json掩码/抽取指定部分库)
+    - <a href="https://github.com/nemtsov/json-mask" target="_blank noopener noreferrer">nemtsov/json-mask</a>
+  - highlighted-code(高亮代码的textarea)
+    - <a href="https://github.com/WebReflection/highlighted-code" target="_blank noopener noreferrer">WebReflection/highlighted-code</a>
+  - fastdom(分离dom读写防止重排)
+    - <a href="https://github.com/wilsonpage/fastdom" target="_blank noopener noreferrer">wilsonpage/fastdom</a>
+  - screenfull(跨平台开启全屏api)
+    - <a href="https://github.com/sindresorhus/screenfull" target="_blank noopener noreferrer">sindresorhus/screenfull</a>
+  - TimelineJS3(timeline组件/陈旧)
+    - <a href="https://github.com/NUKnightLab/TimelineJS3" target="_blank noopener noreferrer">NUKnightLab/TimelineJS3</a>
+  - tribute(@某人提示的库)
+    - <a href="https://github.com/zurb/tribute" target="_blank noopener noreferrer">zurb/tribute</a>
+  - url-encoder(svg压缩为css样式)
+    - <a href="https://github.com/yoksel/url-encoder" target="_blank noopener noreferrer">yoksel/url-encoder</a>
+  - main-thread-scheduling(代替worker在空闲时执行任务的方案)
+    - <a href="https://github.com/astoilkov/main-thread-scheduling" target="_blank noopener noreferrer">astoilkov/main-thread-scheduling</a>
+  - openapi-typescript(根据openapi schema生成ts type)
+    - <a href="https://github.com/drwpow/openapi-typescript" target="_blank noopener noreferrer">drwpow/openapi-typescript</a>
+  - JSONCrush(json压缩为url)
+    - <a href="https://github.com/KilledByAPixel/JSONCrush" target="_blank noopener noreferrer">KilledByAPixel/JSONCrush</a>
+  - dark-mode-toggle(dark模式切换组件)
+    - <a href="https://github.com/GoogleChromeLabs/dark-mode-toggle" target="_blank noopener noreferrer">GoogleChromeLabs/dark-mode-toggle</a>
+  - focus-trap(锁定焦点到某dom)
+    - <a href="https://github.com/focus-trap/focus-trap" target="_blank noopener noreferrer">focus-trap/focus-trap</a>
+  - text-watermark(在文本中添加零宽字符水印)
+    - <a href="https://github.com/zengkan0703/text-watermark" target="_blank noopener noreferrer">zengkan0703/text-watermark</a>
+  - flat(无限展开打平对象/flatten)
+    - <a href="https://github.com/hughsk/flat" target="_blank noopener noreferrer">hughsk/flat</a>
+  - Hyphenopoly(断字库)
+    - <a href="https://github.com/mnater/Hyphenopoly" target="_blank noopener noreferrer">mnater/Hyphenopoly</a>
+  - NoSleep.js(防止手机休眠)
+    - <a href="https://github.com/richtr/NoSleep.js" target="_blank noopener noreferrer">richtr/NoSleep.js</a>
+  - blotter(绘制非常规效果文本工具)
+    - <a href="https://github.com/bradley/blotter" target="_blank noopener noreferrer">bradley/blotter</a>
+  - compute-scroll-into-view(计算应该滚动到哪个位置信息的工具)
+    - <a href="https://github.com/stipsan/compute-scroll-into-view" target="_blank noopener noreferrer">stipsan/compute-scroll-into-view</a>
+  - mixitup(卡片列表排序工具/陈旧)
+    - <a href="https://github.com/patrickkunka/mixitup" target="_blank noopener noreferrer">patrickkunka/mixitup</a>
+  - effector(专注于业务逻辑的库)
+    - <a href="https://github.com/effector/effector" target="_blank noopener noreferrer">effector/effector</a>
+  - stf(在浏览器控制安卓手机)
+    - <a href="https://github.com/DeviceFarmer/stf" target="_blank noopener noreferrer">DeviceFarmer/stf</a>
+  - safari系列
+    - safari-14-idb-fix(safari indexdb修复)
+      - <a href="https://github.com/jakearchibald/safari-14-idb-fix" target="_blank noopener noreferrer">jakearchibald/safari-14-idb-fix</a>
+  - text-vide(让单词阅读更流畅/前部加粗)
+    - <a href="https://github.com/Gumball12/text-vide" target="_blank noopener noreferrer">Gumball12/text-vide</a>
+  - background-removal-js(删除图片背景/纯浏览器)
+    - <a href="https://github.com/imgly/background-removal-js" target="_blank noopener noreferrer">imgly/background-removal-js</a>
+  - critical(提取html样式并内联)
+    - <a href="https://github.com/addyosmani/critical" target="_blank noopener noreferrer">addyosmani/critical</a>
+  - dom-mutations(observer mutation封装)
+    - <a href="https://github.com/sindresorhus/dom-mutations" target="_blank noopener noreferrer">sindresorhus/dom-mutations</a>
+  - request-animation-frames(raf封装)
+    - <a href="https://github.com/sindresorhus/request-animation-frames" target="_blank noopener noreferrer">sindresorhus/request-animation-frames</a>
+  - sentineljs(使用css选择器监听节点)
+    - <a href="https://github.com/muicss/sentineljs" target="_blank noopener noreferrer">muicss/sentineljs</a>
+  - proxy-compare(proxy比较)
+    - <a href="https://github.com/dai-shi/proxy-compare" target="_blank noopener noreferrer">dai-shi/proxy-compare</a>
+  - worker-timers(更精准后台运行的setTimeout/setInterval)
+    - <a href="https://github.com/chrisguttandin/worker-timers" target="_blank noopener noreferrer">chrisguttandin/worker-timers</a>
+- 其他内容分类
+  - webassembly
+    - 工具库
+      - c/c++编译到wasm系列
+        - wasi-sdk
+          - <a href="https://github.com/WebAssembly/wasi-sdk" target="_blank noopener noreferrer">WebAssembly/wasi-sdk</a>
+        - emscripten
+          - <a href="https://github.com/emscripten-core/emscripten" target="_blank noopener noreferrer">emscripten-core/emscripten</a>
+        - cheerp-meta(c++ to)
+          - <a href="https://github.com/leaningtech/cheerp-meta" target="_blank noopener noreferrer">leaningtech/cheerp-meta</a>
+      - binaryen
+        - <a href="https://github.com/WebAssembly/binaryen" target="_blank noopener noreferrer">WebAssembly/binaryen</a>
+      - pyodide(python to)
+        - <a href="https://github.com/pyodide/pyodide" target="_blank noopener noreferrer">pyodide/pyodide</a>
+      - wapm-cli(wasm的包管理工具)
+        - <a href="https://github.com/wasmerio/wapm-cli" target="_blank noopener noreferrer">wasmerio/wapm-cli</a>
+      - javy(js转wasm运行包/测试中)
+        - <a href="https://github.com/Shopify/javy" target="_blank noopener noreferrer">Shopify/javy</a>
+      - tinygo(可编译wasm的go编译器)
+        - <a href="https://github.com/tinygo-org/tinygo" target="_blank noopener noreferrer">tinygo-org/tinygo</a>
+      - java to wasm系列
+        - teavm(java to)
+          - <a href="https://github.com/konsoletyper/teavm" target="_blank noopener noreferrer">konsoletyper/teavm</a>
+        - Jwebassembly(java to)
+          - <a href="https://github.com/i-net-software/JWebAssembly" target="_blank noopener noreferrer">i-net-software/JWebAssembly</a>
+        - Bytecoder
+          - <a href="https://github.com/mirkosertic/Bytecoder" target="_blank noopener noreferrer">mirkosertic/Bytecoder</a>
+        - cheerpj-meta
+          - <a href="https://github.com/leaningtech/cheerpj-meta" target="_blank noopener noreferrer">leaningtech/cheerpj-meta</a>
+      - wasm-workers-server(wasm worker服务)
+        - <a href="https://github.com/vmware-labs/wasm-workers-server" target="_blank noopener noreferrer">vmware-labs/wasm-workers-server</a>
+      - wasm-tool/wasm-pack-plugin(自动打包wasm的webpack插件)
+        - <a href="https://github.com/wasm-tool/wasm-pack-plugin" target="_blank noopener noreferrer">wasm-tool/wasm-pack-plugin</a>
+      - wabt(wat/wasm/c等互转)
+        - <a href="https://github.com/WebAssembly/wabt" target="_blank noopener noreferrer">WebAssembly/wabt</a>
+      - php-wasm版
+        - @php-wasm/node
+          - <a href="https://www.npmjs.com/package/@php-wasm/node" target="_blank noopener noreferrer">www.npmjs.com</a>
+        - @php-wasm/web
+          - <a href="https://www.npmjs.com/package/@php-wasm/web" target="_blank noopener noreferrer">www.npmjs.com</a>
+      - wit-bindgen(wit语言编译到wasm)
+        - <a href="https://github.com/bytecodealliance/wit-bindgen" target="_blank noopener noreferrer">bytecodealliance/wit-bindgen</a>
+      - runtime运行时系列
+        - wasmtime(wasm最快的运行时)
+          - <a href="https://github.com/bytecodealliance/wasmtime" target="_blank noopener noreferrer">bytecodealliance/wasmtime</a>
+        - WasmEdge(wasm运行时)
+          - <a href="https://github.com/WasmEdge/WasmEdge" target="_blank noopener noreferrer">WasmEdge/WasmEdge</a>
+        - wasm-micro-runtime(wasm微运行时)
+          - <a href="https://github.com/bytecodealliance/wasm-micro-runtime" target="_blank noopener noreferrer">bytecodealliance/wasm-micro-runtime</a>
+        - wasm3(支持嵌入式的运行时)
+          - <a href="https://github.com/wasm3/wasm3" target="_blank noopener noreferrer">wasm3/wasm3</a>
+      - js编译到wasm
+        - assemblyscript
+          - <a href="https://github.com/AssemblyScript/assemblyscript" target="_blank noopener noreferrer">AssemblyScript/assemblyscript</a>
+        - javy
+          - <a href="https://github.com/bytecodealliance/javy" target="_blank noopener noreferrer">bytecodealliance/javy</a>
+      - componentize-js(将组件编译为wasm/冷门)
+        - <a href="https://github.com/bytecodealliance/componentize-js" target="_blank noopener noreferrer">bytecodealliance/componentize-js</a>
+      - Wasmnizer-ts(ts转wasm/实验性)
+        - <a href="https://github.com/web-devkits/Wasmnizer-ts" target="_blank noopener noreferrer">web-devkits/Wasmnizer-ts</a>
+    - wasm成品工具库
+      - videoconverter.js
+        - <a href="https://github.com/bgrins/videoconverter.js" target="_blank noopener noreferrer">bgrins/videoconverter.js</a>
+      - tinysearch(全文搜索)
+        - <a href="https://github.com/tinysearch/tinysearch" target="_blank noopener noreferrer">tinysearch/tinysearch</a>
+      - WASM-ImageMagick
+        - <a href="https://github.com/KnicKnic/WASM-ImageMagick" target="_blank noopener noreferrer">KnicKnic/WASM-ImageMagick</a>
+      - ffmpeg系列
+        - ffmpeg.js
+          - <a href="https://github.com/Kagami/ffmpeg.js" target="_blank noopener noreferrer">Kagami/ffmpeg.js</a>
+        - ffmpeg.wasm
+          - <a href="https://github.com/ffmpegwasm/ffmpeg.wasm" target="_blank noopener noreferrer">ffmpegwasm/ffmpeg.wasm</a>
+        - @ffmpeg/core
+          - <a href="https://github.com/ffmpegwasm/ffmpeg.wasm-core" target="_blank noopener noreferrer">ffmpegwasm/ffmpeg.wasm-core</a>
+      - postgres-wasm(在浏览器运行pg服务)
+        - <a href="https://github.com/snaplet/postgres-wasm" target="_blank noopener noreferrer">snaplet/postgres-wasm</a>
+      - photon(图像处理库/不支持gif)
+        - <a href="https://github.com/silvia-odwyer/photon" target="_blank noopener noreferrer">silvia-odwyer/photon</a>
+    - 实战项目
+      - web-capture(ffmpeg实现视频帧截取)
+        - <a href="https://github.com/jordiwang/web-capture" target="_blank noopener noreferrer">jordiwang/web-capture</a>
+    - 文档系列
+      - rustwasm-book
+        - <a href="https://github.com/chinanf-boy/rustwasm-book" target="_blank noopener noreferrer">chinanf-boy/rustwasm-book</a>
+    - 初始模板
+      - rust-webpack-template
+        - <a href="https://github.com/rustwasm/rust-webpack-template" target="_blank noopener noreferrer">rustwasm/rust-webpack-template</a>
+      - wasm-pack-template
+        - <a href="https://github.com/rustwasm/wasm-pack-template" target="_blank noopener noreferrer">rustwasm/wasm-pack-template</a>
+      - create-wasm-app
+        - <a href="https://github.com/rustwasm/create-wasm-app" target="_blank noopener noreferrer">rustwasm/create-wasm-app</a>
+    - 工具站点
+      - WasmExplorer(在线c编译生成wasm)
+        - <a href="https://mbebenita.github.io/WasmExplorer/" target="_blank noopener noreferrer">mbebenita.github.io</a>
+  - chrome系列
+    - cdp系列
+      - chrome-remote-interface(remote debug/cdp后端模拟器)
+        - <a href="https://github.com/cyrus-and/chrome-remote-interface" target="_blank noopener noreferrer">cyrus-and/chrome-remote-interface</a>
+      - devtools-remote
+        - <a href="https://github.com/auchenberg/devtools-remote" target="_blank noopener noreferrer">auchenberg/devtools-remote</a>
+      - chrome-devtools-app
+        - <a href="https://github.com/auchenberg/chrome-devtools-app" target="_blank noopener noreferrer">auchenberg/chrome-devtools-app</a>
+      - devtools-frontend(devtools前端)
+        - <a href="https://github.com/ChromeDevTools/devtools-frontend" target="_blank noopener noreferrer">ChromeDevTools/devtools-frontend</a>
+    - dap系列
+      - vscode-js-debug(一些示例代码)
+        - <a href="https://github.com/microsoft/vscode-js-debug" target="_blank noopener noreferrer">microsoft/vscode-js-debug</a>
+    - extension系列
+      - 脚手架/模板
+        - plasmo(浏览器插件框架/收费)
+          - <a href="https://github.com/PlasmoHQ/plasmo" target="_blank noopener noreferrer">PlasmoHQ/plasmo</a>
+        - vitesse-webext(vite模板)
+          - <a href="https://github.com/antfu/vitesse-webext" target="_blank noopener noreferrer">antfu/vitesse-webext</a>
+        - vue-web-extension(chrome插件脚手架)
+          - <a href="https://github.com/Kocal/vue-web-extension" target="_blank noopener noreferrer">Kocal/vue-web-extension</a>
+        - browser-extension-kit(rxjs的开发方案)
+          - <a href="https://github.com/alibaba/browser-extension-kit" target="_blank noopener noreferrer">alibaba/browser-extension-kit</a>
+        - chrome-extension-cli(插件脚手架)
+          - <a href="https://github.com/dutiyesh/chrome-extension-cli" target="_blank noopener noreferrer">dutiyesh/chrome-extension-cli</a>
+        - browser-extension(react)
+          - <a href="https://github.com/Debdut/browser-extension" target="_blank noopener noreferrer">Debdut/browser-extension</a>
+        - vitesse-modernized-chrome-ext(mainfest v3/fork版/冷门)
+          - <a href="https://github.com/xiaoluoboding/vitesse-modernized-chrome-ext" target="_blank noopener noreferrer">xiaoluoboding/vitesse-modernized-chrome-ext</a>
+        - chrome-extension-boilerplate-react-vite(模板)
+          - <a href="https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite" target="_blank noopener noreferrer">Jonghakseo/chrome-extension-boilerplate-react-vite</a>
+        - chrome-extension-boilerplate-react(模板)
+          - <a href="https://github.com/lxieyang/chrome-extension-boilerplate-react" target="_blank noopener noreferrer">lxieyang/chrome-extension-boilerplate-react</a>
+        - vite-plugin-web-extension(一个vite模板)
+          - <a href="https://github.com/aklinker1/vite-plugin-web-extension" target="_blank noopener noreferrer">aklinker1/vite-plugin-web-extension</a>
+        - create-chrome-ext(创建开发模板/基于vite2)
+          - <a href="https://github.com/guocaoyi/create-chrome-ext" target="_blank noopener noreferrer">guocaoyi/create-chrome-ext</a>
+        - wxt(开发框架)
+          - <a href="https://github.com/wxt-dev/wxt" target="_blank noopener noreferrer">wxt-dev/wxt</a>
+      - 实战项目
+        - chrome-extension-catroom(juejin cat)
+          - <a href="https://github.com/ezshine/chrome-extension-catroom" target="_blank noopener noreferrer">ezshine/chrome-extension-catroom</a>
+        - SingleFile(保存网页为单html)
+          - <a href="https://github.com/gildas-lormeau/SingleFile" target="_blank noopener noreferrer">gildas-lormeau/SingleFile</a>
+        - chrome-plugin-demo(一个较完善的教程/陈旧)
+          - <a href="https://github.com/sxei/chrome-plugin-demo" target="_blank noopener noreferrer">sxei/chrome-plugin-demo</a>
+        - spy-extension(收集信息的拓展示例)
+          - <a href="https://github.com/msfrisbie/spy-extension" target="_blank noopener noreferrer">msfrisbie/spy-extension</a>
+      - 工具库
+        - InboxSDK(给gamil开发扩展的工具)
+          - <a href="https://github.com/InboxSDK/InboxSDK" target="_blank noopener noreferrer">InboxSDK/InboxSDK</a>
+        - little-rat(监听其他扩展的网络请求)
+          - <a href="https://github.com/dnakov/little-rat" target="_blank noopener noreferrer">dnakov/little-rat</a>
+      - 工具站点
+        - chrome-stats(扩展历史下载)
+          - <a href="https://chrome-stats.com/" target="_blank noopener noreferrer">chrome-stats.com</a>
+    - version旧版本下载
+      - json-api-endpoints
+        - <a href="https://github.com/GoogleChromeLabs/chrome-for-testing#json-api-endpoints" target="_blank noopener noreferrer">GoogleChromeLabs/chrome-for-testing#json-api-endpoints</a>
+      - 最新版本下载链接
+        - <a href="https://googlechromelabs.github.io/chrome-for-testing/" target="_blank noopener noreferrer">googlechromelabs.github.io</a>
+      - 下载chromium单次构建
+        - <a href="https://www.chromium.org/getting-involved/download-chromium/" target="_blank noopener noreferrer">www.chromium.org</a>
+  - docs(各种教程)
+    - didact(编写自己的react)
+      - <a href="https://github.com/pomber/didact" target="_blank noopener noreferrer">pomber/didact</a>
+    - ffmpeg-libav-tutorial(ffmpeg教程)
+      - <a href="https://github.com/leandromoreira/ffmpeg-libav-tutorial" target="_blank noopener noreferrer">leandromoreira/ffmpeg-libav-tutorial</a>
+    - 低代码引擎技术白皮书2022(ali lowcode-engine)
+      - <a href="https://developer.aliyun.com/ebook/7507" target="_blank noopener noreferrer">developer.aliyun.com</a>
+    - minification-benchmarks(minify benchmark)
+      - <a href="https://github.com/privatenumber/minification-benchmarks" target="_blank noopener noreferrer">privatenumber/minification-benchmarks</a>
+    - compat-table(兼容性表格)
+      - <a href="https://github.com/kangax/compat-table" target="_blank noopener noreferrer">kangax/compat-table</a>
+    - JavaScript-Equality-Table(隐式比较表格)
+      - <a href="https://github.com/dorey/JavaScript-Equality-Table" target="_blank noopener noreferrer">dorey/JavaScript-Equality-Table</a>
+  - 其他工具站
+    - gitstalk.netlify.app(跟踪github账号动态)
+      - <a href="https://gitstalk.netlify.app/" target="_blank noopener noreferrer">gitstalk.netlify.app</a>
+    - unicodearrows.com(各种箭头的unicode编码)
+      - <a href="https://unicodearrows.com/" target="_blank noopener noreferrer">unicodearrows.com</a>
+    - glitter(荧光字生成)
+      - <a href="https://github.com/wh0/glitter" target="_blank noopener noreferrer">wh0/glitter</a>
+  - app系列工具
+    - Telegram
+      - 实战项目
+        - AutoChangeGroupPhoto
+          - <a href="https://github.com/ACGNTaiwan/AutoChangeGroupPhoto" target="_blank noopener noreferrer">ACGNTaiwan/AutoChangeGroupPhoto</a>
+        - telegram-pwsbot(投稿机器人)
+          - <a href="https://github.com/axiref/telegram-pwsbot" target="_blank noopener noreferrer">axiref/telegram-pwsbot</a>
+      - cf-workers-telegram-bot(用cf workers serverless做机器人)
+        - <a href="https://github.com/codebam/cf-workers-telegram-bot" target="_blank noopener noreferrer">codebam/cf-workers-telegram-bot</a>
+      - grammY(bot框架)
+        - <a href="https://github.com/grammyjs/grammY" target="_blank noopener noreferrer">grammyjs/grammY</a>
+      - telegraf(bot框架)
+        - <a href="https://github.com/telegraf/telegraf" target="_blank noopener noreferrer">telegraf/telegraf</a>
+      - urban-bot(用react开发tg机器人)
+        - <a href="https://github.com/urban-bot/urban-bot" target="_blank noopener noreferrer">urban-bot/urban-bot</a>
+      - node-telegram-bot-api(api sdk)
+        - <a href="https://github.com/yagop/node-telegram-bot-api" target="_blank noopener noreferrer">yagop/node-telegram-bot-api</a>
+      - nestjs-telegraf(bot框架)
+        - <a href="https://github.com/evilsprut/nestjs-telegraf" target="_blank noopener noreferrer">evilsprut/nestjs-telegraf</a>
+      - telegram_media_downloader(视频下载器)
+        - <a href="https://github.com/tangyoha/telegram_media_downloader" target="_blank noopener noreferrer">tangyoha/telegram_media_downloader</a>
+    - discord系列
+      - Vencord(主题mod)
+        - <a href="https://github.com/Vendicated/Vencord" target="_blank noopener noreferrer">Vendicated/Vencord</a>
+      - BetterDiscord(dc客户端魔改版)
+        - <a href="https://github.com/BetterDiscord/BetterDiscord" target="_blank noopener noreferrer">BetterDiscord/BetterDiscord</a>
+      - sdk系列
+        - aoi.js(dc bot框架)
+          - <a href="https://github.com/AkaruiDevelopment/aoi.js" target="_blank noopener noreferrer">AkaruiDevelopment/aoi.js</a>
+        - discord.ts(提供装饰器编写bot)
+          - <a href="https://github.com/oceanroleplay/discord.ts" target="_blank noopener noreferrer">oceanroleplay/discord.ts</a>
+        - reacord(使用react+discord创建交互式消息)
+          - <a href="https://github.com/itsMapleLeaf/reacord" target="_blank noopener noreferrer">itsMapleLeaf/reacord</a>
+        - WildBeast(discord bot框架)
+          - <a href="https://github.com/TheSharks/WildBeast" target="_blank noopener noreferrer">TheSharks/WildBeast</a>
+        - discord.js(discord api)
+          - <a href="https://github.com/discordjs/discord.js" target="_blank noopener noreferrer">discordjs/discord.js</a>
+        - necord(nest+dc集成)
+          - <a href="https://github.com/necordjs/necord" target="_blank noopener noreferrer">necordjs/necord</a>
+      - 实战例子
+        - Discord-MusicBot(点歌机器人)
+          - <a href="https://github.com/SudhanPlayz/Discord-MusicBot" target="_blank noopener noreferrer">SudhanPlayz/Discord-MusicBot</a>
+        - discord-js-bot
+          - <a href="https://github.com/saiteja-madha/discord-js-bot" target="_blank noopener noreferrer">saiteja-madha/discord-js-bot</a>
+      - Vesktop(预装Vencord的dc客户端)
+        - <a href="https://github.com/Vencord/Vesktop" target="_blank noopener noreferrer">Vencord/Vesktop</a>
+    - minecraft
+      - mineflayer(js制作mc机器人)
+        - <a href="https://github.com/PrismarineJS/mineflayer" target="_blank noopener noreferrer">PrismarineJS/mineflayer</a>
+      - grakkit(js开发mc)
+        - <a href="https://github.com/grakkit/grakkit" target="_blank noopener noreferrer">grakkit/grakkit</a>
+      - MCSManager(mc管理面板)
+        - <a href="https://github.com/MCSManager/MCSManager" target="_blank noopener noreferrer">MCSManager/MCSManager</a>
+    - youtube
+      - lite-youtube-embed(更轻量的youtube内嵌)
+        - <a href="https://github.com/paulirish/lite-youtube-embed" target="_blank noopener noreferrer">paulirish/lite-youtube-embed</a>
+      - lite-youtube
+        - <a href="https://github.com/justinribeiro/lite-youtube" target="_blank noopener noreferrer">justinribeiro/lite-youtube</a>
+      - react-youtube(react youtube组件)
+        - <a href="https://github.com/tjallingt/react-youtube" target="_blank noopener noreferrer">tjallingt/react-youtube</a>
+      - YouTube.js(youtube客户端所有内置api)
+        - <a href="https://github.com/LuanRT/YouTube.js" target="_blank noopener noreferrer">LuanRT/YouTube.js</a>
+      - node-ytdl-core(ytb视频下载)
+        - <a href="https://github.com/fent/node-ytdl-core" target="_blank noopener noreferrer">fent/node-ytdl-core</a>
+      - cobalt.tools(视频下载网站)
+        - <a href="https://cobalt.tools/" target="_blank noopener noreferrer">cobalt.tools</a>
+        - <a href="https://github.com/wukko/cobalt" target="_blank noopener noreferrer">wukko/cobalt</a>
+    - Google
+      - google-auth-library-nodejs(google认证库)
+        - <a href="https://github.com/googleapis/google-auth-library-nodejs" target="_blank noopener noreferrer">googleapis/google-auth-library-nodejs</a>
+      - node-google-spreadsheet(和google电子表格交互/api)
+        - <a href="https://github.com/theoephraim/node-google-spreadsheet" target="_blank noopener noreferrer">theoephraim/node-google-spreadsheet</a>
+      - nodejs-datastore(google cloud datastore sdk)
+        - <a href="https://github.com/googleapis/nodejs-datastore" target="_blank noopener noreferrer">googleapis/nodejs-datastore</a>
+      - translate-api系列
+        - google-translate-api
+          - <a href="https://github.com/matheuss/google-translate-api" target="_blank noopener noreferrer">matheuss/google-translate-api</a>
+        - google-translate
+          - <a href="https://github.com/iamtraction/google-translate" target="_blank noopener noreferrer">iamtraction/google-translate</a>
+      - html-form-to-google-sheet(将html表单提交到google表单)
+        - <a href="https://github.com/levinunnink/html-form-to-google-sheet" target="_blank noopener noreferrer">levinunnink/html-form-to-google-sheet</a>
+    - twitter
+      - twitter-api-typescript-sdk
+        - <a href="https://github.com/twitterdev/twitter-api-typescript-sdk" target="_blank noopener noreferrer">twitterdev/twitter-api-typescript-sdk</a>
+      - TwitFix(自建vxtwitter/fxtwitter)
+        - <a href="https://github.com/robinuniverse/TwitFix" target="_blank noopener noreferrer">robinuniverse/TwitFix</a>
+      - embetty(保护隐私的内嵌方案/需服务器/冷门)
+        - <a href="https://github.com/heiseonline/embetty" target="_blank noopener noreferrer">heiseonline/embetty</a>
+      - react-tweet(推特卡片组件)
+        - <a href="https://github.com/vercel/react-tweet" target="_blank noopener noreferrer">vercel/react-tweet</a>
+      - FixTweet(fxtwitter)
+        - <a href="https://github.com/FixTweet/FixTweet" target="_blank noopener noreferrer">FixTweet/FixTweet</a>
+      - BetterTwitFix(vxtwitter)
+        - <a href="https://github.com/dylanpdx/BetterTwitFix" target="_blank noopener noreferrer">dylanpdx/BetterTwitFix</a>
+    - Instagram
+      - instauto(pup的Instagram自动化机器人库)
+        - <a href="https://github.com/mifi/instauto" target="_blank noopener noreferrer">mifi/instauto</a>
+      - video-to-reels(自动编辑视频发布)
+        - <a href="https://github.com/diego3g/video-to-reels" target="_blank noopener noreferrer">diego3g/video-to-reels</a>
+    - Notion
+      - notion-sdk-js
+        - <a href="https://github.com/makenotion/notion-sdk-js" target="_blank noopener noreferrer">makenotion/notion-sdk-js</a>
+      - slashy(定义自己的notion命令)
+        - <a href="https://github.com/alyssaxuu/slashy" target="_blank noopener noreferrer">alyssaxuu/slashy</a>
+      - notion-zh_CN(汉化油猴脚本)
+        - <a href="https://github.com/Reamd7/notion-zh_CN" target="_blank noopener noreferrer">Reamd7/notion-zh_CN</a>
+      - notion-to-md(转md)
+        - <a href="https://github.com/souvikinator/notion-to-md" target="_blank noopener noreferrer">souvikinator/notion-to-md</a>
+    - yuque
+      - yuque-hexo(yuque文章同步到hexo)
+        - <a href="https://github.com/x-cold/yuque-hexo" target="_blank noopener noreferrer">x-cold/yuque-hexo</a>
+      - waque(本地md同步yuque)
+        - <a href="https://github.com/yesmeck/waque" target="_blank noopener noreferrer">yesmeck/waque</a>
+    - Spotify
+      - spicetify-cli(皮肤自定义)
+        - <a href="https://github.com/spicetify/spicetify-cli" target="_blank noopener noreferrer">spicetify/spicetify-cli</a>
+      - spotify-web-api-ts-sdk
+        - <a href="https://github.com/spotify/spotify-web-api-ts-sdk" target="_blank noopener noreferrer">spotify/spotify-web-api-ts-sdk</a>
+    - pornhub
+      - Pornhub.js(ph sdk/冷门)
+        - <a href="https://github.com/pionxzh/Pornhub.js" target="_blank noopener noreferrer">pionxzh/Pornhub.js</a>
+    - onedrive
+      - onedrive-vercel-index(公开某个目录列表文件)
+        - <a href="https://github.com/spencerwooo/onedrive-vercel-index" target="_blank noopener noreferrer">spencerwooo/onedrive-vercel-index</a>
+    - mastodon系列
+      - masto.js(sdk)
+        - <a href="https://github.com/neet/masto.js" target="_blank noopener noreferrer">neet/masto.js</a>
+      - elk(一个客户端)
+        - <a href="https://github.com/elk-zone/elk" target="_blank noopener noreferrer">elk-zone/elk</a>
+    - whatsapp系列
+      - venom
+        - <a href="https://github.com/orkestral/venom" target="_blank noopener noreferrer">orkestral/venom</a>
+    - netease
+      - UnblockNeteaseMusic(解锁网易云)
+        - <a href="https://github.com/nondanee/UnblockNeteaseMusic" target="_blank noopener noreferrer">nondanee/UnblockNeteaseMusic</a>
+      - unlock-music(解密ncm下载文件)
+        - <a href="https://github.com/ipid/unlock-music" target="_blank noopener noreferrer">ipid/unlock-music</a>
+    - threads系列
+      - threads-api
+        - <a href="https://github.com/junhoyeo/threads-api" target="_blank noopener noreferrer">junhoyeo/threads-api</a>
+      - threads.js
+        - <a href="https://github.com/threadsjs/threads.js" target="_blank noopener noreferrer">threadsjs/threads.js</a>
+    - apple系列
+      - JXA(jxa语言类型提示)
+        - <a href="https://github.com/JXA-userland/JXA" target="_blank noopener noreferrer">JXA-userland/JXA</a>
+  - serverless系列
+    - 框架
+      - sst
+        - <a href="https://github.com/serverless-stack/sst" target="_blank noopener noreferrer">serverless-stack/sst</a>
+      - laf(serverless云平台)
+        - <a href="https://github.com/labring/laf" target="_blank noopener noreferrer">labring/laf</a>
+    - 工具
+      - serverless-bundle(lambda函数打包工具/零配置)
+        - <a href="https://github.com/AnomalyInnovations/serverless-bundle" target="_blank noopener noreferrer">AnomalyInnovations/serverless-bundle</a>
+  - a11y工具
+    - wave(检查a11y的浏览器插件)
+      - <a href="https://wave.webaim.org/extension/" target="_blank noopener noreferrer">wave.webaim.org</a>
+  - d2c系列
+    - Picasso(sketch转code/58)
+      - <a href="https://github.com/wuba/Picasso" target="_blank noopener noreferrer">wuba/Picasso</a>
+    - deco(jd/未开源)
+      - <a href="https://deco-preview.jd.com/" target="_blank noopener noreferrer">deco-preview.jd.com</a>
+    - code.fun
+      - <a href="https://code.fun/" target="_blank noopener noreferrer">code.fun</a>
+    - locofy
+      - <a href="https://www.locofy.ai/" target="_blank noopener noreferrer">www.locofy.ai</a>
+    - html2sketch
+      - <a href="https://github.com/ant-design/html2sketch" target="_blank noopener noreferrer">ant-design/html2sketch</a>
+    - react-sketchapp(渲染react组件到sketch)
+      - <a href="https://github.com/airbnb/react-sketchapp" target="_blank noopener noreferrer">airbnb/react-sketchapp</a>
+    - html-sketchapp(老)
+      - <a href="https://github.com/html-sketchapp/html-sketchapp" target="_blank noopener noreferrer">html-sketchapp/html-sketchapp</a>
+    - figma-html(html转figma)
+      - <a href="https://github.com/BuilderIO/figma-html" target="_blank noopener noreferrer">BuilderIO/figma-html</a>
+  - openai系列
+    - chatgpt系列sdk
+      - eventsource-parser(sse解析器)
+        - <a href="https://github.com/rexxars/eventsource-parser" target="_blank noopener noreferrer">rexxars/eventsource-parser</a>
+      - chat-gpt-google-extension(搜索增加gpt内容的插件)
+        - <a href="https://github.com/wong2/chat-gpt-google-extension" target="_blank noopener noreferrer">wong2/chat-gpt-google-extension</a>
+      - chatGPT-telegram-bot
+        - <a href="https://github.com/altryne/chatGPT-telegram-bot" target="_blank noopener noreferrer">altryne/chatGPT-telegram-bot</a>
+      - chatgpt-mac(mac本地端)
+        - <a href="https://github.com/vincelwt/chatgpt-mac" target="_blank noopener noreferrer">vincelwt/chatgpt-mac</a>
+      - chatgpt-advanced(浏览器扩展)
+        - <a href="https://github.com/qunash/chatgpt-advanced" target="_blank noopener noreferrer">qunash/chatgpt-advanced</a>
+      - chatgpt-telegram
+        - <a href="https://github.com/m1guelpf/chatgpt-telegram" target="_blank noopener noreferrer">m1guelpf/chatgpt-telegram</a>
+      - 实战项目
+        - twitterbio
+          - <a href="https://github.com/Nutlope/twitterbio" target="_blank noopener noreferrer">Nutlope/twitterbio</a>
+      - node-sdk系列
+        - chatgpt-api(基于playwright实现调用)
+          - <a href="https://github.com/ZohaibAhmed/chatgpt-api" target="_blank noopener noreferrer">ZohaibAhmed/chatgpt-api</a>
+        - chatgpt-api(sdk)
+          - <a href="https://github.com/transitive-bullshit/chatgpt-api" target="_blank noopener noreferrer">transitive-bullshit/chatgpt-api</a>
+        - node-chatgpt-api
+          - <a href="https://github.com/waylaidwanderer/node-chatgpt-api" target="_blank noopener noreferrer">waylaidwanderer/node-chatgpt-api</a>
+        - chatapi-single
+          - <a href="https://github.com/bytemate/chatapi-single" target="_blank noopener noreferrer">bytemate/chatapi-single</a>
+      - openai-streams(将openai响应作为流返回)
+        - <a href="https://github.com/SpellcraftAI/openai-streams" target="_blank noopener noreferrer">SpellcraftAI/openai-streams</a>
+      - openai-node(openai sdk)
+        - <a href="https://github.com/openai/openai-node" target="_blank noopener noreferrer">openai/openai-node</a>
+      - gpt-crawler(gpt爬虫工具)
+        - <a href="https://github.com/builderio/gpt-crawler" target="_blank noopener noreferrer">builderio/gpt-crawler</a>
+      - one-api(各种gpt api合一)
+        - <a href="https://github.com/songquanpeng/one-api" target="_blank noopener noreferrer">songquanpeng/one-api</a>
+    - gpt ui界面系列
+      - ChatGPT-Next-Web
+        - <a href="https://github.com/Yidadaa/ChatGPT-Next-Web" target="_blank noopener noreferrer">Yidadaa/ChatGPT-Next-Web</a>
+      - chatgpt-vercel
+        - <a href="https://github.com/GPTGenius/chatgpt-vercel" target="_blank noopener noreferrer">GPTGenius/chatgpt-vercel</a>
+      - chatbot-ui-lite
+        - <a href="https://github.com/mckaywrigley/chatbot-ui-lite" target="_blank noopener noreferrer">mckaywrigley/chatbot-ui-lite</a>
+      - chatbot-ui
+        - <a href="https://github.com/mckaywrigley/chatbot-ui" target="_blank noopener noreferrer">mckaywrigley/chatbot-ui</a>
+      - chatbox(桌面端)
+        - <a href="https://github.com/Bin-Huang/chatbox" target="_blank noopener noreferrer">Bin-Huang/chatbox</a>
+      - openplayground(需登录)
+        - <a href="https://github.com/nat/openplayground" target="_blank noopener noreferrer">nat/openplayground</a>
+      - lencx/ChatGPT(gpt桌面端/tauri)
+        - <a href="https://github.com/lencx/ChatGPT" target="_blank noopener noreferrer">lencx/ChatGPT</a>
+      - speechgpt
+        - <a href="https://github.com/hahahumble/speechgpt" target="_blank noopener noreferrer">hahahumble/speechgpt</a>
+      - lobe-chat
+        - <a href="https://github.com/lobehub/lobe-chat" target="_blank noopener noreferrer">lobehub/lobe-chat</a>
+    - 工具库
+      - token计算系列
+        - tokenizer(查看token长度)
+          - <a href="https://platform.openai.com/tokenizer" target="_blank noopener noreferrer">platform.openai.com</a>
+        - GPT-3-Encoder(计算token长度)
+          - <a href="https://github.com/latitudegames/GPT-3-Encoder" target="_blank noopener noreferrer">latitudegames/GPT-3-Encoder</a>
+      - blas(计算向量积)
+        - <a href="https://github.com/stdlib-js/blas" target="_blank noopener noreferrer">stdlib-js/blas</a>
+      - promptable(LLM构建应用工具)
+        - <a href="https://github.com/cfortuner/promptable" target="_blank noopener noreferrer">cfortuner/promptable</a>
+      - wishful-search(使用ai搜索json数组)
+        - <a href="https://github.com/hrishioa/wishful-search" target="_blank noopener noreferrer">hrishioa/wishful-search</a>
+    - gpt应用系列
+      - chatgpt-i18n(翻译json文件/i18n)
+        - <a href="https://github.com/ObservedObserver/chatgpt-i18n" target="_blank noopener noreferrer">ObservedObserver/chatgpt-i18n</a>
+      - chat-embeddings-server(问答工具实例)
+        - <a href="https://github.com/kkaaddff/chat-embeddings-server" target="_blank noopener noreferrer">kkaaddff/chat-embeddings-server</a>
+      - ChatALL(同时询问所有gpt工具)
+        - <a href="https://github.com/sunner/ChatALL" target="_blank noopener noreferrer">sunner/ChatALL</a>
+    - bing系列sdk
+      - bing-chat
+        - <a href="https://github.com/transitive-bullshit/bing-chat" target="_blank noopener noreferrer">transitive-bullshit/bing-chat</a>
+    - bard(google家)
+      - GoogleBard
+        - <a href="https://github.com/PawanOsman/GoogleBard" target="_blank noopener noreferrer">PawanOsman/GoogleBard</a>
+    - gpt-plugin系列
+      - chatgpt-code-plugin
+        - <a href="https://github.com/kesor/chatgpt-code-plugin" target="_blank noopener noreferrer">kesor/chatgpt-code-plugin</a>
+  - tc39/ecma系列
+    - finished-proposals(全部完结proposals)
+      - <a href="https://github.com/tc39/proposals/blob/main/finished-proposals.md" target="_blank noopener noreferrer">tc39/proposals/blob/main/finished-proposals.md</a>
+- 冷门偏僻库
+  - roadroller(极致压缩代码演示用库)
+    - <a href="https://github.com/lifthrasiir/roadroller" target="_blank noopener noreferrer">lifthrasiir/roadroller</a>
+  - parse-domain(解析host为各级domain)
+    - <a href="https://github.com/peerigon/parse-domain" target="_blank noopener noreferrer">peerigon/parse-domain</a>
+  - rtlcss(rtl国家反转样式库)
+    - <a href="https://github.com/MohammadYounes/rtlcss" target="_blank noopener noreferrer">MohammadYounes/rtlcss</a>
+  - ts-pattern(ts type穷举匹配库)
+    - <a href="https://github.com/gvergnaud/ts-pattern" target="_blank noopener noreferrer">gvergnaud/ts-pattern</a>
+  - cacheables(简单内存缓存)
+    - <a href="https://github.com/grischaerbe/cacheables" target="_blank noopener noreferrer">grischaerbe/cacheables</a>
+  - hyperactiv(超级小的响应式库)
+    - <a href="https://github.com/elbywan/hyperactiv" target="_blank noopener noreferrer">elbywan/hyperactiv</a>
+  - stream-browserify(用于浏览器的stream读取器)
+    - <a href="https://github.com/browserify/stream-browserify" target="_blank noopener noreferrer">browserify/stream-browserify</a>
+  - web-ext(构建firefox插件)
+    - <a href="https://github.com/mozilla/web-ext" target="_blank noopener noreferrer">mozilla/web-ext</a>
+  - suncalc(计算给定位置的太阳和月亮信息)
+    - <a href="https://github.com/mourner/suncalc" target="_blank noopener noreferrer">mourner/suncalc</a>
+  - elevator.js(老式回到顶部电梯)
+    - <a href="https://github.com/tholman/elevator.js" target="_blank noopener noreferrer">tholman/elevator.js</a>
+  - a11y-dialog(创建原生dialog/modal)
+    - <a href="https://github.com/KittyGiraudel/a11y-dialog" target="_blank noopener noreferrer">KittyGiraudel/a11y-dialog</a>
+  - promises-tests(promise aplus标准测试用例/工具)
+    - <a href="https://github.com/promises-aplus/promises-tests" target="_blank noopener noreferrer">promises-aplus/promises-tests</a>
+  - url-js(更快的url解析器)
+    - <a href="https://github.com/anonrig/url-js" target="_blank noopener noreferrer">anonrig/url-js</a>
+  - fart.js(放屁声音库)
+    - <a href="https://github.com/74656c/fart.js" target="_blank noopener noreferrer">74656c/fart.js</a>
+  - kosko(用js维护k8s配置文件)
+    - <a href="https://github.com/tommy351/kosko" target="_blank noopener noreferrer">tommy351/kosko</a>
+  - alfaaz(获取单词总数工具)
+    - <a href="https://github.com/thecodrr/alfaaz" target="_blank noopener noreferrer">thecodrr/alfaaz</a>
+  - chinese_s2t(简繁字转换/繁体转简体)
+    - <a href="https://github.com/libin1991/chinese_s2t" target="_blank noopener noreferrer">libin1991/chinese_s2t</a>
+  - csbg(在控制台打印版本号徽章)
+    - <a href="https://github.com/SevenOutman/csbg" target="_blank noopener noreferrer">SevenOutman/csbg</a>
+  - ootk-core(太空轨道计算工具)
+    - <a href="https://github.com/thkruz/ootk-core" target="_blank noopener noreferrer">thkruz/ootk-core</a>
+- FE安全
+  - snyk(扫描项目漏洞)
+    - <a href="https://github.com/snyk/snyk" target="_blank noopener noreferrer">snyk/snyk</a>
+- 应用层
+  - ndb(自带debug的node命令)
+    - <a href="https://github.com/GoogleChromeLabs/ndb" target="_blank noopener noreferrer">GoogleChromeLabs/ndb</a>
+  - openvscode-server(可web部署的vscode)
+    - <a href="https://github.com/gitpod-io/openvscode-server" target="_blank noopener noreferrer">gitpod-io/openvscode-server</a>
+  - o2oa(oa平台)
+    - <a href="https://github.com/o2oa/o2oa" target="_blank noopener noreferrer">o2oa/o2oa</a>
+  - city-roads(获取城市街道线图一览)
+    - <a href="https://github.com/anvaka/city-roads" target="_blank noopener noreferrer">anvaka/city-roads</a>
+  - v86(把虚拟机iso跑在浏览器里)
+    - <a href="https://github.com/copy/v86" target="_blank noopener noreferrer">copy/v86</a>
+  - piskel(在线像素图像制作工具)
+    - <a href="https://github.com/piskelapp/piskel" target="_blank noopener noreferrer">piskelapp/piskel</a>
+  - miniMusic(像素风音乐制作压缩器/for 13kgame)
+    - <a href="https://github.com/xem/miniMusic" target="_blank noopener noreferrer">xem/miniMusic</a>
+  - vdx(基于ffmpeg的命令行工具)
+    - <a href="https://github.com/yuanqing/vdx" target="_blank noopener noreferrer">yuanqing/vdx</a>
+  - marktext(typora替代)
+    - <a href="https://github.com/marktext/marktext" target="_blank noopener noreferrer">marktext/marktext</a>
+  - IDE系列
+    - theia(一个ts写的类似vsc的ide)
+      - <a href="https://github.com/eclipse-theia/theia" target="_blank noopener noreferrer">eclipse-theia/theia</a>
+    - opensumi(蚂蚁某类似vscode cloud ide)
+      - <a href="https://github.com/opensumi/core" target="_blank noopener noreferrer">opensumi/core</a>
+    - stackblitz(turbo管理器)
+      - <a href="https://github.com/stackblitz/core" target="_blank noopener noreferrer">stackblitz/core</a>
+    - code-server(在线vscode服务)
+      - <a href="https://github.com/coder/code-server" target="_blank noopener noreferrer">coder/code-server</a>
+    - CodeEdit(mac原生的编辑器)
+      - <a href="https://github.com/CodeEditApp/CodeEdit" target="_blank noopener noreferrer">CodeEditApp/CodeEdit</a>
+    - 自行实现编辑器实战
+      - base-editor
+        - <a href="https://github.com/yuzai/base-editor" target="_blank noopener noreferrer">yuzai/base-editor</a>
+    - phoenix(web ide)
+      - <a href="https://github.com/phcode-dev/phoenix" target="_blank noopener noreferrer">phcode-dev/phoenix</a>
+    - remix-project(用来开发合约的IDE)
+      - <a href="https://github.com/ethereum/remix-project" target="_blank noopener noreferrer">ethereum/remix-project</a>
+    - zed(高性能多人代码编辑器/rust)
+      - <a href="https://github.com/zed-industries/zed" target="_blank noopener noreferrer">zed-industries/zed</a>
+  - qinglong(定时任务面板)
+    - <a href="https://github.com/whyour/qinglong" target="_blank noopener noreferrer">whyour/qinglong</a>
+  - nuclear(免费媒体播放器)
+    - <a href="https://github.com/nukeop/nuclear" target="_blank noopener noreferrer">nukeop/nuclear</a>
+  - case-police(检查名词是否规范)
+    - <a href="https://github.com/antfu/case-police" target="_blank noopener noreferrer">antfu/case-police</a>
+  - web-maker(离线版codepen)
+    - <a href="https://github.com/chinchang/web-maker" target="_blank noopener noreferrer">chinchang/web-maker</a>
+  - js混淆系列
+    - javascript-obfuscator(js混淆器)
+      - <a href="https://github.com/javascript-obfuscator/javascript-obfuscator" target="_blank noopener noreferrer">javascript-obfuscator/javascript-obfuscator</a>
+    - jsfuck
+      - <a href="https://github.com/aemkei/jsfuck" target="_blank noopener noreferrer">aemkei/jsfuck</a>
+    - defendjs(冷/已存档)
+      - <a href="https://github.com/alexhorn/defendjs" target="_blank noopener noreferrer">alexhorn/defendjs</a>
+    - yuicompressor(老)
+      - <a href="https://github.com/yui/yuicompressor" target="_blank noopener noreferrer">yui/yuicompressor</a>
+    - jshaman.com(商业收费)
+      - <a href="https://www.jshaman.com/" target="_blank noopener noreferrer">www.jshaman.com</a>
+  - graph-docs-cli(markdown转知识图谱)
+    - <a href="https://github.com/mattpocock/graph-docs-cli" target="_blank noopener noreferrer">mattpocock/graph-docs-cli</a>
+  - wiki/知识库/知识管理系列
+    - wiki(构建wiki知识库的项目)
+      - <a href="https://github.com/requarks/wiki" target="_blank noopener noreferrer">requarks/wiki</a>
+    - BookStack(php/类似wp)
+      - <a href="https://github.com/BookStackApp/BookStack" target="_blank noopener noreferrer">BookStackApp/BookStack</a>
+    - mm-wiki(轻量协同wiki/陈旧)
+      - <a href="https://github.com/phachon/mm-wiki" target="_blank noopener noreferrer">phachon/mm-wiki</a>
+    - siyuan(本地知识管理系统)
+      - <a href="https://github.com/siyuan-note/siyuan" target="_blank noopener noreferrer">siyuan-note/siyuan</a>
+    - memos(flomo自建版)
+      - <a href="https://github.com/usememos/memos" target="_blank noopener noreferrer">usememos/memos</a>
+  - fonoster(twilio的替代品)
+    - <a href="https://github.com/fonoster/fonoster" target="_blank noopener noreferrer">fonoster/fonoster</a>
+  - logto(一个鉴权中心服务)
+    - <a href="https://github.com/logto-io/logto" target="_blank noopener noreferrer">logto-io/logto</a>
+  - node_modules系列
+    - qnm(查询node_modules依赖简单信息的工具)
+      - <a href="https://github.com/ranyitz/qnm" target="_blank noopener noreferrer">ranyitz/qnm</a>
+    - npkill(清理电脑的node_modules)
+      - <a href="https://github.com/voidcosmos/npkill" target="_blank noopener noreferrer">voidcosmos/npkill</a>
+  - nativefier(将任何网页创建为桌面app)
+    - <a href="https://github.com/nativefier/nativefier" target="_blank noopener noreferrer">nativefier/nativefier</a>
+  - AFFiNE(notion模仿)
+    - <a href="https://github.com/toeverything/AFFiNE" target="_blank noopener noreferrer">toeverything/AFFiNE</a>
+  - novu(通用的通知服务)
+    - <a href="https://github.com/novuhq/novu" target="_blank noopener noreferrer">novuhq/novu</a>
+  - blog页面评论存储系列
+    - giscus(基于github discussion的评论系统)
+      - <a href="https://github.com/giscus/giscus" target="_blank noopener noreferrer">giscus/giscus</a>
+    - gitalk(基于github进行存储评论)
+      - <a href="https://github.com/gitalk/gitalk" target="_blank noopener noreferrer">gitalk/gitalk</a>
+    - DisqusJS(disqus评论组件)
+      - <a href="https://github.com/SukkaW/DisqusJS" target="_blank noopener noreferrer">SukkaW/DisqusJS</a>
+    - utterances(基于github issue/陈旧)
+      - <a href="https://github.com/utterance/utterances" target="_blank noopener noreferrer">utterance/utterances</a>
+  - sharing(二维码方式共享电脑上的文件到手机)
+    - <a href="https://github.com/parvardegr/sharing" target="_blank noopener noreferrer">parvardegr/sharing</a>
+  - massCode(代码片段管理器)
+    - <a href="https://github.com/massCodeIO/massCode" target="_blank noopener noreferrer">massCodeIO/massCode</a>
+  - coolify(netlify替代品)
+    - <a href="https://github.com/coollabsio/coolify" target="_blank noopener noreferrer">coollabsio/coolify</a>
+  - teaxyz/cli(统一万能的包管理工具)
+    - <a href="https://github.com/teaxyz/cli" target="_blank noopener noreferrer">teaxyz/cli</a>
+  - planka(自建任务看板/kanban/board view)
+    - <a href="https://github.com/plankanban/planka" target="_blank noopener noreferrer">plankanban/planka</a>
+  - terminal终端gif图录制系列
+    - terminalizer(终端录制gif图)
+      - <a href="https://github.com/faressoft/terminalizer" target="_blank noopener noreferrer">faressoft/terminalizer</a>
+    - vhs
+      - <a href="https://github.com/charmbracelet/vhs" target="_blank noopener noreferrer">charmbracelet/vhs</a>
+  - file自托管文件共享系列
+    - Drift(自托管gist文件服务)
+      - <a href="https://github.com/MaxLeiter/Drift" target="_blank noopener noreferrer">MaxLeiter/Drift</a>
+    - pingvin-share
+      - <a href="https://github.com/stonith404/pingvin-share" target="_blank noopener noreferrer">stonith404/pingvin-share</a>
+  - tts-vue(微软语音合成)
+    - <a href="https://github.com/LokerL/tts-vue" target="_blank noopener noreferrer">LokerL/tts-vue</a>
+  - Cronicle(cron定时任务执行平台)
+    - <a href="https://github.com/jhuckaby/Cronicle" target="_blank noopener noreferrer">jhuckaby/Cronicle</a>
+  - hocus(gitpod自建版)
+    - <a href="https://github.com/hocus-dev/hocus" target="_blank noopener noreferrer">hocus-dev/hocus</a>
+  - podcast-dl(播客下载存档工具)
+    - <a href="https://github.com/lightpohl/podcast-dl" target="_blank noopener noreferrer">lightpohl/podcast-dl</a>
+  - blip(测试网络延迟的工具)
+    - <a href="https://github.com/apenwarr/blip" target="_blank noopener noreferrer">apenwarr/blip</a>
+  - plane(jira竞品/收费)
+    - <a href="https://github.com/makeplane/plane" target="_blank noopener noreferrer">makeplane/plane</a>
+  - color-names(颜色名称大全)
+    - <a href="https://github.com/meodai/color-names" target="_blank noopener noreferrer">meodai/color-names</a>
+  - hfs(托管文件服务)
+    - <a href="https://github.com/rejetto/hfs" target="_blank noopener noreferrer">rejetto/hfs</a>
+  - XHS_Downloader(xhs采集器)
+    - <a href="https://github.com/JoeanAmier/XHS_Downloader" target="_blank noopener noreferrer">JoeanAmier/XHS_Downloader</a>
+  - inpaint-web(图片部分消除工具)
+    - <a href="https://github.com/lxfater/inpaint-web" target="_blank noopener noreferrer">lxfater/inpaint-web</a>
+  - mind-map(思维导图应用)
+    - <a href="https://github.com/wanglin2/mind-map" target="_blank noopener noreferrer">wanglin2/mind-map</a>
+  - joplin(笔记/待办事项程序)
+    - <a href="https://github.com/laurent22/joplin" target="_blank noopener noreferrer">laurent22/joplin</a>
+  - sharedrop(网页文件互传)
+    - <a href="https://github.com/szimek/sharedrop" target="_blank noopener noreferrer">szimek/sharedrop</a>
+  - CSS3DClouds(云彩效果)
+    - <a href="https://github.com/spite/CSS3DClouds" target="_blank noopener noreferrer">spite/CSS3DClouds</a>
+- 各种服务商
+  - github系列库
+    - octokit.js(github api库)
+      - <a href="https://github.com/octokit/octokit.js" target="_blank noopener noreferrer">octokit/octokit.js</a>
+    - github-restapi
+      - <a href="https://docs.github.com/cn/rest" target="_blank noopener noreferrer">docs.github.com</a>
+      - webhook-dispatch
+        - <a href="https://p3terx.com/archives/github-actions-manual-trigger.html" target="_blank noopener noreferrer">p3terx.com</a>
+    - github-corner
+      - <a href="https://tholman.com/github-corners/" target="_blank noopener noreferrer">tholman.com</a>
+      - <a href="https://github.com/tholman/github-corners" target="_blank noopener noreferrer">tholman/github-corners</a>
+      - <a href="https://www.cnblogs.com/why98/p/12228956.html" target="_blank noopener noreferrer">www.cnblogs.com</a>
+    - github-hovercard(个人信息/commit信息卡片)
+      - <a href="https://github.com/Justineo/github-hovercard" target="_blank noopener noreferrer">Justineo/github-hovercard</a>
+    - github-unstar(取消所有star)
+      - <a href="https://github.com/tpkahlon/github-unstar" target="_blank noopener noreferrer">tpkahlon/github-unstar</a>
+    - ungh(基于cf worker的无限制github api方案)
+      - <a href="https://github.com/unjs/ungh" target="_blank noopener noreferrer">unjs/ungh</a>
+    - request.js(请求url参数自动替换工具库)
+      - <a href="https://github.com/octokit/request.js" target="_blank noopener noreferrer">octokit/request.js</a>
+    - old-feed系列
+      - bring-github-old-feed-back
+        - <a href="https://github.com/sukkaw/bring-github-old-feed-back" target="_blank noopener noreferrer">sukkaw/bring-github-old-feed-back</a>
+      - github-old-feed
+        - <a href="https://github.com/wangrongding/github-old-feed" target="_blank noopener noreferrer">wangrongding/github-old-feed</a>
+  - gatsby
+    - 模板
+      - gatsby-starter-ts
+        - <a href="https://github.com/jpedroschmitz/gatsby-starter-ts" target="_blank noopener noreferrer">jpedroschmitz/gatsby-starter-ts</a>
+    - <a href="https://www.gatsbyjs.com/" target="_blank noopener noreferrer">www.gatsbyjs.com</a>
+  - beam(一个内部轻量的博客系统)
+    - <a href="https://github.com/planetscale/beam" target="_blank noopener noreferrer">planetscale/beam</a>
+  - AWS系列
+    - dynamodump(备份dynamoDB结构和数据的工具)
+      - <a href="https://github.com/mifi/dynamodump" target="_blank noopener noreferrer">mifi/dynamodump</a>
+    - aws-lambda-fastify(lamda函数sdk/基于fastify)
+      - <a href="https://github.com/fastify/aws-lambda-fastify" target="_blank noopener noreferrer">fastify/aws-lambda-fastify</a>
+    - middy(aws lamda函数中间件引擎)
+      - <a href="https://github.com/middyjs/middy" target="_blank noopener noreferrer">middyjs/middy</a>
+    - serverless-express(aws lamda上运行express/koa应用的包装器)
+      - <a href="https://github.com/vendia/serverless-express" target="_blank noopener noreferrer">vendia/serverless-express</a>
+    - serverless-offline(在本地开发时模拟aws网关)
+      - <a href="https://github.com/dherault/serverless-offline" target="_blank noopener noreferrer">dherault/serverless-offline</a>
+    - zip-it-and-ship-it(快速打包代码为lamda可用档案)
+      - <a href="https://github.com/netlify/zip-it-and-ship-it" target="_blank noopener noreferrer">netlify/zip-it-and-ship-it</a>
+    - aws-lambda-powertools-typescript(aws lamba函数日志/跟踪工具等)
+      - <a href="https://github.com/awslabs/aws-lambda-powertools-typescript" target="_blank noopener noreferrer">awslabs/aws-lambda-powertools-typescript</a>
+    - configure-aws-credentials(配置aws凭证用于github action教程)
+      - <a href="https://github.com/aws-actions/configure-aws-credentials" target="_blank noopener noreferrer">aws-actions/configure-aws-credentials</a>
+    - s3fs(基于s3的fs/nodejs)
+      - <a href="https://github.com/cyclic-software/s3fs" target="_blank noopener noreferrer">cyclic-software/s3fs</a>
+    - faast.js(并发多个aws lambda函数)
+      - <a href="https://github.com/faastjs/faast.js" target="_blank noopener noreferrer">faastjs/faast.js</a>
+    - lambda-api(aws lambda网络接口框架)
+      - <a href="https://github.com/jeremydaly/lambda-api" target="_blank noopener noreferrer">jeremydaly/lambda-api</a>
+    - aws-jwt-verify(aws jwt校验器)
+      - <a href="https://github.com/awslabs/aws-jwt-verify" target="_blank noopener noreferrer">awslabs/aws-jwt-verify</a>
+    - sqs-consumer(队列服务模板)
+      - <a href="https://github.com/bbc/sqs-consumer" target="_blank noopener noreferrer">bbc/sqs-consumer</a>
+    - aws-lite(比官方sdk快的民间sdk/冷门)
+      - <a href="https://github.com/architect/aws-lite" target="_blank noopener noreferrer">architect/aws-lite</a>
+  - cloudflare系列
+    - miniflare(本地模拟cloudflare worker环境)
+      - <a href="https://github.com/cloudflare/miniflare" target="_blank noopener noreferrer">cloudflare/miniflare</a>
+    - workerd(worker runtime)
+      - <a href="https://github.com/cloudflare/workerd" target="_blank noopener noreferrer">cloudflare/workerd</a>
+    - wrangler(cloudflare worker cli)
+      - <a href="https://github.com/cloudflare/wrangler-legacy" target="_blank noopener noreferrer">cloudflare/wrangler-legacy</a>
+    - wrangler2(worker cli)
+      - <a href="https://github.com/cloudflare/workers-sdk" target="_blank noopener noreferrer">cloudflare/workers-sdk</a>
+    - templates(worker示例大全)
+      - <a href="https://github.com/cloudflare/templates" target="_blank noopener noreferrer">cloudflare/templates</a>
+    - microfeed(基于cf的cms)
+      - <a href="https://github.com/microfeed/microfeed" target="_blank noopener noreferrer">microfeed/microfeed</a>
+    - superflare(workers全栈工具/冷门)
+      - <a href="https://github.com/jplhomer/superflare" target="_blank noopener noreferrer">jplhomer/superflare</a>
+    - reflare(worker反向代理框架)
+      - <a href="https://github.com/xiaoyang-sde/reflare" target="_blank noopener noreferrer">xiaoyang-sde/reflare</a>
+    - Url-Shorten-Worker(用worker实现url shorten)
+      - <a href="https://github.com/xyTom/Url-Shorten-Worker" target="_blank noopener noreferrer">xyTom/Url-Shorten-Worker</a>
+    - turnstile系列
+      - react-turnstile
+        - <a href="https://github.com/marsidev/react-turnstile" target="_blank noopener noreferrer">marsidev/react-turnstile</a>
+    - socket(CF sokect API实现)
+      - <a href="https://github.com/Ethan-Arrowood/socket" target="_blank noopener noreferrer">Ethan-Arrowood/socket</a>
+    - cf-kv-exporter(导出所有kv值)
+      - <a href="https://github.com/pi0/cf-kv-exporter" target="_blank noopener noreferrer">pi0/cf-kv-exporter</a>
+    - html-rewriter(worker html修改库)
+      - <a href="https://github.com/worker-tools/html-rewriter" target="_blank noopener noreferrer">worker-tools/html-rewriter</a>
+  - lambdatest(提供各种浏览器和设备测试网站)
+    - <a href="https://www.lambdatest.com/" target="_blank noopener noreferrer">www.lambdatest.com</a>
+  - synthesia(生成ai人介绍视频)
+    - <a href="https://www.synthesia.io/" target="_blank noopener noreferrer">www.synthesia.io</a>
+  - headless系列
+    - ghost
+      - <a href="https://ghost.org/" target="_blank noopener noreferrer">ghost.org</a>
+  - analyze网站统计系列
+    - analytics(代替google analytic工具/收费)
+      - <a href="https://github.com/plausible/analytics" target="_blank noopener noreferrer">plausible/analytics</a>
+    - plausible(ga替代)
+      - <a href="https://plausible.io/" target="_blank noopener noreferrer">plausible.io</a>
+    - umami(开源免费)
+      - <a href="https://umami.is/" target="_blank noopener noreferrer">umami.is</a>
+    - pirsch(收费/5刀)
+      - <a href="https://pirsch.io/" target="_blank noopener noreferrer">pirsch.io</a>
+    - offen(开源/冷门)
+      - <a href="https://github.com/offen/offen" target="_blank noopener noreferrer">offen/offen</a>
+    - goatcounter(开源)
+      - <a href="https://github.com/arp242/goatcounter" target="_blank noopener noreferrer">arp242/goatcounter</a>
+    - Ackee(一个site数据收集平台)
+      - <a href="https://github.com/electerious/Ackee" target="_blank noopener noreferrer">electerious/Ackee</a>
+    - matomo(顶级/收费)
+      - <a href="https://matomo.org/" target="_blank noopener noreferrer">matomo.org</a>
+    - withcabin.com(cabin/收费)
+      - <a href="https://withcabin.com/" target="_blank noopener noreferrer">withcabin.com</a>
+    - fathom(收费)
+      - <a href="https://github.com/usefathom/fathom" target="_blank noopener noreferrer">usefathom/fathom</a>
+    - microanalytics.io(收费)
+      - <a href="https://microanalytics.io/" target="_blank noopener noreferrer">microanalytics.io</a>
+    - simpleanalytics.com(收费)
+      - <a href="https://www.simpleanalytics.com/" target="_blank noopener noreferrer">www.simpleanalytics.com</a>
+  - support客户沟通/在线聊天框系列
+    - intercom(客户在线沟通聊天框)
+      - <a href="https://www.intercom.com/" target="_blank noopener noreferrer">www.intercom.com</a>
+    - chatwoot
+      - <a href="https://www.chatwoot.com/" target="_blank noopener noreferrer">www.chatwoot.com</a>
+    - crisp.chat
+      - <a href="https://crisp.chat/en/" target="_blank noopener noreferrer">crisp.chat</a>
+  - 站点监控
+    - sentry系列
+      - sentry
+        - <a href="https://github.com/getsentry/sentry" target="_blank noopener noreferrer">getsentry/sentry</a>
+      - sentry-javascript(sentry sdk)
+        - <a href="https://github.com/getsentry/sentry-javascript" target="_blank noopener noreferrer">getsentry/sentry-javascript</a>
+    - betterstack
+      - <a href="https://betterstack.com/" target="_blank noopener noreferrer">betterstack.com</a>
+    - sentry.io
+      - <a href="https://sentry.io/welcome/" target="_blank noopener noreferrer">sentry.io</a>
+    - site24x7.com
+      - <a href="https://www.site24x7.com/" target="_blank noopener noreferrer">www.site24x7.com</a>
+    - appsignal.com
+      - <a href="https://www.appsignal.com/" target="_blank noopener noreferrer">www.appsignal.com</a>
+    - openreplay.com
+      - <a href="https://openreplay.com/" target="_blank noopener noreferrer">openreplay.com</a>
+    - updown.io(状态监控/便宜)
+      - <a href="https://updown.io/" target="_blank noopener noreferrer">updown.io</a>
+    - cronitor.io(支持上报slack)
+      - <a href="https://cronitor.io/" target="_blank noopener noreferrer">cronitor.io</a>
+  - remote远程团队工具系列
+    - dine清单
+      - <a href="https://www.dinehq.com/remote/" target="_blank noopener noreferrer">www.dinehq.com</a>
+  - aliyun
+    - ali-oss(sdk)
+      - <a href="https://github.com/ali-sdk/ali-oss" target="_blank noopener noreferrer">ali-sdk/ali-oss</a>
+  - backblaze(amazon s3一样的云存储服务/b2)
+    - <a href="https://www.backblaze.com/" target="_blank noopener noreferrer">www.backblaze.com</a>
+  - 数据库系列
+    - supabase(pg数据库提供商/edge func)
+      - <a href="https://supabase.com/" target="_blank noopener noreferrer">supabase.com</a>
+    - planetscale(mysql服务/收费)
+      - <a href="https://planetscale.com/" target="_blank noopener noreferrer">planetscale.com</a>
+    - upstash(severless redis/收费)
+      - <a href="https://upstash.com/" target="_blank noopener noreferrer">upstash.com</a>
+    - bytebase(数据库schema管理工具)
+      - <a href="https://www.bytebase.com/zh" target="_blank noopener noreferrer">www.bytebase.com</a>
+    - hasura.io(GraphQL服务)
+      - <a href="https://hasura.io/" target="_blank noopener noreferrer">hasura.io</a>
+    - firebase/firestore系列
+      - firestore/firebase(google的数据库服务)
+        - <a href="https://firebase.google.com/" target="_blank noopener noreferrer">firebase.google.com</a>
+      - react-firebase-hooks
+        - <a href="https://github.com/CSFrequency/react-firebase-hooks" target="_blank noopener noreferrer">CSFrequency/react-firebase-hooks</a>
+      - nodejs-firestore(firestore的api)
+        - <a href="https://github.com/googleapis/nodejs-firestore" target="_blank noopener noreferrer">googleapis/nodejs-firestore</a>
+      - firebase-tools
+        - <a href="https://github.com/firebase/firebase-tools" target="_blank noopener noreferrer">firebase/firebase-tools</a>
+      - firebase-js-sdk(sdk)
+        - <a href="https://github.com/firebase/firebase-js-sdk" target="_blank noopener noreferrer">firebase/firebase-js-sdk</a>
+      - vuefire(vue+firebase)
+        - <a href="https://github.com/vuejs/vuefire" target="_blank noopener noreferrer">vuejs/vuefire</a>
+    - appwrite.io(baas/各种api支持)
+      - <a href="https://appwrite.io/" target="_blank noopener noreferrer">appwrite.io</a>
+    - neon(postgres serverless/vercel storage底层)
+      - <a href="https://neon.tech/" target="_blank noopener noreferrer">neon.tech</a>
+  - Azure
+    - Azurite(azure的本地模拟实现)
+      - <a href="https://github.com/Azure/Azurite" target="_blank noopener noreferrer">Azure/Azurite</a>
+  - secret/auth安全密钥存储
+    - google-secret-manager
+      - <a href="https://cloud.google.com/secret-manager" target="_blank noopener noreferrer">cloud.google.com</a>
+    - aws-secrets-manager
+      - <a href="https://aws.amazon.com/cn/secrets-manager/" target="_blank noopener noreferrer">aws.amazon.com</a>
+  - vercel系列
+    - vercel
+      - <a href="https://vercel.com/dashboard" target="_blank noopener noreferrer">vercel.com</a>
+    - rust(rust的serverless func runtime)
+      - <a href="https://github.com/vercel-community/rust" target="_blank noopener noreferrer">vercel-community/rust</a>
+    - edge-runtime(sdk)
+      - <a href="https://github.com/vercel/edge-runtime" target="_blank noopener noreferrer">vercel/edge-runtime</a>
+    - remote-cache(缓存)
+      - <a href="https://github.com/vercel/remote-cache" target="_blank noopener noreferrer">vercel/remote-cache</a>
+    - platforms(多租户平台模板)
+      - <a href="https://github.com/vercel/platforms" target="_blank noopener noreferrer">vercel/platforms</a>
+    - examples(各种vercel功能example)
+      - <a href="https://github.com/vercel/examples" target="_blank noopener noreferrer">vercel/examples</a>
+    - puppeteer-on-vercel(在vercel上运行puppeteer)
+      - <a href="https://github.com/jakubzelazny/puppeteer-on-vercel" target="_blank noopener noreferrer">jakubzelazny/puppeteer-on-vercel</a>
+  - cicd/部署提供商
+    - render(提供各种服务部署)
+      - <a href="https://render.com/" target="_blank noopener noreferrer">render.com</a>
+    - heroku
+      - <a href="https://www.heroku.com/" target="_blank noopener noreferrer">www.heroku.com</a>
+    - railway.app(冷)
+      - <a href="https://railway.app/" target="_blank noopener noreferrer">railway.app</a>
+    - codemagic.io(移动设备专门的cicd)
+      - <a href="https://codemagic.io/start/" target="_blank noopener noreferrer">codemagic.io</a>
+    - fly.io系列
+      - fly.io(服务/应用部署服务商)
+        - <a href="https://fly.io/" target="_blank noopener noreferrer">fly.io</a>
+      - litefs-js
+        - <a href="https://github.com/fly-apps/litefs-js" target="_blank noopener noreferrer">fly-apps/litefs-js</a>
+    - zeabur(冷门部署商)
+      - <a href="https://zeabur.com/" target="_blank noopener noreferrer">zeabur.com</a>
+  - newsletter邮件订阅服务
+    - emailoctopus.com(带广告免费/收费)
+      - <a href="https://emailoctopus.com/" target="_blank noopener noreferrer">emailoctopus.com</a>
+    - getrevue(免费)
+      - <a href="https://www.getrevue.co/" target="_blank noopener noreferrer">www.getrevue.co</a>
+  - mail邮件服务
+    - mxroute(email服务)
+      - <a href="https://mxroute.com/" target="_blank noopener noreferrer">mxroute.com</a>
+    - mailgun
+      - <a href="https://www.mailgun.com/" target="_blank noopener noreferrer">www.mailgun.com</a>
+    - sendy
+      - <a href="https://sendy.co/" target="_blank noopener noreferrer">sendy.co</a>
+    - sendgrid
+      - <a href="https://sendgrid.com/" target="_blank noopener noreferrer">sendgrid.com</a>
+    - clicksend
+      - <a href="https://www.clicksend.com/en/" target="_blank noopener noreferrer">www.clicksend.com</a>
+    - buttondown(免费)
+      - <a href="https://buttondown.email/" target="_blank noopener noreferrer">buttondown.email</a>
+    - resend(每天100封免费)
+      - <a href="https://resend.com/" target="_blank noopener noreferrer">resend.com</a>
+    - beehiiv
+      - <a href="https://www.beehiiv.com/" target="_blank noopener noreferrer">www.beehiiv.com</a>
+    - loops.so
+      - <a href="https://loops.so/" target="_blank noopener noreferrer">loops.so</a>
+  - stripe系列
+    - stripe(支付服务提供商)
+      - <a href="https://stripe.com/zh-cn-jp" target="_blank noopener noreferrer">stripe.com</a>
+    - react-stripe-js(与stripe集成的sdk)
+      - <a href="https://github.com/stripe/react-stripe-js" target="_blank noopener noreferrer">stripe/react-stripe-js</a>
+    - stripe-node(node sdk)
+      - <a href="https://github.com/stripe/stripe-node" target="_blank noopener noreferrer">stripe/stripe-node</a>
+  - cms系列
+    - tensei(headless cms)
+      - <a href="https://github.com/tenseijs/tensei" target="_blank noopener noreferrer">tenseijs/tensei</a>
+    - sanity
+      - <a href="https://github.com/sanity-io/sanity" target="_blank noopener noreferrer">sanity-io/sanity</a>
+    - buttercms
+      - <a href="https://github.com/ButterCMS/buttercms-js" target="_blank noopener noreferrer">ButterCMS/buttercms-js</a>
+    - ghost
+      - <a href="https://github.com/TryGhost/Ghost" target="_blank noopener noreferrer">TryGhost/Ghost</a>
+    - tinacms
+      - <a href="https://github.com/tinacms/tinacms" target="_blank noopener noreferrer">tinacms/tinacms</a>
+    - apostrophe
+      - <a href="https://github.com/apostrophecms/apostrophe" target="_blank noopener noreferrer">apostrophecms/apostrophe</a>
+    - directus
+      - <a href="https://github.com/directus/directus" target="_blank noopener noreferrer">directus/directus</a>
+    - keystone
+      - <a href="https://github.com/keystonejs/keystone" target="_blank noopener noreferrer">keystonejs/keystone</a>
+    - payload
+      - <a href="https://github.com/payloadcms/payload" target="_blank noopener noreferrer">payloadcms/payload</a>
+    - strapi
+      - <a href="https://github.com/strapi/strapi" target="_blank noopener noreferrer">strapi/strapi</a>
+      - <a href="https://strapi.io/" target="_blank noopener noreferrer">strapi.io</a>
+    - webiny-js
+      - <a href="https://github.com/webiny/webiny-js" target="_blank noopener noreferrer">webiny/webiny-js</a>
+    - storyblok
+      - <a href="https://www.storyblok.com/" target="_blank noopener noreferrer">www.storyblok.com</a>
+    - cube
+      - <a href="https://cube.dev/" target="_blank noopener noreferrer">cube.dev</a>
+  - 媒体分发服务系列
+    - bunny.net(内容分发cdn/图片优化)
+      - <a href="https://bunny.net/" target="_blank noopener noreferrer">bunny.net</a>
+    - cloudinary(媒体服务/贵)
+      - <a href="https://cloudinary.com/" target="_blank noopener noreferrer">cloudinary.com</a>
+    - imagekit.io(媒体cdn)
+      - <a href="https://imagekit.io/" target="_blank noopener noreferrer">imagekit.io</a>
+  - docssearch文档搜索服务
+    - algolia
+      - <a href="https://docsearch.algolia.com/" target="_blank noopener noreferrer">docsearch.algolia.com</a>
+    - meilisearch
+      - <a href="https://www.meilisearch.com/" target="_blank noopener noreferrer">www.meilisearch.com</a>
+  - 内网穿透系列
+    - ngrok.com(收费)
+      - <a href="https://ngrok.com/" target="_blank noopener noreferrer">ngrok.com</a>
+  - auth权限系列
+    - clerk.com(权限/登录提供商)
+      - <a href="https://clerk.com/" target="_blank noopener noreferrer">clerk.com</a>
+    - infisical.com(秘密管理平台)
+      - <a href="https://infisical.com/" target="_blank noopener noreferrer">infisical.com</a>
+  - log日志系列
+    - axiom.co
+      - <a href="https://axiom.co/" target="_blank noopener noreferrer">axiom.co</a>
+  - sms短信服务商系列
+    - twilio(短信服务商)
+      - <a href="https://www.twilio.com/" target="_blank noopener noreferrer">www.twilio.com</a>
+    - sms-activate
+      - <a href="https://sms-activate.org/" target="_blank noopener noreferrer">sms-activate.org</a>
+  - paypal
+    - react-paypal-js(sdk)
+      - <a href="https://github.com/paypal/react-paypal-js" target="_blank noopener noreferrer">paypal/react-paypal-js</a>
+  - inngest.com(无服务器队列服务)
+    - <a href="https://www.inngest.com/" target="_blank noopener noreferrer">www.inngest.com</a>
+  - gitlab系列
+    - gitbeaker(gitlab sdk)
+      - <a href="https://github.com/jdalrymple/gitbeaker" target="_blank noopener noreferrer">jdalrymple/gitbeaker</a>
+  - wechat系列
+    - md转wechat
+      - doocs
+        - <a href="https://doocs.gitee.io/md/#/" target="_blank noopener noreferrer">doocs.gitee.io</a>
+      - qikqiak(淡)
+        - <a href="https://md.qikqiak.com/" target="_blank noopener noreferrer">md.qikqiak.com</a>
+      - foxmd(淡)
+        - <a href="https://foxmd.cn/" target="_blank noopener noreferrer">foxmd.cn</a>
+      - zkqiang
+        - <a href="https://prod.zkqiang.cn/wxeditor/index.html#" target="_blank noopener noreferrer">prod.zkqiang.cn</a>
+      - openwrite(csdn转容易错位)
+        - <a href="https://md.openwrite.cn/" target="_blank noopener noreferrer">md.openwrite.cn</a>
+      - wechat-format
+        - <a href="https://github.com/lyricat/wechat-format" target="_blank noopener noreferrer">lyricat/wechat-format</a>
+      - aclicakall(不能转链接refer)
+        - <a href="http://md.aclickall.com/" target="_blank noopener noreferrer">md.aclickall.com</a>
+      - js8(蓝色/好看)
+        - <a href="http://js8.in/mpeditor/" target="_blank noopener noreferrer">js8.in</a>
+      - editor.runjs.cool(简单)
+        - <a href="https://editor.runjs.cool/" target="_blank noopener noreferrer">editor.runjs.cool</a>
+    - wechaty(nodejs微信)
+      - <a href="https://github.com/wechaty/wechaty" target="_blank noopener noreferrer">wechaty/wechaty</a>
+    - wechatDownload(公众号下载器)
+      - <a href="https://github.com/xiaoguyu/wechatDownload" target="_blank noopener noreferrer">xiaoguyu/wechatDownload</a>
+  - IaC系列
+    - terraform
+      - <a href="https://www.terraform.io/" target="_blank noopener noreferrer">www.terraform.io</a>
+  - Adobe系列
+    - ai2html(adobe illustrator转html)
+      - <a href="https://github.com/newsdev/ai2html" target="_blank noopener noreferrer">newsdev/ai2html</a>
+- Web3
+  - 工具库
+    - solc系列(浏览器编译合约)
+      - solc-js
+        - <a href="https://github.com/ethereum/solc-js" target="_blank noopener noreferrer">ethereum/solc-js</a>
+      - browser-solc
+        - <a href="https://github.com/ericxtang/browser-solc" target="_blank noopener noreferrer">ericxtang/browser-solc</a>
+      - dmerrill6/brows-solc
+        - <a href="https://github.com/dmerrill6/browser-solc" target="_blank noopener noreferrer">dmerrill6/browser-solc</a>
+    - eth-api系列
+      - ethers.js(简化与eth交互工具)
+        - <a href="https://github.com/ethers-io/ethers.js" target="_blank noopener noreferrer">ethers-io/ethers.js</a>
+      - web3.js(eth web api)
+        - <a href="https://github.com/ChainSafe/web3.js" target="_blank noopener noreferrer">ChainSafe/web3.js</a>
+      - alchemy-web3(web3封装)
+        - <a href="https://github.com/alchemyplatform/alchemy-web3" target="_blank noopener noreferrer">alchemyplatform/alchemy-web3</a>
+      - react/hooks库
+        - wagmi(与eth钱包交互的react hooks)
+          - <a href="https://github.com/wagmi-dev/wagmi" target="_blank noopener noreferrer">wagmi-dev/wagmi</a>
+        - useDApp
+          - <a href="https://github.com/TrueFiEng/useDApp" target="_blank noopener noreferrer">TrueFiEng/useDApp</a>
+        - rainbowkit(钱包连接到dapp的工具)
+          - <a href="https://github.com/rainbow-me/rainbowkit" target="_blank noopener noreferrer">rainbow-me/rainbowkit</a>
+      - siwe(登录钱包的协议)
+        - <a href="https://github.com/spruceid/siwe" target="_blank noopener noreferrer">spruceid/siwe</a>
+      - viem(eth api/ts版)
+        - <a href="https://github.com/wagmi-dev/viem" target="_blank noopener noreferrer">wagmi-dev/viem</a>
+    - components功能性组件
+      - web3-react
+        - <a href="https://github.com/NoahZinsmeister/web3-react" target="_blank noopener noreferrer">NoahZinsmeister/web3-react</a>
+      - web3modal
+        - <a href="https://github.com/WalletConnect/web3modal" target="_blank noopener noreferrer">WalletConnect/web3modal</a>
+    - contract合约系列
+      - 合约编写母语言
+        - vyper(python)
+          - <a href="https://github.com/vyperlang/vyper" target="_blank noopener noreferrer">vyperlang/vyper</a>
+        - solidity
+          - <a href="https://github.com/ethereum/solidity" target="_blank noopener noreferrer">ethereum/solidity</a>
+          - 教程
+            - <a href="https://solidity-by-example.org/" target="_blank noopener noreferrer">solidity-by-example.org</a>
+        - solana(rust/l1s)
+          - <a href="https://github.com/solana-labs/solana" target="_blank noopener noreferrer">solana-labs/solana</a>
+        - cairo-lang(cairo/l2)
+          - <a href="https://github.com/starkware-libs/cairo-lang" target="_blank noopener noreferrer">starkware-libs/cairo-lang</a>
+        - 3em(多语言支持/js/仅Arweave存储环境)
+          - <a href="https://github.com/three-em/3em" target="_blank noopener noreferrer">three-em/3em</a>
+      - 现代合约集
+        - openzeppelin-contracts
+          - <a href="https://github.com/OpenZeppelin/openzeppelin-contracts" target="_blank noopener noreferrer">OpenZeppelin/openzeppelin-contracts</a>
+        - solmate(效率更高)
+          - <a href="https://github.com/Rari-Capital/solmate" target="_blank noopener noreferrer">Rari-Capital/solmate</a>
+        - ERC721A(nft合适/低gas)
+          - <a href="https://github.com/chiru-labs/ERC721A" target="_blank noopener noreferrer">chiru-labs/ERC721A</a>
+        - compound-protocol(defi实践老牌)
+          - <a href="https://github.com/compound-finance/compound-protocol" target="_blank noopener noreferrer">compound-finance/compound-protocol</a>
+        - uniswap(最大的dex/defi)
+          - <a href="https://github.com/Uniswap/v3-core" target="_blank noopener noreferrer">Uniswap/v3-core</a>
+        - lens-protocol(SocialFi/社交)
+          - <a href="https://github.com/aave/lens-protocol" target="_blank noopener noreferrer">aave/lens-protocol</a>
+        - ourzora/v3(nft)
+          - <a href="https://github.com/ourzora/v3" target="_blank noopener noreferrer">ourzora/v3</a>
+        - safe-contracts
+          - <a href="https://github.com/safe-global/safe-contracts" target="_blank noopener noreferrer">safe-global/safe-contracts</a>
+      - 冷门合约集
+        - CodeforDAO/contracts
+          - <a href="https://github.com/CodeforDAO/contracts" target="_blank noopener noreferrer">CodeforDAO/contracts</a>
+        - defikingdoms/contracts(kingdom游戏的合约)
+          - <a href="https://github.com/DefiKingdoms/contracts" target="_blank noopener noreferrer">DefiKingdoms/contracts</a>
+      - 合约开发框架
+        - hardhat系列
+          - hardhat(本地编译框架)
+            - <a href="https://github.com/NomicFoundation/hardhat" target="_blank noopener noreferrer">NomicFoundation/hardhat</a>
+          - ethereum-waffle(合约测试工具)
+            - <a href="https://github.com/TrueFiEng/Waffle" target="_blank noopener noreferrer">TrueFiEng/Waffle</a>
+          - hardhat-deploy(快速测试某个高度的区块链)
+            - <a href="https://github.com/wighawag/hardhat-deploy" target="_blank noopener noreferrer">wighawag/hardhat-deploy</a>
+            - 实例代码
+              - <a href="https://github.com/CodeforDAO/contracts/blob/main/utils/helpers.js#L42" target="_blank noopener noreferrer">CodeforDAO/contracts/blob/main/utils/helpers.js#L42</a>
+          - hardhat-gas-reporter(估算合约gas消耗)
+            - <a href="https://github.com/cgewecke/hardhat-gas-reporter" target="_blank noopener noreferrer">cgewecke/hardhat-gas-reporter</a>
+          - solidity-coverage(覆盖率)
+            - <a href="https://github.com/sc-forks/solidity-coverage" target="_blank noopener noreferrer">sc-forks/solidity-coverage</a>
+          - hardhat-etherscan(在etherscan上展示)
+            - <a href="https://www.npmjs.com/package/@nomiclabs/hardhat-etherscan" target="_blank noopener noreferrer">www.npmjs.com</a>
+          - hardhat-tenderly(和tenderly的ci集成sdk)
+            - <a href="https://github.com/Tenderly/hardhat-tenderly" target="_blank noopener noreferrer">Tenderly/hardhat-tenderly</a>
+        - Foundry
+          - <a href="https://github.com/foundry-rs/book" target="_blank noopener noreferrer">foundry-rs/book</a>
+        - truffle
+          - <a href="https://github.com/trufflesuite/truffle" target="_blank noopener noreferrer">trufflesuite/truffle</a>
+      - 实践指南
+        - smart-contract-best-practices(最佳编写实践指南)
+          - <a href="https://github.com/ConsenSys/smart-contract-best-practices" target="_blank noopener noreferrer">ConsenSys/smart-contract-best-practices</a>
+        - awesome-solidity-gas-optimization(优化gas)
+          - <a href="https://github.com/iskdrews/awesome-solidity-gas-optimization" target="_blank noopener noreferrer">iskdrews/awesome-solidity-gas-optimization</a>
+      - 样板项目
+        - scaffold-eth(模板脚手架/web+合约)
+          - <a href="https://github.com/scaffold-eth/scaffold-eth" target="_blank noopener noreferrer">scaffold-eth/scaffold-eth</a>
+        - siwe-quickstart(siwe样板)
+          - <a href="https://github.com/spruceid/siwe-quickstart" target="_blank noopener noreferrer">spruceid/siwe-quickstart</a>
+    - multicall.js(同时调用多个合约/陈旧)
+      - <a href="https://github.com/makerdao/multicall.js" target="_blank noopener noreferrer">makerdao/multicall.js</a>
+    - ganache(本地创建模拟链)
+      - <a href="https://github.com/trufflesuite/ganache" target="_blank noopener noreferrer">trufflesuite/ganache</a>
+    - TypeChain(eth合约的ts类型支持)
+      - <a href="https://github.com/dethcrypto/TypeChain" target="_blank noopener noreferrer">dethcrypto/TypeChain</a>
+    - ui系列
+      - web3uikit(web3实用小组件库)
+        - <a href="https://github.com/web3ui/web3uikit" target="_blank noopener noreferrer">web3ui/web3uikit</a>
+      - ant-design-web3
+        - <a href="https://github.com/ant-design/ant-design-web3" target="_blank noopener noreferrer">ant-design/ant-design-web3</a>
+    - bitcoinjs-lib(btc sdk)
+      - <a href="https://github.com/bitcoinjs/bitcoinjs-lib" target="_blank noopener noreferrer">bitcoinjs/bitcoinjs-lib</a>
+  - 实战项目
+    - MoeMarry(云结婚)
+      - <a href="https://github.com/edisonlee55/MoeMarry" target="_blank noopener noreferrer">edisonlee55/MoeMarry</a>
+    - web3-react(web3最小模板)
+      - <a href="https://github.com/Uniswap/web3-react" target="_blank noopener noreferrer">Uniswap/web3-react</a>
+  - 工具站点
+    - 钱包系列
+      - metamask
+        - <a href="https://metamask.io/" target="_blank noopener noreferrer">metamask.io</a>
+      - web3auth.io
+        - <a href="https://web3auth.io/" target="_blank noopener noreferrer">web3auth.io</a>
+      - magic.link
+        - <a href="https://magic.link/" target="_blank noopener noreferrer">magic.link</a>
+      - phantom.app(solana链的)
+        - <a href="https://phantom.app/" target="_blank noopener noreferrer">phantom.app</a>
+    - openzeppelin合约创建工具
+      - <a href="https://wizard.openzeppelin.com/" target="_blank noopener noreferrer">wizard.openzeppelin.com</a>
+    - pinata(media资源转ipfs)
+      - <a href="https://www.pinata.cloud/" target="_blank noopener noreferrer">www.pinata.cloud</a>
+    - etherscan(eth查询)
+      - <a href="https://etherscan.io/" target="_blank noopener noreferrer">etherscan.io</a>
+    - relay/saas服务商(集群同步商)
+      - infura.io(最早最大)
+        - <a href="https://infura.io/" target="_blank noopener noreferrer">infura.io</a>
+      - quicknode.com
+        - <a href="https://www.quicknode.com/" target="_blank noopener noreferrer">www.quicknode.com</a>
+      - moralis.io(faas服务)
+        - <a href="https://moralis.io/" target="_blank noopener noreferrer">moralis.io</a>
+      - pokt.network
+        - <a href="https://www.pokt.network/" target="_blank noopener noreferrer">www.pokt.network</a>
+      - alchemy(支持nodejs的saas交互)
+        - <a href="https://www.alchemy.com/" target="_blank noopener noreferrer">www.alchemy.com</a>
+      - thirdweb(saas操作合约服务商)
+        - <a href="https://thirdweb.com/" target="_blank noopener noreferrer">thirdweb.com</a>
+    - apeboard.finance(多区块链投资组合展示面板)
+      - <a href="https://apeboard.finance/dashboard" target="_blank noopener noreferrer">apeboard.finance</a>
+    - tenderly.co(监控/调试合约服务)
+      - <a href="https://tenderly.co/" target="_blank noopener noreferrer">tenderly.co</a>
+    - 合约发布测试系列
+      - 本地fork测试
+        - <a href="https://hardhat.org/hardhat-network/guides/mainnet-forking.html" target="_blank noopener noreferrer">hardhat.org</a>
+      - 测试网干
+        - kovan
+          - <a href="https://kovan-testnet.github.io/website/" target="_blank noopener noreferrer">kovan-testnet.github.io</a>
+        - rinkeby
+          - <a href="https://rinkebyfaucet.com/" target="_blank noopener noreferrer">rinkebyfaucet.com</a>
+        - paradigm
+          - <a href="https://faucet.paradigm.xyz/" target="_blank noopener noreferrer">faucet.paradigm.xyz</a>
+        - Ropsten
+          - <a href="https://faucet.egorfine.com/" target="_blank noopener noreferrer">faucet.egorfine.com</a>
+        - Goerli
+          - <a href="https://goerlifaucet.com/" target="_blank noopener noreferrer">goerlifaucet.com</a>
+    - car.ipfs.io(计算文件ipfs cid)
+      - <a href="https://car.ipfs.io/" target="_blank noopener noreferrer">car.ipfs.io</a>
+    - 去中心化域名系列
+      - ens.domain(.eth结尾域名注册)
+        - <a href="https://ens.domains/cn/" target="_blank noopener noreferrer">ens.domains</a>
+      - handshake(保存域名信息在链上)
+        - <a href="https://handshake.org/" target="_blank noopener noreferrer">handshake.org</a>
+    - 去中心化鉴权
+      - verite
+        - <a href="https://www.circle.com/en/verite" target="_blank noopener noreferrer">www.circle.com</a>
+      - spruceid
+        - <a href="https://www.spruceid.com/" target="_blank noopener noreferrer">www.spruceid.com</a>
+      - brightid
+        - <a href="https://www.brightid.org/" target="_blank noopener noreferrer">www.brightid.org</a>
+      - civic pass
+        - <a href="https://www.civic.com/" target="_blank noopener noreferrer">www.civic.com</a>
+      - litentry
+        - <a href="https://litentry.com/" target="_blank noopener noreferrer">litentry.com</a>
+      - project galaxy
+        - <a href="https://galaxy.eco/" target="_blank noopener noreferrer">galaxy.eco</a>
+      - noox
+        - <a href="https://noox.world/" target="_blank noopener noreferrer">noox.world</a>
+      - reputation
+        - <a href="https://reputation.link/" target="_blank noopener noreferrer">reputation.link</a>
+      - identity.com
+        - <a href="https://www.identity.com/home-3/" target="_blank noopener noreferrer">www.identity.com</a>
+    - DAO系列
+      - metacartel(投资dao)
+        - <a href="https://www.metacartel.org/" target="_blank noopener noreferrer">www.metacartel.org</a>
+      - seedclub(孵化dao/社交代币)
+        - <a href="https://www.seedclub.xyz/" target="_blank noopener noreferrer">www.seedclub.xyz</a>
+      - fwb(孵化dao/创作者经济)
+        - <a href="https://www.fwb.help/" target="_blank noopener noreferrer">www.fwb.help</a>
+      - ygg(孵化dao/打金)
+        - <a href="https://yieldguild.io/" target="_blank noopener noreferrer">yieldguild.io</a>
+      - snapshot(dao工具/线下投票)
+        - <a href="https://snapshot.org/#/" target="_blank noopener noreferrer">snapshot.org</a>
+      - gnosis-safe(dao工具/资产管理平台)
+        - <a href="https://gnosis-safe.io/" target="_blank noopener noreferrer">gnosis-safe.io</a>
+    - 去中心化索引系列
+      - thegraph
+        - <a href="https://thegraph.com/en/" target="_blank noopener noreferrer">thegraph.com</a>
+      - rss3(共享社交活动历史)
+        - <a href="https://rss3.io/" target="_blank noopener noreferrer">rss3.io</a>
+      - dataverse(资产/活动轨迹管理)
+        - <a href="https://dataverse.org/" target="_blank noopener noreferrer">dataverse.org</a>
+    - X to earn系列
+      - axieinfinity(play to earn)
+        - <a href="https://axieinfinity.com/" target="_blank noopener noreferrer">axieinfinity.com</a>
+      - stepn(move to earn)
+        - <a href="https://stepn.com/" target="_blank noopener noreferrer">stepn.com</a>
+    - Defi系列
+      - uniswap(交换代币)
+        - <a href="https://uniswap.org/" target="_blank noopener noreferrer">uniswap.org</a>
+      - compound
+        - <a href="https://compound.finance/" target="_blank noopener noreferrer">compound.finance</a>
+      - curve(比uniswap更平滑)
+        - <a href="https://curve.fi/" target="_blank noopener noreferrer">curve.fi</a>
+      - 1inch(寻找最优各平台交易路径)
+        - <a href="https://app.1inch.io/#/1/swap/ETH/DAI" target="_blank noopener noreferrer">app.1inch.io</a>
+    - Gamefi系列
+      - decentraland(虚拟土地交易)
+        - <a href="https://decentraland.org/" target="_blank noopener noreferrer">decentraland.org</a>
+      - sandbox(虚拟土地/创造)
+        - <a href="https://www.sandbox.game/en/" target="_blank noopener noreferrer">www.sandbox.game</a>
+      - alienworlds(太空探索)
+        - <a href="https://alienworlds.io/" target="_blank noopener noreferrer">alienworlds.io</a>
+      - splinterlands(卡牌战斗)
+        - <a href="https://splinterlands.com/" target="_blank noopener noreferrer">splinterlands.com</a>
+      - illuvium(探索世界/打怪)
+        - <a href="https://www.illuvium.io/" target="_blank noopener noreferrer">www.illuvium.io</a>
+    - 分布式存储
+      - 存储网络基础
+        - ipfs(最早的分布式存储)
+          - <a href="https://ipfs.io/" target="_blank noopener noreferrer">ipfs.io</a>
+        - filecoin(基于ipfs的存储网络)
+          - <a href="https://filecoin.io/zh-cn/" target="_blank noopener noreferrer">filecoin.io</a>
+        - arweave(写入付费/读取免费)
+          - <a href="https://www.arweave.org/" target="_blank noopener noreferrer">www.arweave.org</a>
+      - web3.storage(filecoin的高层封装)
+        - <a href="https://web3.storage/" target="_blank noopener noreferrer">web3.storage</a>
+      - nft.storage(web3.storage的nft专用服务)
+        - <a href="https://nft.storage/" target="_blank noopener noreferrer">nft.storage</a>
+      - filebase(整合了多个分布式存储网络的供应商)
+        - <a href="https://filebase.com/" target="_blank noopener noreferrer">filebase.com</a>
+      - bundlr(基于arweave)
+        - <a href="https://docs.bundlr.network/" target="_blank noopener noreferrer">docs.bundlr.network</a>
+      - maidsafe(没什么发展)
+        - <a href="https://maidsafe.net/" target="_blank noopener noreferrer">maidsafe.net</a>
+    - NFT
+      - azuki(艺术品nft)
+        - <a href="https://www.azuki.com/zh" target="_blank noopener noreferrer">www.azuki.com</a>
+      - opensea(最大的nft交易网站)
+        - <a href="https://opensea.io/" target="_blank noopener noreferrer">opensea.io</a>
+      - looksrare
+        - <a href="https://looksrare.org/" target="_blank noopener noreferrer">looksrare.org</a>
+    - 创作者经济
+      - mirror.xyz(web3写博文来募资)
+        - <a href="https://mirror.xyz/" target="_blank noopener noreferrer">mirror.xyz</a>
+      - mask.io(web2到web3桥接)
+        - <a href="https://mask.io/" target="_blank noopener noreferrer">mask.io</a>
+      - rally.io(发行偶像代币)
+        - <a href="https://rally.io/" target="_blank noopener noreferrer">rally.io</a>
+      - bitclout(对标twitter的去中心版社交)
+        - <a href="https://bitclout.com/" target="_blank noopener noreferrer">bitclout.com</a>
+      - lens protocol(通过nft管理社交)
+        - <a href="https://lens.xyz/" target="_blank noopener noreferrer">lens.xyz</a>
+      - audius(去中心化音乐共享)
+        - <a href="https://audius.co/" target="_blank noopener noreferrer">audius.co</a>
+  - 公有链
+    - ethereum.org(主干网)
+      - <a href="https://ethereum.org/zh/" target="_blank noopener noreferrer">ethereum.org</a>
+    - polygon.technology(evm/tps有限)
+      - <a href="https://polygon.technology/" target="_blank noopener noreferrer">polygon.technology</a>
+    - bnbchain(evm/币安链)
+      - <a href="https://www.bnbchain.world/en" target="_blank noopener noreferrer">www.bnbchain.world</a>
+    - solana(evm/多语言支持)
+      - <a href="https://solana.com/zh" target="_blank noopener noreferrer">solana.com</a>
+    - avax.network(evm/tps高/可做subchain)
+      - <a href="https://www.avax.network/" target="_blank noopener noreferrer">www.avax.network</a>
+    - cosmos.network(非evm/tps高)
+      - <a href="https://cosmos.network/" target="_blank noopener noreferrer">cosmos.network</a>
+    - near.org(非evm)
+      - <a href="https://near.org/zh/" target="_blank noopener noreferrer">near.org</a>
+    - starkware.co(非evm/l2网)
+      - <a href="https://starkware.co/starknet/" target="_blank noopener noreferrer">starkware.co</a>
+    - zksync.io(l2网)
+      - <a href="https://zksync.io/" target="_blank noopener noreferrer">zksync.io</a>
+    - scroll.io(l2网)
+      - <a href="https://scroll.io/" target="_blank noopener noreferrer">scroll.io</a>
+    - xdaichain(支持到场证明合约poap)
+      - <a href="https://www.xdaichain.com/" target="_blank noopener noreferrer">www.xdaichain.com</a>
+    - harmony.one(gamefi)
+      - <a href="https://www.harmony.one/" target="_blank noopener noreferrer">www.harmony.one</a>
+    - dfinity.org(完整的dapp生态系统)
+      - <a href="https://dfinity.org/" target="_blank noopener noreferrer">dfinity.org</a>
+  - 周边项目
+    - brownie(python的合约开发工作流)
+      - <a href="https://github.com/eth-brownie/brownie" target="_blank noopener noreferrer">eth-brownie/brownie</a>
+    - ethers-rs(rust写的钱包项目)
+      - <a href="https://github.com/gakonst/ethers-rs" target="_blank noopener noreferrer">gakonst/ethers-rs</a>
+    - juice-interface(众筹网站juice的前端代码)
+      - <a href="https://github.com/jbx-protocol/juice-interface" target="_blank noopener noreferrer">jbx-protocol/juice-interface</a>
+    - starknet.js(starknet sdk)
+      - <a href="https://github.com/0xs34n/starknet.js" target="_blank noopener noreferrer">0xs34n/starknet.js</a>
+    - nile(cairo工具链工具)
+      - <a href="https://github.com/OpenZeppelin/nile" target="_blank noopener noreferrer">OpenZeppelin/nile</a>
+    - argent-x(starknet的钱包)
+      - <a href="https://github.com/argentlabs/argent-x" target="_blank noopener noreferrer">argentlabs/argent-x</a>
+  - 名词解释
+    - <a href="https://twitter.com/punk6529/status/1433002033242595338" target="_blank noopener noreferrer">twitter.com</a>
+    - <a href="https://unstoppabledomains.com/blog/the-web3-glossary" target="_blank noopener noreferrer">unstoppabledomains.com</a>
+  - 安全
+    - 安全手册
+      - <a href="https://e7qjl676i8.feishu.cn/docs/doccn2rvEMHefBYKvyTVRGwe7Pf" target="_blank noopener noreferrer">e7qjl676i8.feishu.cn</a>
+    - 区块链黑暗森林自救手册
+      - <a href="https://github.com/slowmist/Blockchain-dark-forest-selfguard-handbook" target="_blank noopener noreferrer">slowmist/Blockchain-dark-forest-selfguard-handbook</a>
+  - 交易所
+    - binance
+      - <a href="https://www.binance.com/zh-CN" target="_blank noopener noreferrer">www.binance.com</a>
+    - okx
+      - <a href="https://www.okx.com/" target="_blank noopener noreferrer">www.okx.com</a>
+    - huobi
+      - <a href="https://www.huobi.com/zh-cn/" target="_blank noopener noreferrer">www.huobi.com</a>
+    - ftx
+      - <a href="https://ftx.com/" target="_blank noopener noreferrer">ftx.com</a>
+  - 教程系列
+    - WTFEthers(ethers.js学习代码集)
+      - <a href="https://github.com/WTFAcademy/WTFEthers" target="_blank noopener noreferrer">WTFAcademy/WTFEthers</a>
+- 教程类
+  - image-element(img所有属性介绍)
+    - <a href="https://github.com/nucliweb/image-element" target="_blank noopener noreferrer">nucliweb/image-element</a>
+## 手机端
+- flutter
+  - 框架
+    - kraken
+      - docs
+        - <a href="https://openkraken.com/" target="_blank noopener noreferrer">openkraken.com</a>
+      - <a href="https://github.com/openkraken/kraken" target="_blank noopener noreferrer">openkraken/kraken</a>
+    - fair(动态化更新widget)
+      - <a href="https://github.com/wuba/fair" target="_blank noopener noreferrer">wuba/fair</a>
+    - mxflutter(js写flutter)
+      - <a href="https://github.com/tencent/mxflutter" target="_blank noopener noreferrer">tencent/mxflutter</a>
+    - webf(用js开发flutter)
+      - <a href="https://github.com/openwebf/webf" target="_blank noopener noreferrer">openwebf/webf</a>
+  - 教程
+    - flutter-tips-and-tricks
+      - <a href="https://github.com/vandadnp/flutter-tips-and-tricks" target="_blank noopener noreferrer">vandadnp/flutter-tips-and-tricks</a>
+  - 工具库
+    - flame(游戏框架)
+      - <a href="https://github.com/flame-engine/flame" target="_blank noopener noreferrer">flame-engine/flame</a>
+    - fl_chart(图表库)
+      - <a href="https://github.com/imaNNeoFighT/fl_chart" target="_blank noopener noreferrer">imaNNeoFighT/fl_chart</a>
+  - ui库
+    - ant_design_flutter
+      - <a href="https://github.com/CalsRanna/ant_design_flutter" target="_blank noopener noreferrer">CalsRanna/ant_design_flutter</a>
+- react-native
+  - 插件库
+    - react-native-zoomable-view
+      - <a href="https://github.com/DuDigital/react-native-zoomable-view" target="_blank noopener noreferrer">DuDigital/react-native-zoomable-view</a>
+    - umi-plugin-react-native
+      - <a href="https://github.com/youngjuning/umi-plugin-react-native" target="_blank noopener noreferrer">youngjuning/umi-plugin-react-native</a>
+    - react-native-iconfont-cli(把iconfont.cn转换为RN组件工具)
+      - <a href="https://github.com/iconfont-cli/react-native-iconfont-cli" target="_blank noopener noreferrer">iconfont-cli/react-native-iconfont-cli</a>
+    - react-native-share(分享社交平台库)
+      - <a href="https://github.com/react-native-share/react-native-share" target="_blank noopener noreferrer">react-native-share/react-native-share</a>
+    - react-native-gesture-handler(手势库)
+      - <a href="https://github.com/software-mansion/react-native-gesture-handler" target="_blank noopener noreferrer">software-mansion/react-native-gesture-handler</a>
+    - 骨架屏系列
+      - react-native-skeleton-placeholder(骨架屏)
+        - <a href="https://github.com/chramos/react-native-skeleton-placeholder" target="_blank noopener noreferrer">chramos/react-native-skeleton-placeholder</a>
+      - react-native-shimmer-placeholder
+        - <a href="https://github.com/tomzaku/react-native-shimmer-placeholder" target="_blank noopener noreferrer">tomzaku/react-native-shimmer-placeholder</a>
+      - react-native-skeleton-content
+        - <a href="https://github.com/alexZajac/react-native-skeleton-content" target="_blank noopener noreferrer">alexZajac/react-native-skeleton-content</a>
+    - react-native-file-access(系统文件通讯)
+      - <a href="https://github.com/alpha0010/react-native-file-access" target="_blank noopener noreferrer">alpha0010/react-native-file-access</a>
+    - react-native-safe-area-context(限制安全区域)
+      - <a href="https://github.com/th3rdwave/react-native-safe-area-context" target="_blank noopener noreferrer">th3rdwave/react-native-safe-area-context</a>
+    - react-navigation-header-buttons(标题按钮库)
+      - <a href="https://github.com/vonovak/react-navigation-header-buttons" target="_blank noopener noreferrer">vonovak/react-navigation-header-buttons</a>
+    - react-native-iap(内购库)
+      - <a href="https://github.com/dooboolab/react-native-iap" target="_blank noopener noreferrer">dooboolab/react-native-iap</a>
+    - react-native-permissions(聚合权限包ios/Android)
+      - <a href="https://github.com/zoontek/react-native-permissions" target="_blank noopener noreferrer">zoontek/react-native-permissions</a>
+    - react-native-blur(模糊滤镜)
+      - <a href="https://github.com/Kureev/react-native-blur" target="_blank noopener noreferrer">Kureev/react-native-blur</a>
+    - react-native-linear-gradient(线性渐变)
+      - <a href="https://github.com/react-native-linear-gradient/react-native-linear-gradient" target="_blank noopener noreferrer">react-native-linear-gradient/react-native-linear-gradient</a>
+    - 可视化/图表库
+      - gl-react(提供opengl能力)
+        - <a href="https://github.com/gre/gl-react" target="_blank noopener noreferrer">gre/gl-react</a>
+      - react-native-graph
+        - <a href="https://github.com/margelo/react-native-graph" target="_blank noopener noreferrer">margelo/react-native-graph</a>
+      - wrn-echarts(echarts/58方案/svg 适配器)
+        - <a href="https://github.com/wuba/react-native-echarts" target="_blank noopener noreferrer">wuba/react-native-echarts</a>
+      - react-native-charts-wrapper(原生开发的图表库)
+        - <a href="https://github.com/wuxudong/react-native-charts-wrapper" target="_blank noopener noreferrer">wuxudong/react-native-charts-wrapper</a>
+      - react-native-echarts(老)
+        - <a href="https://github.com/somonus/react-native-echarts" target="_blank noopener noreferrer">somonus/react-native-echarts</a>
+      - react-native-echarts-pro(webview展示echarts方案)
+        - <a href="https://github.com/supervons/react-native-echarts-pro" target="_blank noopener noreferrer">supervons/react-native-echarts-pro</a>
+      - react-native-skia(高性能2d绘图库)
+        - <a href="https://github.com/Shopify/react-native-skia" target="_blank noopener noreferrer">Shopify/react-native-skia</a>
+      - victory-native系列
+        - victory-native(旧)
+          - <a href="https://github.com/FormidableLabs/victory-native" target="_blank noopener noreferrer">FormidableLabs/victory-native</a>
+        - victory-native-xl
+          - <a href="https://github.com/FormidableLabs/victory-native-xl" target="_blank noopener noreferrer">FormidableLabs/victory-native-xl</a>
+    - react-native-shadow-2(生成svg的阴影)
+      - <a href="https://github.com/SrBrahma/react-native-shadow-2" target="_blank noopener noreferrer">SrBrahma/react-native-shadow-2</a>
+    - input-mask(placeholder系列)
+      - react-native-masked-text(2020维护为止)
+        - <a href="https://github.com/benhurott/react-native-masked-text" target="_blank noopener noreferrer">benhurott/react-native-masked-text</a>
+      - react-native-mask-text
+        - <a href="https://github.com/akinncar/react-native-mask-text" target="_blank noopener noreferrer">akinncar/react-native-mask-text</a>
+      - react-native-text-input-mask
+        - <a href="https://github.com/react-native-text-input-mask/react-native-text-input-mask" target="_blank noopener noreferrer">react-native-text-input-mask/react-native-text-input-mask</a>
+      - react-native-mask-input
+        - <a href="https://github.com/CaioQuirinoMedeiros/react-native-mask-input" target="_blank noopener noreferrer">CaioQuirinoMedeiros/react-native-mask-input</a>
+    - react-native-flash-message(顶部通知横幅/条)
+      - <a href="https://github.com/lucasferreira/react-native-flash-message" target="_blank noopener noreferrer">lucasferreira/react-native-flash-message</a>
+    - react-native-scrollable-tabview(支持滚动粘性布局的tab)
+      - <a href="https://github.com/itenl/react-native-scrollable-tabview" target="_blank noopener noreferrer">itenl/react-native-scrollable-tabview</a>
+    - react-native-header-view(头部视图header模板)
+      - <a href="https://github.com/WrathChaos/react-native-header-view" target="_blank noopener noreferrer">WrathChaos/react-native-header-view</a>
+    - react-native-keychain(访问钥匙串)
+      - <a href="https://github.com/oblador/react-native-keychain" target="_blank noopener noreferrer">oblador/react-native-keychain</a>
+    - react-native-panorama-view(显示全景图组件)
+      - <a href="https://github.com/lightbasenl/react-native-panorama-view" target="_blank noopener noreferrer">lightbasenl/react-native-panorama-view</a>
+    - react-native-pdf
+      - <a href="https://github.com/wonday/react-native-pdf" target="_blank noopener noreferrer">wonday/react-native-pdf</a>
+    - react-native-testing-library(测试库)
+      - <a href="https://github.com/callstack/react-native-testing-library" target="_blank noopener noreferrer">callstack/react-native-testing-library</a>
+    - react-native-ble-plx(低功耗蓝牙库)
+      - <a href="https://github.com/dotintent/react-native-ble-plx" target="_blank noopener noreferrer">dotintent/react-native-ble-plx</a>
+    - react-native-accessibility-engine(a11y断言库)
+      - <a href="https://github.com/aryella-lacerda/react-native-accessibility-engine" target="_blank noopener noreferrer">aryella-lacerda/react-native-accessibility-engine</a>
+    - react-native-bootsplash(app启动画面)
+      - <a href="https://github.com/zoontek/react-native-bootsplash" target="_blank noopener noreferrer">zoontek/react-native-bootsplash</a>
+    - lottie-react-native
+      - <a href="https://github.com/lottie-react-native/lottie-react-native" target="_blank noopener noreferrer">lottie-react-native/lottie-react-native</a>
+    - react-native-oss-license(证书列表生成器)
+      - <a href="https://github.com/k-tomoyasu/react-native-oss-license" target="_blank noopener noreferrer">k-tomoyasu/react-native-oss-license</a>
+    - react-native-paper-tabs(tab组件/material ui风格)
+      - <a href="https://github.com/web-ridge/react-native-paper-tabs" target="_blank noopener noreferrer">web-ridge/react-native-paper-tabs</a>
+    - react-native-image-colors(提取图片主色)
+      - <a href="https://github.com/osamaqarem/react-native-image-colors" target="_blank noopener noreferrer">osamaqarem/react-native-image-colors</a>
+    - react-native-clean-project(自动清除RN的缓存和模块并重装)
+      - <a href="https://github.com/pmadruga/react-native-clean-project" target="_blank noopener noreferrer">pmadruga/react-native-clean-project</a>
+    - react-native-onboarding-swiper(应用可滑动引导页/广告页)
+      - <a href="https://github.com/jfilter/react-native-onboarding-swiper" target="_blank noopener noreferrer">jfilter/react-native-onboarding-swiper</a>
+    - loading加载系列
+      - react-native-loading-spinner-overlay(全屏loading)
+        - <a href="https://github.com/joinspontaneous/react-native-loading-spinner-overlay" target="_blank noopener noreferrer">joinspontaneous/react-native-loading-spinner-overlay</a>
+      - react-native-progress(圆形/长条加载组件)
+        - <a href="https://github.com/oblador/react-native-progress" target="_blank noopener noreferrer">oblador/react-native-progress</a>
+      - react-native-animated-spinkit(加载器合集/陈旧)
+        - <a href="https://github.com/tienphaw/react-native-animated-spinkit" target="_blank noopener noreferrer">tienphaw/react-native-animated-spinkit</a>
+    - react-native-fs(访问文件系统)
+      - <a href="https://github.com/itinance/react-native-fs" target="_blank noopener noreferrer">itinance/react-native-fs</a>
+    - dropdown/select下拉菜单系列
+      - react-native-select-dropdown(高度可定制的下拉select)
+        - <a href="https://github.com/AdelRedaa97/react-native-select-dropdown" target="_blank noopener noreferrer">AdelRedaa97/react-native-select-dropdown</a>
+      - react-native-element-dropdown(原生下拉组件)
+        - <a href="https://github.com/hoaphantn7604/react-native-element-dropdown" target="_blank noopener noreferrer">hoaphantn7604/react-native-element-dropdown</a>
+      - zeego(下拉菜单menu)
+        - <a href="https://github.com/nandorojo/zeego" target="_blank noopener noreferrer">nandorojo/zeego</a>
+      - react-native-context-menu-view(使用本机上下文菜单)
+        - <a href="https://github.com/mpiannucci/react-native-context-menu-view" target="_blank noopener noreferrer">mpiannucci/react-native-context-menu-view</a>
+      - react-native-select-pro(select组件)
+        - <a href="https://github.com/MobileReality/react-native-select-pro" target="_blank noopener noreferrer">MobileReality/react-native-select-pro</a>
+      - react-native-picker-select(模拟原生select)
+        - <a href="https://github.com/lawnstarter/react-native-picker-select" target="_blank noopener noreferrer">lawnstarter/react-native-picker-select</a>
+    - solito(在Nextjs中使用RN构建导航)
+      - <a href="https://github.com/nandorojo/solito" target="_blank noopener noreferrer">nandorojo/solito</a>
+    - modal系列
+      - react-native-modalfy
+        - <a href="https://github.com/colorfy-software/react-native-modalfy" target="_blank noopener noreferrer">colorfy-software/react-native-modalfy</a>
+    - react-native-awesome-gallery(画廊列表/查看图片列表用)
+      - <a href="https://github.com/Flair-Dev/react-native-awesome-gallery" target="_blank noopener noreferrer">Flair-Dev/react-native-awesome-gallery</a>
+    - electrode-native(将RN与原生集成)
+      - <a href="https://github.com/electrode-io/electrode-native" target="_blank noopener noreferrer">electrode-io/electrode-native</a>
+    - react-native-figma-squircle(figma风格圆角组件)
+      - <a href="https://github.com/tienphaw/react-native-figma-squircle" target="_blank noopener noreferrer">tienphaw/react-native-figma-squircle</a>
+    - react-native-reorderable-list(可拖拽排序列表组件)
+      - <a href="https://github.com/omahili/react-native-reorderable-list" target="_blank noopener noreferrer">omahili/react-native-reorderable-list</a>
+    - animation动画系列
+      - react-native-reanimated(动画库)
+        - <a href="https://github.com/software-mansion/react-native-reanimated" target="_blank noopener noreferrer">software-mansion/react-native-reanimated</a>
+      - legend-motion(冷)
+        - <a href="https://github.com/LegendApp/legend-motion" target="_blank noopener noreferrer">LegendApp/legend-motion</a>
+      - react-native-instagram(IG页面转换效果)
+        - <a href="https://github.com/enesozturk/react-native-instagram" target="_blank noopener noreferrer">enesozturk/react-native-instagram</a>
+      - react-native-redash(高层动画api)
+        - <a href="https://github.com/wcandillon/react-native-redash" target="_blank noopener noreferrer">wcandillon/react-native-redash</a>
+      - @animatereactnative/stagger(节点顺序动画出现)
+        - <a href="https://github.com/animate-react-native/stagger" target="_blank noopener noreferrer">animate-react-native/stagger</a>
+      - 实战例子
+        - React-Native-Animations
+          - <a href="https://github.com/redwanul10/React-Native-Animations" target="_blank noopener noreferrer">redwanul10/React-Native-Animations</a>
+    - metro(构建器)
+      - <a href="https://github.com/facebook/metro" target="_blank noopener noreferrer">facebook/metro</a>
+    - react-native-image-crop-picker(图片裁剪器)
+      - <a href="https://github.com/ivpusic/react-native-image-crop-picker" target="_blank noopener noreferrer">ivpusic/react-native-image-crop-picker</a>
+    - 虚拟列表系列
+      - flash-list(无限虚拟列表)
+        - <a href="https://github.com/Shopify/flash-list" target="_blank noopener noreferrer">Shopify/flash-list</a>
+      - react-native-big-list(大数据列表组件)
+        - <a href="https://github.com/marcocesarato/react-native-big-list" target="_blank noopener noreferrer">marcocesarato/react-native-big-list</a>
+      - react-native-bidirectional-infinite-scroll(双向无限滚动/陈旧)
+        - <a href="https://github.com/GetStream/react-native-bidirectional-infinite-scroll" target="_blank noopener noreferrer">GetStream/react-native-bidirectional-infinite-scroll</a>
+    - react-native-switch-selector(switch组件)
+      - <a href="https://github.com/jkdrangel/react-native-switch-selector" target="_blank noopener noreferrer">jkdrangel/react-native-switch-selector</a>
+    - react-native-code-push(动态更新代码工具)
+      - <a href="https://github.com/microsoft/react-native-code-push" target="_blank noopener noreferrer">microsoft/react-native-code-push</a>
+    - modal下部上弹框系列
+      - react-native-actions-sheet(下部上弹modal)
+        - <a href="https://github.com/ammarahm-ed/react-native-actions-sheet" target="_blank noopener noreferrer">ammarahm-ed/react-native-actions-sheet</a>
+      - react-native-modalize
+        - <a href="https://github.com/jeremybarbet/react-native-modalize" target="_blank noopener noreferrer">jeremybarbet/react-native-modalize</a>
+      - react-native-bottom-sheet
+        - <a href="https://github.com/gorhom/react-native-bottom-sheet" target="_blank noopener noreferrer">gorhom/react-native-bottom-sheet</a>
+      - react-native-reanimated-bottom-sheet
+        - <a href="https://github.com/osdnk/react-native-reanimated-bottom-sheet" target="_blank noopener noreferrer">osdnk/react-native-reanimated-bottom-sheet</a>
+    - react-native-textinput-effects(动画效果的输入框)
+      - <a href="https://github.com/halilb/react-native-textinput-effects" target="_blank noopener noreferrer">halilb/react-native-textinput-effects</a>
+    - react-native-zephyr(在RN使用tailwindcss)
+      - <a href="https://github.com/FormidableLabs/react-native-zephyr" target="_blank noopener noreferrer">FormidableLabs/react-native-zephyr</a>
+    - carousel轮播图系列
+      - react-native-snap-carousel(老)
+        - <a href="https://github.com/meliorence/react-native-snap-carousel" target="_blank noopener noreferrer">meliorence/react-native-snap-carousel</a>
+      - react-native-reanimated-carousel(轮播图组件)
+        - <a href="https://github.com/dohooo/react-native-reanimated-carousel" target="_blank noopener noreferrer">dohooo/react-native-reanimated-carousel</a>
+      - react-native-swiper
+        - <a href="https://github.com/leecade/react-native-swiper" target="_blank noopener noreferrer">leecade/react-native-swiper</a>
+    - sqlite系列
+      - react-native-sqlite-2(sqlite3)
+        - <a href="https://github.com/craftzdog/react-native-sqlite-2" target="_blank noopener noreferrer">craftzdog/react-native-sqlite-2</a>
+      - react-native-quick-sqlite
+        - <a href="https://github.com/ospfranco/react-native-quick-sqlite" target="_blank noopener noreferrer">ospfranco/react-native-quick-sqlite</a>
+      - react-native-quick-sqlite(新)
+        - <a href="https://github.com/margelo/react-native-quick-sqlite" target="_blank noopener noreferrer">margelo/react-native-quick-sqlite</a>
+    - camera系列
+      - react-native-camera(相机组件)
+        - <a href="https://github.com/react-native-camera/react-native-camera" target="_blank noopener noreferrer">react-native-camera/react-native-camera</a>
+      - react-native-vision-camera
+        - <a href="https://github.com/mrousavy/react-native-vision-camera" target="_blank noopener noreferrer">mrousavy/react-native-vision-camera</a>
+      - vision-camera-barcode-scanner(条形码扫描库)
+        - <a href="https://github.com/mgcrea/vision-camera-barcode-scanner" target="_blank noopener noreferrer">mgcrea/vision-camera-barcode-scanner</a>
+      - vision-camera-resize-plugin(快速调整camera帧数据大小)
+        - <a href="https://github.com/mrousavy/vision-camera-resize-plugin" target="_blank noopener noreferrer">mrousavy/vision-camera-resize-plugin</a>
+    - react-native-jsi-base-coder(base64编解码器)
+      - <a href="https://github.com/jeremybarbet/react-native-jsi-base-coder" target="_blank noopener noreferrer">jeremybarbet/react-native-jsi-base-coder</a>
+    - mmkv键值对存储系列
+      - react-native-mmkv(最快的键值对存储)
+        - <a href="https://github.com/mrousavy/react-native-mmkv" target="_blank noopener noreferrer">mrousavy/react-native-mmkv</a>
+      - react-native-mmkv-storage(快速加密的存储)
+        - <a href="https://github.com/ammarahm-ed/react-native-mmkv-storage" target="_blank noopener noreferrer">ammarahm-ed/react-native-mmkv-storage</a>
+    - webview系列
+      - react-native-webview(webview)
+        - <a href="https://github.com/react-native-webview/react-native-webview" target="_blank noopener noreferrer">react-native-webview/react-native-webview</a>
+      - react-native-autoheight-webview(自动高度的webview)
+        - <a href="https://github.com/iou90/react-native-autoheight-webview" target="_blank noopener noreferrer">iou90/react-native-autoheight-webview</a>
+    - image图片系列
+      - react-native-svg(svg支持)
+        - <a href="https://github.com/software-mansion/react-native-svg" target="_blank noopener noreferrer">software-mansion/react-native-svg</a>
+      - react-native-webp-format(webp支持)
+        - <a href="https://github.com/Aleksefo/react-native-webp-format" target="_blank noopener noreferrer">Aleksefo/react-native-webp-format</a>
+      - react-native-svg-transformer(RN版svgr)
+        - <a href="https://github.com/kristerkari/react-native-svg-transformer" target="_blank noopener noreferrer">kristerkari/react-native-svg-transformer</a>
+      - react-native-reanimated-image-viewer(图片查看器/可放大)
+        - <a href="https://github.com/andresribeiro/react-native-reanimated-image-viewer" target="_blank noopener noreferrer">andresribeiro/react-native-reanimated-image-viewer</a>
+      - react-native-fast-image(高性能图片组件)
+        - <a href="https://github.com/DylanVann/react-native-fast-image" target="_blank noopener noreferrer">DylanVann/react-native-fast-image</a>
+      - react-native-image-picker(图片选择器)
+        - <a href="https://github.com/react-native-image-picker/react-native-image-picker" target="_blank noopener noreferrer">react-native-image-picker/react-native-image-picker</a>
+      - react-native-blurhash(图片模糊加载占位符)
+        - <a href="https://github.com/mrousavy/react-native-blurhash" target="_blank noopener noreferrer">mrousavy/react-native-blurhash</a>
+    - react-native-quick-crypto(crypto实现)
+      - <a href="https://github.com/margelo/react-native-quick-crypto" target="_blank noopener noreferrer">margelo/react-native-quick-crypto</a>
+    - react-native-calendars(日历选择器)
+      - <a href="https://github.com/wix/react-native-calendars" target="_blank noopener noreferrer">wix/react-native-calendars</a>
+    - react-native-gifted-chat(聊天对话ui)
+      - <a href="https://github.com/FaridSafi/react-native-gifted-chat" target="_blank noopener noreferrer">FaridSafi/react-native-gifted-chat</a>
+    - react-native-performance(测量RN速度/性能)
+      - <a href="https://github.com/Shopify/react-native-performance" target="_blank noopener noreferrer">Shopify/react-native-performance</a>
+    - input输入组件系列
+      - react-native-autocomplete-input(自动补全输入框)
+        - <a href="https://github.com/mrlaessig/react-native-autocomplete-input" target="_blank noopener noreferrer">mrlaessig/react-native-autocomplete-input</a>
+      - react-native-drag-text-editor(动态适应大小的输入框)
+        - <a href="https://github.com/eneskarpuz/react-native-drag-text-editor" target="_blank noopener noreferrer">eneskarpuz/react-native-drag-text-editor</a>
+    - react-native-interactable(可交互的视图view区域)
+      - <a href="https://github.com/wix/react-native-interactable" target="_blank noopener noreferrer">wix/react-native-interactable</a>
+    - react-native-webrtc(webrtc支持)
+      - <a href="https://github.com/react-native-webrtc/react-native-webrtc" target="_blank noopener noreferrer">react-native-webrtc/react-native-webrtc</a>
+    - notification通知系列
+      - react-native-notifications
+        - <a href="https://github.com/wix/react-native-notifications" target="_blank noopener noreferrer">wix/react-native-notifications</a>
+      - notifee(持久化通知库)
+        - <a href="https://github.com/invertase/notifee" target="_blank noopener noreferrer">invertase/notifee</a>
+    - react-native-firebase(firebase集成)
+      - <a href="https://github.com/invertase/react-native-firebase" target="_blank noopener noreferrer">invertase/react-native-firebase</a>
+    - react-native-android-widget(安卓widget)
+      - <a href="https://github.com/sAleksovski/react-native-android-widget" target="_blank noopener noreferrer">sAleksovski/react-native-android-widget</a>
+    - react-native-bouncy-checkbox(弹性checkbox组件)
+      - <a href="https://github.com/WrathChaos/react-native-bouncy-checkbox" target="_blank noopener noreferrer">WrathChaos/react-native-bouncy-checkbox</a>
+    - react-native-fiesta(烟花/庆祝动画)
+      - <a href="https://github.com/mateoguzmana/react-native-fiesta" target="_blank noopener noreferrer">mateoguzmana/react-native-fiesta</a>
+    - datepicker日期选择系列
+      - datetimepicker(时间日期选取组件)
+        - <a href="https://github.com/react-native-datetimepicker/datetimepicker" target="_blank noopener noreferrer">react-native-datetimepicker/datetimepicker</a>
+      - react-native-modal-datetime-picker
+        - <a href="https://github.com/mmazzarolo/react-native-modal-datetime-picker" target="_blank noopener noreferrer">mmazzarolo/react-native-modal-datetime-picker</a>
+    - @bacons/mdx(mdx渲染支持)
+      - <a href="https://github.com/EvanBacon/expo-mdx/tree/main/packages/mdx" target="_blank noopener noreferrer">EvanBacon/expo-mdx/tree/main/packages/mdx</a>
+    - keyboard键盘系列
+      - react-native-keyboard-controller(管理键盘)
+        - <a href="https://github.com/kirillzyusko/react-native-keyboard-controller" target="_blank noopener noreferrer">kirillzyusko/react-native-keyboard-controller</a>
+    - react-native-volume-manager(系统音量管理)
+      - <a href="https://github.com/hirbod/react-native-volume-manager" target="_blank noopener noreferrer">hirbod/react-native-volume-manager</a>
+    - react-native-iconify(icon组件)
+      - <a href="https://github.com/oktaysenkan/react-native-iconify" target="_blank noopener noreferrer">oktaysenkan/react-native-iconify</a>
+    - react-native-pager-view(可左右滑动的展示区域)
+      - <a href="https://github.com/callstack/react-native-pager-view" target="_blank noopener noreferrer">callstack/react-native-pager-view</a>
+    - app-icon-badge(expo用/自定义app icon)
+      - <a href="https://github.com/obytes/app-icon-badge" target="_blank noopener noreferrer">obytes/app-icon-badge</a>
+    - react-native-chatgpt(gpt集成工具)
+      - <a href="https://github.com/rgommezz/react-native-chatgpt" target="_blank noopener noreferrer">rgommezz/react-native-chatgpt</a>
+    - react-native-url-polyfill(URLSearchParams polyfill)
+      - <a href="https://github.com/charpeni/react-native-url-polyfill" target="_blank noopener noreferrer">charpeni/react-native-url-polyfill</a>
+    - react-native-avoid-softinput(自动调整软输入与视口)
+      - <a href="https://github.com/mateusz1913/react-native-avoid-softinput" target="_blank noopener noreferrer">mateusz1913/react-native-avoid-softinput</a>
+    - expo系列
+      - expo-stable-diffusion
+        - <a href="https://github.com/andrei-zgirvaci/expo-stable-diffusion" target="_blank noopener noreferrer">andrei-zgirvaci/expo-stable-diffusion</a>
+      - expo-mdx(在RN中使用mdx/冷门)
+        - <a href="https://github.com/evanbacon/expo-mdx" target="_blank noopener noreferrer">evanbacon/expo-mdx</a>
+      - expo-ahap(播放ahap文件)
+        - <a href="https://github.com/EvanBacon/expo-ahap" target="_blank noopener noreferrer">EvanBacon/expo-ahap</a>
+      - create-expo-stack(创建expo应用模板)
+        - <a href="https://github.com/danstepanov/create-expo-stack" target="_blank noopener noreferrer">danstepanov/create-expo-stack</a>
+      - react-native-ssl-pinning(ssl pin插件)
+        - <a href="https://github.com/bamlab/react-native-ssl-pinning" target="_blank noopener noreferrer">bamlab/react-native-ssl-pinning</a>
+      - expo-video-metadata(提取视频元信息)
+        - <a href="https://github.com/hirbod/expo-video-metadata" target="_blank noopener noreferrer">hirbod/expo-video-metadata</a>
+      - config-plugins(各种其他插件的expo兼容配置)
+        - <a href="https://github.com/expo/config-plugins" target="_blank noopener noreferrer">expo/config-plugins</a>
+    - @config-plugins/apple-settings(生成apple设置ui样式)
+      - <a href="https://github.com/expo/config-plugins/tree/main/packages/apple-settings" target="_blank noopener noreferrer">expo/config-plugins/tree/main/packages/apple-settings</a>
+    - react-native-fast-shadow(shadow阴影效果)
+      - <a href="https://github.com/alan-eu/react-native-fast-shadow" target="_blank noopener noreferrer">alan-eu/react-native-fast-shadow</a>
+    - clean-rn(清理RN缓存/冷门)
+      - <a href="https://github.com/mrousavy/clean-rn" target="_blank noopener noreferrer">mrousavy/clean-rn</a>
+    - react-native-worklets-core(创建worker工具)
+      - <a href="https://github.com/margelo/react-native-worklets-core" target="_blank noopener noreferrer">margelo/react-native-worklets-core</a>
+    - react-native-z-view(在所有视图上层展示内容)
+      - <a href="https://github.com/intergalacticspacehighway/react-native-z-view" target="_blank noopener noreferrer">intergalacticspacehighway/react-native-z-view</a>
+    - react-native-performance(性能测量工具)
+      - <a href="https://github.com/shopify/react-native-performance" target="_blank noopener noreferrer">shopify/react-native-performance</a>
+    - react-native-secure-window(防止截屏覆盖)
+      - <a href="https://github.com/bufgix/react-native-secure-window" target="_blank noopener noreferrer">bufgix/react-native-secure-window</a>
+    - style样式方案工具
+      - react-native-unistyles
+        - <a href="https://github.com/jpudysz/react-native-unistyles" target="_blank noopener noreferrer">jpudysz/react-native-unistyles</a>
+      - osmicsx(样式框架/冷门)
+        - <a href="https://github.com/OsmiCSX/osmicsx" target="_blank noopener noreferrer">OsmiCSX/osmicsx</a>
+      - nativewind(tailwind+RN设计系统)
+        - <a href="https://github.com/marklawlor/nativewind" target="_blank noopener noreferrer">marklawlor/nativewind</a>
+    - react-native-compressor(图片压缩/支持expo插件)
+      - <a href="https://github.com/numandev1/react-native-compressor" target="_blank noopener noreferrer">numandev1/react-native-compressor</a>
+    - text系列
+      - react-native-fast-text
+        - <a href="https://github.com/peterpme/react-native-fast-text" target="_blank noopener noreferrer">peterpme/react-native-fast-text</a>
+      - react-native-optimizer
+        - <a href="https://github.com/marklawlor/react-native-optimizer" target="_blank noopener noreferrer">marklawlor/react-native-optimizer</a>
+    - tv系列
+      - react-tv-space-navigation
+        - <a href="https://github.com/bamlab/react-tv-space-navigation" target="_blank noopener noreferrer">bamlab/react-tv-space-navigation</a>
+    - metro-code-split(分包库/58)
+      - <a href="https://github.com/wuba/metro-code-split" target="_blank noopener noreferrer">wuba/metro-code-split</a>
+    - screen录制/截屏系列
+      - react-native-view-shot(将view截图)
+        - <a href="https://github.com/gre/react-native-view-shot" target="_blank noopener noreferrer">gre/react-native-view-shot</a>
+      - react-native-record-screen(录屏)
+        - <a href="https://github.com/yutasuzuki/react-native-record-screen" target="_blank noopener noreferrer">yutasuzuki/react-native-record-screen</a>
+      - react-native-screenshot-detect(截屏检测)
+        - <a href="https://github.com/iamacup/react-native-screenshot-detect" target="_blank noopener noreferrer">iamacup/react-native-screenshot-detect</a>
+    - react-verification-input(验证码输入组件)
+      - <a href="https://github.com/andreaswilli/react-verification-input" target="_blank noopener noreferrer">andreaswilli/react-verification-input</a>
+    - reactotron(检查调试RN程序的库)
+      - <a href="https://github.com/infinitered/reactotron" target="_blank noopener noreferrer">infinitered/reactotron</a>
+    - react-native-slider(滑块组件)
+      - <a href="https://github.com/callstack/react-native-slider" target="_blank noopener noreferrer">callstack/react-native-slider</a>
+    - rn-fetch-blob(请求库)
+      - <a href="https://github.com/joltup/rn-fetch-blob" target="_blank noopener noreferrer">joltup/rn-fetch-blob</a>
+    - react-native-release-profiler(性能分析)
+      - <a href="https://github.com/margelo/react-native-release-profiler" target="_blank noopener noreferrer">margelo/react-native-release-profiler</a>
+    - react-native-render-html(渲染html)
+      - <a href="https://github.com/meliorence/react-native-render-html" target="_blank noopener noreferrer">meliorence/react-native-render-html</a>
+    - map/geo地图系列
+      - react-native-map-link(在地图app中打开位置)
+        - <a href="https://github.com/flexible-agency/react-native-map-link" target="_blank noopener noreferrer">flexible-agency/react-native-map-link</a>
+      - react-native-maps
+        - <a href="https://github.com/react-native-maps/react-native-maps" target="_blank noopener noreferrer">react-native-maps/react-native-maps</a>
+      - react-native-geolocation(地理定位api)
+        - <a href="https://github.com/michalchudziak/react-native-geolocation" target="_blank noopener noreferrer">michalchudziak/react-native-geolocation</a>
+      - react-native-background-geolocation(后台定位工具)
+        - <a href="https://github.com/transistorsoft/react-native-background-geolocation" target="_blank noopener noreferrer">transistorsoft/react-native-background-geolocation</a>
+    - widget小组件系列
+      - react-native-widget-extension(ios小组件示例)
+        - <a href="https://github.com/bndkt/react-native-widget-extension" target="_blank noopener noreferrer">bndkt/react-native-widget-extension</a>
+    - 富文本编辑器系列
+      - react-native-rich-editor
+        - <a href="https://github.com/wxik/react-native-rich-editor" target="_blank noopener noreferrer">wxik/react-native-rich-editor</a>
+    - react-native-skottie(lottie支持/更快)
+      - <a href="https://github.com/margelo/react-native-skottie" target="_blank noopener noreferrer">margelo/react-native-skottie</a>
+    - navigation导航路由库系列
+      - react-navigation(路由导航)
+        - <a href="https://github.com/react-navigation/react-navigation" target="_blank noopener noreferrer">react-navigation/react-navigation</a>
+      - react-native-navigation
+        - <a href="https://github.com/wix/react-native-navigation" target="_blank noopener noreferrer">wix/react-native-navigation</a>
+    - 音视频系列
+      - 音频系列
+        - react-native-track-player(音乐播放器)
+          - <a href="https://github.com/doublesymmetry/react-native-track-player" target="_blank noopener noreferrer">doublesymmetry/react-native-track-player</a>
+        - react-native-audio-recorder-player(音频录制)
+          - <a href="https://github.com/hyochan/react-native-audio-recorder-player" target="_blank noopener noreferrer">hyochan/react-native-audio-recorder-player</a>
+      - 视频系列
+        - react-native-video(video节点)
+          - <a href="https://github.com/react-native-video/react-native-video" target="_blank noopener noreferrer">react-native-video/react-native-video</a>
+  - 组件库/UI
+    - react-native-elements
+      - <a href="https://github.com/react-native-elements/react-native-elements" target="_blank noopener noreferrer">react-native-elements/react-native-elements</a>
+    - antd-mobile-rn(冷门)
+      - <a href="https://github.com/sishuguojixuefu/antd-mobile-rn" target="_blank noopener noreferrer">sishuguojixuefu/antd-mobile-rn</a>
+    - react-native-ui-kitten
+      - <a href="https://github.com/akveo/react-native-ui-kitten" target="_blank noopener noreferrer">akveo/react-native-ui-kitten</a>
+    - react-native-ui-lib
+      - <a href="https://github.com/wix/react-native-ui-lib" target="_blank noopener noreferrer">wix/react-native-ui-lib</a>
+    - react-native-paper
+      - <a href="https://github.com/callstack/react-native-paper" target="_blank noopener noreferrer">callstack/react-native-paper</a>
+    - NativeBase(同构ui/支持web)
+      - <a href="https://github.com/GeekyAnts/NativeBase" target="_blank noopener noreferrer">GeekyAnts/NativeBase</a>
+    - restyle(构建ts提示支持的组件工具)
+      - <a href="https://github.com/Shopify/restyle" target="_blank noopener noreferrer">Shopify/restyle</a>
+    - gluestack-ui(无头统一多端组件库/冷门)
+      - <a href="https://github.com/gluestack/gluestack-ui" target="_blank noopener noreferrer">gluestack/gluestack-ui</a>
+    - fluentui-react-native
+      - <a href="https://github.com/microsoft/fluentui-react-native" target="_blank noopener noreferrer">microsoft/fluentui-react-native</a>
+    - rn-ui-inspired-by-shadcn(shadcn ui RN版)
+      - <a href="https://github.com/mrzachnugent/rn-ui-inspired-by-shadcn" target="_blank noopener noreferrer">mrzachnugent/rn-ui-inspired-by-shadcn</a>
+    - nativecn-ui(shadcn ui复刻)
+      - <a href="https://github.com/Mobilecn-UI/nativecn-ui" target="_blank noopener noreferrer">Mobilecn-UI/nativecn-ui</a>
+  - 测试用
+    - react-native-mock-render
+      - <a href="https://github.com/Root-App/react-native-mock-render" target="_blank noopener noreferrer">Root-App/react-native-mock-render</a>
+    - react-native-owl(可视测试)
+      - <a href="https://github.com/FormidableLabs/react-native-owl" target="_blank noopener noreferrer">FormidableLabs/react-native-owl</a>
+    - jest-native(jest RN版)
+      - <a href="https://github.com/testing-library/jest-native" target="_blank noopener noreferrer">testing-library/jest-native</a>
+    - e2e系列
+      - Detox
+        - <a href="https://github.com/wix/Detox" target="_blank noopener noreferrer">wix/Detox</a>
+    - react-native-PixelsCatcher(快照测试/冷门)
+      - <a href="https://github.com/rumax/react-native-PixelsCatcher" target="_blank noopener noreferrer">rumax/react-native-PixelsCatcher</a>
+    - maestro(移动应用自动化测试工具)
+      - <a href="https://github.com/mobile-dev-inc/maestro" target="_blank noopener noreferrer">mobile-dev-inc/maestro</a>
+  - 其他库
+    - react-native-windows(用rn开发win/macos程序)
+      - <a href="https://github.com/microsoft/react-native-windows" target="_blank noopener noreferrer">microsoft/react-native-windows</a>
+    - react-native-skia(跨平台rn框架)
+      - <a href="https://github.com/react-native-skia/react-native-skia" target="_blank noopener noreferrer">react-native-skia/react-native-skia</a>
+    - repack(expo竞品)
+      - <a href="https://github.com/callstack/repack" target="_blank noopener noreferrer">callstack/repack</a>
+    - react-native-visionos(visionos跨端兼容)
+      - <a href="https://github.com/callstack/react-native-visionos" target="_blank noopener noreferrer">callstack/react-native-visionos</a>
+  - 冷门库
+    - react-native-star-rating-widget(评分组件)
+      - <a href="https://github.com/bviebahn/react-native-star-rating-widget" target="_blank noopener noreferrer">bviebahn/react-native-star-rating-widget</a>
+    - react-native-jsi-contacts(高性能联系人库/仅支持Android)
+      - <a href="https://github.com/mrousavy/react-native-jsi-contacts" target="_blank noopener noreferrer">mrousavy/react-native-jsi-contacts</a>
+    - react-native-arkit(针对ios的arkit)
+      - <a href="https://github.com/react-native-ar/react-native-arkit" target="_blank noopener noreferrer">react-native-ar/react-native-arkit</a>
+    - react-native-bars(控制应用状态栏/导航条的组件)
+      - <a href="https://github.com/zoontek/react-native-bars" target="_blank noopener noreferrer">zoontek/react-native-bars</a>
+    - react-native-recaptcha-that-works(reCAPTCHA桥)
+      - <a href="https://github.com/douglasjunior/react-native-recaptcha-that-works" target="_blank noopener noreferrer">douglasjunior/react-native-recaptcha-that-works</a>
+    - react-native-app-clip(生成app clip)
+      - <a href="https://github.com/bndkt/react-native-app-clip" target="_blank noopener noreferrer">bndkt/react-native-app-clip</a>
+    - react-native-animated-stopwatch-timer(秒表组件)
+      - <a href="https://github.com/rgommezz/react-native-animated-stopwatch-timer" target="_blank noopener noreferrer">rgommezz/react-native-animated-stopwatch-timer</a>
+    - react-native-dnd(拖拽/冷门)
+      - <a href="https://github.com/mgcrea/react-native-dnd" target="_blank noopener noreferrer">mgcrea/react-native-dnd</a>
+    - react-native-colo-loco(在ts文件旁放置Android/ios原生代码)
+      - <a href="https://github.com/jamonholmgren/react-native-colo-loco" target="_blank noopener noreferrer">jamonholmgren/react-native-colo-loco</a>
+    - react-native-fast-tflite(tflite文件支持)
+      - <a href="https://github.com/mrousavy/react-native-fast-tflite" target="_blank noopener noreferrer">mrousavy/react-native-fast-tflite</a>
+    - vxrn(用vite开发RN/实验性)
+      - <a href="https://github.com/natew/vxrn" target="_blank noopener noreferrer">natew/vxrn</a>
+    - react-native-vercel-ai(vercel ai接口)
+      - <a href="https://github.com/bidah/react-native-vercel-ai" target="_blank noopener noreferrer">bidah/react-native-vercel-ai</a>
+    - jsi-rs(用rust编写jsi模块)
+      - <a href="https://github.com/laptou/jsi-rs" target="_blank noopener noreferrer">laptou/jsi-rs</a>
+  - 应用层
+    - react-native-svg-app-icon(将svg转为全平台app图标)
+      - <a href="https://github.com/aeirola/react-native-svg-app-icon" target="_blank noopener noreferrer">aeirola/react-native-svg-app-icon</a>
+  - icons库
+    - react-native-vector-icons(图标库)
+      - <a href="https://github.com/oblador/react-native-vector-icons" target="_blank noopener noreferrer">oblador/react-native-vector-icons</a>
+    - radix-ui-react-native-icons(冷)
+      - <a href="https://github.com/Eronred/radix-ui-react-native-icons" target="_blank noopener noreferrer">Eronred/radix-ui-react-native-icons</a>
+  - 模板项目
+    - react-native-boilerplate
+      - <a href="https://github.com/thecodingmachine/react-native-boilerplate" target="_blank noopener noreferrer">thecodingmachine/react-native-boilerplate</a>
+    - ignite(齐全的初始模板)
+      - <a href="https://github.com/infinitered/ignite" target="_blank noopener noreferrer">infinitered/ignite</a>
+    - react-native-template-obytes
+      - <a href="https://github.com/obytes/react-native-template-obytes" target="_blank noopener noreferrer">obytes/react-native-template-obytes</a>
+    - create-react-native-library(开发RN库模板)
+      - <a href="https://github.com/callstack/react-native-builder-bob/tree/main/packages/create-react-native-library" target="_blank noopener noreferrer">callstack/react-native-builder-bob/tree/main/packages/create-react-native-library</a>
+  - macos构建系列
+    - react-native-macos
+      - <a href="https://github.com/microsoft/react-native-macos" target="_blank noopener noreferrer">microsoft/react-native-macos</a>
+    - react-native-menubar-extra(macos菜单栏)
+      - <a href="https://github.com/okwasniewski/react-native-menubar-extra" target="_blank noopener noreferrer">okwasniewski/react-native-menubar-extra</a>
+  - repo
+    - <a href="https://github.com/facebook/react-native" target="_blank noopener noreferrer">facebook/react-native</a>
+- 组件库
+  - nutui系列
+    - nutui(京东风格组件库)
+      - <a href="https://github.com/jdf2e/nutui" target="_blank noopener noreferrer">jdf2e/nutui</a>
+    - nutui-react(京东react版)
+      - <a href="https://github.com/jdf2e/nutui-react" target="_blank noopener noreferrer">jdf2e/nutui-react</a>
+  - cube-ui(didi)
+    - <a href="https://github.com/didi/cube-ui" target="_blank noopener noreferrer">didi/cube-ui</a>
+  - mint-ui(element/已废弃)
+    - <a href="https://github.com/ElemeFE/mint-ui" target="_blank noopener noreferrer">ElemeFE/mint-ui</a>
+  - vant
+    - <a href="https://github.com/youzan/vant" target="_blank noopener noreferrer">youzan/vant</a>
+  - mand-mobile(dd金融场景ui)
+    - <a href="https://github.com/didi/mand-mobile" target="_blank noopener noreferrer">didi/mand-mobile</a>
+  - ant-design-mobile
+    - <a href="https://github.com/ant-design/ant-design-mobile" target="_blank noopener noreferrer">ant-design/ant-design-mobile</a>
+  - tailwind-mobile
+    - <a href="https://github.com/tailwind-mobile/tailwind-mobile" target="_blank noopener noreferrer">tailwind-mobile/tailwind-mobile</a>
+  - weui
+    - <a href="https://github.com/Tencent/weui" target="_blank noopener noreferrer">Tencent/weui</a>
+  - konsta(tailwind基础)
+    - <a href="https://github.com/konstaui/konsta" target="_blank noopener noreferrer">konstaui/konsta</a>
+  - vux(vue2)
+    - <a href="https://github.com/airyland/vux" target="_blank noopener noreferrer">airyland/vux</a>
+  - taroify(vant的taro版)
+    - <a href="https://github.com/mallfoundry/taroify" target="_blank noopener noreferrer">mallfoundry/taroify</a>
+  - react-weui(weui react版/陈旧)
+    - <a href="https://github.com/weui/react-weui" target="_blank noopener noreferrer">weui/react-weui</a>
+  - tdesign-mobile
+    - tdesign-mobile-vue
+      - <a href="https://github.com/Tencent/tdesign-mobile-vue" target="_blank noopener noreferrer">Tencent/tdesign-mobile-vue</a>
+    - tdesign-mobile-react
+      - <a href="https://github.com/Tencent/tdesign-mobile-react" target="_blank noopener noreferrer">Tencent/tdesign-mobile-react</a>
+  - arco-design-mobile
+    - <a href="https://github.com/arco-design/arco-design-mobile" target="_blank noopener noreferrer">arco-design/arco-design-mobile</a>
+  - ionic(vue3/手机端)
+    - <a href="https://github.com/ionic-team/ionic-framework" target="_blank noopener noreferrer">ionic-team/ionic-framework</a>
+  - varlet(vue3/手机端)
+    - <a href="https://github.com/varletjs/varlet" target="_blank noopener noreferrer">varletjs/varlet</a>
+  - OSSA(网易/基于taro/冷门)
+    - <a href="https://github.com/NeteaseYanxuan/OSSA" target="_blank noopener noreferrer">NeteaseYanxuan/OSSA</a>
+  - quark-design(哈罗/冷门)
+    - <a href="https://github.com/hellof2e/quark-design" target="_blank noopener noreferrer">hellof2e/quark-design</a>
+  - body-scroll-lock(锁定节点滚动性)
+    - <a href="https://github.com/willmcpo/body-scroll-lock" target="_blank noopener noreferrer">willmcpo/body-scroll-lock</a>
+  - zarm(react/众安开源)
+    - <a href="https://github.com/ZhongAnTech/zarm" target="_blank noopener noreferrer">ZhongAnTech/zarm</a>
+- 小程序
+  - 框架
+    - wepy(小程序组件化开发框架)
+      - <a href="https://github.com/Tencent/wepy" target="_blank noopener noreferrer">Tencent/wepy</a>
+    - vue-mini(可以用vue3)
+      - <a href="https://github.com/vue-mini/vue-mini" target="_blank noopener noreferrer">vue-mini/vue-mini</a>
+  - 小程序跨端
+    - mpx(didi跨小程序端框架)
+      - <a href="https://github.com/didi/mpx" target="_blank noopener noreferrer">didi/mpx</a>
+    - remax
+      - <a href="https://github.com/remaxjs/remax" target="_blank noopener noreferrer">remaxjs/remax</a>
+      - <a href="https://remaxjs.org/" target="_blank noopener noreferrer">remaxjs.org</a>
+    - kbone
+      - <a href="https://github.com/Tencent/kbone" target="_blank noopener noreferrer">Tencent/kbone</a>
+    - mpvue
+      - <a href="https://github.com/Meituan-Dianping/mpvue" target="_blank noopener noreferrer">Meituan-Dianping/mpvue</a>
+    - uni-app系列
+      - uni-app
+        - <a href="https://github.com/dcloudio/uni-app" target="_blank noopener noreferrer">dcloudio/uni-app</a>
+      - uView2.0(uni-app组件库)
+        - <a href="https://github.com/umicro/uView2.0" target="_blank noopener noreferrer">umicro/uView2.0</a>
+      - ThorUI-uniapp(uniapp组件库)
+        - <a href="https://github.com/dingyong0214/ThorUI-uniapp" target="_blank noopener noreferrer">dingyong0214/ThorUI-uniapp</a>
+      - tmui-design(uniapp vue3组件库)
+        - <a href="https://gitee.com/LYTB/tmui-design" target="_blank noopener noreferrer">gitee.com</a>
+    - taro系列
+      - taro
+        - <a href="https://github.com/NervJS/taro" target="_blank noopener noreferrer">NervJS/taro</a>
+      - @tarojs/plugin-mini-ci(持续集成/上传预览插件)
+        - <a href="https://www.npmjs.com/package/@tarojs/plugin-mini-ci" target="_blank noopener noreferrer">www.npmjs.com</a>
+      - Taro-Mortgage-Calculator(跨端demo项目)
+        - <a href="https://github.com/wuba/Taro-Mortgage-Calculator" target="_blank noopener noreferrer">wuba/Taro-Mortgage-Calculator</a>
+      - parse-css-to-stylesheet(提取css为RN样式)
+        - <a href="https://github.com/NervJS/parse-css-to-stylesheet" target="_blank noopener noreferrer">NervJS/parse-css-to-stylesheet</a>
+    - morjs(饿了吗跨小程序/h5)
+      - <a href="https://github.com/eleme/morjs" target="_blank noopener noreferrer">eleme/morjs</a>
+  - 工具库
+    - towxml(html/md转小程序页面)
+      - <a href="https://github.com/sbfkcel/towxml" target="_blank noopener noreferrer">sbfkcel/towxml</a>
+    - miniprogram-api-promise(api promise化)
+      - <a href="https://www.npmjs.com/package/miniprogram-api-promise" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - miniprogram-simulate(小程序组件测试工具)
+      - <a href="https://www.npmjs.com/package/miniprogram-simulate" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - miniprogram-ci(构建/上传工具)
+      - <a href="https://www.npmjs.com/package/miniprogram-ci" target="_blank noopener noreferrer">www.npmjs.com</a>
+    - miniprogram-recycle-view(无限列表/陈旧)
+      - <a href="https://github.com/wechat-miniprogram/recycle-view" target="_blank noopener noreferrer">wechat-miniprogram/recycle-view</a>
+    - echarts-for-weixin(echarts图表库)
+      - <a href="https://github.com/ecomfe/echarts-for-weixin" target="_blank noopener noreferrer">ecomfe/echarts-for-weixin</a>
+    - awesome-wechat-weapp(小程序开发资源汇总)
+      - <a href="https://github.com/justjavac/awesome-wechat-weapp" target="_blank noopener noreferrer">justjavac/awesome-wechat-weapp</a>
+    - weixin-js-sdk(wx sdk npm版)
+      - <a href="https://github.com/yanxi-me/weixin-js-sdk" target="_blank noopener noreferrer">yanxi-me/weixin-js-sdk</a>
+    - miniprogram-api-promise(扩展Promise功能)
+      - <a href="https://github.com/wechat-miniprogram/miniprogram-api-promise" target="_blank noopener noreferrer">wechat-miniprogram/miniprogram-api-promise</a>
+    - wxml2canvas(xml转canvas)
+      - <a href="https://github.com/wg-front/wxml2canvas" target="_blank noopener noreferrer">wg-front/wxml2canvas</a>
+    - Painter(json转canvas)
+      - <a href="https://github.com/Kujiale-Mobile/Painter" target="_blank noopener noreferrer">Kujiale-Mobile/Painter</a>
+    - 反编译系列
+      - wxapkg-convertor(反编译工具)
+        - <a href="https://github.com/ezshine/wxapkg-convertor" target="_blank noopener noreferrer">ezshine/wxapkg-convertor</a>
+      - unveilr
+        - <a href="https://github.com/r3x5ur/unveilr" target="_blank noopener noreferrer">r3x5ur/unveilr</a>
+    - miniprogram-privacy(用户隐私授权弹窗组件)
+      - <a href="https://github.com/94xy/miniprogram-privacy" target="_blank noopener noreferrer">94xy/miniprogram-privacy</a>
+    - fetch-wechat(用于tf的fetch)
+      - <a href="https://github.com/pyu10055/fetch-wechat" target="_blank noopener noreferrer">pyu10055/fetch-wechat</a>
+    - weapp-tailwindcss(小程序使用tailwind)
+      - <a href="https://github.com/sonofmagic/weapp-tailwindcss" target="_blank noopener noreferrer">sonofmagic/weapp-tailwindcss</a>
+  - ui库
+    - vant-weapp
+      - <a href="https://github.com/youzan/vant-weapp" target="_blank noopener noreferrer">youzan/vant-weapp</a>
+    - iview-weapp
+      - <a href="https://github.com/TalkingData/iview-weapp" target="_blank noopener noreferrer">TalkingData/iview-weapp</a>
+    - FirstUI(支持跨小程序/uni/冷门)
+      - <a href="https://github.com/FirstUI/FirstUI" target="_blank noopener noreferrer">FirstUI/FirstUI</a>
+    - ant-design-mini(仅限alipay小程序)
+      - <a href="https://github.com/ant-design/ant-design-mini" target="_blank noopener noreferrer">ant-design/ant-design-mini</a>
+    - tdesign-miniprogram
+      - <a href="https://github.com/Tencent/tdesign-miniprogram" target="_blank noopener noreferrer">Tencent/tdesign-miniprogram</a>
+  - 实战项目
+    - wechat-app-mall(商城)
+      - <a href="https://github.com/EastWorld/wechat-app-mall" target="_blank noopener noreferrer">EastWorld/wechat-app-mall</a>
+    - Gitter(github小程序客户端)
+      - <a href="https://github.com/nslogx/Gitter" target="_blank noopener noreferrer">nslogx/Gitter</a>
+    - winxin-app-watch-life.net(wp的小程序端)
+      - <a href="https://github.com/iamxjb/winxin-app-watch-life.net" target="_blank noopener noreferrer">iamxjb/winxin-app-watch-life.net</a>
+    - bee(点餐)
+      - <a href="https://github.com/woniudiancang/bee" target="_blank noopener noreferrer">woniudiancang/bee</a>
+    - taro-music(网易云音乐小程序)
+      - <a href="https://github.com/lsqy/taro-music" target="_blank noopener noreferrer">lsqy/taro-music</a>
+    - weapp-library(在线借书)
+      - <a href="https://github.com/imageslr/weapp-library" target="_blank noopener noreferrer">imageslr/weapp-library</a>
+    - Garbage(垃圾分类)
+      - <a href="https://github.com/qi19901212/Garbage" target="_blank noopener noreferrer">qi19901212/Garbage</a>
+- H5
+  - H5-Game
+    - Phaser
+      - example
+        - hexigua
+          - <a href="https://github.com/eijil/hexigua" target="_blank noopener noreferrer">eijil/hexigua</a>
+  - 跨端方案
+    - rax
+      - <a href="https://rax.js.org/" target="_blank noopener noreferrer">rax.js.org</a>
+      - <a href="https://github.com/alibaba/rax" target="_blank noopener noreferrer">alibaba/rax</a>
+    - megalo
+      - <a href="https://github.com/kaola-fed/megalo" target="_blank noopener noreferrer">kaola-fed/megalo</a>
+    - vue-native
+      - <a href="https://github.com/GeekyAnts/vue-native-core" target="_blank noopener noreferrer">GeekyAnts/vue-native-core</a>
+    - capacitor(cross platform方案)
+      - <a href="https://github.com/ionic-team/capacitor" target="_blank noopener noreferrer">ionic-team/capacitor</a>
+    - chameleon(老/didi)
+      - <a href="https://github.com/didi/chameleon" target="_blank noopener noreferrer">didi/chameleon</a>
+    - NativeScript(跨端的runtime调用api)
+      - <a href="https://github.com/NativeScript/NativeScript" target="_blank noopener noreferrer">NativeScript/NativeScript</a>
+    - hippy(tx的跨端框架)
+      - <a href="https://github.com/Tencent/Hippy" target="_blank noopener noreferrer">Tencent/Hippy</a>
+    - weex
+      - <a href="https://github.com/alibaba/weex" target="_blank noopener noreferrer">alibaba/weex</a>
+    - framework7(可以构建ios/andriod)
+      - <a href="https://github.com/framework7io/framework7" target="_blank noopener noreferrer">framework7io/framework7</a>
+  - 插件库
+    - better-scroll(滚动解决方案)
+      - <a href="https://better-scroll.github.io/docs/zh-CN/" target="_blank noopener noreferrer">better-scroll.github.io</a>
+      - <a href="https://github.com/ustbhuangyi/better-scroll" target="_blank noopener noreferrer">ustbhuangyi/better-scroll</a>
+    - pulltoscroll.js(下拉加载)
+      - <a href="https://github.com/BoxFactura/pulltorefresh.js" target="_blank noopener noreferrer">BoxFactura/pulltorefresh.js</a>
+    - mobile-detect(手机端ua处理获取)
+      - <a href="https://github.com/hgoebl/mobile-detect.js" target="_blank noopener noreferrer">hgoebl/mobile-detect.js</a>
+    - axios-miniprogram(小程序axios)
+      - <a href="https://github.com/bigmeow/axios-miniprogram-adapter" target="_blank noopener noreferrer">bigmeow/axios-miniprogram-adapter</a>
+    - mpeditor(wx markdown编辑器)
+      - <a href="https://github.com/ksky521/mpeditor" target="_blank noopener noreferrer">ksky521/mpeditor</a>
+    - hotcss(字体大小适配方案)
+      - <a href="https://github.com/imochen/hotcss" target="_blank noopener noreferrer">imochen/hotcss</a>
+    - postcss-write-svg(1px svg解决方案)
+      - <a href="https://github.com/csstools/postcss-write-svg" target="_blank noopener noreferrer">csstools/postcss-write-svg</a>
+    - miari-adaptive(手机端适配方案case example)
+      - <a href="https://github.com/mirai027/miari-adaptive" target="_blank noopener noreferrer">mirai027/miari-adaptive</a>
+    - universal-api(全小程序统一api库)
+      - <a href="https://github.com/raxjs/universal-api" target="_blank noopener noreferrer">raxjs/universal-api</a>
+    - fastclick(解决ios click延迟)
+      - <a href="https://github.com/ftlabs/fastclick" target="_blank noopener noreferrer">ftlabs/fastclick</a>
+    - zepto.fullpage(移动端fullpage/不维护了)
+      - <a href="https://github.com/yanhaijing/zepto.fullpage" target="_blank noopener noreferrer">yanhaijing/zepto.fullpage</a>
+    - rem/vw适配系列
+      - postcss-px-to-viewport(vh/vw大小适配方案插件)
+        - <a href="https://github.com/evrone/postcss-px-to-viewport" target="_blank noopener noreferrer">evrone/postcss-px-to-viewport</a>
+      - postcss-pxtorem
+        - <a href="https://github.com/cuth/postcss-pxtorem" target="_blank noopener noreferrer">cuth/postcss-pxtorem</a>
+      - postcss-px-to-viewport-8-plugin(适配postcss8版本)
+        - <a href="https://github.com/lkxian888/postcss-px-to-viewport-8-plugin" target="_blank noopener noreferrer">lkxian888/postcss-px-to-viewport-8-plugin</a>
+      - postcss-style-px-to-viewport(将vue模板中的style px转vw)
+        - <a href="https://github.com/tiger-mini/postcss-style-px-to-viewport" target="_blank noopener noreferrer">tiger-mini/postcss-style-px-to-viewport</a>
+      - postcss-plugin-px2rem(老)
+        - <a href="https://github.com/pigcan/postcss-plugin-px2rem" target="_blank noopener noreferrer">pigcan/postcss-plugin-px2rem</a>
+    - 唤端方案
+      - callapp-lib
+        - <a href="https://github.com/suanmei/callapp-lib" target="_blank noopener noreferrer">suanmei/callapp-lib</a>
+      - web-launch-app
+        - <a href="https://github.com/jawidx/web-launch-app" target="_blank noopener noreferrer">jawidx/web-launch-app</a>
+      - call-app
+        - <a href="https://github.com/zhuanzhuanfe/call-app" target="_blank noopener noreferrer">zhuanzhuanfe/call-app</a>
+    - mescroll(下拉刷新/加载)
+      - <a href="https://github.com/mescroll/mescroll" target="_blank noopener noreferrer">mescroll/mescroll</a>
+    - postcss-viewport-height-correction(解决移动端100vh不准确问题)
+      - <a href="https://github.com/Faisal-Manzer/postcss-viewport-height-correction" target="_blank noopener noreferrer">Faisal-Manzer/postcss-viewport-height-correction</a>
+    - flipper(h5/RN调试工具)
+      - <a href="https://github.com/facebook/flipper" target="_blank noopener noreferrer">facebook/flipper</a>
+    - wept(微信小程序实时运行工具/陈旧)
+      - <a href="https://github.com/wetools/wept" target="_blank noopener noreferrer">wetools/wept</a>
+    - devtools调试工具系列
+      - vue-vconsole-devtools
+        - vue-devtools
+          - <a href="https://github.com/vuejs/vue-devtools" target="_blank noopener noreferrer">vuejs/vue-devtools</a>
+        - <a href="https://github.com/Zippowxk/vue-vconsole-devtools" target="_blank noopener noreferrer">Zippowxk/vue-vconsole-devtools</a>
+      - vconsole
+        - <a href="https://github.com/Tencent/vConsole" target="_blank noopener noreferrer">Tencent/vConsole</a>
+      - spy-debugger(调试工具)
+        - <a href="https://github.com/wuchangming/spy-debugger" target="_blank noopener noreferrer">wuchangming/spy-debugger</a>
+      - eruda(browser devtools)
+        - <a href="https://github.com/liriliri/eruda" target="_blank noopener noreferrer">liriliri/eruda</a>
+      - ios-webkit-debug-proxy(ios safari转接chrome调试/陈旧)
+        - <a href="https://github.com/google/ios-webkit-debug-proxy" target="_blank noopener noreferrer">google/ios-webkit-debug-proxy</a>
+      - remotedebug-ios-webkit-adapter(webkit协议转cdp协议/陈旧)
+        - <a href="https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter" target="_blank noopener noreferrer">RemoteDebug/remotedebug-ios-webkit-adapter</a>
+      - chii(模拟cdp调试工具)
+        - <a href="https://github.com/liriliri/chii" target="_blank noopener noreferrer">liriliri/chii</a>
+    - 图表库系列
+      - HQChart(金融k线图等图表库)
+        - <a href="https://github.com/jones2000/HQChart" target="_blank noopener noreferrer">jones2000/HQChart</a>
+  - 转换方案
+    - antmove(wx和支付宝等小程序互转)
+      - <a href="https://github.com/ant-move/Antmove" target="_blank noopener noreferrer">ant-move/Antmove</a>
+    - miniprogram-to-uniapp(其他转uniapp)
+      - <a href="https://github.com/zhangdaren/miniprogram-to-uniapp" target="_blank noopener noreferrer">zhangdaren/miniprogram-to-uniapp</a>
+  - 测试系列
+    - appium(app内页面e2e测试工具)
+      - <a href="https://github.com/appium/appium" target="_blank noopener noreferrer">appium/appium</a>
+    - WebDriverAgent(appium用ios测试app)
+      - <a href="https://github.com/appium/WebDriverAgent" target="_blank noopener noreferrer">appium/WebDriverAgent</a>
+    - SoloPi(alipay Android用测试app)
+      - <a href="https://github.com/alipay/SoloPi" target="_blank noopener noreferrer">alipay/SoloPi</a>
+    - tidevice(操作ios设备)
+      - <a href="https://github.com/alibaba/tidevice" target="_blank noopener noreferrer">alibaba/tidevice</a>
+## 客户端
+- 框架
+  - neutralinojs(基于原生webview的跨端框架)
+    - <a href="https://github.com/neutralinojs/neutralinojs" target="_blank noopener noreferrer">neutralinojs/neutralinojs</a>
+  - nw.js
+    - <a href="https://github.com/nwjs/nw.js" target="_blank noopener noreferrer">nwjs/nw.js</a>
+  - wails(go+html+js)
+    - <a href="https://github.com/wailsapp/wails" target="_blank noopener noreferrer">wailsapp/wails</a>
+  - nodegui(用node构建跨平台程序)
+    - <a href="https://github.com/nodegui/nodegui" target="_blank noopener noreferrer">nodegui/nodegui</a>
+  - react-nodegui(nodegui react版)
+    - <a href="https://github.com/nodegui/react-nodegui" target="_blank noopener noreferrer">nodegui/react-nodegui</a>
+  - tauri系列
+    - tauri(rust后端的跨平台框架)
+      - <a href="https://github.com/tauri-apps/tauri" target="_blank noopener noreferrer">tauri-apps/tauri</a>
+    - tauri-egui(原生组件/用于密码输入)
+      - <a href="https://github.com/tauri-apps/tauri-egui" target="_blank noopener noreferrer">tauri-apps/tauri-egui</a>
+    - Pake(将网页快速打包成小应用)
+      - <a href="https://github.com/tw93/Pake" target="_blank noopener noreferrer">tw93/Pake</a>
+    - awesome-tauri(tauri工具大全)
+      - <a href="https://github.com/tauri-apps/awesome-tauri" target="_blank noopener noreferrer">tauri-apps/awesome-tauri</a>
+    - tauri-controls(跨平台控制栏样式优化)
+      - <a href="https://github.com/agmmnn/tauri-controls" target="_blank noopener noreferrer">agmmnn/tauri-controls</a>
+    - tauri-tray-app(模板项目)
+      - <a href="https://github.com/riipandi/tauri-tray-app" target="_blank noopener noreferrer">riipandi/tauri-tray-app</a>
+    - devtools(性能/监控工具)
+      - <a href="https://github.com/crabnebula-dev/devtools" target="_blank noopener noreferrer">crabnebula-dev/devtools</a>
+  - gluon(用系统的浏览器创建桌面应用程序)
+    - <a href="https://github.com/gluon-framework/gluon" target="_blank noopener noreferrer">gluon-framework/gluon</a>
+- electron
+  - 实战项目
+    - LanMiaoDesktop(记账程序)
+      - <a href="https://github.com/MoeYc/LanMiaoDesktop" target="_blank noopener noreferrer">MoeYc/LanMiaoDesktop</a>
+    - YesPlayMusic(wyy端)
+      - <a href="https://github.com/qier222/YesPlayMusic" target="_blank noopener noreferrer">qier222/YesPlayMusic</a>
+    - rubick(mac工具箱)
+      - <a href="https://github.com/rubickCenter/rubick" target="_blank noopener noreferrer">rubickCenter/rubick</a>
+    - AppToolkit
+      - <a href="https://github.com/apptools-lab/AppToolkit" target="_blank noopener noreferrer">apptools-lab/AppToolkit</a>
+    - cider(apple music客户端)
+      - <a href="https://github.com/ciderapp/Cider" target="_blank noopener noreferrer">ciderapp/Cider</a>
+    - dooring-electron-lowcode
+      - <a href="https://github.com/H5-Dooring/dooring-electron-lowcode" target="_blank noopener noreferrer">H5-Dooring/dooring-electron-lowcode</a>
+  - 插件
+    - electron-updater例子
+      - electron-updater-example
+        - <a href="https://github.com/iffy/electron-updater-example" target="_blank noopener noreferrer">iffy/electron-updater-example</a>
+      - electron-simple-updater
+        - <a href="https://github.com/megahertz/electron-simple-updater" target="_blank noopener noreferrer">megahertz/electron-simple-updater</a>
+    - builder构建器
+      - electron-builder(electron-updater)
+        - <a href="https://github.com/electron-userland/electron-builder" target="_blank noopener noreferrer">electron-userland/electron-builder</a>
+      - electron-forge
+        - <a href="https://github.com/electron/forge" target="_blank noopener noreferrer">electron/forge</a>
+      - electron-packager
+        - <a href="https://github.com/electron/electron-packager" target="_blank noopener noreferrer">electron/electron-packager</a>
+    - vue-cli-plugin-electron-builder(vue项目快速集成electron)
+      - <a href="https://github.com/nklayman/vue-cli-plugin-electron-builder" target="_blank noopener noreferrer">nklayman/vue-cli-plugin-electron-builder</a>
+    - electron-store(多窗口全局状态存储)
+      - <a href="https://github.com/sindresorhus/electron-store" target="_blank noopener noreferrer">sindresorhus/electron-store</a>
+    - asar(tar like的归档格式)
+      - <a href="https://github.com/electron/asar" target="_blank noopener noreferrer">electron/asar</a>
+    - electron-localshortcut(快捷键注册/陈旧)
+      - <a href="https://github.com/parro-it/electron-localshortcut" target="_blank noopener noreferrer">parro-it/electron-localshortcut</a>
+    - mac签名系列
+      - electron-notarize(macos应用公证工具)
+        - <a href="https://github.com/electron/notarize" target="_blank noopener noreferrer">electron/notarize</a>
+      - osx-sign(sign工具)
+        - <a href="https://github.com/electron/osx-sign" target="_blank noopener noreferrer">electron/osx-sign</a>
+    - crash崩溃分析系列
+      - electron-minidump(解析crash dump文件)
+        - <a href="https://github.com/nornagon/electron-minidump" target="_blank noopener noreferrer">nornagon/electron-minidump</a>
+      - node-minidump(分析dump)
+        - <a href="https://github.com/electron/node-minidump" target="_blank noopener noreferrer">electron/node-minidump</a>
+      - breakpad(分析dump依赖底层)
+        - <a href="https://github.com/google/breakpad" target="_blank noopener noreferrer">google/breakpad</a>
+    - electron-log(错误日志捕获上报)
+      - <a href="https://github.com/megahertz/electron-log" target="_blank noopener noreferrer">megahertz/electron-log</a>
+    - adblocker(内置广告拦截工具)
+      - <a href="https://github.com/ghostery/adblocker" target="_blank noopener noreferrer">ghostery/adblocker</a>
+  - 生态
+    - fiddle(快速使用electron的ide)
+      - <a href="https://github.com/electron/fiddle" target="_blank noopener noreferrer">electron/fiddle</a>
+  - 测试
+    - spectron(chromedriver/已弃用)
+      - <a href="https://github.com/electron-userland/spectron" target="_blank noopener noreferrer">electron-userland/spectron</a>
+    - macaca-macos(语雀的多端测试工具)
+      - <a href="https://github.com/macacajs/macaca-macos" target="_blank noopener noreferrer">macacajs/macaca-macos</a>
+  - electron(本体)
+    - <a href="https://github.com/electron/electron" target="_blank noopener noreferrer">electron/electron</a>
+  - 模板系列
+    - Elecrue(electron开始模板项目)
+      - <a href="https://github.com/RajvirSingh1313/Elecrue" target="_blank noopener noreferrer">RajvirSingh1313/Elecrue</a>
+    - electron-react-boilerplate(react上手模板)
+      - <a href="https://github.com/electron-react-boilerplate/electron-react-boilerplate" target="_blank noopener noreferrer">electron-react-boilerplate/electron-react-boilerplate</a>
+    - remix-electron(remix模板)
+      - <a href="https://github.com/itsMapleLeaf/remix-electron" target="_blank noopener noreferrer">itsMapleLeaf/remix-electron</a>
+    - secure-electron-template(模版应用)
+      - <a href="https://github.com/reZach/secure-electron-template" target="_blank noopener noreferrer">reZach/secure-electron-template</a>
+    - electron-quick-start(官方模板)
+      - <a href="https://github.com/electron/electron-quick-start" target="_blank noopener noreferrer">electron/electron-quick-start</a>
+    - electron-vite脚手架
+      - electron-vite(用vite开发electron)
+        - <a href="https://github.com/alex8088/electron-vite" target="_blank noopener noreferrer">alex8088/electron-vite</a>
+      - vite-plugin-electron-config
+        - <a href="https://github.com/alex8088/vite-plugin-electron-config" target="_blank noopener noreferrer">alex8088/vite-plugin-electron-config</a>
+      - 实战/模板项目
+        - electron-vite-boilerplate(模板项目)
+          - <a href="https://github.com/alex8088/electron-vite-boilerplate" target="_blank noopener noreferrer">alex8088/electron-vite-boilerplate</a>
+        - electron-micro-app(桌面小程序实战)
+          - <a href="https://github.com/alex8088/electron-micro-app" target="_blank noopener noreferrer">alex8088/electron-micro-app</a>
+    - electron-egg(egg框架)
+      - <a href="https://github.com/dromara/electron-egg" target="_blank noopener noreferrer">dromara/electron-egg</a>
+    - electron-vite-vue
+      - <a href="https://github.com/electron-vite/electron-vite-vue" target="_blank noopener noreferrer">electron-vite/electron-vite-vue</a>
+    - electron-vue-template
+      - <a href="https://github.com/Deluze/electron-vue-template" target="_blank noopener noreferrer">Deluze/electron-vue-template</a>
+## Typescript
+- 教程收集
+  - tutorial
+    - <a href="https://github.com/xcatliu/typescript-tutorial" target="_blank noopener noreferrer">xcatliu/typescript-tutorial</a>
+    - <a href="https://ts.xcatliu.com/" target="_blank noopener noreferrer">ts.xcatliu.com</a>
+  - deep-dive
+    - <a href="https://github.com/jkchao/typescript-book-chinese" target="_blank noopener noreferrer">jkchao/typescript-book-chinese</a>
+    - <a href="https://jkchao.github.io/typescript-book-chinese/" target="_blank noopener noreferrer">jkchao.github.io</a>
+  - mini-typescript(微型ts)
+    - <a href="https://github.com/sandersn/mini-typescript" target="_blank noopener noreferrer">sandersn/mini-typescript</a>
+  - typescript-book(deep-dive)
+    - <a href="https://github.com/basarat/typescript-book" target="_blank noopener noreferrer">basarat/typescript-book</a>
+  - awesome-template-literal-types
+    - <a href="https://github.com/ghoullier/awesome-template-literal-types" target="_blank noopener noreferrer">ghoullier/awesome-template-literal-types</a>
+- 工具库
+  - tscpaths(动态paths问题解决)
+    - <a href="https://github.com/joonhocho/tscpaths" target="_blank noopener noreferrer">joonhocho/tscpaths</a>
+  - trace性能分析系列
+    - <a href="https://github.com/microsoft/TypeScript-wiki/blob/main/Performance-Tracing.md" target="_blank noopener noreferrer">microsoft/TypeScript-wiki/blob/main/Performance-Tracing.md</a>
+    - typescript-analyze-trace(ts4.6 generateTrance构建分析)
+      - <a href="https://github.com/microsoft/typescript-analyze-trace" target="_blank noopener noreferrer">microsoft/typescript-analyze-trace</a>
+    - perfetto.dev(ts性能跟踪分析)
+      - <a href="https://ui.perfetto.dev/" target="_blank noopener noreferrer">ui.perfetto.dev</a>
+  - every-ts(构建任何版本的TS工具)
+    - <a href="https://github.com/jakebailey/every-ts" target="_blank noopener noreferrer">jakebailey/every-ts</a>
+  - tsdiagram(TS类型关系图)
+    - <a href="https://github.com/3rd/tsdiagram" target="_blank noopener noreferrer">3rd/tsdiagram</a>
+  - type转json
+    - fast-typescript-to-jsonschema
+      - <a href="https://github.com/yunke-yunfly/fast-typescript-to-jsonschema" target="_blank noopener noreferrer">yunke-yunfly/fast-typescript-to-jsonschema</a>
+    - typescript-json-schema(用type生成json schema的工具)
+      - <a href="https://github.com/YousefED/typescript-json-schema" target="_blank noopener noreferrer">YousefED/typescript-json-schema</a>
+## Vscode
+- 插件开发
+  - doc
+    - menu/scm/title
+      - <a href="https://code.visualstudio.com/api/extension-guides/scm-provider#menus" target="_blank noopener noreferrer">code.visualstudio.com</a>
+    - 官方插件
+      - git
+        - <a href="https://github.com/microsoft/vscode/tree/main/extensions/git" target="_blank noopener noreferrer">microsoft/vscode/tree/main/extensions/git</a>
+      - <a href="https://github.com/microsoft/vscode/tree/main/extensions" target="_blank noopener noreferrer">microsoft/vscode/tree/main/extensions</a>
+    - package.json 字段
+      - <a href="https://code.visualstudio.com/api/references/extension-manifest" target="_blank noopener noreferrer">code.visualstudio.com</a>
+    - VS-Code-Extension-Doc-ZH(中文开发手册)
+      - <a href="https://github.com/Liiked/VS-Code-Extension-Doc-ZH" target="_blank noopener noreferrer">Liiked/VS-Code-Extension-Doc-ZH</a>
+  - 实战项目
+    - vs-picgo
+      - <a href="https://github.com/PicGo/vs-picgo" target="_blank noopener noreferrer">PicGo/vs-picgo</a>
+    - vscode-nls-i18n
+      - <a href="https://github.com/axetroy/vscode-nls-i18n" target="_blank noopener noreferrer">axetroy/vscode-nls-i18n</a>
+    - vscode-theme-generator(vscode主题生成器)
+      - <a href="https://github.com/Tyriar/vscode-theme-generator" target="_blank noopener noreferrer">Tyriar/vscode-theme-generator</a>
+    - gistpad(操作gist)
+      - <a href="https://github.com/lostintangent/gistpad" target="_blank noopener noreferrer">lostintangent/gistpad</a>
+    - vscode-extension-samples(官方例子大全)
+      - <a href="https://github.com/microsoft/vscode-extension-samples" target="_blank noopener noreferrer">microsoft/vscode-extension-samples</a>
+  - 工具
+    - vscode-dts(声明文件生成器)
+      - <a href="https://github.com/microsoft/vscode-dts" target="_blank noopener noreferrer">microsoft/vscode-dts</a>
+    - vscode-extension-tester(模拟浏览器测试工具)
+      - <a href="https://github.com/redhat-developer/vscode-extension-tester" target="_blank noopener noreferrer">redhat-developer/vscode-extension-tester</a>
+- 工具系列
+  - themes.codehike.org/editor(主题创建器)
+    - <a href="https://themes.codehike.org/editor" target="_blank noopener noreferrer">themes.codehike.org</a>
+## Blog
+- Hexo
+  - hexo
+    - <a href="https://github.com/hexojs/hexo" target="_blank noopener noreferrer">hexojs/hexo</a>
+  - theme
+    - hexo-theme-icarus
+      - <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank noopener noreferrer">ppoffice/hexo-theme-icarus</a>
+    - hexo-theme-butterfly
+      - <a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank noopener noreferrer">jerryc127/hexo-theme-butterfly</a>
+    - hexo-theme-aurora
+      - <a href="https://github.com/auroral-ui/hexo-theme-aurora" target="_blank noopener noreferrer">auroral-ui/hexo-theme-aurora</a>
+    - hexo-theme-nexmoe
+      - <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank noopener noreferrer">theme-nexmoe/hexo-theme-nexmoe</a>
+    - hexo-theme-Claudia
+      - <a href="https://github.com/Haojen/hexo-theme-Claudia" target="_blank noopener noreferrer">Haojen/hexo-theme-Claudia</a>
+    - vuepress-theme-hope(v2)
+      - <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope" target="_blank noopener noreferrer">vuepress-theme-hope/vuepress-theme-hope</a>
+- typecho
+  - theme
+    - <a href="https://www.ihewro.com/archives/489/" target="_blank noopener noreferrer">www.ihewro.com</a>
+- gridea(本地静态博客客户端)
+  - <a href="https://github.com/getgridea/gridea" target="_blank noopener noreferrer">getgridea/gridea</a>
+## Collection
+- placeholder-loading
+  - <a href="https://placeholder.com/" target="_blank noopener noreferrer">placeholder.com</a>
+- organization-member
+  - <a href="https://github.com/moefront/moefront.github.io" target="_blank noopener noreferrer">moefront/moefront.github.io</a>
+  - <a href="https://moefront.github.io/members" target="_blank noopener noreferrer">moefront.github.io</a>
+- javascript-book
+  - js-info
+    - <a href="https://zh.javascript.info/" target="_blank noopener noreferrer">zh.javascript.info</a>
+- .gitignore(gitignore 根据语言生成)
+  - <a href="https://www.toptal.com/developers/gitignore" target="_blank noopener noreferrer">www.toptal.com</a>
+- 地级市信息json文件
+  - <a href="https://github.com/modood/Administrative-divisions-of-China" target="_blank noopener noreferrer">modood/Administrative-divisions-of-China</a>
+- 5000choyen字体生成项目
+  - <a href="https://github.com/yurafuca/5000choyen" target="_blank noopener noreferrer">yurafuca/5000choyen</a>
+  - <a href="https://github.com/Rare25/5000choyen" target="_blank noopener noreferrer">Rare25/5000choyen</a>
+- fiora(在线聊天示例项目)
+  - <a href="https://github.com/yinxin630/fiora" target="_blank noopener noreferrer">yinxin630/fiora</a>
+- webpack-book(survivejs出品)
+  - <a href="https://github.com/survivejs/webpack-book" target="_blank noopener noreferrer">survivejs/webpack-book</a>
+- oicq(安卓协议qq机器人框架)
+  - <a href="https://github.com/takayama-lily/oicq" target="_blank noopener noreferrer">takayama-lily/oicq</a>
+- css-doodle(快速构建grid各种花哨栅格图型)
+  - <a href="https://github.com/css-doodle/css-doodle" target="_blank noopener noreferrer">css-doodle/css-doodle</a>
+- matrix-rain(终端矩阵雨)
+  - <a href="https://github.com/nojvek/matrix-rain" target="_blank noopener noreferrer">nojvek/matrix-rain</a>
+- chinese-poetry(汉语古诗词数据库)
+  - <a href="https://github.com/chinese-poetry/chinese-poetry" target="_blank noopener noreferrer">chinese-poetry/chinese-poetry</a>
+- readme.so(帮助写规范readme工具)
+  - <a href="https://github.com/octokatherine/readme.so" target="_blank noopener noreferrer">octokatherine/readme.so</a>
+- MoreToggles.css(各种toggle按钮)
+  - <a href="https://github.com/JNKKKK/MoreToggles.css" target="_blank noopener noreferrer">JNKKKK/MoreToggles.css</a>
+- misbrands(混乱的商标合集)
+  - <a href="https://github.com/mkrl/misbrands" target="_blank noopener noreferrer">mkrl/misbrands</a>
+- lipstick(口红颜色可视化)
+  - <a href="https://github.com/Ovilia/lipstick" target="_blank noopener noreferrer">Ovilia/lipstick</a>
+- heti(转为中文版式的增强css)
+  - <a href="https://github.com/sivan/heti" target="_blank noopener noreferrer">sivan/heti</a>
+- pretty-checkbox(一些checkbox效果)
+  - <a href="https://github.com/lokesh-coder/pretty-checkbox" target="_blank noopener noreferrer">lokesh-coder/pretty-checkbox</a>
+- PageTransitions(一些页面切换效果/类似幻灯片)
+  - <a href="https://github.com/codrops/PageTransitions" target="_blank noopener noreferrer">codrops/PageTransitions</a>
+- qwerty-learner(键盘英语肌肉记忆软件)
+  - <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank noopener noreferrer">Kaiyiwing/qwerty-learner</a>
+- text-to-handwriting(生成手写字体图片文章)
+  - <a href="https://github.com/saurabhdaware/text-to-handwriting" target="_blank noopener noreferrer">saurabhdaware/text-to-handwriting</a>
+- daedalOS(一个浏览器的桌面os)
+  - <a href="https://github.com/DustinBrett/daedalOS" target="_blank noopener noreferrer">DustinBrett/daedalOS</a>
+- button各种按钮系列
+  - bttn.css(一些按钮花哨)
+    - <a href="https://github.com/ganapativs/bttn.css" target="_blank noopener noreferrer">ganapativs/bttn.css</a>
+  - markodenic/buttons-generator(一些按钮)
+    - <a href="https://markodenic.com/tools/buttons-generator/" target="_blank noopener noreferrer">markodenic.com</a>
+  - ui-snippets.dev(按钮效果css)
+    - <a href="https://ui-snippets.dev/" target="_blank noopener noreferrer">ui-snippets.dev</a>
+  - metallicss(金属风格按钮)
+    - <a href="https://github.com/mikaei/metallicss" target="_blank noopener noreferrer">mikaei/metallicss</a>
+  - ui-buttons/core(100种button动画合集)
+    - <a href="https://github.com/ui-buttons/core" target="_blank noopener noreferrer">ui-buttons/core</a>
+  - hover(各种按钮hover动效)
+    - <a href="http://ianlunn.github.io/Hover/" target="_blank noopener noreferrer">ianlunn.github.io</a>
+  - hamburgers(各种汉堡按钮)
+    - <a href="https://github.com/jonsuh/hamburgers" target="_blank noopener noreferrer">jonsuh/hamburgers</a>
+  - buttons.cool(新颖按钮大全)
+    - <a href="https://www.buttons.cool/" target="_blank noopener noreferrer">www.buttons.cool</a>
+- log(console控制台css样式复现)
+  - <a href="https://github.com/adamschwartz/log" target="_blank noopener noreferrer">adamschwartz/log</a>
+- vcard-personal-portfolio(个人信息展示页面)
+  - <a href="https://github.com/codewithsadee/vcard-personal-portfolio" target="_blank noopener noreferrer">codewithsadee/vcard-personal-portfolio</a>
+- LiveTerm(创建终端风格网站)
+  - <a href="https://github.com/Cveinnt/LiveTerm" target="_blank noopener noreferrer">Cveinnt/LiveTerm</a>
+- Thanks-Mirror(各种国内镜像合集)
+  - <a href="https://github.com/eryajf/Thanks-Mirror" target="_blank noopener noreferrer">eryajf/Thanks-Mirror</a>
+- paopao-ce(twitter like全栈项目)
+  - <a href="https://github.com/rocboss/paopao-ce" target="_blank noopener noreferrer">rocboss/paopao-ce</a>
+- vue2-elm(高仿手机饿了吗/陈旧)
+  - <a href="https://github.com/bailicangdu/vue2-elm" target="_blank noopener noreferrer">bailicangdu/vue2-elm</a>
+- NodeBB(基于node的论坛)
+  - <a href="https://github.com/NodeBB/NodeBB" target="_blank noopener noreferrer">NodeBB/NodeBB</a>
+- matrix(代码雨效果实现)
+  - <a href="https://github.com/Rezmason/matrix" target="_blank noopener noreferrer">Rezmason/matrix</a>
+- pokemon-cards-css(pokemon卡片效果)
+  - <a href="https://github.com/simeydotme/pokemon-cards-css" target="_blank noopener noreferrer">simeydotme/pokemon-cards-css</a>
+- 花体系列
+  - weird-fonts(github花体)
+    - <a href="https://beizhedenglong.github.io/weird-fonts/" target="_blank noopener noreferrer">beizhedenglong.github.io</a>
+  - glyphy.io(即开即用花体)
+    - <a href="https://glyphy.io/" target="_blank noopener noreferrer">glyphy.io</a>
+  - fancysymbol.com(各种花体)
+    - <a href="https://fancysymbol.com/" target="_blank noopener noreferrer">fancysymbol.com</a>
+- resume系列
+  - react-resume-template(简历网页模板)
+    - <a href="https://github.com/tbakerx/react-resume-template" target="_blank noopener noreferrer">tbakerx/react-resume-template</a>
+  - open-resume(简历模板)
+    - <a href="https://github.com/xitanggg/open-resume" target="_blank noopener noreferrer">xitanggg/open-resume</a>
+- broz(无框浏览器/用于截图)
+  - <a href="https://github.com/antfu/broz" target="_blank noopener noreferrer">antfu/broz</a>
+- unicode系列
+  - spaces(空白字符说明)
+    - <a href="https://jkorpela.fi/chars/spaces.html" target="_blank noopener noreferrer">jkorpela.fi</a>
+## Deno
+- 框架
+  - ultra(react+deno)
+    - <a href="https://github.com/exhibitionist-digital/ultra" target="_blank noopener noreferrer">exhibitionist-digital/ultra</a>
+  - fresh(下一代web框架/开发中)
+    - <a href="https://github.com/lucacasonato/fresh" target="_blank noopener noreferrer">lucacasonato/fresh</a>
+  - aleph.js(全栈框架)
+    - <a href="https://github.com/alephjs/aleph.js" target="_blank noopener noreferrer">alephjs/aleph.js</a>
+  - ruck(react+deno框架/冷门)
+    - <a href="https://github.com/jaydenseric/ruck" target="_blank noopener noreferrer">jaydenseric/ruck</a>
+- 工具
+  - dnt(deno转node npm包)
+    - <a href="https://github.com/denoland/dnt" target="_blank noopener noreferrer">denoland/dnt</a>
+  - venode(具有deno特性的nodejs运行器)
+    - <a href="https://github.com/Aslemammad/venode" target="_blank noopener noreferrer">Aslemammad/venode</a>
+  - discordeno(discord api sdk)
+    - <a href="https://github.com/discordeno/discordeno" target="_blank noopener noreferrer">discordeno/discordeno</a>
+  - pogo(web server框架)
+    - <a href="https://github.com/sholladay/pogo" target="_blank noopener noreferrer">sholladay/pogo</a>
+  - dangoDB(mongodb odm)
+    - <a href="https://github.com/oslabs-beta/dangoDB" target="_blank noopener noreferrer">oslabs-beta/dangoDB</a>
+  - lume(静态站点生成器)
+    - <a href="https://github.com/lumeland/lume" target="_blank noopener noreferrer">lumeland/lume</a>
+  - webview_deno(创建桌面应用程序的小型gui)
+    - <a href="https://github.com/webview/webview_deno" target="_blank noopener noreferrer">webview/webview_deno</a>
+  - deno-script-sandbox(用deno作为js运行沙箱)
+    - <a href="https://github.com/healeycodes/deno-script-sandbox" target="_blank noopener noreferrer">healeycodes/deno-script-sandbox</a>
+  - dax(zx复刻)
+    - <a href="https://github.com/dsherret/dax" target="_blank noopener noreferrer">dsherret/dax</a>
+  - obsidian(graphql工具)
+    - <a href="https://github.com/open-source-labs/obsidian" target="_blank noopener noreferrer">open-source-labs/obsidian</a>
+  - deno_python(在deno中使用python)
+    - <a href="https://github.com/denosaurs/deno_python" target="_blank noopener noreferrer">denosaurs/deno_python</a>
+  - denokv(自托管版kv)
+    - <a href="https://github.com/denoland/denokv" target="_blank noopener noreferrer">denoland/denokv</a>
+- 教程
+  - deno-cheat-sheet(api合集)
+    - <a href="https://oscarotero.com/deno/" target="_blank noopener noreferrer">oscarotero.com</a>
+## Angular
+- 工具库
+  - ui库系列
+    - primeng(组件库)
+      - <a href="https://github.com/primefaces/primeng" target="_blank noopener noreferrer">primefaces/primeng</a>
+    - ng-zorro-antd(antd复刻)
+      - <a href="https://github.com/NG-ZORRO/ng-zorro-antd" target="_blank noopener noreferrer">NG-ZORRO/ng-zorro-antd</a>
+    - ng-devui(华为)
+      - <a href="https://github.com/DevCloudFE/ng-devui" target="_blank noopener noreferrer">DevCloudFE/ng-devui</a>
+    - taiga-ui
+      - <a href="https://github.com/taiga-family/taiga-ui" target="_blank noopener noreferrer">taiga-family/taiga-ui</a>
+  - 图表库系列
+    - ng2-charts(图表)
+      - <a href="https://github.com/valor-software/ng2-charts" target="_blank noopener noreferrer">valor-software/ng2-charts</a>
+    - ngx-gantt(甘特图/冷门)
+      - <a href="https://www.npmjs.com/package/ngx-gantt" target="_blank noopener noreferrer">www.npmjs.com</a>
+  - ngrx(rxjs全局状态管理)
+    - <a href="https://github.com/ngrx/platform" target="_blank noopener noreferrer">ngrx/platform</a>
+  - transloco(i18n国际化)
+    - <a href="https://github.com/ngneat/transloco" target="_blank noopener noreferrer">ngneat/transloco</a>
+- angular
+  - <a href="https://github.com/angular/angular" target="_blank noopener noreferrer">angular/angular</a>
+- 其他框架
+  - analog(angular全栈元框架)
+    - <a href="https://github.com/analogjs/analog" target="_blank noopener noreferrer">analogjs/analog</a>
+## Wordpress
+- theme
+  - <a href="https://github.com/solstice23/argon-theme" target="_blank noopener noreferrer">solstice23/argon-theme</a>
+  - <a href="https://github.com/mirai-mamori/Sakurairo" target="_blank noopener noreferrer">mirai-mamori/Sakurairo</a>
+  - davis
+    - <a href="https://github.com/andersnoren/davis" target="_blank noopener noreferrer">andersnoren/davis</a>
+- 工具库
+  - tailpress(wp+tailwind)
+    - <a href="https://github.com/jeffreyvr/tailpress" target="_blank noopener noreferrer">jeffreyvr/tailpress</a>
+  - cm4all-wp-bundle(wp开发的构建工具)
+    - <a href="https://github.com/IONOS-WordPress/cm4all-wp-bundle" target="_blank noopener noreferrer">IONOS-WordPress/cm4all-wp-bundle</a>
+  - wordpress-sandbox(wp wasm版)
+    - <a href="https://github.com/WordPress/wordpress-sandbox" target="_blank noopener noreferrer">WordPress/wordpress-sandbox</a>
+
+
+## 后记
+
+本文的所有内容原始是通过书签维护的。

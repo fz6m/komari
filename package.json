@@ -1,0 +1,25 @@
+{
+  "name": "komari",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "Komari searcher",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsx ./scripts/build.ts",
+    "tsc": "tsc -p tsconfig.build.json",
+    "push": "npm publish --registry https://registry.npmjs.com/",
+    "d": "pnpm build && pnpm tsx ./scripts/deploy.ts"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.11.6",
+    "@xn-sakina/mental": "^4.2.1",
+    "lodash": "^4.17.21",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "zx": "^7.2.3"
+  },
+  "packageManager": "pnpm@8.14.1",
+  "license": "MIT"
+}
